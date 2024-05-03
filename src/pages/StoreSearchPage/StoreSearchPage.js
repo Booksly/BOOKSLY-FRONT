@@ -1,4 +1,5 @@
 import "./StoreSearchPage.css";
+import search_button from "../assets/search_button.png";
 
 export default function StoreSearchPage() {
   return (
@@ -25,7 +26,7 @@ export default function StoreSearchPage() {
         </div>
         <div className="search-border">
           <div className="icon-search">
-            <img className="vector" src="assets/vectors/Vector598_x2.svg" />
+            <img className="vector" src={search_button} alt={""} />
           </div>
           <div className="input-search">
             <span className="container">어떤 가게를 찾으세요?</span>
