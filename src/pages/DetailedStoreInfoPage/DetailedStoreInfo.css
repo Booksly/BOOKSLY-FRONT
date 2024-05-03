@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 25px;
-    /*width: fit-content;*/
+    width: fit-content;
     box-sizing: border-box;
 }
 .DetailedStoreInfo .container {
@@ -68,10 +68,10 @@
     flex-direction: row;
     padding: 20px 30px;
     width: 800px;
+    height: 282px;
     box-sizing: border-box;
 }
 .DetailedStoreInfo .container-1 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: url('../../assets/storeimg_jjhair.png') 50% / cover no-repeat;
     margin: 8.5px 28px 8.5px 0;
@@ -81,7 +81,7 @@
 .DetailedStoreInfo .frame-102 {
     display: flex;
     flex-direction: column;
-    width: 412px;
+    /*width: 412px;*/
     box-sizing: border-box;
 }
 .DetailedStoreInfo .container-2 {
@@ -100,7 +100,7 @@
     font-size: 18px;
     color: #000000;
 }
-.DetailedStoreInfo .container-4 {
+.DetailedStoreInfo .container-info {
     margin-right: 10.5px;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -205,14 +205,14 @@
     width: 18px;
     height: 18px;
 }
-.DetailedStoreInfo .container-12 {
+.container-12 {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
     line-height: 1.333;
     color: #300EFF;
 }
-.DetailedStoreInfo .container-12-sub17 {
+.container-12-sub17 {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -668,20 +668,20 @@
     font-size: 18px;
     color: #000000;
 }
-.DetailedStoreInfo .container-1 {
+.DetailedStoreInfo .container-cut {
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .container-2 {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    column-gap: 26px;
-    width: fit-content;
-    box-sizing: border-box;
-}
+/*.DetailedStoreInfo .container-2 {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-self: flex-start;*/
+/*    column-gap: 26px;*/
+/*    width: fit-content;*/
+/*    box-sizing: border-box;*/
+/*}*/
 .DetailedStoreInfo .container-3 {
     display: flex;
     flex-direction: row;
@@ -2094,7 +2094,7 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .container-5 {
+.DetailedStoreInfo .container-perm1 {
     margin-bottom: 11px;
     display: flex;
     flex-direction: row;

@@ -1,5 +1,5 @@
 import "./StoreSearchPage.css";
-import search_button from "../assets/search_button.png";
+import search_button from "../../assets/search_button.png";
 
 export default function StoreSearchPage() {
   return (
