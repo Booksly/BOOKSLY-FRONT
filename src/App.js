@@ -5,9 +5,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h3>서버는 잘 실행되고 있습니다.^!^</h3>
-    </div>
+      <div className="App">
+          <img src={logo} alt={''}/>
+          <h3>서버는 잘 실행되고 있습니다.^!^</h3>
+      </div>
   );
 }
 

@@ -2,6 +2,7 @@ import "./StoreSearchPage.css";
 
 export default function StoreSearchPage() {
   return (
+      <div className="StoreSearchPage">
     <div className="container-4">
       <div className="header-inner">
         <div className="header-inner-left">
@@ -338,5 +339,6 @@ export default function StoreSearchPage() {
         </div>
       </div>
     </div>
+      </div>
   );
 }

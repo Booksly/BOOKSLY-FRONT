@@ -1,5 +1,6 @@
 import React from "react";
-import main from '../App';
+import App from '../App';
+import StoreSearch from '../pages/StoreSearchPage/StoreSearchPage';
 import DetailedStoreInfo from '../pages/DetailedStoreInfoPage/DetailedStoreInfo';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 function Routing() {
@@ -7,7 +8,8 @@ function Routing() {
         <div className="App">
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<main/>}/>
+                    <Route path='/' element={<App/>}/>
+                    <Route path='/StoreSearch' element={<StoreSearch/>}/>
                     <Route path='/DetailedStoreInfo' element={<DetailedStoreInfo/>}/>
                 </Routes>
             </BrowserRouter>

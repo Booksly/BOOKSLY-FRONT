@@ -26,7 +26,7 @@
 }
 .StoreSearchPage .image-13 {
   border-radius: 23px;
-  background: url("assets/images/Image13.png") 50% / cover no-repeat;
+  /*background: url("assets/images/Image13.png") 50% / cover no-repeat;*/
   width: 119px;
   height: 60px;
 }
@@ -158,7 +158,7 @@
   box-sizing: border-box;
 }
 .StoreSearchPage .container-1 {
-  background: url("assets/images/Image9.png") 50% / cover no-repeat;
+  /*background: url("assets/images/Image9.png") 50% / cover no-repeat;*/
   width: 20px;
   height: 20px;
 }
