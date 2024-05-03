@@ -8,3 +8,4 @@ out
 gen
 .gradle
 build
+node_modules
