@@ -1,1304 +1,1304 @@
 .StoreSearchPage .header-inner {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- background: #FFFFFF;
- margin-bottom: 35px;
- display: flex;
- flex-direction: row;
- padding: 0 30.8px 0 40px;
- width: 1440px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30.8px 0 40px;
+  width: 1440px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .header-inner-left {
- margin-right: 44px;
- display: flex;
- flex-direction: row;
- width: 626px;
- box-sizing: border-box;
+  margin-right: 44px;
+  display: flex;
+  flex-direction: row;
+  width: 626px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .logo-goto-home {
- margin: 2.5px 55px 2.5px 0;
- display: flex;
- width: 119px;
- height: 60px;
- box-sizing: border-box;
+  margin: 2.5px 55px 2.5px 0;
+  display: flex;
+  width: 119px;
+  height: 60px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .image-13 {
- border-radius: 23px;
- /*background: url('assets/images/Image13.png') 50% / cover no-repeat;*/
- width: 119px;
- height: 60px;
+  border-radius: 23px;
+  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
+  width: 119px;
+  height: 60px;
 }
 .StoreSearchPage .header-buttons {
- display: flex;
- flex-direction: row;
- width: 452px;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 452px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .nav-box {
- background: #FFFFFF;
- margin-right: 10px;
- display: flex;
- padding: 13.5px 0;
- width: 144px;
- box-sizing: border-box;
+  background: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  padding: 13.5px 0;
+  width: 144px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .nav-box-1 {
- background: #FFFFFF;
- margin-right: 10px;
- display: flex;
- padding: 23.5px 0.4px 23.5px 0;
- width: 144px;
- box-sizing: border-box;
+  background: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  padding: 23.5px 0.4px 23.5px 0;
+  width: 144px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .nav-box-2 {
- background: #FFFFFF;
- display: flex;
- padding: 23.5px 0.4px 23.5px 0;
- width: 144px;
- box-sizing: border-box;
+  background: #ffffff;
+  display: flex;
+  padding: 23.5px 0.4px 23.5px 0;
+  width: 144px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .search-border {
- border-radius: 30px;
- border: 2px solid #FF5925;
- margin: 12.5px 64px 12.5px 0;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 8px 0 8px 13px;
- width: 286px;
- height: fit-content;
- box-sizing: border-box;
+  border-radius: 30px;
+  border: 2px solid #ff5925;
+  margin: 12.5px 64px 12.5px 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0 5px 13px;
+  width: 286px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .icon-search {
- display: flex;
- width: 20px;
- height: 20px;
- box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .vector {
- width: 20px;
- height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .StoreSearchPage .input-search {
- margin: 1px 0;
- display: flex;
- box-sizing: border-box;
+  width: 246px;
+  text-align: center;
+  line-height: 20px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 500;
- font-size: 15px;
- color: #777777;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: #777777;
 }
 .StoreSearchPage .header-inner-right {
- margin: 21.5px 0;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- width: 349.2px;
- height: fit-content;
- box-sizing: border-box;
+  margin: 21.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 349.2px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .goto-mypage {
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .icon-home {
- margin: 1px 10px 1px 0;
- display: flex;
- width: 20px;
- height: 20px;
- box-sizing: border-box;
+  margin: 1px 10px 1px 0;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .vector-1 {
- width: 20px;
- height: 20px;
+  width: 20px;
+  height: 20px;
 }
 .StoreSearchPage .go-mypage {
- display: flex;
- box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .my-page {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .notice-todo {
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .icon-alect {
- margin: 1px 10px 1px 0;
- display: flex;
- width: 20px;
- height: 20px;
- box-sizing: border-box;
+  margin: 1px 10px 1px 0;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-1 {
- /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
- width: 20px;
- height: 20px;
+  /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
+  width: 20px;
+  height: 20px;
 }
 .StoreSearchPage .user-id {
- display: flex;
- box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-2 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .log-out-but {
- display: flex;
- box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-3 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-4 {
- background: #FDF8F3;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding-bottom: 179px;
+  background: #fdf8f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 179px;
 
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-3 {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: fit-content;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .select-option-padding {
- margin: 0 52.7px 30px 0;
- display: flex;
- flex-direction: column;
- width: fit-content;
- box-sizing: border-box;
+  margin: 0 52.7px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-5 {
- margin-bottom: 15px;
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  margin-bottom: 15px;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-6 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFFFFF;
- display: flex;
- padding: 10px 15.1px 10px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #ffffff;
+  display: flex;
+  padding: 10px 15.1px 10px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-7 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 16px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
 }
 .StoreSearchPage .container-8 {
- margin-bottom: 15px;
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  margin-bottom: 15px;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-157 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFFFFF;
- display: flex;
- padding: 10px 15.5px 10px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #ffffff;
+  display: flex;
+  padding: 10px 15.5px 10px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-9 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-288 {
- display: flex;
- flex-direction: row;
- column-gap: 25px;
- width: fit-content;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-247 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-240 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-241 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-242 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-243 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-244 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-245 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-248 {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFF2F2;
- display: flex;
- flex-direction: row;
- padding: 4.9px 5px 4.9px 15px;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #fff2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 4.9px 5px 4.9px 15px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .somthings-padding {
- display: flex;
- width: 1000px;
- box-sizing: border-box;
+  display: flex;
+  width: 1000px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .top-100-list {
- box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
- border-radius: 30px;
- background: #FFFFFF;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 20px 50px;
- width: 1000px;
- height: fit-content;
- box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  width: 1000px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .top-test {
- margin: 0 0.7px 20px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 0 0.7px 20px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .top-100 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 20px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
 }
 .StoreSearchPage .research-results {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 900px;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-info-padding {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-287 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-10 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-11 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-1 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-12 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-13 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-14 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-15 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .research-result-1 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result-2 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result-3 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result-4 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result-5 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .research-result-6 {
- border-top: 2px solid #B4B4B4;
- border-bottom: 2px solid #B4B4B4;
- background: #FFFFFF;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding: 4px 30px;
- width: 900px;
- box-sizing: border-box;
+  border-top: 2px solid #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 30px;
+  width: 900px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-16 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 20px;
- line-height: 0.9;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000000;
 }
 .StoreSearchPage .frame-286 {
- border-bottom: 4px solid #FF5925;
- display: flex;
- padding: 10px 10.4px 6px 10px;
- box-sizing: border-box;
+  border-bottom: 4px solid #ff5925;
+  display: flex;
+  padding: 10px 10.4px 6px 10px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-17 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 20px;
- line-height: 0.9;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000000;
 }
 .StoreSearchPage .container-18 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 20px;
- line-height: 0.9;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000000;
 }
 .StoreSearchPage .frame-156 {
- margin: 5.1px 5.4px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.4px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-19 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-155 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-20 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1561 {
- margin: 5.1px 5.4px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.4px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-21 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1551 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-22 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1562 {
- margin: 5.1px 5.4px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.4px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-23 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1552 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-24 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1563 {
- margin: 5.1px 5.6px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.6px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-25 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1553 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-26 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1564 {
- margin: 5.1px 5.7px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.7px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-27 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1554 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-28 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1565 {
- margin: 5.1px 5.8px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.8px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-29 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1555 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-30 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1566 {
- margin: 5.1px 5.5px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.5px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-31 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1556 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-32 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .frame-1567 {
- margin: 5.1px 5.4px 5.1px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 5.1px 5.4px 5.1px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-33 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .frame-1557 {
- display: flex;
- width: 28.3px;
- height: 28.3px;
- box-sizing: border-box;
+  display: flex;
+  width: 28.3px;
+  height: 28.3px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-34 {
- transform: rotate(-45deg);
- width: 28.3px;
- height: 28.3px;
+  transform: rotate(-45deg);
+  width: 28.3px;
+  height: 28.3px;
 }
 .StoreSearchPage .store-info-padding-1 {
- margin: 7.5px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 7.5px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2871 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-2 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-35 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-36 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-3 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-37 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-1 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-38 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 16px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-1 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-1 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-39 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-1 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-40 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .store-info-padding-2 {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2872 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-4 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-41 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-42 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-5 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-43 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-2 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-44 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-2 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-2 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-45 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-2 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-46 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .store-info-padding-3 {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2873 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-6 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-47 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-48 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-7 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-49 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-3 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-50 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-3 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-3 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-51 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-3 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-52 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .store-info-padding-4 {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2874 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-8 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-53 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-54 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-9 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-55 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-4 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-56 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-4 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-4 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-57 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-4 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-58 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .store-info-padding-5 {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2875 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-10 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-59 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-60 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-11 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-61 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-5 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-62 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-5 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-5 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-63 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-5 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-64 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .store-info-padding-6 {
- margin: 8px 0;
- display: flex;
- flex-direction: column;
- box-sizing: border-box;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreSearchPage .frame-2876 {
- margin-bottom: 5px;
- display: flex;
- flex-direction: row;
- width: fit-content;
- box-sizing: border-box;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreSearchPage .store-infos-12 {
- margin-right: 10.5px;
- display: flex;
- flex-direction: row;
- box-sizing: border-box;
+  margin-right: 10.5px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-65 {
- margin-right: 10.2px;
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  margin-right: 10.2px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .container-66 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 18px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
 }
 .StoreSearchPage .store-infos-13 {
- margin: 3.5px 0;
- display: flex;
- box-sizing: border-box;
+  margin: 3.5px 0;
+  display: flex;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-67 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 12px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
 }
 .StoreSearchPage .mene-names-6 {
- display: flex;
- align-self: flex-start;
- box-sizing: border-box;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-68 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 400;
- font-size: 15px;
- color: #000000;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreSearchPage .reserve-look-buts-6 {
- display: flex;
- flex-direction: column;
- align-items: center;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreSearchPage .reserve-but-6 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- margin-bottom: 5px;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-69 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
 .StoreSearchPage .look-store-but-6 {
- border-radius: 5px;
- border: 1px solid #FF5925;
- background: #FFEEE9;
- display: flex;
- padding: 5px 5.8px 5px 5px;
- box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffeee9;
+  display: flex;
+  padding: 5px 5.8px 5px 5px;
+  box-sizing: border-box;
 }
 .StoreSearchPage .container-70 {
- overflow-wrap: break-word;
- font-family: 'Inter';
- font-weight: 700;
- font-size: 15px;
- color: #FF5925;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  color: #ff5925;
 }
