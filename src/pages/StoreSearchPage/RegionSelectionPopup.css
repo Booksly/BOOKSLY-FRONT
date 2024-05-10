@@ -1,0 +1,239 @@
+.RegionSelectionPopup .frame-204 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #ffffff;
+  margin-left: 116px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 30px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-2041 {
+  border: 4px solid #acacac;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  padding: 6px 6.7px 6px 6px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-324 {
+  margin-right: 10.6px;
+  display: flex;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .container-1 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+.RegionSelectionPopup .frame-325 {
+  display: flex;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .container-2 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+.RegionSelectionPopup .frame-171 {
+  background: #fff2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .icon {
+  background: url("assets/images/Icon.png") 50% / cover no-repeat;
+  margin: 7.5px 0;
+  width: 25px;
+  height: 25px;
+}
+.RegionSelectionPopup .frame-168 {
+  background: #ffffff;
+  padding: 9.5px 15px;
+  width: 850px;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .container-3 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+}
+.RegionSelectionPopup .free-icon-target-6742104 {
+  background: url("assets/images/FreeIconTarget6742104.png") 50% / cover
+    no-repeat;
+  margin: 7.5px 0;
+  width: 25px;
+  height: 25px;
+}
+.RegionSelectionPopup .frame-192 {
+  margin: 0 35px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-172 {
+  display: flex;
+  flex-direction: column;
+  width: 835px;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-170 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-177 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-1711 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-1721 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-173 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-174 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-175 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-176 {
+  border-bottom: 3px solid #777777;
+  background: #ffffff;
+  padding: 15px 20px 12px 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .frame-191 {
+  opacity: 0.78;
+  background: #d9d9d9;
+  position: relative;
+  width: 15px;
+  height: 384px;
+}
+.RegionSelectionPopup .rectangle-145 {
+  background: #777777;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 15px;
+  height: 55px;
+}
+.RegionSelectionPopup .container-4 {
+  margin-bottom: 37.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.RegionSelectionPopup .container-5 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-6 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-7 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-8 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-9 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-10 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-11 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.RegionSelectionPopup .container-12 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}

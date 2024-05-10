@@ -1,4 +1,6 @@
+import React from "react";
 import "./StoreSearchPage.css";
+import { Link } from "react-router-dom";
 import search_button from "../../assets/search_button.png";
 import home_button from "../../assets/home_button.png";
 
@@ -59,7 +61,9 @@ export default function StoreSearchPage() {
           <div className="select-option-padding">
             <div className="container-5">
               <div className="container-6">
-                <span className="container-7">지역을 선택해 주세요</span>
+                <Link to="/RegionSelection">
+                  <button className="container-7">지역을 선택해 주세요</button>
+                </Link>
               </div>
             </div>
             <div className="container-8">
