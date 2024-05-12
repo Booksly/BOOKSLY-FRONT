@@ -1,42 +1,17 @@
-.DetailedStoreInfo .component-20 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+.DetailedStoreInfo {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    background: #FDF8F3;
 }
-.DetailedStoreInfo .component-21 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-22 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-23 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-24 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-25 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-26 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .component-27 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+.DetailedStoreInfo .component-review {
+    width: 200px;
+    height: auto;
+    text-align: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
 }
 .DetailedStoreInfo .container {
     background: #FDF8F3;
@@ -47,7 +22,7 @@
     /*width: 1440px;*/
     box-sizing: border-box;
 }
-.DetailedStoreInfo .frame-108 {
+.DetailedStoreInfo .frame-storeInfo {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
@@ -243,8 +218,9 @@
     width: 386px;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .frame-262 {
+.DetailedStoreInfo .frame-reservationButton {
     border-radius: 10px;
+    border: 0px;
     background: #FF5925;
     margin: 0px 10px;
     width: 386px;
@@ -363,34 +339,26 @@
     margin-right: 25px;
     margin-bottom: 20px;
 }
-.DetailedStoreInfo .frame-1151 {
+.DetailedStoreInfo .frame-review {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
-    padding: 30px 65px 29.5px 60px;
+    padding: 30px 60px 30px 60px;
     width: 1000px;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .frame-153 {
-    margin-bottom: 10.5px;
+.DetailedStoreInfo .frame-reviewTitle {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
     width: fit-content;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .container-21 {
-    margin-right: 25px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 25px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-22 {
-    margin: 3px 0;
+.DetailedStoreInfo .container-reviewPlus {
+    margin-left: 20px;
+    margin-top: 5px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -398,7 +366,7 @@
     font-size: 20px;
     color: #7B7B7B;
 }
-.DetailedStoreInfo .frame-1122 {
+.DetailedStoreInfo .frame-reviewBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -580,30 +548,22 @@
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-.DetailedStoreInfo .container-3 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 25px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .rectangle-1491 {
+.DetailedStoreInfo .rectangle-review {
     border-radius: 5px;
     background: #D9D9D9;
     margin-bottom: 7px;
     width: 200px;
     height: 150px;
 }
-.DetailedStoreInfo .frame-1091 {
+.DetailedStoreInfo .frame-rvNameScore {
     margin-bottom: 7px;
-    display: flex;
     flex-direction: row;
     align-self: flex-start;
-    width: fit-content;
+    width: 200px;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .container-31 {
-    margin: 1.5px 6px 1.5px 0;
+.DetailedStoreInfo .container-rvName {
+    margin-right: 5px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -611,16 +571,15 @@
     font-size: 16px;
     color: #000000;
 }
-.DetailedStoreInfo .container-32 {
-    margin-right: 5.3px;
+.DetailedStoreInfo .container-rvPipe {
+    margin-right: 5px;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 18px;
     color: #000000;
 }
-.DetailedStoreInfo .container-33 {
-    margin: 1.5px 0;
+.DetailedStoreInfo .container-rvScore {
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -628,14 +587,12 @@
     font-size: 16px;
     color: #000000;
 }
-.DetailedStoreInfo .frame-1111 {
-    margin-right: 4.6px;
+.DetailedStoreInfo .frame-rvMenuInfo {
     display: flex;
     flex-direction: column;
-    width: fit-content;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .container-34 {
+.DetailedStoreInfo .container-rvMenu {
     margin-bottom: 6px;
     display: inline-block;
     align-self: flex-start;
@@ -645,462 +602,13 @@
     font-size: 16px;
     color: #000000;
 }
-.DetailedStoreInfo .container-35 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
+.DetailedStoreInfo .container-rvMenuTitle {
+    margin-right: 5px;
 }
-.DetailedStoreInfo .rectangle-1492 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
+.DetailedStoreInfo .container-rvMenuName {
+    margin-left: 5px;
 }
-.DetailedStoreInfo .frame-1092 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-36 {
-    margin: 1.5px 6px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-37 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-38 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1112 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-39 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-40 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1493 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1093 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-41 {
-    margin: 1.5px 6px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-42 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-43 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1113 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-44 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-45 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1494 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1094 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-46 {
-    margin: 1.5px 5.7px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-47 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-48 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1114 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-49 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-50 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1495 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1095 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-51 {
-    margin: 1.5px 5.7px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-52 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-53 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1115 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-54 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-55 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1496 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1096 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-56 {
-    margin: 1.5px 5.7px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-57 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-58 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1116 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-59 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-60 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1497 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1097 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-61 {
-    margin: 1.5px 5.7px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-62 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-63 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1117 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-64 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-65 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    color: #000000;
-}
-.DetailedStoreInfo .rectangle-1498 {
-    border-radius: 5px;
-    background: #D9D9D9;
-    margin-bottom: 7px;
-    width: 200px;
-    height: 150px;
-}
-.DetailedStoreInfo .frame-1098 {
-    margin-bottom: 7px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-66 {
-    margin: 1.5px 5.7px 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-67 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-68 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .frame-1118 {
-    margin-right: 4.6px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.DetailedStoreInfo .container-69 {
-    margin-bottom: 6px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.DetailedStoreInfo .container-70 {
+.DetailedStoreInfo .container-rvInfo {
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 500;

@@ -1,8 +1,13 @@
 import searchbar from "../../assets/search_button.png";
 import home from '../../assets/home_button.png';
 import './DetailedStoreInfo.css'
+import {useNavigate} from "react-router-dom";
 
 export default function DetailedStoreInfo() {
+    const navigate = useNavigate()
+    const goToNavigation = () => {
+        navigate("/Reservation")
+    }
     return (
         <div className="DetailedStoreInfo">
             <div className="container">
@@ -15,20 +20,20 @@ export default function DetailedStoreInfo() {
                         <div className="header-buttons">
                             <div className="nav-box">
                                 <div className="frame-286">
-                    <span className="container-131">
-                      가게조회
-                    </span>
+                                    <span className="container-131">
+                                      가게조회
+                                    </span>
                                 </div>
                             </div>
                             <div className="nav-box-1">
-                  <span className="container-132">
-                    당일예약
-                  </span>
+                              <span className="container-132">
+                                당일예약
+                              </span>
                             </div>
                             <div className="nav-box-2">
-                  <span className="container-133">
-                    예약조회
-                  </span>
+                              <span className="container-133">
+                                예약조회
+                              </span>
                             </div>
                         </div>
                     </div>
@@ -37,9 +42,9 @@ export default function DetailedStoreInfo() {
                             <img className="vector" src={searchbar} alt={''}/>
                         </div>
                         <div className="input-search">
-                <span className="container-23">
-                  어떤 가게를 찾으세요?
-                </span>
+                            <span className="container-23">
+                              어떤 가게를 찾으세요?
+                            </span>
                         </div>
                     </div>
                     <div className="header-inner-right">
@@ -48,9 +53,9 @@ export default function DetailedStoreInfo() {
                                 <img className="vector-1" src={home} alt={''}/>
                             </div>
                             <div className="go-mypage">
-                  <span className="my-page">
-                    My Page
-                  </span>
+                              <span className="my-page">
+                                My Page
+                              </span>
                             </div>
                         </div>
                         <div className="notice-todo">
@@ -59,19 +64,19 @@ export default function DetailedStoreInfo() {
                                 </div>
                             </div>
                             <div className="user-id">
-                  <span className="container-25">
-                    김아무개
-                  </span>
+                              <span className="container-25">
+                                김아무개
+                              </span>
                             </div>
                         </div>
                         <div className="log-out-but">
-                <span className="container-26">
-                  로그아웃
-                </span>
+                            <span className="container-26">
+                              로그아웃
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div className="frame-108">
+                <div className="frame-storeInfo">
                     <div className="container-1">
                     </div>
                     <div className="frame-102">
@@ -126,11 +131,11 @@ export default function DetailedStoreInfo() {
                             </div>
                         </div>
                         <div className="frame-283">
-                            <div className="frame-262">
-                  <span className="container-15">
-                    예약하기
-                  </span>
-                            </div>
+                            <button className="frame-reservationButton" onClick={goToNavigation}>
+                              <span className="container-15">
+                                예약하기
+                              </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -156,26 +161,6 @@ export default function DetailedStoreInfo() {
                                        </span>
                                         <div className="container-menuPrice">
                                             30,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            남성커트
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            20,000
                                         </div>
                                     </div>
                                     <div className="frame-menuInfo">
@@ -211,126 +196,7 @@ export default function DetailedStoreInfo() {
                                       </span>
                                     </div>
                                 </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            남성펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            20,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            50,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            아이롱펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            30,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            아이롱펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            30,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            아이롱펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            30,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            아이롱펌
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            30,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div className="frame-menuBox">
@@ -350,66 +216,6 @@ export default function DetailedStoreInfo() {
                                         </span>
                                         <div className="container-menuPrice">
                                             20,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            뿌리염색
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            20,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            일반염색
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            50,000
-                                        </div>
-                                    </div>
-                                    <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
-                                        얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-menu">
-                                    <div className="rectangle-menu">
-                                    </div>
-                                    <div className="frame-menuNamePrice">
-                                        <div className="container-menuName">
-                                            시크릿투톤
-                                        </div>
-                                        <span className="container-menuPipe">
-                                            |
-                                        </span>
-                                        <div className="container-menuPrice">
-                                            30,000
                                         </div>
                                     </div>
                                     <div className="frame-menuInfo">
@@ -488,201 +294,44 @@ export default function DetailedStoreInfo() {
                             </div>
                         </div>
                     </div>
-                    <div className="frame-1151">
-                        <div className="frame-153">
-                <span className="container-21">
-                  리뷰조회
-                </span>
-                            <div className="container-22">
+                    <div className="frame-review">
+                        <div className="frame-reviewTitle">
+                            <span className="container-boxTitle">
+                              리뷰조회
+                            </span>
+                            <div className="container-reviewPlus">
                                 더보기 ...
                             </div>
                         </div>
-                        <div className="frame-1122">
-                            <div className="container-4">
-                                <div className="component-20">
-                                    <div className="rectangle-1491">
+                        <div className="frame-reviewBox">
+                            <div className="container-menuBox">
+                                <div className="component-review">
+                                    <div className="rectangle-review">
                                     </div>
-                                    <div className="frame-1091">
-                                        <div className="container-31">
+                                    <div className="frame-rvNameScore">
+                                        <div className="container-rvName">
                                             원장 디자이너
                                         </div>
-                                        <span className="container-32">
-                        |
-                      </span>
-                                        <div className="container-33">
+                                        <span className="container-rvPipe">
+                                            |
+                                        </span>
+                                        <div className="container-rvScore">
                                             4.8
                                         </div>
                                     </div>
-                                    <div className="frame-1111">
-                                        <div className="container-34">
-                                            [메뉴] - [[소분류]]
+                                    <div className="frame-rvMenuInfo">
+                                        <div className="container-rvMenu">
+                                            <span className="container-rvMenuTitle">
+                                                [메뉴]
+                                            </span>
+                                            -
+                                            <span className="container-rvMenuName">
+                                                [[소분류]]
+                                            </span>
                                         </div>
-                                        <span className="container-35">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-21">
-                                    <div className="rectangle-1492">
-                                    </div>
-                                    <div className="frame-1092">
-                                        <div className="container-36">
-                                            심화 디자이너
-                                        </div>
-                                        <span className="container-37">
-                        |
-                      </span>
-                                        <div className="container-38">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1112">
-                                        <div className="container-39">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-40">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-22">
-                                    <div className="rectangle-1493">
-                                    </div>
-                                    <div className="frame-1093">
-                                        <div className="container-41">
-                                            원장 디자이너
-                                        </div>
-                                        <span className="container-42">
-                        |
-                      </span>
-                                        <div className="container-43">
-                                            5.0
-                                        </div>
-                                    </div>
-                                    <div className="frame-1113">
-                                        <div className="container-44">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-45">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-23">
-                                    <div className="rectangle-1494">
-                                    </div>
-                                    <div className="frame-1094">
-                                        <div className="container-46">
-                                            캡 디자이너
-                                        </div>
-                                        <span className="container-47">
-                        |
-                      </span>
-                                        <div className="container-48">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1114">
-                                        <div className="container-49">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-50">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="container-3">
-                                <div className="component-24">
-                                    <div className="rectangle-1495">
-                                    </div>
-                                    <div className="frame-1095">
-                                        <div className="container-51">
-                                            캡 디자이너
-                                        </div>
-                                        <span className="container-52">
-                        |
-                      </span>
-                                        <div className="container-53">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1115">
-                                        <div className="container-54">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-55">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-25">
-                                    <div className="rectangle-1496">
-                                    </div>
-                                    <div className="frame-1096">
-                                        <div className="container-56">
-                                            캡 디자이너
-                                        </div>
-                                        <span className="container-57">
-                        |
-                      </span>
-                                        <div className="container-58">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1116">
-                                        <div className="container-59">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-60">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-26">
-                                    <div className="rectangle-1497">
-                                    </div>
-                                    <div className="frame-1097">
-                                        <div className="container-61">
-                                            캡 디자이너
-                                        </div>
-                                        <span className="container-62">
-                        |
-                      </span>
-                                        <div className="container-63">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1117">
-                                        <div className="container-64">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-65">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
-                                    </div>
-                                </div>
-                                <div className="component-27">
-                                    <div className="rectangle-1498">
-                                    </div>
-                                    <div className="frame-1098">
-                                        <div className="container-66">
-                                            캡 디자이너
-                                        </div>
-                                        <span className="container-67">
-                        |
-                      </span>
-                                        <div className="container-68">
-                                            4.8
-                                        </div>
-                                    </div>
-                                    <div className="frame-1118">
-                                        <div className="container-69">
-                                            [메뉴] - [[소분류]]
-                                        </div>
-                                        <span className="container-70">
-                        정말 감사했습니다. 인생 미용실 정말 감사했습니다.
-                      </span>
+                                        <span className="container-rvInfo">
+                                            정말 감사했습니다. 인생 미용실 정말 감사했습니다.
+                                        </span>
                                     </div>
                                 </div>
                             </div>

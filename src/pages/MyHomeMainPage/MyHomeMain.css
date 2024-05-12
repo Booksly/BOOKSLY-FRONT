@@ -1,0 +1,502 @@
+.MyHomeMain {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    background: #FDF8F3;
+    align-items: center;
+    flex-direction: column;
+}
+.MyHomeMain .containerALL {
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    /*width: 1440px;*/
+    box-sizing: border-box;
+}
+.MyHomeMain .container {
+    margin-top: 0px;
+    margin-left:302px;
+    position: absolute;
+    top:0px;
+    /*margin-bottom: 334px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*box-sizing: border-box;*/
+}
+.MyHomeMain .frameNavi {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    /*padding-bottom: 639px;*/
+    box-sizing: border-box;
+    width:301px;
+    height: 100vh;
+}
+.MyHomeMain .cptop-bar {
+    position: relative;
+    margin-bottom: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .line {
+    background: #D6B585;
+    position: absolute;
+    margin-left: 300px;
+    top:0px;
+    /*bottom: 0px;*/
+    width: 2px;
+    height: 100vh;
+}
+.MyHomeMain .frame-418 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    width: 620px;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-411 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .containerPhone {
+    margin-bottom: 10px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+}
+.MyHomeMain .at-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-408 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-403 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 16px;
+    padding: 10px 14px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    color: #D3D3D3;
+}
+.MyHomeMain .frame-404 {
+    border-radius: 5px;
+    background: #FF5925;
+    display: flex;
+    padding: 11px 0.8px 11px 0;
+    width: 104px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-2 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.MyHomeMain .frame-409 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-407 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 16px;
+    padding: 10px 14px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-3 {
+    display: flex;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    color: #D3D3D3;
+}
+.MyHomeMain .frame-405 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    display: flex;
+    padding: 10px 0.8px 10px 0;
+    width: 104px;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-417 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-5 {
+    margin-bottom: 10px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #111111;
+}
+.MyHomeMain .frame-406 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    padding: 10px 14px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-6 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    color: #D3D3D3;
+}
+.MyHomeMain .frame-420 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 420px;
+    box-sizing: border-box;
+}
+.MyHomeMain .frame-4181 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FDD2C2;
+    padding: 10px 20px;
+    width: 114px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-7 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #111111;
+}
+.MyHomeMain .frame-419 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FDD2C2;
+    padding: 10px 20px;
+    width: 120px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-8 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #111111;
+}
+.MyHomeMain .container-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.MyHomeMain .logoLine {
+    background: #D9D9D9;
+    position: absolute;
+    left: 20px;
+    top: 99px;
+    right: 20px;
+    height: 1px;
+    width: 260px;
+}
+.MyHomeMain .cpnaviAll {
+    flex-direction: column;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    height: 300px;
+    width: 300px;
+}
+.MyHomeMain .cpnaviBar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    /*padding: 0.5px 20px 0 20px;*/
+}
+.MyHomeMain .cpnaviLineTop {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeMain .cpnaviLineBottom {
+    background: #D9D9D9;
+    margin-top: 13px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeMain .cpnaviSearchName {
+    margin-left: 25px;
+    margin-top: 13px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .cpnaviName {
+    position: relative;
+    text-align: center;
+    line-height: 33px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .search {
+    margin-right: 7px;
+    width: 33px;
+    height: 33px;
+}
+.MyHomeMain .cpnaviBarSub {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    /*padding: 0.5px 20px 0 20px;*/
+}
+.MyHomeMain .cpnaviLineBottomSub {
+    background: #D9D9D9;
+    margin-top: 16.5px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeMain .cpnaviPolName {
+    margin-left: 60px;
+    margin-top: 17.5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .cpnaviNameSub {
+    position: relative;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .polygon {
+    margin-right: 13px;
+    width: 23px;
+    height: 25px;
+}
+.MyHomeMain .cpnavi-logo {
+    background: #FFFFFF;
+    position: relative;
+    padding: 20px 19px;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.MyHomeMain .logo {
+    border-radius: 23px;
+    background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
+    width: 119px;
+    height: 60px;
+}
+.MyHomeMain .cpnaviLine {
+    background: #D9D9D9;
+    margin: 0 20px;
+    width: 260px;
+    height: 2px;
+}
+.MyHomeMain .goto-mypage {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.MyHomeMain .icon-home {
+    margin: 1px 10px 1px 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.MyHomeMain .vector-3 {
+    width: 20px;
+    height: 20px;
+}
+.MyHomeMain .go-mypage {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeMain .my-page {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeMain .notice-todo {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.MyHomeMain .icon-alect {
+    margin: 1px 10px 1px 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-11 {
+    /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
+    width: 20px;
+    height: 20px;
+}
+.MyHomeMain .user-id {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-12 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeMain .log-out-but {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-13 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeMain .frame-3 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 38px 0 42px 82px;
+    width: 1140px;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-14 {
+    border-radius: 44px;
+    /*background: url('assets/images/Image2.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);*/
+    margin: 1px 45px 1px 0;
+    width: 88px;
+    height: 88px;
+}
+.MyHomeMain .container-15 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-16 {
+    margin-bottom: 15px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeMain .container-17 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeMain .container-18 {
+    margin-right: 10.6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .container-19 {
+    margin-right: 10.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .container-20 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .container-21 {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeMain .container-9 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21.5px 30.8px 21.5px 0;
+    width: 1140px;
+    box-sizing: border-box;
+}

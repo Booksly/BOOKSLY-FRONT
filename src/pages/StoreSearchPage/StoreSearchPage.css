@@ -567,7 +567,7 @@
   box-sizing: border-box;
 }
 .StoreSearchPage .container-20 {
-  background: url("../../assets/plus_button.png") 50% / cover no-repeat;
+  background: url('../../assets/plus_button.png') 50% / cover no-repeat;
   width: 28.3px;
   height: 28.3px;
 }

@@ -1,0 +1,1537 @@
+.myHomeAllReserv {
+    background: #FDF8F3;
+    display: flex;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-453 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1481px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .rectangle-44 {
+    background: rgba(255, 89, 37, 0.1);
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 1px;
+    height: 58px;
+}
+.MyHomeAllReserv .component-29 {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-28 {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container {
+    border-radius: 5px;
+    margin: 0 105px;
+    display: flex;
+    width: 170px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .review {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .pre-writing-review {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container {
+    margin: 0 5px 13.2px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-1 {
+    margin: 0 66.7px 16.5px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-3 {
+    margin-bottom: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-5 {
+    margin: 0 5px 13.2px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-1 {
+    background: #D6B585;
+    position: absolute;
+    left: 301px;
+    bottom: 0px;
+    width: 2px;
+    height: 1882px;
+}
+.MyHomeAllReserv .frame-20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-26 {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-22 {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-6 {
+    margin: 0 66.7px 16.5px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-7 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-8 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21.5px 30.8px 21.5px 0;
+    width: 1140px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-9 {
+    margin: 0 5px 13.2px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .cpnavi-all {
+    border: 1px solid #FFFFFF;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .cpnavi-bar-2 {
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    padding: 0.5px 20px 0 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-4 {
+    background: #D9D9D9;
+    margin-bottom: 16.5px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .container-1 {
+    position: relative;
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-3 {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .polygon-1 {
+    margin-right: 13px;
+    width: 27px;
+    height: 25px;
+}
+.MyHomeAllReserv .line-35 {
+    background: #D9D9D9;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    right: 20px;
+    height: 1px;
+}
+.MyHomeAllReserv .cpnavi-bar {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 20px 0 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-36 {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .line-37 {
+    background: #D9D9D9;
+    margin-bottom: 11px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .my-1 {
+    margin: 7px 0 7.8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .vector {
+    margin-right: 7px;
+    width: 33px;
+    height: 33.8px;
+}
+.MyHomeAllReserv .cpnavi-bar-21 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5px 20px 0 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-41 {
+    background: #D9D9D9;
+    margin-bottom: 16.5px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .container-2 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-31 {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .polygon-11 {
+    margin-right: 13px;
+    width: 27px;
+    height: 25px;
+}
+.MyHomeAllReserv .cpnavi-bar-1 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 20px 0 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-361 {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .line-371 {
+    background: #D9D9D9;
+    margin-bottom: 11px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .my-2 {
+    margin: 7px 0 7.8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .vector-1 {
+    margin-right: 7px;
+    width: 33px;
+    height: 33.8px;
+}
+.MyHomeAllReserv .cpnavi-bar-2 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 20px 0 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-362 {
+    background: #D9D9D9;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .line-372 {
+    background: #D9D9D9;
+    margin-bottom: 11px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .my-3 {
+    margin: 7px 0 7.8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .vector-2 {
+    margin-right: 7px;
+    width: 33px;
+    height: 33.8px;
+}
+.MyHomeAllReserv .cpnavi-logo {
+    background: #FFFFFF;
+    position: relative;
+    padding: 20px 19px;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .image-13 {
+    border-radius: 23px;
+    background: url('assets/images/Image13.png') 50% / cover no-repeat;
+    width: 119px;
+    height: 60px;
+}
+.MyHomeAllReserv .rectangle-244 {
+    background: #D9D9D9;
+    margin: 0 20px;
+    width: 260px;
+    height: 1px;
+}
+.MyHomeAllReserv .goto-mypage {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .icon-home {
+    margin: 1px 10px 1px 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .vector-3 {
+    width: 20px;
+    height: 20px;
+}
+.MyHomeAllReserv .go-mypage {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .my-page {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeAllReserv .notice-todo {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .icon-alect {
+    margin: 1px 10px 1px 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-3 {
+    background: url('assets/images/Image9.png') 50% / cover no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.MyHomeAllReserv .user-id {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-4 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeAllReserv .log-out-but {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-5 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-3 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 38px 0 42px 82px;
+    width: 1140px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-6 {
+    border-radius: 44px;
+    background: url('assets/images/Image2.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
+    margin: 1px 45px 1px 0;
+    width: 88px;
+    height: 88px;
+}
+.MyHomeAllReserv .container-7 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-8 {
+    margin-bottom: 15px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-9 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-10 {
+    margin-right: 10.6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-11 {
+    margin-right: 10.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-12 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-13 {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-14 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-15 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-7 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-16 {
+    border-radius: 30px;
+    background: url('assets/images/Image4.png') 50% / cover no-repeat;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeAllReserv .container-17 {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-221 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-18 {
+    margin-right: 15.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-19 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-20 {
+    margin-right: 15.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-21 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-22 {
+    margin-right: 15.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-23 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-24 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-25 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-26 {
+    margin-right: 10.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .container-27 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .frame-19 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px 18px 41px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-8 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-27 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 326.5px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-28 {
+    margin: 0.5px 9px 0.5px 0;
+    display: inline-block;
+    width: 209px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    color: #000000;
+}
+.MyHomeAllReserv .line-11 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-9 {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-29 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-291 {
+    display: flex;
+    width: 768px;
+    height: 2px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-111 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .container-30 {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+.MyHomeAllReserv .container-31 {
+    margin: 1px 9px 1px 0;
+    display: inline-block;
+    width: 99px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .group-16 {
+    width: 20px;
+    height: 20px;
+}
+.MyHomeAllReserv .container-32 {
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 19px 17px 19px 0;
+    width: 170px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-71 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-33 {
+    border-radius: 30px;
+    background: url('assets/images/Image4.png') 50% / cover no-repeat;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeAllReserv .container-34 {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-222 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-35 {
+    margin-right: 15.9px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-36 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-37 {
+    margin-right: 15.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-38 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-39 {
+    margin-right: 15.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-40 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-41 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-42 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-43 {
+    margin-right: 10.8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .container-44 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .frame-191 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-81 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-271 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 278px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-45 {
+    margin: 0.5px 9px 0.5px 0;
+    display: inline-block;
+    width: 209px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-46 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-47 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-112 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-91 {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-48 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-2911 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-113 {
+    background: #D0D0D0;
+    margin-bottom: 8px;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-455 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-101 {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .review-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    color: #000000;
+}
+.MyHomeAllReserv .polygon-12 {
+    margin: 4px 0;
+    width: 20px;
+    height: 20px;
+}
+.MyHomeAllReserv .container-49 {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+.MyHomeAllReserv .frame-72 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-50 {
+    border-radius: 30px;
+    background: url('assets/images/Image4.png') 50% / cover no-repeat;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeAllReserv .container-51 {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-223 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-52 {
+    margin-right: 15.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-53 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-54 {
+    margin-right: 15.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-55 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-56 {
+    margin-right: 15.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-57 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-58 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-59 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-60 {
+    margin-right: 10.8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .container-61 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .frame-192 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-82 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-272 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 308.2px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-62 {
+    margin: 0.5px 9px 0.5px 0;
+    display: inline-block;
+    width: 208px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-63 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-64 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-114 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-92 {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-65 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-2912 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .line-115 {
+    background: #D0D0D0;
+    margin-bottom: 8px;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .container-66 {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+.MyHomeAllReserv .frame-4551 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-1011 {
+    display: flex;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .review-2 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    color: #000000;
+}
+.MyHomeAllReserv .polygon-13 {
+    margin: 4px 0;
+    width: 20px;
+    height: 20px;
+}
+.MyHomeAllReserv .container-67 {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+.MyHomeAllReserv .line-116 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-73 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-68 {
+    border-radius: 30px;
+    background: url('assets/images/Image4.png') 50% / cover no-repeat;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeAllReserv .container-69 {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-224 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-70 {
+    margin-right: 15.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-71 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-72 {
+    margin-right: 15.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-73 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-74 {
+    margin-right: 15.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-75 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-76 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-77 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-78 {
+    margin-right: 10.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .container-79 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .frame-193 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px 18px 41px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-83 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-273 {
+    margin-bottom: 10px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-80 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-117 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-93 {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-81 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-2913 {
+    display: flex;
+    width: 768px;
+    height: 2px;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-82 {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+.MyHomeAllReserv .line-118 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-74 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-83 {
+    border-radius: 30px;
+    background: url('assets/images/Image12.png') 50% / cover no-repeat;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeAllReserv .container-84 {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-225 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-85 {
+    margin-right: 15.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-86 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-87 {
+    margin-right: 15.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-88 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-89 {
+    margin-right: 15.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-90 {
+    margin: 1px 15px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-91 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeAllReserv .container-92 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-93 {
+    margin-right: 10.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .container-94 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeAllReserv .frame-194 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px 18px 41px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-84 {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .frame-274 {
+    margin-bottom: 10px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-95 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .line-119 {
+    background: #D0D0D0;
+    width: 768px;
+    height: 2px;
+}
+.MyHomeAllReserv .frame-94 {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeAllReserv .container-96 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeAllReserv .frame-2914 {
+    display: flex;
+    width: 768px;
+    height: 2px;
+    box-sizing: border-box;
+}
