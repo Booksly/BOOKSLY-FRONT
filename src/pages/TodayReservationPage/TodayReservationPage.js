@@ -63,9 +63,7 @@ export default function TodayReservationPage() {
           <div className="select-option-padding">
             <div className="before-region">
               <div className="container-4">
-                <Link to="/RegionSelection">
-                  <button className="container-5">지역을 선택해 주세요</button>
-                </Link>
+                <button className="container-5">지역을 선택해 주세요</button>
               </div>
             </div>
             <div className="before-day-and-time">
