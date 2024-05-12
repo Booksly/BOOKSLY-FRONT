@@ -1,6 +1,9 @@
 import React from "react";
 import App from "../App";
 
+
+// Main Home 페이지 
+import Main from "../pages/MainPage/Main";
 // 로그인 페이지
 import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
@@ -29,6 +32,11 @@ function Routing() {
         <Routes>
           {/*시작 메인 페이지*/}
           <Route path="/" element={<App />} />
+          {/*Main Home 페이지*/}
+          <Route path="/MainHome" element={<Main/>} >
+            <Route path="login" element={<div>로그인</div>} />
+            <Route path="logout" element={<div>로그아웃</div>}/>
+          </Route>
           {/*로그인 페이지*/}
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
