@@ -1,6 +1,9 @@
 import React from "react";
 import App from '../App';
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
+import MyHomeAllReserv from "../pages/MyHomeAllReservPage/MyHomeAllReserv";
+import MyHomeCurrReserv from "../pages/MyHomeCurrReservPage/MyHomeCurrReserv";
+import MyHomeRegularShop from "../pages/MyHomeRegularShopPage/MyHomeRegularShop";
 import StoreSearch from '../pages/StoreSearchPage/StoreSearchPage';
 import DetailedStoreInfo from '../pages/DetailedStoreInfoPage/DetailedStoreInfo';
 import Reservation from '../pages/ReservationPage/Reservation';
@@ -12,6 +15,9 @@ function Routing() {
                 <Routes>
                     <Route path='/' element={<App/>}/>
                     <Route path='/MyHomeMain' element={<MyHomeMain/>}/>
+                    <Route path='/MyHomeAllReserv' element={<MyHomeAllReserv/>}/>
+                    <Route path='/MyHomeCurrReserv' element={<MyHomeCurrReserv/>}/>
+                    <Route path='/MyHomeRegularShop' element={<MyHomeRegularShop/>}/>
                     <Route path='/StoreSearch' element={<StoreSearch/>}/>
                     <Route path='/DetailedStoreInfo' element={<DetailedStoreInfo/>}/>
                     <Route path='/Reservation' element={<Reservation/>}/>

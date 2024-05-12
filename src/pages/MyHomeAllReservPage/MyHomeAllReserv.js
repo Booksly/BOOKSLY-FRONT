@@ -2,7 +2,7 @@ import './MyHomeAllReserv.css'
 
 export default function MyHomeAllReserv() {
     return (
-        <div className="myHomeAllReserv">
+        <div className="MyHomeAllReserv">
             <div className="container-2">
                 <div className="frame-453">
                     <div className="cpnavi-logo">

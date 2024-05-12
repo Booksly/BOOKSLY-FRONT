@@ -34,7 +34,7 @@
     flex-direction: column;
     /*padding-bottom: 639px;*/
     box-sizing: border-box;
-    width:301px;
+    width:251px;
     height: 100vh;
 }
 .MyHomeMain .cptop-bar {
@@ -49,7 +49,7 @@
 .MyHomeMain .line {
     background: #D6B585;
     position: absolute;
-    margin-left: 300px;
+    margin-left: 250px;
     top:0px;
     /*bottom: 0px;*/
     width: 2px;
@@ -232,18 +232,18 @@
 .MyHomeMain .logoLine {
     background: #D9D9D9;
     position: absolute;
-    left: 20px;
+    left: 15px;
     top: 99px;
     right: 20px;
     height: 1px;
-    width: 260px;
+    width: 220px;
 }
 .MyHomeMain .cpnaviAll {
     flex-direction: column;
     overflow-wrap: break-word;
     font-family: 'Inter';
-    height: 300px;
-    width: 300px;
+    width: 250px;
+    height: 250px;
 }
 .MyHomeMain .cpnaviBar {
     position: relative;
@@ -251,24 +251,24 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    width: 300px;
-    height: 60px;
+    width: 250px;
+    height: 50px;
     /*padding: 0.5px 20px 0 20px;*/
 }
 .MyHomeMain .cpnaviLineTop {
     background: #D9D9D9;
-    width: 260px;
+    width: 220px;
     height: 1px;
 }
 .MyHomeMain .cpnaviLineBottom {
     background: #D9D9D9;
-    margin-top: 13px;
-    width: 260px;
+    margin-top: 12px;
+    width: 220px;
     height: 1px;
 }
 .MyHomeMain .cpnaviSearchName {
-    margin-left: 25px;
-    margin-top: 13px;
+    margin-left: 20px;
+    margin-top: 12px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -279,7 +279,7 @@
 .MyHomeMain .cpnaviName {
     position: relative;
     text-align: center;
-    line-height: 33px;
+    line-height: 24px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -288,9 +288,9 @@
     color: #000000;
 }
 .MyHomeMain .search {
-    margin-right: 7px;
-    width: 33px;
-    height: 33px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
 }
 .MyHomeMain .cpnaviBarSub {
     position: relative;
@@ -298,19 +298,19 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    width: 300px;
-    height: 60px;
+    width: 250px;
+    height: 50px;
     /*padding: 0.5px 20px 0 20px;*/
 }
 .MyHomeMain .cpnaviLineBottomSub {
     background: #D9D9D9;
-    margin-top: 16.5px;
-    width: 260px;
+    margin-top: 14px;
+    width: 220px;
     height: 1px;
 }
 .MyHomeMain .cpnaviPolName {
-    margin-left: 60px;
-    margin-top: 17.5px;
+    margin-left: 50px;
+    margin-top: 14px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -321,7 +321,7 @@
 .MyHomeMain .cpnaviNameSub {
     position: relative;
     text-align: center;
-    line-height: 25px;
+    line-height: 20px;
     display: inline-block;
     overflow-wrap: break-word;
     font-family: 'Inter';
@@ -330,28 +330,28 @@
     color: #000000;
 }
 .MyHomeMain .polygon {
-    margin-right: 13px;
-    width: 23px;
-    height: 25px;
+    margin-right: 10px;
+    width: 18px;
+    height: 20px;
 }
 .MyHomeMain .cpnavi-logo {
     background: #FFFFFF;
     position: relative;
-    padding: 20px 19px;
-    width: 300px;
+    padding: 20px 20px;
+    width: 250px;
     height: 100px;
     box-sizing: border-box;
 }
 .MyHomeMain .logo {
-    border-radius: 23px;
+    border-radius: 20px;
     background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
-    width: 119px;
+    width: 120px;
     height: 60px;
 }
 .MyHomeMain .cpnaviLine {
     background: #D9D9D9;
-    margin: 0 20px;
-    width: 260px;
+    margin: 0 15px;
+    width: 220px;
     height: 2px;
 }
 .MyHomeMain .goto-mypage {
