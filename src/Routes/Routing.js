@@ -30,7 +30,7 @@ function Routing() {
           <Route path="/MyHomeCurrReserv" element={<MyHomeCurrReserv />} />
           <Route path="/MyHomeRegularShop" element={<MyHomeRegularShop />} />
           {/*당일 예약 페이지*/}
-          <Route path="TodayReserv" element={<TodayReserv />} />
+          <Route path="/TodayReserv" element={<TodayReserv />} />
           {/*고객 가게 관련 페이지*/}
           <Route path="/StoreSearch" element={<StoreSearch />} />
           <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
