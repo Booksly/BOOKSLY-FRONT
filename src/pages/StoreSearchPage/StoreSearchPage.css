@@ -1,3 +1,11 @@
+.StoreSearchPage {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: #fdf8f3;
+}
 .StoreSearchPage .header-inner {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #ffffff;
@@ -567,7 +575,7 @@
   box-sizing: border-box;
 }
 .StoreSearchPage .container-20 {
-  background: url('../../assets/plus_button.png') 50% / cover no-repeat;
+  background: url("../../assets/plus_button.png") 50% / cover no-repeat;
   width: 28.3px;
   height: 28.3px;
 }
