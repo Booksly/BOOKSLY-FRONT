@@ -19,28 +19,29 @@ import Reservation from "../pages/ReservationPage/Reservation";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function Routing() {
-  return (
+    return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />} />
-          {/*고객 My Home*/}
-          <Route path="/MyHomeMain" element={<MyHomeMain />} />
-          <Route path="/MyHomeAllReserv" element={<MyHomeAllReserv />} />
-          <Route path="/MyHomeCurrReserv" element={<MyHomeCurrReserv />} />
-          <Route path="/MyHomeRegularShop" element={<MyHomeRegularShop />} />
-          {/*당일 예약 페이지*/}
-          <Route path="/TodayReserv" element={<TodayReserv />} />
-          {/*고객 가게 관련 페이지*/}
-          <Route path="/StoreSearch" element={<StoreSearch />} />
-          <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
-          <Route path="/Reservation" element={<Reservation />} />
-          {/*가게주인용*/}
-          <Route></Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                {/*시작메인페이지*/}
+                <Route path="/" element={<App />} />
+                {/*고객 My Home*/}
+                <Route path="/MyHomeMain" element={<MyHomeMain />} />
+                <Route path="/MyHomeAllReserv" element={<MyHomeAllReserv />} />
+                <Route path="/MyHomeCurrReserv" element={<MyHomeCurrReserv />} />
+                <Route path="/MyHomeRegularShop" element={<MyHomeRegularShop />} />
+                {/*당일 예약 페이지*/}
+                <Route path="/TodayReserv" element={<TodayReserv />} />
+                {/*고객 가게 관련 페이지*/}
+                <Route path="/StoreSearch" element={<StoreSearch />} />
+                <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
+                <Route path="/Reservation" element={<Reservation />} />
+                {/*가게주인용*/}
+                <Route></Route>
+            </Routes>
+        </BrowserRouter>
     </div>
-  );
+    );
 }
 
 export default Routing;
