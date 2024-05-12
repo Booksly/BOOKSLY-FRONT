@@ -1,0 +1,229 @@
+.CustomerLoginPage .login-header {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 309px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30.6px 0 40px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .header-inner-left {
+  display: flex;
+  flex-direction: row;
+  width: 248px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .logo-goto-home {
+  margin: 2.5px 3px 2.5px 0;
+  display: flex;
+  width: 119px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .image-13 {
+  border-radius: 23px;
+  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
+  width: 119px;
+  height: 60px;
+}
+.CustomerLoginPage .header-buttons {
+  position: relative;
+  width: 126px;
+  height: 65px;
+}
+.CustomerLoginPage .nav-box {
+  background: #ffffff;
+  position: absolute;
+  right: -18px;
+  bottom: 0px;
+  display: flex;
+  padding: 23.5px 0.4px 23.5px 0;
+  width: 144px;
+  height: 65px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .header-inner-right {
+  margin: 21.5px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .icon-home {
+  margin: 1px 10px 1px 0;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .vector {
+  width: 20px;
+  height: 20px;
+}
+.CustomerLoginPage .go-mypage {
+  display: flex;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .container {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+.CustomerLoginPage .container {
+  position: relative;
+  margin: 0 50.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 1174.5px;
+  box-sizing: border-box;
+}
+.container-1 {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 424px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .rectangle-7 {
+  position: absolute;
+  top: 69px;
+  right: 0px;
+  width: 720px;
+  height: 955px;
+}
+.CustomerLoginPage .frame-10 {
+  position: relative;
+  margin: 0 754px 94px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 274px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .container-2 {
+  margin-right: 15px;
+  width: 167px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
+.CustomerLoginPage .container-3 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+}
+.CustomerLoginPage .line-5 {
+  background: #ff5925;
+  position: relative;
+  margin: 0 936px 3px 0;
+  width: 92px;
+  height: 5px;
+}
+.CustomerLoginPage .line-6 {
+  background: #d3d3d3;
+  margin: 10px 18px 6px 0;
+  width: 106px;
+  height: 2px;
+}
+.CustomerLoginPage .line-7 {
+  margin: 8px 0;
+  width: 106px;
+  height: 2px;
+}
+.CustomerLoginPage .container-4 {
+  margin-right: 18.3px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+}
+.CustomerLoginPage .frame-12 {
+  border-radius: 25px;
+  background: #00ff85;
+  position: relative;
+  display: flex;
+  padding: 11.8px 11.1px 12.5px 11.8px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .vector-1 {
+  width: 27.1px;
+  height: 25.7px;
+}
+.CustomerLoginPage .frame-13 {
+  border-radius: 25px;
+  background: #fff500;
+  position: relative;
+  display: flex;
+  padding: 15.3px 13.6px 13.8px 13.6px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .rikakao-talk-fill {
+  display: flex;
+  width: 22.8px;
+  height: 20.9px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .vector-2 {
+  width: 22.8px;
+  height: 20.9px;
+}
+.CustomerLoginPage .frame-14 {
+  border-radius: 25px;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .flat-color-iconsgoogle {
+  width: 26px;
+  height: 26px;
+}
+.CustomerLoginPage .vector-7 {
+  margin: 4px 0 26px 0;
+  width: 10.5px;
+  height: 20px;
+}
+.CustomerLoginPage .container-1 {
+  position: relative;
+  margin: 0 139px 26px 139px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .container-2 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  width: 250px;
+  box-sizing: border-box;
+}
+.CustomerLoginPage .container-5 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000000;
+}
