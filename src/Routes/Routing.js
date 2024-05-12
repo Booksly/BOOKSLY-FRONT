@@ -23,6 +23,7 @@ import DetailedStoreInfo from "../pages/DetailedStoreInfoPage/DetailedStoreInfo"
 import Reservation from "../pages/ReservationPage/Reservation";
 
 // 가게 주인 페이지
+import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function Routing() {
@@ -52,7 +53,7 @@ function Routing() {
           <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
           <Route path="/Reservation" element={<Reservation />} />
           {/*가게주인용*/}
-          <Route></Route>
+          <Route path="StoreOwnerMain" element={<StoreOwnerMain/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,4361 @@
+.StoreOwnerMain {
+    background: #FDF8F3;
+    display: flex;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .frame-364 {
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    height: 2110px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .frame-453 {
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 1190px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .reservation {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 36px 15px 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reservation {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 44px 15px 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .frame-527 {
+    margin-bottom: 10px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-list-calen {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-list {
+    margin-right: 41.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .new-wait-list {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-1 {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-2 {
+    margin-right: 11.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-3 {
+    margin-right: 9.6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-4 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-5 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-6 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-7 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list-1 {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date-1 {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-8 {
+    margin-right: 11.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-9 {
+    margin-right: 8.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-10 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button-1 {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button-1 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-11 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button-1 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-12 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button-1 {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-13 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list-2 {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date-2 {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-14 {
+    margin-right: 9.5px;
+    width: 35.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-15 {
+    margin-right: 8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-16 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button-2 {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button-2 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-17 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button-2 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-18 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button-2 {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-19 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .frame-523 {
+    margin: 0 0.2px;
+    display: flex;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-20 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #848484;
+}
+.StoreOwnerMain .imminent-wait-list {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-21 {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list-3 {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date-3 {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-22 {
+    margin-right: 11.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-23 {
+    margin-right: 8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-24 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button-3 {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button-3 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-25 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button-3 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-26 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button-3 {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-27 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list-4 {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date-4 {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-28 {
+    margin-right: 11.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-29 {
+    margin-right: 8.2px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-30 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button-4 {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button-4 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-31 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button-4 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-32 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button-4 {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-33 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .wait-list-5 {
+    margin: 0 0 5px 25px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wait-reserv-date-5 {
+    border-bottom: 1px solid #FF5925;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 4px 5px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-34 {
+    margin-right: 11.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-35 {
+    margin-right: 8.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-36 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .wait-reserv-button-5 {
+    margin: 3.5px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .confirm-button-5 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.4px 0 2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-37 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .refuse-button-5 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 0 2.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-38 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .plus-button-5 {
+    margin-bottom: 7px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-39 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #000000;
+}
+.StoreOwnerMain .frame-5231 {
+    margin: 0 0.2px;
+    display: flex;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-40 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #848484;
+}
+.StoreOwnerMain .frame-536 {
+    margin: 18px 0 26px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 388px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .ellipse-5 {
+    border-radius: 2.5px;
+    background: #FF5925;
+    position: absolute;
+    left: -4.9px;
+    top: -2px;
+    width: 5px;
+    height: 5px;
+}
+.StoreOwnerMain .ellipse-6 {
+    border-radius: 2.5px;
+    background: #FF5925;
+    position: absolute;
+    left: -6.8px;
+    top: -2px;
+    width: 5px;
+    height: 5px;
+}
+.StoreOwnerMain .ellipse-7 {
+    border-radius: 2.5px;
+    background: #FF5925;
+    position: absolute;
+    left: -8.2px;
+    top: -1px;
+    width: 5px;
+    height: 5px;
+}
+.StoreOwnerMain .ellipse-8 {
+    border-radius: 2.5px;
+    background: #FF5925;
+    position: absolute;
+    left: -9.2px;
+    top: -1px;
+    width: 5px;
+    height: 5px;
+}
+.StoreOwnerMain .menu-box {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .menu-list {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 63.3px;
+    padding: 20px 30px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-62 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .menu {
+    margin: 0 10.1px 0 10.2px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-41 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-42 {
+    margin-right: 5.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-43 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-info-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-621 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .menu-1 {
+    margin: 0 10.1px 0 10.2px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-44 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-45 {
+    margin-right: 5.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-46 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-info-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-622 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .menu-2 {
+    margin: 0 18.7px 0 18.8px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-47 {
+    margin-right: 5.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-48 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-49 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-info-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-623 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .menu-3 {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-50 {
+    margin-right: 5.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-51 {
+    margin-right: 5.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-52 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .frame-544 {
+    margin: 0 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-53 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #737373;
+}
+.StoreOwnerMain .staff-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-list {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 63.3px;
+    padding: 20px 30px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-img {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .staff {
+    margin: 0 6.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-54 {
+    margin-bottom: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-55 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .staff-info-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-img-1 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .staff-1 {
+    margin: 0 6.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-56 {
+    margin-bottom: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-57 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .staff-info-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-img-2 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .staff-2 {
+    margin: 0 6.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-58 {
+    margin-bottom: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-59 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .staff-info-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .staff-img-3 {
+    background: #D9D9D9;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMain .staff-3 {
+    margin: 0 6.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-60 {
+    margin-bottom: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-61 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .modify {
+    margin: 0 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-62 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #737373;
+}
+.StoreOwnerMain .frame-546 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin: 0 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 75px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-1 {
+    background: #D6B585;
+    position: absolute;
+    left: 250px;
+    bottom: 0px;
+    width: 2px;
+    height: 2110px;
+}
+.StoreOwnerMain .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-1 {
+    margin-bottom: 229px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .cpnavi-logo {
+    background: #FFFFFF;
+    position: relative;
+    padding: 20px;
+    width: 250px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .booksly-logo {
+    border-radius: 23px;
+    /*background: url('assets/images/Image13.png') 50% / cover no-repeat;*/
+    width: 119px;
+    height: 60px;
+}
+.StoreOwnerMain .cpsk-navi-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .cpnavi-bar {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-36 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-37 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-1 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-361 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-371 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-1 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-1 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-1 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-2 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4px 15px 0 15px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-4 {
+    background: #D9D9D9;
+    margin-bottom: 13.6px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .frame-464 {
+    margin: 0 96.6px 14.6px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-64 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .line-3 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .polygon-1 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .cpnavi-bar-21 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4px 15px 0 15px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-41 {
+    background: #D9D9D9;
+    margin-bottom: 13.6px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .frame-4641 {
+    margin: 0 96.6px 14.6px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-65 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .line-31 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .polygon-11 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .cpnavi-bar-22 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4px 15px 0 15px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-42 {
+    background: #D9D9D9;
+    margin-bottom: 13.6px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .frame-4642 {
+    margin: 0 62.7px 14.6px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-66 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .line-32 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .polygon-12 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .cpnavi-bar-2 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-362 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-372 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-2 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-2 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-2 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-3 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-363 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-373 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-3 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-3 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-3 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-23 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4px 15px 0 15px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-43 {
+    background: #D9D9D9;
+    margin-bottom: 13.6px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .frame-4643 {
+    margin: 0 96.6px 14.6px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-67 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .line-33 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .polygon-13 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .cpnavi-bar-24 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4px 15px 0 15px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-44 {
+    background: #D9D9D9;
+    margin-bottom: 13.6px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .frame-4644 {
+    margin: 0 81.9px 14.6px 0;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-68 {
+    margin: 0.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .line-34 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .polygon-14 {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .cpnavi-bar-4 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-364 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-374 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-4 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-4 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-4 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-5 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-365 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-375 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-5 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-5 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-5 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .cpnavi-bar-6 {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 0 15px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .line-366 {
+    background: #D9D9D9;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .line-376 {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 1px;
+}
+.StoreOwnerMain .cp-navi-search-name-6 {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .my-6 {
+    margin: 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .vector-6 {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.StoreOwnerMain .line-35 {
+    background: #D3D3D3;
+    margin: 0 15px;
+    width: 220px;
+    height: 2px;
+}
+.StoreOwnerMain .line-2 {
+    background: #D3D3D3;
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    right: 15px;
+    height: 1px;
+}
+.StoreOwnerMain .alarm {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-69 {
+    margin: 4.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .container-70 {
+    margin: 4.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .alarm-button {
+    /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+.StoreOwnerMain .container-71 {
+    margin: 4px 11px 4px 0;
+    display: inline-block;
+    width: 129px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMain .shop-top-navi-top {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 26.4px 10px 0;
+    width: 1190px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-top-navi-bottom {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-top-navi-member-info {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.container-72 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+}
+.StoreOwnerMain .container-72 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.StoreOwnerMain .container-73 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .visitors {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .today-visitors {
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-74 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .regular-customer-num {
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-top-navi-id {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-75 {
+    margin-right: 15.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .container-76 {
+    margin-top: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #494949;
+}
+.StoreOwnerMain .shop-top-navi-profile {
+    border-radius: 35px;
+    background: #D9D9D9;
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    padding: 23px 1px 24px 0;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .member-info {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .numerical-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 340.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-77 {
+    margin: 0 5.8px 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .container-78 {
+    margin-right: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .container-79 {
+    margin-right: 5.8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .profile-select {
+    /*background: url('assets/images/ProfileSelect.png') 50% / cover no-repeat;*/
+    position: relative;
+    width: 23px;
+    height: 23px;
+}
+.StoreOwnerMain .profile {
+    /*background: url('assets/images/Profile.png') 50% / cover no-repeat;*/
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 65px;
+    height: 65px;
+}
+.StoreOwnerMain .shop-top-navi-bottom-1 {
+    margin: 0 30px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .another-shop {
+    margin: 9px 0 5px 0;
+    display: flex;
+    width: 24px;
+    height: 16px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .vector-7 {
+    width: 24px;
+    height: 16px;
+}
+.StoreOwnerMain .container-80 {
+    margin-right: 15.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+}
+.StoreOwnerMain .container-81 {
+    margin-right: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMain .star-1 {
+    margin: 0.5px 5.4px 0.5px 0;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMain .container-82 {
+    margin-right: 0.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .container-83 {
+    margin-right: 5.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .container-84 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #737373;
+}
+.StoreOwnerMain .container-85 {
+    /*background: url('assets/images/Image10.png') 50% / cover no-repeat;*/
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .container-86 {
+    /*background: url('assets/images/Image3.png') 50% / cover no-repeat;*/
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .container-87 {
+    /*background: url('assets/images/Image6.png') 50% / cover no-repeat;*/
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .location-icon {
+    /*background: url('assets/images/Icon.png') 50% / cover no-repeat;*/
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .container-88 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000;
+}
+.StoreOwnerMain .container-89 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .container-90 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .container-91 {
+    margin-right: 5.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .container-92 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .shop-detailed-name-rv {
+    margin: 0 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-93 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .star-figure {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .star {
+    margin: 3px 5.5px 0 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-94 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .shop-detailed-review {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-95 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .shop-detailed-info-main {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-location {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .location {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .location-plus {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .phone-icon {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-location-plus {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-phone {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .time-icon {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-time {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-left {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-96 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #300EFF;
+}
+.StoreOwnerMain .container-97 {
+    margin-right: 5.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .profile-select-1 {
+    /*background: url('assets/images/ProfileSelect.png') 50% / cover no-repeat;*/
+    width: 23px;
+    height: 23px;
+}
+.StoreOwnerMain .shop-detailed-info {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 850px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-pic {
+    background: #A7A7A7;
+    display: flex;
+    padding: 56px 0;
+    width: 185px;
+    height: 135px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .shop-detailed-info-phones {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .modify-1 {
+    margin: 0 10.4px;
+    display: flex;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .today-reserv {
+    position: relative;
+    margin-right: 10.3px;
+    width: 352.7px;
+    height: 331px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .today {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-98 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.556;
+    color: #000000;
+}
+.StoreOwnerMain .group-502 {
+    border-radius: 5px;
+    display: flex;
+    width: 130px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .select-box-before {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 4px 4px 9px;
+    width: 130px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-99 {
+    margin-right: 9px;
+    width: 90px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .arrow-button-before {
+    position: relative;
+    margin: 1px 0;
+    width: 16px;
+    height: 16px;
+}
+.StoreOwnerMain .dldccheck {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .time-memo {
+    margin: 25px 72.4px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 168.6px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .time-note {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-100 {
+    margin-right: 8.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-101 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-1 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-102 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-1 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-103 {
+    margin-right: 7.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-104 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-2 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-105 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-2 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-106 {
+    margin-right: 8.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-107 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-3 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-108 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-3 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-109 {
+    margin-right: 7.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-110 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-2 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-111 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-4 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-112 {
+    margin-right: 7.8px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-113 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-21 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-114 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-5 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-115 {
+    margin-right: 7.9px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-116 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-22 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-117 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-6 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-118 {
+    margin-right: 8.3px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-119 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-23 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-120 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-7 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-121 {
+    margin-right: 7.7px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-122 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-24 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-123 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .time-note-8 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-124 {
+    margin-right: 8.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-125 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-25 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-126 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .deadline-dccheck {
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 111.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .check {
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-127 {
+    margin-right: 10.5px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 11px;
+    color: #000000;
+}
+.StoreOwnerMain .container-128 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 11px;
+    color: #000000;
+}
+.StoreOwnerMain .check-box {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-246 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-247 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-1 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2461 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2471 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-2 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2462 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2472 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-3 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2463 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2473 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-4 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2464 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2474 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-5 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2465 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2475 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-6 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2466 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2476 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-7 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2467 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2477 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .check-box-8 {
+    margin: 0 12px 13px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2468 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2478 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .all-reserv {
+    margin: 3px 0 22px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .time-note-9 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-129 {
+    margin-right: 8.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .container-130 {
+    margin-right: 5.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .menu-list-26 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .container-131 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMain .check-box-9 {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 78px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-2469 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .rectangle-2479 {
+    background: #ADADAD;
+    width: 17px;
+    height: 17px;
+}
+.StoreOwnerMain .frame-522 {
+    margin-right: 23.5px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-example-2 {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 386.5px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .month-header {
+    margin: 0 16.7px 22px 16.7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 353.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .icon-button {
+    border-radius: 3px;
+    margin: 4.1px 0 4.7px 0;
+    display: flex;
+    width: 6.6px;
+    height: 11.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .vector-10 {
+    width: 6.6px;
+    height: 11.2px;
+}
+.StoreOwnerMain .month-yyyy {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #172B4D;
+}
+.StoreOwnerMain .icon-button-1 {
+    border-radius: 3px;
+    margin: 4.1px 0 4.7px 0;
+    display: flex;
+    width: 6.6px;
+    height: 11.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .vector-11 {
+    width: 6.6px;
+    height: 11.2px;
+}
+.StoreOwnerMain .week-header {
+    background: #FFFFFF;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 14.8px 8px 13.8px;
+    width: 386.5px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .box {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .sun {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-1 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .mon {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-2 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .tue {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-3 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wed {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-4 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .thu {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-5 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .fri {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-6 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .sat {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days {
+    margin: 0 23.5px 12px 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 344px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-1 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-2 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-2 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-3 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-3 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-4 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-4 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-5 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-5 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-6 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-6 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-1 {
+    margin: 0 23.3px 12px 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 340.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-7 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-7 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-8 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-8 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-9 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-9 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-10 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-10 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-11 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-11 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-12 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-12 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-13 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-13 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-2 {
+    margin: 0 20.1px 12px 19.9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 346.5px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-14 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-14 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-15 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-15 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-16 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-16 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-17 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-17 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-18 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-18 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-19 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-19 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-20 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-20 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-3 {
+    margin: 0 19px 12px 20.3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 347.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-21 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-21 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-22 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-22 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-23 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-23 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-24 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-24 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-25 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-25 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-26 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-26 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-27 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-27 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-4 {
+    margin: 0 18.9px 12px 18.9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 348.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-28 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-28 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-29 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-29 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-30 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-30 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-31 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-31 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-32 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-32 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-33 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-33 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-34 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-34 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-5 {
+    margin: 0 23.3px 0 19.8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 343.4px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-35 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-35 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-36 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-36 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-37 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-37 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-38 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-38 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-39 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-39 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-40 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-40 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-41 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-41 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .container-132 {
+    margin-bottom: 18px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.556;
+    color: #000000;
+}
+.StoreOwnerMain .group-57 {
+    background: #CBCBCB;
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    padding: 43.9px 0 69px 0;
+    width: 5px;
+    height: 296px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .rectangle-138 {
+    background: #8F8F8F;
+    width: 5px;
+    height: 183px;
+}
+.StoreOwnerMain .month-header-1 {
+    margin: 0 16.7px 22px 16.7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 354.6px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .icon-button-2 {
+    border-radius: 3px;
+    margin: 4.1px 0 4.7px 0;
+    display: flex;
+    width: 6.6px;
+    height: 11.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .vector-12 {
+    width: 6.6px;
+    height: 11.2px;
+}
+.StoreOwnerMain .month-yyyy-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #172B4D;
+}
+.StoreOwnerMain .icon-button-3 {
+    border-radius: 3px;
+    margin: 4.1px 0 4.7px 0;
+    display: flex;
+    width: 6.6px;
+    height: 11.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .vector-13 {
+    width: 6.6px;
+    height: 11.2px;
+}
+.StoreOwnerMain .week-header-1 {
+    background: #FFFFFF;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 14.9px 8px 13.9px;
+    width: 388px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .box-7 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .sun-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-8 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .mon-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-9 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .tue-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-10 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .wed-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-11 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .thu-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-12 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .fri-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .box-13 {
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .sat-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.231;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-6 {
+    margin: 0 23.7px 12px 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 345.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-42 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-42 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-43 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-43 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-44 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-44 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-45 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-45 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-46 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-46 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-47 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-47 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-48 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-48 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-7 {
+    margin: 0 23.6px 12px 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 341.4px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-49 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-49 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-50 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-50 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-51 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-51 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-52 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-52 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-53 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-53 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-54 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-54 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-55 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-55 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-8 {
+    margin: 0 20.3px 12px 19.9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 347.8px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-56 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-56 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-57 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-57 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-58 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-58 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-59 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-59 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-60 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-60 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-61 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-61 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-62 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-62 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-9 {
+    margin: 0 19.2px 12px 20.3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 348.5px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-63 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-63 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-64 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-64 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-65 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-65 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-66 {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-66 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-67 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-67 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-68 {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-68 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-69 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-69 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-10 {
+    margin: 0 19.1px 12px 18.9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-70 {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-70 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-71 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-71 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-72 {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-72 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-73 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-73 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-74 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-74 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-75 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-75 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-76 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-76 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .week-days-11 {
+    margin: 0 23.6px 0 19.8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 344.6px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .calendar-day-77 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-77 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .calendar-day-78 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-78 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-79 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-79 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-80 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-80 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-81 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-81 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-82 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-82 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .calendar-day-83 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .value-83 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: rgba(68, 84, 111, 0.5);
+}
+.StoreOwnerMain .container-3 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}

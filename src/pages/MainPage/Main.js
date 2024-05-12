@@ -1,7 +1,7 @@
 // Main.js
 import React from 'react';
-import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
-import Mainmain from './contents_in_main'
+import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
+import Mainmain from './contents_in_main';
 
 function Main() {
     return (
