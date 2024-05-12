@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./StoreSearchPage.css";
-import { Link } from "react-router-dom";
 import search_button from "../../assets/search_button.png";
 import home_button from "../../assets/home_button.png";
 
-export default function StoreSearchPage() {
+function StoreSearchPage() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="StoreSearchPage">
       <div className="container-4">
@@ -61,9 +70,19 @@ export default function StoreSearchPage() {
           <div className="select-option-padding">
             <div className="container-5">
               <div className="container-6">
-                <Link to="/RegionSelection">
-                  <button className="container-7">지역을 선택해 주세요</button>
-                </Link>
+                <button className="container-7" onClick={handleOpenPopup}>
+                  지역을 선택해 주세요
+                </button>
+                {isPopupOpen && (
+                  <div className="Popup">
+                    <div className="Popup-content">
+                      <span className="close" onClick={handleClosePopup}>
+                        &times;
+                      </span>
+                      <button onClick={handleClosePopup}>닫기</button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             <div className="container-8">
@@ -340,3 +359,5 @@ export default function StoreSearchPage() {
     </div>
   );
 }
+
+export default StoreSearchPage;
