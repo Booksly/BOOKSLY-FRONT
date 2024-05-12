@@ -17,7 +17,7 @@ export default function MyHomeAllReserv() {
                                 <div className="line-372">
                                 </div>
                                 <div className="container">
-                                    <img className="vector-2" src="assets/vectors/Vector408_x2.svg" />
+                                    {/*<img className="vector-2" src="assets/vectors/Vector408_x2.svg" />*/}
                                     <div className="my-3">
                                         My 홈
                                     </div>
@@ -29,7 +29,7 @@ export default function MyHomeAllReserv() {
                                 <div className="line-37">
                                 </div>
                                 <div className="container-5">
-                                    <img className="vector" src="assets/vectors/Vector85_x2.svg" />
+                                    {/*<img className="vector" src="assets/vectors/Vector85_x2.svg" />*/}
                                     <div className="my-1">
                                         My 예약 조회
                                     </div>
@@ -42,7 +42,7 @@ export default function MyHomeAllReserv() {
                                     <div className="line-4">
                                     </div>
                                     <div className="container-6">
-                                        <img className="polygon-1" src="assets/vectors/Polygon1119_x2.svg" />
+                                        {/*<img className="polygon-1" src="assets/vectors/Polygon1119_x2.svg" />*/}
                                         <div className="container-1">
                                             전체 예약 조회
                                         </div>
@@ -57,7 +57,7 @@ export default function MyHomeAllReserv() {
                                 <div className="line-41">
                                 </div>
                                 <div className="container-1">
-                                    <img className="polygon-11" src="assets/vectors/Polygon154_x2.svg" />
+                                    {/*<img className="polygon-11" src="assets/vectors/Polygon154_x2.svg" />*/}
                                     <div className="container-2">
                                         현재 예약 조회
                                     </div>
@@ -69,7 +69,7 @@ export default function MyHomeAllReserv() {
                                 <div className="line-371">
                                 </div>
                                 <div className="container-9">
-                                    <img className="vector-1" src="assets/vectors/Vector668_x2.svg" />
+                                    {/*<img className="vector-1" src="assets/vectors/Vector668_x2.svg" />*/}
                                     <div className="my-2">
                                         단골 가게 조회
                                     </div>
@@ -87,7 +87,7 @@ export default function MyHomeAllReserv() {
                         <div className="container-8">
                             <div className="goto-mypage">
                                 <div className="icon-home">
-                                    <img className="vector-3" src="assets/vectors/Vector158_x2.svg" />
+                                    {/*<img className="vector-3" src="assets/vectors/Vector158_x2.svg" />*/}
                                 </div>
                                 <div className="go-mypage">
                   <span className="my-page">
@@ -141,7 +141,7 @@ export default function MyHomeAllReserv() {
                             <div className="container-31">
                                 전체
                             </div>
-                            <img className="group-16" src="assets/vectors/Group1635_x2.svg" />
+                            {/*<img className="group-16" src="assets/vectors/Group1635_x2.svg" />*/}
                         </div>
                     </div>
                     <div className="frame-20">
@@ -405,7 +405,7 @@ export default function MyHomeAllReserv() {
                         Review
                       </span>
                                         </div>
-                                        <img className="polygon-12" src="assets/vectors/Polygon1100_x2.svg" />
+                                        {/*<img className="polygon-12" src="assets/vectors/Polygon1100_x2.svg" />*/}
                                     </div>
                                 </div>
                             </div>
@@ -481,7 +481,7 @@ export default function MyHomeAllReserv() {
                         Review
                       </span>
                                         </div>
-                                        <img className="polygon-13" src="assets/vectors/Polygon125_x2.svg" />
+                                        {/*<img className="polygon-13" src="assets/vectors/Polygon125_x2.svg" />*/}
                                     </div>
                                 </div>
                             </div>
