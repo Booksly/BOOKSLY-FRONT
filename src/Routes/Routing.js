@@ -1,6 +1,8 @@
 import React from "react";
 import App from "../App";
 
+// 헤더 & 내비게이션
+import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
 
 // Main Home 페이지 
 import Main from "../pages/MainPage/Main";
@@ -33,6 +35,8 @@ function Routing() {
         <Routes>
           {/*시작 메인 페이지*/}
           <Route path="/" element={<App />} />
+          {/*헤더 & 내비게이션*/}
+          <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader/>}/>
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main/>} >
             <Route path="login" element={<div>로그인</div>} />

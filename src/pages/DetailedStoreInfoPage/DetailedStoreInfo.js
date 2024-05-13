@@ -9,6 +9,7 @@ export default function DetailedStoreInfo() {
         navigate("/Reservation")
     }
     return (
+        <div className="back">
         <div className="DetailedStoreInfo">
             <div className="container">
                 <div className="header-inner">
@@ -339,6 +340,7 @@ export default function DetailedStoreInfo() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
