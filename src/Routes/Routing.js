@@ -5,6 +5,7 @@ import App from "../App";
 import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
 import LoginBeforeMainHeader from "../pages/nav/LoginBeforeMainHeader";
 import ShopOwnerLeftNavi from "../pages/nav/ShopOwnerLeftNavi";
+import ShopOwnerTopNavi from "../pages/nav/ShopOwnerTopNavi";
 
 // Main Home 페이지 
 import Main from "../pages/MainPage/Main";
@@ -41,6 +42,7 @@ function Routing() {
           <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader/>}/>
           <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader/>}/>
           <Route path="/ShopOwnerLeftNavi" element={<ShopOwnerLeftNavi/>}/>
+          <Route path="/ShopOwnerTopNavi" element={<ShopOwnerTopNavi/>}/>
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main/>} >
             <Route path="login" element={<div>로그인</div>} />
@@ -61,7 +63,7 @@ function Routing() {
           <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
           <Route path="/Reservation" element={<Reservation />} />
           {/*가게주인용*/}
-          <Route path="StoreOwnerMain" element={<StoreOwnerMain/>}/>
+          <Route path="StoreOwnerMain" element={<StoreOwnerMain/>} />
         </Routes>
       </BrowserRouter>
     </div>
