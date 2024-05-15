@@ -3,6 +3,7 @@ import App from "../App";
 
 // 헤더 & 내비게이션
 import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
+import LoginBeforeMainHeader from "../pages/nav/LoginBeforeMainHeader";
 
 // Main Home 페이지 
 import Main from "../pages/MainPage/Main";
@@ -37,6 +38,7 @@ function Routing() {
           <Route path="/" element={<App />} />
           {/*헤더 & 내비게이션*/}
           <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader/>}/>
+          <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader/>}/>
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main/>} >
             <Route path="login" element={<div>로그인</div>} />

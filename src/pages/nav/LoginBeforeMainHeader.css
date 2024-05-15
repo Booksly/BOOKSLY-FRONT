@@ -1,0 +1,134 @@
+.back {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    height: fit-content;
+    background: #FDF8F3;
+}
+.LoginBeforeMainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginBeforeMainHeader .header-inner-before {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .header-inner-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 570px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .logo-goto-home {
+    margin-top: 5px;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .booksly-logo {
+    border-radius: 23px;
+    background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
+    width: 100px;
+    height: 50px;
+}
+.LoginBeforeMainHeader .header-buttons {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .currentNav {
+    background: #FFFFFF;
+    display: flex;
+    padding: 21px 35px 10px 35px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .currentPageBar {
+    border-bottom: 4px solid #FF5925;
+    display: flex;
+}
+.LoginBeforeMainHeader .nav-box {
+    background: #FFFFFF;
+    display: flex;
+    padding: 21px 35px 21px 35px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .PageName {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    color: #000000;
+}
+/**/
+
+.LoginBeforeMainHeader .search-border {
+    border-radius: 30px;
+    border: 2px solid #FF5925;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 5px 13px;
+    width: 445px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .icon-search {
+    display: flex;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .vector {
+    width: 30px;
+    height: 30px;
+}
+.LoginBeforeMainHeader .input-search {
+    margin-left: 70px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .search {
+    overflow-wrap: break-word;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #777777;
+}
+.LoginBeforeMainHeader .header-inner-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .loginButton {
+    border-radius: 30px;
+    background: #FF5925;
+    display: flex;
+    padding: 9px 73px 9px 73px;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.LoginBeforeMainHeader .login {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
