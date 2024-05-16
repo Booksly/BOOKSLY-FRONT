@@ -1,0 +1,307 @@
+.back {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: fit-content;
+  background: #fdf8f3;
+}
+.StoreOwnerLogInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.StoreOwnerLogInPage .frame-508 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .frame-509 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .frame-510 {
+  margin-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 274px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .frame-511 {
+  margin-bottom: 13.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .rectangle-7 {
+  width: 720px;
+  height: 955px;
+}
+.StoreOwnerLogInPage .frame-10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 274px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-1 {
+  margin-right: 15px;
+  width: 167px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .container-2 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .line-5 {
+  background: #ff5925;
+  margin-bottom: 3px;
+  width: 92px;
+  height: 5px;
+}
+.StoreOwnerLogInPage .frame-77 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .frame-56 {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 203.5px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-3 {
+  margin: 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 13px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .container-4 {
+  margin: 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 13px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .rectangle-16 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.StoreOwnerLogInPage .rectangle-17 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.StoreOwnerLogInPage .frame-406 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-bottom: 16px;
+  padding: 13px 14px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-5 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .frame-407 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-bottom: 16px;
+  padding: 13px 14px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-6 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .frame-408 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  padding: 13px 0;
+  width: 420px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-7 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #fdf8f3;
+}
+.StoreOwnerLogInPage .frame-109 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-8 {
+  margin: 1px 5.2px 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .container-9 {
+  margin-right: 5.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .container-10 {
+  margin: 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .login-header {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30.6px 0 40px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .header-inner-left {
+  display: flex;
+  flex-direction: row;
+  width: 229px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .logo-goto-home {
+  margin: 5px 3px 5px 0;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .image-13 {
+  border-radius: 23px;
+  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
+  width: 100px;
+  height: 50px;
+}
+.StoreOwnerLogInPage .header-buttons {
+  position: relative;
+  width: 126px;
+  height: 60px;
+}
+.StoreOwnerLogInPage .nav-box {
+  background: #ffffff;
+  position: absolute;
+  right: -18px;
+  bottom: 0px;
+  display: flex;
+  padding: 21px 0.4px 21px 0;
+  width: 144px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .header-inner-right {
+  margin: 19px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .icon-home {
+  margin: 1px 10px 1px 0;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .vector {
+  width: 20px;
+  height: 20px;
+}
+.StoreOwnerLogInPage .go-mypage {
+  display: flex;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-11 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+.StoreOwnerLogInPage .container {
+  margin-left: 133px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-1 {
+  margin: 239px 167px 357.5px 0;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  box-sizing: border-box;
+}
+.StoreOwnerLogInPage .container-12 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #000000;
+}

@@ -1,8 +1,21 @@
+.back {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: fit-content;
+  background: #fdf8f3;
+}
+.CustomerLoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .CustomerLoginPage .login-header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #ffffff;
-  position: relative;
-  margin-bottom: 309px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,34 +87,33 @@
   color: #000000;
 }
 .CustomerLoginPage .container {
-  position: relative;
-  margin: 0 50.5px;
+  margin-left: 139px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-end;
-  width: 1174.5px;
+  width: fit-content;
   box-sizing: border-box;
 }
 .CustomerLoginPage .container-1 {
+  margin: 305px 169px 424px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container-1 {
   background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 424px;
   width: 1440px;
   box-sizing: border-box;
 }
 .CustomerLoginPage .rectangle-7 {
-  position: absolute;
-  top: 69px;
-  right: 0px;
   width: 720px;
   height: 955px;
 }
 .CustomerLoginPage .frame-10 {
-  position: relative;
-  margin: 0 754px 94px 0;
+  margin: 0 4px 94px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -126,8 +138,7 @@
 }
 .CustomerLoginPage .line-5 {
   background: #ff5925;
-  position: relative;
-  margin: 0 936px 3px 0;
+  margin: 0 186px 3px 0;
   width: 92px;
   height: 5px;
 }
@@ -198,21 +209,15 @@
   width: 26px;
   height: 26px;
 }
-.CustomerLoginPage .vector-7 {
-  margin: 4px 0 26px 0;
-  width: 10.5px;
-  height: 20px;
-}
-.CustomerLoginPage .container-1 {
-  position: relative;
-  margin: 0 139px 26px 139px;
+.CustomerLoginPage .container-2 {
+  margin-bottom: 26px;
   display: flex;
   flex-direction: row;
-  align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
 }
-.CustomerLoginPage .container-2 {
+.CustomerLoginPage .container-3 {
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   column-gap: 50px;
