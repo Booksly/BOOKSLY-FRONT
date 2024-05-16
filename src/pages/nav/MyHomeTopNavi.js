@@ -2,75 +2,73 @@ import './MyHomeTopNavi.css'
 
 export default function MyHomeTopNavi() {
     return (
-        <div className="back">
         <div className="MyHomeTopNavi">
-                <div className="myhome-top-navi">
-                    <div className="myhome-top-navi-top">
-                        <div className="myhomeTopNaviEtc">
-                            <div className="myhome">
-                                <div className="myhomeButton">
-                                </div>
-                                <div className="container-3">
+            <div className="MyHomeTopNavimyhome-top-navi">
+                <div className="MyHomeTopNavimyhome-top-navi-top">
+                    <div className="MyHomeTopNavimyhomeTopNaviEtc">
+                        <div className="MyHomeTopNavimyhome">
+                            <div className="MyHomeTopNavimyhomeButton">
+                            </div>
+                            <div className="MyHomeTopNavicontainer-3">
                                     My Page
-                                </div>
-                            </div>
-                            <div className="alarm">
-                                <div className="alarm-button">
-                                </div>
-                                <div className="alarmId">
-                                    아이디
-                                </div>
-                            </div>
-                            <div className="logoutButton">
-                                로그아웃
                             </div>
                         </div>
+                        <div className="MyHomeTopNavialarm">
+                            <div className="MyHomeTopNavialarm-button">
+                            </div>
+                            <div className="MyHomeTopNavialarmId">
+                                    아이디
+                            </div>
+                        </div>
+                        <div className="MyHomeTopNavilogoutButton">
+                                로그아웃
+                        </div>
                     </div>
-                    <div className="myhome-top-navi-bottom">
-                        <div className="myhome-top-navi-member-info">
-                            <div className="myhome-top-navi-profile">
-                                {/*<div className="profileSelectButton">*/}
+                </div>
+                <div className="MyHomeTopNavimyhome-top-navi-bottom">
+                    <div className="MyHomeTopNavimyhome-top-navi-member-info">
+                        <div className="MyHomeTopNavimyhome-top-navi-profile">
+                                {/*<div className="MyHomeTopNaviprofileSelectButton">*/}
                                 {/*</div>*/}
-                                <div className="profile">
+                            <div className="MyHomeTopNaviprofile">
+                            </div>
+                        </div>
+                        <div className="MyHomeTopNavimember-info">
+                            <div className="MyHomeTopNavimyhome-top-navi-id">
+                                <span className="MyHomeTopNaviprofileId">
+                                        아이디
+                                </span>
+                            </div>
+                            <div className="MyHomeTopNavinumerical-summary">
+                                <div className="MyHomeTopNavivisit">
+                                    <div className="MyHomeTopNavicontainer-9">
+                                            방문
+                                    </div>
+                                    <div className="MyHomeTopNavivisitNum">
+                                            10
+                                    </div>
+                                </div>
+                                <div className="MyHomeTopNavimyhomeReview">
+                                    <span className="MyHomeTopNavicontainer-10">
+                                            리뷰
+                                    </span>
+                                    <span className="MyHomeTopNavimyhomeReviewNum">
+                                            5
+                                    </span>
+                                </div>
+                                <div className="MyHomeTopNaviregular-shop">
+                                    <span className="MyHomeTopNavicontainer-11">
+                                            단골가게
+                                    </span>
+                                    <span className="MyHomeTopNaviregular-shop-num">
+                                            2
+                                    </span>
                                 </div>
                             </div>
-                            <div className="member-info">
-                                <div className="myhome-top-navi-id">
-                                    <span className="profileId">
-                                        아이디
-                                    </span>
-                                </div>
-                                <div className="numerical-summary">
-                                    <div className="visit">
-                                        <div className="container-9">
-                                            방문
-                                        </div>
-                                        <div className="visitNum">
-                                            10
-                                        </div>
-                                    </div>
-                                    <div className="myhomeReview">
-                                        <span className="container-10">
-                                            리뷰
-                                        </span>
-                                        <span className="myhomeReviewNum">
-                                            5
-                                        </span>
-                                    </div>
-                                    <div className="regular-shop">
-                                        <span className="container-11">
-                                            단골가게
-                                        </span>
-                                        <span className="regular-shop-num">
-                                            2
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="myhomeEmail">
-                                    <span className="profileEmail">
+                            <div className="MyHomeTopNavimyhomeEmail">
+                                <span className="MyHomeTopNaviprofileEmail">
                                         이메일정보
-                                    </span>
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </div>

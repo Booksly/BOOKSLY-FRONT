@@ -6,85 +6,84 @@ import React from "react";
 
 export default function MyHomeLeftNavi() {
     return (
-            <div className="MyHomeLeftNavi">
-                <MyHomeTopNavi/>
-                <div className="cpsk-navi">
-                    <div className="container">
-                        <div className="cpnavi-logo">
-                            <div className="booksly-logo">
-                            </div>
-                            <div className="logoLine">
-                            </div>
+        <div className="MyHomeLeftNavi">
+            <div className="MyHomeLeftNavicpsk-navi">
+                <div className="MyHomeLeftNavicontainer">
+                    <div className="MyHomeLeftNavicpnavi-logo">
+                        <div className="MyHomeLeftNavibooksly-logo">
                         </div>
-                        <div className="cpsk-navi-bar">
-                            <div className="cpnavi-bar">
-                                <div className="cpnaviLineTop">
-                                </div>
-                                <div className="cp-navi-search-name">
-                                    <img className="search" src={searchbar} alt={''}/>
-                                    <div className="cpnaviName">
-                                        My 홈
-                                    </div>
-                                </div>
-                                <div className="cpnaviLineBottom">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar">
-                                <div className="cpnaviLineTop">
-                                </div>
-                                <div className="cp-navi-search-name">
-                                    <img className="search" src={searchbar} alt={''}/>
-                                    <div className="cpnaviName">
-                                        My 예약 조회
-                                    </div>
-                                </div>
-                                <div className="cpnaviLineBottom">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar">
-                                <div className="cpnaviLineTop">
-                                </div>
-                                <div className="cp-navi-allow">
-                                    <img className="polygon" src={polygon} alt={''}/>
-                                    <div className="cpnaviNamecpnaviName">
-                                        전체 예약 조회
-                                    </div>
-                                </div>
-                                <div className="cpnaviLineBottom">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar">
-                                <div className="cpnaviLineTop">
-                                </div>
-                                <div className="cp-navi-allow">
-                                    <img className="polygon" src={polygon} alt={''}/>
-                                    <div className="cpnaviNamecpnaviName">
-                                        현재 예약 조회
-                                    </div>
-                                </div>
-                                <div className="cpnaviLineBottom">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar">
-                                <div className="cpnaviLineTop">
-                                </div>
-                                <div className="cp-navi-search-name">
-                                    <img className="search" src={searchbar} alt={''}/>
-                                    <div className="cpnaviName">
-                                        단골 가게 조회
-                                    </div>
-                                </div>
-                                <div className="cpnaviLineBottom">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="naviBottomLine">
+                        <div className="MyHomeLeftNavilogoLine">
                         </div>
                     </div>
-                    <div className="line">
+                    <div className="MyHomeLeftNavicpsk-navi-bar">
+                        <div className="MyHomeLeftNavicpnavi-bar">
+                            <div className="MyHomeLeftNavicpnaviLineTop">
+                            </div>
+                            <div className="MyHomeLeftNavicp-navi-search-name">
+                                <img className="MyHomeLeftNavisearch" src={searchbar} alt={''}/>
+                                <div className="MyHomeLeftNavicpnaviName">
+                                    My 홈
+                                </div>
+                            </div>
+                            <div className="MyHomeLeftNavicpnaviLineBottom">
+                            </div>
+                        </div>
+                        <div className="MyHomeLeftNavicpnavi-bar">
+                            <div className="MyHomeLeftNavicpnaviLineTop">
+                            </div>
+                            <div className="MyHomeLeftNavicp-navi-search-name">
+                                <img className="MyHomeLeftNavisearch" src={searchbar} alt={''}/>
+                                <div className="MyHomeLeftNavicpnaviName">
+                                    My 예약 조회
+                                </div>
+                            </div>
+                            <div className="MyHomeLeftNavicpnaviLineBottom">
+                            </div>
+                        </div>
+                        <div className="MyHomeLeftNavicpnavi-bar">
+                            <div className="MyHomeLeftNavicpnaviLineTop">
+                            </div>
+                            <div className="MyHomeLeftNavicp-navi-allow">
+                                <img className="MyHomeLeftNavipolygon" src={polygon} alt={''}/>
+                                <div className="MyHomeLeftNavicpnaviNamecpnaviName">
+                                    전체 예약 조회
+                                </div>
+                            </div>
+                            <div className="MyHomeLeftNavicpnaviLineBottom">
+                            </div>
+                        </div>
+                        <div className="MyHomeLeftNavicpnavi-bar">
+                            <div className="MyHomeLeftNavicpnaviLineTop">
+                            </div>
+                            <div className="MyHomeLeftNavicp-navi-allow">
+                                <img className="MyHomeLeftNavipolygon" src={polygon} alt={''}/>
+                                <div className="MyHomeLeftNavicpnaviNamecpnaviName">
+                                    현재 예약 조회
+                                </div>
+                            </div>
+                            <div className="MyHomeLeftNavicpnaviLineBottom">
+                            </div>
+                        </div>
+                        <div className="MyHomeLeftNavicpnavi-bar">
+                            <div className="MyHomeLeftNavicpnaviLineTop">
+                            </div>
+                            <div className="MyHomeLeftNavicp-navi-search-name">
+                                <img className="MyHomeLeftNavisearch" src={searchbar} alt={''}/>
+                                <div className="MyHomeLeftNavicpnaviName">
+                                    단골 가게 조회
+                                </div>
+                            </div>
+                            <div className="MyHomeLeftNavicpnaviLineBottom">
+                            </div>
+                        </div>
+                    </div>
+                    <div className="MyHomeLeftNavinaviBottomLine">
                     </div>
                 </div>
+                <div className="MyHomeLeftNaviline">
+                </div>
             </div>
+            {/*<MyHomeTopNavi/>*/}
+        </div>
     )
 }
