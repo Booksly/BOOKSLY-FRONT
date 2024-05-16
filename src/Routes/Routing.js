@@ -44,10 +44,9 @@ function Routing() {
           <Route path="/ShopOwnerLeftNavi" element={<ShopOwnerLeftNavi/>}/>
           <Route path="/ShopOwnerTopNavi" element={<ShopOwnerTopNavi/>}/>
           {/*Main Home 페이지*/}
-          <Route path="/MainHome" element={<Main/>} >
-            <Route path="login" element={<div>로그인</div>} />
-            <Route path="logout" element={<div>로그아웃</div>}/>
-          </Route>
+          <Route path="/MainHome" element={<Main/>} />
+          <Route path="login" element={<div>로그인</div>} />
+          <Route path="logout" element={<div>로그아웃</div>}/>
           {/*로그인 페이지*/}
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
