@@ -1,21 +1,10 @@
-.back {
-    position: absolute;
-    top:0px;
-    bottom: 0px;
-    right:0px;
-    left:0px;
-    height: fit-content;
-    background: #FDF8F3;
-    font-family: 'Inter';
-}
 .MyHomeTopNavi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: fit-content;
 }
 .MyHomeTopNavi .myhome-top-navi  {
     background: #FFFFFF;
     display: flex;
+    margin-left: 250px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;

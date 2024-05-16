@@ -1,11 +1,13 @@
 import './MyHomeLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
+import MyHomeTopNavi from "./MyHomeTopNavi";
+import React from "react";
 
 export default function MyHomeLeftNavi() {
     return (
-        <div className="back">
             <div className="MyHomeLeftNavi">
+                <MyHomeTopNavi/>
                 <div className="cpsk-navi">
                     <div className="container">
                         <div className="cpnavi-logo">
@@ -84,6 +86,5 @@ export default function MyHomeLeftNavi() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

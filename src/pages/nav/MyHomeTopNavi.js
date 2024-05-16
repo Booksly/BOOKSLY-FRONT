@@ -1,10 +1,9 @@
 import './MyHomeTopNavi.css'
-import bottomAllow from "../../assets/bottomAllow.png";
 
 export default function MyHomeTopNavi() {
     return (
         <div className="back">
-            <div className="MyHomeTopNavi">
+        <div className="MyHomeTopNavi">
                 <div className="myhome-top-navi">
                     <div className="myhome-top-navi-top">
                         <div className="myhomeTopNaviEtc">

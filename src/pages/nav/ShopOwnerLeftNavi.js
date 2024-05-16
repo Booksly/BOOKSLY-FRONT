@@ -1,11 +1,12 @@
 import './ShopOwnerLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
+import ShopOwnerTopNavi from "./ShopOwnerTopNavi";
 
 export default function ShopOwnerLeftNavi() {
     return (
-        <div className="back">
         <div className="ShopOwnerLeftNavi">
+            <ShopOwnerTopNavi/>
             <div className="cpsk-navi">
                 <div className="container">
                     <div className="cpnavi-logo">
@@ -166,7 +167,6 @@ export default function ShopOwnerLeftNavi() {
                 <div className="line">
                 </div>
             </div>
-        </div>
         </div>
     )
 }

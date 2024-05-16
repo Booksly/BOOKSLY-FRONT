@@ -1,27 +1,20 @@
-.back {
-    position: absolute;
-    top:0px;
-    bottom: 0px;
-    right:0px;
-    left:0px;
-    height: fit-content;
-    background: #FDF8F3;
-}
 .MyHomeLeftNavi {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 1440px;
 }
 .MyHomeLeftNavi .cpsk-navi {
     background: #FFFFFF;
     display: flex;
+    width: fit-content;
+    height: 100vh;
     box-sizing: border-box;
 }
 .MyHomeLeftNavi .container {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 250px;
     height: fit-content;
     box-sizing: border-box;
 }
@@ -29,7 +22,7 @@
     background: #FFFFFF;
     position: relative;
     padding: 25px 20px;
-    width: 100%;
+    width: 250px;
     height: 100px;
     box-sizing: border-box;
 }
@@ -52,7 +45,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 250px;
     box-sizing: border-box;
 }
 .MyHomeLeftNavi .cpnavi-bar {
@@ -60,7 +53,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
-    width: 100%;
+    width: 250px;
     box-sizing: border-box;
 }
 .MyHomeLeftNavi .cpnaviLineTop {
@@ -117,13 +110,13 @@
     background: #D3D3D3;
     margin: 0 15px;
     width: 220px;
-    height: 2px;
+    height: 1px;
 }
 .MyHomeLeftNavi .line {
     background: #D6B585;
     position: absolute;
     margin-left: 250px;
-    top:0px;
+    top:0;
     width: 2px;
     height: 100vh;
 }
