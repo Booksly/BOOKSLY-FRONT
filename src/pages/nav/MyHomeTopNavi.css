@@ -1,0 +1,244 @@
+.back {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    height: fit-content;
+    background: #FDF8F3;
+    font-family: 'Inter';
+}
+.MyHomeTopNavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MyHomeTopNavi .myhome-top-navi  {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 1190px;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .myhome-top-navi-top {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1190px;
+    height: 45px;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .myhomeTopNaviEtc {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.MyHomeTopNavi .myhome {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+.MyHomeTopNavi .myhomeButton {
+    background: url('../../assets/home_button.png') 50% / cover no-repeat;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+.MyHomeTopNavi .container-3 {
+    margin: 1px 0 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeTopNavi .alarm {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+.MyHomeTopNavi .alarm-button {
+    background: url('../../assets/alarm_button.png') 50% / cover no-repeat;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+.MyHomeTopNavi .alarmId {
+    margin: 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeTopNavi .logoutButton {
+    margin: 1px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+
+.MyHomeTopNavi .myhome-top-navi-bottom {
+    margin-left: 60px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .myhome-top-navi-member-info {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 70px;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .myhome-top-navi-profile {
+    border-radius: 35px;
+    background: #D9D9D9;
+    position: relative;
+    margin-right: 30px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .profileSelectButton {
+    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
+    position: relative;
+    margin-top: 23px;
+    margin-left: 25px;
+    width: 24px;
+    height: 24px;
+}
+.MyHomeTopNavi .profile {
+    border-radius: 35px;
+    background: url('../../assets/myhomeProfile.png') 50% / cover no-repeat;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+.MyHomeTopNavi .member-info {
+    /*margin: 10px 0;*/
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .myhome-top-navi-id {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .profileId {
+    margin-right: 15px;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeTopNavi .profileInfoChangeBt {
+    margin-top: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 13px;
+    color: #494949;
+}
+.MyHomeTopNavi .numerical-summary {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .visit {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.MyHomeTopNavi .container-9 {
+    margin-right: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .visitNum {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .myhomeReview {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.MyHomeTopNavi .container-10 {
+    margin-right: 5px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .myhomeReviewNum {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .regular-shop {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .container-11 {
+    margin-right: 5px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .regular-shop-num {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeTopNavi .myhomeEmail {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeTopNavi .profileEmail {
+    margin-right: 15px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
