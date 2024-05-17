@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
 }
-.LoginPageNav .header-inner-before {
+.LoginPageNav .LoginPageNavheader-inner-before {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     display: flex;
@@ -22,7 +22,7 @@
     width: 1440px;
     box-sizing: border-box;
 }
-.LoginPageNav .header-inner-left {
+.LoginPageNav .LoginPageNavheader-inner-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,41 +30,41 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.LoginPageNav .logo-goto-home {
+.LoginPageNav .LoginPageNavlogo-goto-home {
     margin-top: 5px;
     display: flex;
     width: 100px;
     height: 50px;
     box-sizing: border-box;
 }
-.LoginPageNav .booksly-logo {
+.LoginPageNav .LoginPageNavbooksly-logo {
     border-radius: 23px;
     background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
     width: 100px;
     height: 50px;
 }
-.LoginPageNav .header-buttons {
+.LoginPageNav .LoginPageNavheader-buttons {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.LoginPageNav .currentNav {
+.LoginPageNav .LoginPageNavcurrentNav {
     background: #FFFFFF;
     display: flex;
     padding: 21px 35px 10px 35px;
     box-sizing: border-box;
 }
-.LoginPageNav .currentPageBar {
+.LoginPageNav .LoginPageNavcurrentPageBar {
     /*border-bottom: 4px solid #FF5925;*/
     display: flex;
 }
-.LoginPageNav .nav-box {
+.LoginPageNav .LoginPageNavnav-box {
     background: #FFFFFF;
     display: flex;
     padding: 21px 35px 21px 35px;
     box-sizing: border-box;
 }
-.LoginPageNav .PageName {
+.LoginPageNav .LoginPageNavPageName {
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 700;
@@ -74,7 +74,7 @@
 }
 /**/
 
-.LoginPageNav .header-inner-right {
+.LoginPageNav .LoginPageNavheader-inner-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,27 +83,27 @@
     margin-top: 10px;
     box-sizing: border-box;
 }
-.LoginPageNav .headerRightDiv {
+.LoginPageNav .LoginPageNavheaderRightDiv {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
-.LoginPageNav .icon {
+.LoginPageNav .LoginPageNavicon {
     margin: 1px 10px 1px 0;
     box-sizing: border-box;
 }
-.LoginPageNav .home {
+.LoginPageNav .LoginPageNavhome {
     width: 20px;
     height: 20px;
 }
-.LoginPageNav .go-mypage {
+.LoginPageNav .LoginPageNavgo-mypage {
     display: flex;
     box-sizing: border-box;
     line-height: 20px;
 }
-.LoginPageNav .my-page {
+.LoginPageNav .LoginPageNavmy-page {
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 18px;

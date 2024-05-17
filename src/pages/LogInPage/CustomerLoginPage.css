@@ -12,95 +12,24 @@
   justify-content: center;
   /*align-items: center;*/
 }
-.CustomerLoginPage .login-header {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
-  margin-bottom: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 30.6px 0 40px;
-  width: 1440px;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .header-inner-left {
-  display: flex;
-  flex-direction: row;
-  width: 248px;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .logo-goto-home {
-  margin: 2.5px 3px 2.5px 0;
-  display: flex;
-  width: 119px;
-  height: 60px;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .image-13 {
-  border-radius: 23px;
-  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
-  width: 119px;
-  height: 60px;
-}
-.CustomerLoginPage .header-buttons {
-  position: relative;
-  width: 126px;
-  height: 65px;
-}
-.CustomerLoginPage .nav-box {
-  background: #ffffff;
-  position: absolute;
-  right: -18px;
-  bottom: 0px;
-  display: flex;
-  padding: 23.5px 0.4px 23.5px 0;
-  width: 144px;
-  height: 65px;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .header-inner-right {
-  margin: 21.5px 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .icon-home {
-  margin: 1px 10px 1px 0;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .vector {
-  width: 20px;
-  height: 20px;
-}
-.CustomerLoginPage .go-mypage {
-  display: flex;
-  box-sizing: border-box;
-}
-.CustomerLoginPage .container {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 18px;
-  color: #000000;
-}
-.CustomerLoginPage .container {
+
+
+.CustomerLoginPage .containerCustomerLoginPage {
   margin-left: 139px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.CustomerLoginPage .container-1 {
-  margin: 305px 169px 424px 0;
+.CustomerLoginPage .loginBox {
+  /*margin: 305px 169px 424px 0;*/
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 }
-.container-1 {
+.CustomerLoginPage .CustomerLoginPageContainer {
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -223,12 +152,4 @@
   column-gap: 50px;
   width: 250px;
   box-sizing: border-box;
-}
-.CustomerLoginPage .container-5 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 0.9;
-  color: #000000;
 }
