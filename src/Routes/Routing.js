@@ -18,6 +18,7 @@ import Main from "../pages/MainPage/Main";
 import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
 import CustomerMemRegist from "../pages/LogInPage/CustomerMemRegist";
+import StoreRegist from "../pages/LogInPage/StoreRegist";
 
 // My Home 페이지
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
@@ -45,15 +46,21 @@ function Routing() {
           {/*시작 메인 페이지*/}
           <Route path="/" element={<App />} />
           {/*헤더 & 내비게이션*/}
-          <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader />}/>
-          <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader />}/>
+          <Route
+            path="/LoginAfterMainHeader"
+            element={<LoginAfterMainHeader />}
+          />
+          <Route
+            path="/LoginBeforeMainHeader"
+            element={<LoginBeforeMainHeader />}
+          />
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
           <Route path="/MyHomeTopNavi" element={<MyHomeTopNavi />} />
           <Route path="/ShopOwnerLeftNavi" element={<ShopOwnerLeftNavi />} />
           <Route path="/ShopOwnerTopNavi" element={<ShopOwnerTopNavi />} />
           <Route path="/ShopOwnerNavi" element={<ShopOwnerNavi />} />
-          <Route path="/LoginPageNav" element={<LoginPageNav/>}/>
+          <Route path="/LoginPageNav" element={<LoginPageNav />} />
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
           <Route path="login" element={<div>로그인</div>} />
@@ -62,6 +69,7 @@ function Routing() {
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
           <Route path="/CustomerMemRegist" element={<CustomerMemRegist />} />
+          <Route path="/StoreRegist" element={<StoreRegist />} />
           {/*고객 My Home*/}
           <Route path="/MyHomeMain" element={<MyHomeMain />} />
           <Route path="/MyHomeAllReserv" element={<MyHomeAllReserv />} />
