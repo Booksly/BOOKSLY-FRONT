@@ -10,6 +10,7 @@ import MyHomeTopNavi from "../pages/nav/MyHomeTopNavi";
 import ShopOwnerLeftNavi from "../pages/nav/ShopOwnerLeftNavi";
 import ShopOwnerTopNavi from "../pages/nav/ShopOwnerTopNavi";
 import ShopOwnerNavi from "../pages/nav/ShopOwnerNavi";
+import LoginPageNav from "../pages/nav/LoginPageNav";
 
 // Main Home 페이지
 import Main from "../pages/MainPage/Main";
@@ -44,20 +45,15 @@ function Routing() {
           {/*시작 메인 페이지*/}
           <Route path="/" element={<App />} />
           {/*헤더 & 내비게이션*/}
-          <Route
-            path="/LoginAfterMainHeader"
-            element={<LoginAfterMainHeader />}
-          />
-          <Route
-            path="/LoginBeforeMainHeader"
-            element={<LoginBeforeMainHeader />}
-          />
+          <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader />}/>
+          <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader />}/>
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
           <Route path="/MyHomeTopNavi" element={<MyHomeTopNavi />} />
           <Route path="/ShopOwnerLeftNavi" element={<ShopOwnerLeftNavi />} />
           <Route path="/ShopOwnerTopNavi" element={<ShopOwnerTopNavi />} />
           <Route path="/ShopOwnerNavi" element={<ShopOwnerNavi />} />
+          <Route path="/LoginPageNav" element={<LoginPageNav/>}/>
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
           <Route path="login" element={<div>로그인</div>} />
