@@ -1,4 +1,4 @@
-import "./CustomerMemRegist.css";
+import "./CustomerMemRegist1.css";
 import advert from "../../assets/Advert_image.png";
 import home from "../../assets/home_button.png";
 import { useNavigate } from "react-router-dom";
