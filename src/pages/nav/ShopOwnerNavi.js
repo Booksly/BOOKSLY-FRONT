@@ -4,8 +4,8 @@ import ShopOwnerLeftNavi from "./ShopOwnerLeftNavi";
 
 export default function ShopOwnerNavi() {
     return (
-        <div className="back">
-            <div className="ShopOwnerNavi">
+        <div className="ShopOwnerNavi">
+            <div className="ShopOwnerNaviBack">
                 <ShopOwnerLeftNavi/>
             </div>
         </div>

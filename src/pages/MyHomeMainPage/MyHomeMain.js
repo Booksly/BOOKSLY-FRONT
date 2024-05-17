@@ -4,8 +4,8 @@ import MyHomeTopNavi from "../nav/MyHomeTopNavi";
 
 export default function MyHomeMain() {
     return (
-        <div className="back">
         <div className="MyHomeMain">
+        <div className="MyHomeMainBack">
             <MyHomeLeftNavi/>
             <div className="containerAll">
                 <MyHomeTopNavi/>
@@ -18,7 +18,7 @@ export default function MyHomeMain() {
                             <div className="at-num">
                                 <div className="frame-408">
                                     <div className="frame-403">
-                                        <span className="container-1">
+                                        <span className="container-3">
                                             ‘-’ 빼고 숫자만 입력
                                         </span>
                                     </div>

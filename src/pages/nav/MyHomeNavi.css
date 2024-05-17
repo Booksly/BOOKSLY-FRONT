@@ -5,7 +5,7 @@
     right: 0;
     left:0;
     height: fit-content;
-    background: #FDF8F3;
+    /*background: #FDF8F3;*/
 }
 .MyHomeNavi {
     display: flex;

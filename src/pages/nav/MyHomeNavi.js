@@ -5,8 +5,8 @@ import MyHomeMain from "../MyHomeMainPage/MyHomeMain";
 
 export default function MyHomeNavi() {
     return (
-        <div className="back">
-            <div className="MyHomeNavi">
+        <div className="MyHomeNavi">
+            <div className="MyHomeNaviBack">
                 <MyHomeLeftNavi/>
                 <MyHomeMain/>
             </div>

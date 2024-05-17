@@ -3,7 +3,7 @@ import bottomAllow from "../../assets/bottomAllow.png";
 
 export default function ShopOwnerTopNavi() {
     return (
-        <div className="back">
+        // <div className="back">
         <div className="ShopOwnerTopNavi">
         <div className="shop-top-navi">
             <div className="shop-top-navi-top">
@@ -79,6 +79,6 @@ export default function ShopOwnerTopNavi() {
             </div>
         </div>
         </div>
-        </div>
+        // </div>
     )
 }
