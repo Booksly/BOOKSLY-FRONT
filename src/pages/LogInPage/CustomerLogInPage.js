@@ -1,6 +1,5 @@
 import "./CustomerLoginPage.css";
 import advert from "../../assets/Advert_image.png";
-import home from "../../assets/home_button.png";
 import line from "../../assets/Line_img.png";
 import naver from "../../assets/Naver_icon.png";
 import google from "../../assets/Google_icon.png";
@@ -11,7 +10,7 @@ export default function CustomerLoginPage() {
   return (
     <div className="CustomerLoginPage">
       <div className="CustomerLoginPageBack">
-        <LoginPageNav/>
+        <LoginPageNav />
         <div className="container-1">
           <div className="CustomerLoginPageContainer">
             <div className="loginBox">

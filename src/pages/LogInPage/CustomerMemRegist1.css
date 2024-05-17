@@ -1,98 +1,91 @@
-.back {
+.CustomerMemRegist1 {
   position: absolute;
   top: 0px;
   bottom: 0px;
   right: 0px;
   left: 0px;
   height: fit-content;
-  background: #fdf8f3;
+  background: #ffffff;
 }
-.CustomerMemRegist {
+.CustomerMemRegist1Back {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.CustomerMemRegist .rectangle-7 {
-  width: 720px;
+.CustomerMemRegist1 .rectangle-7 {
+  width: 710px;
   height: 955px;
 }
-.CustomerMemRegist .frame-511 {
+.CustomerMemRegist1 .frame-511 {
   margin: 306px 155px 339.5px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 420px;
+  width: 410px;
   height: fit-content;
   box-sizing: border-box;
 }
-.CustomerMemRegist .frame-510 {
+.CustomerMemRegist1 .frame-510 {
   margin-bottom: 61px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 274px;
+  width: 174px;
   box-sizing: border-box;
 }
-.CustomerMemRegist .line-5 {
-  background: #ff5925;
+.CustomerMemRegist1 .line-5 {
+  background: #ff5915;
   margin-bottom: 3px;
-  width: 92px;
+  width: 91px;
   height: 5px;
 }
-.CustomerMemRegist .frame-10 {
+.CustomerMemRegist1 .frame-10 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 274px;
+  width: 174px;
   box-sizing: border-box;
 }
-.CustomerMemRegist .container-1 {
+.CustomerMemRegist1 .container-1 {
   margin-right: 15px;
   width: 167px;
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
-  font-size: 25px;
+  font-size: 15px;
   color: #000000;
 }
-.CustomerMemRegist .container-2 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 25px;
-  color: #000000;
-}
-.CustomerMemRegist .frame-77 {
+.CustomerMemRegist1 .frame-77 {
   margin-bottom: 148.5px;
   display: flex;
-  width: 420px;
+  width: 410px;
   box-sizing: border-box;
 }
-.CustomerMemRegist .frame-406 {
+.CustomerMemRegist1 .frame-406 {
   border-radius: 5px;
-  border: 1px solid #ff5925;
+  border: 1px solid #ff5915;
   background: #ffffff;
   display: flex;
   padding: 13px 0.4px 13px 0;
-  width: 420px;
+  width: 410px;
   height: fit-content;
   box-sizing: border-box;
 }
-.CustomerMemRegist .container-3 {
+.CustomerMemRegist1 .container-3 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #000000;
 }
-.CustomerMemRegist .frame-109 {
-  margin-right: 2.1px;
+.CustomerMemRegist1 .frame-109 {
+  margin-right: 1.1px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.CustomerMemRegist .container-4 {
+.CustomerMemRegist1 .container-4 {
   margin-right: 5.6px;
   overflow-wrap: break-word;
   font-family: "Inter";
@@ -100,98 +93,30 @@
   font-size: 13px;
   color: #000000;
 }
-.CustomerMemRegist .container-5 {
+.CustomerMemRegist1 .container-5 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
 }
-.CustomerMemRegist .login-header {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+.CustomerMemRegist1 .vector {
+  width: 10px;
+  height: 10px;
+}
+.CustomerMemRegist1 .container {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  box-sizing: border-box;
   background: #ffffff;
-  margin-bottom: 9px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 30.6px 0 40px;
-  width: 1440px;
-  box-sizing: border-box;
 }
-.CustomerMemRegist .header-inner-left {
-  display: flex;
-  flex-direction: row;
-  width: 229px;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .logo-goto-home {
-  margin: 5px 3px 5px 0;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .image-13 {
-  border-radius: 23px;
-  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
-  width: 100px;
-  height: 50px;
-}
-.CustomerMemRegist .header-buttons {
-  position: relative;
-  width: 126px;
-  height: 60px;
-}
-.CustomerMemRegist .nav-box {
-  background: #ffffff;
-  position: absolute;
-  right: -18px;
-  bottom: 0px;
-  display: flex;
-  padding: 21px 0.4px 21px 0;
-  width: 144px;
-  height: 60px;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .header-inner-right {
-  margin: 19px 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .icon-home {
-  margin: 1px 10px 1px 0;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .vector {
-  width: 20px;
-  height: 20px;
-}
-.CustomerMemRegist .go-mypage {
-  display: flex;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .container-6 {
+.CustomerMemRegist1 .container-7 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
-  font-size: 18px;
-  color: #000000;
-}
-.CustomerMemRegist .container {
-  display: flex;
-  flex-direction: row;
-  width: 1295px;
-  box-sizing: border-box;
-}
-.CustomerMemRegist .container-7 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 0.9;
   color: #000000;
 }
