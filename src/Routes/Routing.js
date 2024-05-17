@@ -17,7 +17,8 @@ import Main from "../pages/MainPage/Main";
 // 로그인 페이지
 import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
-import CustomerMemRegist from "../pages/LogInPage/CustomerMemRegist";
+import CustomerMemRegist1 from "../pages/LogInPage/CustomerMemRegist1";
+import CustomerMemRegist2 from "../pages/LogInPage/CustomerMemRegist2";
 import StoreRegist from "../pages/LogInPage/StoreRegist";
 
 // My Home 페이지
@@ -68,7 +69,8 @@ function Routing() {
           {/*로그인 페이지*/}
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
-          <Route path="/CustomerMemRegist" element={<CustomerMemRegist />} />
+          <Route path="/CustomerMemRegist1" element={<CustomerMemRegist1 />} />
+          <Route path="/CustomerMemRegist2" element={<CustomerMemRegist2 />} />
           <Route path="/StoreRegist" element={<StoreRegist />} />
           {/*고객 My Home*/}
           <Route path="/MyHomeMain" element={<MyHomeMain />} />
