@@ -8,8 +8,8 @@ import kakao from "../../assets/Kakao_icon.png";
 
 export default function CustomerLoginPage() {
   return (
-    <div className="back">
-      <div className="CustomerLoginPage">
+    <div className="CustomerLoginPage">
+      <div className="back">
         <div className="container-1">
           <div className="login-header">
             <div className="header-inner-left">
