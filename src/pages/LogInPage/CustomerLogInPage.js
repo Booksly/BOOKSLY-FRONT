@@ -15,8 +15,8 @@ export default function CustomerLoginPage() {
           <div className="loginBox">
             <div className="line-5"></div>
             <div className="frame-10">
-              <span className="container-2">개인회원</span>
-              <span className="container-3">기업회원</span>
+              <span className="Customer">개인회원</span>
+              <span className="StoreOwner">기업회원</span>
             </div>
             <div className="container-2">
               <div className="line-6"></div>

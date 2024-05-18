@@ -12,23 +12,26 @@
   justify-content: center;
   align-items: center;
 }
-.CustomerMemRegist1 .rectangle-7 {
-  width: 710px;
-  height: 955px;
+.CustomerMemRegist1 .CustomerMemRegist1Container {
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
-.CustomerMemRegist1 .frame-511 {
-  margin: 306px 155px 339.5px 0;
+.CustomerMemRegist1 .IdMaking_Box {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 410px;
-  height: fit-content;
   box-sizing: border-box;
 }
 .CustomerMemRegist1 .frame-510 {
   margin-bottom: 61px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
   width: 174px;
   box-sizing: border-box;
@@ -40,19 +43,28 @@
   height: 5px;
 }
 .CustomerMemRegist1 .frame-10 {
+  margin: 0 0 0 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 174px;
+  width: 300px;
   box-sizing: border-box;
 }
-.CustomerMemRegist1 .container-1 {
-  margin-right: 15px;
-  width: 167px;
+.CustomerMemRegist1 .Customer {
+  margin-right: 30px;
+  margin-left: 30px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+}
+.CustomerMemRegist1 .StoreOwner {
+  margin-left: 30px;
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
-  font-size: 15px;
+  font-size: 25px;
   color: #000000;
 }
 .CustomerMemRegist1 .frame-77 {
@@ -64,8 +76,9 @@
 .CustomerMemRegist1 .frame-406 {
   border-radius: 5px;
   border: 1px solid #ff5915;
-  background: #ffffff;
+  background: #ff5915;
   display: flex;
+  justify-content: center;
   padding: 13px 0.4px 13px 0;
   width: 410px;
   height: fit-content;
@@ -76,7 +89,7 @@
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
-  color: #000000;
+  color: #ffffff;
 }
 .CustomerMemRegist1 .frame-109 {
   margin-right: 1.1px;
@@ -100,7 +113,6 @@
   font-size: 13px;
   color: #000000;
 }
-
 .CustomerMemRegist1 .vector {
   width: 10px;
   height: 10px;
@@ -119,4 +131,8 @@
   font-size: 10px;
   line-height: 0.9;
   color: #000000;
+}
+.CustomerMemRegist1 .rectangle-7 {
+  width: 710px;
+  height: 955px;
 }
