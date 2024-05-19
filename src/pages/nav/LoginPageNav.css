@@ -6,6 +6,7 @@
   left: 0px;
   height: fit-content;
   background: #ffffff;
+  flex-shrink: 0;
 }
 .LoginPageNavBack {
   display: flex;

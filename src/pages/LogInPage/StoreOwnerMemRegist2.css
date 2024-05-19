@@ -1,37 +1,50 @@
-.StoreOwnerMemRegist2back {
+.StoreOwnerMemRegist2 {
   position: absolute;
   top: 0px;
   bottom: 0px;
   right: 0px;
   left: 0px;
   height: fit-content;
-  background: #fdf8f3;
+  background: #ffffff;
 }
-.StoreOwnerMemRegist2 {
+.StoreOwnerMemRegist2Back {
   display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex: 1;
   justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .StoreOwnerMemRegist2Container_1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  overflow-y: auto;
   align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
 }
-.StoreOwnerMemRegist2 .vector {
-  margin: 286px 0 264px 0;
-  width: 10.5px;
-  height: 20px;
-}
-.StoreOwnerMemRegist2 .frame-511 {
-  margin: 103px 272px 157.5px 0;
+.StoreOwnerMemRegist2 .IdMaking_Box {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 420px;
-  height: fit-content;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .frame-510 {
   margin-bottom: 61px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
-  width: 274px;
+  width: 174px;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .line-5 {
@@ -41,41 +54,44 @@
   height: 5px;
 }
 .StoreOwnerMemRegist2 .frame-10 {
+  margin: 0 0 0 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 274px;
+  width: 300px;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist2 .container-1 {
-  margin-right: 15px;
-  width: 167px;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 25px;
-  color: #000000;
-}
-.StoreOwnerMemRegist2 .container-2 {
+.StoreOwnerMemRegist2 .Customer {
+  margin-right: 30px;
+  margin-left: 30px;
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
   font-size: 25px;
   color: #000000;
 }
+.StoreOwnerMemRegist2 .StoreOwner {
+  margin-left: 30px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
 .StoreOwnerMemRegist2 .frame-77 {
   margin-bottom: 148.5px;
   display: flex;
-  width: 420px;
+  width: 410px;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .frame-406 {
   border-radius: 5px;
   border: 1px solid #ff5925;
-  background: #ffffff;
+  background: #ff5925;
   display: flex;
+  justify-content: center;
   padding: 13px 0.4px 13px 0;
-  width: 420px;
+  width: 410px;
   height: fit-content;
   box-sizing: border-box;
 }
@@ -84,10 +100,10 @@
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
-  color: #000000;
+  color: #ffffff;
 }
 .StoreOwnerMemRegist2 .frame-109 {
-  margin-right: 2.1px;
+  margin-right: 1.1px;
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -108,13 +124,65 @@
   font-size: 13px;
   color: #000000;
 }
+.StoreOwnerMemRegist2 .StoreOwnerMemRegist2Container_2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.StoreOwnerMemRegist2 .frame-18 {
+  margin: 0 28px 25px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-18 {
+  margin: 0 326px 50px 0;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #111111;
+}
+.StoreOwnerMemRegist2 .frame-535 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .frame-524 {
+  margin: 0 28px 25px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-17 {
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
 .StoreOwnerMemRegist2 .frame-4061 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
-  width: fit-content;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreOwnerMemRegist2 .container-6 {
   overflow-wrap: break-word;
@@ -123,13 +191,31 @@
   font-size: 15px;
   color: #adadad;
 }
+.StoreOwnerMemRegist2 .frame-526 {
+  margin: 0 28px 25px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-19 {
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
 .StoreOwnerMemRegist2 .frame-512 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
-  width: fit-content;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreOwnerMemRegist2 .container-7 {
   overflow-wrap: break-word;
@@ -138,14 +224,38 @@
   font-size: 15px;
   color: #adadad;
 }
+.StoreOwnerMemRegist2 .frame-529 {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-20 {
+  margin-bottom: 12px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.StoreOwnerMemRegist2 .frame-528 {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreOwnerMemRegist2 .frame-513 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  margin-right: 9px;
+  margin-right: 10px;
   padding: 13px 14px;
   width: 350px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreOwnerMemRegist2 .container-8 {
   overflow-wrap: break-word;
@@ -159,8 +269,10 @@
   border: 1px solid #ff5925;
   background: #ff5925;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 13px 0;
-  width: 89px;
+  width: 90px;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .container-9 {
@@ -170,6 +282,30 @@
   font-size: 15px;
   color: #ffffff;
 }
+.StoreOwnerMemRegist2 .frame-533 {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-21 {
+  margin-bottom: 11px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.StoreOwnerMemRegist2 .frame-531 {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreOwnerMemRegist2 .frame-515 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -178,6 +314,7 @@
   padding: 13px 14px;
   width: 350px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreOwnerMemRegist2 .container-10 {
   overflow-wrap: break-word;
@@ -191,8 +328,10 @@
   border: 1px solid #ff5925;
   background: #ff5925;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 13px 0;
-  width: 89px;
+  width: 90px;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .container-11 {
@@ -202,6 +341,12 @@
   font-size: 15px;
   color: #ffffff;
 }
+.StoreOwnerMemRegist2 .frame-532 {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreOwnerMemRegist2 .frame-517 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -210,6 +355,7 @@
   padding: 13px 14px;
   width: 350px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreOwnerMemRegist2 .container-12 {
   overflow-wrap: break-word;
@@ -223,7 +369,10 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   display: flex;
-  padding: 13px 17.8px 13px 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0;
+  width: 90px;
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist2 .container-13 {
@@ -233,251 +382,12 @@
   font-size: 15px;
   color: #ff5925;
 }
-.StoreOwnerMemRegist2 .frame-519 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  padding: 13px 14px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .bookslyemail-com {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist2 .frame-520 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ff5925;
-  margin: 0 42px;
-  display: flex;
-  padding: 13px 13.8px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .container-14 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
-}
-.StoreOwnerMemRegist2 .frame-524 {
-  margin: 0 28px 25px 0;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-526 {
-  margin: 0 28px 25px 0;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-528 {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-529 {
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-531 {
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-532 {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-533 {
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
-}
 .StoreOwnerMemRegist2 .frame-534 {
   margin-right: 28px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .frame-535 {
-  margin-right: 124px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .container-15 {
-  position: absolute;
-  top: 192px;
-  right: 511px;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 25px;
-  color: #111111;
-}
-.StoreOwnerMemRegist2 .login-header {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
-  margin-bottom: 132px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 30.6px 0 40px;
-  width: 1440px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .header-inner-left {
-  display: flex;
-  flex-direction: row;
-  width: 229px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .logo-goto-home {
-  margin: 5px 3px 5px 0;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .image-13 {
-  border-radius: 23px;
-  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
-  width: 100px;
-  height: 50px;
-}
-.StoreOwnerMemRegist2 .header-buttons {
-  position: relative;
-  width: 126px;
-  height: 60px;
-}
-.StoreOwnerMemRegist2 .nav-box {
-  background: #ffffff;
-  position: absolute;
-  right: -18px;
-  bottom: 0px;
-  display: flex;
-  padding: 21px 0.4px 21px 0;
-  width: 144px;
-  height: 60px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .header-inner-right {
-  margin: 19px 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .icon-home {
-  margin: 1px 10px 1px 0;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .vector-1 {
-  width: 20px;
-  height: 20px;
-}
-.StoreOwnerMemRegist2 .go-mypage {
-  display: flex;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .container-16 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 18px;
-  color: #000000;
-}
-.StoreOwnerMemRegist2 .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .container-1 {
-  margin: 0 20.5px 99px 20.5px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist2 .rectangle-20 {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 720px;
-  height: 1024px;
-}
-.StoreOwnerMemRegist2 .container-17 {
-  margin-bottom: 16px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 20px;
-  color: #111111;
-}
-.StoreOwnerMemRegist2 .container-18 {
-  margin: 0 0 50px 326px;
-  display: inline-block;
-  align-self: center;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 25px;
-  color: #111111;
-}
-.StoreOwnerMemRegist2 .container-19 {
-  margin-bottom: 16px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 20px;
-  color: #111111;
-}
-.StoreOwnerMemRegist2 .container-20 {
-  margin-bottom: 12px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  color: #111111;
-}
-.StoreOwnerMemRegist2 .container-21 {
-  margin-bottom: 11px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  color: #111111;
 }
 .StoreOwnerMemRegist2 .container-22 {
   margin-bottom: 7px;
@@ -489,11 +399,36 @@
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist2 .container-23 {
+.StoreOwnerMemRegist2 .frame-519 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.StoreOwnerMemRegist2 .bookslyemail-com {
   overflow-wrap: break-word;
   font-family: "Inter";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 0.9;
-  color: #000000;
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.StoreOwnerMemRegist2 .frame-520 {
+  margin-top: 50px;
+  margin-left: auto;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  padding: 13px 13.8px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist2 .container-14 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
 }
