@@ -1,14 +1,14 @@
-import "./CustomerMemRegist1.css";
+import "./StoreOwnerMemRegist1.css";
 import advert from "../../assets/Advert_image.png";
 import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
 
-export default function CustomerMemRegist() {
+export default function StoreOwnerMemRegist() {
   return (
-    <div className="CustomerMemRegist1">
-      <div className="CustomerMemRegist1Back">
+    <div className="StoreOwnerMemRegist1">
+      <div className="StoreOwnerMemRegist1Back">
         <LoginPageNav />
-        <div className="CustomerMemRegist1Container">
+        <div className="StoreOwnerMemRegist1Container">
           <div className="IdMaking_Box">
             <div className="frame-510">
               <div className="line-5"></div>

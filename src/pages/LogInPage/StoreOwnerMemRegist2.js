@@ -1,10 +1,10 @@
-import "./CustomerMemRegist2.css";
+import "./StoreOwnerMemRegist2.css";
 import home from "../../assets/home_button.png";
 
-export default function CustomerMemRegist2() {
+export default function StoreOwnerMemRegist2() {
   return (
-    <div className="CustomerMemRegist2Back">
-      <div className="CustomerMemRegist2">
+    <div className="StoreOwnerMemRegist2Back">
+      <div className="StoreOwnerMemRegist2">
         <div className="container">
           <div className="login-header">
             <div className="header-inner-left">
