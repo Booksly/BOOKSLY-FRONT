@@ -13,10 +13,12 @@
   align-items: center;
 }
 .StoreOwnerLogInPage .StoreOwnerLogInPageContainer {
-  margin: 239px 167px 357.5px 0;
+  margin-left: 155px;
+  margin-right: 155px;
+  background: #ffffff;
   display: flex;
-  flex-direction: row;
-  width: 420px;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .LogIn_Box {
@@ -79,7 +81,7 @@
 .StoreOwnerLogInPage .line-5 {
   background: #ff5925;
   margin-bottom: 3px;
-  width: 92px;
+  width: 100px;
   height: 5px;
 }
 .StoreOwnerLogInPage .frame-77 {
@@ -136,8 +138,9 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-bottom: 16px;
+  text-align: left;
   padding: 13px 14px;
-  width: fit-content;
+  width: 420px;
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .container-5 {
@@ -152,8 +155,9 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-bottom: 16px;
+  text-align: left;
   padding: 13px 14px;
-  width: fit-content;
+  width: 420px;
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .container-6 {
@@ -167,7 +171,9 @@
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
+  margin-bottom: 16px;
   display: flex;
+  justify-content: center;
   padding: 13px 0;
   width: 420px;
   box-sizing: border-box;

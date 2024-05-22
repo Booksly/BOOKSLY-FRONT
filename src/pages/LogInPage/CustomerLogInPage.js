@@ -12,7 +12,7 @@ export default function CustomerLoginPage() {
       <div className="CustomerLoginPageBack">
         <LoginPageNav />
         <div className="CustomerLoginPageContainer">
-          <div className="loginBox">
+          <div className="LogIn_Box">
             <div className="line-5"></div>
             <div className="frame-10">
               <span className="Customer">개인회원</span>

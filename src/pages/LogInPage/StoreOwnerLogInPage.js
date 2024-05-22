@@ -36,11 +36,11 @@ export default function StoreOwnerLogInPage() {
               <div className="frame-408">
                 <span className="container-7">로그인</span>
               </div>
-            </div>
-            <div className="frame-109">
-              <div className="container-8">회원가입</div>
-              <span className="container-9">|</span>
-              <div className="container-10">아이디/비밀번호 찾기</div>
+              <div className="frame-109">
+                <div className="container-8">회원가입</div>
+                <span className="container-9">|</span>
+                <div className="container-10">아이디/비밀번호 찾기</div>
+              </div>
             </div>
           </div>
         </div>

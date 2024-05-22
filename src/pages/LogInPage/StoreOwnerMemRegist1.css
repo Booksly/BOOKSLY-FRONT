@@ -39,7 +39,7 @@
 .StoreOwnerMemRegist1 .line-5 {
   background: #ff5915;
   margin-bottom: 3px;
-  width: 92px;
+  width: 100px;
   height: 5px;
 }
 .StoreOwnerMemRegist1 .frame-10 {
@@ -80,7 +80,7 @@
   display: flex;
   justify-content: center;
   padding: 13px 0.4px 13px 0;
-  width: 410px;
+  width: 420px;
   height: fit-content;
   box-sizing: border-box;
 }

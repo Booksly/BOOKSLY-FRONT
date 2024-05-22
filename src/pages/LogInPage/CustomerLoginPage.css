@@ -21,7 +21,7 @@
   align-items: center;
   box-sizing: border-box;
 }
-.CustomerLoginPage .loginBox {
+.CustomerLoginPage .LogIn_Box {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
