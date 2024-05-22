@@ -4,6 +4,7 @@ import App from "../App";
 // 헤더 & 내비게이션
 import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
 import LoginBeforeMainHeader from "../pages/nav/LoginBeforeMainHeader";
+import LoginAfterTodayReservNav from "../pages/nav/LoginAfterTodayReservNav";
 import MyHomeNavi from "../pages/nav/MyHomeNavi";
 import MyHomeLeftNavi from "../pages/nav/MyHomeLeftNavi";
 import MyHomeTopNavi from "../pages/nav/MyHomeTopNavi";
@@ -54,6 +55,10 @@ function Routing() {
           <Route
             path="/LoginBeforeMainHeader"
             element={<LoginBeforeMainHeader />}
+          />
+          <Route
+            path="/LoginAfterTodayReservNav"
+            element={<LoginAfterTodayReservNav />}
           />
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
