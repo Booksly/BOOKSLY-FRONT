@@ -1,8 +1,13 @@
 import "./StoreOwnerLogInPage.css";
 import LoginPageNav from "../nav/LoginPageNav";
 import advert from "../../assets/Advert_image.png";
+import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerLogInPage() {
+  const navigate = useNavigate();
+  const goToNavigation = () => {
+    navigate("/StoreOwnerMemRegist");
+  };
   return (
     <div className="StoreOwnerLogInPage">
       <div className="StoreOwnerLogInPageBack">
@@ -37,7 +42,12 @@ export default function StoreOwnerLogInPage() {
                 <span className="container-7">로그인</span>
               </div>
               <div className="frame-109">
-                <div className="container-8">회원가입</div>
+                <button
+                  className="frame-StoreOwnerMemRegistButton"
+                  onClick={goToNavigation}
+                >
+                  <div className="container-8">회원가입</div>
+                </button>
                 <span className="container-9">|</span>
                 <div className="container-10">아이디/비밀번호 찾기</div>
               </div>
