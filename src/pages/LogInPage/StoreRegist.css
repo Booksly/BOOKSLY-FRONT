@@ -10,6 +10,44 @@
 .StoreRegistBack {
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+}
+.StoreRegist .allcontentcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+.StoreRegist .leftcontentcontainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+}
+.StoreRegist .rightcontentcontainer {
+  margin-top: 130px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+}
+.StoreRegist .container-11 {
+  margin-bottom: 20px;
+  display: block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #111111;
+}
+.StoreRegist .frame-550 {
+  margin: 20px 279px 53px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreRegist .frame-524 {
   margin: 0 28px 30px 0;
@@ -33,8 +71,9 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
-  width: fit-content;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .container-2 {
   overflow-wrap: break-word;
@@ -81,6 +120,11 @@
   font-size: 15px;
   color: #adadad;
 }
+.StoreRegist .group-131 {
+  margin: 1.7px 0;
+  width: 16px;
+  height: 14.6px;
+}
 .StoreRegist .frame-529 {
   margin: 0 28px 30px 0;
   display: flex;
@@ -107,6 +151,8 @@
   background: #ffffff;
   padding: 13px 14px;
   box-sizing: border-box;
+  width: 450px;
+  text-align: left;
 }
 .StoreRegist .container-6 {
   overflow-wrap: break-word;
@@ -147,6 +193,7 @@
   padding: 13px 14px;
   width: 350px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .container-8 {
   overflow-wrap: break-word;
@@ -161,8 +208,10 @@
   background: #ff5925;
   display: flex;
   padding: 13px 0;
-  width: 89px;
+  width: 90px;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 .StoreRegist .container-9 {
   overflow-wrap: break-word;
@@ -180,7 +229,9 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .container-10 {
   overflow-wrap: break-word;
@@ -188,21 +239,6 @@
   font-weight: 300;
   font-size: 15px;
   color: #000000;
-}
-.StoreRegist .container-11 {
-  margin: 0 142px 50px 142px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 25px;
-  color: #111111;
-}
-.StoreRegist .group-131 {
-  margin: 1.7px 0;
-  width: 16px;
-  height: 14.6px;
 }
 .StoreRegist .frame-5331 {
   box-sizing: border-box;
@@ -212,14 +248,23 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .container-12 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
-  color: #000000;
+  color: #adadad;
+}
+.StoreRegist .frame-548 {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreRegist .sns {
   margin-bottom: 16px;
@@ -231,6 +276,13 @@
   font-size: 20px;
   color: #111111;
 }
+.StoreRegist .frame-547 {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreRegist .frame-407 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -239,6 +291,7 @@
   padding: 13px 14px;
   width: 350px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .url {
   overflow-wrap: break-word;
@@ -253,8 +306,10 @@
   background: #ff5925;
   display: flex;
   padding: 13px 0.4px 13px 0;
-  width: 89px;
+  width: 90px;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 .StoreRegist .container-13 {
   overflow-wrap: break-word;
@@ -272,7 +327,9 @@
   border: 1px solid #ff5925;
   background: #ffffff;
   padding: 13px 14px;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .www-booksly-com {
   overflow-wrap: break-word;
@@ -280,6 +337,14 @@
   font-weight: 300;
   font-size: 15px;
   color: #000000;
+}
+.StoreRegist .frame-549 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreRegist .container-14 {
   margin: 0 17px 9px 0;
@@ -329,32 +394,25 @@
   font-size: 20px;
   color: #000000;
 }
-.StoreRegist .frame-547 {
-  margin-bottom: 14px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-548 {
-  margin-bottom: 30px;
+.StoreRegist .frame-574 {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 450px;
   box-sizing: border-box;
 }
-.StoreRegist .frame-549 {
+.StoreRegist .frame-572 {
+  margin-bottom: 38px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-550 {
-  margin: 0 279px 53px 0;
+.StoreRegist .frame-571 {
+  margin-bottom: 12px;
   display: flex;
   flex-direction: column;
+  width: fit-content;
   box-sizing: border-box;
 }
 .StoreRegist .container-17 {
@@ -373,6 +431,25 @@
   font-weight: 300;
   font-size: 15px;
   color: #000000;
+}
+.StoreRegist .frame-569 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreRegist .container-24 {
+  background: url("../../assets/clockIcon.png") 50% / cover no-repeat;
+  margin: 0 15px 180px 0;
+  width: 13px;
+  height: 13px;
+}
+.StoreRegist .frame-558 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .StoreRegist .frame-254 {
   margin-bottom: 3px;
@@ -453,12 +530,6 @@
   font-size: 15px;
   line-height: 1.333;
   color: #ff5925;
-}
-.StoreRegist .container-24 {
-  background: url("../../assets/clockIcon.png") 50% / cover no-repeat;
-  margin: 0 15px 180px 0;
-  width: 13px;
-  height: 13px;
 }
 .StoreRegist .frame-551 {
   margin-bottom: 3px;
@@ -939,10 +1010,12 @@
   line-height: 1.333;
   color: #ff5925;
 }
-.StoreRegist .frame-558 {
+.StoreRegist .frame-560 {
+  margin-bottom: 38px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
   box-sizing: border-box;
 }
 .StoreRegist .frame-5501 {
@@ -957,6 +1030,12 @@
   font-weight: 500;
   font-size: 20px;
   color: #111111;
+}
+.StoreRegist .frame-559 {
+  display: flex;
+  flex-direction: row;
+  width: 247px;
+  box-sizing: border-box;
 }
 .StoreRegist .frame-5121 {
   border-radius: 5px;
@@ -979,17 +1058,40 @@
   font-size: 15px;
   color: #adadad;
 }
-.StoreRegist .frame-559 {
+.StoreRegist .group-132 {
+  margin: 1.5px 0;
+  width: 15px;
+  height: 15px;
+}
+.StoreRegist .frame-514 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
   display: flex;
   flex-direction: row;
-  width: 247px;
+  justify-content: space-between;
+  padding: 6px 14px 6px 14.1px;
+  width: 120px;
   box-sizing: border-box;
 }
-.StoreRegist .frame-560 {
-  margin-bottom: 38px;
+.StoreRegist .container-64 {
+  margin-right: 9px;
+  width: 65.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.StoreRegist .group-1311 {
+  margin: 1.5px 0;
+  width: 15px;
+  height: 15px;
+}
+.StoreRegist .frame-567 {
+  margin-bottom: 37px;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
 }
@@ -1003,14 +1105,22 @@
   font-size: 20px;
   color: #111111;
 }
+.StoreRegist .frame-566 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreRegist .frame-4071 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-bottom: 9px;
   padding: 13px 14px 167px 14px;
-  width: fit-content;
+  width: 450px;
   box-sizing: border-box;
+  text-align: left;
 }
 .StoreRegist .container-58 {
   overflow-wrap: break-word;
@@ -1052,6 +1162,13 @@
   font-size: 13px;
   color: #000000;
 }
+.StoreRegist .frame-573 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
 .StoreRegist .container-62 {
   margin-bottom: 9px;
   display: inline-block;
@@ -1061,19 +1178,14 @@
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-566 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-567 {
-  margin-bottom: 37px;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
+.StoreRegist .frame-568 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  position: relative;
+  align-self: flex-start;
+  width: 150px;
+  height: 150px;
 }
 .StoreRegist .vector-2 {
   position: absolute;
@@ -1083,15 +1195,6 @@
   width: 30px;
   height: 30px;
 }
-.StoreRegist .frame-568 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  position: relative;
-  align-self: flex-start;
-  width: 120px;
-  height: 120px;
-}
 .StoreRegist .frame-536 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -1100,7 +1203,10 @@
   display: flex;
   align-self: flex-end;
   padding: 13px 13.8px;
+  width: 100px;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 .StoreRegist .container-63 {
   overflow-wrap: break-word;
@@ -1108,159 +1214,4 @@
   font-weight: 300;
   font-size: 15px;
   color: #ffffff;
-}
-.StoreRegist .frame-569 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-571 {
-  margin-bottom: 12px;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-572 {
-  margin-bottom: 38px;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-573 {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-574 {
-  display: flex;
-  flex-direction: column;
-  width: 420px;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-514 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 6px 14px 6px 14.1px;
-  width: 120px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-64 {
-  margin-right: 9px;
-  width: 65.9px;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .group-1311 {
-  margin: 1.5px 0;
-  width: 15px;
-  height: 15px;
-}
-.StoreRegist .group-132 {
-  margin: 1.5px 0;
-  width: 15px;
-  height: 15px;
-}
-.StoreRegist .login-header {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
-  margin-bottom: 132px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 30.6px 0 40px;
-  width: 1440px;
-  box-sizing: border-box;
-}
-.StoreRegist .header-inner-left {
-  display: flex;
-  flex-direction: row;
-  width: 229px;
-  box-sizing: border-box;
-}
-.StoreRegist .logo-goto-home {
-  margin: 5px 3px 5px 0;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  box-sizing: border-box;
-}
-.StoreRegist .image-13 {
-  border-radius: 23px;
-  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
-  width: 100px;
-  height: 50px;
-}
-.StoreRegist .header-buttons {
-  position: relative;
-  width: 126px;
-  height: 60px;
-}
-.StoreRegist .nav-box {
-  background: #ffffff;
-  position: absolute;
-  right: -18px;
-  bottom: 0px;
-  display: flex;
-  padding: 21px 0.4px 21px 0;
-  width: 144px;
-  height: 60px;
-  box-sizing: border-box;
-}
-.StoreRegist .header-inner-right {
-  margin: 19px 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .icon-home {
-  margin: 1px 10px 1px 0;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-}
-.StoreRegist .vector-7 {
-  width: 20px;
-  height: 20px;
-}
-.StoreRegist .go-mypage {
-  display: flex;
-  box-sizing: border-box;
-}
-.StoreRegist .container-65 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 18px;
-  color: #000000;
-}
-.StoreRegist .container {
-  margin: 0 142px 86px 142px;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .container-66 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 0.9;
-  color: #000000;
 }
