@@ -1,13 +1,13 @@
-import "./StoreOwnerMemRegist2.css";
+import "./StoreOwnerMemRegist.css";
 import LoginPageNav from "../nav/LoginPageNav";
 
-export default function StoreOwnerMemRegist2() {
+export default function StoreOwnerMemRegist() {
   return (
-    <div className="StoreOwnerMemRegist2">
-      <div className="StoreOwnerMemRegist2Back">
+    <div className="StoreOwnerMemRegist">
+      <div className="StoreOwnerMemRegistBack">
         <LoginPageNav />
         <div className="content">
-          <div className="StoreOwnerMemRegist2Container_1">
+          <div className="StoreOwnerMemRegistContainer_1">
             <div className="IdMaking_Box">
               <div className="frame-510">
                 <div className="line-5"></div>
@@ -27,7 +27,7 @@ export default function StoreOwnerMemRegist2() {
               </div>
             </div>
           </div>
-          <div className="StoreOwnerMemRegist2Container_2">
+          <div className="StoreOwnerMemRegistContainer_2">
             <div className="frame-18>">
               <div className="container-18">회원가입</div>
             </div>
