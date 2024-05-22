@@ -1,6 +1,7 @@
 import React from "react";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
+import plus_button from "../../assets/plus_button.png";
 import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
 import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
 
@@ -30,7 +31,7 @@ export default function TodayReservationPage() {
                     <span className="container-82">전체</span>
                   </div>
                   <div className="frame-155">
-                    <img className="container-83" />
+                    <img className="container-83" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-240">
@@ -38,7 +39,7 @@ export default function TodayReservationPage() {
                     <span className="container-84">헤어</span>
                   </div>
                   <div className="frame-1551">
-                    <img className="container-85" />
+                    <img className="container-85" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-241">
@@ -46,7 +47,7 @@ export default function TodayReservationPage() {
                     <span className="container-86">네일</span>
                   </div>
                   <div className="frame-1552">
-                    <img className="container-87" />
+                    <img className="container-87" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-242">
@@ -54,7 +55,7 @@ export default function TodayReservationPage() {
                     <span className="container-88">마사지</span>
                   </div>
                   <div className="frame-1553">
-                    <img className="container-89" />
+                    <img className="container-89" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-243">
@@ -62,7 +63,7 @@ export default function TodayReservationPage() {
                     <span className="container-90">눈썹/속눈썹</span>
                   </div>
                   <div className="frame-1554">
-                    <img className="container-91" />
+                    <img className="container-91" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-244">
@@ -70,7 +71,7 @@ export default function TodayReservationPage() {
                     <span className="container-92">메이크업</span>
                   </div>
                   <div className="frame-1555">
-                    <img className="container-93" />
+                    <img className="container-93" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-245">
@@ -78,7 +79,7 @@ export default function TodayReservationPage() {
                     <span className="container-94">왁싱/제모</span>
                   </div>
                   <div className="frame-1556">
-                    <img className="container-95" />
+                    <img className="container-95" src={plus_button} alt={""} />
                   </div>
                 </div>
                 <div className="frame-248">
@@ -86,7 +87,7 @@ export default function TodayReservationPage() {
                     <span className="container-96">기타</span>
                   </div>
                   <div className="frame-1557">
-                    <img className="container-97" />
+                    <img className="container-97" src={plus_button} alt={""} />
                   </div>
                 </div>
               </div>
