@@ -6,8 +6,8 @@ import Mainmain from "./pages/MainPage/contents_in_main";
 function App() {
   return (
       <div className="App">
-          <h3>서버는 잘 실행되고 있습니다.^!^</h3>
-          <Mainmain/>
+          서버가 잘 실행중입니다.
+          {/* <Mainmain/> */}
       </div>
   );
 }
