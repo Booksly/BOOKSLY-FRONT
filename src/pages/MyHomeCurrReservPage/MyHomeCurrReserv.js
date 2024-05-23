@@ -1,8 +1,23 @@
 import './MyHomeCurrReserv.css'
 import MyHomeLeftNavi from "../nav/MyHomeLeftNavi";
 import MyHomeTopNavi from "../nav/MyHomeTopNavi";
+import Select from "react-select";
+import React, {useEffect, useState, useRef} from "react";
+
+let options = [
+    {value: "all", label: "전체"},
+    {value: "hair", label: "헤어"},
+    {value: "nail", label: "네일"},
+    {value: "eye", label: "속눈썹 / 눈썹"},
+    {value: "massage", label: "마사지"},
+    {value: "makeup", label: "메이크업"},
+    {value: "etc", label: "기타"}
+]
 
 export default function MyHomeCurrReserv() {
+    const [selectValue, setSelectValue] = useState('')
+    const selectInputRef = useRef(null);
+
     return (
         <div className="MyHomeCurrReserv">
             <div className="MyHomeCurrReservBack">
@@ -12,12 +27,21 @@ export default function MyHomeCurrReserv() {
                     <div className="MyHomeCurrReservContainer">
                         <div className="Content">
                             <div className="sortingBox">
-                                <div className="container-sortBox">
-                                    <div className="sortName">
-                                        전체
-                                    </div>
-                                    <div className="sortButton"/>
-                                </div>
+                                <>
+                                    <Select
+                                        className="sortBox"
+                                        ref = {selectInputRef}
+                                        onChange={(e) => {
+                                            if (e) {
+                                                setSelectValue(e.value);
+                                            } else {
+                                                setSelectValue("");
+                                            }
+                                        }}
+                                        options={options}
+                                        placeholder="전체"
+                                    />
+                                </>
                             </div>
                             <div className="reservList">
                                 <div className="currentReservBox">

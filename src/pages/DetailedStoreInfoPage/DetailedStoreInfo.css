@@ -1,16 +1,15 @@
-.back {
-    position: absolute;
-    top:0px;
-    bottom: 0px;
-    right:0px;
-    left:0px;
-    height: fit-content;
-    background: #FDF8F3;
-}
 .DetailedStoreInfo {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    height: fit-content;
+    background: #FFFFFF;
+}
+.DetailedStoreInfoBack {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .DetailedStoreInfo .component-review {
     width: 200px;
@@ -25,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 100px;
-    /*width: 1440px;*/
+    width: 1440px;
     box-sizing: border-box;
 }
 .DetailedStoreInfo .frame-storeInfo {
@@ -37,7 +36,7 @@
     flex-direction: row;
     padding: 20px 30px;
     width: 800px;
-    height: 282px;
+    height: fit-content;
     box-sizing: border-box;
 }
 .DetailedStoreInfo .container-1 {
@@ -123,7 +122,7 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.DetailedStoreInfo .icon {
+.DetailedStoreInfo .DetailedStoreInfoIcon {
     background: url('../../assets/locationIcon.png') 50% / cover no-repeat;
     margin-right: 10px;
     width: 18px;
@@ -175,14 +174,14 @@
     width: 18px;
     height: 18px;
 }
-.container-12 {
+.DetailedStoreInfo .container-12 {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
     line-height: 1.333;
     color: #300EFF;
 }
-.container-12-sub17 {
+.DetailedStoreInfo .container-12-sub17 {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;

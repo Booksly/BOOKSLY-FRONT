@@ -15,6 +15,7 @@ import LoginPageNav from "../pages/nav/LoginPageNav";
 
 // Main Home 페이지
 import Main from "../pages/MainPage/Main";
+import Mainmain from "../pages/MainPage/contents_in_main";
 // 로그인 페이지
 import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
@@ -45,7 +46,9 @@ function Routing() {
       <BrowserRouter>
         <Routes>
           {/*시작 메인 페이지*/}
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Mainmain />} >
+            <Route path="login" element={<LoginAfterMainHeader/>} />
+          </Route>
           {/*헤더 & 내비게이션*/}
           <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader />}/>
           <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader />}/>
@@ -59,8 +62,6 @@ function Routing() {
           <Route path="/LoginPageNav" element={<LoginPageNav />} />
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
-          <Route path="login" element={<div>로그인</div>} />
-          <Route path="logout" element={<div>로그아웃</div>} />
           {/*로그인 페이지*/}
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />

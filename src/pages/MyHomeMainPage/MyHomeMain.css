@@ -22,7 +22,7 @@
     display: flex;
     background: #FDF8F3;
     justify-content: center;
-    height: 885px;
+    height: 100vh;
     padding-top: 50px;
 }
 .MyHomeMain .ContentBox {
@@ -74,6 +74,9 @@
     padding: 10px 14px;
     width: 300px;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 15px;
 }
 .MyHomeMain .frame-404 {
     border-radius: 5px;
@@ -95,22 +98,6 @@
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
-}
-.MyHomeMain .frame-407 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    margin-right: 16px;
-    padding: 10px 14px;
-    width: 300px;
-    box-sizing: border-box;
-}
-.MyHomeMain .container-3 {
-    display: flex;
-    overflow-wrap: break-word;
-    font-weight: 300;
-    font-size: 15px;
-    color: #D3D3D3;
 }
 .MyHomeMain .frame-405 {
     border-radius: 5px;
@@ -151,13 +138,9 @@
     padding: 10px 14px;
     width: 420px;
     box-sizing: border-box;
-}
-.MyHomeMain .container-6 {
-    display: flex;
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 15px;
-    color: #D3D3D3;
 }
 .MyHomeMain .frame-420 {
     display: flex;
@@ -171,6 +154,7 @@
     background: #FDD2C2;
     padding: 10px 20px;
     box-sizing: border-box;
+    border: 0;
 }
 .MyHomeMain .container-7 {
     overflow-wrap: break-word;
@@ -183,6 +167,7 @@
     background: #FDD2C2;
     padding: 10px 20px;
     box-sizing: border-box;
+    border: 0;
 }
 .MyHomeMain .container-8 {
     overflow-wrap: break-word;

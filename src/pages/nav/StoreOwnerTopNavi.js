@@ -1,9 +1,10 @@
 import './StoreOwnerTopNavi.css'
 import bottomAllow from "../../assets/bottomAllow.png";
+import {useNavigate} from "react-router-dom";
 
 export default function StoreOwnerTopNavi() {
+    const navigate = useNavigate()
     return (
-        // <div className="StoreOwnerTopNaviback">
         <div className="StoreOwnerTopNavi">
         <div className="StoreOwnerTopNaviStore-top-navi">
             <div className="StoreOwnerTopNaviStore-top-navi-top">
@@ -79,6 +80,5 @@ export default function StoreOwnerTopNavi() {
             </div>
         </div>
         </div>
-        // </div>
     )
 }

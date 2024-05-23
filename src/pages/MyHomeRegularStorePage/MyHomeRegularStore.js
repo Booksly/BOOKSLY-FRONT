@@ -1,8 +1,17 @@
 import './MyHomeRegularStore.css'
 import MyHomeLeftNavi from "../nav/MyHomeLeftNavi";
 import MyHomeTopNavi from "../nav/MyHomeTopNavi";
+import React from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function MyHomeRegularStore() {
+    const navigate = useNavigate()
+    const goToReservation = () => {
+        navigate("/Reservation")
+    }
+    const goToDetailedStoreInfo = () => {
+        navigate("/DetailedStoreInfo")
+    }
     return (
         <div className="MyHomeRegularStore">
         <div className="MyHomeRegularStoreBack">
@@ -37,15 +46,15 @@ export default function MyHomeRegularStore() {
                                 </div>
                             </div>
                             <div className="ButtonFrame">
-                                <div className="reservationButton">
-                                    <span className="buttonName">
+                                <div className="reservationButton" onClick={goToReservation}>
+                                    <div className="buttonName">
                                         예약하기
-                                    </span>
+                                    </div>
                                 </div>
-                                <div className="InquiryButton">
-                                    <span className="buttonName">
+                                <div className="InquiryButton" onClick={goToDetailedStoreInfo}>
+                                    <div className="buttonName">
                                         가게조회
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

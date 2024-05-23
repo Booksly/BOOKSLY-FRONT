@@ -1,6 +1,7 @@
 import searchbar from "../../assets/search_button.png";
 import home from '../../assets/home_button.png';
 import './DetailedStoreInfo.css'
+import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import {useNavigate} from "react-router-dom";
 
 export default function DetailedStoreInfo() {
@@ -9,8 +10,9 @@ export default function DetailedStoreInfo() {
         navigate("/Reservation")
     }
     return (
-        <div className="back">
         <div className="DetailedStoreInfo">
+        <div className="DetailedStoreInfoBack">
+            <LoginAfterMainHeader/>
             <div className="container">
                 <div className="header-inner">
                     <div className="header-inner-left">
@@ -22,19 +24,19 @@ export default function DetailedStoreInfo() {
                             <div className="nav-box">
                                 <div className="frame-286">
                                     <span className="container-131">
-                                      가게조회
+                                        가게조회
                                     </span>
                                 </div>
                             </div>
                             <div className="nav-box-1">
-                              <span className="container-132">
+                                <span className="container-132">
                                 당일예약
-                              </span>
+                                </span>
                             </div>
                             <div className="nav-box-2">
-                              <span className="container-133">
+                                <span className="container-133">
                                 예약조회
-                              </span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -54,9 +56,9 @@ export default function DetailedStoreInfo() {
                                 <img className="vector-1" src={home} alt={''}/>
                             </div>
                             <div className="go-mypage">
-                              <span className="my-page">
+                                <span className="my-page">
                                 My Page
-                              </span>
+                                </span>
                             </div>
                         </div>
                         <div className="notice-todo">
@@ -65,14 +67,14 @@ export default function DetailedStoreInfo() {
                                 </div>
                             </div>
                             <div className="user-id">
-                              <span className="container-25">
+                                <span className="container-25">
                                 김아무개
-                              </span>
+                                </span>
                             </div>
                         </div>
                         <div className="log-out-but">
                             <span className="container-26">
-                              로그아웃
+                                로그아웃
                             </span>
                         </div>
                     </div>
@@ -100,7 +102,7 @@ export default function DetailedStoreInfo() {
                         </div>
                         <div className="frame-107">
                             <div className="frame-103">
-                                <div className="icon">
+                                <div className="DetailedStoreInfoIcon">
                                 </div>
                                 <div className="container-8">
                                     경기도 수원시 영통구 광교산로 154-42 206호
@@ -158,16 +160,16 @@ export default function DetailedStoreInfo() {
                                             여성커트
                                         </div>
                                         <span className="container-menuPipe">
-                                             |
-                                       </span>
+                                            |
+                                        </span>
                                         <div className="container-menuPrice">
                                             30,000
                                         </div>
                                     </div>
                                     <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
+                                        <span className="container-menuInfo">
                                         얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -192,9 +194,9 @@ export default function DetailedStoreInfo() {
                                         </div>
                                     </div>
                                     <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
+                                        <span className="container-menuInfo">
                                         얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
+                                        </span>
                                     </div>
                                 </div>
 
@@ -220,9 +222,9 @@ export default function DetailedStoreInfo() {
                                         </div>
                                     </div>
                                     <div className="frame-menuInfo">
-                                      <span className="container-menuInfo">
+                                        <span className="container-menuInfo">
                                         얼굴에 맞는 헤어스타일로 잘라 드립니다.
-                                      </span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +243,7 @@ export default function DetailedStoreInfo() {
                                         제이 원장
                                     </div>
                                     <span className="container-empPipe">
-                                      |
+                                        |
                                     </span>
                                     <div className="container-empRv">
                                         리뷰 302건
@@ -249,7 +251,7 @@ export default function DetailedStoreInfo() {
                                 </div>
                                 <div className="frame-empInfo">
                                     <span className="container-empInfo">
-                                      수원 재방문률 1위 / 남성 전문 헤어 디자이너
+                                        수원 재방문률 1위 / 남성 전문 헤어 디자이너
                                     </span>
                                 </div>
                             </div>
@@ -261,7 +263,7 @@ export default function DetailedStoreInfo() {
                                         심화 디자이너
                                     </div>
                                     <span className="container-empPipe">
-                                      |
+                                        |
                                     </span>
                                     <div className="container-empRv">
                                         리뷰 241건
@@ -269,7 +271,7 @@ export default function DetailedStoreInfo() {
                                 </div>
                                 <div className="frame-empInfo">
                                     <span className="container-empInfo">
-                                      수원 재방문률 1위 / 여성 전문 헤어 디자이너
+                                        수원 재방문률 1위 / 여성 전문 헤어 디자이너
                                     </span>
                                 </div>
                             </div>
@@ -281,7 +283,7 @@ export default function DetailedStoreInfo() {
                                         캡 디자이너
                                     </div>
                                     <span className="container-empPipe">
-                                      |
+                                        |
                                     </span>
                                     <div className="container-empRv">
                                         리뷰 173건
@@ -289,7 +291,7 @@ export default function DetailedStoreInfo() {
                                 </div>
                                 <div className="frame-empInfo">
                                     <span className="container-empInfo">
-                                      수원 재방문률 1위 / 여성 전문 헤어 디자이너
+                                        수원 재방문률 1위 / 여성 전문 헤어 디자이너
                                     </span>
                                 </div>
                             </div>
@@ -298,7 +300,7 @@ export default function DetailedStoreInfo() {
                     <div className="frame-review">
                         <div className="frame-reviewTitle">
                             <span className="container-boxTitle">
-                              리뷰조회
+                                리뷰조회
                             </span>
                             <div className="container-reviewPlus">
                                 더보기 ...
