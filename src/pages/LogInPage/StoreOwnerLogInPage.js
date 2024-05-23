@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerLogInPage() {
   const navigate = useNavigate();
-  const goToNavigation = () => {
+  const goToStoreOwnerMemRegist = () => {
     navigate("/StoreOwnerMemRegist");
   };
   return (
@@ -44,7 +44,7 @@ export default function StoreOwnerLogInPage() {
               <div className="frame-109">
                 <button
                   className="frame-StoreOwnerMemRegistButton"
-                  onClick={goToNavigation}
+                  onClick={goToStoreOwnerMemRegist}
                 >
                   <div className="container-8">회원가입</div>
                 </button>

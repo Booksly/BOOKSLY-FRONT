@@ -65,6 +65,11 @@
   padding: 21px 35px 21px 35px;
   box-sizing: border-box;
 }
+.LoginPageNav .frame-StoreSearchButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .LoginPageNav .LoginPageNavPageName {
   overflow-wrap: break-word;
   font-family: "Inter";

@@ -1,5 +1,6 @@
 import "./StoreOwnerMemRegist.css";
 import LoginPageNav from "../nav/LoginPageNav";
+import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerMemRegist() {
   return (

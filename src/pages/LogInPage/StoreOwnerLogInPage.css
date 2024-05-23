@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: fit-content; */
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .frame-508 {
@@ -65,7 +64,6 @@
 }
 .StoreOwnerLogInPage .Customer {
   margin-right: 30px;
-  /* width: 167px; */
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
@@ -188,6 +186,11 @@
   font-weight: 300;
   font-size: 15px;
   color: #fdf8f3;
+}
+.StoreOwnerLogInPage .frame-StoreOwnerMemRegistButton {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .StoreOwnerLogInPage .frame-109 {
   display: flex;
