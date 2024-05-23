@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function LoginAfterMainHeader() {
   const navigate = useNavigate();
   const goToMainHomePage = () => {
-    navigate("/MainHome");
+    navigate("/login");
   };
   const goToStoreSearchPage = () => {
     navigate("/StoreSearch");

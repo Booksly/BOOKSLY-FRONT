@@ -1,33 +1,52 @@
 import './LoginBeforeMainHeader.css'
 import searchbar from "../../assets/search_button.png";
-
+import { useNavigate } from 'react-router';
 export default function LoginBeforeMainHeader() {
+    const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/")
+    }
+    const goToMyHome = () => {
+        navigate("/MyHomeMain")
+    }
+    const StoreSearch = () => {
+        navigate("/StoreSearch")
+    }
+    const TodayReserv = () => {
+        navigate("/TodayReserv")
+    }
+    const searchReserve = () => {
+        navigate("/Reservation")
+    }
+    const goTologin = () => {
+        navigate("/CustomerLogin")
+    }
     return (
         <div className="back">
         <div className="LoginBeforeMainHeader">
             <div className="header-inner-before">
                 <div className="header-inner-left">
                     <div className="logo-goto-home">
-                        <div className="booksly-logo">
+                        <div className="booksly-logo" onClick={goToMain}>
                         </div>
                     </div>
                     <div className="header-buttons">
-                        <div className="currentNav">
+                        <div className="currentNav" onClick={StoreSearch}>
                             <div className="currentPageBar">
                             <span className="PageName">
                                 가게조회
                             </span>
                             </div>
                         </div>
-                        <div className="nav-box">
-                        <span className="PageName">
-                            당일예약
-                        </span>
+                        <div className="nav-box" onClick={TodayReserv}>
+                            <span className="PageName">
+                                당일예약
+                            </span>
                         </div>
-                        <div className="nav-box">
-                        <span className="PageName">
-                            예약조회
-                        </span>
+                        <div className="nav-box" onClick={searchReserve}>
+                            <span className="PageName">
+                                예약조회
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -42,7 +61,7 @@ export default function LoginBeforeMainHeader() {
                     </div>
                 </div>
                 <div className="header-inner-right">
-                    <div className="loginButton">
+                    <div className="loginButton" onClick={goTologin}>
                         <span className="login">
                             로그인
                         </span>

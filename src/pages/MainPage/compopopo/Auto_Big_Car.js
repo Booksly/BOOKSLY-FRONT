@@ -2,11 +2,31 @@ import Carousel from 'react-bootstrap/Carousel';
 import MainCarouselImage from './MainCarouselImage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Auto_Big_Car.css'
+import { useNavigate } from 'react-router';
 
 function AutoBigCar() {
+  const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/")
+    }
+    const goToMyHome = () => {
+        navigate("/MyHomeMain")
+    }
+    const StoreSearch = () => {
+        navigate("/StoreSearch")
+    }
+    const TodayReserv = () => {
+        navigate("/TodayReserv")
+    }
+    const searchReserve = () => {
+        navigate("/Reservation")
+    }
+    const goTologin = () => {
+        navigate("/CustomerLogin")
+    }
   return (
     <div className='carousel-padding-in-abc'>
-      <Carousel>
+      <Carousel onClick={StoreSearch}>
         <Carousel.Item interval={2000}>
           <MainCarouselImage text="First slide" />
           <Carousel.Caption>
