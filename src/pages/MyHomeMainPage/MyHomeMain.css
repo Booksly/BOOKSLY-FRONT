@@ -25,7 +25,7 @@
     height: 885px;
     padding-top: 50px;
 }
-.MyHomeMain .frame-418 {
+.MyHomeMain .ContentBox {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
@@ -45,6 +45,7 @@
     box-sizing: border-box;
 }
 .MyHomeMain .containerPhone {
+    font-size: 18px;
     margin-bottom: 10px;
     display: inline-block;
     align-self: flex-start;
@@ -85,7 +86,6 @@
 }
 .MyHomeMain .container-2 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 300;
     font-size: 15px;
     color: #FFFFFF;
@@ -167,29 +167,25 @@
     box-sizing: border-box;
 }
 .MyHomeMain .frame-4181 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #FDD2C2;
     padding: 10px 20px;
-    width: 114px;
     box-sizing: border-box;
 }
 .MyHomeMain .container-7 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 17px;
     color: #000000;
 }
 .MyHomeMain .frame-419 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #FDD2C2;
     padding: 10px 20px;
-    width: 120px;
     box-sizing: border-box;
 }
 .MyHomeMain .container-8 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 17px;
     color: #000000;

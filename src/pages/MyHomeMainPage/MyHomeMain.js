@@ -10,7 +10,7 @@ export default function MyHomeMain() {
             <div className="containerAll">
                 <MyHomeTopNavi/>
                 <div className="MyHomeMaincontainer">
-                    <div className="frame-418">
+                    <div className="ContentBox">
                         <div className="frame-411">
                             <div className="containerPhone">
                                 전화번호
@@ -54,20 +54,19 @@ export default function MyHomeMain() {
                         </div>
                         <div className="frame-420">
                             <div className="frame-4181">
-                                <span className="container-7">
+                                <div className="container-7">
                                     저장하기
-                                </span>
+                                </div>
                             </div>
                             <div className="frame-419">
-                                <span className="container-8">
+                                <div className="container-8">
                                     회원 탈퇴
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/*<MyHomeLeftNavi/>*/}
         </div>
         </div>
     )

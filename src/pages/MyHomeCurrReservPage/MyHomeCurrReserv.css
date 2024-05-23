@@ -1,863 +1,225 @@
 .MyHomeCurrReserv {
-    background: #FDF8F3;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    height: fit-content;
+    background: #FFFFFF;
+}
+.MyHomeCurrReservBack {
     display: flex;
-    width: 1440px;
+    justify-content: center;
+}
+.MyHomeCurrReserv .containerAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*padding-bottom: 100px;*/
     box-sizing: border-box;
 }
-.MyHomeCurrReserv .frame-453 {
+.MyHomeCurrReserv .MyHomeCurrReservContainer {
+    margin-top: 2px;
+    display: flex;
+    background: #FDF8F3;
+    justify-content: center;
+    width: 1190px;
+    height: fit-content;
+    padding-top: 50px;
+}
+.MyHomeCurrReserv .Content {
+    height: fit-content;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .sortingBox {
+    margin: 0 5px 13px 5px;
+    display: flex;
+    flex-direction: row;
+    /*align-self: flex-start;*/
+    justify-content: flex-end;
+    width: 930px;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .container-sortBox {
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     background: #FFFFFF;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 639px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 19px 27px 19px 25px;
+    width: 170px;
+    height: fit-content;
     box-sizing: border-box;
 }
-.MyHomeCurrReserv .component-29 {
-    position: relative;
-    margin-bottom: 20px;
+.MyHomeCurrReserv .sortName {
+    display: flex;
+    justify-content: flex-start;
+    width: 99px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeCurrReserv .sortButton {
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/sortButton.png') 50% / cover no-repeat;
+}
+.MyHomeCurrReserv .reservList {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     width: fit-content;
+    height: fit-content;
     box-sizing: border-box;
 }
-.MyHomeCurrReserv .current-reservation {
-    margin-bottom: 2px;
+.MyHomeCurrReserv .currentReservBox {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
+}
+.MyHomeCurrReserv .storeInfoFrame {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .storeProfile {
+    border-radius: 30px;
+    background: url('../../assets/StoreProfile.png') 50% / cover no-repeat;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+.MyHomeCurrReserv .storeInfoTime {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .storeInfoList {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .storeInfo {
+    margin-right: 15px;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeCurrReserv .storePartition {
+    margin-right: 15px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.MyHomeCurrReserv .regularSign {
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.MyHomeCurrReserv .reservInfo {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .reservDate {
+    margin-right: 10px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeCurrReserv .reservTime {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+.MyHomeCurrReserv .reservFrame {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 40px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .EmpBox {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .EmpNameTime {
+    margin-bottom: 10px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .EmpName {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+    margin-right: 5px;
+}
+.MyHomeCurrReserv .EmpTime {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeCurrReserv .reservBoxLine {
+    background: #D0D0D0;
+    width: 770px;
+    height: 2px;
+}
+.MyHomeCurrReserv .reservContent {
+    margin-bottom: 15px;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+.MyHomeCurrReserv .reservMenuList {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.MyHomeCurrReserv .cancelButton {
+    align-self: flex-end;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
 }
 .MyHomeCurrReserv .container {
     border-radius: 5px;
     margin: 0 105px;
     display: flex;
     width: 170px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .rectangle-44 {
-    background: rgba(255, 89, 37, 0.1);
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 1px;
-    height: 58px;
-}
-.MyHomeCurrReserv .frame-22 {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 21.5px 30.8px 21.5px 0;
-    width: 1140px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-1 {
-    background: #D6B585;
-    position: absolute;
-    left: 301px;
-    bottom: 0px;
-    width: 2px;
-    height: 1040px;
-}
-.MyHomeCurrReserv .frame-380 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-3 {
-    margin: 0 5px 13.2px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-4 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 260px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-5 {
-    margin: 0 5px 13.2px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-6 {
-    margin: 0 66.7px 16.5px 0;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-7 {
-    margin: 0 66.7px 16.5px 0;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-8 {
-    margin-bottom: 273px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-9 {
-    margin: 0 5px 13.2px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .cpnavi-all {
-    border: 1px solid #FFFFFF;
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .cpnavi-bar-2 {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5px 20px 0 20px;
-    width: 300px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-4 {
-    background: #D9D9D9;
-    margin-bottom: 16.5px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .container-1 {
-    margin: 3px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .line-3 {
-    background: #D9D9D9;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .polygon-1 {
-    margin-right: 13px;
-    width: 27px;
-    height: 25px;
-}
-.MyHomeCurrReserv .line-35 {
-    background: #D9D9D9;
-    position: absolute;
-    left: 20px;
-    top: 0px;
-    right: 20px;
-    height: 1px;
-}
-.MyHomeCurrReserv .cpnavi-bar {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 1px 20px 0 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-36 {
-    background: #D9D9D9;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .line-37 {
-    background: #D9D9D9;
-    margin-bottom: 11px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .my-1 {
-    margin: 7px 0 7.8px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .vector {
-    margin-right: 7px;
-    width: 33px;
-    height: 33.8px;
-}
-.MyHomeCurrReserv .cpnavi-bar-21 {
-    background: #FFFFFF;
-    position: relative;
-    display: flex;
-    padding: 0.5px 20px 0 20px;
-    width: 300px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-41 {
-    background: #D9D9D9;
-    margin-bottom: 16.5px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .container-2 {
-    position: relative;
-    margin: 3px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .line-31 {
-    background: #D9D9D9;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .polygon-11 {
-    margin-right: 13px;
-    width: 27px;
-    height: 25px;
-}
-.MyHomeCurrReserv .cpnavi-bar-1 {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 1px 20px 0 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-361 {
-    background: #D9D9D9;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .line-371 {
-    background: #D9D9D9;
-    margin-bottom: 11px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .my-2 {
-    margin: 7px 0 7.8px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .vector-1 {
-    margin-right: 7px;
-    width: 33px;
-    height: 33.8px;
-}
-.MyHomeCurrReserv .cpnavi-bar-2 {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 1px 20px 0 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .line-362 {
-    background: #D9D9D9;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .line-372 {
-    background: #D9D9D9;
-    margin-bottom: 11px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .my-3 {
-    margin: 7px 0 7.8px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .vector-2 {
-    margin-right: 7px;
-    width: 33px;
-    height: 33.8px;
-}
-.MyHomeCurrReserv .cpnavi-logo {
-    background: #FFFFFF;
-    position: relative;
-    padding: 20px 19px;
-    width: 300px;
-    height: 100px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .image-13 {
-    border-radius: 23px;
-    /*background: url('assets/images/Image13.png') 50% / cover no-repeat;*/
-    width: 119px;
-    height: 60px;
-}
-.MyHomeCurrReserv .rectangle-244 {
-    background: #D9D9D9;
-    margin: 0 20px;
-    width: 260px;
-    height: 1px;
-}
-.MyHomeCurrReserv .goto-mypage {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .icon-home {
-    margin: 1px 10px 1px 0;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .vector-3 {
-    width: 20px;
-    height: 20px;
-}
-.MyHomeCurrReserv .go-mypage {
-    display: flex;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .my-page {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.MyHomeCurrReserv .notice-todo {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .icon-alect {
-    margin: 1px 10px 1px 0;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-3 {
-    /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
-    width: 20px;
-    height: 20px;
-}
-.MyHomeCurrReserv .user-id {
-    display: flex;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-4 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.MyHomeCurrReserv .log-out-but {
-    display: flex;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-5 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.MyHomeCurrReserv .frame-3 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    padding: 38px 0 42px 82px;
-    width: 1140px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-6 {
-    border-radius: 44px;
-    /*background: url('assets/images/Image2.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);*/
-    margin: 1px 45px 1px 0;
-    width: 88px;
-    height: 88px;
-}
-.MyHomeCurrReserv .container-7 {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-8 {
-    margin-bottom: 15px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-9 {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-10 {
-    margin-right: 10.6px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-11 {
-    margin-right: 10.3px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-12 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-13 {
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-14 {
-    align-self: flex-end;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #777777;
-}
-.MyHomeCurrReserv .line-11 {
-    background: #D0D0D0;
-    width: 768px;
-    height: 2px;
-}
-.MyHomeCurrReserv .frame-7 {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-15 {
-    border-radius: 30px;
-    /*background: url('assets/images/Image4.png') 50% / cover no-repeat;*/
-    margin-right: 19px;
-    width: 60px;
-    height: 60px;
-}
-.MyHomeCurrReserv .container-16 {
-    margin: 2.5px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-221 {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-17 {
-    margin-right: 15.2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-18 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-19 {
-    margin-right: 15.4px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-20 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-21 {
-    margin-right: 15.7px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-22 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-23 {
-    margin: 0.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-24 {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-25 {
-    margin-right: 10.7px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #4D4D4D;
-}
-.MyHomeCurrReserv .container-26 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #4D4D4D;
-}
-.MyHomeCurrReserv .frame-19 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    background: #FFFFFF;
-    margin-bottom: 17px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 41px 18px 41px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-8 {
-    margin-bottom: 13px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-27 {
-    margin-bottom: 10px;
-    display: flex;
-    align-self: flex-start;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-27 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .line-111 {
-    background: #D0D0D0;
-    width: 768px;
-    height: 2px;
-}
-.MyHomeCurrReserv .frame-9 {
-    margin-bottom: 15px;
-    display: flex;
-    align-self: flex-start;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-28 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .frame-291 {
-    display: flex;
-    width: 768px;
-    height: 2px;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-29 {
-    margin: 1px 9px 1px 0;
-    display: inline-block;
-    width: 99px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .group-16 {
-    width: 20px;
-    height: 20px;
-}
-.MyHomeCurrReserv .container-30 {
-    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 19px 17px 19px 0;
-    width: 170px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-31 {
-    align-self: flex-end;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #777777;
-}
-.MyHomeCurrReserv .line-112 {
-    background: #D0D0D0;
-    width: 768px;
-    height: 2px;
-}
-.MyHomeCurrReserv .frame-71 {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-32 {
-    border-radius: 30px;
-    /*background: url('assets/images/Image12.png') 50% / cover no-repeat;*/
-    margin-right: 19px;
-    width: 60px;
-    height: 60px;
-}
-.MyHomeCurrReserv .container-33 {
-    margin: 2.5px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-222 {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-34 {
-    margin-right: 15.2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-35 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-36 {
-    margin-right: 15.4px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-37 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-38 {
-    margin-right: 15.7px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-39 {
-    margin: 1px 15px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-40 {
-    margin: 0.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.MyHomeCurrReserv .container-41 {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-42 {
-    margin-right: 10.4px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #4D4D4D;
-}
-.MyHomeCurrReserv .container-43 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #4D4D4D;
-}
-.MyHomeCurrReserv .frame-191 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    background: #FFFFFF;
-    margin-bottom: 17px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 41px 18px 41px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-81 {
-    margin-bottom: 13px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .frame-271 {
-    margin-bottom: 10px;
-    display: flex;
-    align-self: flex-start;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-44 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .line-113 {
-    background: #D0D0D0;
-    width: 768px;
-    height: 2px;
-}
-.MyHomeCurrReserv .frame-91 {
-    margin-bottom: 15px;
-    display: flex;
-    align-self: flex-start;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .container-45 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .frame-2911 {
-    display: flex;
-    width: 768px;
-    height: 2px;
     box-sizing: border-box;
 }

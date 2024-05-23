@@ -7,7 +7,7 @@
     background: #FFFFFF;
     display: flex;
     width: fit-content;
-    height: 150vh;
+    height: fit-content;
     box-sizing: border-box;
 }
 .MyHomeLeftNavi .MyHomeLeftNavicontainer {
