@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom"
+import './Nav.css'
 
 function Nav_Main() {
     return (

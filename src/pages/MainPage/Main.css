@@ -1,33 +1,12 @@
 .main_padding {
-  background: #FDF8F3;
+  background: #FDF8F3; 
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
 }
-.main_padding .nav {
-  background: #FFFFFF;
-  width: 100%;
-  height: 65px;
-}
-.main_padding .promote-carousel-padding {
-  background: #E2E2E2;
-  width: 100%;
-  height: 800px;
-}
-.main_padding .hot-place-padding {
-  background: #FF9090;
-  width: 1440px;
-  height: 350px;
-}
-.main_padding .new-store {
-  background: #FF7373;
-  width: 1440px;
-  height: 350px;
-}
-.main_padding .shortcut-padding {
-  background: #FFCACA;
-  width: 1440px;
-  height: 500px;
-}
+
+
+
+

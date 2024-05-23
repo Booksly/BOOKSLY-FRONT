@@ -1,0 +1,73 @@
+.slider-container {
+    padding: 30px;
+}
+
+.slick-slider.custom-slider.slick-initialized {
+    padding: 10px; /* 슬라이더 아이템 내 여백 추가 */
+    box-sizing: border-box;
+    position: relative;
+}
+.custom-slider .slick-slide {
+    margin: 0 5px; /* 각 슬라이더 아이템 사이에 좌우 마진 추가 */
+    background-color: white;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.custom-slider .slick-list {
+    margin: 0 30px; /* 슬라이더 전체 너비를 고려한 마진 추가 */
+}
+
+.slider-item {
+    padding: 10px; /* 슬라이더 아이템 내 여백 추가 */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-slider .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+/* 화살표 스타일 수정 */
+.custom-slider .slick-prev,
+.custom-slider .slick-next {
+    top: 50%; /* 세로 중앙에 위치 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    z-index: 1; /* 슬라이더 위에 위치하도록 z-index 설정 */
+    /*background-color: rgba(0, 0, 0, 0.5); /* 배경색 추가 */
+    border-radius: 50%; /* 원형으로 변경 */
+    width: 40px; /* 크기 조정 */
+    height: 40px; /* 크기 조정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 115, 0); /* 화살표 색상 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+    border: none; /* 기본 버튼 스타일 제거 */
+    outline: none; /* 포커스 스타일 제거 */
+    position: absolute; /* 절대 위치 지정 */
+}
+
+/* 화살표 아이콘 스타일 수정 */
+.custom-slider .slick-prev::before,
+.custom-slider .slick-next::before {
+    font-size: 30px; /* 화살표 아이콘 크기 조정 */
+    color: rgb(255, 145, 0); /* 화살표 아이콘 색상 */
+}
+
+/* 왼쪽 화살표 위치 조정 */
+.custom-slider .slick-prev {
+    left: 0; /* 슬라이더 아이템 내부의 왼쪽에 위치 */
+}
+
+/* 오른쪽 화살표 위치 조정 */
+.custom-slider .slick-next {
+    right: 0; /* 슬라이더 아이템 내부의 오른쪽에 위치 */
+}

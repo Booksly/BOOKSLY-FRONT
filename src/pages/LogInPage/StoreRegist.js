@@ -1,6 +1,6 @@
 import "./StoreRegist.css";
 import storeimgadd from "../../assets/AddStoreImg_button.png";
-import sort from "../../assets/sort_button.png";
+import sort from "../../assets/Sort_button.png";
 import LoginPageNav from "../nav/LoginPageNav";
 
 export default function StoreRegist() {

@@ -1,0 +1,29 @@
+.shortcut-padding {
+    width: 1440px;
+    height: 500px;
+    display: flex;
+}
+
+/* 바로가기 박스 크기와 이미지 설정 */
+.shortcut {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    background-image: url('../../../assets/storeimg_jjhair.png');
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: center;
+    margin: auto; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-end;
+}
+
+.shortcut_title {
+    margin: 50px;
+    font-weight: light;
+    font-size: 20px;
+    color: white;
+    text-shadow: -3px 0px black, 0px 3px black, 
+    3px 0px black, 0px -3px black;
+}
