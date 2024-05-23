@@ -9,11 +9,12 @@ import Promote_Carousel from './compopopo/Promote_Carousel'
 import Shortcut from './compopopo/Shortcut'
 import Hot_Place from './compopopo/Hot_Place'
 import New_Store from './compopopo/New_Store'
+import LoginBeforeMainHeader from '../nav/LoginBeforeMainHeader'
 
 export default function Mainmain() {
   return (
     <div className="main_padding">
-      <Nav_Main/>
+      <LoginBeforeMainHeader/>
       <Promote_Carousel/>
       <Shortcut/>
       <Hot_Place/>
