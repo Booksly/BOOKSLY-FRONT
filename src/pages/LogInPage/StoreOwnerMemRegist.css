@@ -18,6 +18,7 @@
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
+  background: #fdf8f3;
 }
 .StoreOwnerMemRegist .allcontentcontainer {
   display: flex;
@@ -36,7 +37,7 @@
 }
 .StoreOwnerMemRegist .rightcontentcontainer {
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 150px;
   display: flex;
   flex-direction: column;
   width: 48%;
@@ -95,6 +96,11 @@
   width: 410px;
   box-sizing: border-box;
 }
+.StoreOwnerMemRegist .frame-ThisPageButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .StoreOwnerMemRegist .frame-406 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -121,12 +127,18 @@
   box-sizing: border-box;
 }
 .StoreOwnerMemRegist .container-4 {
+  margin-top: 3.5px;
   margin-right: 5.6px;
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
+}
+.StoreOwnerMemRegist .frame-StoreOwnerLoginButton {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .StoreOwnerMemRegist .container-5 {
   overflow-wrap: break-word;
@@ -426,6 +438,12 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+}
+.StoreOwnerMemRegist .frame-StoreRegistButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
 }
 .StoreOwnerMemRegist .container-14 {
   overflow-wrap: break-word;

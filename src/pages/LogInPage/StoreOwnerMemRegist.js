@@ -3,6 +3,16 @@ import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerMemRegist() {
+  const navigate = useNavigate();
+  const goToThisPage = () => {
+    navigate("/StoreOwnerMemRegist");
+  };
+  const goToStoreOwnerLogInPage = () => {
+    navigate("/StoreOwnerLogin");
+  };
+  const goToStoreRegistPage = () => {
+    navigate("/StoreRegist");
+  };
   return (
     <div className="StoreOwnerMemRegist">
       <div className="StoreOwnerMemRegistBack">
@@ -18,14 +28,26 @@ export default function StoreOwnerMemRegist() {
                     <span className="StoreOwner">기업회원</span>
                   </div>
                 </div>
+
                 <div className="frame-77">
-                  <div className="frame-406">
-                    <span className="container-3">북슬리 아이디 만들기</span>
-                  </div>
+                  <button
+                    className="frame-ThisPageButton"
+                    onClick={goToThisPage}
+                  >
+                    <div className="frame-406">
+                      <span className="container-3">북슬리 아이디 만들기</span>
+                    </div>
+                  </button>
                 </div>
+
                 <div className="frame-109">
                   <span className="container-4">이미 계정이 있나요?</span>
-                  <span className="container-5">로그인</span>
+                  <button
+                    className="frame-StoreOwnerLoginButton"
+                    onClick={goToStoreOwnerLogInPage}
+                  >
+                    <span className="container-5">로그인</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -90,7 +112,12 @@ export default function StoreOwnerMemRegist() {
             </div>
           </div>
           <div className="frame-520">
-            <span className="container-14">가게 등록</span>
+            <button
+              className="frame-StoreRegistButton"
+              onClick={goToStoreRegistPage}
+            >
+              <span className="container-14">가게 등록</span>
+            </button>
           </div>
         </div>
       </div>
