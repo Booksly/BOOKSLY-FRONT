@@ -44,31 +44,8 @@
     width: 930px;
     box-sizing: border-box;
 }
-.MyHomeCurrReserv .container-sortBox {
-    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 19px 27px 19px 25px;
+.MyHomeCurrReserv .sortBox {
     width: 170px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.MyHomeCurrReserv .sortName {
-    display: flex;
-    justify-content: flex-start;
-    width: 99px;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.MyHomeCurrReserv .sortButton {
-    width: 20px;
-    height: 20px;
-    background: url('../../assets/sortButton.png') 50% / cover no-repeat;
 }
 .MyHomeCurrReserv .reservList {
     display: flex;

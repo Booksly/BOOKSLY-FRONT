@@ -1,8 +1,23 @@
 import './MyHomeAllReserv.css'
 import MyHomeLeftNavi from "../nav/MyHomeLeftNavi";
 import MyHomeTopNavi from "../nav/MyHomeTopNavi";
+import React, {useEffect, useState, useRef} from "react";
+import Select from "react-select";
+
+let options = [
+    {value: "all", label: "전체"},
+    {value: "hair", label: "헤어"},
+    {value: "nail", label: "네일"},
+    {value: "eye", label: "속눈썹 / 눈썹"},
+    {value: "massage", label: "마사지"},
+    {value: "makeup", label: "메이크업"},
+    {value: "etc", label: "기타"}
+]
 
 export default function MyHomeAllReserv() {
+    const [selectValue, setSelectValue] = useState('')
+    const selectInputRef = useRef(null);
+
     return (
         <div className="MyHomeAllReserv">
         <div className="MyHomeAllReservBack">
@@ -12,13 +27,23 @@ export default function MyHomeAllReserv() {
                 <div className="MyHomeAllReservContainer">
                     <div className="Content">
                         <div className="sortingBox">
-                            <div className="container-sortBox">
-                                <div className="sortName">
-                                    전체
-                                </div>
-                                <div className="sortButton"/>
-                            </div>
+                            <>
+                                <Select
+                                    className="sortBox"
+                                    ref = {selectInputRef}
+                                    onChange={(e) => {
+                                        if (e) {
+                                            setSelectValue(e.value);
+                                        } else {
+                                            setSelectValue("");
+                                        }
+                                    }}
+                                    options={options}
+                                    placeholder="전체"
+                                />
+                            </>
                         </div>
+
                         <div className="reservList">
                             <div className="currentReservBox">
                                 <div className="storeInfoFrame">
@@ -288,7 +313,18 @@ export default function MyHomeAllReserv() {
                                             <div className="rvBox">
                                                 Review
                                             </div>
-                                            <div className="polygon"/>
+                                            <div className="rvDel">
+                                                리뷰삭제
+                                            </div>
+                                        </div>
+                                        <div className="reviewContent">
+                                            <div className="rvContent">
+                                                마지막 타임 예약이 취소되서 북슬리에 올라온 거 빠르게 잡았어요. <br/>
+                                                원래는 이 시간에 미용실 가려면 이곳 저곳 전화해서 예약이 다찼는지 확인했어야 하는데, 비어있는 예약을 한번에 볼 수있어서
+                                                좋았습니다. 금용구 디자이너님 감사합니다~~
+                                            </div>
+                                            <div className="rvPhoto">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
