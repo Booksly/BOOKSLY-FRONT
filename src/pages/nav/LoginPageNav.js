@@ -34,24 +34,16 @@ export default function LoginPageNav() {
             </div>
           </div>
           <div className="LoginPageNavheader-inner-right">
-            <div className="LoginPageNavheaderRightDiv">
-              <div className="LoginPageNavicon">
-                <button
-                  className="frame-MainHomeButton"
-                  onClick={goToMainHomePage}
-                >
+            <button className="frame-MainHomeButton" onClick={goToMainHomePage}>
+              <div className="LoginPageNavheaderRightDiv">
+                <div className="LoginPageNavicon">
                   <img className="LoginPageNavhome" src={home} alt={""} />
-                </button>
-              </div>
-              <div className="LoginPageNavgo-mypage">
-                <button
-                  className="frame-MainHomeButton"
-                  onClick={goToMainHomePage}
-                >
+                </div>
+                <div className="LoginPageNavgo-mypage">
                   <span className="LoginPageNavmy-page">북슬리 홈</span>
-                </button>
+                </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>

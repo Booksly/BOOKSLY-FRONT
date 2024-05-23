@@ -1208,10 +1208,16 @@
   justify-content: center;
   align-items: center;
 }
+.StoreRegist .frame-StoreRegistFinButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .StoreRegist .container-63 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #ffffff;
+  white-space: nowrap;
 }

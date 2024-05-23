@@ -59,6 +59,9 @@
   font-weight: 700;
   font-size: 16px;
   color: #000000;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .TodayReservationPage .before-day-and-time {
   margin-bottom: 15px;

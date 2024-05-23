@@ -2,8 +2,13 @@ import "./StoreRegist.css";
 import storeimgadd from "../../assets/AddStoreImg_button.png";
 import sort from "../../assets/sort_button.png";
 import LoginPageNav from "../nav/LoginPageNav";
+import { useNavigate } from "react-router-dom";
 
 export default function StoreRegist() {
+  const navigate = useNavigate();
+  const goToStoreOwnerMain = () => {
+    navigate("/StoreOwnerMain");
+  };
   return (
     <div className="StoreRegist">
       <div className="StoreRegistBack">
@@ -266,7 +271,12 @@ export default function StoreRegist() {
             </div>
           </div>
           <div className="frame-536">
-            <span className="container-63">등록 완료</span>
+            <button
+              className="frame-StoreRegistFinButton"
+              onClick={goToStoreOwnerMain}
+            >
+              <span className="container-63">등록 완료</span>
+            </button>
           </div>
         </div>
       </div>

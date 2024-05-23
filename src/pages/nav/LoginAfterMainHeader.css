@@ -30,6 +30,11 @@
   height: fit-content;
   box-sizing: border-box;
 }
+.LoginAfterMainHeader .frame-MainHomeButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .LoginAfterMainHeader .logo-goto-home {
   margin-top: 5px;
   display: flex;
@@ -47,6 +52,26 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+}
+.LoginAfterMainHeader .frame-StoreSearchButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.LoginAfterMainHeader .frame-TodayReservButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.LoginAfterMainHeader .frame-MyHomeAllReservButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.LoginAfterMainHeader .frame-MyHomeMainButton {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .LoginAfterMainHeader .currentNav {
   background: #ffffff;
@@ -71,6 +96,7 @@
   font-size: 20px;
   line-height: 0.9;
   color: #000000;
+  white-space: nowrap;
 }
 .LoginAfterMainHeader .search-border {
   border-radius: 30px;
