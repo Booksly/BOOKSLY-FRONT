@@ -1,18 +1,26 @@
 import './MyHomeTopNavi.css'
+import {useNavigate} from "react-router-dom";
 
 export default function MyHomeTopNavi() {
+    const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/")
+    }
+    const goToMyHome = () => {
+        navigate("/MyHomeMain")
+    }
     return (
         <div className="MyHomeTopNavi">
             <div className="MyHomeTopNavimyhome-top-navi">
                 <div className="MyHomeTopNavimyhome-top-navi-top">
                     <div className="MyHomeTopNavimyhomeTopNaviEtc">
-                        <div className="MyHomeTopNavimyhome">
+                        <button className="MyHomeTopNavimyhome" onClick={goToMyHome}>
                             <div className="MyHomeTopNavimyhomeButton">
                             </div>
                             <div className="MyHomeTopNavicontainer-3">
                                     My Page
                             </div>
-                        </div>
+                        </button>
                         <div className="MyHomeTopNavialarm">
                             <div className="MyHomeTopNavialarm-button">
                             </div>
@@ -20,9 +28,9 @@ export default function MyHomeTopNavi() {
                                     아이디
                             </div>
                         </div>
-                        <div className="MyHomeTopNavilogoutButton">
+                        <button className="MyHomeTopNavilogoutButton" onClick={goToMain}>
                                 로그아웃
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div className="MyHomeTopNavimyhome-top-navi-bottom">

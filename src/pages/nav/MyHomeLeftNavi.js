@@ -2,20 +2,37 @@ import './MyHomeLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
 import React from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function MyHomeLeftNavi() {
+    const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/")
+    }
+    const goToMyHome = () => {
+        navigate("/MyHomeMain")
+    }
+    const goToMyHomeAllReserv = () => {
+        navigate("/MyHomeAllReserv")
+    }
+    const goToMyHomeCurrReserv = () => {
+        navigate("/MyHomeCurrReserv")
+    }
+    const goToMyHomeRegularStore = () => {
+        navigate("/MyHomeRegularStore")
+    }
     return (
         <div className="MyHomeLeftNavi">
             <div className="MyHomeLeftNavicpsk-navi">
                 <div className="MyHomeLeftNavicontainer">
                     <div className="MyHomeLeftNavicpnavi-logo">
-                        <div className="MyHomeLeftNavibooksly-logo">
-                        </div>
+                        <button className="MyHomeLeftNavibooksly-logo" onClick={goToMain}>
+                        </button>
                         <div className="MyHomeLeftNavilogoLine">
                         </div>
                     </div>
                     <div className="MyHomeLeftNavicpsk-navi-bar">
-                        <div className="MyHomeLeftNavicpnavi-bar">
+                        <button className="MyHomeLeftNavicpnavi-bar" onClick={goToMyHome}>
                             <div className="MyHomeLeftNavicpnaviLineTop">
                             </div>
                             <div className="MyHomeLeftNavicp-navi-search-name">
@@ -26,8 +43,8 @@ export default function MyHomeLeftNavi() {
                             </div>
                             <div className="MyHomeLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="MyHomeLeftNavicpnavi-bar">
+                        </button>
+                        <button className="MyHomeLeftNavicpnavi-bar" onClick={goToMyHomeAllReserv}>
                             <div className="MyHomeLeftNavicpnaviLineTop">
                             </div>
                             <div className="MyHomeLeftNavicp-navi-search-name">
@@ -38,8 +55,8 @@ export default function MyHomeLeftNavi() {
                             </div>
                             <div className="MyHomeLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="MyHomeLeftNavicpnavi-bar">
+                        </button>
+                        <button className="MyHomeLeftNavicpnavi-bar" onClick={goToMyHomeAllReserv}>
                             <div className="MyHomeLeftNavicpnaviLineTop">
                             </div>
                             <div className="MyHomeLeftNavicp-navi-allow">
@@ -50,8 +67,8 @@ export default function MyHomeLeftNavi() {
                             </div>
                             <div className="MyHomeLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="MyHomeLeftNavicpnavi-bar">
+                        </button>
+                        <button className="MyHomeLeftNavicpnavi-bar" onClick={goToMyHomeCurrReserv}>
                             <div className="MyHomeLeftNavicpnaviLineTop">
                             </div>
                             <div className="MyHomeLeftNavicp-navi-allow">
@@ -62,8 +79,8 @@ export default function MyHomeLeftNavi() {
                             </div>
                             <div className="MyHomeLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="MyHomeLeftNavicpnavi-bar">
+                        </button>
+                        <button className="MyHomeLeftNavicpnavi-bar"onClick={goToMyHomeRegularStore}>
                             <div className="MyHomeLeftNavicpnaviLineTop">
                             </div>
                             <div className="MyHomeLeftNavicp-navi-search-name">
@@ -74,7 +91,7 @@ export default function MyHomeLeftNavi() {
                             </div>
                             <div className="MyHomeLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                     </div>
                     <div className="MyHomeLeftNavinaviBottomLine">
                     </div>

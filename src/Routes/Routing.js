@@ -25,7 +25,7 @@ import StoreRegist from "../pages/LogInPage/StoreRegist";
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
 import MyHomeAllReserv from "../pages/MyHomeAllReservPage/MyHomeAllReserv";
 import MyHomeCurrReserv from "../pages/MyHomeCurrReservPage/MyHomeCurrReserv";
-import MyHomeRegularStore from "../pages/MyHomeRegularShopPage/MyHomeRegularStore";
+import MyHomeRegularStore from "../pages/MyHomeRegularStorePage/MyHomeRegularStore";
 
 // 당일 예약 페이지
 import TodayReserv from "../pages/TodayReservationPage/TodayReservationPage";

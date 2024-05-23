@@ -34,6 +34,8 @@
     flex-direction: row;
     box-sizing: border-box;
     margin-right: 30px;
+    border: 0;
+    background: #FFFFFF;
 }
 .MyHomeTopNavi .MyHomeTopNavimyhomeButton {
     background: url('../../assets/home_button.png') 50% / cover no-repeat;
@@ -42,7 +44,6 @@
     height: 25px;
 }
 .MyHomeTopNavi .MyHomeTopNavicontainer-3 {
-    margin: 1px 0 1px 0;
     display: inline-block;
     overflow-wrap: break-word;
     font-weight: 700;
@@ -76,6 +77,8 @@
     font-weight: 700;
     font-size: 17px;
     color: #000000;
+    border: 0;
+    background: #FFFFFF;
 }
 
 .MyHomeTopNavi .MyHomeTopNavimyhome-top-navi-bottom {

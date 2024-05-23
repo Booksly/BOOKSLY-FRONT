@@ -44,7 +44,7 @@ export default function DetailedStoreInfo() {
                         </div>
                         <div className="input-search">
                             <span className="container-23">
-                              어떤 가게를 찾으세요?
+                                어떤 가게를 찾으세요?
                             </span>
                         </div>
                     </div>
@@ -133,9 +133,9 @@ export default function DetailedStoreInfo() {
                         </div>
                         <div className="frame-283">
                             <button className="frame-reservationButton" onClick={goToNavigation}>
-                              <span className="container-15">
-                                예약하기
-                              </span>
+                                <span className="container-15">
+                                    예약하기
+                                </span>
                             </button>
                         </div>
                     </div>
