@@ -13,10 +13,12 @@ export default function CustomerLoginPage() {
         <LoginPageNav />
         <div className="CustomerLoginPageContainer">
           <div className="LogIn_Box">
-            <div className="line-5"></div>
-            <div className="frame-10">
-              <span className="Customer">개인회원</span>
-              <span className="StoreOwner">기업회원</span>
+            <div className="frame-510">
+              <div className="line-5"></div>
+              <div className="frame-10">
+                <span className="Customer">개인회원</span>
+                <span className="StoreOwner">기업회원</span>
+              </div>
             </div>
             <div className="container-2">
               <div className="line-6"></div>
