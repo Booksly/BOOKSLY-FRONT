@@ -25,7 +25,7 @@ import StoreRegist from "../pages/LogInPage/StoreRegist";
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
 import MyHomeAllReserv from "../pages/MyHomeAllReservPage/MyHomeAllReserv";
 import MyHomeCurrReserv from "../pages/MyHomeCurrReservPage/MyHomeCurrReserv";
-import MyHomeRegularShop from "../pages/MyHomeRegularShopPage/MyHomeRegularShop";
+import MyHomeRegularStore from "../pages/MyHomeRegularShopPage/MyHomeRegularStore";
 
 // 당일 예약 페이지
 import TodayReserv from "../pages/TodayReservationPage/TodayReservationPage";
@@ -47,18 +47,9 @@ function Routing() {
           {/*시작 메인 페이지*/}
           <Route path="/" element={<App />} />
           {/*헤더 & 내비게이션*/}
-          <Route
-            path="/LoginAfterMainHeader"
-            element={<LoginAfterMainHeader />}
-          />
-          <Route
-            path="/LoginBeforeMainHeader"
-            element={<LoginBeforeMainHeader />}
-          />
-          <Route
-            path="/LoginAfterTodayReservNav"
-            element={<LoginAfterTodayReservNav />}
-          />
+          <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader />}/>
+          <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader />}/>
+          <Route path="/LoginAfterTodayReservNav" element={<LoginAfterTodayReservNav />}/>
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
           <Route path="/MyHomeTopNavi" element={<MyHomeTopNavi />} />
@@ -74,16 +65,13 @@ function Routing() {
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
 
-          <Route
-            path="/StoreOwnerMemRegist"
-            element={<StoreOwnerMemRegist />}
-          />
+          <Route path="/StoreOwnerMemRegist" element={<StoreOwnerMemRegist />}/>
           <Route path="/StoreRegist" element={<StoreRegist />} />
           {/*고객 My Home*/}
           <Route path="/MyHomeMain" element={<MyHomeMain />} />
           <Route path="/MyHomeAllReserv" element={<MyHomeAllReserv />} />
           <Route path="/MyHomeCurrReserv" element={<MyHomeCurrReserv />} />
-          <Route path="/MyHomeRegularShop" element={<MyHomeRegularShop />} />
+          <Route path="/MyHomeRegularStore" element={<MyHomeRegularStore />} />
           {/*당일 예약 페이지*/}
           <Route path="/TodayReserv" element={<TodayReserv />} />
           {/*고객 가게 관련 페이지*/}
