@@ -1,6 +1,7 @@
 import searchbar from "../../assets/search_button.png";
 import home from '../../assets/home_button.png';
 import './DetailedStoreInfo.css'
+import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import {useNavigate} from "react-router-dom";
 
 export default function DetailedStoreInfo() {
@@ -9,8 +10,9 @@ export default function DetailedStoreInfo() {
         navigate("/Reservation")
     }
     return (
-        <div className="back">
         <div className="DetailedStoreInfo">
+        <div className="DetailedStoreInfoBack">
+            <LoginAfterMainHeader/>
             <div className="container">
                 <div className="header-inner">
                     <div className="header-inner-left">
@@ -100,7 +102,7 @@ export default function DetailedStoreInfo() {
                         </div>
                         <div className="frame-107">
                             <div className="frame-103">
-                                <div className="icon">
+                                <div className="DetailedStoreInfoIcon">
                                 </div>
                                 <div className="container-8">
                                     경기도 수원시 영통구 광교산로 154-42 206호
