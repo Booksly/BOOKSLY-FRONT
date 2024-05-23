@@ -1,4 +1,4 @@
-.ShopOwnerNavi {
+.StoreOwnerNavi {
     position: absolute;
     top:0;
     bottom: 0;
@@ -7,7 +7,7 @@
     height: fit-content;
     /*background: #FDF8F3;*/
 }
-.ShopOwnerNaviBack {
+.StoreOwnerNaviBack {
     display: flex;
     justify-content: center;
     /*align-items: center;*/

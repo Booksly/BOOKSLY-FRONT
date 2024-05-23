@@ -1,16 +1,16 @@
-.ShopOwnerLeftNavi {
+.StoreOwnerLeftNavi {
     position: relative;
     display: flex;
     /*width: 1440px;*/
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpsk-navi {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpsk-navi {
     background: #FFFFFF;
     display: flex;
     box-sizing: border-box;
     width: fit-content;
     height: 100vh;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicontainer {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicontainer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpnavi-logo {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpnavi-logo {
     background: #FFFFFF;
     position: relative;
     padding: 25px 20px;
@@ -26,13 +26,13 @@
     height: 100px;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavibooksly-logo {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavibooksly-logo {
     border-radius: 23px;
     background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
     width: 100px;
     height: 50px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavilogoLine {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavilogoLine {
     background: #D9D9D9;
     position: absolute;
     left: 15px;
@@ -41,14 +41,14 @@
     height: 1px;
     width: 220px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpsk-navi-bar {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpsk-navi-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpnavi-bar {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpnavi-bar {
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -56,18 +56,18 @@
     width: 250px;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpnaviLineTop {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviLineTop {
     background: #D9D9D9;
     width: 220px;
     height: 1px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpnaviLineBottom {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviLineBottom {
     background: #D9D9D9;
     margin-top: 12px;
     width: 220px;
     height: 1px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicp-navi-search-name {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicp-navi-search-name {
     margin-left: 5px;
     margin-top: 12px;
     text-align: center;
@@ -77,12 +77,12 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavisearch {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavisearch {
     margin-right: 10px;
     width: 25px;
     height: 25px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicpnaviName {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviName {
     position: relative;
     text-align: center;
     line-height: 25px;
@@ -93,7 +93,7 @@
     font-size: 16px;
     color: #000000;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavicp-navi-allow {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavicp-navi-allow {
     margin-left: 20px;
     margin-top: 12px;
     display: flex;
@@ -101,18 +101,18 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavipolygon {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavipolygon {
     margin-right: 10px;
     width: 18px;
     height: 20px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNavinaviBottomLine {
+.StoreOwnerLeftNavi .StoreOwnerLeftNavinaviBottomLine {
     background: #D3D3D3;
     margin: 0 15px;
     width: 220px;
     height: 2px;
 }
-.ShopOwnerLeftNavi .ShopOwnerLeftNaviline {
+.StoreOwnerLeftNavi .StoreOwnerLeftNaviline {
     background: #D6B585;
     position: absolute;
     margin-left: 250px;

@@ -1,14 +1,14 @@
 import './StoreOwnerMain.css'
-import ShopOwnerLeftNavi from "../nav/ShopOwnerLeftNavi";
-import ShopOwnerTopNavi from "../nav/ShopOwnerTopNavi";
+import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
+import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
 
 
 export default function StoreOwnerMain() {
     return (
         <div className="StoreOwnerMain">
             <div className="container">
-                <ShopOwnerLeftNavi/>
-                <ShopOwnerTopNavi/>
+                <StoreOwnerLeftNavi/>
+                <StoreOwnerTopNavi/>
                 <div className="container-1">
                     <div className="frame-453">
                         <div className="shop-top-navi-top">

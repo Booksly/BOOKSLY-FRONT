@@ -8,9 +8,9 @@ import LoginAfterTodayReservNav from "../pages/nav/LoginAfterTodayReservNav";
 import MyHomeNavi from "../pages/nav/MyHomeNavi";
 import MyHomeLeftNavi from "../pages/nav/MyHomeLeftNavi";
 import MyHomeTopNavi from "../pages/nav/MyHomeTopNavi";
-import ShopOwnerLeftNavi from "../pages/nav/ShopOwnerLeftNavi";
-import ShopOwnerTopNavi from "../pages/nav/ShopOwnerTopNavi";
-import ShopOwnerNavi from "../pages/nav/ShopOwnerNavi";
+import StoreOwnerLeftNavi from "../pages/nav/StoreOwnerLeftNavi";
+import StoreOwnerTopNavi from "../pages/nav/StoreOwnerTopNavi";
+import StoreOwnerNavi from "../pages/nav/StoreOwnerNavi";
 import LoginPageNav from "../pages/nav/LoginPageNav";
 
 // Main Home 페이지
@@ -62,9 +62,9 @@ function Routing() {
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
           <Route path="/MyHomeTopNavi" element={<MyHomeTopNavi />} />
-          <Route path="/ShopOwnerLeftNavi" element={<ShopOwnerLeftNavi />} />
-          <Route path="/ShopOwnerTopNavi" element={<ShopOwnerTopNavi />} />
-          <Route path="/ShopOwnerNavi" element={<ShopOwnerNavi />} />
+          <Route path="/StoreOwnerLeftNavi" element={<StoreOwnerLeftNavi />} />
+          <Route path="/StoreOwnerTopNavi" element={<StoreOwnerTopNavi />} />
+          <Route path="/StoreOwnerNavi" element={<StoreOwnerNavi />} />
           <Route path="/LoginPageNav" element={<LoginPageNav />} />
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
