@@ -1,10 +1,33 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Modal from "react-modal";
 import "./StoreSearchPage.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
 
 export default function StoreSearchPage() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  const Styles = {
+    overlay: {
+      backgroundColor: " rgba(0, 0, 0, 0.5)",
+      width: "100%",
+      height: "100vh",
+      zIndex: "10",
+      position: "fixed",
+      top: "0",
+      left: "0",
+    },
+    content: {
+      width: "300px",
+      height: "300px",
+    },
+  };
   return (
     <div className="StoreSearchPage">
       <div className="StoreSearchPageBack">
@@ -14,7 +37,17 @@ export default function StoreSearchPage() {
             <div className="select-option-padding">
               <div className="before-region">
                 <div className="container-4">
-                  <button className="container-5">지역을 선택해 주세요</button>
+                  <button className="container-5" onClick={openModal}>
+                    지역을 선택해 주세요
+                  </button>
+                  <Modal
+                    isOpen={isOpen}
+                    onRequestClose={closeModal}
+                    style={Styles}
+                  >
+                    <h1>지역을 선택해주세요</h1>
+                    <button onClick={closeModal}>닫기</button>
+                  </Modal>
                 </div>
               </div>
               <div className="before-day-and-time">
