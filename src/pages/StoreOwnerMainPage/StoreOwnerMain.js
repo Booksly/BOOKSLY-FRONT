@@ -1,1304 +1,1237 @@
 import './StoreOwnerMain.css'
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
-
+import React from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function StoreOwnerMain() {
+    const navigate = useNavigate()
     return (
         <div className="StoreOwnerMain">
-            <div className="container">
-                <StoreOwnerLeftNavi/>
+        <div className="StoreOwnerMainBack">
+            <StoreOwnerLeftNavi/>
+            <div className="SOMcontainerAll">
                 <StoreOwnerTopNavi/>
-                <div className="container-1">
-                    <div className="frame-453">
-                        <div className="shop-top-navi-top">
-                            <div className="container-71">
-                                가게 추가 등록
-                            </div>
-                            <div className="alarm">
-                                <div className="alarm-button">
+                <div className="SOMcontainer">
+                    <div className="SOMframe">
+                        <div className="SOMstore-detailed">
+                            <div className="SOMstore-detailed-name-rv">
+                                <div className="SOMStoreDetailedName">
+                                    제이제이 헤어
                                 </div>
-                                <div className="container-70">
-                                    아이디
-                                </div>
-                            </div>
-                            <div className="container-69">
-                                로그아웃
-                            </div>
-                        </div>
-                        <div className="shop-top-navi-bottom-1">
-                            <div className="shop-top-navi-member-info">
-                                <div className="shop-top-navi-profile">
-                                    <div className="profile-select">
-                                    </div>
-                                    <div className="profile">
-                                    </div>
-                                </div>
-                                <div className="member-info">
-                                    <div className="shop-top-navi-id">
-                    <span className="container-75">
-                      아이디
-                    </span>
-                                        <div className="container-76">
-                                            정보 수정
+                                <div className="SOMstar">
+                                    <div className="star"/>
+                                    <div className="SOMstar-figure">
+                                        <div className="SOMcontainerRvScore">
+                                            4.8
                                         </div>
-                                    </div>
-                                    <div className="numerical-summary">
-                                        <div className="visitors">
-                                            <div className="container-77">
-                                                방문자수
-                                            </div>
-                                            <p className="container-72">
-                                                <span className="container-72-sub-0"></span><span></span>
-                                            </p>
-                                        </div>
-                                        <div className="today-visitors">
-                      <span className="container-78">
-                        오늘 방문자수
-                      </span>
-                                            <span className="container-73">
-                        73
-                      </span>
-                                        </div>
-                                        <div className="regular-customer-num">
-                      <span className="container-79">
-                        단골손님
-                      </span>
-                                            <span className="container-74">
-                        185
-                      </span>
+                                        <div className="SOMcontainer-93">
+                                            /5.0
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="shop-top-navi-bottom">
-                <span className="container-80">
-                  제이제이 헤어
-                </span>
-                                <div className="another-shop">
-                                    {/*<img className="vector-7" src="assets/vectors/Vector613_x2.svg" />*/}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="frame-546">
-                        <div className="shop-detailed">
-                            <div className="shop-detailed-name-rv">
-                <span className="container-81">
-                  제이제이 헤어
-                </span>
-                                <div className="star">
-                                    {/*<img className="star-1" src="assets/vectors/Star18_x2.svg" />*/}
-                                    <div className="star-figure">
-                    <span className="container-82">
-                      4.8
-                    </span>
-                                        <span className="container-93">
-                      /5.0
-                    </span>
+                                <div className="SOMstore-detailed-review">
+                                    <div className="SOMcontainer-83">
+                                        리뷰
+                                    </div>
+                                    <div className="SOMcontainer-94">
+                                        372
                                     </div>
                                 </div>
-                                <div className="shop-detailed-review">
-                  <span className="container-83">
-                    리뷰
-                  </span>
-                                    <span className="container-94">
-                    372
-                  </span>
-                                </div>
                             </div>
-                            <div className="shop-detailed-info">
-                                <div className="shop-detailed-info-left">
-                                    <div className="shop-detailed-info-main">
-                    <span className="container-95">
-                      메인
-                    </span>
-                                        <span className="container-89">
-                      고객 맞춤 프리미엄 서비스를 제공하는 제이제이 헤어입니다.
-                    </span>
+                            <div className="SOMstore-detailed-info">
+                                <div className="SOMstore-detailed-info-left">
+                                    <div className="SOMStoreDetailedInfo">
+                                        <div className="SOMDetailedInfoIcon">
+                                          메인
+                                        </div>
+                                        <div className="SOMDetailedInfoContent">
+                                          고객 맞춤 프리미엄 서비스를 제공하는 제이제이 헤어입니다.
+                                        </div>
                                     </div>
-                                    <div className="shop-detailed-info-location">
-                                        <div className="location">
-                                            <div className="location-icon">
+                                    <div className="SOMStoreDetailedInfo">
+                                        <div className="SOMDetailedInfoIcon">
+                                            <div className="SOMlocation-icon">
                                             </div>
                                         </div>
-                                        <span className="container-88">
-                      경기도 수원시 영통구 광교산로 154-42 206호
-                    </span>
-                                    </div>
-                                    <div className="shop-detailed-info-location-plus">
-                                        <div className="location-plus">
-                                            <div className="container-87">
-                                            </div>
-                                        </div>
-                                        <span className="container-90">
-                      경기대학교 후문사거리
-                    </span>
-                                    </div>
-                                    <div className="shop-detailed-info-phone">
-                                        <div className="phone-icon">
-                                            <div className="container-86">
-                                            </div>
-                                        </div>
-                                        <div className="shop-detailed-info-phones">
-                      <span className="container-91">
-                        031-249-9114
-                      </span>
-                                            <span className="container-97">
-                        |
-                      </span>
-                                            <span className="container-96">
-                        인스타그램
-                      </span>
+                                        <div className="SOMDetailedInfoContent">
+                                          경기도 수원시 영통구 광교산로 154-42 206호
                                         </div>
                                     </div>
-                                    <div className="shop-detailed-info-time">
-                                        <div className="time-icon">
-                                            <div className="container-85">
+                                    <div className="SOMStoreDetailedInfo">
+                                        <div className="SOMDetailedInfoIcon">
+                                            <div className="SOMcontainer-87">
                                             </div>
                                         </div>
-                                        <span className="container-92">
-                      월 10:00 - 20:00 ...
-                    </span>
+                                        <div className="SOMDetailedInfoContent">
+                                          경기대학교 후문사거리
+                                        </div>
+                                    </div>
+                                    <div className="SOMStoreDetailedInfo">
+                                        <div className="SOMDetailedInfoIcon">
+                                            <div className="SOMcontainer-86">
+                                            </div>
+                                        </div>
+                                        <div className="SOMstore-detailed-info-phones">
+                                          <div className="SOMcontainer-91">
+                                            031-249-9114
+                                          </div>
+                                            <div className="SOMcontainer-97">
+                                                |
+                                            </div>
+                                            <div className="SOMcontainer-96">
+                                                인스타그램
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="SOMStoreDetailedInfo">
+                                        <div className="SOMDetailedInfoIcon">
+                                            <div className="SOMcontainer-85">
+                                            </div>
+                                        </div>
+                                        <div className="SOMDetailedInfoContent">
+                                          월 10:00 - 20:00 ...
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="shop-detailed-info-pic">
-                                    <div className="profile-select-1">
+                                <div className="SOMstore-detailed-info-pic">
+                                    <div className="SOMprofile-select-1">
                                     </div>
                                 </div>
                             </div>
-                            <div className="modify-1">
-                <span className="container-84">
-                  수정하기
-                </span>
+                            <div className="SOMmodify-1">
+                                <div className="SOMcontainer-84">
+                                  수정하기
+                                </div>
                             </div>
                         </div>
-                        <div className="reservation">
-                            <div className="frame-522">
-                                <div className="today-reserv">
-                                    <div className="today">
-                    <span className="container-98">
-                      오늘 예약 -
-                    </span>
-                                        <div className="group-502">
-                                            <div className="select-box-before">
-                        <span className="container-99">
-                          제이 원장
-                        </span>
-                                                {/*<img className="arrow-button-before" src="assets/vectors/ArrowButtonBefore2_x2.svg" />*/}
+                        <div className="SOMreservation">
+                            <div className="SOMframe-522">
+                                <div className="SOMtoday-reserv">
+                                    <div className="SOMtoday">
+                                        <div className="SOMcontainer-98">
+                                          오늘 예약 -
+                                        </div>
+                                        <div className="SOMgroup-502">
+                                            <div className="SOMselect-box-before">
+                                                <div className="SOMcontainer-99">
+                                                  제이 원장
+                                                </div>
+                                                {/*<img className="SOMarrow-button-before" src="SOMassets/vectors/ArrowButtonBefore2_x2.svg" />*/}
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="dldccheck">
-                                        <div className="time-memo">
-                                            <div className="time-note">
-                        <span className="container-100">
-                          12:30
-                        </span>
-                                                <span className="container-101">
-                          |
-                        </span>
-                                                <div className="menu-list-1">
-                          <span className="container-102">
-                            여성 커트, 클리닉
-                          </span>
+                                    <div className="SOMdldccheck">
+                                        <div className="SOMtime-memo">
+                                            <div className="SOMtime-note">
+                                                <div className="SOMcontainer-100">
+                                                  12:30
+                                                </div>
+                                                <div className="SOMcontainer-101">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-1">
+                                                  <div className="SOMcontainer-102">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-1">
-                        <span className="container-103">
-                          13:00
-                        </span>
-                                                <span className="container-104">
-                          |
-                        </span>
-                                                <div className="menu-list-2">
-                          <span className="container-105">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-1">
+                                                <div className="SOMcontainer-103">
+                                                  13:00
+                                                </div>
+                                                <div className="SOMcontainer-104">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-2">
+                                                  <div className="SOMcontainer-105">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-2">
-                        <span className="container-106">
-                          13:30
-                        </span>
-                                                <span className="container-107">
-                          |
-                        </span>
-                                                <div className="menu-list-3">
-                          <span className="container-108">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-2">
+                                                <div className="SOMcontainer-106">
+                                                  13:30
+                                                </div>
+                                                <div className="SOMcontainer-107">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-3">
+                                                  <div className="SOMcontainer-108">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-3">
-                        <span className="container-109">
-                          14:00
-                        </span>
-                                                <span className="container-110">
-                          |
-                        </span>
-                                                <div className="menu-list-2">
-                          <span className="container-111">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-3">
+                                                <div className="SOMcontainer-109">
+                                                  14:00
+                                                </div>
+                                                <div className="SOMcontainer-110">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-2">
+                                                  <div className="SOMcontainer-111">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-4">
-                        <span className="container-112">
-                          14:30
-                        </span>
-                                                <span className="container-113">
-                          |
-                        </span>
-                                                <div className="menu-list-21">
-                          <span className="container-114">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-4">
+                                                <div className="SOMcontainer-112">
+                                                  14:30
+                                                </div>
+                                                <div className="SOMcontainer-113">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-21">
+                                                  <div className="SOMcontainer-114">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-5">
-                        <span className="container-115">
-                          15:00
-                        </span>
-                                                <span className="container-116">
-                          |
-                        </span>
-                                                <div className="menu-list-22">
-                          <span className="container-117">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-5">
+                                                <div className="SOMcontainer-115">
+                                                  15:00
+                                                </div>
+                                                <div className="SOMcontainer-116">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-22">
+                                                  <div className="SOMcontainer-117">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-6">
-                        <span className="container-118">
-                          15:30
-                        </span>
-                                                <span className="container-119">
-                          |
-                        </span>
-                                                <div className="menu-list-23">
-                          <span className="container-120">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-6">
+                                                <div className="SOMcontainer-118">
+                                                  15:30
+                                                </div>
+                                                <div className="SOMcontainer-119">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-23">
+                                                  <div className="SOMcontainer-120">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-7">
-                        <span className="container-121">
-                          16:00
-                        </span>
-                                                <span className="container-122">
-                          |
-                        </span>
-                                                <div className="menu-list-24">
-                          <span className="container-123">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-7">
+                                                <div className="SOMcontainer-121">
+                                                  16:00
+                                                </div>
+                                                <div className="SOMcontainer-122">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-24">
+                                                  <div className="SOMcontainer-123">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-8">
-                        <span className="container-124">
-                          16:30
-                        </span>
-                                                <span className="container-125">
-                          |
-                        </span>
-                                                <div className="menu-list-25">
-                          <span className="container-126">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-8">
+                                                <div className="SOMcontainer-124">
+                                                  16:30
+                                                </div>
+                                                <div className="SOMcontainer-125">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-25">
+                                                  <div className="SOMcontainer-126">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div className="time-note-9">
-                        <span className="container-129">
-                          16:30
-                        </span>
-                                                <span className="container-130">
-                          |
-                        </span>
-                                                <div className="menu-list-26">
-                          <span className="container-131">
-                            여성 커트, 클리닉
-                          </span>
+                                            <div className="SOMtime-note-9">
+                                                <div className="SOMcontainer-129">
+                                                  16:30
+                                                </div>
+                                                <div className="SOMcontainer-130">
+                                                  |
+                                                </div>
+                                                <div className="SOMmenu-list-26">
+                                                  <div className="SOMcontainer-131">
+                                                    여성 커트, 클리닉
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="deadline-dccheck">
-                                            <div className="check">
-                        <span className="container-127">
-                          예약마감
-                        </span>
-                                                <span className="container-128">
-                          마감임박할인
-                        </span>
-                                            </div>
-                                            <div className="check-box">
-                                                <div className="rectangle-246">
+                                        <div className="SOMdeadline-dccheck">
+                                            <div className="SOMcheck">
+                                                <div className="SOMcontainer-127">
+                                                  예약마감
                                                 </div>
-                                                <div className="rectangle-247">
+                                                <div className="SOMcontainer-128">
+                                                  마감임박할인
                                                 </div>
                                             </div>
-                                            <div className="check-box-1">
-                                                <div className="rectangle-2461">
+                                            <div className="SOMcheck-box">
+                                                <div className="SOMrectangle-246">
                                                 </div>
-                                                <div className="rectangle-2471">
-                                                </div>
-                                            </div>
-                                            <div className="check-box-2">
-                                                <div className="rectangle-2462">
-                                                </div>
-                                                <div className="rectangle-2472">
+                                                <div className="SOMrectangle-247">
                                                 </div>
                                             </div>
-                                            <div className="check-box-3">
-                                                <div className="rectangle-2463">
+                                            <div className="SOMcheck-box-1">
+                                                <div className="SOMrectangle-2461">
                                                 </div>
-                                                <div className="rectangle-2473">
-                                                </div>
-                                            </div>
-                                            <div className="check-box-4">
-                                                <div className="rectangle-2464">
-                                                </div>
-                                                <div className="rectangle-2474">
+                                                <div className="SOMrectangle-2471">
                                                 </div>
                                             </div>
-                                            <div className="check-box-5">
-                                                <div className="rectangle-2465">
+                                            <div className="SOMcheck-box-2">
+                                                <div className="SOMrectangle-2462">
                                                 </div>
-                                                <div className="rectangle-2475">
-                                                </div>
-                                            </div>
-                                            <div className="check-box-6">
-                                                <div className="rectangle-2466">
-                                                </div>
-                                                <div className="rectangle-2476">
+                                                <div className="SOMrectangle-2472">
                                                 </div>
                                             </div>
-                                            <div className="check-box-7">
-                                                <div className="rectangle-2467">
+                                            <div className="SOMcheck-box-3">
+                                                <div className="SOMrectangle-2463">
                                                 </div>
-                                                <div className="rectangle-2477">
-                                                </div>
-                                            </div>
-                                            <div className="check-box-8">
-                                                <div className="rectangle-2468">
-                                                </div>
-                                                <div className="rectangle-2478">
+                                                <div className="SOMrectangle-2473">
                                                 </div>
                                             </div>
-                                            <div className="check-box-9">
-                                                <div className="rectangle-2469">
+                                            <div className="SOMcheck-box-4">
+                                                <div className="SOMrectangle-2464">
                                                 </div>
-                                                <div className="rectangle-2479">
+                                                <div className="SOMrectangle-2474">
+                                                </div>
+                                            </div>
+                                            <div className="SOMcheck-box-5">
+                                                <div className="SOMrectangle-2465">
+                                                </div>
+                                                <div className="SOMrectangle-2475">
+                                                </div>
+                                            </div>
+                                            <div className="SOMcheck-box-6">
+                                                <div className="SOMrectangle-2466">
+                                                </div>
+                                                <div className="SOMrectangle-2476">
+                                                </div>
+                                            </div>
+                                            <div className="SOMcheck-box-7">
+                                                <div className="SOMrectangle-2467">
+                                                </div>
+                                                <div className="SOMrectangle-2477">
+                                                </div>
+                                            </div>
+                                            <div className="SOMcheck-box-8">
+                                                <div className="SOMrectangle-2468">
+                                                </div>
+                                                <div className="SOMrectangle-2478">
+                                                </div>
+                                            </div>
+                                            <div className="SOMcheck-box-9">
+                                                <div className="SOMrectangle-2469">
+                                                </div>
+                                                <div className="SOMrectangle-2479">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="group-57">
-                                    <div className="rectangle-138">
+                                <div className="SOMgroup-57">
+                                    <div className="SOMrectangle-138">
                                     </div>
                                 </div>
                             </div>
-                            <div className="all-reserv">
-                                <div className="container-132">
+                            <div className="SOMall-reserv">
+                                <div className="SOMcontainer-132">
                                     전체 예약
                                 </div>
-                                <div className="calendar-example-2">
-                                    <div className="month-header">
-                                        <div className="icon-button">
-                                            {/*<img className="vector-10" src="assets/vectors/Vector938_x2.svg" />*/}
+                                <div className="SOMcalendar-example-2">
+                                    <div className="SOMmonth-header">
+                                        <div className="SOMicon-button">
+                                            {/*<img className="SOMvector-10" src="SOMassets/vectors/Vector938_x2.svg" />*/}
                                         </div>
-                                        <span className="month-yyyy">
-                      March 2024
-                    </span>
-                                        <div className="icon-button-1">
-                                            {/*<img className="vector-11" src="assets/vectors/Vector338_x2.svg" />*/}
+                                        <div className="SOMmonth-yyyy">
+                                          March 2024
                                         </div>
-                                    </div>
-                                    <div className="week-header">
-                                        <div className="box">
-                      <span className="sun">
-                        SUN
-                      </span>
-                                        </div>
-                                        <div className="box-1">
-                      <span className="mon">
-                        MON
-                      </span>
-                                        </div>
-                                        <div className="box-2">
-                      <span className="tue">
-                        TUE
-                      </span>
-                                        </div>
-                                        <div className="box-3">
-                      <span className="wed">
-                        WED
-                      </span>
-                                        </div>
-                                        <div className="box-4">
-                      <span className="thu">
-                        THU
-                      </span>
-                                        </div>
-                                        <div className="box-5">
-                      <span className="fri">
-                        FRI
-                      </span>
-                                        </div>
-                                        <div className="box-6">
-                      <span className="sat">
-                        SAT
-                      </span>
+                                        <div className="SOMicon-button-1">
+                                            {/*<img className="SOMvector-11" src="SOMassets/vectors/Vector338_x2.svg" />*/}
                                         </div>
                                     </div>
-                                    <div className="week-days">
-                                        <div className="calendar-day">
-                      <span className="value">
-                        25
-                      </span>
+                                    <div className="SOMweek-header">
+                                        <div className="SOMbox">
+                                          <div className="SOMsun">
+                                            SUN
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-1">
-                      <span className="value-1">
-                        26
-                      </span>
+                                        <div className="SOMbox-1">
+                                          <div className="SOMmon">
+                                            MON
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-2">
-                      <span className="value-2">
-                        27
-                      </span>
+                                        <div className="SOMbox-2">
+                                          <div className="SOMtue">
+                                            TUE
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-3">
-                      <span className="value-3">
-                        28
-                      </span>
+                                        <div className="SOMbox-3">
+                                          <div className="SOMwed">
+                                            WED
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-4">
-                      <span className="value-4">
-                        29
-                      </span>
+                                        <div className="SOMbox-4">
+                                          <div className="SOMthu">
+                                            THU
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-5">
-                      <span className="value-5">
-                        1
-                      </span>
+                                        <div className="SOMbox-5">
+                                          <div className="SOMfri">
+                                            FRI
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-6">
-                      <span className="value-6">
-                        2
-                      </span>
-                                        </div>
-                                    </div>
-                                    <div className="week-days-1">
-                                        <div className="calendar-day-7">
-                      <span className="value-7">
-                        3
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-8">
-                      <span className="value-8">
-                        4
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-9">
-                      <span className="value-9">
-                        5
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-10">
-                      <span className="value-10">
-                        6
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-11">
-                      <span className="value-11">
-                        7
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-12">
-                      <span className="value-12">
-                        8
-                      </span>
-                                        </div>
-                                        <div className="calendar-day-13">
-                      <span className="value-13">
-                        9
-                      </span>
+                                        <div className="SOMbox-6">
+                                          <div className="SOMsat">
+                                            SAT
+                                          </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-2">
-                                        <div className="calendar-day-14">
-                      <span className="value-14">
+                                    <div className="SOMweek-days">
+                                        <div className="SOMcalendar-day">
+                                          <div className="SOMvalue">
+                                            25
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-1">
+                                          <div className="SOMvalue-1">
+                                            26
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-2">
+                                          <div className="SOMvalue-2">
+                                            27
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-3">
+                                          <div className="SOMvalue-3">
+                                            28
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-4">
+                                          <div className="SOMvalue-4">
+                                            29
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-5">
+                                          <div className="SOMvalue-5">
+                                            1
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-6">
+                                          <div className="SOMvalue-6">
+                                            2
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div className="SOMweek-days-1">
+                                        <div className="SOMcalendar-day-7">
+                                          <div className="SOMvalue-7">
+                                            3
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-8">
+                                          <div className="SOMvalue-8">
+                                            4
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-9">
+                                          <div className="SOMvalue-9">
+                                            5
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-10">
+                                          <div className="SOMvalue-10">
+                                            6
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-11">
+                                          <div className="SOMvalue-11">
+                                            7
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-12">
+                                          <div className="SOMvalue-12">
+                                            8
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-13">
+                                          <div className="SOMvalue-13">
+                                            9
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div className="SOMweek-days-2">
+                                        <div className="SOMcalendar-day-14">
+                      <div className="SOMvalue-14">
                         10
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-15">
-                      <span className="value-15">
+                                        <div className="SOMcalendar-day-15">
+                      <div className="SOMvalue-15">
                         11
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-16">
-                      <span className="value-16">
+                                        <div className="SOMcalendar-day-16">
+                      <div className="SOMvalue-16">
                         12
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-17">
-                      <span className="value-17">
+                                        <div className="SOMcalendar-day-17">
+                      <div className="SOMvalue-17">
                         13
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-18">
-                      <span className="value-18">
+                                        <div className="SOMcalendar-day-18">
+                      <div className="SOMvalue-18">
                         14
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-19">
-                      <span className="value-19">
+                                        <div className="SOMcalendar-day-19">
+                      <div className="SOMvalue-19">
                         15
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-20">
-                      <span className="value-20">
+                                        <div className="SOMcalendar-day-20">
+                      <div className="SOMvalue-20">
                         16
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-3">
-                                        <div className="calendar-day-21">
-                      <span className="value-21">
+                                    <div className="SOMweek-days-3">
+                                        <div className="SOMcalendar-day-21">
+                      <div className="SOMvalue-21">
                         17
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-22">
-                      <span className="value-22">
+                                        <div className="SOMcalendar-day-22">
+                      <div className="SOMvalue-22">
                         18
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-23">
-                      <span className="value-23">
+                                        <div className="SOMcalendar-day-23">
+                      <div className="SOMvalue-23">
                         19
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-24">
-                      <span className="value-24">
+                                        <div className="SOMcalendar-day-24">
+                      <div className="SOMvalue-24">
                         20
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-25">
-                      <span className="value-25">
+                                        <div className="SOMcalendar-day-25">
+                      <div className="SOMvalue-25">
                         21
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-26">
-                      <span className="value-26">
+                                        <div className="SOMcalendar-day-26">
+                      <div className="SOMvalue-26">
                         22
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-27">
-                      <span className="value-27">
+                                        <div className="SOMcalendar-day-27">
+                      <div className="SOMvalue-27">
                         23
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-4">
-                                        <div className="calendar-day-28">
-                      <span className="value-28">
+                                    <div className="SOMweek-days-4">
+                                        <div className="SOMcalendar-day-28">
+                      <div className="SOMvalue-28">
                         24
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-29">
-                      <span className="value-29">
+                                        <div className="SOMcalendar-day-29">
+                      <div className="SOMvalue-29">
                         25
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-30">
-                      <span className="value-30">
+                                        <div className="SOMcalendar-day-30">
+                      <div className="SOMvalue-30">
                         26
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-31">
-                      <span className="value-31">
+                                        <div className="SOMcalendar-day-31">
+                      <div className="SOMvalue-31">
                         27
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-32">
-                      <span className="value-32">
+                                        <div className="SOMcalendar-day-32">
+                      <div className="SOMvalue-32">
                         28
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-33">
-                      <span className="value-33">
+                                        <div className="SOMcalendar-day-33">
+                      <div className="SOMvalue-33">
                         29
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-34">
-                      <span className="value-34">
+                                        <div className="SOMcalendar-day-34">
+                      <div className="SOMvalue-34">
                         30
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-5">
-                                        <div className="calendar-day-35">
-                      <span className="value-35">
+                                    <div className="SOMweek-days-5">
+                                        <div className="SOMcalendar-day-35">
+                      <div className="SOMvalue-35">
                         31
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-36">
-                      <span className="value-36">
+                                        <div className="SOMcalendar-day-36">
+                      <div className="SOMvalue-36">
                         1
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-37">
-                      <span className="value-37">
+                                        <div className="SOMcalendar-day-37">
+                      <div className="SOMvalue-37">
                         2
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-38">
-                      <span className="value-38">
+                                        <div className="SOMcalendar-day-38">
+                      <div className="SOMvalue-38">
                         3
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-39">
-                      <span className="value-39">
+                                        <div className="SOMcalendar-day-39">
+                      <div className="SOMvalue-39">
                         4
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-40">
-                      <span className="value-40">
+                                        <div className="SOMcalendar-day-40">
+                      <div className="SOMvalue-40">
                         5
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-41">
-                      <span className="value-41">
+                                        <div className="SOMcalendar-day-41">
+                      <div className="SOMvalue-41">
                         6
-                      </span>
+                      </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="wait-reservation">
-                            <div className="frame-527">
-                <span className="container">
-                  예약 확인
-                </span>
+                        <div className="SOMwait-reservation">
+                            <div className="SOMframe-527">
+                                <div className="SOMcontainerReservCheck">
+                                  예약 확인
+                                </div>
                             </div>
-                            <div className="wait-reserv-list-calen">
-                                <div className="wait-reserv-list">
-                                    <div className="new-wait-list">
-                                        <div className="container-1">
+                            <div className="SOMwait-reserv-list-calen">
+                                <div className="SOMwait-reserv-list">
+                                    <div className="SOMnew-wait-list">
+                                        <div className="SOMcontainer-1">
                                             신규
                                         </div>
-                                        <div className="wait-list">
-                                            <div className="wait-reserv-date">
-                        <span className="container-2">
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                        <div className="SOMcontainer-2">
                           3.26
-                        </span>
-                                                <span className="container-3">
+                        </div>
+                                                <div className="SOMcontainer-3">
                           17:00
-                        </span>
-                                                <span className="container-4">
+                        </div>
+                                                <div className="SOMcontainer-4">
                           심화 디자이너
-                        </span>
+                        </div>
                                             </div>
-                                            <div className="wait-reserv-button">
-                                                <div className="confirm-button">
-                          <span className="container-5">
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button">
-                          <span className="container-6">
+                                                <div className="SOMrefuse-button">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button">
-                          <span className="container-7">
+                                                <div className="SOMplus-button">
+                          <div className="SOMcontainer-7">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="wait-list-1">
-                                            <div className="wait-reserv-date-1">
-                        <span className="container-8">
+                                        <div className="SOMwait-list-1">
+                                            <div className="SOMwait-reserv-date-1">
+                        <div className="SOMcontainer-8">
                           3.24
-                        </span>
-                                                <span className="container-9">
+                        </div>
+                                                <div className="SOMcontainer-9">
                           19:00
-                        </span>
-                                                <span className="container-10">
+                        </div>
+                                                <div className="SOMcontainer-10">
                           캡 디자이너
-                        </span>
+                        </div>
                                             </div>
-                                            <div className="wait-reserv-button-1">
-                                                <div className="confirm-button-1">
-                          <span className="container-11">
+                                            <div className="SOMwait-reserv-button-1">
+                                                <div className="SOMconfirm-button-1">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button-1">
-                          <span className="container-12">
+                                                <div className="SOMrefuse-button-1">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button-1">
-                          <span className="container-13">
+                                                <div className="SOMplus-button-1">
+                          <div className="SOMcontainer-13">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="wait-list-2">
-                                            <div className="wait-reserv-date-2">
-                        <span className="container-14">
+                                        <div className="SOMwait-list-2">
+                                            <div className="SOMwait-reserv-date-1">
+                        <div className="SOMcontainer-14">
                           4.3
-                        </span>
-                                                <div className="container-3">
-                          <span className="container-15">
+                        </div>
+                                                <div className="SOMcontainer-3">
+                          <div className="SOMcontainer-9">
                             19:30
-                          </span>
-                                                    <span className="container-16">
+                          </div>
+                                                    <div className="SOMcontainer-16">
                             제이 원장
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
-                                            <div className="wait-reserv-button-2">
-                                                <div className="confirm-button-2">
-                          <span className="container-17">
+                                            <div className="SOMwait-reserv-button-2">
+                                                <div className="SOMconfirm-button-2">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button-2">
-                          <span className="container-18">
+                                                <div className="SOMrefuse-button-2">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button-2">
-                          <span className="container-19">
+                                                <div className="SOMplus-button-2">
+                          <div className="SOMcontainer-19">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="frame-523">
-                      <span className="container-20">
+                                        <div className="SOMframe-523">
+                      <div className="SOMcontainer-20">
                         전체보기
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="imminent-wait-list">
-                                        <div className="container-21">
+                                    <div className="SOMimminent-wait-list">
+                                        <div className="SOMcontainer-21">
                                             임박
                                         </div>
-                                        <div className="wait-list-3">
-                                            <div className="wait-reserv-date-3">
-                        <span className="container-22">
+                                        <div className="SOMwait-list-3">
+                                            <div className="SOMwait-reserv-date-3">
+                        <div className="SOMcontainer-22">
                           3.20
-                        </span>
-                                                <span className="container-23">
+                        </div>
+                                                <div className="SOMcontainer-23">
                           13:00
-                        </span>
-                                                <span className="container-24">
+                        </div>
+                                                <div className="SOMcontainer-24">
                           심화 디자이너
-                        </span>
+                        </div>
                                             </div>
-                                            <div className="wait-reserv-button-3">
-                                                <div className="confirm-button-3">
-                          <span className="container-25">
+                                            <div className="SOMwait-reserv-button-3">
+                                                <div className="SOMconfirm-button-3">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button-3">
-                          <span className="container-26">
+                                                <div className="SOMrefuse-button-3">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button-3">
-                          <span className="container-27">
+                                                <div className="SOMplus-button-3">
+                          <div className="SOMcontainer-27">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="wait-list-4">
-                                            <div className="wait-reserv-date-4">
-                        <span className="container-28">
+                                        <div className="SOMwait-list-4">
+                                            <div className="SOMwait-reserv-date-4">
+                        <div className="SOMcontainer-28">
                           3.20
-                        </span>
-                                                <span className="container-29">
+                        </div>
+                                                <div className="SOMcontainer-29">
                           15:30
-                        </span>
-                                                <span className="container-30">
+                        </div>
+                                                <div className="SOMcontainer-30">
                           캡 디자이너
-                        </span>
+                        </div>
                                             </div>
-                                            <div className="wait-reserv-button-4">
-                                                <div className="confirm-button-4">
-                          <span className="container-31">
+                                            <div className="SOMwait-reserv-button-4">
+                                                <div className="SOMconfirm-button-4">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button-4">
-                          <span className="container-32">
+                                                <div className="SOMrefuse-button-4">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button-4">
-                          <span className="container-33">
+                                                <div className="SOMplus-button-4">
+                          <div className="SOMcontainer-33">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="wait-list-5">
-                                            <div className="wait-reserv-date-5">
-                        <span className="container-34">
+                                        <div className="SOMwait-list-5">
+                                            <div className="SOMwait-reserv-date-5">
+                        <div className="SOMcontainer-34">
                           3.22
-                        </span>
-                                                <span className="container-35">
+                        </div>
+                                                <div className="SOMcontainer-35">
                           18:00
-                        </span>
-                                                <span className="container-36">
+                        </div>
+                                                <div className="SOMcontainer-36">
                           제이 원장
-                        </span>
+                        </div>
                                             </div>
-                                            <div className="wait-reserv-button-5">
-                                                <div className="confirm-button-5">
-                          <span className="container-37">
+                                            <div className="SOMwait-reserv-button-5">
+                                                <div className="SOMconfirm-button-5">
+                          <div className="SOMcontainer-5">
                             확정
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="refuse-button-5">
-                          <span className="container-38">
+                                                <div className="SOMrefuse-button-5">
+                          <div className="SOMcontainer-5">
                             거절
-                          </span>
+                          </div>
                                                 </div>
-                                                <div className="plus-button-5">
-                          <span className="container-39">
+                                                <div className="SOMplus-button-5">
+                          <div className="SOMcontainer-39">
                             ...
-                          </span>
+                          </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="frame-5231">
-                      <span className="container-40">
+                                        <div className="SOMframe-5231">
+                      <div className="SOMcontainer-40">
                         전체보기
-                      </span>
+                      </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="frame-536">
-                                    <div className="month-header-1">
-                                        <div className="icon-button-2">
-                                            {/*<img className="vector-12" src="assets/vectors/Vector916_x2.svg" />*/}
+                                <div className="SOMframe-536">
+                                    <div className="SOMmonth-header-1">
+                                        <div className="SOMicon-button-2">
+                                            {/*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*/}
                                         </div>
-                                        <span className="month-yyyy-1">
-                      March 2024
-                    </span>
-                                        <div className="icon-button-3">
-                                            {/*<img className="vector-13" src="assets/vectors/Vector533_x2.svg" />*/}
+                                        <div className="SOMmonth-yyyy-1">
+                                          March 2024
                                         </div>
-                                    </div>
-                                    <div className="week-header-1">
-                                        <div className="box-7">
-                      <span className="sun-1">
-                        SUN
-                      </span>
-                                        </div>
-                                        <div className="box-8">
-                      <span className="mon-1">
-                        MON
-                      </span>
-                                        </div>
-                                        <div className="box-9">
-                      <span className="tue-1">
-                        TUE
-                      </span>
-                                        </div>
-                                        <div className="box-10">
-                      <span className="wed-1">
-                        WED
-                      </span>
-                                        </div>
-                                        <div className="box-11">
-                      <span className="thu-1">
-                        THU
-                      </span>
-                                        </div>
-                                        <div className="box-12">
-                      <span className="fri-1">
-                        FRI
-                      </span>
-                                        </div>
-                                        <div className="box-13">
-                      <span className="sat-1">
-                        SAT
-                      </span>
+                                        <div className="SOMicon-button-3">
+                                            {/*<img className="SOMvector-13" src="SOMassets/vectors/Vector533_x2.svg" />*/}
                                         </div>
                                     </div>
-                                    <div className="week-days-6">
-                                        <div className="calendar-day-42">
-                      <span className="value-42">
-                        25
-                      </span>
+                                    <div className="SOMweek-header-1">
+                                        <div className="SOMbox-7">
+                                          <div className="SOMsun-1">
+                                            SUN
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-43">
-                      <span className="value-43">
-                        26
-                      </span>
+                                        <div className="SOMbox-8">
+                                          <div className="SOMmon-1">
+                                            MON
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-44">
-                      <span className="value-44">
-                        27
-                      </span>
+                                        <div className="SOMbox-9">
+                                          <div className="SOMtue-1">
+                                            TUE
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-45">
-                      <span className="value-45">
-                        28
-                      </span>
+                                        <div className="SOMbox-10">
+                                          <div className="SOMwed-1">
+                                            WED
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-46">
-                      <span className="value-46">
-                        29
-                      </span>
+                                        <div className="SOMbox-11">
+                                          <div className="SOMthu-1">
+                                            THU
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-47">
-                      <span className="value-47">
-                        1
-                      </span>
+                                        <div className="SOMbox-12">
+                                          <div className="SOMfri-1">
+                                            FRI
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-48">
-                      <span className="value-48">
-                        2
-                      </span>
+                                        <div className="SOMbox-13">
+                                          <div className="SOMsat-1">
+                                            SAT
+                                          </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-7">
-                                        <div className="calendar-day-49">
-                      <span className="value-49">
-                        3
-                      </span>
+                                    <div className="SOMweek-days-6">
+                                        <div className="SOMcalendar-day-42">
+                                          <div className="SOMvalue-42">
+                                            25
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-50">
-                      <span className="value-50">
-                        4
-                      </span>
+                                        <div className="SOMcalendar-day-43">
+                                          <div className="SOMvalue-43">
+                                            26
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-51">
-                      <span className="value-51">
-                        5
-                      </span>
+                                        <div className="SOMcalendar-day-44">
+                                          <div className="SOMvalue-44">
+                                            27
+                                          </div>
                                         </div>
-                                        <div className="calendar-day-52">
-                      <span className="value-52">
+                                        <div className="SOMcalendar-day-45">
+                                          <div className="SOMvalue-45">
+                                            28
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-46">
+                                          <div className="SOMvalue-46">
+                                            29
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-47">
+                                          <div className="SOMvalue-47">
+                                            1
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-48">
+                                          <div className="SOMvalue-48">
+                                            2
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div className="SOMweek-days-7">
+                                        <div className="SOMcalendar-day-49">
+                                          <div className="SOMvalue-49">
+                                            3
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-50">
+                                          <div className="SOMvalue-50">
+                                            4
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-51">
+                                          <div className="SOMvalue-51">
+                                            5
+                                          </div>
+                                        </div>
+                                        <div className="SOMcalendar-day-52">
+                      <div className="SOMvalue-52">
                         6
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-53">
-                      <span className="value-53">
+                                        <div className="SOMcalendar-day-53">
+                      <div className="SOMvalue-53">
                         7
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-54">
-                      <span className="value-54">
+                                        <div className="SOMcalendar-day-54">
+                      <div className="SOMvalue-54">
                         8
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-55">
-                      <span className="value-55">
+                                        <div className="SOMcalendar-day-55">
+                      <div className="SOMvalue-55">
                         9
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-8">
-                                        <div className="calendar-day-56">
-                      <span className="value-56">
+                                    <div className="SOMweek-days-8">
+                                        <div className="SOMcalendar-day-56">
+                      <div className="SOMvalue-56">
                         10
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-57">
-                      <span className="value-57">
+                                        <div className="SOMcalendar-day-57">
+                      <div className="SOMvalue-57">
                         11
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-58">
-                      <span className="value-58">
+                                        <div className="SOMcalendar-day-58">
+                      <div className="SOMvalue-58">
                         12
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-59">
-                      <span className="value-59">
+                                        <div className="SOMcalendar-day-59">
+                      <div className="SOMvalue-59">
                         13
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-60">
-                      <span className="value-60">
+                                        <div className="SOMcalendar-day-60">
+                      <div className="SOMvalue-60">
                         14
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-61">
-                      <span className="value-61">
+                                        <div className="SOMcalendar-day-61">
+                      <div className="SOMvalue-61">
                         15
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-62">
-                      <span className="value-62">
+                                        <div className="SOMcalendar-day-62">
+                      <div className="SOMvalue-62">
                         16
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-9">
-                                        <div className="calendar-day-63">
-                      <span className="value-63">
+                                    <div className="SOMweek-days-9">
+                                        <div className="SOMcalendar-day-63">
+                      <div className="SOMvalue-63">
                         17
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-64">
-                      <span className="value-64">
+                                        <div className="SOMcalendar-day-64">
+                      <div className="SOMvalue-64">
                         18
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-65">
-                      <span className="value-65">
+                                        <div className="SOMcalendar-day-65">
+                      <div className="SOMvalue-65">
                         19
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-66">
-                      <span className="value-66">
+                                        <div className="SOMcalendar-day-66">
+                      <div className="SOMvalue-66">
                         20
-                      </span>
-                                            <div className="ellipse-8">
+                      </div>
+                                            <div className="SOMellipse-8">
                                             </div>
                                         </div>
-                                        <div className="calendar-day-67">
-                      <span className="value-67">
+                                        <div className="SOMcalendar-day-67">
+                      <div className="SOMvalue-67">
                         21
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-68">
-                      <span className="value-68">
+                                        <div className="SOMcalendar-day-68">
+                      <div className="SOMvalue-68">
                         22
-                      </span>
-                                            <div className="ellipse-7">
+                      </div>
+                                            <div className="SOMellipse-7">
                                             </div>
                                         </div>
-                                        <div className="calendar-day-69">
-                      <span className="value-69">
+                                        <div className="SOMcalendar-day-69">
+                      <div className="SOMvalue-69">
                         23
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-10">
-                                        <div className="calendar-day-70">
-                      <span className="value-70">
+                                    <div className="SOMweek-days-10">
+                                        <div className="SOMcalendar-day-70">
+                      <div className="SOMvalue-70">
                         24
-                      </span>
-                                            <div className="ellipse-5">
+                      </div>
+                                            <div className="SOMellipse-5">
                                             </div>
                                         </div>
-                                        <div className="calendar-day-71">
-                      <span className="value-71">
+                                        <div className="SOMcalendar-day-71">
+                      <div className="SOMvalue-71">
                         25
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-72">
-                      <span className="value-72">
+                                        <div className="SOMcalendar-day-72">
+                      <div className="SOMvalue-72">
                         26
-                      </span>
-                                            <div className="ellipse-6">
+                      </div>
+                                            <div className="SOMellipse-6">
                                             </div>
                                         </div>
-                                        <div className="calendar-day-73">
-                      <span className="value-73">
+                                        <div className="SOMcalendar-day-73">
+                      <div className="SOMvalue-73">
                         27
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-74">
-                      <span className="value-74">
+                                        <div className="SOMcalendar-day-74">
+                      <div className="SOMvalue-74">
                         28
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-75">
-                      <span className="value-75">
+                                        <div className="SOMcalendar-day-75">
+                      <div className="SOMvalue-75">
                         29
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-76">
-                      <span className="value-76">
+                                        <div className="SOMcalendar-day-76">
+                      <div className="SOMvalue-76">
                         30
-                      </span>
+                      </div>
                                         </div>
                                     </div>
-                                    <div className="week-days-11">
-                                        <div className="calendar-day-77">
-                      <span className="value-77">
+                                    <div className="SOMweek-days-11">
+                                        <div className="SOMcalendar-day-77">
+                      <div className="SOMvalue-77">
                         31
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-78">
-                      <span className="value-78">
+                                        <div className="SOMcalendar-day-78">
+                      <div className="SOMvalue-78">
                         1
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-79">
-                      <span className="value-79">
+                                        <div className="SOMcalendar-day-79">
+                      <div className="SOMvalue-79">
                         2
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-80">
-                      <span className="value-80">
+                                        <div className="SOMcalendar-day-80">
+                      <div className="SOMvalue-80">
                         3
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-81">
-                      <span className="value-81">
+                                        <div className="SOMcalendar-day-81">
+                      <div className="SOMvalue-81">
                         4
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-82">
-                      <span className="value-82">
+                                        <div className="SOMcalendar-day-82">
+                      <div className="SOMvalue-82">
                         5
-                      </span>
+                      </div>
                                         </div>
-                                        <div className="calendar-day-83">
-                      <span className="value-83">
+                                        <div className="SOMcalendar-day-83">
+                      <div className="SOMvalue-83">
                         6
-                      </span>
+                      </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="menu-box">
-                            <div className="menu-list">
-                                <div className="menu-info">
-                                    <div className="rectangle-62">
+                        <div className="SOMmenu-box">
+                            <div className="SOMmenu-list">
+                                <div className="SOMmenu-info">
+                                    <div className="SOMrectangle-62">
                                     </div>
-                                    <div className="menu">
-                    <span className="container-41">
-                      여성 커트
-                    </span>
-                                        <span className="container-42">
-                      |
-                    </span>
-                                        <span className="container-43">
-                      30,000
-                    </span>
-                                    </div>
-                                </div>
-                                <div className="menu-info-1">
-                                    <div className="rectangle-621">
-                                    </div>
-                                    <div className="menu-1">
-                    <span className="container-44">
-                      남성 커트
-                    </span>
-                                        <span className="container-45">
-                      |
-                    </span>
-                                        <span className="container-46">
-                      30,000
-                    </span>
+                                    <div className="SOMmenu">
+                                        <div className="SOMcontainer-41">
+                                          여성 커트
+                                        </div>
+                                        <div className="SOMcontainer-42">
+                                          |
+                                        </div>
+                                        <div className="SOMcontainer-43">
+                                          30,000
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="menu-info-2">
-                                    <div className="rectangle-622">
+                                <div className="SOMmenu-info-1">
+                                    <div className="SOMrectangle-621">
                                     </div>
-                                    <div className="menu-2">
-                    <span className="container-47">
-                      볼륨펌
-                    </span>
-                                        <span className="container-48">
-                      |
-                    </span>
-                                        <span className="container-49">
-                      50,000
-                    </span>
+                                    <div className="SOMmenu-1">
+                                        <div className="SOMcontainer-44">
+                                          남성 커트
+                                        </div>
+                                        <div className="SOMcontainer-45">
+                                          |
+                                        </div>
+                                        <div className="SOMcontainer-46">
+                                          30,000
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="menu-info-3">
-                                    <div className="rectangle-623">
+                                <div className="SOMmenu-info-2">
+                                    <div className="SOMrectangle-622">
                                     </div>
-                                    <div className="menu-3">
-                    <span className="container-50">
-                      펌
-                    </span>
-                                        <span className="container-51">
-                      |
-                    </span>
-                                        <span className="container-52">
-                      30,000
-                    </span>
+                                    <div className="SOMmenu-2">
+                                        <div className="SOMcontainer-47">
+                                          볼륨펌
+                                        </div>
+                                        <div className="SOMcontainer-48">
+                                          |
+                                        </div>
+                                        <div className="SOMcontainer-49">
+                                          50,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMmenu-info-3">
+                                    <div className="SOMrectangle-623">
+                                    </div>
+                                    <div className="SOMmenu-3">
+                                        <div className="SOMcontainer-50">
+                                          펌
+                                        </div>
+                                        <div className="SOMcontainer-51">
+                                          |
+                                        </div>
+                                        <div className="SOMcontainer-52">
+                                          30,000
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="frame-544">
-                <span className="container-53">
-                  등록 / 수정
-                </span>
+                            <div className="SOMframe-544">
+                                <div className="SOMcontainer-53">
+                                  등록 / 수정
+                                </div>
                             </div>
                         </div>
-                        <div className="staff-box">
-                            <div className="staff-list">
-                                <div className="staff-info">
-                                    <div className="staff-img">
+                        <div className="SOMstaff-box">
+                            <div className="SOMstaff-list">
+                                <div className="SOMstaff-info">
+                                    <div className="SOMstaff-img">
                                     </div>
-                                    <div className="staff">
-                                        <div className="container-54">
+                                    <div className="SOMstaff">
+                                        <div className="SOMcontainer-54">
                                             제이 원장
                                         </div>
-                                        <span className="container-55">
-                      수원 재방률 1위 / 남...
-                    </span>
+                                        <div className="SOMcontainer-55">
+                                          수원 재방률 1위 / 남...
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="staff-info-1">
-                                    <div className="staff-img-1">
+                                <div className="SOMstaff-info-1">
+                                    <div className="SOMstaff-img-1">
                                     </div>
-                                    <div className="staff-1">
-                                        <div className="container-56">
+                                    <div className="SOMstaff-1">
+                                        <div className="SOMcontainer-56">
                                             심화 디자이너
                                         </div>
-                                        <span className="container-57">
-                      수원 재방률 1위 / 여...
-                    </span>
+                                        <div className="SOMcontainer-57">
+                                          수원 재방률 1위 / 여...
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="staff-info-2">
-                                    <div className="staff-img-2">
+                                <div className="SOMstaff-info-2">
+                                    <div className="SOMstaff-img-2">
                                     </div>
-                                    <div className="staff-2">
-                                        <div className="container-58">
+                                    <div className="SOMstaff-2">
+                                        <div className="SOMcontainer-58">
                                             캡 디자이너
                                         </div>
-                                        <span className="container-59">
-                      수원 재방률 1위 / 여...
-                    </span>
+                                        <div className="SOMcontainer-59">
+                                          수원 재방률 1위 / 여...
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="staff-info-3">
-                                    <div className="staff-img-3">
+                                <div className="SOMstaff-info-3">
+                                    <div className="SOMstaff-img-3">
                                     </div>
-                                    <div className="staff-3">
-                                        <div className="container-60">
+                                    <div className="SOMstaff-3">
+                                        <div className="SOMcontainer-60">
                                             제이 원장
                                         </div>
-                                        <span className="container-61">
-                      수원 재방률 1위 / 남...
-                    </span>
+                                        <div className="SOMcontainer-61">
+                                          수원 재방률 1위 / 남...
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="modify">
-                <span className="container-62">
-                  등록 / 수정
-                </span>
+                            <div className="SOMmodify">
+                                <div className="SOMcontainer-62">
+                                  등록 / 수정
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

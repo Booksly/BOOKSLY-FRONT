@@ -1,8 +1,11 @@
 import './StoreOwnerLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
+import React from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function StoreOwnerLeftNavi() {
+    const navigate = useNavigate()
     return (
         <div className="StoreOwnerLeftNavi">
             <div className="StoreOwnerLeftNavicpsk-navi">

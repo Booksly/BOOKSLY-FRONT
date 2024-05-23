@@ -1,28 +1,312 @@
 .StoreOwnerMain {
-    background: #FDF8F3;
-    display: flex;
-    width: 1440px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .frame-453 {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    height: fit-content;
     background: #FFFFFF;
-    position: relative;
-    margin-bottom: 20px;
+}
+.StoreOwnerMainBack {
+    display: flex;
+    justify-content: center;
+}
+.StoreOwnerMain .SOMcontainerAll {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    width: 1190px;
+    padding-bottom: 100px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .shop-detailed {
+.StoreOwnerMain .SOMcontainer {
+    display: flex;
+    background: #FDF8F3;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+.StoreOwnerMain .SOMframe {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 95px;
+    padding: 30px 75px;
+    width: 1000px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+/*가게 상세 페이지*/
+.StoreOwnerMain .SOMstore-detailed {
     margin-bottom: 26px;
     display: flex;
     flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .reservation {
+.StoreOwnerMain .SOMstore-detailed-name-rv {
+    margin: 0 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMStoreDetailedName {
+    margin-right: 6px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMstar {
+    margin: 3px 5px 0 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .star {
+    margin: 0.5px 5px 0.5px 0;
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/Star.png') 50% / cover no-repeat;
+}
+.StoreOwnerMain .SOMstar-figure {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMcontainerRvScore {
+    margin-right: 0.5px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMcontainer-93 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMstore-detailed-review {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMcontainer-83 {
+    margin-right: 5.5px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMcontainer-94 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMstore-detailed-info {
+    border-radius: 10px;
+    background: #E9E9E9;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 850px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMstore-detailed-info-left {
+    margin: 2.5px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMStoreDetailedInfo {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMDetailedInfoIcon {
+    width: 30px;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMDetailedInfoContent {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMlocation-icon {
+    background: url('../../assets/locationIcon.png') 50% / cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .SOMcontainer-87 {
+    background: url('../../assets/naviIcon.png') 50% / cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .SOMcontainer-86 {
+    background: url('../../assets/callIcon.png') 50% / cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .SOMcontainer-85 {
+    background: url('../../assets/clockIcon.png') 50% / cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMain .SOMstore-detailed-info-pic {
+    background: #A7A7A7;
+    display: flex;
+    padding: 56px 0;
+    width: 185px;
+    height: 135px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.StoreOwnerMain .SOMprofile-select-1 {
+    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.StoreOwnerMain .SOMcontainer-84 {
+    overflow-wrap: break-word;
+
+    font-weight: 400;
+    font-size: 15px;
+    color: #737373;
+}
+.StoreOwnerMain .SOMcontainer-88 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000;
+}
+.StoreOwnerMain .SOMcontainer-90 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMcontainer-91 {
+    margin-right: 5.1px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMcontainer-92 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+.StoreOwnerMain .SOMmodify-1 {
+    margin: 0 10.4px;
+    display: flex;
+    align-self: flex-end;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMstore-detailed-info-location {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMlocation {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMlocation-plus {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMphone-icon {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMstore-detailed-info-location-plus {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMstore-detailed-info-phone {
+    margin: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMtime-icon {
+    margin-right: 10px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMcontainer-96 {
+    overflow-wrap: break-word;
+
+    font-weight: 400;
+    font-size: 15px;
+    color: #300EFF;
+}
+.StoreOwnerMain .SOMcontainer-97 {
+    margin-right: 5.1px;
+    overflow-wrap: break-word;
+
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMain .SOMstore-detailed-info-time {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMstore-detailed-info-phones {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMreservation {
     border-radius: 10px;
     background: #E9E9E9;
     margin-bottom: 26px;
@@ -32,7 +316,7 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reservation {
+.StoreOwnerMain .SOMwait-reservation {
     border-radius: 10px;
     background: #E9E9E9;
     margin-bottom: 26px;
@@ -42,58 +326,56 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .frame-527 {
+.StoreOwnerMain .SOMframe-527 {
     margin-bottom: 10px;
     display: flex;
     align-self: flex-start;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container {
+.StoreOwnerMain .SOMcontainerReservCheck {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-list-calen {
+.StoreOwnerMain .SOMwait-reserv-list-calen {
     margin-left: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-list {
+.StoreOwnerMain .SOMwait-reserv-list {
     margin-right: 41.6px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .new-wait-list {
+.StoreOwnerMain .SOMnew-wait-list {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-1 {
+.StoreOwnerMain .SOMcontainer-1 {
     margin-bottom: 5px;
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 18px;
     color: #000000;
 }
-.StoreOwnerMain .wait-list {
+.StoreOwnerMain .SOMwait-list {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date {
+.StoreOwnerMain .SOMwait-reserv-date {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -102,36 +384,33 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-2 {
+.StoreOwnerMain .SOMcontainer-2 {
     margin-right: 11.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-3 {
+.StoreOwnerMain .SOMcontainer-3 {
     margin-right: 9.6px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-4 {
+.StoreOwnerMain .SOMcontainer-4 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button {
+.StoreOwnerMain .SOMwait-reserv-button {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button {
+.StoreOwnerMain .SOMconfirm-button {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -140,52 +419,49 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-5 {
+.StoreOwnerMain .SOMcontainer-5 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button {
+.StoreOwnerMain .SOMrefuse-button {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
     margin-right: 5px;
     display: flex;
-    padding: 0 2.2px;
+    padding: 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-6 {
+.StoreOwnerMain .SOMcontainer-6 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button {
+.StoreOwnerMain .SOMplus-button {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-7 {
+.StoreOwnerMain .SOMcontainer-7 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .wait-list-1 {
+.StoreOwnerMain .SOMwait-list-1 {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date-1 {
+.StoreOwnerMain .SOMwait-reserv-date-1 {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -194,36 +470,33 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-8 {
+.StoreOwnerMain .SOMcontainer-8 {
     margin-right: 11.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-9 {
+.StoreOwnerMain .SOMcontainer-9 {
     margin-right: 8.2px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-10 {
+.StoreOwnerMain .SOMcontainer-10 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button-1 {
+.StoreOwnerMain .SOMwait-reserv-button-1 {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button-1 {
+.StoreOwnerMain .SOMconfirm-button-1 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -232,15 +505,15 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-11 {
+.StoreOwnerMain .SOMcontainer-11 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button-1 {
+.StoreOwnerMain .SOMrefuse-button-1 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -249,35 +522,35 @@
     padding: 0 2.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-12 {
+.StoreOwnerMain .SOMcontainer-12 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button-1 {
+.StoreOwnerMain .SOMplus-button-1 {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-13 {
+.StoreOwnerMain .SOMcontainer-13 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .wait-list-2 {
+.StoreOwnerMain .SOMwait-list-2 {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date-2 {
+.StoreOwnerMain .SOMwait-reserv-date-2 {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -287,37 +560,37 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-14 {
+.StoreOwnerMain .SOMcontainer-14 {
     margin-right: 9.5px;
     width: 35.5px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-15 {
+.StoreOwnerMain .SOMcontainer-15 {
     margin-right: 8px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-16 {
+.StoreOwnerMain .SOMcontainer-16 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button-2 {
+.StoreOwnerMain .SOMwait-reserv-button-2 {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button-2 {
+.StoreOwnerMain .SOMconfirm-button-2 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -326,15 +599,15 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-17 {
+.StoreOwnerMain .SOMcontainer-17 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button-2 {
+.StoreOwnerMain .SOMrefuse-button-2 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -343,64 +616,64 @@
     padding: 0 2.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-18 {
+.StoreOwnerMain .SOMcontainer-18 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button-2 {
+.StoreOwnerMain .SOMplus-button-2 {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-19 {
+.StoreOwnerMain .SOMcontainer-19 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .frame-523 {
+.StoreOwnerMain .SOMframe-523 {
     margin: 0 0.2px;
     display: flex;
     align-self: flex-end;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-20 {
+.StoreOwnerMain .SOMcontainer-20 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     color: #848484;
 }
-.StoreOwnerMain .imminent-wait-list {
+.StoreOwnerMain .SOMimminent-wait-list {
     display: flex;
     flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-21 {
+.StoreOwnerMain .SOMcontainer-21 {
     margin-bottom: 5px;
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 18px;
     color: #000000;
 }
-.StoreOwnerMain .wait-list-3 {
+.StoreOwnerMain .SOMwait-list-3 {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date-3 {
+.StoreOwnerMain .SOMwait-reserv-date-3 {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -409,36 +682,36 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-22 {
+.StoreOwnerMain .SOMcontainer-22 {
     margin-right: 11.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-23 {
+.StoreOwnerMain .SOMcontainer-23 {
     margin-right: 8px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-24 {
+.StoreOwnerMain .SOMcontainer-24 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button-3 {
+.StoreOwnerMain .SOMwait-reserv-button-3 {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button-3 {
+.StoreOwnerMain .SOMconfirm-button-3 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -447,15 +720,15 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-25 {
+.StoreOwnerMain .SOMcontainer-25 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button-3 {
+.StoreOwnerMain .SOMrefuse-button-3 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -464,35 +737,35 @@
     padding: 0 2.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-26 {
+.StoreOwnerMain .SOMcontainer-26 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button-3 {
+.StoreOwnerMain .SOMplus-button-3 {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-27 {
+.StoreOwnerMain .SOMcontainer-27 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .wait-list-4 {
+.StoreOwnerMain .SOMwait-list-4 {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date-4 {
+.StoreOwnerMain .SOMwait-reserv-date-4 {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -501,36 +774,36 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-28 {
+.StoreOwnerMain .SOMcontainer-28 {
     margin-right: 11.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-29 {
+.StoreOwnerMain .SOMcontainer-29 {
     margin-right: 8.2px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-30 {
+.StoreOwnerMain .SOMcontainer-30 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button-4 {
+.StoreOwnerMain .SOMwait-reserv-button-4 {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button-4 {
+.StoreOwnerMain .SOMconfirm-button-4 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -539,15 +812,15 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-31 {
+.StoreOwnerMain .SOMcontainer-31 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button-4 {
+.StoreOwnerMain .SOMrefuse-button-4 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -556,35 +829,35 @@
     padding: 0 2.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-32 {
+.StoreOwnerMain .SOMcontainer-32 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button-4 {
+.StoreOwnerMain .SOMplus-button-4 {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-33 {
+.StoreOwnerMain .SOMcontainer-33 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .wait-list-5 {
+.StoreOwnerMain .SOMwait-list-5 {
     margin: 0 0 5px 25px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wait-reserv-date-5 {
+.StoreOwnerMain .SOMwait-reserv-date-5 {
     border-bottom: 1px solid #FF5925;
     margin-right: 10px;
     display: flex;
@@ -593,36 +866,36 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-34 {
+.StoreOwnerMain .SOMcontainer-34 {
     margin-right: 11.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-35 {
+.StoreOwnerMain .SOMcontainer-35 {
     margin-right: 8.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .container-36 {
+.StoreOwnerMain .SOMcontainer-36 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .wait-reserv-button-5 {
+.StoreOwnerMain .SOMwait-reserv-button-5 {
     margin: 3.5px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .confirm-button-5 {
+.StoreOwnerMain .SOMconfirm-button-5 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -631,15 +904,15 @@
     padding: 0 2.4px 0 2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-37 {
+.StoreOwnerMain .SOMcontainer-37 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .refuse-button-5 {
+.StoreOwnerMain .SOMrefuse-button-5 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -648,41 +921,41 @@
     padding: 0 2.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-38 {
+.StoreOwnerMain .SOMcontainer-38 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .plus-button-5 {
+.StoreOwnerMain .SOMplus-button-5 {
     margin-bottom: 7px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-39 {
+.StoreOwnerMain .SOMcontainer-39 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .frame-5231 {
+.StoreOwnerMain .SOMframe-5231 {
     margin: 0 0.2px;
     display: flex;
     align-self: flex-end;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-40 {
+.StoreOwnerMain .SOMcontainer-40 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     color: #848484;
 }
-.StoreOwnerMain .frame-536 {
+.StoreOwnerMain .SOMframe-536 {
     margin: 18px 0 26px 0;
     display: flex;
     flex-direction: column;
@@ -691,7 +964,7 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .ellipse-5 {
+.StoreOwnerMain .SOMellipse-5 {
     border-radius: 2.5px;
     background: #FF5925;
     position: absolute;
@@ -700,7 +973,7 @@
     width: 5px;
     height: 5px;
 }
-.StoreOwnerMain .ellipse-6 {
+.StoreOwnerMain .SOMellipse-6 {
     border-radius: 2.5px;
     background: #FF5925;
     position: absolute;
@@ -709,7 +982,7 @@
     width: 5px;
     height: 5px;
 }
-.StoreOwnerMain .ellipse-7 {
+.StoreOwnerMain .SOMellipse-7 {
     border-radius: 2.5px;
     background: #FF5925;
     position: absolute;
@@ -718,7 +991,7 @@
     width: 5px;
     height: 5px;
 }
-.StoreOwnerMain .ellipse-8 {
+.StoreOwnerMain .SOMellipse-8 {
     border-radius: 2.5px;
     background: #FF5925;
     position: absolute;
@@ -727,7 +1000,7 @@
     width: 5px;
     height: 5px;
 }
-.StoreOwnerMain .menu-box {
+.StoreOwnerMain .SOMmenu-box {
     margin-bottom: 26px;
     display: flex;
     flex-direction: column;
@@ -735,7 +1008,7 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .menu-list {
+.StoreOwnerMain .SOMmenu-list {
     border-radius: 10px;
     background: #E9E9E9;
     margin-bottom: 5px;
@@ -746,142 +1019,140 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .menu-info {
+.StoreOwnerMain .SOMmenu-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-62 {
+.StoreOwnerMain .SOMrectangle-62 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .menu {
+.StoreOwnerMain .SOMmenu {
     margin: 0 10.1px 0 10.2px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-41 {
+.StoreOwnerMain .SOMcontainer-41 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-42 {
+.StoreOwnerMain .SOMcontainer-42 {
     margin-right: 5.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-43 {
+.StoreOwnerMain .SOMcontainer-43 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-info-1 {
+.StoreOwnerMain .SOMmenu-info-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-621 {
+.StoreOwnerMain .SOMrectangle-621 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .menu-1 {
+.StoreOwnerMain .SOMmenu-1 {
     margin: 0 10.1px 0 10.2px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-44 {
+.StoreOwnerMain .SOMcontainer-44 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-45 {
+.StoreOwnerMain .SOMcontainer-45 {
     margin-right: 5.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-46 {
+.StoreOwnerMain .SOMcontainer-46 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-info-2 {
+.StoreOwnerMain .SOMmenu-info-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-622 {
+.StoreOwnerMain .SOMrectangle-622 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .menu-2 {
+.StoreOwnerMain .SOMmenu-2 {
     margin: 0 18.7px 0 18.8px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-47 {
+.StoreOwnerMain .SOMcontainer-47 {
     margin-right: 5.5px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-48 {
+.StoreOwnerMain .SOMcontainer-48 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-49 {
+.StoreOwnerMain .SOMcontainer-49 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-info-3 {
+.StoreOwnerMain .SOMmenu-info-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -889,65 +1160,65 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-623 {
+.StoreOwnerMain .SOMrectangle-623 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .menu-3 {
-    margin-left: 0px;
+.StoreOwnerMain .SOMmenu-3 {
+    margin-left: 0;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-50 {
+.StoreOwnerMain .SOMcontainer-50 {
     margin-right: 5.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-51 {
+.StoreOwnerMain .SOMcontainer-51 {
     margin-right: 5.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-52 {
+.StoreOwnerMain .SOMcontainer-52 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .frame-544 {
-    margin: 0 0px;
+.StoreOwnerMain .SOMframe-544 {
+    margin: 0 0;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-53 {
+.StoreOwnerMain .SOMcontainer-53 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     color: #737373;
 }
-.StoreOwnerMain .staff-box {
+.StoreOwnerMain .SOMstaff-box {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-list {
+.StoreOwnerMain .SOMstaff-list {
     border-radius: 10px;
     background: #E9E9E9;
     margin-bottom: 5px;
@@ -958,19 +1229,19 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-info {
+.StoreOwnerMain .SOMstaff-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-img {
+.StoreOwnerMain .SOMstaff-img {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .staff {
+.StoreOwnerMain .SOMstaff {
     margin: 0 6.5px;
     display: flex;
     flex-direction: column;
@@ -978,37 +1249,36 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-54 {
+.StoreOwnerMain .SOMcontainer-54 {
     margin-bottom: 5px;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-55 {
+.StoreOwnerMain .SOMcontainer-55 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .staff-info-1 {
+.StoreOwnerMain .SOMstaff-info-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-img-1 {
+.StoreOwnerMain .SOMstaff-img-1 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .staff-1 {
+.StoreOwnerMain .SOMstaff-1 {
     margin: 0 6.5px;
     display: flex;
     flex-direction: column;
@@ -1016,37 +1286,36 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-56 {
+.StoreOwnerMain .SOMcontainer-56 {
     margin-bottom: 5px;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-57 {
+.StoreOwnerMain .SOMcontainer-57 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .staff-info-2 {
+.StoreOwnerMain .SOMstaff-info-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-img-2 {
+.StoreOwnerMain .SOMstaff-img-2 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .staff-2 {
+.StoreOwnerMain .SOMstaff-2 {
     margin: 0 6.5px;
     display: flex;
     flex-direction: column;
@@ -1054,37 +1323,35 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-58 {
+.StoreOwnerMain .SOMcontainer-58 {
     margin-bottom: 5px;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-59 {
+.StoreOwnerMain .SOMcontainer-59 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .staff-info-3 {
+.StoreOwnerMain .SOMstaff-info-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .staff-img-3 {
+.StoreOwnerMain .SOMstaff-img-3 {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
-.StoreOwnerMain .staff-3 {
+.StoreOwnerMain .SOMstaff-3 {
     margin: 0 6.5px;
     display: flex;
     flex-direction: column;
@@ -1092,575 +1359,63 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-60 {
+.StoreOwnerMain .SOMcontainer-60 {
     margin-bottom: 5px;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-61 {
+.StoreOwnerMain .SOMcontainer-61 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .modify {
-    margin: 0 0px;
+.StoreOwnerMain .SOMmodify {
+    margin: 0 0;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-62 {
+.StoreOwnerMain .SOMcontainer-62 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
     color: #737373;
 }
-.StoreOwnerMain .frame-546 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    background: #FFFFFF;
-    margin: 0 95px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 75px;
-    width: fit-content;
-    box-sizing: border-box;
-}
 
-.StoreOwnerMain .container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-1 {
-    margin-bottom: 229px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.StoreOwnerMain .alarm {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-69 {
-    margin: 4.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .container-70 {
-    margin: 4.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .alarm-button {
-    /*background: url('assets/images/Image9.png') 50% / cover no-repeat;*/
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-}
-.StoreOwnerMain .container-71 {
-    margin: 4px 11px 4px 0;
-    display: inline-block;
-    width: 129px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMain .shop-top-navi-top {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 26.4px 10px 0;
-    width: 1190px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-top-navi-bottom {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-top-navi-member-info {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.container-72 {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.333;
-}
-.StoreOwnerMain .container-72 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-}
-.StoreOwnerMain .container-73 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .visitors {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .today-visitors {
-    margin-bottom: 1px;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-74 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .regular-customer-num {
-    margin-bottom: 1px;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-top-navi-id {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-75 {
-    margin-right: 15.1px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .container-76 {
-    margin-top: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #494949;
-}
-.StoreOwnerMain .shop-top-navi-profile {
-    border-radius: 35px;
-    background: #D9D9D9;
-    position: relative;
-    margin-right: 10px;
-    display: flex;
-    padding: 23px 1px 24px 0;
-    width: 70px;
-    height: 70px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .member-info {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .numerical-summary {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 340.3px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-77 {
-    margin: 0 5.8px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .container-78 {
-    margin-right: 6px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .container-79 {
-    margin-right: 5.8px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .profile-select {
-    /*background: url('assets/images/ProfileSelect.png') 50% / cover no-repeat;*/
-    position: relative;
-    width: 23px;
-    height: 23px;
-}
-.StoreOwnerMain .profile {
-    /*background: url('assets/images/Profile.png') 50% / cover no-repeat;*/
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    width: 65px;
-    height: 65px;
-}
-.StoreOwnerMain .shop-top-navi-bottom-1 {
-    margin: 0 30px 0 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1100px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .another-shop {
-    margin: 9px 0 5px 0;
-    display: flex;
-    width: 24px;
-    height: 16px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .vector-7 {
-    width: 24px;
-    height: 16px;
-}
-.StoreOwnerMain .container-80 {
-    margin-right: 15.5px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 25px;
-    color: #000000;
-}
-.StoreOwnerMain .container-81 {
-    margin-right: 6px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-.StoreOwnerMain .star-1 {
-    margin: 0.5px 5.4px 0.5px 0;
-    width: 20px;
-    height: 20px;
-}
-.StoreOwnerMain .container-82 {
-    margin-right: 0.5px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .container-83 {
-    margin-right: 5.5px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .container-84 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #737373;
-}
-.StoreOwnerMain .container-85 {
-    /*background: url('assets/images/Image10.png') 50% / cover no-repeat;*/
-    width: 18px;
-    height: 18px;
-}
-.StoreOwnerMain .container-86 {
-    /*background: url('assets/images/Image3.png') 50% / cover no-repeat;*/
-    width: 18px;
-    height: 18px;
-}
-.StoreOwnerMain .container-87 {
-    /*background: url('assets/images/Image6.png') 50% / cover no-repeat;*/
-    width: 18px;
-    height: 18px;
-}
-.StoreOwnerMain .location-icon {
-    /*background: url('assets/images/Icon.png') 50% / cover no-repeat;*/
-    width: 18px;
-    height: 18px;
-}
-.StoreOwnerMain .container-88 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.2;
-    color: #000000;
-}
-.StoreOwnerMain .container-89 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .container-90 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .container-91 {
-    margin-right: 5.1px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .container-92 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .shop-detailed-name-rv {
-    margin: 0 10px 5px 10px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-93 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .star-figure {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .star {
-    margin: 3px 5.5px 0 0;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-94 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 17px;
-    color: #000000;
-}
-.StoreOwnerMain .shop-detailed-review {
-    margin-top: 3px;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-95 {
-    margin-right: 5.4px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .shop-detailed-info-main {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-location {
-    margin: 0 5px 10px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .location {
-    margin-right: 10px;
-    display: flex;
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .location-plus {
-    margin-right: 10px;
-    display: flex;
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .phone-icon {
-    margin-right: 10px;
-    display: flex;
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-location-plus {
-    margin: 0 5px 10px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-phone {
-    margin: 0 5px 10px 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .time-icon {
-    margin-right: 10px;
-    display: flex;
-    width: 18px;
-    height: 18px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-time {
-    margin: 0 5px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-left {
-    margin: 2.5px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .container-96 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #300EFF;
-}
-.StoreOwnerMain .container-97 {
-    margin-right: 5.1px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMain .profile-select-1 {
-    /*background: url('assets/images/ProfileSelect.png') 50% / cover no-repeat;*/
-    width: 23px;
-    height: 23px;
-}
-.StoreOwnerMain .shop-detailed-info {
-    border-radius: 10px;
-    background: #E9E9E9;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px;
-    width: 850px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-pic {
-    background: #A7A7A7;
-    display: flex;
-    padding: 56px 0;
-    width: 185px;
-    height: 135px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .shop-detailed-info-phones {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .modify-1 {
-    margin: 0 10.4px;
-    display: flex;
-    align-self: flex-end;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .today-reserv {
+.StoreOwnerMain .SOMtoday-reserv {
     position: relative;
     margin-right: 10.3px;
     width: 352.7px;
     height: 331px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .today {
+.StoreOwnerMain .SOMtoday {
     position: relative;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-98 {
+.StoreOwnerMain .SOMcontainer-98 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
     color: #000000;
 }
-.StoreOwnerMain .group-502 {
+.StoreOwnerMain .SOMgroup-502 {
     border-radius: 5px;
     display: flex;
     width: 130px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .select-box-before {
+.StoreOwnerMain .SOMselect-box-before {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -1672,33 +1427,32 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-99 {
+.StoreOwnerMain .SOMcontainer-99 {
     margin-right: 9px;
     width: 90px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMain .arrow-button-before {
+.StoreOwnerMain .SOMarrow-button-before {
     position: relative;
     margin: 1px 0;
     width: 16px;
     height: 16px;
 }
-.StoreOwnerMain .dldccheck {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+.StoreOwnerMain .SOMdldccheck {
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
 }
-.StoreOwnerMain .time-memo {
-    margin: 25px 72.4px 0 0;
+.StoreOwnerMain .SOMtime-memo {
+    margin: 25px 7px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1706,346 +1460,346 @@
     flex-basis: 168.6px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .time-note {
+.StoreOwnerMain .SOMtime-note {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-100 {
+.StoreOwnerMain .SOMcontainer-100 {
     margin-right: 8.5px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-101 {
+.StoreOwnerMain .SOMcontainer-101 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-1 {
+.StoreOwnerMain .SOMmenu-list-1 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-102 {
+.StoreOwnerMain .SOMcontainer-102 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-1 {
+.StoreOwnerMain .SOMtime-note-1 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-103 {
+.StoreOwnerMain .SOMcontainer-103 {
     margin-right: 7.7px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-104 {
+.StoreOwnerMain .SOMcontainer-104 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-2 {
+.StoreOwnerMain .SOMmenu-list-2 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-105 {
+.StoreOwnerMain .SOMcontainer-105 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-2 {
+.StoreOwnerMain .SOMtime-note-2 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-106 {
+.StoreOwnerMain .SOMcontainer-106 {
     margin-right: 8.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-107 {
+.StoreOwnerMain .SOMcontainer-107 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-3 {
+.StoreOwnerMain .SOMmenu-list-3 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-108 {
+.StoreOwnerMain .SOMcontainer-108 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-3 {
+.StoreOwnerMain .SOMtime-note-3 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-109 {
+.StoreOwnerMain .SOMcontainer-109 {
     margin-right: 7.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-110 {
+.StoreOwnerMain .SOMcontainer-110 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-2 {
+.StoreOwnerMain .SOMmenu-list-2 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-111 {
+.StoreOwnerMain .SOMcontainer-111 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-4 {
+.StoreOwnerMain .SOMtime-note-4 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-112 {
+.StoreOwnerMain .SOMcontainer-112 {
     margin-right: 7.8px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-113 {
+.StoreOwnerMain .SOMcontainer-113 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-21 {
+.StoreOwnerMain .SOMmenu-list-21 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-114 {
+.StoreOwnerMain .SOMcontainer-114 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-5 {
+.StoreOwnerMain .SOMtime-note-5 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-115 {
+.StoreOwnerMain .SOMcontainer-115 {
     margin-right: 7.9px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-116 {
+.StoreOwnerMain .SOMcontainer-116 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-22 {
+.StoreOwnerMain .SOMmenu-list-22 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-117 {
+.StoreOwnerMain .SOMcontainer-117 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-6 {
+.StoreOwnerMain .SOMtime-note-6 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-118 {
+.StoreOwnerMain .SOMcontainer-118 {
     margin-right: 8.3px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-119 {
+.StoreOwnerMain .SOMcontainer-119 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-23 {
+.StoreOwnerMain .SOMmenu-list-23 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-120 {
+.StoreOwnerMain .SOMcontainer-120 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-7 {
+.StoreOwnerMain .SOMtime-note-7 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-121 {
+.StoreOwnerMain .SOMcontainer-121 {
     margin-right: 7.7px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-122 {
+.StoreOwnerMain .SOMcontainer-122 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-24 {
+.StoreOwnerMain .SOMmenu-list-24 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-123 {
+.StoreOwnerMain .SOMcontainer-123 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .time-note-8 {
+.StoreOwnerMain .SOMtime-note-8 {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-124 {
+.StoreOwnerMain .SOMcontainer-124 {
     margin-right: 8.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-125 {
+.StoreOwnerMain .SOMcontainer-125 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-25 {
+.StoreOwnerMain .SOMmenu-list-25 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-126 {
+.StoreOwnerMain .SOMcontainer-126 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .deadline-dccheck {
+.StoreOwnerMain .SOMdeadline-dccheck {
     margin-bottom: 2px;
     display: flex;
     flex-direction: column;
@@ -2053,29 +1807,29 @@
     flex-basis: 111.7px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .check {
+.StoreOwnerMain .SOMcheck {
     margin-bottom: 13px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-127 {
+.StoreOwnerMain .SOMcontainer-127 {
     margin-right: 10.5px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 11px;
     color: #000000;
 }
-.StoreOwnerMain .container-128 {
+.StoreOwnerMain .SOMcontainer-128 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 11px;
     color: #000000;
 }
-.StoreOwnerMain .check-box {
+.StoreOwnerMain .SOMcheck-box {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2084,17 +1838,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-246 {
+.StoreOwnerMain .SOMrectangle-246 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-247 {
+.StoreOwnerMain .SOMrectangle-247 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-1 {
+.StoreOwnerMain .SOMcheck-box-1 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2103,17 +1857,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2461 {
+.StoreOwnerMain .SOMrectangle-2461 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2471 {
+.StoreOwnerMain .SOMrectangle-2471 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-2 {
+.StoreOwnerMain .SOMcheck-box-2 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2122,17 +1876,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2462 {
+.StoreOwnerMain .SOMrectangle-2462 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2472 {
+.StoreOwnerMain .SOMrectangle-2472 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-3 {
+.StoreOwnerMain .SOMcheck-box-3 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2141,17 +1895,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2463 {
+.StoreOwnerMain .SOMrectangle-2463 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2473 {
+.StoreOwnerMain .SOMrectangle-2473 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-4 {
+.StoreOwnerMain .SOMcheck-box-4 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2160,17 +1914,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2464 {
+.StoreOwnerMain .SOMrectangle-2464 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2474 {
+.StoreOwnerMain .SOMrectangle-2474 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-5 {
+.StoreOwnerMain .SOMcheck-box-5 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2179,17 +1933,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2465 {
+.StoreOwnerMain .SOMrectangle-2465 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2475 {
+.StoreOwnerMain .SOMrectangle-2475 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-6 {
+.StoreOwnerMain .SOMcheck-box-6 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2198,17 +1952,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2466 {
+.StoreOwnerMain .SOMrectangle-2466 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2476 {
+.StoreOwnerMain .SOMrectangle-2476 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-7 {
+.StoreOwnerMain .SOMcheck-box-7 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2217,17 +1971,17 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2467 {
+.StoreOwnerMain .SOMrectangle-2467 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2477 {
+.StoreOwnerMain .SOMrectangle-2477 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .check-box-8 {
+.StoreOwnerMain .SOMcheck-box-8 {
     margin: 0 12px 13px 12px;
     display: flex;
     flex-direction: row;
@@ -2236,59 +1990,59 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2468 {
+.StoreOwnerMain .SOMrectangle-2468 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2478 {
+.StoreOwnerMain .SOMrectangle-2478 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .all-reserv {
+.StoreOwnerMain .SOMall-reserv {
     margin: 3px 0 22px 0;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
-.StoreOwnerMain .time-note-9 {
+.StoreOwnerMain .SOMtime-note-9 {
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-129 {
+.StoreOwnerMain .SOMcontainer-129 {
     margin-right: 8.1px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .container-130 {
+.StoreOwnerMain .SOMcontainer-130 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .menu-list-26 {
+.StoreOwnerMain .SOMmenu-list-26 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .container-131 {
+.StoreOwnerMain .SOMcontainer-131 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .check-box-9 {
+.StoreOwnerMain .SOMcheck-box-9 {
     margin: 0 12px;
     display: flex;
     flex-direction: row;
@@ -2297,23 +2051,23 @@
     width: 78px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-2469 {
+.StoreOwnerMain .SOMrectangle-2469 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .rectangle-2479 {
+.StoreOwnerMain .SOMrectangle-2479 {
     background: #ADADAD;
     width: 17px;
     height: 17px;
 }
-.StoreOwnerMain .frame-522 {
+.StoreOwnerMain .SOMframe-522 {
     margin-right: 23.5px;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-example-2 {
+.StoreOwnerMain .SOMcalendar-example-2 {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -2321,7 +2075,7 @@
     width: 386.5px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .month-header {
+.StoreOwnerMain .SOMmonth-header {
     margin: 0 16.7px 22px 16.7px;
     display: flex;
     flex-direction: row;
@@ -2329,7 +2083,7 @@
     width: 353.1px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .icon-button {
+.StoreOwnerMain .SOMicon-button {
     border-radius: 3px;
     margin: 4.1px 0 4.7px 0;
     display: flex;
@@ -2337,19 +2091,19 @@
     height: 11.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .vector-10 {
+.StoreOwnerMain .SOMvector-10 {
     width: 6.6px;
     height: 11.2px;
 }
-.StoreOwnerMain .month-yyyy {
+.StoreOwnerMain .SOMmonth-yyyy {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
     color: #172B4D;
 }
-.StoreOwnerMain .icon-button-1 {
+.StoreOwnerMain .SOMicon-button-1 {
     border-radius: 3px;
     margin: 4.1px 0 4.7px 0;
     display: flex;
@@ -2357,11 +2111,11 @@
     height: 11.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .vector-11 {
+.StoreOwnerMain .SOMvector-11 {
     width: 6.6px;
     height: 11.2px;
 }
-.StoreOwnerMain .week-header {
+.StoreOwnerMain .SOMweek-header {
     background: #FFFFFF;
     margin-bottom: 6px;
     display: flex;
@@ -2371,91 +2125,91 @@
     width: 386.5px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .box {
+.StoreOwnerMain .SOMbox {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .sun {
+.StoreOwnerMain .SOMsun {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-1 {
+.StoreOwnerMain .SOMbox-1 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .mon {
+.StoreOwnerMain .SOMmon {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-2 {
+.StoreOwnerMain .SOMbox-2 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .tue {
+.StoreOwnerMain .SOMtue {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-3 {
+.StoreOwnerMain .SOMbox-3 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wed {
+.StoreOwnerMain .SOMwed {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-4 {
+.StoreOwnerMain .SOMbox-4 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .thu {
+.StoreOwnerMain .SOMthu {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-5 {
+.StoreOwnerMain .SOMbox-5 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .fri {
+.StoreOwnerMain .SOMfri {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-6 {
+.StoreOwnerMain .SOMbox-6 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .sat {
+.StoreOwnerMain .SOMsat {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .week-days {
+.StoreOwnerMain .SOMweek-days {
     margin: 0 23.5px 12px 19px;
     display: flex;
     flex-direction: row;
@@ -2463,98 +2217,98 @@
     width: 344px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day {
+.StoreOwnerMain .SOMcalendar-day {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value {
+.StoreOwnerMain .SOMvalue {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-1 {
+.StoreOwnerMain .SOMcalendar-day-1 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-1 {
+.StoreOwnerMain .SOMvalue-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-2 {
+.StoreOwnerMain .SOMcalendar-day-2 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-2 {
+.StoreOwnerMain .SOMvalue-2 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-3 {
+.StoreOwnerMain .SOMcalendar-day-3 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-3 {
+.StoreOwnerMain .SOMvalue-3 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-4 {
+.StoreOwnerMain .SOMcalendar-day-4 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-4 {
+.StoreOwnerMain .SOMvalue-4 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-5 {
+.StoreOwnerMain .SOMcalendar-day-5 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-5 {
+.StoreOwnerMain .SOMvalue-5 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-6 {
+.StoreOwnerMain .SOMcalendar-day-6 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-6 {
+.StoreOwnerMain .SOMvalue-6 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-1 {
+.StoreOwnerMain .SOMweek-days-1 {
     margin: 0 23.3px 12px 23px;
     display: flex;
     flex-direction: row;
@@ -2562,98 +2316,98 @@
     width: 340.1px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-7 {
+.StoreOwnerMain .SOMcalendar-day-7 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-7 {
+.StoreOwnerMain .SOMvalue-7 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-8 {
+.StoreOwnerMain .SOMcalendar-day-8 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-8 {
+.StoreOwnerMain .SOMvalue-8 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-9 {
+.StoreOwnerMain .SOMcalendar-day-9 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-9 {
+.StoreOwnerMain .SOMvalue-9 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-10 {
+.StoreOwnerMain .SOMcalendar-day-10 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-10 {
+.StoreOwnerMain .SOMvalue-10 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-11 {
+.StoreOwnerMain .SOMcalendar-day-11 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-11 {
+.StoreOwnerMain .SOMvalue-11 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-12 {
+.StoreOwnerMain .SOMcalendar-day-12 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-12 {
+.StoreOwnerMain .SOMvalue-12 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-13 {
+.StoreOwnerMain .SOMcalendar-day-13 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-13 {
+.StoreOwnerMain .SOMvalue-13 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-2 {
+.StoreOwnerMain .SOMweek-days-2 {
     margin: 0 20.1px 12px 19.9px;
     display: flex;
     flex-direction: row;
@@ -2661,98 +2415,98 @@
     width: 346.5px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-14 {
+.StoreOwnerMain .SOMcalendar-day-14 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-14 {
+.StoreOwnerMain .SOMvalue-14 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-15 {
+.StoreOwnerMain .SOMcalendar-day-15 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-15 {
+.StoreOwnerMain .SOMvalue-15 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-16 {
+.StoreOwnerMain .SOMcalendar-day-16 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-16 {
+.StoreOwnerMain .SOMvalue-16 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-17 {
+.StoreOwnerMain .SOMcalendar-day-17 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-17 {
+.StoreOwnerMain .SOMvalue-17 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-18 {
+.StoreOwnerMain .SOMcalendar-day-18 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-18 {
+.StoreOwnerMain .SOMvalue-18 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-19 {
+.StoreOwnerMain .SOMcalendar-day-19 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-19 {
+.StoreOwnerMain .SOMvalue-19 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-20 {
+.StoreOwnerMain .SOMcalendar-day-20 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-20 {
+.StoreOwnerMain .SOMvalue-20 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-3 {
+.StoreOwnerMain .SOMweek-days-3 {
     margin: 0 19px 12px 20.3px;
     display: flex;
     flex-direction: row;
@@ -2760,98 +2514,98 @@
     width: 347.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-21 {
+.StoreOwnerMain .SOMcalendar-day-21 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-21 {
+.StoreOwnerMain .SOMvalue-21 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-22 {
+.StoreOwnerMain .SOMcalendar-day-22 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-22 {
+.StoreOwnerMain .SOMvalue-22 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-23 {
+.StoreOwnerMain .SOMcalendar-day-23 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-23 {
+.StoreOwnerMain .SOMvalue-23 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-24 {
+.StoreOwnerMain .SOMcalendar-day-24 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-24 {
+.StoreOwnerMain .SOMvalue-24 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-25 {
+.StoreOwnerMain .SOMcalendar-day-25 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-25 {
+.StoreOwnerMain .SOMvalue-25 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-26 {
+.StoreOwnerMain .SOMcalendar-day-26 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-26 {
+.StoreOwnerMain .SOMvalue-26 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-27 {
+.StoreOwnerMain .SOMcalendar-day-27 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-27 {
+.StoreOwnerMain .SOMvalue-27 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-4 {
+.StoreOwnerMain .SOMweek-days-4 {
     margin: 0 18.9px 12px 18.9px;
     display: flex;
     flex-direction: row;
@@ -2859,98 +2613,98 @@
     width: 348.7px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-28 {
+.StoreOwnerMain .SOMcalendar-day-28 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-28 {
+.StoreOwnerMain .SOMvalue-28 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-29 {
+.StoreOwnerMain .SOMcalendar-day-29 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-29 {
+.StoreOwnerMain .SOMvalue-29 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-30 {
+.StoreOwnerMain .SOMcalendar-day-30 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-30 {
+.StoreOwnerMain .SOMvalue-30 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-31 {
+.StoreOwnerMain .SOMcalendar-day-31 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-31 {
+.StoreOwnerMain .SOMvalue-31 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-32 {
+.StoreOwnerMain .SOMcalendar-day-32 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-32 {
+.StoreOwnerMain .SOMvalue-32 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-33 {
+.StoreOwnerMain .SOMcalendar-day-33 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-33 {
+.StoreOwnerMain .SOMvalue-33 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-34 {
+.StoreOwnerMain .SOMcalendar-day-34 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-34 {
+.StoreOwnerMain .SOMvalue-34 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-5 {
+.StoreOwnerMain .SOMweek-days-5 {
     margin: 0 23.3px 0 19.8px;
     display: flex;
     flex-direction: row;
@@ -2958,109 +2712,109 @@
     width: 343.4px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-35 {
+.StoreOwnerMain .SOMcalendar-day-35 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-35 {
+.StoreOwnerMain .SOMvalue-35 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-36 {
+.StoreOwnerMain .SOMcalendar-day-36 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-36 {
+.StoreOwnerMain .SOMvalue-36 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-37 {
+.StoreOwnerMain .SOMcalendar-day-37 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-37 {
+.StoreOwnerMain .SOMvalue-37 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-38 {
+.StoreOwnerMain .SOMcalendar-day-38 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-38 {
+.StoreOwnerMain .SOMvalue-38 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-39 {
+.StoreOwnerMain .SOMcalendar-day-39 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-39 {
+.StoreOwnerMain .SOMvalue-39 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-40 {
+.StoreOwnerMain .SOMcalendar-day-40 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-40 {
+.StoreOwnerMain .SOMvalue-40 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-41 {
+.StoreOwnerMain .SOMcalendar-day-41 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-41 {
+.StoreOwnerMain .SOMvalue-41 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .container-132 {
+.StoreOwnerMain .SOMcontainer-132 {
     margin-bottom: 18px;
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
     color: #000000;
 }
-.StoreOwnerMain .group-57 {
+.StoreOwnerMain .SOMgroup-57 {
     background: #CBCBCB;
     position: relative;
     margin-top: 35px;
@@ -3070,12 +2824,12 @@
     height: 296px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .rectangle-138 {
+.StoreOwnerMain .SOMrectangle-138 {
     background: #8F8F8F;
     width: 5px;
     height: 183px;
 }
-.StoreOwnerMain .month-header-1 {
+.StoreOwnerMain .SOMmonth-header-1 {
     margin: 0 16.7px 22px 16.7px;
     display: flex;
     flex-direction: row;
@@ -3083,7 +2837,7 @@
     width: 354.6px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .icon-button-2 {
+.StoreOwnerMain .SOMicon-button-2 {
     border-radius: 3px;
     margin: 4.1px 0 4.7px 0;
     display: flex;
@@ -3091,19 +2845,19 @@
     height: 11.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .vector-12 {
+.StoreOwnerMain .SOMvector-12 {
     width: 6.6px;
     height: 11.2px;
 }
-.StoreOwnerMain .month-yyyy-1 {
+.StoreOwnerMain .SOMmonth-yyyy-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
     color: #172B4D;
 }
-.StoreOwnerMain .icon-button-3 {
+.StoreOwnerMain .SOMicon-button-3 {
     border-radius: 3px;
     margin: 4.1px 0 4.7px 0;
     display: flex;
@@ -3111,11 +2865,11 @@
     height: 11.2px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .vector-13 {
+.StoreOwnerMain .SOMvector-13 {
     width: 6.6px;
     height: 11.2px;
 }
-.StoreOwnerMain .week-header-1 {
+.StoreOwnerMain .SOMweek-header-1 {
     background: #FFFFFF;
     margin-bottom: 6px;
     display: flex;
@@ -3125,91 +2879,91 @@
     width: 388px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .box-7 {
+.StoreOwnerMain .SOMbox-7 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .sun-1 {
+.StoreOwnerMain .SOMsun-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-8 {
+.StoreOwnerMain .SOMbox-8 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .mon-1 {
+.StoreOwnerMain .SOMmon-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-9 {
+.StoreOwnerMain .SOMbox-9 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .tue-1 {
+.StoreOwnerMain .SOMtue-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-10 {
+.StoreOwnerMain .SOMbox-10 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .wed-1 {
+.StoreOwnerMain .SOMwed-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-11 {
+.StoreOwnerMain .SOMbox-11 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .thu-1 {
+.StoreOwnerMain .SOMthu-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-12 {
+.StoreOwnerMain .SOMbox-12 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .fri-1 {
+.StoreOwnerMain .SOMfri-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .box-13 {
+.StoreOwnerMain .SOMbox-13 {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .sat-1 {
+.StoreOwnerMain .SOMsat-1 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-6 {
+.StoreOwnerMain .SOMweek-days-6 {
     margin: 0 23.7px 12px 19px;
     display: flex;
     flex-direction: row;
@@ -3217,98 +2971,98 @@
     width: 345.3px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-42 {
+.StoreOwnerMain .SOMcalendar-day-42 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-42 {
+.StoreOwnerMain .SOMvalue-42 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-43 {
+.StoreOwnerMain .SOMcalendar-day-43 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-43 {
+.StoreOwnerMain .SOMvalue-43 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-44 {
+.StoreOwnerMain .SOMcalendar-day-44 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-44 {
+.StoreOwnerMain .SOMvalue-44 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-45 {
+.StoreOwnerMain .SOMcalendar-day-45 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-45 {
+.StoreOwnerMain .SOMvalue-45 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-46 {
+.StoreOwnerMain .SOMcalendar-day-46 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-46 {
+.StoreOwnerMain .SOMvalue-46 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-47 {
+.StoreOwnerMain .SOMcalendar-day-47 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-47 {
+.StoreOwnerMain .SOMvalue-47 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-48 {
+.StoreOwnerMain .SOMcalendar-day-48 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-48 {
+.StoreOwnerMain .SOMvalue-48 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-7 {
+.StoreOwnerMain .SOMweek-days-7 {
     margin: 0 23.6px 12px 23px;
     display: flex;
     flex-direction: row;
@@ -3316,98 +3070,98 @@
     width: 341.4px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-49 {
+.StoreOwnerMain .SOMcalendar-day-49 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-49 {
+.StoreOwnerMain .SOMvalue-49 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-50 {
+.StoreOwnerMain .SOMcalendar-day-50 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-50 {
+.StoreOwnerMain .SOMvalue-50 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-51 {
+.StoreOwnerMain .SOMcalendar-day-51 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-51 {
+.StoreOwnerMain .SOMvalue-51 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-52 {
+.StoreOwnerMain .SOMcalendar-day-52 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-52 {
+.StoreOwnerMain .SOMvalue-52 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-53 {
+.StoreOwnerMain .SOMcalendar-day-53 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-53 {
+.StoreOwnerMain .SOMvalue-53 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-54 {
+.StoreOwnerMain .SOMcalendar-day-54 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-54 {
+.StoreOwnerMain .SOMvalue-54 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-55 {
+.StoreOwnerMain .SOMcalendar-day-55 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-55 {
+.StoreOwnerMain .SOMvalue-55 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-8 {
+.StoreOwnerMain .SOMweek-days-8 {
     margin: 0 20.3px 12px 19.9px;
     display: flex;
     flex-direction: row;
@@ -3415,98 +3169,98 @@
     width: 347.8px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-56 {
+.StoreOwnerMain .SOMcalendar-day-56 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-56 {
+.StoreOwnerMain .SOMvalue-56 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-57 {
+.StoreOwnerMain .SOMcalendar-day-57 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-57 {
+.StoreOwnerMain .SOMvalue-57 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-58 {
+.StoreOwnerMain .SOMcalendar-day-58 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-58 {
+.StoreOwnerMain .SOMvalue-58 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-59 {
+.StoreOwnerMain .SOMcalendar-day-59 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-59 {
+.StoreOwnerMain .SOMvalue-59 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-60 {
+.StoreOwnerMain .SOMcalendar-day-60 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-60 {
+.StoreOwnerMain .SOMvalue-60 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-61 {
+.StoreOwnerMain .SOMcalendar-day-61 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-61 {
+.StoreOwnerMain .SOMvalue-61 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-62 {
+.StoreOwnerMain .SOMcalendar-day-62 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-62 {
+.StoreOwnerMain .SOMvalue-62 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-9 {
+.StoreOwnerMain .SOMweek-days-9 {
     margin: 0 19.2px 12px 20.3px;
     display: flex;
     flex-direction: row;
@@ -3514,100 +3268,100 @@
     width: 348.5px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-63 {
+.StoreOwnerMain .SOMcalendar-day-63 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-63 {
+.StoreOwnerMain .SOMvalue-63 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-64 {
+.StoreOwnerMain .SOMcalendar-day-64 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-64 {
+.StoreOwnerMain .SOMvalue-64 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-65 {
+.StoreOwnerMain .SOMcalendar-day-65 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-65 {
+.StoreOwnerMain .SOMvalue-65 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-66 {
-    border-radius: 3px;
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .value-66 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.StoreOwnerMain .calendar-day-67 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .value-67 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.StoreOwnerMain .calendar-day-68 {
+.StoreOwnerMain .SOMcalendar-day-66 {
     border-radius: 3px;
     position: relative;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-68 {
+.StoreOwnerMain .SOMvalue-66 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-69 {
+.StoreOwnerMain .SOMcalendar-day-67 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-69 {
+.StoreOwnerMain .SOMvalue-67 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-10 {
+.StoreOwnerMain .SOMcalendar-day-68 {
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMvalue-68 {
+    overflow-wrap: break-word;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .SOMcalendar-day-69 {
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMain .SOMvalue-69 {
+    overflow-wrap: break-word;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429;
+    color: #44546F;
+}
+.StoreOwnerMain .SOMweek-days-10 {
     margin: 0 19.1px 12px 18.9px;
     display: flex;
     flex-direction: row;
@@ -3615,100 +3369,100 @@
     width: 350px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-70 {
+.StoreOwnerMain .SOMcalendar-day-70 {
     border-radius: 3px;
     position: relative;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-70 {
+.StoreOwnerMain .SOMvalue-70 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-71 {
+.StoreOwnerMain .SOMcalendar-day-71 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-71 {
+.StoreOwnerMain .SOMvalue-71 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-72 {
+.StoreOwnerMain .SOMcalendar-day-72 {
     border-radius: 3px;
     position: relative;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-72 {
+.StoreOwnerMain .SOMvalue-72 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-73 {
+.StoreOwnerMain .SOMcalendar-day-73 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-73 {
+.StoreOwnerMain .SOMvalue-73 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-74 {
+.StoreOwnerMain .SOMcalendar-day-74 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-74 {
+.StoreOwnerMain .SOMvalue-74 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-75 {
+.StoreOwnerMain .SOMcalendar-day-75 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-75 {
+.StoreOwnerMain .SOMvalue-75 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-76 {
+.StoreOwnerMain .SOMcalendar-day-76 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-76 {
+.StoreOwnerMain .SOMvalue-76 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .week-days-11 {
+.StoreOwnerMain .SOMweek-days-11 {
     margin: 0 23.6px 0 19.8px;
     display: flex;
     flex-direction: row;
@@ -3716,98 +3470,98 @@
     width: 344.6px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .calendar-day-77 {
+.StoreOwnerMain .SOMcalendar-day-77 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-77 {
+.StoreOwnerMain .SOMvalue-77 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: #44546F;
 }
-.StoreOwnerMain .calendar-day-78 {
+.StoreOwnerMain .SOMcalendar-day-78 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-78 {
+.StoreOwnerMain .SOMvalue-78 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-79 {
+.StoreOwnerMain .SOMcalendar-day-79 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-79 {
+.StoreOwnerMain .SOMvalue-79 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-80 {
+.StoreOwnerMain .SOMcalendar-day-80 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-80 {
+.StoreOwnerMain .SOMvalue-80 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-81 {
+.StoreOwnerMain .SOMcalendar-day-81 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-81 {
+.StoreOwnerMain .SOMvalue-81 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-82 {
+.StoreOwnerMain .SOMcalendar-day-82 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-82 {
+.StoreOwnerMain .SOMvalue-82 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .calendar-day-83 {
+.StoreOwnerMain .SOMcalendar-day-83 {
     border-radius: 3px;
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .value-83 {
+.StoreOwnerMain .SOMvalue-83 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
     color: rgba(68, 84, 111, 0.5);
 }
-.StoreOwnerMain .container-3 {
+.StoreOwnerMain .SOMcontainer-3 {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
