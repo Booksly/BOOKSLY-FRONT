@@ -1,167 +1,14 @@
 import './StoreOwnerMain.css'
+import ShopOwnerLeftNavi from "../nav/ShopOwnerLeftNavi";
+import ShopOwnerTopNavi from "../nav/ShopOwnerTopNavi";
+
 
 export default function StoreOwnerMain() {
     return (
         <div className="StoreOwnerMain">
             <div className="container">
-                <div className="frame-364">
-                    <div className="container-2">
-                        <div className="cpnavi-logo">
-                            <div className="booksly-logo">
-                            </div>
-                        </div>
-                        <div className="cpnavi-bar-6">
-                            <div className="line-376">
-                            </div>
-                            <div className="cp-navi-search-name-6">
-                                {/*<img className="vector-6" src="assets/vectors/Vector821_x2.svg" />*/}
-                                <div className="my-6">
-                                    가게 상세 페이지
-                                </div>
-                            </div>
-                            <div className="line-366">
-                            </div>
-                        </div>
-                        <div className="cpsk-navi-bar">
-                            <div className="cpnavi-bar">
-                                <div className="line-37">
-                                </div>
-                                <div className="cp-navi-search-name">
-                                    {/*<img className="vector" src="assets/vectors/Vector266_x2.svg" />*/}
-                                    <div className="my">
-                                        My 가게 리뷰
-                                    </div>
-                                </div>
-                                <div className="line-36">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-1">
-                                <div className="line-371">
-                                </div>
-                                <div className="cp-navi-search-name-1">
-                                    {/*<img className="vector-1" src="assets/vectors/Vector295_x2.svg" />*/}
-                                    <div className="my-1">
-                                        예약 확인
-                                    </div>
-                                </div>
-                                <div className="line-361">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-2">
-                                <div className="line-4">
-                                </div>
-                                <div className="frame-464">
-                                    {/*<img className="polygon-1" src="assets/vectors/Polygon1123_x2.svg" />*/}
-                                    <div className="container-64">
-                                        오늘 예약
-                                    </div>
-                                </div>
-                                <div className="line-3">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-21">
-                                <div className="line-41">
-                                </div>
-                                <div className="frame-4641">
-                                    {/*<img className="polygon-11" src="assets/vectors/Polygon1192_x2.svg" />*/}
-                                    <div className="container-65">
-                                        전체 예약
-                                    </div>
-                                </div>
-                                <div className="line-31">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-22">
-                                <div className="line-42">
-                                </div>
-                                <div className="frame-4642">
-                                    {/*<img className="polygon-12" src="assets/vectors/Polygon189_x2.svg" />*/}
-                                    <div className="container-66">
-                                        확정 대기 예약
-                                    </div>
-                                </div>
-                                <div className="line-32">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-2">
-                                <div className="line-372">
-                                </div>
-                                <div className="cp-navi-search-name-2">
-                                    {/*<img className="vector-2" src="assets/vectors/Vector264_x2.svg" />*/}
-                                    <div className="my-2">
-                                        예약 설정
-                                    </div>
-                                </div>
-                                <div className="line-362">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-3">
-                                <div className="line-373">
-                                </div>
-                                <div className="cp-navi-search-name-3">
-                                    {/*<img className="vector-3" src="assets/vectors/Vector789_x2.svg" />*/}
-                                    <div className="my-3">
-                                        메뉴 관리
-                                    </div>
-                                </div>
-                                <div className="line-363">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-23">
-                                <div className="line-43">
-                                </div>
-                                <div className="frame-4643">
-                                    {/*<img className="polygon-13" src="assets/vectors/Polygon1161_x2.svg" />*/}
-                                    <div className="container-67">
-                                        일반 메뉴
-                                    </div>
-                                </div>
-                                <div className="line-33">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-24">
-                                <div className="line-44">
-                                </div>
-                                <div className="frame-4644">
-                                    {/*<img className="polygon-14" src="assets/vectors/Polygon11_x2.svg" />*/}
-                                    <div className="container-68">
-                                        이벤트 메뉴
-                                    </div>
-                                </div>
-                                <div className="line-34">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-4">
-                                <div className="line-374">
-                                </div>
-                                <div className="cp-navi-search-name-4">
-                                    {/*<img className="vector-4" src="assets/vectors/Vector10_x2.svg" />*/}
-                                    <div className="my-4">
-                                        직원 관리
-                                    </div>
-                                </div>
-                                <div className="line-364">
-                                </div>
-                            </div>
-                            <div className="cpnavi-bar-5">
-                                <div className="line-375">
-                                </div>
-                                <div className="cp-navi-search-name-5">
-                                    {/*<img className="vector-5" src="assets/vectors/Vector115_x2.svg" />*/}
-                                    <div className="my-5">
-                                        설정
-                                    </div>
-                                </div>
-                                <div className="line-365">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="line-35">
-                        </div>
-                    </div>
-                    <div className="line-2">
-                    </div>
-                </div>
+                <ShopOwnerLeftNavi/>
+                <ShopOwnerTopNavi/>
                 <div className="container-1">
                     <div className="frame-453">
                         <div className="shop-top-navi-top">
@@ -1451,8 +1298,6 @@ export default function StoreOwnerMain() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="line-1">
             </div>
         </div>
     )
