@@ -22,11 +22,10 @@
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .LogIn_Box {
-  margin-bottom: 13.5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
+  /* width: fit-content; */
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .frame-508 {
@@ -43,8 +42,9 @@
   margin-bottom: 85px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
-  width: 274px;
+  width: fit-content;
   box-sizing: border-box;
 }
 .container {
@@ -58,25 +58,29 @@
 .StoreOwnerLogInPage .frame-10 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 300px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
   box-sizing: border-box;
 }
 .StoreOwnerLogInPage .Customer {
-  margin-right: 15px;
-  width: 167px;
+  margin-right: 30px;
+  /* width: 167px; */
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
   font-size: 25px;
   color: #000000;
+  white-space: nowrap;
 }
 .StoreOwnerLogInPage .StoreOwner {
+  margin-left: 30px;
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
   font-size: 25px;
   color: #000000;
+  white-space: nowrap;
 }
 .StoreOwnerLogInPage .line-5 {
   background: #ff5925;
