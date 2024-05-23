@@ -7,7 +7,7 @@
     background: #FFFFFF;
     display: flex;
     width: fit-content;
-    height: 100vh;
+    height: 150vh;
     box-sizing: border-box;
 }
 .MyHomeLeftNavi .MyHomeLeftNavicontainer {
@@ -88,7 +88,6 @@
     line-height: 25px;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     color: #000000;

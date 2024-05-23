@@ -1,7 +1,6 @@
 import './MyHomeLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
-import MyHomeTopNavi from "./MyHomeTopNavi";
 import React from "react";
 
 export default function MyHomeLeftNavi() {
@@ -83,7 +82,6 @@ export default function MyHomeLeftNavi() {
                 <div className="MyHomeLeftNaviline">
                 </div>
             </div>
-            {/*<MyHomeTopNavi/>*/}
         </div>
     )
 }
