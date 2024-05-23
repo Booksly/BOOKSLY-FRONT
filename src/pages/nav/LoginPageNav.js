@@ -7,14 +7,19 @@ export default function LoginPageNav() {
   const goToStoreSearchPage = () => {
     navigate("/StoreSearch");
   };
+  const goToMainHomePage = () => {
+    navigate("/MainHome");
+  };
   return (
     <div className="LoginPageNav">
       <div className="LoginPageNavBack">
         <div className="LoginPageNavheader-inner-before">
           <div className="LoginPageNavheader-inner-left">
-            <div className="LoginPageNavlogo-goto-home">
-              <div className="LoginPageNavbooksly-logo"></div>
-            </div>
+            <button className="frame-MainHomeButton" onClick={goToMainHomePage}>
+              <div className="LoginPageNavlogo-goto-home">
+                <div className="LoginPageNavbooksly-logo"></div>
+              </div>
+            </button>
             <div className="LoginPageNavheader-buttons">
               <div className="LoginPageNavcurrentNav">
                 <div className="LoginPageNavcurrentPageBar">
@@ -31,10 +36,20 @@ export default function LoginPageNav() {
           <div className="LoginPageNavheader-inner-right">
             <div className="LoginPageNavheaderRightDiv">
               <div className="LoginPageNavicon">
-                <img className="LoginPageNavhome" src={home} alt={""} />
+                <button
+                  className="frame-MainHomeButton"
+                  onClick={goToMainHomePage}
+                >
+                  <img className="LoginPageNavhome" src={home} alt={""} />
+                </button>
               </div>
               <div className="LoginPageNavgo-mypage">
-                <span className="LoginPageNavmy-page">북슬리 홈</span>
+                <button
+                  className="frame-MainHomeButton"
+                  onClick={goToMainHomePage}
+                >
+                  <span className="LoginPageNavmy-page">북슬리 홈</span>
+                </button>
               </div>
             </div>
           </div>
