@@ -52,7 +52,14 @@
   box-sizing: border-box;
   width: fit-content;
   height: fit-content;
+  border: none;
+  cursor: pointer;
 }
+/* .StoreSearchPage .container-5Button {
+  border: none;
+  background: none;
+  cursor: pointer;
+} */
 .StoreSearchPage .container-5 {
   overflow-wrap: break-word;
   font-family: "Inter";

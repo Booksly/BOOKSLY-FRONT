@@ -1,3 +1,18 @@
+.RegionSelectionPopup {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: fit-content;
+  background: #fdf8f3;
+}
+.RegionSelectionPopupBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .RegionSelectionPopup .frame-204 {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -53,7 +68,7 @@
   box-sizing: border-box;
 }
 .RegionSelectionPopup .icon {
-  background: url("assets/images/Icon.png") 50% / cover no-repeat;
+  background: url("../../assets/locationIcon.png") 50% / cover no-repeat;
   margin: 7.5px 0;
   width: 25px;
   height: 25px;
@@ -70,13 +85,6 @@
   font-weight: 400;
   font-size: 17px;
   color: #000000;
-}
-.RegionSelectionPopup .free-icon-target-6742104 {
-  background: url("assets/images/FreeIconTarget6742104.png") 50% / cover
-    no-repeat;
-  margin: 7.5px 0;
-  width: 25px;
-  height: 25px;
 }
 .RegionSelectionPopup .frame-192 {
   margin: 0 35px;
