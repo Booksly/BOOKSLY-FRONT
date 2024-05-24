@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
@@ -15,7 +15,7 @@ export default function StoreSearchPage() {
   };
   const customStyles = {
     overlay: {
-      backgroundColor: " rgba(0, 0, 0, 0.5)",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
     content: {
       width: "1050px",
@@ -42,7 +42,7 @@ export default function StoreSearchPage() {
                   onRequestClose={closeModal}
                   style={customStyles}
                 >
-                  <button id="modalCloseButton" onClick={closeModal}>
+                  <button onClick={closeModal}>
                     닫기✖
                   </button>
                   <RegionSelectionPopup />
