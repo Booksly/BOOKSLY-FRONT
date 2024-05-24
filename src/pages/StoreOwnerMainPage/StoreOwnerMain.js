@@ -1,11 +1,34 @@
 import './StoreOwnerMain.css'
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
-import React from "react";
+import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
+import Modal from "react-modal";
+import StoreOwnerMainDetailedPopup from "./StoreOwnerMainDetailedPopup";
 
 export default function StoreOwnerMain() {
+    const [isOpen, setIsOpen] = useState(false);
+    const openModal = () => {
+        setIsOpen(true);
+    }
+    const closeModal = () => {
+        setIsOpen(false);
+    }
+    const customStyles = {
+        overlay:{
+            backgroundColor: "rgba(0,0,0,0.5)",
+        },
+        content: {
+            width: "960px",
+            height: "600px",
+            margin: "auto",
+            borderRadius: "4px",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+            padding: "20px",
+        },
+    };
     const navigate = useNavigate()
+
     return (
         <div className="StoreOwnerMain">
         <div className="StoreOwnerMainBack">
@@ -99,11 +122,15 @@ export default function StoreOwnerMain() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="SOMmodify-1">
+                            <button className="SOMmodify-1" onClick={openModal}>
                                 <div className="SOMcontainer-84">
                                   수정하기
                                 </div>
-                            </div>
+                            </button>
+                            <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
+                                <button onClick={closeModal}>✖</button>
+                                <StoreOwnerMainDetailedPopup/>
+                            </Modal>
                         </div>
                         <div className="SOMreservation">
                             <div className="SOMframe-522">

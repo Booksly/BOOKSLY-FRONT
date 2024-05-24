@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import './StoreOwnerMainDetailedPopup.css'
 
 export default function StoreOwnerMainDetailedPopup() {
     const navigate = useNavigate()
+
     return (
         <div className="StoreOwnerMainDetailedPopup">
             <div className="DetailedPopupstore-detailed-popup">
