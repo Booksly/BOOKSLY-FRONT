@@ -38,8 +38,10 @@ import Reservation from "../pages/ReservationPage/Reservation";
 
 // 가게 주인 페이지
 import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
+import StoreOwnerMainDetailedPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainDetailedPopup";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function Routing() {
   return (
     <div className="App">
@@ -81,6 +83,7 @@ function Routing() {
           <Route path="/Reservation" element={<Reservation />} />
           {/*가게주인용*/}
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
+          <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
         </Routes>
       </BrowserRouter>
     </div>
