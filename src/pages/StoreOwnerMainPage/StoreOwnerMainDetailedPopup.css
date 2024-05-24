@@ -1,3 +1,6 @@
+.StoreOwnerMainDetailedPopup {
+    width: fit-content;
+}
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-name-space {
     border-radius: 5px;
     border: 1px solid #FF5925;
@@ -25,8 +28,20 @@
     border: 1px solid #FF5925;
     background: #FFFFFF;
     display: flex;
-    padding: 4px 14.6px 56px 9px;
+    padding: 4px;
+    align-items: flex-start;
+
+    height: 80px;
     box-sizing: border-box;
+    font-size: 15px;
+    width: 400px;
+    color: #000000;
+}
+.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-48 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-main-box {
     margin-bottom: 14px;
@@ -75,7 +90,7 @@
     background: #FFFFFF;
     margin-bottom: 5px;
     padding: 4.5px 9px;
-    width: fit-content;
+    width: 400px;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-detailed-address {
@@ -83,7 +98,7 @@
     border: 1px solid #FF5925;
     background: #FFFFFF;
     padding: 4px 9px;
-    width: fit-content;
+    width: 400px;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-search-box {
@@ -250,13 +265,15 @@
     margin: 0 5px 30px 0;
     display: flex;
     align-self: center;
+    justify-content: center;
     padding: 56px 0;
     width: 185px;
     height: 135px;
     box-sizing: border-box;
+
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupprofile-select {
-    /*background: url('assets/images/ProfileSelect.png') 50% / cover no-repeat;*/
+    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
     width: 23px;
     height: 23px;
 }
@@ -297,8 +314,14 @@
     background: #FFFFFF;
     margin-right: 5px;
     display: flex;
-    padding: 2.5px 14.4px;
     box-sizing: border-box;
+    width: 65px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-5 {
     overflow-wrap: break-word;
@@ -318,8 +341,14 @@
     border: 1px solid #FF5925;
     background: #FFFFFF;
     display: flex;
-    padding: 2.5px 13.3px;
     box-sizing: border-box;
+    width: 65px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-7 {
     overflow-wrap: break-word;
@@ -815,11 +844,8 @@
     border: 1px solid #FF5925;
     background: rgba(255, 89, 37, 0.4);
     display: flex;
+    height: fit-content;
     padding: 4px 14.9px 4px 14px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-575 {
-    display: flex;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-popup {
@@ -846,22 +872,22 @@
     color: #D3D3D3;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-43 {
-    /*background: url('assets/images/Image10.png') 50% / cover no-repeat;*/
+    background: url('../../assets/clockIcon.png') 50% / cover no-repeat;
     width: 20px;
     height: 20px;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-44 {
-    /*background: url('assets/images/Image3.png') 50% / cover no-repeat;*/
+    background: url('../../assets/callIcon.png') 50% / cover no-repeat;
     width: 20px;
     height: 20px;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-45 {
-    /*background: url('assets/images/Image6.png') 50% / cover no-repeat;*/
+    background: url('../../assets/naviIcon.png') 50% / cover no-repeat;
     width: 20px;
     height: 20px;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-icon {
-    /*background: url('assets/images/Icon.png') 50% / cover no-repeat;*/
+    background: url('../../assets/locationIcon.png') 50% / cover no-repeat;
     width: 20px;
     height: 21px;
 }
@@ -878,12 +904,6 @@
     color: #000000;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-47 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-48 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
@@ -927,4 +947,12 @@
     font-weight: 400;
     font-size: 15px;
     color: #000000;
+}
+.StoreOwnerMainDetailedPopup .DetailedPopupframe-575 {
+    display: flex;
+    height: fit-content;
+    width: 300px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
