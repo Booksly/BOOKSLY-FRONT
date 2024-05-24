@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
@@ -19,8 +18,8 @@ export default function StoreSearchPage() {
       backgroundColor: " rgba(0, 0, 0, 0.5)",
     },
     content: {
-      width: "1200px",
-      height: "700px",
+      width: "1050px",
+      height: "620px",
       margin: "auto",
       borderRadius: "4px",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
@@ -43,7 +42,9 @@ export default function StoreSearchPage() {
                   onRequestClose={closeModal}
                   style={customStyles}
                 >
-                  <button onClick={closeModal}>✖</button>
+                  <button id="modalCloseButton" onClick={closeModal}>
+                    닫기✖
+                  </button>
                   <RegionSelectionPopup />
                 </Modal>
               </div>
