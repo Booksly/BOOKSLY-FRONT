@@ -31,15 +31,13 @@ export default function LoginAfterMainHeader() {
               </div>
             </button>
             <div className="header-buttons">
-              <div className="currentNav">
-                <div className="currentPageBar">
-                  <button
-                    className="frame-StoreSearchButton"
-                    onClick={goToStoreSearchPage}
-                  >
-                    <span className="PageName">가게조회</span>
-                  </button>
-                </div>
+              <div className="nav-box">
+                <button
+                  className="frame-StoreSearchButton"
+                  onClick={goToStoreSearchPage}
+                >
+                  <span className="PageName">가게조회</span>
+                </button>
               </div>
               <button
                 className="frame-TodayReservButton"
