@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
 import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
 import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
+import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 
 export default function TodayReservationPage() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  const DateStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+    },
+    content: {
+      width: "1100px",
+      height: "650px",
+      margin: "auto",
+      borderRadius: "4px",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      padding: "20px",
+    },
+  };
   return (
     <div className="TodayReservationPage">
       <div className="TodayReservationPageBack">
@@ -14,15 +36,23 @@ export default function TodayReservationPage() {
           <div className="container-36">
             <div className="select-option-padding">
               <div className="before-region">
-                <div className="container-4">
-                  <button className="container-5">지역을 선택해 주세요</button>
-                </div>
+                <button className="container-4" onClick={openModal}>
+                  <div className="container-5">지역을 선택해 주세요</div>
+                </button>
+                <Modal
+                  isOpen={isOpen}
+                  onRequestClose={closeModal}
+                  style={DateStyles}
+                >
+                  <button className="PopupCloseButton" onClick={closeModal}>
+                    ✖
+                  </button>
+                  <RegionSelectionPopup />
+                </Modal>
               </div>
               <div className="before-day-and-time">
                 <div className="frame-157">
-                  <span className="container-6">
-                    날짜 및 시간을 설정해 주세요
-                  </span>
+                  <span className="container-6">시간을 설정해 주세요</span>
                 </div>
               </div>
               <div className="before-category">

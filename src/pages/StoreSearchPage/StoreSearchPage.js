@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
@@ -13,13 +13,13 @@ export default function StoreSearchPage() {
   const closeModal = () => {
     setIsOpen(false);
   };
-  const customStyles = {
+  const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
     content: {
-      width: "1050px",
-      height: "620px",
+      width: "1100px",
+      height: "650px",
       margin: "auto",
       borderRadius: "4px",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
@@ -40,18 +40,23 @@ export default function StoreSearchPage() {
                 <Modal
                   isOpen={isOpen}
                   onRequestClose={closeModal}
-                  style={customStyles}
+                  style={DateStyles}
                 >
-                  <button onClick={closeModal}>
-                    닫기✖
+                  <button className="PopupCloseButton" onClick={closeModal}>
+                    ✖
                   </button>
                   <RegionSelectionPopup />
                 </Modal>
               </div>
               <div className="before-day-and-time">
-                <div className="frame-157">
-                  <span className="container-6">
-                    날짜 및 시간을 설정해 주세요
+                <div className="frame-dateselect">
+                  <span className="content-dateselect">
+                    날짜를 설정해 주세요
+                  </span>
+                </div>
+                <div className="frame-timeselect">
+                  <span className="content-timeselect">
+                    시간을 설정해 주세요
                   </span>
                 </div>
               </div>
