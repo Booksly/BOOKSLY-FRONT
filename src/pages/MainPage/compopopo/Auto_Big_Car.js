@@ -30,24 +30,22 @@ function AutoBigCar() {
         <Carousel.Item interval={2000}>
           <MainCarouselImage text="First slide" />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1>예약을 예약스럽게 BOOSLY</h1><br></br>
+            <p><h3>당신의 시간을 절약할 수 있는 방법</h3></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={2000}>
           <MainCarouselImage text="Second slide" />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h1>제이제이 헤어</h1><br></br>
+            <p><h3>이달의 최대 예약 건수 달성</h3></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={2000}>
           <MainCarouselImage text="Third slide" />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h1>당신도 할 수 있다</h1><br></br>
+            <p><h3>개인회원 기업회원 두 종류의 선택지</h3></p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
