@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import "./StoreSearchPage.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
+import RegionSelectionPopup from "./RegionSelectionPopup";
 
 export default function StoreSearchPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,19 +14,17 @@ export default function StoreSearchPage() {
   const closeModal = () => {
     setIsOpen(false);
   };
-  const Styles = {
+  const customStyles = {
     overlay: {
       backgroundColor: " rgba(0, 0, 0, 0.5)",
-      width: "100%",
-      height: "100vh",
-      zIndex: "10",
-      position: "fixed",
-      top: "0",
-      left: "0",
     },
     content: {
-      width: "300px",
-      height: "300px",
+      width: "1200px",
+      height: "700px",
+      margin: "auto",
+      borderRadius: "4px",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      padding: "20px",
     },
   };
   return (
@@ -36,19 +35,17 @@ export default function StoreSearchPage() {
           <div className="container-36">
             <div className="select-option-padding">
               <div className="before-region">
-                <div className="container-4">
-                  <button className="container-5" onClick={openModal}>
-                    지역을 선택해 주세요
-                  </button>
-                  <Modal
-                    isOpen={isOpen}
-                    onRequestClose={closeModal}
-                    style={Styles}
-                  >
-                    <h1>지역을 선택해주세요</h1>
-                    <button onClick={closeModal}>닫기</button>
-                  </Modal>
-                </div>
+                <button className="container-4" onClick={openModal}>
+                  <div className="container-5">지역을 선택해 주세요</div>
+                </button>
+                <Modal
+                  isOpen={isOpen}
+                  onRequestClose={closeModal}
+                  style={customStyles}
+                >
+                  <button onClick={closeModal}>✖</button>
+                  <RegionSelectionPopup />
+                </Modal>
               </div>
               <div className="before-day-and-time">
                 <div className="frame-157">
