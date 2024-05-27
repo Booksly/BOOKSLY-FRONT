@@ -1,128 +1,384 @@
 import './StoreOwnerMainMenuPopup.css';
+import React, {useRef, useState} from "react";
+import {useNavigate} from "react-router-dom";
+import Select from "react-select";
+
+let options = [
+    {value: "cut", label: "커트"},
+    {value: "nomal-perm", label: "일반 펌"},
+    {value: "dyeing", label: "염색"},
+    {value: "design-perm", label: "디자인 펌"},
+    {value: "etc", label: "기타"}
+]
 
 export default function StoreOwnerMainMenuPopup() {
+    const navigate = useNavigate()
+    const goToSOMMP = () => {
+        navigate("/StoreOwnerMainMenuPopup")
+    }
+    const goToSOMCP = () => {
+        navigate("/StoreOwnerMainCategPopup")
+    }
+
+    const [selectValue, setSelectValue] = useState('')
+    const selectInputRef = useRef(null);
+
+    const [menuName, setMenuName] = React.useState()
+    const [price, setPrice] = React.useState()
+    const [info, setInfo] = React.useState()
+    const onChange = (e) => {
+        const { name, value, type } = e.target;
+        if (name === 'menuName') {
+            setMenuName(value);
+        } else if (name === 'price' && type === 'number') {
+            setPrice(value);
+        } else if (name === 'info' && value.length <= 28) {
+            setInfo(value);
+        }
+    }
+
     return (
         <div className="StoreOwnerMainMenuPopup">
             <div className="StoreOwnerMain-MenuPopup">
                 <div className="SOMMPleft">
                     <div className="SOMMP-Button">
-                        <div className="SOMMP-menubutton">
+                        <button className="SOMMP-menubutton" onClick={goToSOMMP}>
                             메뉴 관리
-                        </div>
-                        <div className="SOMMP-categbutton">
+                        </button>
+                        <button className="SOMMP-categbutton" onClick={goToSOMCP}>
                             카테고리 관리
-                        </div>
+                        </button>
                     </div>
                     <div className="SOMMPline-31">
                     </div>
-                    <div className="SOMMPcontainer-21">
-                        <div className="SOMMPgroup-167">
-                            <div className="SOMMPcontainer-31">
-                                사진 등록
-                            </div>
-                        </div>
-                        <div className="SOMMPcontainer-9">
-                            <div className="SOMMPgroup-168">
-                            <div className="SOMMPcontainer-34">
-                                메뉴 제목
-                            </div>
-                            </div>
-                            <div className="SOMMPgroup-169">
-                                <div className="SOMMPcontainer-35">
-                                    가격
-                                </div>
-                                <div className="SOMMPcontainer-36">
-                                    원
+                    <div className="SOMMP-menuInfoBox">
+                        <div className="SOMMP-menuInfoLeft">
+                            <div className="SOMMP-pic">
+                                <div className="SOMMPPicSelect">
                                 </div>
                             </div>
-                            <div className="SOMMPgroup-164">
-                                <div className="SOMMPcontainer-28">
-                                    설명
-                                </div>
-                            </div>
+                            <>
+                                <Select
+                                    ref={selectInputRef}
+                                    onChange={(e) => {
+                                        if (e) {
+                                            setSelectValue(e.value);
+                                        } else {
+                                            setSelectValue("");
+                                        }
+                                    }}
+                                    options={options}
+                                    placeholder="전체"
+                                    className="custom-select"
+                                />
+                            </>
                         </div>
-                    </div>
-                    <div className="SOMMPgroup-166">
-                        <div className="SOMMPcontainer-30">
-                            소분류
-                        </div>
-                        {/*<img className="SOMMPframe-1371" src="SOMMPassets/vectors/Frame1372_x2.svg"/>*/}
-                    </div>
-                    <div className="SOMMPgroup-165">
-                        <div className="SOMMPcontainer-29">
-                            등록
+                        <div className="SOMMP-menuInfo">
+                            <input onChange={onChange} name={menuName} value={menuName}
+                                   placeholder="메뉴 제목"
+                                   className="SOMMP-menuName"/>
+                            <input onChange={onChange} name={price} value={price}
+                                   type="number"
+                                   placeholder="가격"
+                                   className="SOMMP-menuPrice"/>
+                            <textarea onChange={onChange} name={info} value={info}
+                                   maxLength="28"
+                            placeholder="설명" className="SOMMP-info"/>
+                            <button className="SOMMP-RegistButton" onClick={goToSOMMP}>
+                                등록
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div className="SOMMPline-30">
                 </div>
-                <div className="SOMMPcontainer-20">
-                    <div className="SOMMPcontainer-45">
-                        커트
+                <div className="SOMMP-menulist">
+                    <div className="SOMMP-MenuCategoryBox">
+                        <div className="SOMMP-categoryName">
+                            커트
+                        </div>
+                        <div className="SOMMP-Box">
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-223">
+                    <div className="SOMMP-MenuCategoryBox">
+                        <div className="SOMMP-categoryName">
+                            일반 펌
+                        </div>
+                        <div className="SOMMP-Box">
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            볼룸 펌
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            애즈 펌
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            아이롱펌
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            베이직 펌
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPcontainer-46">
-                        일반펌
+                    <div className="SOMMP-MenuCategoryBox">
+                        <div className="SOMMP-categoryName">
+                            염색
+                        </div>
+                        <div className="SOMMP-Box">
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-225">
+                    <div className="SOMMP-MenuCategoryBox">
+                        <div className="SOMMP-categoryName">
+                            디자인 펌
+                        </div>
+                        <div className="SOMMP-Box">
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-227">
-                    </div>
-                    <div className="SOMMPcontainer-47">
-                        염색
-                    </div>
-                    <div className="SOMMPrectangle-229">
-                    </div>
-                </div>
-                <div className="SOMMPcontainer-3">
-                    <p className="SOMMPcontainer-37">
-                        <div className="SOMMPcontainer-37-sub-0"></div><div className="SOMMPcontainer-37-sub-27"></div><div
-                        className="SOMMPcontainer-37-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-38">
-                        <div className="SOMMPcontainer-38-sub-0"></div><div className="SOMMPcontainer-38-sub-27"></div><div
-                        className="SOMMPcontainer-38-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-41">
-                        <div className="SOMMPcontainer-41-sub-0"></div><div className="SOMMPcontainer-41-sub-26"></div><div
-                        className="SOMMPcontainer-41-sub-27"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-43">
-                        <div className="SOMMPcontainer-43-sub-0"></div><div className="SOMMPcontainer-43-sub-26"></div><div
-                        className="SOMMPcontainer-43-sub-27"></div><div></div>
-                    </p>
-                </div>
-                <div className="SOMMPcontainer-10">
-                    <div className="SOMMPrectangle-224">
-                    </div>
-                    <div className="SOMMPrectangle-226">
-                    </div>
-                    <div className="SOMMPrectangle-228">
-                    </div>
-                    <div className="SOMMPrectangle-230">
-                    </div>
-                </div>
-                <div className="SOMMPcontainer-15">
-                    <p className="SOMMPcontainer-40">
-                        <div className="SOMMPcontainer-40-sub-0"></div><div className="SOMMPcontainer-40-sub-27"></div><div
-                        className="SOMMPcontainer-40-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-39">
-                        <div className="SOMMPcontainer-39-sub-0"></div><div className="SOMMPcontainer-39-sub-27"></div><div
-                        className="SOMMPcontainer-39-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-42">
-                        <div className="SOMMPcontainer-42-sub-0"></div><div className="SOMMPcontainer-42-sub-9"></div><div
-                        className="SOMMPcontainer-42-sub-10"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-44">
-                        <div className="SOMMPcontainer-44-sub-0"></div><div className="SOMMPcontainer-44-sub-9"></div><div
-                        className="SOMMPcontainer-44-sub-10"></div><div></div>
-                    </p>
-                </div>
-                <div className="SOMMPcontainer-7">
-                    <div className="SOMMPrectangle-232">
+                    <div className="SOMMP-MenuCategoryBox">
+                        <div className="SOMMP-categoryName">
+                            기타
+                        </div>
+                        <div className="SOMMP-Box">
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMMP-menuListBox">
+                                <div className="SOMMP-MLB-PI">
+                                    <div className="SOMMP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMMP-MLB-Info">
+                                        <div className="SOMMP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMMP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMMP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMMP-MLBI-button">
+                                    <button className="SOMMP-MLBI-modify" onClick={goToSOMMP}>수정하기</button>
+                                    <button className="SOMMP-MLBI-delete" onClick={goToSOMMP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

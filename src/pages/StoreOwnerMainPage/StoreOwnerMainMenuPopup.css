@@ -7,7 +7,7 @@
     background: #FDF8F3;
     display: flex;
     flex-direction: row;
-    padding: 25px 17px 27px 27px;
+    padding: 25px;
     box-sizing: border-box;
 }
 .StoreOwnerMainMenuPopup .SOMMPleft {
@@ -26,482 +26,21 @@
     box-sizing: border-box;
 }
 .StoreOwnerMainMenuPopup .SOMMP-menubutton {
-    margin-right: 23.8px;
+    margin-right: 23px;
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 20px;
     color: #000000;
+    border: 0;
+    background: #FDF8F3;
 }
 .StoreOwnerMainMenuPopup .SOMMP-categbutton {
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 20px;
     color: #7F7F7F;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-3 {
-    margin: 43px 10.8px 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-7 {
-    background: #D9D9D9;
-    position: relative;
-    margin: 5px 0 7px 0;
-    display: flex;
-    padding-top: 1px;
-    width: 10px;
-    height: 485px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-9 {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-10 {
-    margin: 43px 13px 24px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 66px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-15 {
-    margin: 43px 6.8px 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-164 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    position: relative;
-    padding: 26.5px 12px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-28 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-165 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: rgba(255, 89, 37, 0.4);
-    position: relative;
-    display: flex;
-    padding: 9px 0.9px 10px 0;
-    width: 82px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-29 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: 18px;
-    color: #FFFEFE;
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-166 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    position: relative;
-    margin-bottom: 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 13px 8px 0;
-    width: 205px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-30 {
-    margin-right: 12px;
-    width: 90.6px;
-    overflow-wrap: break-word;
-    font-weight: 200;
-    font-size: 20px;
-    color: #D9D9D9;
-}
-.StoreOwnerMainMenuPopup .SOMMPframe-1371 {
-    position: relative;
-    margin: 3px 0;
-    width: 18px;
-    height: 18px;
-}
-.StoreOwnerMainMenuPopup .SOMMPline-30 {
-    background: #FF5925;
-    margin: 4px 22px 0 0;
-    width: 1px;
-    height: 493px;
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-167 {
-    background: #D9D9D9;
-    position: relative;
-    margin: 0 17px 57px 0;
-    display: flex;
-    padding: 52px 0 52px 0px;
-    width: 168px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-31 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-168 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    position: relative;
-    margin-bottom: 14px;
-    padding: 9px 12px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-34 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
-}
-.StoreOwnerMainMenuPopup .SOMMPgroup-169 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    position: relative;
-    margin-bottom: 14px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 9px 10.4px 9px 12px;
-    width: 205px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-35 {
-    margin-right: 11px;
-    width: 155px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.5);
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-36 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-223 {
-    background: #D9D9D9;
-    margin-bottom: 39px;
-    width: 72px;
-    height: 54px;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-37 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-37-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-37-sub7 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-37 {
-    margin: 0 0 52px 2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-38 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-38-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-38-sub7 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-38 {
-    margin: 0 3.5px 27px 2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-39 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-39-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-39-sub7 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-39 {
-    margin: 0 3.5px 27px 0;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-224 {
-    background: #D9D9D9;
-    margin-bottom: 46px;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-40 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-40-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-40-sub7 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-40 {
-    margin-bottom: 52px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-225 {
-    background: #D9D9D9;
-    margin: 0 6px 21px 0;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-226 {
-    background: #D9D9D9;
-    margin-bottom: 21px;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-227 {
-    background: #D9D9D9;
-    margin: 0 6px 15px 0;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-41 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-41-sub26 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-41-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-41 {
-    margin: 0 3.5px 53px 2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-228 {
-    background: #D9D9D9;
-    margin-bottom: 47px;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-42 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-42-sub10 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-42-sub9 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-42 {
-    margin: 0 1.5px 53px 2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-43 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-43-sub26 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-43-sub27 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-43 {
-    margin-right: 5.5px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-44 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #757575;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-44-sub10 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-44-sub9 {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.333;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-44 {
-    margin: 0 1.5px 0 2px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 18px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-229 {
-    background: #D9D9D9;
-    margin-right: 6px;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-230 {
-    background: #D9D9D9;
-    width: 66px;
-    height: 79px;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-45 {
-    margin: 0 4px 10px 4px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 20px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-46 {
-    margin: 0 14.8px 7px 2px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 20px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-47 {
-    margin: 0 2px 8px 2px;
-    display: inline-block;
-    align-self: flex-start;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 20px;
-    color: #000000;
-}
-.StoreOwnerMainMenuPopup .SOMMPrectangle-232 {
-    background: #797979;
-    width: 10px;
-    height: 243px;
+    border: 0;
+    background: #FDF8F3;
 }
 .StoreOwnerMainMenuPopup .SOMMPline-31 {
     background: #FF5925;
@@ -509,16 +48,172 @@
     width: 390px;
     height: 1px;
 }
-.StoreOwnerMainMenuPopup .SOMMPcontainer-20 {
-    margin: 10px 7px 24px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.StoreOwnerMainMenuPopup .SOMMPcontainer-21 {
+.StoreOwnerMainMenuPopup .SOMMP-menuInfoBox {
     margin-bottom: 12px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuInfoLeft {
+    flex-direction: column;
+}
+.StoreOwnerMainMenuPopup .SOMMP-pic {
+    background: #D9D9D9;
+    display: flex;
+    padding: 52px 0;
+    width: 168px;
+    height: 126px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.StoreOwnerMainMenuPopup .SOMMPPicSelect {
+    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
+    width: 23px;
+    height: 23px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuInfo {
+    flex-direction: column;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuName {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 14px;
+    padding: 9px 12px;
+    width: 205px;
+    box-sizing: border-box;
+    font-size: 18px
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuPrice {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9px 12px;
+    width: 205px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-info {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    padding: 14px 12px;
+    width: 205px;
+    height: 85px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    font-size: 18px;
+    resize: none;
+}
+
+.StoreOwnerMainMenuPopup .SOMMP-RegistButton {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 123px;
+    color: #FFFEFE;
+}
+.StoreOwnerMainMenuPopup .SOMMPline-30 {
+    background: #FF5925;
+    margin: 4px 22px 0 0;
+    width: 1px;
+    height: 493px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menulist {
+    flex-direction: column;
+    width: 410px;
+    height: 500px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MenuCategoryBox {
+    margin: 10px 7px 24px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-categoryName {
+    margin: 0 4px 10px 4px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMainMenuPopup .SOMMP-Box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuListBox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    max-width: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLB-PI {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.StoreOwnerMainMenuPopup .SOMMP-categoryMenuPic {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 60px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLB-Info {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    margin-left: 5px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-price {
+    font-weight: 500;
+    font-size: 14px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-info {
+    font-weight: 300;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-button {
+    flex-direction: row;
+    width: 190px;
+    row-gap: normal;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-modify, .SOMMP-MLBI-delete {
+    border: 0;
+    background: #FDF8F3;
+    font-size: 13px;
+    font-weight: 700;
 }

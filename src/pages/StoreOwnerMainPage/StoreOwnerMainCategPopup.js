@@ -1,128 +1,358 @@
 import './StoreOwnerMainCategPopup.css';
+import React, {useRef, useState} from "react";
+import {useNavigate} from "react-router-dom";
+import Select from "react-select";
 
 export default function StoreOwnerMainCategPopup() {
+    const navigate = useNavigate()
+    const goToSOMMP = () => {
+        navigate("/StoreOwnerMainMenuPopup")
+    }
+    const goToSOMCP = () => {
+        navigate("/StoreOwnerMainCategPopup")
+    }
+
+    const [categName, setCategName] = React.useState()
+    const onChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'categName') {
+            setCategName(value);
+        }
+    }
+
     return (
         <div className="StoreOwnerMainCategPopup">
-            <div className="StoreOwnerMain-MenuPopup">
-                <div className="SOMMPleft">
-                    <div className="SOMMP-Button">
-                        <div className="SOMMP-menubutton">
+            <div className="StoreOwnerMain-CategPopup">
+                <div className="SOMCPleft">
+                    <div className="SOMCP-Button">
+                        <button className="SOMCP-menubutton" onClick={goToSOMMP}>
                             메뉴 관리
-                        </div>
-                        <div className="SOMMP-categbutton">
+                        </button>
+                        <button className="SOMCP-categbutton" onClick={goToSOMCP}>
                             카테고리 관리
-                        </div>
+                        </button>
                     </div>
-                    <div className="SOMMPline-31">
+                    <div className="SOMCPline-31">
                     </div>
-                    <div className="SOMMPcontainer-21">
-                        <div className="SOMMPgroup-167">
-                            <div className="SOMMPcontainer-31">
-                                사진 등록
-                            </div>
-                        </div>
-                        <div className="SOMMPcontainer-9">
-                            <div className="SOMMPgroup-168">
-                                <div className="SOMMPcontainer-34">
-                                    메뉴 제목
-                                </div>
-                            </div>
-                            <div className="SOMMPgroup-169">
-                                <div className="SOMMPcontainer-35">
-                                    가격
-                                </div>
-                                <div className="SOMMPcontainer-36">
-                                    원
-                                </div>
-                            </div>
-                            <div className="SOMMPgroup-164">
-                                <div className="SOMMPcontainer-28">
-                                    설명
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="SOMMPgroup-166">
-                        <div className="SOMMPcontainer-30">
-                            소분류
-                        </div>
-                        {/*<img className="SOMMPframe-1371" src="SOMMPassets/vectors/Frame1372_x2.svg"/>*/}
-                    </div>
-                    <div className="SOMMPgroup-165">
-                        <div className="SOMMPcontainer-29">
+                    <div className="SOMCP-categoryBox">
+                        <input onChange={onChange} name={categName} value={categName}
+                               placeholder="카테고리 제목"
+                               className="SOMCP-categName"/>
+                        <button className="SOMCP-RegistButton" onClick={goToSOMCP}>
                             등록
+                        </button>
+                    </div>
+                    <div className="SOMCPline-3">
+                    </div>
+                    <div className="container">
+                        <div className="group-179">
+                            {/*<img className="frame-446" src="assets/vectors/Frame44614_x2.svg"/>*/}
+                            {/*<img className="frame-137" src="assets/vectors/Frame1379_x2.svg"/>*/}
+                        </div>
+                        <div className="frame-442">
+                            <div className="container">
+                              커트
+                            </div>
+                        </div>
+                        <div className="group-184">
+                            <div className="container-20">
+                              수정하기
+                            </div>
+                            <div className="container-21">
+                              삭제
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="SOMMPline-30">
+                <div className="SOMCPline-30">
                 </div>
-                <div className="SOMMPcontainer-20">
-                    <div className="SOMMPcontainer-45">
-                        커트
+                <div className="SOMCP-menulist">
+                    <div className="SOMCP-MenuCategoryBox">
+                        <div className="SOMCP-categoryName">
+                            커트
+                        </div>
+                        <div className="SOMCP-Box">
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-223">
+                    <div className="SOMCP-MenuCategoryBox">
+                        <div className="SOMCP-categoryName">
+                            일반 펌
+                        </div>
+                        <div className="SOMCP-Box">
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            볼룸 펌
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            애즈 펌
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            아이롱펌
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            베이직 펌
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            50,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            어깨기장 50,000 가슴기장 60,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPcontainer-46">
-                        일반펌
+                    <div className="SOMCP-MenuCategoryBox">
+                        <div className="SOMCP-categoryName">
+                            염색
+                        </div>
+                        <div className="SOMCP-Box">
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-225">
+                    <div className="SOMCP-MenuCategoryBox">
+                        <div className="SOMCP-categoryName">
+                            디자인 펌
+                        </div>
+                        <div className="SOMCP-Box">
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="SOMMPrectangle-227">
-                    </div>
-                    <div className="SOMMPcontainer-47">
-                        염색
-                    </div>
-                    <div className="SOMMPrectangle-229">
-                    </div>
-                </div>
-                <div className="SOMMPcontainer-3">
-                    <p className="SOMMPcontainer-37">
-                        <div className="SOMMPcontainer-37-sub-0"></div><div className="SOMMPcontainer-37-sub-27"></div><div
-                        className="SOMMPcontainer-37-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-38">
-                        <div className="SOMMPcontainer-38-sub-0"></div><div className="SOMMPcontainer-38-sub-27"></div><div
-                        className="SOMMPcontainer-38-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-41">
-                        <div className="SOMMPcontainer-41-sub-0"></div><div className="SOMMPcontainer-41-sub-26"></div><div
-                        className="SOMMPcontainer-41-sub-27"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-43">
-                        <div className="SOMMPcontainer-43-sub-0"></div><div className="SOMMPcontainer-43-sub-26"></div><div
-                        className="SOMMPcontainer-43-sub-27"></div><div></div>
-                    </p>
-                </div>
-                <div className="SOMMPcontainer-10">
-                    <div className="SOMMPrectangle-224">
-                    </div>
-                    <div className="SOMMPrectangle-226">
-                    </div>
-                    <div className="SOMMPrectangle-228">
-                    </div>
-                    <div className="SOMMPrectangle-230">
-                    </div>
-                </div>
-                <div className="SOMMPcontainer-15">
-                    <p className="SOMMPcontainer-40">
-                        <div className="SOMMPcontainer-40-sub-0"></div><div className="SOMMPcontainer-40-sub-27"></div><div
-                        className="SOMMPcontainer-40-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-39">
-                        <div className="SOMMPcontainer-39-sub-0"></div><div className="SOMMPcontainer-39-sub-27"></div><div
-                        className="SOMMPcontainer-39-sub-7"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-42">
-                        <div className="SOMMPcontainer-42-sub-0"></div><div className="SOMMPcontainer-42-sub-9"></div><div
-                        className="SOMMPcontainer-42-sub-10"></div><div></div>
-                    </p>
-                    <p className="SOMMPcontainer-44">
-                        <div className="SOMMPcontainer-44-sub-0"></div><div className="SOMMPcontainer-44-sub-9"></div><div
-                        className="SOMMPcontainer-44-sub-10"></div><div></div>
-                    </p>
-                </div>
-                <div className="SOMMPcontainer-7">
-                    <div className="SOMMPrectangle-232">
+                    <div className="SOMCP-MenuCategoryBox">
+                        <div className="SOMCP-categoryName">
+                            기타
+                        </div>
+                        <div className="SOMCP-Box">
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            여성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                            <div className="SOMCP-menuListBox">
+                                <div className="SOMCP-MLB-PI">
+                                    <div className="SOMCP-categoryMenuPic">
+                                    </div>
+                                    <div className="SOMCP-MLB-Info">
+                                        <div className="SOMCP-MLBI-name">
+                                            남성 컷
+                                        </div>
+                                        <div className="SOMCP-MLBI-price">
+                                            30,000원
+                                        </div>
+                                        <div className="SOMCP-MLBI-info">
+                                            얼굴형에 맞는 헤어스타일을 추천
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMCP-MLBI-button">
+                                    <button className="SOMCP-MLBI-modify" onClick={goToSOMCP}>수정하기</button>
+                                    <button className="SOMCP-MLBI-delete" onClick={goToSOMCP}>삭제</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
