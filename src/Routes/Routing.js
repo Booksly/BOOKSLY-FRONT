@@ -40,6 +40,7 @@ import Reservation from "../pages/ReservationPage/Reservation";
 import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
 import StoreOwnerMainDetailedPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainDetailedPopup";
 import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuPopup";
+import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -86,6 +87,7 @@ function Routing() {
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
           <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
           <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
+          <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
         </Routes>
       </BrowserRouter>
     </div>

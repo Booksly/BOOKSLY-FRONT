@@ -1,8 +1,8 @@
-import './StoreOwnerMainMenuPopup.css';
+import './StoreOwnerMainCategPopup.css';
 
-export default function StoreOwnerMainMenuPopup() {
+export default function StoreOwnerMainCategPopup() {
     return (
-        <div className="StoreOwnerMainMenuPopup">
+        <div className="StoreOwnerMainCategPopup">
             <div className="StoreOwnerMain-MenuPopup">
                 <div className="SOMMPleft">
                     <div className="SOMMP-Button">
@@ -23,9 +23,9 @@ export default function StoreOwnerMainMenuPopup() {
                         </div>
                         <div className="SOMMPcontainer-9">
                             <div className="SOMMPgroup-168">
-                            <div className="SOMMPcontainer-34">
-                                메뉴 제목
-                            </div>
+                                <div className="SOMMPcontainer-34">
+                                    메뉴 제목
+                                </div>
                             </div>
                             <div className="SOMMPgroup-169">
                                 <div className="SOMMPcontainer-35">
