@@ -5,7 +5,7 @@ import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
 
-export default function StoreSearchPage({ data = [] }) {
+export default function StoreSearchPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
