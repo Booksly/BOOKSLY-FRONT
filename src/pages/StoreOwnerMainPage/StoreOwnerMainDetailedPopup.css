@@ -1,5 +1,22 @@
 .StoreOwnerMainDetailedPopup {
     width: fit-content;
+    margin-right: 0;
+}
+.StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-popup {
+    border-radius: 10px;
+    border: 1px solid #FF5925;
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 19px 21px 19px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-popup-left {
+    margin: 0 50px 6px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-name-space {
     border-radius: 5px;
@@ -252,12 +269,6 @@
     display: flex;
     flex-direction: row;
     width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-popup-left {
-    margin: 0 74px 6px 0;
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-info-pic {
@@ -846,17 +857,6 @@
     display: flex;
     height: fit-content;
     padding: 4px 14.9px 4px 14px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-popup {
-    border-radius: 10px;
-    border: 1px solid #FF5925;
-    background: #FDF8F3;
-    margin-right: 17px;
-    display: flex;
-    flex-direction: row;
-    padding: 24px 19px 21px 19px;
-    width: fit-content;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-41 {

@@ -185,6 +185,14 @@
     width: 23px;
     height: 23px;
 }
+.StoreOwnerMain .closeButton {
+    width: 850px;
+    justify-content: flex-start;
+}
+.StoreOwnerMain .StoreOwnerMainDetailedPopupClose {
+    margin-left: 300px;
+    border: 0;
+}
 
 .StoreOwnerMain .SOMcontainer-84 {
     overflow-wrap: break-word;
@@ -220,10 +228,12 @@
 }
 
 .StoreOwnerMain .SOMmodify-1 {
-    margin: 0 10.4px;
+    margin: 0 10px;
     display: flex;
     align-self: flex-end;
     box-sizing: border-box;
+    border: 0;
+    background: #FFFFFF;
 }
 .StoreOwnerMain .SOMstore-detailed-info-location {
     margin: 0 5px 10px 5px;
@@ -311,8 +321,8 @@
     margin-bottom: 26px;
     display: flex;
     flex-direction: row;
-    padding: 15px 36px 15px 20px;
-    width: fit-content;
+    padding: 15px 20px 15px 20px;
+    width: 850px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMwait-reservation {
@@ -322,7 +332,7 @@
     display: flex;
     flex-direction: column;
     padding: 15px 44px 15px 20px;
-    width: fit-content;
+    width: 850px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMframe-527 {
@@ -383,21 +393,23 @@
     width: 220px;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMcontainer-2 {
-    margin-right: 11.1px;
+.StoreOwnerMain .SOM-wrd-date {
+    width: 40px;
+    margin-right: 5px;
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .SOMcontainer-3 {
-    margin-right: 9.6px;
+.StoreOwnerMain .SOM-wrd-time {
+    margin-right: 5px;
+    width: 45px;
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
 }
-.StoreOwnerMain .SOMcontainer-4 {
+.StoreOwnerMain .SOM-wrd-emp {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 16px;
@@ -409,35 +421,23 @@
     flex-direction: row;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMconfirm-button {
+.StoreOwnerMain .SOMconfirm-button, .SOMrefuse-button {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
     margin-right: 5px;
     display: flex;
-    padding: 0 2.4px 0 2px;
+    width: 35px;
+    height: 25px;
+    /*padding: 0 2px 0 2px;*/
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
-.StoreOwnerMain .SOMcontainer-5 {
+.StoreOwnerMain .SOM-cbutton, .SOM-rbutton {
     overflow-wrap: break-word;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMrefuse-button {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    margin-right: 5px;
-    display: flex;
-    padding: 0 2px;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-6 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
@@ -446,7 +446,7 @@
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMcontainer-7 {
+.StoreOwnerMain .SOM-pbutton {
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 15px;
@@ -637,14 +637,12 @@
     color: #000000;
 }
 .StoreOwnerMain .SOMframe-523 {
-    margin: 0 0.2px;
     display: flex;
     align-self: flex-end;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMcontainer-20 {
     overflow-wrap: break-word;
-    
     font-weight: 400;
     font-size: 15px;
     color: #848484;
@@ -941,19 +939,6 @@
     line-height: 1;
     color: #000000;
 }
-.StoreOwnerMain .SOMframe-5231 {
-    margin: 0 0.2px;
-    display: flex;
-    align-self: flex-end;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-40 {
-    overflow-wrap: break-word;
-    
-    font-weight: 400;
-    font-size: 15px;
-    color: #848484;
-}
 .StoreOwnerMain .SOMframe-536 {
     margin: 18px 0 26px 0;
     display: flex;
@@ -1004,7 +989,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: fit-content;
+    width: 850px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMmenu-list {
@@ -1013,7 +998,7 @@
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
-    column-gap: 63.3px;
+    column-gap: 65px;
     padding: 20px 30px;
     width: fit-content;
     box-sizing: border-box;
@@ -1024,188 +1009,48 @@
     align-items: center;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMrectangle-62 {
+.StoreOwnerMain .SOMmenu-pic {
     background: #D9D9D9;
     margin-bottom: 5px;
     width: 150px;
     height: 200px;
 }
 .StoreOwnerMain .SOMmenu {
-    margin: 0 10.1px 0 10.2px;
+    margin: 0 10px 0 10px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMcontainer-41 {
-    margin-right: 5.4px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-42 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-43 {
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMmenu-info-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMrectangle-621 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMmenu-1 {
-    margin: 0 10.1px 0 10.2px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-44 {
-    margin-right: 5.4px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-45 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-46 {
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMmenu-info-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMrectangle-622 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMmenu-2 {
-    margin: 0 18.7px 0 18.8px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-47 {
-    margin-right: 5.5px;
+.StoreOwnerMain .SOMmenu-name {
+    margin-right: 5px;
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .SOMcontainer-48 {
-    margin-right: 5.4px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-49 {
+.StoreOwnerMain .SOMmenu-line {
+    margin-right: 5px;
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .SOMmenu-info-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMrectangle-623 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMmenu-3 {
-    margin-left: 0;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-50 {
-    margin-right: 5.3px;
+.StoreOwnerMain .SOMmenu-price {
     overflow-wrap: break-word;
-    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .SOMcontainer-51 {
-    margin-right: 5.3px;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-52 {
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMframe-544 {
-    margin: 0 0;
+.StoreOwnerMain .SOM-Regist-Modify {
     display: flex;
     box-sizing: border-box;
 }
-.StoreOwnerMain .SOMcontainer-53 {
+.StoreOwnerMain .SOM-RM-button {
     overflow-wrap: break-word;
-    
     font-weight: 400;
     font-size: 15px;
     color: #737373;
@@ -1214,18 +1059,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: fit-content;
+    width: 850px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMstaff-list {
+    width: 100%;
+    align-items: flex-end;
     border-radius: 10px;
     background: #E9E9E9;
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
-    column-gap: 63.3px;
+    column-gap: 65px;
     padding: 20px 30px;
-    width: fit-content;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMstaff-info {
@@ -1233,6 +1079,7 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    width: 150px;
 }
 .StoreOwnerMain .SOMstaff-img {
     background: #D9D9D9;
@@ -1241,88 +1088,15 @@
     height: 200px;
 }
 .StoreOwnerMain .SOMstaff {
-    margin: 0 6.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-54 {
-    margin-bottom: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-55 {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMstaff-info-1 {
+    /*margin: 0 6.5px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    height: 45px;
+    overflow: hidden;
 }
-.StoreOwnerMain .SOMstaff-img-1 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMstaff-1 {
-    margin: 0 6.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-56 {
-    margin-bottom: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-57 {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMstaff-info-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMstaff-img-2 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMstaff-2 {
-    margin: 0 6.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-58 {
+.StoreOwnerMain .SOMemp-name {
     margin-bottom: 5px;
     display: inline-block;
     overflow-wrap: break-word;
@@ -1331,66 +1105,18 @@
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .SOMcontainer-59 {
+.StoreOwnerMain .SOMemp-info {
     overflow-wrap: break-word;
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
     color: #000000;
 }
-.StoreOwnerMain .SOMstaff-info-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMstaff-img-3 {
-    background: #D9D9D9;
-    margin-bottom: 5px;
-    width: 150px;
-    height: 200px;
-}
-.StoreOwnerMain .SOMstaff-3 {
-    margin: 0 6.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-60 {
-    margin-bottom: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMcontainer-61 {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.333;
-    color: #000000;
-}
-.StoreOwnerMain .SOMmodify {
-    margin: 0 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.StoreOwnerMain .SOMcontainer-62 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #737373;
-}
-
 .StoreOwnerMain .SOMtoday-reserv {
     position: relative;
-    margin-right: 10.3px;
-    width: 352.7px;
-    height: 331px;
+    /*margin-right: 10.3px;*/
+    width: 370px;
+    height: 330px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMtoday {
@@ -1398,11 +1124,11 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    align-items: center;
 }
 .StoreOwnerMain .SOMcontainer-98 {
     margin-right: 5.4px;
     overflow-wrap: break-word;
-    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
@@ -1426,11 +1152,32 @@
     height: fit-content;
     box-sizing: border-box;
 }
+/*.StoreOwnerMain .css-b62m3t-container {*/
+/*    font-size: 12px;*/
+/*    width: 150px;*/
+/*}*/
+.StoreOwnerMain .css-t3ipsp-control, .css-13cymwt-control {
+    width: 170px;
+    height: 15px;
+}
+.StoreOwnerMain .css-1fdsijx-ValueContainer {
+    top: 0;
+}
+.StoreOwnerMain .css-1hb7zxy-IndicatorsContainer {
+    /*height: 15px;*/
+}
+/*.StoreOwnerMain .css-13cymwt-control {*/
+/*    width: 150px;*/
+/*    height: 15px;*/
+/*}*/
+/*.StoreOwnerMain .css-1fdsijx-ValueContainer, .css-1hb7zxy-IndicatorsContainer{*/
+/*    height: 15px;*/
+/*}*/
 .StoreOwnerMain .SOMcontainer-99 {
-    margin-right: 9px;
-    width: 90px;
+    /*margin-right: 9px;*/
+    width: 200px;
+    height: 28px;
     overflow-wrap: break-word;
-    
     font-weight: 400;
     font-size: 15px;
     color: #000000;
@@ -1441,22 +1188,28 @@
     width: 16px;
     height: 16px;
 }
+.StoreOwnerMain .scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 270px;
+}
 .StoreOwnerMain .SOMdldccheck {
+    position: relative;
+    top: 10px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMtime-memo {
-    margin: 25px 7px 0 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
     flex-grow: 1;
-    flex-basis: 168.6px;
+    flex-basis: 220px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMtime-note {
@@ -1469,7 +1222,6 @@
 .StoreOwnerMain .SOMcontainer-100 {
     margin-right: 8.5px;
     overflow-wrap: break-word;
-    
     font-weight: 700;
     font-size: 15px;
     text-decoration-line: line-through;
@@ -1792,7 +1544,6 @@
 }
 .StoreOwnerMain .SOMcontainer-126 {
     overflow-wrap: break-word;
-    
     font-weight: 700;
     font-size: 15px;
     line-height: 1.333;
@@ -1803,18 +1554,20 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 111.7px;
+    flex-basis: 80px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMcheck {
-    margin-bottom: 13px;
+    /*margin-bottom: 13px;*/
+    margin-top: 10px;
+    margin-left: 243px;
     display: flex;
     flex-direction: row;
     width: fit-content;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 .StoreOwnerMain .SOMcontainer-127 {
-    margin-right: 10.5px;
+    margin-right: 5px;
     overflow-wrap: break-word;
     
     font-weight: 700;
@@ -2061,7 +1814,7 @@
     height: 17px;
 }
 .StoreOwnerMain .SOMframe-522 {
-    margin-right: 23.5px;
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -2818,9 +2571,9 @@
     position: relative;
     margin-top: 35px;
     display: flex;
-    padding: 43.9px 0 69px 0;
+    padding-top: 70px;
     width: 5px;
-    height: 296px;
+    height: 280px;
     box-sizing: border-box;
 }
 .StoreOwnerMain .SOMrectangle-138 {

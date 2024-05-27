@@ -1,12 +1,22 @@
 import './StoreOwnerMain.css'
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import Modal from "react-modal";
 import StoreOwnerMainDetailedPopup from "./StoreOwnerMainDetailedPopup";
+import Select from "react-select";
+
+let options = [
+    {value: "all", label: "전체"},
+    {value: "emp1", label: "제이원장"},
+    {value: "emp2", label: "심화 디자이너"},
+    {value: "emp3", label: "캡 디자이너"}
+]
 
 export default function StoreOwnerMain() {
+    const [selectValue, setSelectValue] = useState('')
+    const selectInputRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const openModal = () => {
         setIsOpen(true);
@@ -19,8 +29,8 @@ export default function StoreOwnerMain() {
             backgroundColor: "rgba(0,0,0,0.5)",
         },
         content: {
-            width: "960px",
-            height: "600px",
+            width: "fit-content",
+            height: "fit-content",
             margin: "auto",
             borderRadius: "4px",
             boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
@@ -128,7 +138,7 @@ export default function StoreOwnerMain() {
                                 </div>
                             </button>
                             <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
-                                <button onClick={closeModal}>✖</button>
+                                {/*<button onClick={closeModal}>✖</button>*/}
                                 <StoreOwnerMainDetailedPopup/>
                             </Modal>
                         </div>
@@ -140,14 +150,38 @@ export default function StoreOwnerMain() {
                                           오늘 예약 -
                                         </div>
                                         <div className="SOMgroup-502">
-                                            <div className="SOMselect-box-before">
-                                                <div className="SOMcontainer-99">
-                                                  제이 원장
-                                                </div>
-                                                {/*<img className="SOMarrow-button-before" src="SOMassets/vectors/ArrowButtonBefore2_x2.svg" />*/}
-                                            </div>
+                                            <>
+                                                <Select
+                                                    className="SOMcontainer-99"
+                                                    ref = {selectInputRef}
+                                                    onChange={(e) => {
+                                                        if (e) {
+                                                            setSelectValue(e.value);
+                                                        } else {
+                                                            setSelectValue("");
+                                                        }
+                                                    }}
+                                                    options={options}
+                                                    placeholder="전체"
+                                                />
+                                            </>
+                                            {/*<div className="SOMselect-box-before">*/}
+                                            {/*    /!*<div className="SOMcontainer-99">*!/*/}
+                                            {/*    /!*  제이 원장*!/*/}
+                                            {/*    /!*</div>*!/*/}
+                                            {/*    /!*<img className="SOMarrow-button-before" src="SOMassets/vectors/ArrowButtonBefore2_x2.svg" />*!/*/}
+                                            {/*</div>*/}
                                         </div>
                                     </div>
+                                    <div className="SOMcheck">
+                                        <div className="SOMcontainer-127">
+                                          예약마감
+                                        </div>
+                                        <div className="SOMcontainer-128">
+                                          마감임박할인
+                                        </div>
+                                    </div>
+                                    <div className="scroll">
                                     <div className="SOMdldccheck">
                                         <div className="SOMtime-memo">
                                             <div className="SOMtime-note">
@@ -267,29 +301,8 @@ export default function StoreOwnerMain() {
                                                   </div>
                                                 </div>
                                             </div>
-                                            <div className="SOMtime-note-9">
-                                                <div className="SOMcontainer-129">
-                                                  16:30
-                                                </div>
-                                                <div className="SOMcontainer-130">
-                                                  |
-                                                </div>
-                                                <div className="SOMmenu-list-26">
-                                                  <div className="SOMcontainer-131">
-                                                    여성 커트, 클리닉
-                                                  </div>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div className="SOMdeadline-dccheck">
-                                            <div className="SOMcheck">
-                                                <div className="SOMcontainer-127">
-                                                  예약마감
-                                                </div>
-                                                <div className="SOMcontainer-128">
-                                                  마감임박할인
-                                                </div>
-                                            </div>
                                             <div className="SOMcheck-box">
                                                 <div className="SOMrectangle-246">
                                                 </div>
@@ -344,17 +357,8 @@ export default function StoreOwnerMain() {
                                                 <div className="SOMrectangle-2478">
                                                 </div>
                                             </div>
-                                            <div className="SOMcheck-box-9">
-                                                <div className="SOMrectangle-2469">
-                                                </div>
-                                                <div className="SOMrectangle-2479">
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="SOMgroup-57">
-                                    <div className="SOMrectangle-138">
                                     </div>
                                 </div>
                             </div>
@@ -650,200 +654,198 @@ export default function StoreOwnerMain() {
                                         </div>
                                         <div className="SOMwait-list">
                                             <div className="SOMwait-reserv-date">
-                        <div className="SOMcontainer-2">
-                          3.26
-                        </div>
-                                                <div className="SOMcontainer-3">
-                          17:00
-                        </div>
-                                                <div className="SOMcontainer-4">
-                          심화 디자이너
-                        </div>
+                                                <div className="SOM-wrd-date">
+                                                    3.26
+                                                </div>
+                                                <div className="SOM-wrd-time">
+                                                    17:00
+                                                </div>
+                                                <div className="SOM-wrd-emp">
+                                                    심화 디자이너
+                                                </div>
                                             </div>
                                             <div className="SOMwait-reserv-button">
                                                 <div className="SOMconfirm-button">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
                                                 </div>
                                                 <div className="SOMrefuse-button">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
                                                 </div>
                                                 <div className="SOMplus-button">
-                          <div className="SOMcontainer-7">
-                            ...
-                          </div>
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMwait-list-1">
-                                            <div className="SOMwait-reserv-date-1">
-                        <div className="SOMcontainer-8">
-                          3.24
-                        </div>
-                                                <div className="SOMcontainer-9">
-                          19:00
-                        </div>
-                                                <div className="SOMcontainer-10">
-                          캡 디자이너
-                        </div>
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                                                <div className="SOM-wrd-date">
+                                                    3.24
+                                                </div>
+                                                <div className="SOM-wrd-time">
+                                                    19:00
+                                                </div>
+                                                <div className="SOM-wrd-emp">
+                                                    캡 디자이너
+                                                </div>
                                             </div>
-                                            <div className="SOMwait-reserv-button-1">
-                                                <div className="SOMconfirm-button-1">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
                                                 </div>
-                                                <div className="SOMrefuse-button-1">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                <div className="SOMrefuse-button">
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
                                                 </div>
-                                                <div className="SOMplus-button-1">
-                          <div className="SOMcontainer-13">
-                            ...
-                          </div>
+                                                <div className="SOMplus-button">
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMwait-list-2">
-                                            <div className="SOMwait-reserv-date-1">
-                        <div className="SOMcontainer-14">
-                          4.3
-                        </div>
-                                                <div className="SOMcontainer-3">
-                          <div className="SOMcontainer-9">
-                            19:30
-                          </div>
-                                                    <div className="SOMcontainer-16">
-                            제이 원장
-                          </div>
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                                                <div className="SOM-wrd-date">
+                                                    4.3
+                                                </div>
+                                                <div className="SOM-wrd-time">
+                                                    19:30
+                                                </div>
+                                                <div className="SOM-wrd-emp">
+                                                    제이 원장
                                                 </div>
                                             </div>
-                                            <div className="SOMwait-reserv-button-2">
-                                                <div className="SOMconfirm-button-2">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
                                                 </div>
-                                                <div className="SOMrefuse-button-2">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                <div className="SOMrefuse-button">
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
                                                 </div>
-                                                <div className="SOMplus-button-2">
-                          <div className="SOMcontainer-19">
-                            ...
-                          </div>
+                                                <div className="SOMplus-button">
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="SOMframe-523">
-                      <div className="SOMcontainer-20">
-                        전체보기
-                      </div>
+                                            <div className="SOMcontainer-20">
+                                                전체보기
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMimminent-wait-list">
                                         <div className="SOMcontainer-21">
                                             임박
                                         </div>
-                                        <div className="SOMwait-list-3">
-                                            <div className="SOMwait-reserv-date-3">
-                        <div className="SOMcontainer-22">
-                          3.20
-                        </div>
-                                                <div className="SOMcontainer-23">
-                          13:00
-                        </div>
-                                                <div className="SOMcontainer-24">
-                          심화 디자이너
-                        </div>
-                                            </div>
-                                            <div className="SOMwait-reserv-button-3">
-                                                <div className="SOMconfirm-button-3">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                                                <div className="SOM-wrd-date">
+                                                    3.20
                                                 </div>
-                                                <div className="SOMrefuse-button-3">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                <div className="SOM-wrd-time">
+                                                    13:00
                                                 </div>
-                                                <div className="SOMplus-button-3">
-                          <div className="SOMcontainer-27">
-                            ...
-                          </div>
+                                                <div className="SOM-wrd-emp">
+                                                    심화 디자이너
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="SOMwait-list-4">
-                                            <div className="SOMwait-reserv-date-4">
-                        <div className="SOMcontainer-28">
-                          3.20
-                        </div>
-                                                <div className="SOMcontainer-29">
-                          15:30
-                        </div>
-                                                <div className="SOMcontainer-30">
-                          캡 디자이너
-                        </div>
-                                            </div>
-                                            <div className="SOMwait-reserv-button-4">
-                                                <div className="SOMconfirm-button-4">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
                                                 </div>
-                                                <div className="SOMrefuse-button-4">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                <div className="SOMrefuse-button">
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
                                                 </div>
-                                                <div className="SOMplus-button-4">
-                          <div className="SOMcontainer-33">
-                            ...
-                          </div>
+                                                <div className="SOMplus-button">
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMwait-list-5">
-                                            <div className="SOMwait-reserv-date-5">
-                        <div className="SOMcontainer-34">
-                          3.22
-                        </div>
-                                                <div className="SOMcontainer-35">
-                          18:00
-                        </div>
-                                                <div className="SOMcontainer-36">
-                          제이 원장
-                        </div>
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                                                <div className="SOM-wrd-date">
+                                                    3.20
+                                                </div>
+                                                <div className="SOM-wrd-time">
+                                                    15:30
+                                                </div>
+                                                <div className="SOM-wrd-emp">
+                                                    캡 디자이너
+                                                </div>
                                             </div>
-                                            <div className="SOMwait-reserv-button-5">
-                                                <div className="SOMconfirm-button-5">
-                          <div className="SOMcontainer-5">
-                            확정
-                          </div>
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
                                                 </div>
-                                                <div className="SOMrefuse-button-5">
-                          <div className="SOMcontainer-5">
-                            거절
-                          </div>
+                                                <div className="SOMrefuse-button">
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
                                                 </div>
-                                                <div className="SOMplus-button-5">
-                          <div className="SOMcontainer-39">
-                            ...
-                          </div>
+                                                <div className="SOMplus-button">
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMframe-5231">
-                      <div className="SOMcontainer-40">
-                        전체보기
-                      </div>
+                                        <div className="SOMwait-list">
+                                            <div className="SOMwait-reserv-date">
+                                                <div className="SOM-wrd-date">
+                                                    3.22
+                                                </div>
+                                                <div className="SOM-wrd-time">
+                                                    18:00
+                                                </div>
+                                                <div className="SOM-wrd-emp">
+                                                    제이 원장
+                                                </div>
+                                            </div>
+                                            <div className="SOMwait-reserv-button">
+                                                <div className="SOMconfirm-button">
+                                                    <div className="SOM-cbutton">
+                                                        확정
+                                                    </div>
+                                                </div>
+                                                <div className="SOMrefuse-button">
+                                                    <div className="SOM-rbutton">
+                                                        거절
+                                                    </div>
+                                                </div>
+                                                <div className="SOMplus-button">
+                                                    <div className="SOM-pbutton">
+                                                        ...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="SOMframe-523">
+                                            <div className="SOMcontainer-20">
+                                                전체보기
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -853,7 +855,7 @@ export default function StoreOwnerMain() {
                                             {/*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*/}
                                         </div>
                                         <div className="SOMmonth-yyyy-1">
-                                          March 2024
+                                            March 2024
                                         </div>
                                         <div className="SOMicon-button-3">
                                             {/*<img className="SOMvector-13" src="SOMassets/vectors/Vector533_x2.svg" />*/}
@@ -861,22 +863,22 @@ export default function StoreOwnerMain() {
                                     </div>
                                     <div className="SOMweek-header-1">
                                         <div className="SOMbox-7">
-                                          <div className="SOMsun-1">
-                                            SUN
-                                          </div>
+                                            <div className="SOMsun-1">
+                                                SUN
+                                            </div>
                                         </div>
                                         <div className="SOMbox-8">
-                                          <div className="SOMmon-1">
-                                            MON
-                                          </div>
+                                            <div className="SOMmon-1">
+                                                MON
+                                            </div>
                                         </div>
                                         <div className="SOMbox-9">
-                                          <div className="SOMtue-1">
-                                            TUE
-                                          </div>
+                                            <div className="SOMtue-1">
+                                                TUE
+                                            </div>
                                         </div>
                                         <div className="SOMbox-10">
-                                          <div className="SOMwed-1">
+                                            <div className="SOMwed-1">
                                             WED
                                           </div>
                                         </div>
@@ -1132,69 +1134,69 @@ export default function StoreOwnerMain() {
                         <div className="SOMmenu-box">
                             <div className="SOMmenu-list">
                                 <div className="SOMmenu-info">
-                                    <div className="SOMrectangle-62">
+                                    <div className="SOMmenu-pic">
                                     </div>
                                     <div className="SOMmenu">
-                                        <div className="SOMcontainer-41">
-                                          여성 커트
+                                        <div className="SOMmenu-name">
+                                            여성 커트
                                         </div>
-                                        <div className="SOMcontainer-42">
-                                          |
+                                        <div className="SOMmenu-line">
+                                            |
                                         </div>
-                                        <div className="SOMcontainer-43">
-                                          30,000
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="SOMmenu-info-1">
-                                    <div className="SOMrectangle-621">
-                                    </div>
-                                    <div className="SOMmenu-1">
-                                        <div className="SOMcontainer-44">
-                                          남성 커트
-                                        </div>
-                                        <div className="SOMcontainer-45">
-                                          |
-                                        </div>
-                                        <div className="SOMcontainer-46">
-                                          30,000
+                                        <div className="SOMmenu-price">
+                                            30,000
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMmenu-info-2">
-                                    <div className="SOMrectangle-622">
+                                <div className="SOMmenu-info">
+                                    <div className="SOMmenu-pic">
                                     </div>
-                                    <div className="SOMmenu-2">
-                                        <div className="SOMcontainer-47">
-                                          볼륨펌
+                                    <div className="SOMmenu">
+                                        <div className="SOMmenu-name">
+                                            남성 커트
                                         </div>
-                                        <div className="SOMcontainer-48">
-                                          |
+                                        <div className="SOMmenu-line">
+                                            |
                                         </div>
-                                        <div className="SOMcontainer-49">
-                                          50,000
+                                        <div className="SOMmenu-price">
+                                            30,000
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMmenu-info-3">
-                                    <div className="SOMrectangle-623">
+                                <div className="SOMmenu-info">
+                                    <div className="SOMmenu-pic">
                                     </div>
-                                    <div className="SOMmenu-3">
-                                        <div className="SOMcontainer-50">
-                                          펌
+                                    <div className="SOMmenu">
+                                        <div className="SOMmenu-name">
+                                            볼륨펌
                                         </div>
-                                        <div className="SOMcontainer-51">
-                                          |
+                                        <div className="SOMmenu-line">
+                                            |
                                         </div>
-                                        <div className="SOMcontainer-52">
-                                          30,000
+                                        <div className="SOMmenu-price">
+                                            50,000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="SOMmenu-info">
+                                    <div className="SOMmenu-pic">
+                                    </div>
+                                    <div className="SOMmenu">
+                                        <div className="SOMmenu-name">
+                                            펌
+                                        </div>
+                                        <div className="SOMmenu-line">
+                                            |
+                                        </div>
+                                        <div className="SOMmenu-price">
+                                            30,000
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="SOMframe-544">
-                                <div className="SOMcontainer-53">
-                                  등록 / 수정
+                            <div className="SOM-Regist-Modify">
+                                <div className="SOM-RM-button">
+                                    등록/수정
                                 </div>
                             </div>
                         </div>
@@ -1204,54 +1206,42 @@ export default function StoreOwnerMain() {
                                     <div className="SOMstaff-img">
                                     </div>
                                     <div className="SOMstaff">
-                                        <div className="SOMcontainer-54">
+                                        <div className="SOMemp-name">
                                             제이 원장
                                         </div>
-                                        <div className="SOMcontainer-55">
-                                          수원 재방률 1위 / 남...
+                                        <div className="SOMemp-info">
+                                          수원 재방률 1위 / 남성
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMstaff-info-1">
-                                    <div className="SOMstaff-img-1">
+                                <div className="SOMstaff-info">
+                                    <div className="SOMstaff-img">
                                     </div>
-                                    <div className="SOMstaff-1">
-                                        <div className="SOMcontainer-56">
+                                    <div className="SOMstaff">
+                                        <div className="SOMemp-name">
                                             심화 디자이너
                                         </div>
-                                        <div className="SOMcontainer-57">
-                                          수원 재방률 1위 / 여...
+                                        <div className="SOMemp-info">
+                                          수원 재방률 1위 / 여성
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMstaff-info-2">
-                                    <div className="SOMstaff-img-2">
+                                <div className="SOMstaff-info">
+                                    <div className="SOMstaff-img">
                                     </div>
-                                    <div className="SOMstaff-2">
-                                        <div className="SOMcontainer-58">
+                                    <div className="SOMstaff">
+                                        <div className="SOMemp-name">
                                             캡 디자이너
                                         </div>
-                                        <div className="SOMcontainer-59">
-                                          수원 재방률 1위 / 여...
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="SOMstaff-info-3">
-                                    <div className="SOMstaff-img-3">
-                                    </div>
-                                    <div className="SOMstaff-3">
-                                        <div className="SOMcontainer-60">
-                                            제이 원장
-                                        </div>
-                                        <div className="SOMcontainer-61">
-                                          수원 재방률 1위 / 남...
+                                        <div className="SOMemp-info">
+                                          수원 재방률 1위 / 여성
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="SOMmodify">
-                                <div className="SOMcontainer-62">
-                                  등록 / 수정
+                            <div className="SOM-Regist-Modify">
+                                <div className="SOM-RM-button">
+                                  등록/수정
                                 </div>
                             </div>
                         </div>

@@ -1,9 +1,21 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import './StoreOwnerMainDetailedPopup.css'
+import Modal from "react-modal";
+import StoreOwnerMain from "./StoreOwnerMain";
 
 export default function StoreOwnerMainDetailedPopup() {
     const navigate = useNavigate()
+    const [isOpen, setIsOpen] = useState(false);
+    const openModal = () => {
+        setIsOpen(true);
+    }
+    const closeModal = () => {
+        setIsOpen(false);
+    }
+    const modifyButton = () => {
+        navigate("/StoreOwnerMain")
+    }
     const [text, setText] = useState({
         storeName: '',
         mainContent: '',
@@ -30,30 +42,53 @@ export default function StoreOwnerMainDetailedPopup() {
         timeEndSun: '',
     });
     const onChange = (e) => {
-        setText(e.target.storeName);
-        setText(e.target.mainContent);
-        setText(e.target.addr);
-        setText(e.target.addrDetail);
-        setText(e.target.addrPlus);
-        setText(e.target.call);
-        setText(e.target.instagram);
-        setText(e.target.kakao);
-        setText(e.target.blog);
-        setText(e.target.timeStartMon);
-        setText(e.target.timeEndMon);
-        setText(e.target.timeStartTue);
-        setText(e.target.timeEndTue);
-        setText(e.target.timeStartWed);
-        setText(e.target.timeEndWed);
-        setText(e.target.timeStartThu);
-        setText(e.target.timeEndThu);
-        setText(e.target.timeStartFri);
-        setText(e.target.timeEndFri);
-        setText(e.target.timeStartSat);
-        setText(e.target.timeEndSat);
-        setText(e.target.timeStartSun);
-        setText(e.target.timeEndSun);
+        setStoreName(e.target.storeName);
+        setMainContent(e.target.mainContent);
+        setAddr(e.target.addr);
+        setAddrDetail(e.target.addrDetail);
+        setAddrPlus(e.target.addrPlus);
+        setCall(e.target.call);
+        setInstagram(e.target.instagram);
+        setKakao(e.target.kakao);
+        setBlog(e.target.blog);
+        setTimeStartMon(e.target.timeStartMon);
+        setTimeEndMon(e.target.timeEndMon);
+        setTimeStartTue(e.target.timeStartTue);
+        setTimeEndTue(e.target.timeEndTue);
+        setTimeStartWed(e.target.timeStartWed);
+        setTimeEndWed(e.target.timeEndWed);
+        setTimeStartThu(e.target.timeStartThu);
+        setTimeEndThu(e.target.timeEndThu);
+        setTimeStartFri(e.target.timeStartFri);
+        setTimeEndFri(e.target.timeEndFri);
+        setTimeStartSat(e.target.timeStartSat);
+        setTimeEndSat(e.target.timeEndSat);
+        setTimeStartSun(e.target.timeStartSun);
+        setTimeEndSun(e.target.timeEndSun);
     }
+    const [storeName, setStoreName] = React.useState()
+    const [mainContent, setMainContent] = React.useState()
+    const [addr, setAddr] = React.useState()
+    const [addrDetail, setAddrDetail] = React.useState()
+    const [addrPlus, setAddrPlus] = React.useState()
+    const [call, setCall] = React.useState()
+    const [instagram, setInstagram] = React.useState()
+    const [kakao, setKakao] = React.useState()
+    const [blog, setBlog] = React.useState()
+    const [timeStartMon, setTimeStartMon] = React.useState()
+    const [timeEndMon, setTimeEndMon] = React.useState()
+    const [timeStartTue, setTimeStartTue] = React.useState()
+    const [timeEndTue, setTimeEndTue] = React.useState()
+    const [timeStartWed, setTimeStartWed] = React.useState()
+    const [timeEndWed, setTimeEndWed] = React.useState()
+    const [timeStartThu, setTimeStartThu] = React.useState()
+    const [timeEndThu, setTimeEndThu] = React.useState()
+    const [timeStartFri, setTimeStartFri] = React.useState()
+    const [timeEndFri, setTimeEndFri] = React.useState()
+    const [timeStartSat, setTimeStartSat] = React.useState()
+    const [timeEndSat, setTimeEndSat] = React.useState()
+    const [timeStartSun, setTimeStartSun] = React.useState()
+    const [timeEndSun, setTimeEndSun] = React.useState()
 
     return (
         <div className="StoreOwnerMainDetailedPopup">
@@ -65,7 +100,7 @@ export default function StoreOwnerMainDetailedPopup() {
                                 상호
                             </div>
                         </div>
-                        <input onChange={onChange} name="storeName" placeholder="제이제이 헤어" className="DetailedPopupstore-name-space"
+                        <input onChange={onChange} name="storeName" value={storeName} placeholder="제이제이 헤어" className="DetailedPopupstore-name-space"
                         />
                     </div>
                     <div className="DetailedPopupstore-main-box">
@@ -74,7 +109,8 @@ export default function StoreOwnerMainDetailedPopup() {
                                 메인
                             </div>
                         </div>
-                        <input onChange={onChange} name="mainContent" placeholder="고객 맞춤 프리미엄 서비스를 제공하는 제이제이 헤어입니다."
+                        <input onChange={onChange} name="mainContent" value={mainContent}
+                               placeholder="고객 맞춤 프리미엄 서비스를 제공하는 제이제이 헤어입니다."
                                className="DetailedPopupstore-main-space"
                         />
                         {/*<div className="DetailedPopupstore-main-space">*/}
@@ -101,10 +137,10 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                             </div>
-                            <input onChange={onChange} name="addr" value="경기도 수원시 영통구 광교산로 154-42"
+                            <input onChange={onChange} name="addr" value={addr}
                                    className="DetailedPopuplocation-address"
                             />
-                            <input onChange={onChange} name="addrDetail" value="206호"
+                            <input onChange={onChange} name="addrDetail" value={addrDetail}
                                    className="DetailedPopuplocation-detailed-address"
                             />
                         </div>
@@ -114,7 +150,7 @@ export default function StoreOwnerMainDetailedPopup() {
                             <div className="DetailedPopupcontainer-45">
                             </div>
                         </div>
-                        <input onChange={onChange} name="addrPlus" placeholder="위치 추가 설명"
+                        <input onChange={onChange} name="addrPlus" value={addrPlus} placeholder="위치 추가 설명"
                                className="DetailedPopuplocation-plus"
                         />
                     </div>
@@ -128,7 +164,7 @@ export default function StoreOwnerMainDetailedPopup() {
                                 <div className="DetailedPopupcontainer-1">
                                     전화번호
                                 </div>
-                                <input onChange={onChange} name="call"
+                                <input onChange={onChange} name="call" value={call}
                                        placeholder="031-249-9114"
                                        className="DetailedPopupphone-space"
                                 />
@@ -137,7 +173,7 @@ export default function StoreOwnerMainDetailedPopup() {
                                 <div className="DetailedPopupcontainer-2">
                                     인스타그램
                                 </div>
-                                <input onChange={onChange} name="instagram"
+                                <input onChange={onChange} name="instagram" value={instagram}
                                        placeholder="http://instagram. ..."
                                        className="DetailedPopupinsta-space"
                                 />
@@ -146,7 +182,7 @@ export default function StoreOwnerMainDetailedPopup() {
                                 <div className="DetailedPopupcontainer-3">
                                     카카오톡
                                 </div>
-                                <input onChange={onChange} name="kakao"
+                                <input onChange={onChange} name="kakao" value={kakao}
                                        placeholder="http://pf.kakao.com/..."
                                        className="DetailedPopupkakao-space"
                                 />
@@ -155,7 +191,7 @@ export default function StoreOwnerMainDetailedPopup() {
                                 <div className="DetailedPopupcontainer-50">
                                     블로그
                                 </div>
-                                <input onChange={onChange} name="blog"
+                                <input onChange={onChange} name="blog" value={blog}
                                        placeholder="http://pf.blog.com/..."
                                        className="DetailedPopupblog-space"
                                 />
@@ -181,14 +217,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartMon"
+                                    <input onChange={onChange} name="timeStartMon" value={timeStartMon}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndMon"
+                                    <input onChange={onChange} name="timeEndMon" value={timeEndMon}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -206,14 +242,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartTue"
+                                    <input onChange={onChange} name="timeStartTue" value={timeStartTue}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndTue"
+                                    <input onChange={onChange} name="timeEndTue" value={timeEndTue}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -231,14 +267,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartWed"
+                                    <input onChange={onChange} name="timeStartWed" value={timeStartWed}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndWed"
+                                    <input onChange={onChange} name="timeEndWed" value={timeEndWed}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -256,14 +292,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartThu"
+                                    <input onChange={onChange} name="timeStartThu" value={timeStartThu}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndThu"
+                                    <input onChange={onChange} name="timeEndThu" value={timeEndThu}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -281,14 +317,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartFri"
+                                    <input onChange={onChange} name="timeStartFri" value={timeStartFri}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndFri"
+                                    <input onChange={onChange} name="timeEndFri" value={timeEndFri}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -306,14 +342,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartSat"
+                                    <input onChange={onChange} name="timeStartSat" value={timeStartSat}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndSat"
+                                    <input onChange={onChange} name="timeEndSat" value={timeEndSat}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -331,14 +367,14 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                                 <div className="DetailedPopupframe-253">
-                                    <input onChange={onChange} name="timeStartSun"
+                                    <input onChange={onChange} name="timeStartSun" value={timeStartSun}
                                            placeholder="10:00"
                                            className="DetailedPopupframe-249"
                                     />
                                     <div className="DetailedPopupcontainer-6">
                                         ~
                                     </div>
-                                    <input onChange={onChange} name="timeEndSun"
+                                    <input onChange={onChange} name="timeEndSun" value={timeEndSun}
                                            placeholder="20:00"
                                            className="DetailedPopupframe-250"
                                     />
@@ -352,11 +388,14 @@ export default function StoreOwnerMainDetailedPopup() {
                         </div>
                     </div>
                     <div className="DetailedPopupframe-575">
-                        <div className="DetailedPopupmodify-button">
+                        <button className="DetailedPopupmodify-button" onClick={closeModal}>
                             <div className="DetailedPopupcontainer-41">
                                 수정
                             </div>
-                        </div>
+                        </button>
+                        {/*<Modal isOpen={isOpen} onRequestClose={closeModal}>*/}
+                        {/*    <StoreOwnerMain/>*/}
+                        {/*</Modal>*/}
                     </div>
                 </div>
             </div>
