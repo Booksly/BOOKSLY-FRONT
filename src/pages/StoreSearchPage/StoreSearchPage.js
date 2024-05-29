@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { DayPicker } from "react-day-picker";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
+import "react-day-picker/dist/style.css";
+import "./MultiDatePicker.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
@@ -16,12 +19,6 @@ export default function StoreSearchPage() {
   const [btn6Active, setBtn6Active] = useState(false);
   const [btn7Active, setBtn7Active] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-  const closeModal = () => {
-    setIsOpen(false);
-  };
   const toggleBtnAllActive = () => {
     setBtnAllActive(!btnAllActive);
     setBtn1Active(!btnAllActive);
@@ -53,6 +50,13 @@ export default function StoreSearchPage() {
   const toggleBtn7Active = () => {
     setBtn7Active(!btn7Active);
   };
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -66,6 +70,13 @@ export default function StoreSearchPage() {
       padding: "20px",
     },
   };
+
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const [selectedDates, setSelectedDates] = useState([]);
+  const handleToggleDatePicker = () => {
+    setShowDatePicker(!showDatePicker);
+  };
+
   return (
     <div className="StoreSearchPage">
       <div className="StoreSearchPageBack">
