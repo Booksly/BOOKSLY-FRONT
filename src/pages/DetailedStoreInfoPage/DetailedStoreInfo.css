@@ -5,7 +5,7 @@
     right: 0;
     left:0;
     height: fit-content;
-    background: #FFFFFF;
+    background: #FDF8F3;
 }
 .DetailedStoreInfoBack {
     display: flex;
@@ -28,7 +28,7 @@
     box-sizing: border-box;
 }
 .DetailedStoreInfo .frame-storeInfo {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
     margin-bottom: 43px;
@@ -72,7 +72,7 @@
     color: #000000;
 }
 .DetailedStoreInfo .container-name {
-    margin: 0px 10px 0px 0px;
+    margin: 0 10px 0 0;
     overflow-wrap: break-word;
     font-family: 'Inter';
     font-weight: 700;
@@ -225,9 +225,9 @@
 }
 .DetailedStoreInfo .frame-reservationButton {
     border-radius: 10px;
-    border: 0px;
+    border: 0;
     background: #FF5925;
-    margin: 0px 10px;
+    margin: 0 10px;
     width: 386px;
     height: fit-content;
     box-sizing: border-box;
@@ -248,7 +248,7 @@
     box-sizing: border-box;
 }
 .DetailedStoreInfo .frame-menu {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
     margin-bottom: 30px;
@@ -262,7 +262,6 @@
     margin-bottom: 20px;
     align-self: flex-start;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 25px;
     color: #000000;
@@ -273,7 +272,6 @@
     display: inline-block;
     align-self: flex-start;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
     color: #000000;
@@ -321,7 +319,7 @@
     box-sizing: border-box;
 }
 .DetailedStoreInfo .frame-employee {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
     margin-bottom: 30px;
@@ -345,7 +343,7 @@
     margin-bottom: 20px;
 }
 .DetailedStoreInfo .frame-review {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     background: #FFFFFF;
     display: flex;
@@ -380,7 +378,7 @@
 }
 /*여기부터 헤더??*/
 .DetailedStoreInfo .header-inner {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     margin-bottom: 35px;
     display: flex;

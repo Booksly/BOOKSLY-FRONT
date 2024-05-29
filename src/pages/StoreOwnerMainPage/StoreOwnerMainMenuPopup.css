@@ -1,0 +1,219 @@
+.StoreOwnerMainMenuPopup {
+    width: fit-content;
+}
+.StoreOwnerMainMenuPopup .StoreOwnerMain-MenuPopup {
+    border-radius: 10px;
+    border: 1px solid #FF5925;
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMPleft {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-Button {
+    margin: 0 7px 7px 7px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menubutton {
+    margin-right: 23px;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    border: 0;
+    background: #FDF8F3;
+}
+.StoreOwnerMainMenuPopup .SOMMP-categbutton {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7F7F7F;
+    border: 0;
+    background: #FDF8F3;
+}
+.StoreOwnerMainMenuPopup .SOMMPline-31 {
+    background: #FF5925;
+    margin-bottom: 12px;
+    width: 390px;
+    height: 1px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuInfoBox {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuInfoLeft {
+    flex-direction: column;
+}
+.StoreOwnerMainMenuPopup .SOMMP-pic {
+    background: #D9D9D9;
+    display: flex;
+    padding: 52px 0;
+    width: 168px;
+    height: 126px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.StoreOwnerMainMenuPopup .SOMMPPicSelect {
+    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
+    width: 23px;
+    height: 23px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuInfo {
+    flex-direction: column;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuName {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 14px;
+    padding: 9px 12px;
+    width: 205px;
+    box-sizing: border-box;
+    font-size: 18px
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuPrice {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9px 12px;
+    width: 205px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-info {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    padding: 14px 12px;
+    width: 205px;
+    height: 85px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    font-size: 18px;
+    resize: none;
+}
+
+.StoreOwnerMainMenuPopup .SOMMP-RegistButton {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 123px;
+    color: #FFFEFE;
+}
+.StoreOwnerMainMenuPopup .SOMMPline-30 {
+    background: #FF5925;
+    margin: 4px 22px 0 0;
+    width: 1px;
+    height: 493px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menulist {
+    flex-direction: column;
+    width: 410px;
+    height: 500px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MenuCategoryBox {
+    margin: 10px 7px 24px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-categoryName {
+    margin: 0 4px 10px 4px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMainMenuPopup .SOMMP-Box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.StoreOwnerMainMenuPopup .SOMMP-menuListBox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    max-width: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    box-sizing: border-box;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLB-PI {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.StoreOwnerMainMenuPopup .SOMMP-categoryMenuPic {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 60px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLB-Info {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    margin-left: 5px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-price {
+    font-weight: 500;
+    font-size: 14px;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-info {
+    font-weight: 300;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-button {
+    flex-direction: row;
+    width: 190px;
+    row-gap: normal;
+}
+.StoreOwnerMainMenuPopup .SOMMP-MLBI-modify, .SOMMP-MLBI-delete {
+    border: 0;
+    background: #FDF8F3;
+    font-size: 13px;
+    font-weight: 700;
+}

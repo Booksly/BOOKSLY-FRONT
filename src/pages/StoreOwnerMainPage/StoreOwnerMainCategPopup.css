@@ -1,0 +1,237 @@
+.StoreOwnerMainCategPopup {
+    width: fit-content;
+}
+.StoreOwnerMainCategPopup .StoreOwnerMain-CategPopup {
+    border-radius: 10px;
+    border: 1px solid #FF5925;
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCPleft {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCP-Button {
+    margin: 0 7px 7px 7px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCP-menubutton {
+    margin-right: 23px;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #7F7F7F;
+    border: 0;
+    background: #FDF8F3;
+}
+.StoreOwnerMainCategPopup .SOMCP-categbutton {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    border: 0;
+    background: #FDF8F3;
+}
+.StoreOwnerMainCategPopup .SOMCPline-31 {
+    background: #FF5925;
+    margin-bottom: 12px;
+    width: 390px;
+    height: 1px;
+}
+.StoreOwnerMainCategPopup .SOMCP-categoryBox {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCP-categName {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    position: relative;
+    padding-left: 12px;
+    width: 260px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.StoreOwnerMainCategPopup .SOMCP-RegistButton {
+    border: 1px solid #FF5925;
+    border-radius: 5px;
+    background: rgba(255, 89, 37, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #FFFEFE;
+}
+.StoreOwnerMainCategPopup .SOMCPline-3 {
+    background: #FF5925;
+    margin-bottom: 12px;
+    width: 390px;
+    height: 0.5px;
+}
+.StoreOwnerMainCategPopup .SOMCPline-30 {
+    background: #FF5925;
+    margin: 4px 22px 0 0;
+    width: 1px;
+    height: 493px;
+}
+.StoreOwnerMainCategPopup .SOMCP-menulist {
+    flex-direction: column;
+    width: 410px;
+    height: 500px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+.StoreOwnerMainCategPopup .SOMCP-MenuCategoryBox {
+    margin: 10px 7px 24px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCP-categoryName {
+    margin: 0 4px 10px 4px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMainCategPopup .SOMCP-Box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.StoreOwnerMainCategPopup .SOMCP-menuListBox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    max-width: calc(50% - 10px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+    box-sizing: border-box;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLB-PI {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.StoreOwnerMainCategPopup .SOMCP-categoryMenuPic {
+    background: #D9D9D9;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 60px;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLB-Info {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    margin-left: 5px;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLBI-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLBI-price {
+    font-weight: 500;
+    font-size: 14px;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLBI-info {
+    font-weight: 300;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLBI-button {
+    flex-direction: row;
+    width: 190px;
+    row-gap: normal;
+}
+.StoreOwnerMainCategPopup .SOMCP-MLBI-modify, .SOMCP-MLBI-delete {
+    border: 0;
+    background: #FDF8F3;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.StoreOwnerMainCategPopup .container {
+    margin: 0 13px 10px 13px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.group-178 .frame-442 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 10.1px;
+    display: flex;
+    padding: 8px 14.9px 8px 14px;
+    box-sizing: border-box;
+}
+.group-178 .container {
+     overflow-wrap: break-word;
+     font-family: 'Inter';
+     font-weight: 700;
+     font-size: 18px;
+     color: #000000;
+ }
+.group-178 .group-179 {
+    margin: 3px 10px 3px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.group-178 .frame-137 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+.group-178 .frame-446 {
+    position: relative;
+    margin-bottom: 4px;
+    width: 15px;
+    height: 15px;
+}
+.group-178 .group-184 {
+    margin: 14px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.group-178 .container-20 {
+    margin-right: 16.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #737373;
+}
+.group-178 .container-21 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    color: #737373;
+}

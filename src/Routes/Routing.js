@@ -38,8 +38,12 @@ import Reservation from "../pages/ReservationPage/Reservation";
 import Reservation_Complete from "../pages/ReservationPage/Reservation_Complete";
 // 가게 주인 페이지
 import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
+import StoreOwnerMainDetailedPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainDetailedPopup";
+import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuPopup";
+import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function Routing() {
   return (
     <div className="App">
@@ -82,6 +86,9 @@ function Routing() {
           <Route path="/Reservation_Complete" element={<Reservation_Complete/>}/>
           {/*가게주인용*/}
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
+          <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
+          <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
+          <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
         </Routes>
       </BrowserRouter>
     </div>
