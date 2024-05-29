@@ -1,0 +1,18 @@
+@import "react-day-picker/dist/style.css";
+
+.my-selected:not([disabled]) {
+  font-weight: bold;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  color: #4caf50;
+}
+
+.my-selected:hover:not([disabled]) {
+  border-color: #45a049;
+  color: #45a049;
+}
+
+.my-today {
+  font-weight: bold;
+  color: #d32f2f;
+}

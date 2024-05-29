@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { DayPicker } from "react-day-picker";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
@@ -73,9 +73,47 @@ export default function StoreSearchPage() {
 
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [selectedDates, setSelectedDates] = useState([]);
+  const [buttonText, setButtonText] = useState("날짜를 설정해주세요");
+
   const handleToggleDatePicker = () => {
-    setShowDatePicker(!showDatePicker);
+    setShowDatePicker((prevState) => !prevState);
   };
+
+  const handleDayClick = (day, { selected }) => {
+    const selectedIndex = selectedDates.findIndex(
+      (selectedDate) => selectedDate.getTime() === day.getTime()
+    );
+
+    if (selectedIndex > -1) {
+      setSelectedDates([
+        ...selectedDates.slice(0, selectedIndex),
+        ...selectedDates.slice(selectedIndex + 1),
+      ]);
+    } else if (selectedDates.length < 3) {
+      setSelectedDates([...selectedDates, day]);
+    }
+  };
+
+  const handleOutsideClick = (event) => {
+    if (showDatePicker && !event.target.closest(".before-day-and-time")) {
+      setShowDatePicker(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", handleOutsideClick);
+    return () => {
+      window.removeEventListener("click", handleOutsideClick);
+    };
+  }, [showDatePicker]);
+
+  useEffect(() => {
+    if (selectedDates.length === 3) {
+      setButtonText("날짜 선택됨");
+    } else {
+      setButtonText("날짜를 설정해주세요");
+    }
+  }, [selectedDates]);
 
   return (
     <div className="StoreSearchPage">
@@ -100,10 +138,25 @@ export default function StoreSearchPage() {
                 </Modal>
               </div>
               <div className="before-day-and-time">
-                <div className="frame-dateselect">
-                  <span className="content-dateselect">
-                    날짜를 설정해 주세요
-                  </span>
+                <div
+                  className="frame-dateselect"
+                  onClick={handleToggleDatePicker}
+                >
+                  <span className="content-dateselect">{buttonText}</span>
+                  {showDatePicker && (
+                    <div>
+                      <DayPicker
+                        selected={selectedDates}
+                        onDayClick={handleDayClick}
+                      />
+                      <div>
+                        선택된 날짜:
+                        {selectedDates.map((date, index) => (
+                          <div key={index}>{date.toLocaleDateString()}</div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="frame-timeselect">
                   <span className="content-timeselect">
