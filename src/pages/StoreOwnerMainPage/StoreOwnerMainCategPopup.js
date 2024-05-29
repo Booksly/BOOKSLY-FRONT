@@ -44,23 +44,21 @@ export default function StoreOwnerMainCategPopup() {
                     </div>
                     <div className="SOMCPline-3">
                     </div>
-                    <div className="container">
-                        <div className="group-179">
+                    <div className="SOMCPCategList">
+                        <div className="SOMCP-CL-location-button">
                             {/*<img className="frame-446" src="assets/vectors/Frame44614_x2.svg"/>*/}
                             {/*<img className="frame-137" src="assets/vectors/Frame1379_x2.svg"/>*/}
                         </div>
-                        <div className="frame-442">
-                            <div className="container">
-                              커트
-                            </div>
+                        <div className="SOMCP-CL-Name">
+                            커트
                         </div>
-                        <div className="group-184">
-                            <div className="container-20">
+                        <div className="SOMCP-CL-button">
+                            <button className="SOMCP-CL-modify">
                               수정하기
-                            </div>
-                            <div className="container-21">
+                            </button>
+                            <button className="SOMCP-CL-delete">
                               삭제
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -169,8 +169,7 @@
     font-size: 13px;
     font-weight: 700;
 }
-
-.StoreOwnerMainCategPopup .container {
+.StoreOwnerMainCategPopup .SOMCPCategList {
     margin: 0 13px 10px 13px;
     display: flex;
     flex-direction: row;
@@ -178,23 +177,22 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.group-178 .frame-442 {
+.StoreOwnerMainCategPopup .SOMCP-CL-Name {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
-    margin-right: 10.1px;
+    margin-right: 10px;
     display: flex;
-    padding: 8px 14.9px 8px 14px;
+    padding: 5px 10px 5px 10px;
+    height: fit-content;
+    align-content: center;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
 }
-.group-178 .container {
-     overflow-wrap: break-word;
-     font-family: 'Inter';
-     font-weight: 700;
-     font-size: 18px;
-     color: #000000;
- }
-.group-178 .group-179 {
+.StoreOwnerMainCategPopup .SOMCP-CL-location-button {
     margin: 3px 10px 3px 0;
     display: flex;
     flex-direction: column;
@@ -203,35 +201,37 @@
     height: fit-content;
     box-sizing: border-box;
 }
-.group-178 .frame-137 {
+.StoreOwnerMainCategPopup .frame-137 {
     position: relative;
     width: 15px;
     height: 15px;
 }
-.group-178 .frame-446 {
+.StoreOwnerMainCategPopup .frame-446 {
     position: relative;
     margin-bottom: 4px;
     width: 15px;
     height: 15px;
 }
-.group-178 .group-184 {
+.StoreOwnerMainCategPopup .SOMCP-CL-button {
     margin: 14px 0 10px 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
 }
-.group-178 .container-20 {
-    margin-right: 16.1px;
+.StoreOwnerMainCategPopup .SOMCP-CL-modify {
+    margin-right: 16px;
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 13px;
     color: #737373;
+    border: 0;
+    background: #FDF8F3;
 }
-.group-178 .container-21 {
+.StoreOwnerMainCategPopup .SOMCP-CL-delete {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 13px;
     color: #737373;
+    border: 0;
+    background: #FDF8F3;
 }
