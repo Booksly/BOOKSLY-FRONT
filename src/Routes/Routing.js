@@ -35,7 +35,7 @@ import TodayReserv from "../pages/TodayReservationPage/TodayReservationPage";
 import StoreSearch from "../pages/StoreSearchPage/StoreSearchPage";
 import DetailedStoreInfo from "../pages/DetailedStoreInfoPage/DetailedStoreInfo";
 import Reservation from "../pages/ReservationPage/Reservation";
-
+import Reservation_Complete from "../pages/ReservationPage/Reservation_Complete";
 // 가게 주인 페이지
 import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
 
@@ -79,6 +79,7 @@ function Routing() {
           <Route path="/StoreSearch" element={<StoreSearch />} />
           <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
           <Route path="/Reservation" element={<Reservation />} />
+          <Route path="/Reservation_Complete" element={<Reservation_Complete/>}/>
           {/*가게주인용*/}
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
         </Routes>

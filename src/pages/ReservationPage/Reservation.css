@@ -1,0 +1,110 @@
+.reservation_padding {
+    margin-block: 120px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 1000px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.reserve_select_option{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-block: 30px;
+}
+/* 예약페이지 각 항목 제목 */
+.reserve_title{
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: auto;
+    margin-block: 15px;
+}
+
+.option_boxs_row{
+    background-color: rgb(227, 227, 227);
+    padding-block: 20px;
+    padding-inline: 20px;
+    border-radius: 30px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.option_boxs_row > .staff_box{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+}
+.option_boxs_row > .staff_box > .staff_img{
+    width: 200px;
+    height: 250px;
+    background-color: gray;
+    /* border-top-left-radius:30px;
+    border-top-right-radius:30px; */
+
+}
+
+#isSelect {
+    background-color: orange;
+}
+/* 예약하기에서 직원들 이름 폰트 */
+.option_boxs_row > .staff_box > .staff_name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.option_boxs_row > .time_box {
+    padding: 12px;
+    background-color: rgb(188, 188, 188);
+    border-radius: 10px;
+    margin-inline: 15px;
+    margin-block: 5px;
+}
+
+.option_boxs_row > .time_box > .time{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.reserve_select_option > textarea {
+    width: 750px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.reservation_padding > p, .reservation_padding > button{
+    font-size: 20px;
+}
+
+/* 예약 신청 완료 후 페이지 */
+.reservation_padding > .buttons_box {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.reservation_padding > button, .button_big, .button_small {
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.buttons_box > .button_big {
+    font-size: 25px;
+    padding-block: 20px;
+    padding-inline: 40px;
+    margin-block: 15px;
+}
+
+.button_small {
+    padding-block: 10px;
+    padding-inline: 30px;
+}
+

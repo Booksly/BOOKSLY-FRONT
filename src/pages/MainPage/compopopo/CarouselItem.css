@@ -1,0 +1,13 @@
+.carousel-image {
+    width: 800px;
+    height: 400px;
+    background-color: white; 
+    /* background-image: url('./AdobeStock_552687288_Preview.jpeg'); */
+    background-repeat: no-repeat; 
+    background-size: 120% auto;
+    background-position: center;
+    margin: auto; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex; 
+    align-items: flex-end; 
+}
