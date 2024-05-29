@@ -1,6 +1,6 @@
 import React from "react";
 import App from "../App";
-
+import Test44 from "../pages/Test_jiwon/Test3";
 // 헤더 & 내비게이션
 import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
 import LoginBeforeMainHeader from "../pages/nav/LoginBeforeMainHeader";
@@ -52,6 +52,7 @@ function Routing() {
       <BrowserRouter>
         <Routes>
           {/*시작 메인 페이지*/}
+          <Route path="/ss" element={<Test44 />} />
           <Route path="/" element={<Mainmain />} >
             <Route path="login" element={<LoginAfterMainHeader/>} />
           </Route>
