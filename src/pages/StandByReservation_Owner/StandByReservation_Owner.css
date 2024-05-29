@@ -12,6 +12,59 @@
     padding: 30px;
 }
 
+.StandByReservation_contents_padding{
+    display: flex;
+    margin: 20px;
+    margin-right: 0;
+}
+
+.StandByReservation_contents {
+    width: 600px;
+    
+    padding: 20px;
+    background-color: antiquewhite;
+    border: solid rgb(255, 177, 113) 2px;
+    border-radius: 30px;
+}
+
+.StandByReservation_contents > .StandByReservation_content{
+    display: flex;
+    width: fit-content;
+    margin-block: 10px;
+}
+
+.StandByReservation_contents > .StandByReservation_content > .text_right_margin {
+    min-width: 80px;
+}
+
+.StandByReservation_contents > #text_middle{
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.StandByReservation_contents > #text_small{
+
+}
+
+.StandBy_buttons{
+    /* width: 60px; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.StandBy_buttons > button{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    border: solid rgb(255, 177, 113) 2px;
+    border-radius: 30px; 
+    padding-block: 10px;
+    padding-inline: 20px; 
+}
+
+
+/*신규순 임박순 버튼과 배경*/
 .mb-3 {
     background-color: rgb(255, 242, 231);
 }
@@ -34,4 +87,5 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border: #dee2e6 solid 1px;
+    overflow: scroll;
 }

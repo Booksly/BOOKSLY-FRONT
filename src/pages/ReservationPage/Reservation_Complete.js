@@ -18,7 +18,7 @@ export default function Reservation_Complete() {
                 
                 <button className='button_small'>예약 소식 받기</button>
             </div>
-            <StandByReservation_Owner/>
+            {/* <StandByReservation_Owner/> */}
 
         </div>
     );
