@@ -5,8 +5,16 @@ import naver from "../../assets/Naver_icon.png";
 import google from "../../assets/Google_icon.png";
 import kakao from "../../assets/Kakao_icon.png";
 import LoginPageNav from "../nav/LoginPageNav";
+import { useNavigate } from "react-router-dom";
 
 export default function CustomerLoginPage() {
+  const navigate = useNavigate();
+  const goToCustomerLogIn = () => {
+    navigate("/CustomerLogIn");
+  };
+  const goToStoreOwnerLogIn = () => {
+    navigate("/StoreOwnerLogIn");
+  };
   return (
     <div className="CustomerLoginPage">
       <div className="CustomerLoginPageBack">
@@ -16,8 +24,18 @@ export default function CustomerLoginPage() {
             <div className="frame-510">
               <div className="line-5"></div>
               <div className="frame-10">
-                <span className="Customer">개인회원</span>
-                <span className="StoreOwner">기업회원</span>
+                <button
+                  className="frame-CustomerLoginButton"
+                  onClick={goToCustomerLogIn}
+                >
+                  <span className="Customer">개인회원</span>
+                </button>
+                <button
+                  className="frame-StoreOwnerLoginButton"
+                  onClick={goToStoreOwnerLogIn}
+                >
+                  <span className="StoreOwner">기업회원</span>
+                </button>
               </div>
             </div>
             <div className="container-2">
