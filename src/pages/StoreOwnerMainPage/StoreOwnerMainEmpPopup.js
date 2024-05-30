@@ -1,5 +1,24 @@
 import './StoreOwnerMainEmpPopup.css'
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+
+const categories = [
+    {
+        id: 1,
+        name: '커트',
+        subcategories: [
+            { id: 11, name: '여성커트' },
+            { id: 12, name: '남성커트' }
+        ]
+    },
+    {
+        id: 2,
+        name: '펌',
+        subcategories: [
+            { id: 21, name: 'perm1' },
+            { id: 22, name: 'perm2' }
+        ]
+    }
+];
 
 export default function StoreOwnerMainEmpPopup() {
 
@@ -60,6 +79,111 @@ export default function StoreOwnerMainEmpPopup() {
     const [timeStartSun, setTimeStartSun] = React.useState()
     const [timeEndSun, setTimeEndSun] = React.useState()
 
+    const [mainCategory, setMainCategory] = useState('');
+    const [subCategories, setSubCategories] = useState([]);
+    const [selectedSubCategories, setSelectedSubCategories] = useState({});
+    const [isAllSelected, setIsAllSelected] = useState(false);
+    const [isGlobalSelectAll, setIsGlobalSelectAll] = useState(false);
+
+    useEffect(() => {
+        if (mainCategory) {
+            const selectedCategory = categories.find(category => category.id === parseInt(mainCategory));
+            setSubCategories(selectedCategory ? selectedCategory.subcategories : []);
+            setIsAllSelected(
+                selectedSubCategories[mainCategory] &&
+                selectedSubCategories[mainCategory].length === (selectedCategory ? selectedCategory.subcategories.length : 0)
+            );
+        } else {
+            setSubCategories([]);
+        }
+    }, [mainCategory, selectedSubCategories]);
+
+    const handleMainCategoryChange = (event) => {
+        setMainCategory(event.target.value);
+        setIsAllSelected(false);
+    };
+
+    const handleSubCategoryChange = (event) => {
+        const value = parseInt(event.target.value);
+        setSelectedSubCategories(prevSelectedSubCategories => {
+            const currentSubCategories = prevSelectedSubCategories[mainCategory] || [];
+            if (event.target.checked) {
+                return {
+                    ...prevSelectedSubCategories,
+                    [mainCategory]: [...currentSubCategories, value]
+                };
+            } else {
+                return {
+                    ...prevSelectedSubCategories,
+                    [mainCategory]: currentSubCategories.filter(subCategoryId => subCategoryId !== value)
+                };
+            }
+        });
+    };
+
+    const handleSelectAllSubCategories = () => {
+        if (mainCategory) {
+            setSelectedSubCategories(prevSelectedSubCategories => {
+                const allSubCategoryIds = subCategories.map(sub => sub.id);
+                if (isAllSelected) {
+                    return {
+                        ...prevSelectedSubCategories,
+                        [mainCategory]: []
+                    };
+                } else {
+                    return {
+                        ...prevSelectedSubCategories,
+                        [mainCategory]: allSubCategoryIds
+                    };
+                }
+            });
+            setIsAllSelected(!isAllSelected);
+        }
+    };
+
+    const handleGlobalSelectAllSubCategories = () => {
+        setSelectedSubCategories(prevSelectedSubCategories => {
+            const allSubCategoryIds = categories.flatMap(category => category.subcategories.map(sub => sub.id));
+            if (isGlobalSelectAll) {
+                return {};
+            } else {
+                const newSelectedSubCategories = {};
+                categories.forEach(category => {
+                    newSelectedSubCategories[category.id] = category.subcategories.map(sub => sub.id);
+                });
+                return newSelectedSubCategories;
+            }
+        });
+        setIsGlobalSelectAll(!isGlobalSelectAll);
+    };
+
+    const getSelectedSubCategories = () => {
+        return Object.entries(selectedSubCategories).flatMap(([mainCatId, subCatIds]) => {
+            const mainCategory = categories.find(category => category.id === parseInt(mainCatId));
+            return subCatIds.map(subCatId => {
+                const subCategory = mainCategory.subcategories.find(sub => sub.id === subCatId);
+                return { mainCategoryName: mainCategory.name, subCategoryName: subCategory.name };
+            });
+        });
+    };
+
+    const renderSelectedSubCategories = () => {
+        const selected = getSelectedSubCategories();
+        const groupedByMainCategory = selected.reduce((acc, curr) => {
+            if (!acc[curr.mainCategoryName]) {
+                acc[curr.mainCategoryName] = [];
+            }
+            acc[curr.mainCategoryName].push(curr.subCategoryName);
+            return acc;
+        }, {});
+
+        return Object.entries(groupedByMainCategory).map(([mainCategoryName, subCategoryNames]) => (
+            <li key={mainCategoryName}>
+                {mainCategoryName} - {subCategoryNames.join(', ')}
+            </li>
+        ));
+    };
+
     return (
         <div className="StoreOwnerMainEmpPopup">
             <div className="SOMEP-left">
@@ -90,34 +214,58 @@ export default function StoreOwnerMainEmpPopup() {
                 </div>
                 <div className="SOMEP-menuSelect">
                     <div className="SOMEPframe-593">
-                        <div className="SOMEPframe-120">
-                            <div className="SOMEPcontainer-22">
-                                전체
+                        <button onClick={handleGlobalSelectAllSubCategories} className="SOMEPframe-120">
+                            {isGlobalSelectAll ? '전체 삭제' : '전체 선택'}
+                        </button>
+                        <div className="SOMEP-menuCategSelect">
+                            <div>
+                                <select value={mainCategory} onChange={handleMainCategoryChange}>
+                                    <option value="">카테고리</option>
+                                    {categories.map(category => (
+                                        <option key={category.id} value={category.id}>
+                                            {category.name}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            <div>
+                                <button onClick={handleSelectAllSubCategories} disabled={!mainCategory}>
+                                    {isAllSelected ? '소분류 전체 삭제' : '소분류 전체 선택'}
+                                </button>
+                                {mainCategory && subCategories.map(subcategory => (
+                                    <div key={subcategory.id}>
+                                        <input
+                                            type="checkbox"
+                                            id={`sub-${subcategory.id}`}
+                                            value={subcategory.id}
+                                            onChange={handleSubCategoryChange}
+                                            checked={selectedSubCategories[mainCategory]?.includes(subcategory.id) || false}
+                                        />
+                                        <label htmlFor={`sub-${subcategory.id}`}>{subcategory.name}</label>
+                                    </div>
+                                ))}
                             </div>
                         </div>
-                        <div className="SOMEPgroup-111">
-                            <div className="SOMEPframe-132">
-                                <div className="SOMEPcontainer-23">
-                                    카테고리
-                                </div>
-                                {/*<img className="group-89" src="assets/vectors/Group891_x2.svg" />*/}
-                            </div>
-                            <div className="SOMEPframe-133">
-                                <div className="SOMEPcontainer-24">
-                                    소분류
-                                </div>
-                                {/*<img className="group-90" src="assets/vectors/Group902_x2.svg" />*/}
-                            </div>
-                        </div>
+
+                        {/*<div className="SOMEPgroup-111">*/}
+                        {/*    <div className="SOMEPframe-132">*/}
+                        {/*        <div className="SOMEPcontainer-23">*/}
+                        {/*            카테고리*/}
+                        {/*        </div>*/}
+                        {/*        /!*<img className="group-89" src="assets/vectors/Group891_x2.svg" />*!/*/}
+                        {/*    </div>*/}
+                        {/*    <div className="SOMEPframe-133">*/}
+                        {/*        <div className="SOMEPcontainer-24">*/}
+                        {/*            소분류*/}
+                        {/*        </div>*/}
+                        {/*        /!*<img className="group-90" src="assets/vectors/Group902_x2.svg" />*!/*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="SOMEPframe-134">
-                        <div className="SOMEPcontainer-25">
-                            {/*커트 - 여성컷, 남성컷, 학생컷, 앞머리컷, 다듬기<br />*/}
-                            {/*일반펌 - 볼륨펌, 애즈펌, , 아이롱펌, 베이직펌<br />*/}
-                            {/*염색 - 탈색, 뿌리탈색, 염색, ...*/}
-                        </div>
-                        {/*<div className="SOMEPcontainer">*/}
-                        {/*</div>*/}
+                        <ul>
+                            {renderSelectedSubCategories()}
+                        </ul>
                     </div>
                 </div>
                 <div className="SOMEPframe-597">
@@ -148,8 +296,8 @@ export default function StoreOwnerMainEmpPopup() {
                             </div>
                         </div>
                         <div className="SOMEP-time-frame-551">
-                            <div className="SOMEP-time-frame-2511">
-                                <div className="SOMEP-time-container-9">
+                            <div className="SOMEP-time-frame-251">
+                                <div className="SOMEP-time-container-4">
                                     화
                                 </div>
                             </div>
@@ -489,11 +637,9 @@ export default function StoreOwnerMainEmpPopup() {
                     {/*        </div>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    <div className="SOMEPframe-248">
-                        <div className="SOMEPcontainer-11">
-                            등록
-                        </div>
-                    </div>
+                    <button className="SOMEPframe-248">
+                        등록
+                    </button>
                 </div>
             </div>
             <div className="SOMEPline-23">
@@ -503,43 +649,24 @@ export default function StoreOwnerMainEmpPopup() {
                     <div className="SOMEPframe-594">
                         <div className="SOMEPrectangle-108">
                         </div>
-                        <div className="SOMEPcontainer-12">
-                            수정하기 삭제
+                        <div className="SOMEP-MdDl">
+                            <button className="SOMEP-modify">
+                                수정하기
+                            </button>
+                            <button className="SOMEP-delete">
+                                삭제
+                            </button>
                         </div>
                     </div>
-                    <p className="SOMEPcontainer-13">
-                        <div className="SOMEPcontainer-13-sub-31"></div>
-                        <div className="SOMEPcontainer-13-sub-0"></div>
-                        <div></div>
-                    </p>
-                </div>
-                <div className="SOMEPframe-600">
-                    <div className="SOMEPframe-5941">
-                        <div className="SOMEPrectangle-1081">
+                    <div className="SOMEP-empInfoBox">
+                        <div className="SOMEP-EIB-name">
+                            제이 원장
                         </div>
-                        <div className="SOMEPcontainer-14">
-                            수정하기 삭제
+                        <div className="SOMEP-EIB-Info">
+                            수원 재방률 1위 / 남성펌 전문 디자이너 / 강남 대형 체인 헤어살롱 출신!
+                            1:1로 꼼꼼하게 봐드립니다
                         </div>
                     </div>
-                    <p className="SOMEPcontainer-15">
-                        <div className="SOMEPcontainer-15-sub-31"></div>
-                        <div className="SOMEPcontainer-15-sub-0"></div>
-                        <div></div>
-                    </p>
-                </div>
-                <div className="SOMEPframe-601">
-                    <div className="SOMEPframe-5942">
-                        <div className="SOMEPrectangle-1082">
-                        </div>
-                        <div className="SOMEPcontainer-16">
-                            수정하기 삭제
-                        </div>
-                    </div>
-                    <p className="SOMEPcontainer-17">
-                        <div className="SOMEPcontainer-17-sub-31"></div>
-                        <div className="SOMEPcontainer-17-sub-0"></div>
-                        <div></div>
-                    </p>
                 </div>
             </div>
         </div>
