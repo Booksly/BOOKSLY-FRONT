@@ -61,7 +61,7 @@ export default function StoreOwnerMainReservConfirm() {
                         className="mb-3"
                         transition={false}
                     >
-                        <Tab eventKey="home" title="신규순">
+                        <Tab eventKey="home" title="예약">
                             {data_SOMRC.map((reservation, index) => (
                                 <div key={index} className="SOMRC_contents_padding">
                                     <div className="SOMRC_contents">
@@ -76,14 +76,10 @@ export default function StoreOwnerMainReservConfirm() {
                                             <div className="text_right_margin">문의사항</div> {reservation.memo}
                                         </div>
                                     </div>
-                                    <div className="StandBy_buttons">
-                                        <button className="StandBy_accept">확정</button>
-                                        <button className="StandBy_reject">거절</button>
-                                    </div>
                                 </div>
                             ))}
                         </Tab>
-                        <Tab eventKey="profile" title="임박순">
+                        <Tab eventKey="profile" title="마감 설정">
                             {sortedReservations.map((reservation, index) => (
                                 <div key={index} className="SOMRC_contents_padding">
                                     <div className="SOMRC_contents">
@@ -97,10 +93,6 @@ export default function StoreOwnerMainReservConfirm() {
                                         <div className="SOMRC_content" id="text_small">
                                             <div className="text_right_margin">문의사항</div> {reservation.memo}
                                         </div>
-                                    </div>
-                                    <div className="StandBy_buttons">
-                                        <button className="StandBy_accept">확정</button>
-                                        <button className="StandBy_reject">거절</button>
                                     </div>
                                 </div>
                             ))}

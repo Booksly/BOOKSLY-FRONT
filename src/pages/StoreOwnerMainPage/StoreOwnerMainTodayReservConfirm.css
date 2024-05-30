@@ -1,9 +1,9 @@
-.StoreOwnerMainReservConfirm_padding{
+.StoreOwnerMainTodayReservConfirm .StoreOwnerMainTodayReservConfirm_padding{
     display: flex;
     align-items: center;
 }
 
-.StoreOwnerMainReservConfirm_padding > .StoreOwnerMainReservConfirm {
+.StoreOwnerMainTodayReservConfirm .StoreOwnerMainTodayReservConfirm_padding > .StoreOwnerMainTodayReservConfirm {
     width: 800px;
     height: 500px;
     background-color: rgb(255, 242, 231);
@@ -12,13 +12,13 @@
     padding: 30px;
 }
 
-.SOMRC_contents_padding{
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents_padding{
     display: flex;
     margin: 20px;
     margin-right: 0;
 }
 
-.SOMRC_contents {
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents {
     width: 680px;
     padding: 20px;
     background-color: antiquewhite;
@@ -26,33 +26,33 @@
     border-radius: 30px;
 }
 
-.SOMRC_contents > .SOMRC_content{
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents > .SOMTRC_content{
     display: flex;
     width: fit-content;
     margin-block: 10px;
 }
 
-.SOMRC_contents > .SOMRC_content > .text_right_margin {
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents > .SOMTRC_content > .text_right_margin {
     min-width: 80px;
 }
 
-.SOMRC_contents > #text_middle{
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents > #text_middle{
     font-size: 25px;
     font-weight: 550;
 }
 
-.SOMRC_contents > #text_small{
+.StoreOwnerMainTodayReservConfirm .SOMTRC_contents > #text_small{
 
 }
 
-.StandBy_buttons{
+.StoreOwnerMainTodayReservConfirm .StandBy_buttons{
     /* width: 60px; */
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.StandBy_buttons > button{
+.StoreOwnerMainTodayReservConfirm .StandBy_buttons > button{
     margin-bottom: 10px;
     margin-left: 5px;
     background-color: antiquewhite;
@@ -64,22 +64,22 @@
 
 
 /*신규순 임박순 버튼과 배경*/
-.mb-3 {
+.StoreOwnerMainTodayReservConfirm .mb-3 {
     background-color: rgb(255, 242, 231);
 }
 
-.nav-link {
+.StoreOwnerMainTodayReservConfirm .nav-link {
     background: none;
     color: gray;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.StoreOwnerMainTodayReservConfirm .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: var(--bs-nav-tabs-link-active-color);
     background-color: var(--bs-nav-tabs-link-active-bg);
     border-color: var(--bs-nav-tabs-link-active-border-color);
 }
 
-.tab-content {
+.StoreOwnerMainTodayReservConfirm .tab-content {
     background-color: white;
     height: 90%;
     margin-top: -1rem;
