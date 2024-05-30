@@ -84,12 +84,34 @@
   font-size: 17px;
   color: #000000;
 }
+.RegionSelectionPopup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
 .RegionSelectionPopup .frame-192 {
   margin: 0 35px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.RegionSelectionPopup .region-item {
+  border-bottom: 1px solid #ccc;
+  background: #ffffff;
+  padding: 10px 15px;
+  width: 885px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+.RegionSelectionPopup .region-item:hover {
+  background: #f0f0f0;
 }
 .RegionSelectionPopup .frame-170 {
   border-bottom: 3px solid #777777;
