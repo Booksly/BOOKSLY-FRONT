@@ -3,6 +3,8 @@ import './StandByReservation_Owner.css'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { useState } from "react";
+import Calen_EX from "./Calender/calendal";
+
 
 export default function StandByReservation_Owner() {
     const [key, setKey] = useState('home');

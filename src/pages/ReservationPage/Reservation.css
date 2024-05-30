@@ -3,27 +3,27 @@
     padding: 50px;
     border-radius: 30px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 1000px;
     text-align: center;
     font-size: 40px;
 }
 
-.reserve_select_option{
+.reserve_select_option {
     display: flex;
     flex-flow: column;
     align-items: center;
     margin-block: 30px;
 }
-/* 예약페이지 각 항목 제목 */
-.reserve_title{
+
+.reserve_title {
     font-size: 25px;
     font-weight: 900;
     margin-right: auto;
     margin-block: 15px;
 }
 
-.option_boxs_row{
+.option_boxs_row {
     background-color: rgb(227, 227, 227);
     padding-block: 20px;
     padding-inline: 20px;
@@ -34,26 +34,28 @@
     /* justify-content: center; */
 }
 
-.option_boxs_row > .staff_box{
+.option_boxs_row > .staff_box {
     text-align: center;
     margin: auto;
     padding: 15px;
     border-radius: 30px;
+    cursor: pointer;
 }
-.option_boxs_row > .staff_box > .staff_img{
+
+.option_boxs_row > .staff_box > .staff_img {
     width: 200px;
     height: 250px;
     background-color: gray;
     /* border-top-left-radius:30px;
     border-top-right-radius:30px; */
-
 }
 
-#isSelect {
+.option_boxs_row > .staff_box.isSelect {
     background-color: orange;
 }
+
 /* 예약하기에서 직원들 이름 폰트 */
-.option_boxs_row > .staff_box > .staff_name{
+.option_boxs_row > .staff_box > .staff_name {
     font-size: 20px;
     font-weight: 600;
     margin-top: 5px;
@@ -65,9 +67,14 @@
     border-radius: 10px;
     margin-inline: 15px;
     margin-block: 5px;
+    cursor: pointer;
 }
 
-.option_boxs_row > .time_box > .time{
+.option_boxs_row > .time_box.isSelect {
+    background-color: orange;
+}
+
+.option_boxs_row > .time_box > .time {
     font-size: 20px;
     font-weight: 400;
 }
@@ -78,7 +85,8 @@
     max-height: 100px;
 }
 
-.reservation_padding > p, .reservation_padding > button{
+.reservation_padding > p,
+.reservation_padding > button {
     font-size: 20px;
 }
 
@@ -90,7 +98,9 @@
     margin-inline: auto;
 }
 
-.reservation_padding > button, .button_big, .button_small {
+.reservation_padding > button,
+.button_big,
+.button_small {
     font-size: 20px;
     border: none;
     border-radius: 15px;
@@ -107,4 +117,3 @@
     padding-block: 10px;
     padding-inline: 30px;
 }
-
