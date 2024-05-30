@@ -43,7 +43,10 @@ import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainM
 import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
 import StoreOwnerMainEmpPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainEmpPopup";
 import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByReservation";
-
+import RegisterLastEvent from "../pages/RegisterLastEvent/RegisterLastEvent";
+import RegisterTimeEvent from "../pages/RegisterTimeEvent/RegisterTimeEvent";
+// import CheckTimeEvent from "../pages/CheckTimeEvent/CheckTimeEvent";
+// import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Routing() {
@@ -96,7 +99,11 @@ function Routing() {
           
           {/*가게주인 이벤트관련*/}
           <Route path="StandByReservation_Owner" element={<StandByReservation_Owner/>} />
-
+          <Route path="RegisterLastEvent" element={<RegisterLastEvent/>} />
+          <Route path="RegisterTimeEvent" element={<RegisterTimeEvent/>} />
+          {/* <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
+          <Route path="CheckLastEvent" element={<CheckLastEvent/>} /> */}
+          
         </Routes>
       </BrowserRouter>
     </div>
