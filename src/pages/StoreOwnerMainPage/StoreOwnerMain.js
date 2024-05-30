@@ -5,8 +5,10 @@ import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import Modal from "react-modal";
 import StoreOwnerMainDetailedPopup from "./StoreOwnerMainDetailedPopup";
-import StoreOwnerMainMenuPopup from "./StoreOwnerMainMenuPopup";
 import Select from "react-select";
+import StoreOwnerMainMenuCateg from "./StoreOwnerMainMenuCateg";
+import StoreOwnerMainEmpPopup from "./StoreOwnerMainEmpPopup";
+import StandByReservation_Owner from "../StandByReservation_Owner/StandByReservation";
 
 let options = [
     {value: "all", label: "전체"},
@@ -45,6 +47,8 @@ export default function StoreOwnerMain() {
     const [modalState, setModalState] = useState({
         firstModal: false,
         secondModal: false,
+        thirdModal: false,
+        SBROModal: false,
     });
     const openModal = (modalName) => {
         setModalState(prevState => ({ ...prevState, [modalName]: true }));
@@ -772,11 +776,21 @@ export default function StoreOwnerMain() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMframe-523">
+                                        <button className="SOMframe-523" onClick={() => openModal('SBROModal')}>
                                             <div className="SOMcontainer-20">
                                                 전체보기
                                             </div>
-                                        </div>
+                                        </button>
+                                        <Modal isOpen={modalState.SBROModal}
+                                               onRequestClose={() => closeModal('SBROModal')}
+                                               style={customStyles}>
+                                            <StandByReservation_Owner/>
+                                        </Modal>
+                                        {/*<div className="SOMframe-523">*/}
+                                        {/*    <div className="SOMcontainer-20">*/}
+                                        {/*        전체보기*/}
+                                        {/*    </div>*/}
+                                        {/*</div>*/}
                                     </div>
                                     <div className="SOMimminent-wait-list">
                                         <div className="SOMcontainer-21">
@@ -785,7 +799,7 @@ export default function StoreOwnerMain() {
                                         <div className="SOMwait-list">
                                             <div className="SOMwait-reserv-date">
                                                 <div className="SOM-wrd-date">
-                                                    3.20
+                                                3.20
                                                 </div>
                                                 <div className="SOM-wrd-time">
                                                     13:00
@@ -872,17 +886,22 @@ export default function StoreOwnerMain() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="SOMframe-523">
+                                        <button className="SOMframe-523" onClick={() => openModal('SBROModal')}>
                                             <div className="SOMcontainer-20">
                                                 전체보기
                                             </div>
-                                        </div>
+                                        </button>
+                                        <Modal isOpen={modalState.SBROModal}
+                                               onRequestClose={() => closeModal('SBROModal')}
+                                               style={customStyles}>
+                                            <StandByReservation_Owner/>
+                                        </Modal>
                                     </div>
                                 </div>
                                 <div className="SOMframe-536">
                                     <div className="SOMmonth-header-1">
                                         <div className="SOMicon-button-2">
-                                            {/*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*/}
+                                        {/*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*/}
                                         </div>
                                         <div className="SOMmonth-yyyy-1">
                                             March 2024
@@ -1230,7 +1249,7 @@ export default function StoreOwnerMain() {
                                 </div>
                             </button>
                             <Modal isOpen={modalState.secondModal} onRequestClose={() => closeModal('secondModal')} style={customStyles}>
-                                <StoreOwnerMainMenuPopup/>
+                                <StoreOwnerMainMenuCateg/>
                             </Modal>
                         </div>
                         <div className="SOMstaff-box">
@@ -1243,7 +1262,7 @@ export default function StoreOwnerMain() {
                                             제이 원장
                                         </div>
                                         <div className="SOMemp-info">
-                                          수원 재방률 1위 / 남성
+                                            수원 재방률 1위 / 남성
                                         </div>
                                     </div>
                                 </div>
@@ -1255,7 +1274,7 @@ export default function StoreOwnerMain() {
                                             심화 디자이너
                                         </div>
                                         <div className="SOMemp-info">
-                                          수원 재방률 1위 / 여성
+                                            수원 재방률 1위 / 여성
                                         </div>
                                     </div>
                                 </div>
@@ -1267,16 +1286,25 @@ export default function StoreOwnerMain() {
                                             캡 디자이너
                                         </div>
                                         <div className="SOMemp-info">
-                                          수원 재방률 1위 / 여성
+                                            수원 재방률 1위 / 여성
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="SOM-Regist-Modify">
+                            <button className="SOM-Regist-Modify" onClick={() => openModal('thirdModal')}>
                                 <div className="SOM-RM-button">
-                                  등록/수정
+                                    등록/수정
                                 </div>
-                            </div>
+                            </button>
+                            <Modal isOpen={modalState.thirdModal} onRequestClose={() => closeModal('thirdModal')}
+                                   style={customStyles}>
+                                <StoreOwnerMainEmpPopup/>
+                            </Modal>
+                            {/*<div className="SOM-Regist-Modify">*/}
+                            {/*    <div className="SOM-RM-button">*/}
+                            {/*      등록/수정*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

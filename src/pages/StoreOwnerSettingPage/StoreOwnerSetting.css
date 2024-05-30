@@ -1,0 +1,277 @@
+.StoreOwnerSetting {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    height: fit-content;
+    background: #FFFFFF;
+}
+.StoreOwnerSettingBack {
+    display: flex;
+    justify-content: center;
+}
+.StoreOwnerSetting .SOScontainerAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.StoreOwnerSetting .SOScontainer {
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 260px 0 279px 0;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-1 {
+    margin-bottom: 11px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+}
+.StoreMainSetting .SOSframe-394 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    padding: 7px 13px 9px 13px;
+    width: 500px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-2 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+.StoreMainSetting .SOSframe-395 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    padding: 7px 13px 9px 13px;
+    width: 500px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-3 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+.StoreMainSetting .SOScontainer-4 {
+    margin: 8px 14px 8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreMainSetting .SOScontainer-5 {
+    margin: 8px 32.4px 8px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreMainSetting .SOSframe-396 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 10px;
+    padding: 8px 14px;
+    width: 400px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-6 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+.StoreMainSetting .SOSframe-398 {
+    border-radius: 5px;
+    background: #FF5925;
+    display: flex;
+    padding: 10.5px 0.1px 10.5px 0;
+    width: 107px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-7 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.StoreMainSetting .SOSframe-399 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    display: flex;
+    padding: 9.5px 0.1px 9.5px 0;
+    width: 107px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-8 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FF5925;
+}
+.StoreMainSetting .SOSframe-400 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    padding: 8px 14px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSemailbooksly-co-kr {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+.StoreMainSetting .SOScontainer-9 {
+    margin-bottom: 11px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+}
+.StoreMainSetting .SOScontainer-10 {
+    margin-bottom: 11px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+}
+.StoreMainSetting .SOSframe-397 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 10px;
+    padding: 8px 14px;
+    width: 400px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-11 {
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+.StoreMainSetting .SOSframe-420 {
+    margin-right: 303px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-418 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    padding: 10px 20px;
+    width: 136px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-12 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+}
+.StoreMainSetting .SOSframe-419 {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    padding: 10px 20px;
+    width: 136px;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOScontainer-13 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+}
+.StoreMainSetting .SOSframe-657 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-658 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-659 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-660 {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-661 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-662 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-663 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-664 {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-665 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreMainSetting .SOSframe-666 {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}

@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    width: 390px;
 }
 .StoreOwnerMainCategPopup .SOMCP-Button {
     margin: 0 7px 7px 7px;

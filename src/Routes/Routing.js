@@ -43,6 +43,7 @@ import StoreOwnerMainMenuCateg from "../pages/StoreOwnerMainPage/StoreOwnerMainM
 import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuPopup";
 import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
 import StoreOwnerMainEmpPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainEmpPopup";
+import StoreOwnerSetting from "../pages/StoreOwnerSettingPage/StoreOwnerSetting";
 import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByReservation";
 import RegisterLastEvent from "../pages/RegisterLastEvent/RegisterLastEvent";
 import RegisterTimeEvent from "../pages/RegisterTimeEvent/RegisterTimeEvent";
@@ -98,7 +99,8 @@ function Routing() {
           <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
           <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
           <Route path="StoreOwnerMainEmpPopup" element={<StoreOwnerMainEmpPopup/>}/>
-          
+          <Route path="StoreOwnerSetting" element={<StoreOwnerSetting/>}/>
+
           {/*가게주인 이벤트관련*/}
           <Route path="StandByReservation_Owner" element={<StandByReservation_Owner/>} />
           <Route path="RegisterLastEvent" element={<RegisterLastEvent/>} />

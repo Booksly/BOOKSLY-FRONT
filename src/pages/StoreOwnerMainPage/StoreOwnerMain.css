@@ -639,6 +639,8 @@
     display: flex;
     align-self: flex-end;
     box-sizing: border-box;
+    border:0;
+    background: #E9E9E9;
 }
 .StoreOwnerMain .SOMcontainer-20 {
     overflow-wrap: break-word;
@@ -1047,6 +1049,8 @@
 .StoreOwnerMain .SOM-Regist-Modify {
     display: flex;
     box-sizing: border-box;
+    border: 0;
+    background: #FFFFFF;
 }
 .StoreOwnerMain .SOM-RM-button {
     overflow-wrap: break-word;
