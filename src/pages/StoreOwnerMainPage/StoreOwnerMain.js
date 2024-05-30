@@ -5,6 +5,7 @@ import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import Modal from "react-modal";
 import StoreOwnerMainDetailedPopup from "./StoreOwnerMainDetailedPopup";
+import StoreOwnerMainMenuPopup from "./StoreOwnerMainMenuPopup";
 import Select from "react-select";
 
 let options = [
@@ -15,17 +16,45 @@ let options = [
 ]
 
 export default function StoreOwnerMain() {
-    const [selectValue, setSelectValue] = useState('')
+    // const [selectValue, setSelectValue] = useState('')
+    // const selectInputRef = useRef(null);
+    // const [isOpen, setIsOpen] = useState(false);
+    // const openModal = () => {
+    //     setIsOpen(true);
+    // }
+    // const closeModal = () => {
+    //     setIsOpen(false);
+    // }
+    // const customStyles = {
+    //     overlay:{
+    //         backgroundColor: "rgba(0,0,0,0.5)",
+    //     },
+    //     content: {
+    //         width: "fit-content",
+    //         height: "fit-content",
+    //         margin: "auto",
+    //         borderRadius: "4px",
+    //         boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+    //         padding: "20px",
+    //     },
+    // };
+
+    const [selectValue, setSelectValue] = useState('');
     const selectInputRef = useRef(null);
-    const [isOpen, setIsOpen] = useState(false);
-    const openModal = () => {
-        setIsOpen(true);
+
+    const [modalState, setModalState] = useState({
+        firstModal: false,
+        secondModal: false,
+    });
+    const openModal = (modalName) => {
+        setModalState(prevState => ({ ...prevState, [modalName]: true }));
     }
-    const closeModal = () => {
-        setIsOpen(false);
+    const closeModal = (modalName) => {
+        setModalState(prevState => ({ ...prevState, [modalName]: false }));
     }
+
     const customStyles = {
-        overlay:{
+        overlay: {
             backgroundColor: "rgba(0,0,0,0.5)",
         },
         content: {
@@ -37,6 +66,7 @@ export default function StoreOwnerMain() {
             padding: "20px",
         },
     };
+
     const navigate = useNavigate()
 
     return (
@@ -132,12 +162,12 @@ export default function StoreOwnerMain() {
                                     </div>
                                 </div>
                             </div>
-                            <button className="SOMmodify-1" onClick={openModal}>
+                            <button className="SOMmodify-1" onClick={() => openModal('firstModal')}>
                                 <div className="SOMcontainer-84">
                                   수정하기
                                 </div>
                             </button>
-                            <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
+                            <Modal isOpen={modalState.firstModal} onRequestClose={() => closeModal('firstModal')} style={customStyles}>
                                 {/*<button onClick={closeModal}>✖</button>*/}
                                 <StoreOwnerMainDetailedPopup/>
                             </Modal>
@@ -1194,11 +1224,14 @@ export default function StoreOwnerMain() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="SOM-Regist-Modify">
+                            <button className="SOM-Regist-Modify" onClick={() => openModal('secondModal')}>
                                 <div className="SOM-RM-button">
                                     등록/수정
                                 </div>
-                            </div>
+                            </button>
+                            <Modal isOpen={modalState.secondModal} onRequestClose={() => closeModal('secondModal')} style={customStyles}>
+                                <StoreOwnerMainMenuPopup/>
+                            </Modal>
                         </div>
                         <div className="SOMstaff-box">
                             <div className="SOMstaff-list">

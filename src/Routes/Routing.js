@@ -39,6 +39,7 @@ import Reservation_Complete from "../pages/ReservationPage/Reservation_Complete"
 // 가게 주인 페이지
 import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
 import StoreOwnerMainDetailedPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainDetailedPopup";
+import StoreOwnerMainMenuCateg from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuCateg";
 import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuPopup";
 import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
 import StoreOwnerMainEmpPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainEmpPopup";
@@ -93,6 +94,7 @@ function Routing() {
           {/*가게주인용*/}
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
           <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
+          <Route path="StoreOwnerMainMenuCateg" element={<StoreOwnerMainMenuCateg/>}/>
           <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
           <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
           <Route path="StoreOwnerMainEmpPopup" element={<StoreOwnerMainEmpPopup/>}/>
