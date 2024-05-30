@@ -162,6 +162,64 @@
   font-size: 15px;
   color: #adadad;
 }
+.ExtraStoreRegist .frame-StoreOwnerNum {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-StoreOwnerNum {
+  margin-bottom: 12px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-SetStoreOwnerNum {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-StoreOwnerNumCont {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 10px;
+  padding: 13px 14px;
+  width: 350px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-StoreOwnerNumCont {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-StoreOwnerNumSear {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0;
+  width: 90px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-StoreOwnerNumSear {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+}
 .ExtraStoreRegist .frame-533 {
   margin-bottom: 30px;
   display: flex;

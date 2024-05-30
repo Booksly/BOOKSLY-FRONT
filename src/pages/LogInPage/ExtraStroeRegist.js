@@ -41,6 +41,19 @@ export default function ExtraStoreRegist() {
                     </div>
                   </div>
                 </div>
+                <div className="frame-StoreOwnerNum">
+                  <div className="container-StoreOwnerNum">사업자 번호</div>
+                  <div className="frame-SetStoreOwnerNum">
+                    <div className="frame-StoreOwnerNumCont">
+                      <span className="container-StoreOwnerNumCont">
+                        000-00-00000 형태로 입력
+                      </span>
+                    </div>
+                    <div className="frame-StoreOwnerNumSear">
+                      <span className="container-StoreOwnerNumSear">조회</span>
+                    </div>
+                  </div>
+                </div>
                 <div className="frame-533">
                   <div className="container-7">업체 주소</div>
                   <div className="frame-531">
