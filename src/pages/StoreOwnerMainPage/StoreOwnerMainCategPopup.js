@@ -54,10 +54,10 @@ export default function StoreOwnerMainCategPopup() {
                         </div>
                         <div className="SOMCP-CL-button">
                             <button className="SOMCP-CL-modify">
-                              수정하기
+                                수정하기
                             </button>
                             <button className="SOMCP-CL-delete">
-                              삭제
+                                삭제
                             </button>
                         </div>
                     </div>

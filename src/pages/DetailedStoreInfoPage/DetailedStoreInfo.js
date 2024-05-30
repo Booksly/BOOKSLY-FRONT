@@ -57,7 +57,7 @@ export default function DetailedStoreInfo() {
                             </div>
                             <div className="go-mypage">
                                 <span className="my-page">
-                                My Page
+                                    My Page
                                 </span>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ export default function DetailedStoreInfo() {
                             </div>
                             <div className="user-id">
                                 <span className="container-25">
-                                김아무개
+                                    김아무개
                                 </span>
                             </div>
                         </div>

@@ -1,12 +1,37 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import './StoreOwnerMainDetailedPopup.css'
+import DaumPostcode from 'react-daum-postcode';
 import Modal from "react-modal";
 import StoreOwnerMain from "./StoreOwnerMain";
 
 export default function StoreOwnerMainDetailedPopup() {
     const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
+    const [isPostOpen, setIsPostOpen] = useState(false);
+    const openPostCode = () => {
+        setIsPostOpen(true);
+    };
+
+    const handlePostCodeComplete = (data) => {
+        let fullAddress = data.address;
+        let extraAddress = '';
+
+        if (data.addressType === 'R') {
+            if (data.bname !== '') {
+                extraAddress += data.bname;
+            }
+            if (data.buildingName !== '') {
+                extraAddress += (extraAddress !== '' ? `, ${data.buildingName}` : data.buildingName);
+            }
+            fullAddress += (extraAddress !== '' ? ` (${extraAddress})` : '');
+        }
+
+        setAddress(fullAddress);
+        setIsPostOpen(false);
+    };
+
+
     const openModal = () => {
         setIsOpen(true);
     }
@@ -19,7 +44,7 @@ export default function StoreOwnerMainDetailedPopup() {
     const [text, setText] = useState({
         storeName: '',
         mainContent: '',
-        addr: '',
+        address: '',
         addrDetail: '',
         addrPlus: '',
         call: '',
@@ -44,7 +69,7 @@ export default function StoreOwnerMainDetailedPopup() {
     const onChange = (e) => {
         setStoreName(e.target.storeName);
         setMainContent(e.target.mainContent);
-        setAddr(e.target.addr);
+        setAddress(e.target.address);
         setAddrDetail(e.target.addrDetail);
         setAddrPlus(e.target.addrPlus);
         setCall(e.target.call);
@@ -68,7 +93,7 @@ export default function StoreOwnerMainDetailedPopup() {
     }
     const [storeName, setStoreName] = React.useState()
     const [mainContent, setMainContent] = React.useState()
-    const [addr, setAddr] = React.useState()
+    const [address, setAddress] = React.useState()
     const [addrDetail, setAddrDetail] = React.useState()
     const [addrPlus, setAddrPlus] = React.useState()
     const [call, setCall] = React.useState()
@@ -126,20 +151,49 @@ export default function StoreOwnerMainDetailedPopup() {
                         </div>
                         <div className="DetailedPopuplocation-address-box">
                             <div className="DetailedPopuplocation-search-box">
-                                <div className="DetailedPopuplocation-search">
-                                    <div className="DetailedPopupcontainer-42">
-                                        도로명, 지번, 건물명 검색
+                                {/*<div className="DetailedPopuplocation-search">*/}
+                                {/*    <div className="DetailedPopupcontainer-42">*/}
+                                {/*        도로명, 지번, 건물명 검색*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                <input
+                                    type="text"
+                                    value={address}
+                                    readOnly
+                                    className="DetailedPopuplocation-search"
+                                    placeholder="도로명, 지번, 건물명 검색"
+                                    autoComplete="address"
+                                />
+                                {isPostOpen && (
+                                    <div style={{
+                                        display: 'block',
+                                        position: 'absolute',
+                                        top: '100px',
+                                        zIndex: '100',
+                                        border: '1px solid',
+                                        backgroundColor: '#ffffff'
+                                    }}>
+                                        <DaumPostcode
+                                            onComplete={handlePostCodeComplete}
+                                            width={600}
+                                            height={450}
+                                            style={{display: 'block'}}
+                                        />
+                                        <button type="button" onClick={() => setIsPostOpen(false)}
+                                                style={{margin: '0 0 10px 10px', cursor: 'pointer'}} >닫기
+                                        </button>
                                     </div>
-                                </div>
-                                <div className="DetailedPopuplocation-search-button">
+                                )}
+                                <button onClick={openPostCode}
+                                    className="DetailedPopuplocation-search-button">
                                     <div className="DetailedPopupcontainer-40">
                                         검색
                                     </div>
-                                </div>
+                                </button>
                             </div>
-                            <input onChange={onChange} name="addr" value={addr}
-                                   className="DetailedPopuplocation-address"
-                            />
+                            {/*<input onChange={onChange} name="addr" value={addr}*/}
+                            {/*       className="DetailedPopuplocation-address"*/}
+                            {/*/>*/}
                             <input onChange={onChange} name="addrDetail" value={addrDetail}
                                    className="DetailedPopuplocation-detailed-address"
                             />
@@ -254,8 +308,8 @@ export default function StoreOwnerMainDetailedPopup() {
                                            className="DetailedPopupframe-250"
                                     />
                                 </div>
-                                <div className="DetailedPopupframe-3191">
-                                    <div className="DetailedPopupcontainer-13">
+                                <div className="DetailedPopupframe-319">
+                                    <div className="DetailedPopupcontainer-8">
                                         휴무
                                     </div>
                                 </div>
