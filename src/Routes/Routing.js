@@ -41,7 +41,7 @@ import StoreOwnerMain from "../pages/StoreOwnerMainPage/StoreOwnerMain";
 import StoreOwnerMainDetailedPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainDetailedPopup";
 import StoreOwnerMainMenuPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainMenuPopup";
 import StoreOwnerMainCategPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainCategPopup";
-
+import StoreOwnerMainEmpPopup from "../pages/StoreOwnerMainPage/StoreOwnerMainEmpPopup";
 import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByReservation";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -92,7 +92,7 @@ function Routing() {
           <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
           <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
           <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
-
+          <Route path="StoreOwnerMainEmpPopup" element={<StoreOwnerMainEmpPopup/>}/>
           
           {/*가게주인 이벤트관련*/}
           <Route path="StandByReservation_Owner" element={<StandByReservation_Owner/>} />

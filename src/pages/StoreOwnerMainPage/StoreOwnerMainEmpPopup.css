@@ -1,0 +1,974 @@
+.StoreOwnerMainEmpPopup .container {
+    margin-bottom: 15px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-259 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-251 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-253 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-249 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-2 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-3 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-250 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-4 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-319 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-598 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-5 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-260 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2511 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-6 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-2531 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2491 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-7 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-8 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2501 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-9 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-21 {
+    background: #D9D9D9;
+    position: relative;
+    margin-right: 35px;
+    width: 150px;
+    height: 200px;
+}
+.StoreOwnerMainEmpPopup .frame-3191 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-10 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-248 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.4);
+    margin-top: 235px;
+    display: flex;
+    padding: 8px 0.9px 8px 0;
+    width: 82px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-11 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFEFE;
+}
+.StoreOwnerMainEmpPopup .line-23 {
+    background: #FF5925;
+    margin-right: 26px;
+    width: 1px;
+    height: 680px;
+}
+.StoreOwnerMainEmpPopup .frame-602 {
+    margin-bottom: 161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-595 {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-594 {
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .rectangle-108 {
+    background: #D9D9D9;
+    margin-bottom: 2px;
+    width: 112px;
+    height: 131px;
+}
+.StoreOwnerMainEmpPopup .container-12 {
+    margin: 0 14.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.538;
+    color: #797979;
+}
+.container-13 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.333;
+}
+.container-13-sub31 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.333;
+}
+.StoreOwnerMainEmpPopup .container-13 {
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.053;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-600 {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-5941 {
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .rectangle-1081 {
+    background: #D9D9D9;
+    margin-bottom: 2px;
+    width: 112px;
+    height: 131px;
+}
+.StoreOwnerMainEmpPopup .container-14 {
+    margin: 0 14.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.538;
+    color: #797979;
+}
+.container-15 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.333;
+}
+.container-15-sub31 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.333;
+}
+.StoreOwnerMainEmpPopup .container-15 {
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.053;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-601 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-5942 {
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .rectangle-1082 {
+    background: #D9D9D9;
+    margin-bottom: 2px;
+    width: 112px;
+    height: 131px;
+}
+.StoreOwnerMainEmpPopup .container-16 {
+    margin: 0 14.1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.538;
+    color: #797979;
+}
+.container-17 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.333;
+}
+.container-17-sub31 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.333;
+}
+.StoreOwnerMainEmpPopup .container-17 {
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.053;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-18 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-592 {
+    display: flex;
+    flex-direction: column;
+    width: 205px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-590 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-bottom: 8px;
+    padding: 9px 11px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-19 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.StoreOwnerMainEmpPopup .frame-589 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-591 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-bottom: 1px;
+    padding: 9px 11px 0 11px;
+    width: fit-content;
+    height: 134px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-20 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.StoreOwnerMainEmpPopup .container-21 {
+    margin: 0 1px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 12px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-112 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-593 {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-120 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FDD2C2;
+    margin-right: 13px;
+    display: flex;
+    padding: 7px 9.2px 7px 9px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-22 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .group-111 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-132 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 13px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 9px 7px 19px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-23 {
+    margin-right: 7.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 20px;
+    color: #D9D9D9;
+}
+.StoreOwnerMainEmpPopup .frame-133 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 8px 7px 19.4px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-24 {
+    margin-right: 8.4px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 20px;
+    color: #D9D9D9;
+}
+.StoreOwnerMainEmpPopup .group-89 {
+    margin: 3px 0;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMainEmpPopup .group-90 {
+    margin: 3px 0;
+    width: 18px;
+    height: 18px;
+}
+.StoreOwnerMainEmpPopup .frame-134 {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 5px 7px 9px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-25 {
+    margin: 2px 0.7px 2px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .rectangle-219 {
+    background: #808080;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 35px;
+}
+.StoreOwnerMainEmpPopup .frame-597 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .group-110 {
+    margin-right: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-254 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2512 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-26 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-2532 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2492 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-27 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-28 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2502 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-29 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-3192 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-30 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-255 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2513 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-31 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-2533 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2493 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-32 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-33 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2503 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-34 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-3193 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-35 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-256 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2514 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-36 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup {
+    border-radius: 10px;
+    border: 1px solid #FF5925;
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: row;
+    padding: 29px 19px 29px 29px;
+    width: 883px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2534 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2494 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-37 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-38 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2504 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-39 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-3194 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-40 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-257 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2515 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-41 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-2535 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2495 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 0;
+    width: 70px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-42 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-43 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2505 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 0;
+    width: 70px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-44 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-3195 {
+    border: 1px solid #FF5925;
+    background: #FDE3D8;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-45 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-258 {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-599 {
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2516 {
+    border: 1px solid #FF5925;
+    background: rgba(255, 89, 37, 0.13);
+    display: flex;
+    padding: 4.5px 7.3px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-46 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .frame-2536 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .frame-2496 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    margin-right: 5px;
+    display: flex;
+    padding: 3px 5.2px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-47 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .container-48 {
+    margin: 4px 5.5px 4px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-2506 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 3px 3.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-49 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .frame-3196 {
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    padding: 6.5px 6.1px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .container-50 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #FF5925;
+}
+.StoreOwnerMainEmpPopup .container {
+    background: #D9D9D9;
+    position: relative;
+    width: 7px;
+    height: 70px;
+}
