@@ -9,6 +9,8 @@ import Select from "react-select";
 import StoreOwnerMainMenuCateg from "./StoreOwnerMainMenuCateg";
 import StoreOwnerMainEmpPopup from "./StoreOwnerMainEmpPopup";
 import StandByReservation_Owner from "../StandByReservation_Owner/StandByReservation";
+import StoreOwnerMainTodayReservConfirm from "./StoreOwnerMainTodayReservConfirm";
+import StoreOwnerMainReservConfirm from "./StoreOwnerMainReservConfirm";
 
 let options = [
     {value: "all", label: "전체"},
@@ -49,6 +51,8 @@ export default function StoreOwnerMain() {
         secondModal: false,
         thirdModal: false,
         SBROModal: false,
+        SOMTRCModal: false,
+        SOMRCModal: false,
     });
     const openModal = (modalName) => {
         setModalState(prevState => ({ ...prevState, [modalName]: true }));
@@ -180,14 +184,18 @@ export default function StoreOwnerMain() {
                             <div className="SOMframe-522">
                                 <div className="SOMtoday-reserv">
                                     <div className="SOMtoday">
-                                        <div className="SOMcontainer-98">
-                                          오늘 예약 -
-                                        </div>
+                                        <button className="SOMcontainer-98" onClick={() => openModal('SOMTRCModal')}>
+                                            오늘 예약
+                                        </button>
+                                        <Modal isOpen={modalState.SOMTRCModal}
+                                               onRequestClose={() => closeModal('SOMTRCModal')} style={customStyles}>
+                                            <StoreOwnerMainTodayReservConfirm/>
+                                        </Modal>
                                         <div className="SOMgroup-502">
                                             <>
                                                 <Select
                                                     className="SOMcontainer-99"
-                                                    ref = {selectInputRef}
+                                                    ref={selectInputRef}
                                                     onChange={(e) => {
                                                         if (e) {
                                                             setSelectValue(e.value);
@@ -209,14 +217,14 @@ export default function StoreOwnerMain() {
                                     </div>
                                     <div className="SOMcheck">
                                         <div className="SOMcontainer-127">
-                                          예약마감
+                                            예약마감
                                         </div>
                                         <div className="SOMcontainer-128">
-                                          마감임박할인
+                                            마감임박할인
                                         </div>
                                     </div>
                                     <div className="scroll">
-                                    <div className="SOMdldccheck">
+                                        <div className="SOMdldccheck">
                                         <div className="SOMtime-memo">
                                             <div className="SOMtime-note">
                                                 <div className="SOMcontainer-100">
@@ -397,16 +405,23 @@ export default function StoreOwnerMain() {
                                 </div>
                             </div>
                             <div className="SOMall-reserv">
-                                <div className="SOMcontainer-132">
+                                <button className="SOMcontainer-132" onClick={() => openModal('SOMRCModal')}>
                                     전체 예약
-                                </div>
+                                </button>
+                                <Modal isOpen={modalState.SOMRCModal}
+                                       onRequestClose={() => closeModal('SOMRCModal')} style={customStyles}>
+                                    <StoreOwnerMainReservConfirm/>
+                                </Modal>
+                                {/*<div className="SOMcontainer-132">*/}
+                                {/*    전체 예약*/}
+                                {/*</div>*/}
                                 <div className="SOMcalendar-example-2">
                                     <div className="SOMmonth-header">
                                         <div className="SOMicon-button">
                                             {/*<img className="SOMvector-10" src="SOMassets/vectors/Vector938_x2.svg" />*/}
                                         </div>
                                         <div className="SOMmonth-yyyy">
-                                          March 2024
+                                            March 2024
                                         </div>
                                         <div className="SOMicon-button-1">
                                             {/*<img className="SOMvector-11" src="SOMassets/vectors/Vector338_x2.svg" />*/}
@@ -414,261 +429,261 @@ export default function StoreOwnerMain() {
                                     </div>
                                     <div className="SOMweek-header">
                                         <div className="SOMbox">
-                                          <div className="SOMsun">
-                                            SUN
-                                          </div>
+                                            <div className="SOMsun">
+                                                SUN
+                                            </div>
                                         </div>
                                         <div className="SOMbox-1">
-                                          <div className="SOMmon">
-                                            MON
-                                          </div>
+                                            <div className="SOMmon">
+                                                MON
+                                            </div>
                                         </div>
                                         <div className="SOMbox-2">
-                                          <div className="SOMtue">
-                                            TUE
-                                          </div>
+                                            <div className="SOMtue">
+                                                TUE
+                                            </div>
                                         </div>
                                         <div className="SOMbox-3">
-                                          <div className="SOMwed">
-                                            WED
-                                          </div>
+                                            <div className="SOMwed">
+                                                WED
+                                            </div>
                                         </div>
                                         <div className="SOMbox-4">
-                                          <div className="SOMthu">
-                                            THU
-                                          </div>
+                                            <div className="SOMthu">
+                                                THU
+                                            </div>
                                         </div>
                                         <div className="SOMbox-5">
-                                          <div className="SOMfri">
-                                            FRI
-                                          </div>
+                                            <div className="SOMfri">
+                                                FRI
+                                            </div>
                                         </div>
                                         <div className="SOMbox-6">
-                                          <div className="SOMsat">
-                                            SAT
-                                          </div>
+                                            <div className="SOMsat">
+                                                SAT
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days">
                                         <div className="SOMcalendar-day">
-                                          <div className="SOMvalue">
-                                            25
-                                          </div>
+                                            <div className="SOMvalue">
+                                                25
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-1">
-                                          <div className="SOMvalue-1">
-                                            26
-                                          </div>
+                                            <div className="SOMvalue-1">
+                                                26
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-2">
-                                          <div className="SOMvalue-2">
-                                            27
-                                          </div>
+                                            <div className="SOMvalue-2">
+                                                27
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-3">
-                                          <div className="SOMvalue-3">
-                                            28
-                                          </div>
+                                            <div className="SOMvalue-3">
+                                                28
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-4">
-                                          <div className="SOMvalue-4">
-                                            29
-                                          </div>
+                                            <div className="SOMvalue-4">
+                                                29
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-5">
-                                          <div className="SOMvalue-5">
-                                            1
-                                          </div>
+                                            <div className="SOMvalue-5">
+                                                1
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-6">
-                                          <div className="SOMvalue-6">
-                                            2
-                                          </div>
+                                            <div className="SOMvalue-6">
+                                                2
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days-1">
                                         <div className="SOMcalendar-day-7">
-                                          <div className="SOMvalue-7">
-                                            3
-                                          </div>
+                                            <div className="SOMvalue-7">
+                                                3
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-8">
-                                          <div className="SOMvalue-8">
-                                            4
-                                          </div>
+                                            <div className="SOMvalue-8">
+                                                4
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-9">
-                                          <div className="SOMvalue-9">
-                                            5
-                                          </div>
+                                            <div className="SOMvalue-9">
+                                                5
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-10">
-                                          <div className="SOMvalue-10">
-                                            6
-                                          </div>
+                                            <div className="SOMvalue-10">
+                                                6
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-11">
-                                          <div className="SOMvalue-11">
-                                            7
-                                          </div>
+                                            <div className="SOMvalue-11">
+                                                7
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-12">
-                                          <div className="SOMvalue-12">
-                                            8
-                                          </div>
+                                            <div className="SOMvalue-12">
+                                                8
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-13">
-                                          <div className="SOMvalue-13">
-                                            9
-                                          </div>
+                                            <div className="SOMvalue-13">
+                                                9
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days-2">
                                         <div className="SOMcalendar-day-14">
-                      <div className="SOMvalue-14">
-                        10
-                      </div>
+                                            <div className="SOMvalue-14">
+                                                10
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-15">
-                      <div className="SOMvalue-15">
-                        11
-                      </div>
+                                            <div className="SOMvalue-15">
+                                                11
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-16">
-                      <div className="SOMvalue-16">
-                        12
-                      </div>
+                                            <div className="SOMvalue-16">
+                                                12
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-17">
-                      <div className="SOMvalue-17">
-                        13
-                      </div>
+                                            <div className="SOMvalue-17">
+                                                13
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-18">
-                      <div className="SOMvalue-18">
-                        14
-                      </div>
+                                            <div className="SOMvalue-18">
+                                                14
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-19">
-                      <div className="SOMvalue-19">
-                        15
-                      </div>
+                                            <div className="SOMvalue-19">
+                                                15
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-20">
-                      <div className="SOMvalue-20">
-                        16
-                      </div>
+                                            <div className="SOMvalue-20">
+                                                16
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days-3">
                                         <div className="SOMcalendar-day-21">
-                      <div className="SOMvalue-21">
-                        17
-                      </div>
+                                            <div className="SOMvalue-21">
+                                                17
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-22">
-                      <div className="SOMvalue-22">
-                        18
-                      </div>
+                                            <div className="SOMvalue-22">
+                                                18
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-23">
-                      <div className="SOMvalue-23">
-                        19
-                      </div>
+                                            <div className="SOMvalue-23">
+                                                19
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-24">
-                      <div className="SOMvalue-24">
-                        20
-                      </div>
+                                            <div className="SOMvalue-24">
+                                                20
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-25">
-                      <div className="SOMvalue-25">
-                        21
-                      </div>
+                                            <div className="SOMvalue-25">
+                                                21
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-26">
-                      <div className="SOMvalue-26">
-                        22
-                      </div>
+                                            <div className="SOMvalue-26">
+                                                22
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-27">
-                      <div className="SOMvalue-27">
-                        23
-                      </div>
+                                            <div className="SOMvalue-27">
+                                                23
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days-4">
                                         <div className="SOMcalendar-day-28">
-                      <div className="SOMvalue-28">
-                        24
-                      </div>
+                                            <div className="SOMvalue-28">
+                                                24
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-29">
-                      <div className="SOMvalue-29">
-                        25
-                      </div>
+                                            <div className="SOMvalue-29">
+                                                25
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-30">
-                      <div className="SOMvalue-30">
-                        26
-                      </div>
+                                            <div className="SOMvalue-30">
+                                                26
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-31">
-                      <div className="SOMvalue-31">
-                        27
-                      </div>
+                                            <div className="SOMvalue-31">
+                                                27
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-32">
-                      <div className="SOMvalue-32">
-                        28
-                      </div>
+                                            <div className="SOMvalue-32">
+                                                28
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-33">
-                      <div className="SOMvalue-33">
-                        29
-                      </div>
+                                            <div className="SOMvalue-33">
+                                                29
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-34">
-                      <div className="SOMvalue-34">
-                        30
-                      </div>
+                                            <div className="SOMvalue-34">
+                                                30
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="SOMweek-days-5">
                                         <div className="SOMcalendar-day-35">
-                      <div className="SOMvalue-35">
-                        31
-                      </div>
+                                            <div className="SOMvalue-35">
+                                                31
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-36">
-                      <div className="SOMvalue-36">
-                        1
-                      </div>
+                                            <div className="SOMvalue-36">
+                                                1
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-37">
-                      <div className="SOMvalue-37">
-                        2
-                      </div>
+                                            <div className="SOMvalue-37">
+                                                2
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-38">
-                      <div className="SOMvalue-38">
-                        3
-                      </div>
+                                            <div className="SOMvalue-38">
+                                                3
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-39">
-                      <div className="SOMvalue-39">
-                        4
-                      </div>
+                                            <div className="SOMvalue-39">
+                                                4
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-40">
-                      <div className="SOMvalue-40">
-                        5
-                      </div>
+                                            <div className="SOMvalue-40">
+                                                5
+                                            </div>
                                         </div>
                                         <div className="SOMcalendar-day-41">
-                      <div className="SOMvalue-41">
-                        6
-                      </div>
+                                            <div className="SOMvalue-41">
+                                                6
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -677,12 +692,12 @@ export default function StoreOwnerMain() {
                         <div className="SOMwait-reservation">
                             <div className="SOMframe-527">
                                 <div className="SOMcontainerReservCheck">
-                                  예약 확인
+                                    예약 확인
                                 </div>
                             </div>
                             <div className="SOMwait-reserv-list-calen">
                                 <div className="SOMwait-reserv-list">
-                                    <div className="SOMnew-wait-list">
+                                <div className="SOMnew-wait-list">
                                         <div className="SOMcontainer-1">
                                             신규
                                         </div>

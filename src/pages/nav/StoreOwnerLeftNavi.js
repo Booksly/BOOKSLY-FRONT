@@ -51,7 +51,7 @@ export default function StoreOwnerLeftNavi() {
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
                         </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
@@ -62,8 +62,8 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        </button>
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-allow">
@@ -74,8 +74,8 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        </button>
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-allow">
@@ -86,8 +86,8 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        </button>
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-allow">
@@ -98,7 +98,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                         <div className="StoreOwnerLeftNavicpnavi-bar">
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
@@ -111,7 +111,7 @@ export default function StoreOwnerLeftNavi() {
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
                         </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
@@ -122,8 +122,8 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        </button>
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-allow">
@@ -134,7 +134,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                         <div className="StoreOwnerLeftNavicpnavi-bar">
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
@@ -147,7 +147,7 @@ export default function StoreOwnerLeftNavi() {
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
                         </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToMain}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
@@ -158,7 +158,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                         <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToSetting}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>

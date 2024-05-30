@@ -1130,12 +1130,14 @@
     align-items: center;
 }
 .StoreOwnerMain .SOMcontainer-98 {
-    margin-right: 5.4px;
+    margin-right: 5px;
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
     color: #000000;
+    align-items: center;
+    justify-content: center;
 }
 .StoreOwnerMain .SOMgroup-502 {
     border-radius: 5px;
@@ -2559,15 +2561,15 @@
     color: rgba(68, 84, 111, 0.5);
 }
 .StoreOwnerMain .SOMcontainer-132 {
-    margin-bottom: 18px;
-    display: inline-block;
-    align-self: flex-start;
+    margin-right: 5px;
     overflow-wrap: break-word;
-    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
+    width: fit-content;
     color: #000000;
+    align-items: center;
+    justify-content: center;
 }
 .StoreOwnerMain .SOMgroup-57 {
     background: #CBCBCB;

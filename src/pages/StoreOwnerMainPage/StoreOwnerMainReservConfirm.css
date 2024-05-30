@@ -3,7 +3,7 @@
     align-items: center;
 }
 
-.StoreOwnerMainReservConfirm_padding > .StoreOwnerMainReservConfirm {
+.StoreOwnerMainReservConfirm_padding > .StoreOwnerMainReservConfirmContainer {
     width: 800px;
     height: 500px;
     background-color: rgb(255, 242, 231);
@@ -87,4 +87,159 @@
     border-bottom-right-radius: 30px;
     border: #dee2e6 solid 1px;
     overflow: scroll;
+}
+
+.StoreOwnerMainReservConfirm .SOMRCrectangle-217 {
+    background: #D9D9D9;
+    height: 366px;
+    flex-grow: 1;
+    flex-basis: 10px;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-2 {
+    margin-right: 25px;
+    width: 60px;
+    overflow-wrap: break-word;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.176;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-3 {
+    margin-right: 25px;
+    width: 60px;
+    overflow-wrap: break-word;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-4 {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-5 {
+    overflow-wrap: break-word;
+    width: 420px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-6 {
+    margin-top: 3px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-670 {
+    background: #ADADAD;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-671 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 193.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-672 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-7 {
+    overflow-wrap: break-word;
+    width: 420px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-6721 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-6711 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 193.7px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-8 {
+    margin-right: 10px;
+    width: 75px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.176;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCcontainer-9 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #000000;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-6701 {
+    background: #ADADAD;
+    width: 20px;
+    height: 20px;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-673 {
+    margin: 0 43px 311px 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    flex-grow: 1;
+    flex-basis: 572px;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-674 {
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 156px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-675 {
+    margin: 0 31.6px 9px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 31.6px);
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-676 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.StoreOwnerMainReservConfirm .SOMRCframe-678 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }

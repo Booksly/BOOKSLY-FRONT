@@ -52,8 +52,9 @@ export default function StoreOwnerMainReservConfirm() {
 
     return(
         <>
+            <div className="StoreOwnerMainReservConfirm">
             <div className="StoreOwnerMainReservConfirm_padding">
-                <div className="StoreOwnerMainReservConfirm">
+                <div className="StoreOwnerMainReservConfirmContainer">
                     <Tabs
                         id="controlled-tab-example"
                         activeKey={key}
@@ -81,17 +82,63 @@ export default function StoreOwnerMainReservConfirm() {
                         </Tab>
                         <Tab eventKey="profile" title="마감 설정">
                             {sortedReservations.map((reservation, index) => (
-                                <div key={index} className="SOMRC_contents_padding">
-                                    <div className="SOMRC_contents">
-                                        <div className="SOMRC_content" id="text_middle">
-                                            {reservation.date} {reservation.time} {reservation.owner_name}
+                                // <div key={index} className="SOMRC_contents_padding">
+                                //     <div className="SOMRC_contents">
+                                //         <div className="SOMRC_content" id="text_middle">
+                                //             {reservation.date} {reservation.time} {reservation.owner_name}
+                                //         </div>
+                                //         <div className="SOMRC_content" id="text_small">
+                                //             <div className="text_right_margin">메뉴</div>
+                                //             {reservation.content}
+                                //         </div>
+                                //         <div className="SOMRC_content" id="text_small">
+                                //             <div className="text_right_margin">문의사항</div> {reservation.memo}
+                                //         </div>
+                                //     </div>
+                                // </div>
+                                <div className="SOMRCframe-678">
+                                    <div className="SOMRCframe-675">
+                                        <div className="SOMRCframe-674">
+                                            <div className="SOMRCcontainer-3">
+                                                3.15
+                                            </div>
+                                            <div className="SOMRCcontainer-7">
+                                                제이 원장
+                                            </div>
                                         </div>
-                                        <div className="SOMRC_content" id="text_small">
-                                            <div className="text_right_margin">메뉴</div>
-                                            {reservation.content}
+                                        <div className="SOMRCcontainer-6">
+                                            예약 마감
                                         </div>
-                                        <div className="SOMRC_content" id="text_small">
-                                            <div className="text_right_margin">문의사항</div> {reservation.memo}
+                                    </div>
+                                    <div className="SOMRCframe-676">
+                                        <div className="SOMRCframe-673">
+                                            <div className="SOMRCframe-672">
+                                                <div className="SOMRCframe-671">
+                                                    <div className="SOMRCcontainer-2">
+                                                        12:30
+                                                    </div>
+                                                    <div className="SOMRCcontainer-5">
+                                                        여성 커트, 클리닉
+                                                    </div>
+                                                </div>
+                                                <div className="SOMRCframe-670">
+                                                    <div className="SOMRCcontainer-4">
+                                                        ✔️
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="SOMRCframe-6721">
+                                                <div className="SOMRCframe-6711">
+                                                    <div className="SOMRCcontainer-2">
+                                                        13:00
+                                                    </div>
+                                                    <div className="SOMRCcontainer-5">
+                                                        여성 커트, 클리닉
+                                                    </div>
+                                                </div>
+                                                <div className="SOMRCframe-6701">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +146,7 @@ export default function StoreOwnerMainReservConfirm() {
                         </Tab>
                     </Tabs>
                 </div>
-
+            </div>
             </div>
         </>
     )
