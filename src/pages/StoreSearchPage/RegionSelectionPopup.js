@@ -24,13 +24,20 @@ export default function RegionSelectionPopup() {
               },
             }
           );
-          setRegions(response.data.places.map((place) => place.name));
+          console.log(response.data); // 응답 데이터 확인
+          if (response.data && response.data.places) {
+            setRegions(response.data.places.map((place) => place.name));
+          } else {
+            setRegions([]);
+          }
         } catch (error) {
           console.error("Error fetching regions:", error);
         }
       };
 
       fetchRegions();
+    } else {
+      setRegions([]);
     }
   }, [searchTerm]);
 
@@ -67,6 +74,10 @@ export default function RegionSelectionPopup() {
                 value={searchTerm}
                 onChange={handleSearchTermChange}
               />
+              <script
+                type="text/javascript"
+                src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=libgmfjh8&submodules=geocoder"
+              ></script>
               <div className="frame-192">
                 {regions.map((region, index) => (
                   <div

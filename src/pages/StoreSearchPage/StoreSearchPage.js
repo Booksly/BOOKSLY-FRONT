@@ -62,7 +62,7 @@ export default function StoreSearchPage() {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
     content: {
-      width: "1100px",
+      width: "800px",
       height: "650px",
       margin: "auto",
       borderRadius: "4px",
