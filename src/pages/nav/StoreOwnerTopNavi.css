@@ -1,235 +1,240 @@
 .StoreOwnerTopNavi {
-    width: fit-content;
+  width: fit-content;
 }
-.StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi  {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*padding-bottom: 20px;*/
-    width: 1190px;
-    box-sizing: border-box;
+.StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*padding-bottom: 20px;*/
+  width: 1190px;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-top {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    /*margin-bottom: 20px;*/
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 1190px;
-    height: 45px;
-    box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  /*margin-bottom: 20px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 1190px;
+  height: 45px;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStoreTopNaviEtc {
-    display: flex;
-    width: fit-content;
-    flex-direction: row;
-    margin-right: 30px;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.StoreOwnerTopNavi .frame-ExtraStoreRegistButton {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavicontainer-3 {
-    margin: 1px 30px 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
+  margin: 1px 30px 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavialarm {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-right: 30px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavialarm-button {
-    background: url('../../assets/alarm_button.png') 50% / cover no-repeat;
-    margin-right: 5px;
-    width: 25px;
-    height: 25px;
+  background: url("../../assets/alarm_button.png") 50% / cover no-repeat;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavialarmId {
-    margin: 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
+  margin: 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavilogoutButton {
-    margin: 1px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
+  margin: 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
 }
 
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-bottom {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    padding-left: 60px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1190px;
-    box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1190px;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-member-info {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-profile {
-    border-radius: 35px;
-    background: #D9D9D9;
-    position: relative;
-    margin-right: 30px;
-    display: flex;
-    width: 70px;
-    height: 70px;
-    box-sizing: border-box;
+  border-radius: 35px;
+  background: #d9d9d9;
+  position: relative;
+  margin-right: 30px;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviprofileSelectButton {
-    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
-    position: relative;
-    margin-top: 23px;
-    margin-left: 25px;
-    width: 24px;
-    height: 24px;
+  background: url("../../assets/ProfileSelect.png") 50% / cover no-repeat;
+  position: relative;
+  margin-top: 23px;
+  margin-left: 25px;
+  width: 24px;
+  height: 24px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviprofile {
-    border-radius: 35px;
-    background: url('../../assets/Profile.png') 50% / cover no-repeat;
-    position: relative;
-    width: 70px;
-    height: 70px;
+  border-radius: 35px;
+  background: url("../../assets/Profile.png") 50% / cover no-repeat;
+  position: relative;
+  width: 70px;
+  height: 70px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavimember-info {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-id {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviprofileId {
-    margin-right: 15px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 17px;
-    color: #000000;
+  margin-right: 15px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviprofileInfoChangeBt {
-    margin-top: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #494949;
+  margin-top: 5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13px;
+  color: #494949;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavinumerical-summary {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: fit-content;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavivisitors {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavicontainer-9 {
-    margin-right: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  margin-right: 5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavivisitorsNum {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavitoday-visitors {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavicontainer-10 {
-    margin-right: 5px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  margin-right: 5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavitoday-visitorsNum {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviregular-customer {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavicontainer-11 {
-    margin-right: 5px;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  margin-right: 5px;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviregular-customer-num {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 
 .StoreOwnerTopNavi .StoreOwnerTopNaviStoreTopNaviAnotherStore {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNaviStoreName {
-    margin-right: 15px;
-    width: fit-content;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 25px;
-    color: #000000;
+  margin-right: 15px;
+  width: fit-content;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavianother-Store {
-    margin: 10px 0 5px 0;
-    display: flex;
-    width: 24px;
-    height: 16px;
-    box-sizing: border-box;
+  margin: 10px 0 5px 0;
+  display: flex;
+  width: 24px;
+  height: 16px;
+  box-sizing: border-box;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavibottomAllow {
-    width: 24px;
-    height: 16px;
+  width: 24px;
+  height: 16px;
 }

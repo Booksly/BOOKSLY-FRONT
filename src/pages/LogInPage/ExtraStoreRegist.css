@@ -1,0 +1,1224 @@
+.SExtratoreRegist {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: fit-content;
+  background: #fdf8f3;
+}
+.ExtraStoreRegistBack {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background: #fdf8f3;
+}
+.ExtraStoreRegist .allcontentcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+.ExtraStoreRegist .leftcontentcontainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .rightcontentcontainer {
+  margin-top: 130px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-11 {
+  margin-bottom: 20px;
+  display: block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-550 {
+  margin: 20px 279px 53px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-524 {
+  margin: 0 28px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-1 {
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-406 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-2 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-526 {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-3 {
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-512 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 13.5px 6px 13.9px;
+  width: 151px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-4 {
+  margin-right: 9px;
+  width: 96.6px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .group-131 {
+  margin: 1.7px 0;
+  width: 16px;
+  height: 14.6px;
+}
+.ExtraStoreRegist .frame-529 {
+  margin: 0 28px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-5 {
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-528 {
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-513 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  width: 450px;
+  text-align: left;
+}
+.ExtraStoreRegist .container-6 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-533 {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-7 {
+  margin-bottom: 11px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-531 {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-515 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 9px;
+  padding: 13px 14px;
+  width: 350px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-8 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-516 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  padding: 13px 0;
+  width: 90px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.ExtraStoreRegist .container-9 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+}
+.ExtraStoreRegist .frame-532 {
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-517 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-10 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-5331 {
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-5171 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-12 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-548 {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .sns {
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-547 {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-407 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 9px;
+  padding: 13px 14px;
+  width: 350px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .url {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-537 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  padding: 13px 0.4px 13px 0;
+  width: 90px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.ExtraStoreRegist .container-13 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+}
+.ExtraStoreRegist .frame-5281 {
+  margin-right: 28px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-5131 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  padding: 13px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .www-booksly-com {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-549 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-14 {
+  margin: 0 17px 9px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-133 {
+  border-radius: 50px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 4px 5px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-317 {
+  border-radius: 50px;
+  background: #ff5925;
+  margin-right: 7px;
+  display: flex;
+  padding: 3px 12.6px 3px 12px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-15 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-318 {
+  border-radius: 50px;
+  background: #d9d9d9;
+  display: flex;
+  padding: 3px 10.8px 3px 10px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-16 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-574 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-572 {
+  margin-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-571 {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-17 {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .container-18 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-569 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-24 {
+  background: url("../../assets/clockIcon.png") 50% / cover no-repeat;
+  margin: 0 15px 180px 0;
+  width: 13px;
+  height: 13px;
+}
+.ExtraStoreRegist .frame-558 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-254 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-251 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-19 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-253 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-249 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-20 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-21 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-250 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-22 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-319 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-23 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-551 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2511 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-25 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2531 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2491 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-26 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-27 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2501 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-28 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3191 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-29 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-552 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2512 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-30 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2532 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2492 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-31 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-32 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2502 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-33 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3192 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-34 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-553 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2513 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-35 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2533 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2493 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-36 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-37 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2503 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-38 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3193 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-39 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-554 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2514 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-40 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2534 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2494 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-41 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-42 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2504 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-43 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3194 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-44 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-5521 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2515 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-45 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2535 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2495 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-46 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-47 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2505 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-48 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3195 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-49 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-555 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2516 {
+  border: 1px solid #ff5925;
+  background: rgba(255, 89, 37, 0.13);
+  display: flex;
+  padding: 2.5px 4.6px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-50 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-2536 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-2496 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  padding: 2.5px 14.4px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-51 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-52 {
+  margin: 3.5px 5.1px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-2506 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 2.5px 13.3px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-53 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-3196 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  padding: 1.5px 6.2px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-54 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #ff5925;
+}
+.ExtraStoreRegist .frame-560 {
+  margin-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-5501 {
+  margin-bottom: 13px;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-55 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-559 {
+  display: flex;
+  flex-direction: row;
+  width: 247px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-5121 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-right: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 14px 6px 14.1px;
+  width: 120px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-56 {
+  margin-right: 9px;
+  width: 65.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .group-132 {
+  margin: 1.5px 0;
+  width: 15px;
+  height: 15px;
+}
+.ExtraStoreRegist .frame-514 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 14px 6px 14.1px;
+  width: 120px;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-64 {
+  margin-right: 9px;
+  width: 65.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .group-1311 {
+  margin: 1.5px 0;
+  width: 15px;
+  height: 15px;
+}
+.ExtraStoreRegist .frame-567 {
+  margin-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-57 {
+  margin-bottom: 15px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-566 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .frame-4071 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-bottom: 9px;
+  padding: 13px 14px 167px 14px;
+  width: 450px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ExtraStoreRegist .container-58 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #adadad;
+}
+.ExtraStoreRegist .frame-109 {
+  margin: 0 0.4px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-59 {
+  margin: 2.5px 5.6px 2.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-60 {
+  margin-right: 5.8px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+}
+.ExtraStoreRegist .container-61 {
+  margin: 2.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+}
+.ExtraStoreRegist .frame-573 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .container-62 {
+  margin-bottom: 9px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+.ExtraStoreRegist .frame-568 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  position: relative;
+  align-self: flex-start;
+  width: 150px;
+  height: 150px;
+}
+.ExtraStoreRegist .vector-2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 30px;
+  height: 30px;
+}
+.ExtraStoreRegist .frame-536 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  margin: 50px 36px 0 36px;
+  display: flex;
+  align-self: flex-end;
+  padding: 13px 13.8px;
+  width: 100px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.ExtraStoreRegist .frame-ExtraStoreRegistFinButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.ExtraStoreRegist .container-63 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+  white-space: nowrap;
+}

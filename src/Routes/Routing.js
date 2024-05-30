@@ -21,6 +21,7 @@ import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
 import StoreOwnerMemRegist from "../pages/LogInPage/StoreOwnerMemRegist";
 import StoreRegist from "../pages/LogInPage/StoreRegist";
+import ExtraStoreRegist from "../pages/LogInPage/ExtraStroeRegist";
 
 // My Home 페이지
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
@@ -60,13 +61,22 @@ function Routing() {
         <Routes>
           {/*시작 메인 페이지*/}
           <Route path="/ss" element={<Test44 />} />
-          <Route path="/" element={<Mainmain />} >
-            <Route path="login" element={<LoginAfterMainHeader/>} />
+          <Route path="/" element={<Mainmain />}>
+            <Route path="login" element={<LoginAfterMainHeader />} />
           </Route>
           {/*헤더 & 내비게이션*/}
-          <Route path="/LoginAfterMainHeader" element={<LoginAfterMainHeader />}/>
-          <Route path="/LoginBeforeMainHeader" element={<LoginBeforeMainHeader />}/>
-          <Route path="/LoginAfterTodayReservNav" element={<LoginAfterTodayReservNav />}/>
+          <Route
+            path="/LoginAfterMainHeader"
+            element={<LoginAfterMainHeader />}
+          />
+          <Route
+            path="/LoginBeforeMainHeader"
+            element={<LoginBeforeMainHeader />}
+          />
+          <Route
+            path="/LoginAfterTodayReservNav"
+            element={<LoginAfterTodayReservNav />}
+          />
           <Route path="/MyHomeNavi" element={<MyHomeNavi />} />
           <Route path="/MyHomeLeftNavi" element={<MyHomeLeftNavi />} />
           <Route path="/MyHomeTopNavi" element={<MyHomeTopNavi />} />
@@ -80,8 +90,12 @@ function Routing() {
           <Route path="/CustomerLogin" element={<CustomerLogin />} />
           <Route path="/StoreOwnerLogin" element={<StoreOwnerLogin />} />
 
-          <Route path="/StoreOwnerMemRegist" element={<StoreOwnerMemRegist />}/>
+          <Route
+            path="/StoreOwnerMemRegist"
+            element={<StoreOwnerMemRegist />}
+          />
           <Route path="/StoreRegist" element={<StoreRegist />} />
+          <Route path="/ExtraStoreRegist" element={<ExtraStoreRegist />} />
           {/*고객 My Home*/}
           <Route path="/MyHomeMain" element={<MyHomeMain />} />
           <Route path="/MyHomeAllReserv" element={<MyHomeAllReserv />} />
@@ -93,25 +107,51 @@ function Routing() {
           <Route path="/StoreSearch" element={<StoreSearch />} />
           <Route path="/DetailedStoreInfo" element={<DetailedStoreInfo />} />
           <Route path="/Reservation" element={<Reservation />} />
-          <Route path="/Reservation_Complete" element={<Reservation_Complete/>}/>
+          <Route
+            path="/Reservation_Complete"
+            element={<Reservation_Complete />}
+          />
           {/*가게주인용*/}
           <Route path="StoreOwnerMain" element={<StoreOwnerMain />} />
-          <Route path="StoreOwnerMainDetailedPopup" element={<StoreOwnerMainDetailedPopup/>}/>
-          <Route path="StoreOwnerMainMenuCateg" element={<StoreOwnerMainMenuCateg/>}/>
-          <Route path="StoreOwnerMainMenuPopup" element={<StoreOwnerMainMenuPopup/>}/>
-          <Route path="StoreOwnerMainCategPopup" element={<StoreOwnerMainCategPopup/>}/>
-          <Route path="StoreOwnerMainEmpPopup" element={<StoreOwnerMainEmpPopup/>}/>
-          <Route path="StoreOwnerMainReservConfirm" element={<StoreOwnerMainReservConfirm/>}/>
-          <Route path="StoreOwnerMainTodayReservConfirm" element={<StoreOwnerMainTodayReservConfirm/>}/>
-          <Route path="StoreOwnerSetting" element={<StoreOwnerSetting/>}/>
+          <Route
+            path="StoreOwnerMainDetailedPopup"
+            element={<StoreOwnerMainDetailedPopup />}
+          />
+          <Route
+            path="StoreOwnerMainMenuCateg"
+            element={<StoreOwnerMainMenuCateg />}
+          />
+          <Route
+            path="StoreOwnerMainMenuPopup"
+            element={<StoreOwnerMainMenuPopup />}
+          />
+          <Route
+            path="StoreOwnerMainCategPopup"
+            element={<StoreOwnerMainCategPopup />}
+          />
+          <Route
+            path="StoreOwnerMainEmpPopup"
+            element={<StoreOwnerMainEmpPopup />}
+          />
+          <Route
+            path="StoreOwnerMainReservConfirm"
+            element={<StoreOwnerMainReservConfirm />}
+          />
+          <Route
+            path="StoreOwnerMainTodayReservConfirm"
+            element={<StoreOwnerMainTodayReservConfirm />}
+          />
+          <Route path="StoreOwnerSetting" element={<StoreOwnerSetting />} />
 
           {/*가게주인 이벤트관련*/}
-          <Route path="StandByReservation_Owner" element={<StandByReservation_Owner/>} />
-          <Route path="RegisterLastEvent" element={<RegisterLastEvent/>} />
-          <Route path="RegisterTimeEvent" element={<RegisterTimeEvent/>} />
+          <Route
+            path="StandByReservation_Owner"
+            element={<StandByReservation_Owner />}
+          />
+          <Route path="RegisterLastEvent" element={<RegisterLastEvent />} />
+          <Route path="RegisterTimeEvent" element={<RegisterTimeEvent />} />
           {/* <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
           <Route path="CheckLastEvent" element={<CheckLastEvent/>} /> */}
-          
         </Routes>
       </BrowserRouter>
     </div>
