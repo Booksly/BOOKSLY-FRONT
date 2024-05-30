@@ -1,23 +1,33 @@
 import './StoreOwnerLeftNavi.css'
 import searchbar from "../../assets/search_button.png";
 import polygon from "../../assets/polygon.png";
-import React from "react";
+import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 export default function StoreOwnerLeftNavi() {
     const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/StoreOwnerMain")
+    }
+    const goToDetail = () => {
+        navigate("/StoreOwnerMain")
+    }
+    const goToSetting = () => {
+        navigate("/StoreOwnerSetting")
+    }
+
     return (
         <div className="StoreOwnerLeftNavi">
             <div className="StoreOwnerLeftNavicpsk-navi">
                 <div className="StoreOwnerLeftNavicontainer">
                     <div className="StoreOwnerLeftNavicpnavi-logo">
-                        <div className="StoreOwnerLeftNavibooksly-logo">
-                        </div>
+                        <button className="StoreOwnerLeftNavibooksly-logo" onClick={goToMain}>
+                        </button>
                         <div className="StoreOwnerLeftNavilogoLine">
                         </div>
                     </div>
                     <div className="StoreOwnerLeftNavicpsk-navi-bar">
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToDetail}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
@@ -28,7 +38,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                         <div className="StoreOwnerLeftNavicpnavi-bar">
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
@@ -149,7 +159,7 @@ export default function StoreOwnerLeftNavi() {
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
                         </div>
-                        <div className="StoreOwnerLeftNavicpnavi-bar">
+                        <button className="StoreOwnerLeftNavicpnavi-bar" onClick={goToSetting}>
                             <div className="StoreOwnerLeftNavicpnaviLineTop">
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
@@ -160,7 +170,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicpnaviLineBottom">
                             </div>
-                        </div>
+                        </button>
                     </div>
                     <div className="StoreOwnerLeftNavinaviBottomLine">
                     </div>

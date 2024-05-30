@@ -15,19 +15,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    justify-content: center;
     box-sizing: border-box;
 }
 .StoreOwnerSetting .SOScontainer {
-    background: #FDF8F3;
     display: flex;
+    margin-top: 2px;
+    width: 1190px;
+    background: #FDF8F3;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    flex-direction: column;
+}
+.StoreOwnerSetting .SOSBox {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 260px 0 279px 0;
-    width: 1440px;
+    padding: 50px 0;
+    width: 800px;
+    height: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-1 {
+.StoreOwnerSetting .SOSframe-666 {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerSetting .SOS-modify-buttonBox {
+    margin-top: 20px;
+    align-items: flex-end;
+    width: 600px;
+    justify-content: center;
+}
+.StoreOwnerSetting .SOS-modify-button {
+    justify-content: center;
+    border: 0;
+    background: #FFFFFF;
+    font-size: 20px;
+}
+.StoreOwnerSetting .SOScontainer-1 {
     margin-bottom: 11px;
     display: inline-block;
     align-self: flex-start;
@@ -36,7 +69,7 @@
     font-size: 24px;
     color: #000000;
 }
-.StoreMainSetting .SOSframe-394 {
+.StoreOwnerSetting .SOSframe-394 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -44,13 +77,13 @@
     width: 500px;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-2 {
+.StoreOwnerSetting .SOScontainer-2 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 18px;
     color: #D3D3D3;
 }
-.StoreMainSetting .SOSframe-395 {
+.StoreOwnerSetting .SOSframe-395 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -58,13 +91,13 @@
     width: 500px;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-3 {
+.StoreOwnerSetting .SOScontainer-3 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 18px;
     color: #D3D3D3;
 }
-.StoreMainSetting .SOScontainer-4 {
+.StoreOwnerSetting .SOScontainer-4 {
     margin: 8px 14px 8px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -72,7 +105,7 @@
     font-size: 20px;
     color: #000000;
 }
-.StoreMainSetting .SOScontainer-5 {
+.StoreOwnerSetting .SOScontainer-5 {
     margin: 8px 32.4px 8px 0;
     display: inline-block;
     overflow-wrap: break-word;
@@ -80,7 +113,7 @@
     font-size: 20px;
     color: #000000;
 }
-.StoreMainSetting .SOSframe-396 {
+.StoreOwnerSetting .SOSframe-396 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -89,41 +122,44 @@
     width: 400px;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-6 {
+.StoreOwnerSetting .SOScontainer-6 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 18px;
     color: #D3D3D3;
 }
-.StoreMainSetting .SOSframe-398 {
+.StoreOwnerSetting .SOSframe-398 {
     border-radius: 5px;
     background: #FF5925;
     display: flex;
-    padding: 10.5px 0.1px 10.5px 0;
     width: 107px;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-7 {
+.StoreOwnerSetting .SOScontainer-7 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 16px;
     color: #FFFFFF;
 }
-.StoreMainSetting .SOSframe-399 {
+.StoreOwnerSetting .SOSframe-399 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     display: flex;
-    padding: 9.5px 0.1px 9.5px 0;
+    /*padding: 9.5px 0.1px 9.5px 0;*/
     width: 107px;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
-.StoreMainSetting .SOScontainer-8 {
+.StoreOwnerSetting .SOScontainer-8 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 16px;
     color: #FF5925;
 }
-.StoreMainSetting .SOSframe-400 {
+.StoreOwnerSetting .SOSframe-400 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -131,13 +167,13 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSemailbooksly-co-kr {
+.StoreOwnerSetting .SOSemailbooksly-co-kr {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 18px;
     color: #D3D3D3;
 }
-.StoreMainSetting .SOScontainer-9 {
+.StoreOwnerSetting .SOScontainer-9 {
     margin-bottom: 11px;
     display: inline-block;
     align-self: flex-start;
@@ -146,7 +182,7 @@
     font-size: 24px;
     color: #111111;
 }
-.StoreMainSetting .SOScontainer-10 {
+.StoreOwnerSetting .SOScontainer-10 {
     margin-bottom: 11px;
     display: inline-block;
     align-self: flex-start;
@@ -155,7 +191,7 @@
     font-size: 24px;
     color: #111111;
 }
-.StoreMainSetting .SOSframe-397 {
+.StoreOwnerSetting .SOSframe-397 {
     border-radius: 5px;
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -164,96 +200,93 @@
     width: 400px;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-11 {
+.StoreOwnerSetting .SOScontainer-11 {
     overflow-wrap: break-word;
     font-weight: 300;
     font-size: 18px;
     color: #D3D3D3;
 }
-.StoreMainSetting .SOSframe-420 {
-    margin-right: 303px;
+.StoreOwnerSetting .SOSframe-420 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 327px;
+    width: 600px;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-418 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.StoreOwnerSetting .SOSframe-418 {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     padding: 10px 20px;
-    width: 136px;
+    width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOScontainer-12 {
+.StoreOwnerSetting .SOScontainer-12 {
     overflow-wrap: break-word;
-    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #111111;
+}
+.StoreOwnerSetting .SOSframe-419 {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    padding: 10px 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerSetting .SOScontainer-13 {
+    overflow-wrap: break-word;
     font-weight: 400;
     font-size: 24px;
     color: #111111;
 }
-.StoreMainSetting .SOSframe-419 {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    padding: 10px 20px;
-    width: 136px;
-    box-sizing: border-box;
-}
-.StoreMainSetting .SOScontainer-13 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 24px;
-    color: #111111;
-}
-.StoreMainSetting .SOSframe-657 {
+.StoreOwnerSetting .SOSframe-657 {
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-658 {
+.StoreOwnerSetting .SOSframe-658 {
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-659 {
+.StoreOwnerSetting .SOSframe-659 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-660 {
+.StoreOwnerSetting .SOSframe-660 {
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-661 {
+.StoreOwnerSetting .SOSframe-661 {
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-662 {
+.StoreOwnerSetting .SOSframe-662 {
     display: flex;
     flex-direction: row;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-663 {
+.StoreOwnerSetting .SOSframe-663 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-664 {
+.StoreOwnerSetting .SOSframe-664 {
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -261,17 +294,10 @@
     width: fit-content;
     box-sizing: border-box;
 }
-.StoreMainSetting .SOSframe-665 {
+.StoreOwnerSetting .SOSframe-665 {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreMainSetting .SOSframe-666 {
-    margin-bottom: 56px;
-    display: flex;
-    flex-direction: column;
     width: fit-content;
     box-sizing: border-box;
 }
