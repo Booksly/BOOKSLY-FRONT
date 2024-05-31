@@ -1,0 +1,123 @@
+.StoreRegistNav {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: fit-content;
+    background: #fdf8f3;
+    flex-shrink: 0;
+}
+.StoreRegistNavBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.StoreRegistNav .StoreRegistNavheader-inner-before {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 1440px;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavheader-inner-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 268px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavlogo-goto-home {
+    margin-top: 5px;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.StoreRegistNav .frame-MainHomeButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.StoreRegistNav .StoreRegistNavbooksly-logo {
+    border-radius: 23px;
+    background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
+    width: 100px;
+    height: 50px;
+}
+.StoreRegistNav .StoreRegistNavheader-buttons {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavcurrentNav {
+    background: #ffffff;
+    display: flex;
+    padding: 21px 35px 10px 35px;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavcurrentPageBar {
+    /*border-bottom: 4px solid #FF5925;*/
+    display: flex;
+}
+.StoreRegistNav .StoreRegistNavnav-box {
+    background: #ffffff;
+    display: flex;
+    padding: 21px 35px 21px 35px;
+    box-sizing: border-box;
+}
+.StoreRegistNav .frame-StoreSearchButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.StoreRegistNav .StoreRegistNavPageName {
+    overflow-wrap: break-word;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    color: #000000;
+    white-space: nowrap;
+}
+.StoreRegistNav .StoreRegistNavheader-inner-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavheaderRightDiv {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.StoreRegistNav .StoreRegistNavicon {
+    margin: 1px 10px 1px 0;
+    box-sizing: border-box;
+}
+.StoreRegistNav .StoreRegistNavhome {
+    width: 20px;
+    height: 20px;
+}
+.StoreRegistNav .StoreRegistNavgo-mypage {
+    display: flex;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+.StoreRegistNav .StoreRegistNavmy-page {
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}

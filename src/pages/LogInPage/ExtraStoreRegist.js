@@ -3,6 +3,7 @@ import storeimgadd from "../../assets/AddStoreImg_button.png";
 import sort from "../../assets/sort_button.png";
 import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
+import StoreRegistNav from "../nav/StoreRegistNav";
 
 export default function ExtraStoreRegist() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ export default function ExtraStoreRegist() {
   return (
     <div className="ExtraStoreRegist">
       <div className="ExtraStoreRegistBack">
-        <LoginPageNav></LoginPageNav>
+        <StoreRegistNav/>
         <div className="container">
           <div className="allcontentcontainer">
             <div className="leftcontentcontainer">

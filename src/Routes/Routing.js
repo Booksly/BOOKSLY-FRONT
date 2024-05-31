@@ -12,6 +12,7 @@ import StoreOwnerLeftNavi from "../pages/nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../pages/nav/StoreOwnerTopNavi";
 import StoreOwnerNavi from "../pages/nav/StoreOwnerNavi";
 import LoginPageNav from "../pages/nav/LoginPageNav";
+import StoreRegistNav from "../pages/nav/StoreRegistNav";
 
 // Main Home 페이지
 import Main from "../pages/MainPage/Main";
@@ -21,7 +22,7 @@ import CustomerLogin from "../pages/LogInPage/CustomerLogInPage";
 import StoreOwnerLogin from "../pages/LogInPage/StoreOwnerLogInPage";
 import StoreOwnerMemRegist from "../pages/LogInPage/StoreOwnerMemRegist";
 import StoreRegist from "../pages/LogInPage/StoreRegist";
-import ExtraStoreRegist from "../pages/LogInPage/ExtraStroeRegist";
+import ExtraStoreRegist from "../pages/LogInPage/ExtraStoreRegist";
 
 // My Home 페이지
 import MyHomeMain from "../pages/MyHomeMainPage/MyHomeMain";
@@ -84,6 +85,7 @@ function Routing() {
           <Route path="/StoreOwnerTopNavi" element={<StoreOwnerTopNavi />} />
           <Route path="/StoreOwnerNavi" element={<StoreOwnerNavi />} />
           <Route path="/LoginPageNav" element={<LoginPageNav />} />
+          <Route path="/StoreRegistNav" element={<StoreRegistNav/>}/>
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
           {/*로그인 페이지*/}

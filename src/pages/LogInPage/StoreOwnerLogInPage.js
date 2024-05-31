@@ -1,9 +1,13 @@
 import "./StoreOwnerLogInPage.css";
+import React, {useState} from "react";
 import LoginPageNav from "../nav/LoginPageNav";
 import advert from "../../assets/Advert_image.png";
 import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerLogInPage() {
+  const [id, setId] = useState('')
+  const [password, setPassword] = useState('')
+
   const navigate = useNavigate();
   const goToStoreOwnerMemRegist = () => {
     navigate("/StoreOwnerMemRegist");
@@ -14,6 +18,9 @@ export default function StoreOwnerLogInPage() {
   const goToStoreOwnerLogIn = () => {
     navigate("/StoreOwnerLogIn");
   };
+  const goToStoreMain = () => {
+    navigate("/StoreOwnerMain");
+  }
   return (
     <div className="StoreOwnerLogInPage">
       <div className="StoreOwnerLogInPageBack">
@@ -27,13 +34,13 @@ export default function StoreOwnerLogInPage() {
                   className="frame-CustomerLoginButton"
                   onClick={goToCustomerLogIn}
                 >
-                  <span className="Customer">개인회원</span>
+                  <div className="Customer">개인회원</div>
                 </button>
                 <button
                   className="frame-StoreOwnerLoginButton"
                   onClick={goToStoreOwnerLogIn}
                 >
-                  <span className="StoreOwner">기업회원</span>
+                  <div className="StoreOwner">기업회원</div>
                 </button>
               </div>
             </div>
@@ -48,15 +55,16 @@ export default function StoreOwnerLogInPage() {
                   <div className="container-4">아이디 저장</div>
                 </div>
               </div>
-              <div className="frame-406">
-                <span className="container-5">아이디</span>
-              </div>
-              <div className="frame-407">
-                <span className="container-6">비밀번호</span>
-              </div>
-              <div className="frame-408">
-                <span className="container-7">로그인</span>
-              </div>
+              <input className="frame-406"
+              placeholder="아이디"
+              value={id}
+              onChange={(e) => setId(e.target.value)}/>
+              <input className="frame-407"
+              placeholder="비밀번호" type="password"
+              onChange={(e) => setPassword(e.target.value)}/>
+              <button className="frame-408" onClick={goToStoreMain}>
+                <div className="container-7">로그인</div>
+              </button>
               <div className="frame-109">
                 <button
                   className="frame-StoreOwnerMemRegistButton"
@@ -64,7 +72,7 @@ export default function StoreOwnerLogInPage() {
                 >
                   <div className="container-8">회원가입</div>
                 </button>
-                <span className="container-9">|</span>
+                <div className="container-9">|</div>
                 <div className="container-10">아이디/비밀번호 찾기</div>
               </div>
             </div>
