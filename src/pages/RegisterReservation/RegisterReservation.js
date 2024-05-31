@@ -1,7 +1,7 @@
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
 
-export default function RegisterLastEvent() {
+export default function RegisterReservation() {
     return(
         <div className="StoreOwnerMain">
                 <div className="StoreOwnerMainBack">

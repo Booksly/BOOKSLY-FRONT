@@ -51,8 +51,8 @@ import StoreOwnerMainReservConfirm from "../pages/StoreOwnerMainPage/StoreOwnerM
 import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByReservation";
 import RegisterLastEvent from "../pages/RegisterLastEvent/RegisterLastEvent";
 import RegisterTimeEvent from "../pages/RegisterTimeEvent/RegisterTimeEvent";
-// import CheckTimeEvent from "../pages/CheckTimeEvent/CheckTimeEvent";
-// import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent";
+import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent ";
+import CheckTimeEvent from "../pages/CheckTimeEvent/CheckTimeEvent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Routing() {
@@ -152,8 +152,8 @@ function Routing() {
           />
           <Route path="RegisterLastEvent" element={<RegisterLastEvent />} />
           <Route path="RegisterTimeEvent" element={<RegisterTimeEvent />} />
-          {/* <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
-          <Route path="CheckLastEvent" element={<CheckLastEvent/>} /> */}
+          <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
+          <Route path="CheckLastEvent" element={<CheckLastEvent/>} />
         </Routes>
       </BrowserRouter>
     </div>
