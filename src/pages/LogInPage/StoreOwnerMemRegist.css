@@ -1,55 +1,59 @@
 .StoreOwnerMemRegist {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: fit-content;
   background: #fdf8f3;
 }
 .StoreOwnerMemRegistBack {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 60px;
 }
-.container {
+.StoreOwnerMemRegist .SOMRcontainer {
   display: flex;
-  flex: 1;
+  /*flex: 1;*/
   justify-content: center;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
   background: #fdf8f3;
+  flex-direction: column;
+  width: 1440px;
 }
-.StoreOwnerMemRegist .allcontentcontainer {
+.StoreOwnerMemRegist .SOMRallcontentcontainer {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  /*width: 80%;*/
   justify-content: space-between;
 }
-.StoreOwnerMemRegist .leftcontentcontainer {
+.StoreOwnerMemRegist .SOMRleftcontentcontainer {
   margin-right: 30px;
   display: flex;
   flex-direction: column;
-  width: 48%;
+  /*width: 48%;*/
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .rightcontentcontainer {
+.StoreOwnerMemRegist .SOMRrightcontentcontainer {
   margin-top: 50px;
   margin-left: 150px;
   display: flex;
   flex-direction: column;
-  width: 48%;
+  /*width: 48%;*/
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .IdMaking_Box {
+.StoreOwnerMemRegist .SOMRIdMaking_Box {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-510 {
+.StoreOwnerMemRegist .SOMRframe-510 {
   margin-bottom: 61px;
   display: flex;
   flex-direction: column;
@@ -58,13 +62,13 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .line-5 {
+.StoreOwnerMemRegist .SOMRline-5 {
   background: #ff5925;
   margin-bottom: 3px;
   width: 100px;
   height: 5px;
 }
-.StoreOwnerMemRegist .frame-10 {
+.StoreOwnerMemRegist .SOMRframe-10 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -72,7 +76,7 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .Customer {
+.StoreOwnerMemRegist .SOMRCustomer {
   margin-right: 30px;
   overflow-wrap: break-word;
   font-family: "Inter";
@@ -81,7 +85,7 @@
   color: #000000;
   white-space: nowrap;
 }
-.StoreOwnerMemRegist .StoreOwner {
+.StoreOwnerMemRegist .SOMRStoreOwner {
   margin-left: 30px;
   overflow-wrap: break-word;
   font-family: "Inter";
@@ -90,18 +94,18 @@
   color: #000000;
   white-space: nowrap;
 }
-.StoreOwnerMemRegist .frame-77 {
+.StoreOwnerMemRegist .SOMRframe-77 {
   margin-bottom: 148.5px;
   display: flex;
   width: 410px;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-ThisPageButton {
+.StoreOwnerMemRegist .SOMRframe-ThisPageButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.StoreOwnerMemRegist .frame-406 {
+.StoreOwnerMemRegist .SOMRframe-406 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
@@ -112,21 +116,21 @@
   height: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-3 {
+.StoreOwnerMemRegist .SOMRcontainer-3 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #ffffff;
 }
-.StoreOwnerMemRegist .frame-109 {
+.StoreOwnerMemRegist .SOMRframe-109 {
   margin-right: 1.1px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-4 {
+.StoreOwnerMemRegist .SOMRcontainer-4 {
   margin-top: 3.5px;
   margin-right: 5.6px;
   overflow-wrap: break-word;
@@ -135,130 +139,135 @@
   font-size: 13px;
   color: #000000;
 }
-.StoreOwnerMemRegist .frame-StoreOwnerLoginButton {
+.StoreOwnerMemRegist .SOMRframe-StoreOwnerLoginButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.StoreOwnerMemRegist .container-5 {
+.StoreOwnerMemRegist .SOMRcontainer-5 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
 }
-.StoreOwnerMemRegist .frame-18 {
+.StoreOwnerMemRegist .SOMRframe-18 {
   margin: 0 28px 25px 0;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-18 {
+.StoreOwnerMemRegist .SOMRcontainer-18 {
   margin: 0 326px 50px 0;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 700;
   font-size: 25px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-535 {
+.StoreOwnerMemRegist .SOMRframe-535 {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-524 {
+.StoreOwnerMemRegist .SOMRframe-524 {
   margin: 0 28px 25px 0;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-17 {
+.StoreOwnerMemRegist .SOMRcontainer-17 {
   margin-bottom: 16px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-4061 {
+.StoreOwnerMemRegist .SOMR-id-button {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreOwnerMemRegist .SOMRframe-4061 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
-  width: 450px;
+  margin-right: 10px;
+  font-size: 15px;
+  padding-left: 14px;
+  height: 50px;
+  width: 350px;
   box-sizing: border-box;
   text-align: left;
 }
-.StoreOwnerMemRegist .container-6 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
+.StoreOwnerMemRegist .SOMR-idbutton {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90px;
+  box-sizing: border-box;
+  color: #FFFFFF;
 }
-.StoreOwnerMemRegist .frame-526 {
+.StoreOwnerMemRegist .SOMRframe-526 {
   margin: 0 28px 25px 0;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-19 {
+.StoreOwnerMemRegist .SOMRcontainer-19 {
   margin-bottom: 16px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-512 {
+.StoreOwnerMemRegist .SOMRframe-512 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  padding-left: 14px;
   width: 450px;
+  height: 50px;
   box-sizing: border-box;
   text-align: left;
-}
-.StoreOwnerMemRegist .container-7 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
-  color: #adadad;
 }
-.StoreOwnerMemRegist .frame-529 {
+.StoreOwnerMemRegist .SOMRframe-529 {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-20 {
+.StoreOwnerMemRegist .SOMRcontainer-20 {
   margin-bottom: 12px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-528 {
+.StoreOwnerMemRegist .SOMRframe-528 {
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-513 {
+.StoreOwnerMemRegist .SOMRframe-513 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -268,14 +277,7 @@
   box-sizing: border-box;
   text-align: left;
 }
-.StoreOwnerMemRegist .container-8 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist .frame-514 {
+.StoreOwnerMemRegist .SOMRframe-514 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
@@ -286,21 +288,14 @@
   width: 90px;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-9 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
-}
-.StoreOwnerMemRegist .frame-533 {
+.StoreOwnerMemRegist .SOMRframe-533 {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-21 {
+.StoreOwnerMemRegist .SOMRcontainer-21 {
   margin-bottom: 11px;
   display: inline-block;
   align-self: flex-start;
@@ -310,145 +305,76 @@
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-531 {
+.StoreOwnerMemRegist .SOMRframe-531 {
   margin-bottom: 12px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-515 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 9px;
-  padding: 13px 14px;
-  width: 350px;
-  box-sizing: border-box;
-  text-align: left;
-}
-.StoreOwnerMemRegist .container-10 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist .frame-516 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ff5925;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0;
-  width: 90px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist .container-11 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
-}
-.StoreOwnerMemRegist .frame-532 {
+.StoreOwnerMemRegist .SOMRframe-532 {
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .frame-517 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 9px;
-  padding: 13px 14px;
-  width: 350px;
-  box-sizing: border-box;
-  text-align: left;
-}
-.StoreOwnerMemRegist .container-12 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist .frame-518 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0;
-  width: 90px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist .container-13 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreOwnerMemRegist .frame-534 {
+.StoreOwnerMemRegist .SOMRframe-534 {
   margin-right: 28px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .container-22 {
+.StoreOwnerMemRegist .SOMRcontainer-22 {
   margin-bottom: 7px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreOwnerMemRegist .frame-519 {
+.StoreOwnerMemRegist .SOMRframe-519 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  align-items: center;
+  padding-left: 14px;
+  height: 50px;
   width: 450px;
   box-sizing: border-box;
   text-align: left;
 }
-.StoreOwnerMemRegist .bookslyemail-com {
+.StoreOwnerMemRegist .SOMRbookslyemail-com {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #adadad;
 }
-.StoreOwnerMemRegist .frame-520 {
+.StoreOwnerMemRegist .SOMRregistBox {
+  width: 1440px;
+  /*justify-content: flex-start;*/
+  /*align-items: flex-start;*/
+  /*align-self: flex-end;*/
+}
+.StoreOwnerMemRegist .SOMRframe-520 {
+  justify-content: flex-end;
+  margin: 50px 55px 0 72px;
+  padding-right: 55px;
+  display: flex;
+  width: 1400px;
+
+}
+.StoreOwnerMemRegist .SOMRframe-StoreRegistButton {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
-  margin: 50px 55px 0 72px;
-  display: flex;
-  align-self: flex-end;
-  padding: 13px 13.8px;
   width: 100px;
+  height: 40px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-}
-.StoreOwnerMemRegist .frame-StoreRegistButton {
-  border: none;
-  background: none;
+  justify-self: flex-end;
   cursor: pointer;
-  white-space: nowrap;
-}
-.StoreOwnerMemRegist .container-14 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
+  color: #FFFFFF;
 }

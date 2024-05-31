@@ -1,72 +1,73 @@
 .StoreRegist {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: fit-content;
   background: #fdf8f3;
 }
 .StoreRegistBack {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 60px;
 }
-.StoreRegist .allcontentcontainer {
+.StoreRegist .SR-allcontentcontainer {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  justify-content: space-between;
+  width: 1440px;
+  justify-content: center;
+  margin-left: 40px;
 }
-.StoreRegist .leftcontentcontainer {
-  margin-top: 50px;
+.StoreRegist .SR-leftcontentcontainer {
   display: flex;
   flex-direction: column;
-  width: 48%;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
-.StoreRegist .rightcontentcontainer {
+.StoreRegist .SR-rightcontentcontainer {
   margin-top: 130px;
-  margin-left: 150px;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
-  width: 48%;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
-.StoreRegist .container-11 {
+.StoreRegist .SR-container-11 {
   margin-bottom: 20px;
   display: block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 700;
   font-size: 25px;
   color: #111111;
 }
-.StoreRegist .frame-550 {
-  margin: 20px 279px 53px 0;
+.StoreRegist .SR-frame-550 {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-.StoreRegist .frame-524 {
+.StoreRegist .SR-frame-524 {
   margin: 0 28px 30px 0;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-1 {
+.StoreRegist .SR-container-1 {
   margin-bottom: 16px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-406 {
+.StoreRegist .SR-frame-406 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -75,14 +76,7 @@
   box-sizing: border-box;
   text-align: left;
 }
-.StoreRegist .container-2 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .frame-526 {
+.StoreRegist .SR-frame-526 {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -90,17 +84,16 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-3 {
+.StoreRegist .SR-container-3 {
   margin-bottom: 16px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-512 {
+.StoreRegist .SR-frame-512 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -111,41 +104,23 @@
   width: 151px;
   box-sizing: border-box;
 }
-.StoreRegist .container-4 {
-  margin-right: 9px;
-  width: 96.6px;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .group-131 {
-  margin: 1.7px 0;
-  width: 16px;
-  height: 14.6px;
-}
-.StoreRegist .frame-529 {
+.StoreRegist .SR-frame-529 {
   margin: 0 28px 30px 0;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-5 {
+.StoreRegist .SR-container-5 {
   margin-bottom: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-528 {
-  box-sizing: border-box;
-}
-.StoreRegist .frame-513 {
+.StoreRegist .SR-frame-513 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -153,176 +128,119 @@
   box-sizing: border-box;
   width: 450px;
   text-align: left;
-}
-.StoreRegist .container-6 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
-  color: #adadad;
 }
-.StoreRegist .frame-533 {
+.StoreRegist .SR-frame-533 {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-7 {
+.StoreRegist .SR-container-7 {
   margin-bottom: 11px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-531 {
+.StoreRegist .SR-frame-531 {
   margin-bottom: 12px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-515 {
+.StoreRegist .SR-frame-515 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-right: 9px;
-  padding: 13px 14px;
+  padding-left: 14px;
+  height: 50px;
   width: 350px;
   box-sizing: border-box;
   text-align: left;
 }
-.StoreRegist .container-8 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .frame-516 {
+.StoreRegist .SR-frame-516 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
   display: flex;
-  padding: 13px 0;
+  height: 50px;
   width: 90px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-}
-.StoreRegist .container-9 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
   color: #ffffff;
 }
-.StoreRegist .frame-532 {
-  margin-bottom: 12px;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-517 {
+.StoreRegist .SR-frame-5171 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  height: 50px;
+  padding-left: 14px;
   width: 450px;
   box-sizing: border-box;
   text-align: left;
-}
-.StoreRegist .container-10 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
-  color: #000000;
 }
-.StoreRegist .frame-5331 {
-  box-sizing: border-box;
-}
-.StoreRegist .frame-5171 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  padding: 13px 14px;
-  width: 450px;
-  box-sizing: border-box;
-  text-align: left;
-}
-.StoreRegist .container-12 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .frame-548 {
+.StoreRegist .SR-frame-548 {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .sns {
+.StoreRegist .SR-sns {
   margin-bottom: 16px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-547 {
+.StoreRegist .SR-frame-547 {
   margin-bottom: 14px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-407 {
+.StoreRegist .SR-frame-407 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-right: 9px;
-  padding: 13px 14px;
+  padding-left: 14px;
+  height: 50px;
   width: 350px;
+  font-size: 15px;
   box-sizing: border-box;
   text-align: left;
 }
-.StoreRegist .url {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreRegist .frame-537 {
+.StoreRegist .SR-frame-537 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
   display: flex;
-  padding: 13px 0.4px 13px 0;
   width: 90px;
+  height: 50px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-}
-.StoreRegist .container-13 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
   color: #ffffff;
 }
-.StoreRegist .frame-5281 {
+.StoreRegist .SR-frame-5281 {
   margin-right: 28px;
   box-sizing: border-box;
 }
-.StoreRegist .frame-5131 {
+.StoreRegist .SR-frame-5131 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -331,14 +249,13 @@
   box-sizing: border-box;
   text-align: left;
 }
-.StoreRegist .www-booksly-com {
+.StoreRegist .SR-www-booksly-com {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #000000;
 }
-.StoreRegist .frame-549 {
+.StoreRegist .SR-frame-549 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,16 +263,15 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-14 {
+.StoreRegist .SR-container-14 {
   margin: 0 17px 9px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-133 {
+.StoreRegist .SR-frame-133 {
   border-radius: 50px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -365,7 +281,7 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-317 {
+.StoreRegist .SR-frame-317 {
   border-radius: 50px;
   background: #ff5925;
   margin-right: 7px;
@@ -373,34 +289,20 @@
   padding: 3px 12.6px 3px 12px;
   box-sizing: border-box;
 }
-.StoreRegist .container-15 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  color: #000000;
-}
-.StoreRegist .frame-318 {
+.StoreRegist .SR-frame-318 {
   border-radius: 50px;
   background: #d9d9d9;
   display: flex;
   padding: 3px 10.8px 3px 10px;
   box-sizing: border-box;
 }
-.StoreRegist .container-16 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  color: #000000;
-}
-.StoreRegist .frame-574 {
+.StoreRegist .SR-frame-574 {
   display: flex;
   flex-direction: column;
   width: 450px;
   box-sizing: border-box;
 }
-.StoreRegist .frame-572 {
+.StoreRegist .SR-frame-572 {
   margin-bottom: 38px;
   display: flex;
   flex-direction: column;
@@ -408,609 +310,29 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-571 {
+.StoreRegist .SR-frame-571 {
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-17 {
+.StoreRegist .SR-container-17 {
   margin-bottom: 6px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .container-18 {
+.StoreRegist .SR-container-18 {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #000000;
 }
-.StoreRegist .frame-569 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .container-24 {
-  background: url("../../assets/clockIcon.png") 50% / cover no-repeat;
-  margin: 0 15px 180px 0;
-  width: 13px;
-  height: 13px;
-}
-.StoreRegist .frame-558 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-254 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-251 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-19 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-253 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-249 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-20 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-21 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-250 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-22 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-319 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-23 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-551 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2511 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-25 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2531 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2491 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-26 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-27 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2501 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-28 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3191 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-29 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-552 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2512 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-30 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2532 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2492 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-31 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-32 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2502 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-33 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3192 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-34 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-553 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2513 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-35 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2533 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2493 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-36 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-37 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2503 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-38 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3193 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-39 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-554 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2514 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-40 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2534 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2494 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-41 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-42 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2504 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-43 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3194 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-44 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-5521 {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2515 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-45 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2535 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2495 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-46 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-47 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2505 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-48 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3195 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-49 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-555 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2516 {
-  border: 1px solid #ff5925;
-  background: rgba(255, 89, 37, 0.13);
-  display: flex;
-  padding: 2.5px 4.6px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-50 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #ff5925;
-}
-.StoreRegist .frame-2536 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.StoreRegist .frame-2496 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 5px;
-  display: flex;
-  padding: 2.5px 14.4px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-51 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .container-52 {
-  margin: 3.5px 5.1px 3.5px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-2506 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 2.5px 13.3px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-53 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  color: #000000;
-}
-.StoreRegist .frame-3196 {
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  padding: 1.5px 6.2px;
-  box-sizing: border-box;
-}
-.StoreRegist .container-54 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.333;
-  color: #ff5925;
-}
-.StoreRegist .frame-560 {
+.StoreRegist .SR-frame-560 {
   margin-bottom: 38px;
   display: flex;
   flex-direction: column;
@@ -1018,26 +340,25 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-5501 {
+.StoreRegist .SR-frame-5501 {
   margin-bottom: 13px;
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
 }
-.StoreRegist .container-55 {
+.StoreRegist .SR-container-55 {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-559 {
+.StoreRegist .SR-frame-559 {
   display: flex;
   flex-direction: row;
   width: 247px;
   box-sizing: border-box;
 }
-.StoreRegist .frame-5121 {
+.StoreRegist .SR-frame-5121 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -1049,21 +370,15 @@
   width: 120px;
   box-sizing: border-box;
 }
-.StoreRegist .container-56 {
+.StoreRegist .SR-container-56 {
   margin-right: 9px;
   width: 65.9px;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #adadad;
 }
-.StoreRegist .group-132 {
-  margin: 1.5px 0;
-  width: 15px;
-  height: 15px;
-}
-.StoreRegist .frame-514 {
+.StoreRegist .SR-frame-514 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -1074,111 +389,105 @@
   width: 120px;
   box-sizing: border-box;
 }
-.StoreRegist .container-64 {
+.StoreRegist .SR-container-64 {
   margin-right: 9px;
   width: 65.9px;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #adadad;
 }
-.StoreRegist .group-1311 {
-  margin: 1.5px 0;
-  width: 15px;
-  height: 15px;
-}
-.StoreRegist .frame-567 {
+.StoreRegist .SR-frame-567 {
   margin-bottom: 37px;
   display: flex;
   flex-direction: column;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-57 {
+.StoreRegist .SR-container-57 {
   margin-bottom: 15px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-566 {
+.StoreRegist .SR-frame-566 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .frame-4071 {
+.StoreRegist .SR-frame-4071 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
   margin-bottom: 9px;
-  padding: 13px 14px 167px 14px;
+  padding: 14px;
   width: 450px;
   box-sizing: border-box;
   text-align: left;
 }
-.StoreRegist .container-58 {
+.StoreRegist .SR-container-58 {
+  width: 100%;
+  height: 150px;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
-  color: #adadad;
+  /*color: #adadad;*/
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
 }
-.StoreRegist .frame-109 {
+.StoreRegist .SR-frame-109 {
   margin: 0 0.4px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-59 {
+.StoreRegist .SR-container-59 {
   margin: 2.5px 5.6px 2.5px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
 }
-.StoreRegist .container-60 {
+.StoreRegist .SR-container-60 {
   margin-right: 5.8px;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 17px;
   color: #000000;
 }
-.StoreRegist .container-61 {
+.StoreRegist .SR-container-61 {
   margin: 2.5px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
 }
-.StoreRegist .frame-573 {
+.StoreRegist .SR-frame-573 {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreRegist .container-62 {
+.StoreRegist .SR-container-62 {
   margin-bottom: 9px;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
 }
-.StoreRegist .frame-568 {
+.StoreRegist .SR-frame-568 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
@@ -1187,7 +496,7 @@
   width: 150px;
   height: 150px;
 }
-.StoreRegist .vector-2 {
+.StoreRegist .SR-vector-2 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1195,29 +504,108 @@
   width: 30px;
   height: 30px;
 }
-.StoreRegist .frame-536 {
+.StoreRegist .SR-frame-536 {
+  justify-content: flex-end;
+  margin: 50px 55px 100px 72px;
+  padding-right: 55px;
+  display: flex;
+  width: 1400px;
+}
+.StoreRegist .SR-frame-StoreRegistFinButton {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ff5925;
-  margin: 50px 36px 0 36px;
-  display: flex;
-  align-self: flex-end;
-  padding: 13px 13.8px;
   width: 100px;
+  height: 40px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-}
-.StoreRegist .frame-StoreRegistFinButton {
-  border: none;
-  background: none;
+  justify-self: flex-end;
   cursor: pointer;
+  color: #FFFFFF;
 }
-.StoreRegist .container-63 {
+.StoreRegist .SR-time-space {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.StoreRegist .SR-frame-254 {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.StoreRegist .SR-frame-251 {
+  border: 1px solid #FF5925;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.StoreRegist .SR-container-4 {
   overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
-  color: #ffffff;
-  white-space: nowrap;
+  color: #FF5925;
+  border: 0;
+  height: 28px;
+}
+.StoreRegist .SR-frame-253 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.StoreRegist .SR-frame-249 {
+  border: 1px solid #FF5925;
+  padding-left: 14px;
+  background: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  box-sizing: border-box;
+  width: 65px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreRegist .SR-container-6 {
+  margin: 3.5px 5px 3.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreRegist .SR-frame-250 {
+  border: 1px solid #FF5925;
+  padding-left: 14px;
+  background: #FFFFFF;
+  display: flex;
+  box-sizing: border-box;
+  width: 65px;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.StoreRegist .SR-frame-319 {
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  display: flex;
+  box-sizing: border-box;
+}
+.StoreRegist .SR-container-8 {
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.333;
+  color: #FF5925;
+  border: 0;
 }

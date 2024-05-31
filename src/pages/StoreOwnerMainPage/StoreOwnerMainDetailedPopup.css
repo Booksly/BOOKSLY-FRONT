@@ -98,7 +98,7 @@
     border: 1px solid #FF5925;
     background: rgba(255, 89, 37, 0.5);
     display: flex;
-    padding: 4px 14.4px 4px 14px;
+    padding: 4px 14px 4px 14px;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-address {
@@ -334,12 +334,6 @@
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-5 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-6 {
     margin: 3.5px 5.1px 3.5px 0;
     display: inline-block;
@@ -361,12 +355,6 @@
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-7 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupframe-319 {
     border: 1px solid #FF5925;
     background: #FFFFFF;
@@ -380,40 +368,6 @@
     font-size: 15px;
     line-height: 1.333;
     color: #FF5925;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-551 {
-    margin-bottom: 3px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2511 {
-    border: 1px solid #FF5925;
-    background: rgba(255, 89, 37, 0.13);
-    display: flex;
-    padding: 2.5px 4.6px;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-9 {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #FF5925;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2531 {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2491 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    margin-right: 5px;
-    display: flex;
-    padding: 2.5px 14.4px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-10 {
     overflow-wrap: break-word;
@@ -429,25 +383,11 @@
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2501 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 2.5px 13.3px;
-    box-sizing: border-box;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-12 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
     color: #000000;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-3191 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 1.5px 6.2px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-13 {
     overflow-wrap: break-word;
@@ -456,39 +396,11 @@
     line-height: 1.333;
     color: #FF5925;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-552 {
-    margin-bottom: 3px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2512 {
-    border: 1px solid #FF5925;
-    background: rgba(255, 89, 37, 0.13);
-    display: flex;
-    padding: 2.5px 4.6px;
-    box-sizing: border-box;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-14 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
     color: #FF5925;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2532 {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2492 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    margin-right: 5px;
-    display: flex;
-    padding: 2.5px 14.4px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-15 {
     overflow-wrap: break-word;
@@ -504,25 +416,11 @@
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2502 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 2.5px 13.3px;
-    box-sizing: border-box;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-17 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
     color: #000000;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-3192 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 1.5px 6.2px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-18 {
     overflow-wrap: break-word;
@@ -531,39 +429,11 @@
     line-height: 1.333;
     color: #FF5925;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-553 {
-    margin-bottom: 3px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2513 {
-    border: 1px solid #FF5925;
-    background: rgba(255, 89, 37, 0.13);
-    display: flex;
-    padding: 2.5px 4.6px;
-    box-sizing: border-box;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-19 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
     color: #FF5925;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2533 {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2493 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    margin-right: 5px;
-    display: flex;
-    padding: 2.5px 14.4px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-20 {
     overflow-wrap: break-word;
@@ -579,25 +449,11 @@
     font-size: 15px;
     color: #000000;
 }
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-2503 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 2.5px 13.3px;
-    box-sizing: border-box;
-}
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-22 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 15px;
     color: #000000;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupframe-3193 {
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
-    display: flex;
-    padding: 1.5px 6.2px;
-    box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupcontainer-23 {
     overflow-wrap: break-word;
