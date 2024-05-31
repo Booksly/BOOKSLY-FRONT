@@ -98,7 +98,7 @@
     border: 1px solid #FF5925;
     background: rgba(255, 89, 37, 0.5);
     display: flex;
-    padding: 4px 14.4px 4px 14px;
+    padding: 4px 14px 4px 14px;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-address {

@@ -146,16 +146,11 @@ export default function StoreOwnerMainDetailedPopup() {
                     </div>
                     <div className="DetailedPopuplocation-box">
                         <div className="DetailedPopuplocation">
-                        <div className="DetailedPopuplocation-icon">
+                            <div className="DetailedPopuplocation-icon">
                             </div>
                         </div>
                         <div className="DetailedPopuplocation-address-box">
                             <div className="DetailedPopuplocation-search-box">
-                                {/*<div className="DetailedPopuplocation-search">*/}
-                                {/*    <div className="DetailedPopupcontainer-42">*/}
-                                {/*        도로명, 지번, 건물명 검색*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
                                 <input
                                     type="text"
                                     value={address}
@@ -191,9 +186,6 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </button>
                             </div>
-                            {/*<input onChange={onChange} name="addr" value={addr}*/}
-                            {/*       className="DetailedPopuplocation-address"*/}
-                            {/*/>*/}
                             <input onChange={onChange} name="addrDetail" value={addrDetail}
                                    className="DetailedPopuplocation-detailed-address"
                             />
