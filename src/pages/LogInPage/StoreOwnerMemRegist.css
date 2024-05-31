@@ -189,19 +189,34 @@
   color: #111111;
 }
 .StoreOwnerMemRegist .SOMR-id-button {
+  display: flex;
   flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerMemRegist .SOMRframe-4061 {
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  margin-right: 10px;
+  font-size: 15px;
+  padding-left: 14px;
+  height: 50px;
   width: 350px;
   box-sizing: border-box;
   text-align: left;
 }
 .StoreOwnerMemRegist .SOMR-idbutton {
-  width: 80px;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90px;
+  box-sizing: border-box;
+  color: #FFFFFF;
 }
 .StoreOwnerMemRegist .SOMRframe-526 {
   margin: 0 28px 25px 0;
@@ -215,7 +230,6 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
@@ -224,17 +238,12 @@
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  padding-left: 14px;
   width: 450px;
+  height: 50px;
   box-sizing: border-box;
   text-align: left;
-}
-.StoreOwnerMemRegist .SOMRcontainer-7 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
   font-size: 15px;
-  color: #adadad;
 }
 .StoreOwnerMemRegist .SOMRframe-529 {
   margin-bottom: 25px;
@@ -248,7 +257,6 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
@@ -269,13 +277,6 @@
   box-sizing: border-box;
   text-align: left;
 }
-.StoreOwnerMemRegist .SOMRcontainer-8 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
 .StoreOwnerMemRegist .SOMRframe-514 {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -286,13 +287,6 @@
   padding: 13px 0;
   width: 90px;
   box-sizing: border-box;
-}
-.StoreOwnerMemRegist .SOMRcontainer-9 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
 }
 .StoreOwnerMemRegist .SOMRframe-533 {
   margin-bottom: 25px;
@@ -318,81 +312,11 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreOwnerMemRegist .SOMRframe-515 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 9px;
-  padding: 13px 14px;
-  width: 350px;
-  box-sizing: border-box;
-  text-align: left;
-}
-.StoreOwnerMemRegist .SOMRcontainer-10 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist .SOMRframe-516 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ff5925;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0;
-  width: 90px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist .SOMRcontainer-11 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ffffff;
-}
 .StoreOwnerMemRegist .SOMRframe-532 {
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
-}
-.StoreOwnerMemRegist .SOMRframe-517 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  margin-right: 9px;
-  padding: 13px 14px;
-  width: 350px;
-  box-sizing: border-box;
-  text-align: left;
-}
-.StoreOwnerMemRegist .SOMRcontainer-12 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #adadad;
-}
-.StoreOwnerMemRegist .SOMRframe-518 {
-  border-radius: 5px;
-  border: 1px solid #ff5925;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 0;
-  width: 90px;
-  box-sizing: border-box;
-}
-.StoreOwnerMemRegist .SOMRcontainer-13 {
-  overflow-wrap: break-word;
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 15px;
-  color: #ff5925;
 }
 .StoreOwnerMemRegist .SOMRframe-534 {
   margin-right: 28px;
@@ -414,7 +338,9 @@
   border-radius: 5px;
   border: 1px solid #ff5925;
   background: #ffffff;
-  padding: 13px 14px;
+  align-items: center;
+  padding-left: 14px;
+  height: 50px;
   width: 450px;
   box-sizing: border-box;
   text-align: left;

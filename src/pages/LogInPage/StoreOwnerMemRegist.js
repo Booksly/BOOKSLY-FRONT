@@ -6,6 +6,11 @@ import { useNavigate } from "react-router-dom";
 export default function StoreOwnerMemRegist() {
   const [id, setId] = useState('')
   const [password, setPassword] = useState('')
+  const [businessNum, setBusinessNum] = useState('')
+  const [phone, setPhone] = useState('')
+  const [authentication, setAuthentication] = useState('')
+  const [email, setEmail] = useState('')
+
   const navigate = useNavigate();
   const goToThisPage = () => {
     navigate("/StoreOwnerMemRegist");
@@ -62,58 +67,59 @@ export default function StoreOwnerMemRegist() {
                     <div className="SOMRcontainer-17">아이디</div>
                     <div className="SOMR-id-button">
                       <input className="SOMRframe-4061"
-                      placeholder="4~20자리 / 영문, 숫자, 특수문자 ‘_’ 사용가능"
-                      value={id}
-                      onChange={(e) => setId(e.target.value)}/>
-                      </div>
+                             placeholder="4~20자리 / 영문, 숫자, 특수문자 ‘_’ 사용가능"
+                             value={id}
+                             onChange={(e) => setId(e.target.value)}/>
                       <button className="SOMR-idbutton">중복확인</button>
+                    </div>
                   </div>
                 </div>
                 <div className="SOMRframe-526">
                   <div className="SOMRcontainer-19">비밀번호</div>
-                  <div className="SOMRframe-512">
-                    <div className="SOMRcontainer-7">
-                      8~16자리 / 영문 대소문자, 숫자, 특수문자 조합
-                    </div>
-                  </div>
+                  <input className="SOMRframe-512"
+                         type={password}
+                         placeholder="8~16자리 / 영문 대소문자, 숫자, 특수문자 조합"
+                         value={password}
+                         onChange={(e) => setPassword(e.target.value)}/>
                 </div>
                 <div className="SOMRframe-529">
                   <div className="SOMRcontainer-20">사업자 번호</div>
                   <div className="SOMRframe-528">
-                    <div className="SOMRframe-513">
-                      <div className="SOMRcontainer-8">
-                        000-00-00000 형태로 입력
-                      </div>
-                    </div>
-                    <div className="SOMRframe-514">
-                      <div className="SOMRcontainer-9">조회</div>
-                    </div>
+                    <input className="SOMRframe-4061"
+                    placeholder="000-00-00000 형태로 입력"
+                    value={businessNum}
+                    onChange={(e) => setBusinessNum(e.target.value)}/>
+                    <button className="SOMR-idbutton">조회
+                    </button>
                   </div>
                 </div>
                 <div className="SOMRframe-533">
                   <div className="SOMRcontainer-21">휴대폰</div>
                   <div className="SOMRframe-531">
-                    <div className="SOMRframe-515">
-                      <div className="SOMRcontainer-10">‘-’빼고 숫자만 입력</div>
-                    </div>
-                    <div className="SOMRframe-516">
-                      <div className="SOMRcontainer-11">인증</div>
-                    </div>
+                    <input className="SOMRframe-4061"
+                    placeholder="‘-’빼고 숫자만 입력"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}/>
+                    <button className="SOMR-idbutton">인증
+                    </button>
                   </div>
                   <div className="SOMRframe-532">
-                    <div className="SOMRframe-517">
-                      <div className="SOMRcontainer-12">인증번호 입력</div>
-                    </div>
-                    <div className="SOMRframe-518">
-                      <div className="SOMRcontainer-13">인증하기</div>
-                    </div>
+                    <input className="SOMRframe-4061"
+                    placeholder="인증번호 입력"
+                    value={authentication}
+                    onChange={(e) => setAuthentication(e.target.value)}/>
+                    <button className="SOMR-idbutton">인증하기
+                    </button>
                   </div>
                 </div>
                 <div className="SOMRframe-534">
                   <div className="SOMRcontainer-22">이메일</div>
-                  <div className="SOMRframe-519">
-                    <div className="SOMRbookslyemail-com">booksly@email.com</div>
-                  </div>
+                  <input className="SOMRframe-519" type="email"
+                  placeholder="booksly@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}>
+                    {/*<div className="SOMRbookslyemail-com">booksly@email.com</div>*/}
+                  </input>
                 </div>
               </div>
             </div>
