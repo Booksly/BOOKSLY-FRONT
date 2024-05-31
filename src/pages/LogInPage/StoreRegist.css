@@ -142,7 +142,6 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
@@ -252,7 +251,6 @@
 }
 .StoreRegist .SR-www-booksly-com {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #000000;
@@ -269,7 +267,6 @@
   margin: 0 17px 9px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
@@ -325,14 +322,12 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
 }
 .StoreRegist .SR-container-18 {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #000000;
@@ -353,7 +348,6 @@
 }
 .StoreRegist .SR-container-55 {
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
   color: #111111;
@@ -380,7 +374,6 @@
   margin-right: 9px;
   width: 65.9px;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 300;
   font-size: 15px;
   color: #adadad;
@@ -416,7 +409,6 @@
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
@@ -461,7 +453,6 @@
   margin: 2.5px 5.6px 2.5px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 500;
   font-size: 13px;
   color: #000000;
@@ -492,7 +483,6 @@
   margin-bottom: 9px;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
   color: #111111;
