@@ -20,29 +20,6 @@ let options = [
 ]
 
 export default function StoreOwnerMain() {
-    // const [selectValue, setSelectValue] = useState('')
-    // const selectInputRef = useRef(null);
-    // const [isOpen, setIsOpen] = useState(false);
-    // const openModal = () => {
-    //     setIsOpen(true);
-    // }
-    // const closeModal = () => {
-    //     setIsOpen(false);
-    // }
-    // const customStyles = {
-    //     overlay:{
-    //         backgroundColor: "rgba(0,0,0,0.5)",
-    //     },
-    //     content: {
-    //         width: "fit-content",
-    //         height: "fit-content",
-    //         margin: "auto",
-    //         borderRadius: "4px",
-    //         boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-    //         padding: "20px",
-    //     },
-    // };
-
     const [selectValue, setSelectValue] = useState('');
     const selectInputRef = useRef(null);
 

@@ -281,9 +281,9 @@ export default function StoreOwnerMainDetailedPopup() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="DetailedPopupframe-551">
-                                <div className="DetailedPopupframe-2511">
-                                    <div className="DetailedPopupcontainer-9">
+                            <div className="DetailedPopupframe-254">
+                                <div className="DetailedPopupframe-251">
+                                    <div className="DetailedPopupcontainer-4">
                                         화
                                     </div>
                                 </div>

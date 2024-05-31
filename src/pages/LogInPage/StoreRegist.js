@@ -1,13 +1,11 @@
 import "./StoreRegist.css";
 import storeimgadd from "../../assets/AddStoreImg_button.png";
-import sort from "../../assets/sort_button.png";
 import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
-import {useState} from "react";
+import React, {useState} from "react";
 import DaumPostcode from "react-daum-postcode";
 
 const options = [
-  { value: "all", label: "전체" },
   { value: "hair", label: "헤어" },
   { value: "nail", label: "네일" },
   { value: "massage", label: "마사지" },
@@ -19,12 +17,13 @@ const options = [
 
 export default function StoreRegist() {
   const [storeName, setStoreName] = useState('')
-  // const [storeType, setStoreType]
   const [storePhone, setStorePhone] = useState('')
   const [address, setAddress] = useState('')
   const [addrDetail, setAddrDetail] = useState('')
   const [snsURL, setSnsURL] = useState('')
+  const [displayURL, setDisplayURL] = useState('www.booksly.com');
   const [storeInfo, setStoreInfo] = useState('')
+
   const [timeStartMon, setTimeStartMon] = useState('');
   const [timeEndMon, setTimeEndMon] = useState('');
   const [timeStartTue, setTimeStartTue] = useState('');
@@ -39,6 +38,8 @@ export default function StoreRegist() {
   const [timeEndSat, setTimeEndSat] = useState('');
   const [timeStartSun, setTimeStartSun] = useState('');
   const [timeEndSun, setTimeEndSun] = useState('');
+  const [disabledDays, setDisabledDays] = useState([]);
+  const [selectedDays, setSelectedDays] = useState([]);
 
   const [selectedCategory, setSelectedCategory] = useState('');
   const [isPostOpen, setIsPostOpen] = useState(false);
@@ -60,6 +61,121 @@ export default function StoreRegist() {
     setSelectedCategory(e.target.value);
   };
 
+  const handleAddURL = () => {
+    if (snsURL.trim() !== '') {
+      setDisplayURL(snsURL);
+      setSnsURL(''); // 입력 필드 초기화
+    }
+  };
+
+  const handleDate = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case 'timeStartMon':
+        setTimeStartMon(value);
+        break;
+      case 'timeEndMon':
+        setTimeEndMon(value);
+        break;
+      case 'timeStartTue':
+        setTimeStartTue(value);
+        break;
+      case 'timeEndTue':
+        setTimeEndTue(value);
+        break;
+      case 'timeStartWed':
+        setTimeStartWed(value);
+        break;
+      case 'timeEndWed':
+        setTimeEndWed(value);
+        break;
+      case 'timeStartThu':
+        setTimeStartThu(value);
+        break;
+      case 'timeEndThu':
+        setTimeEndThu(value);
+        break;
+      case 'timeStartFri':
+        setTimeStartFri(value);
+        break;
+      case 'timeEndFri':
+        setTimeEndFri(value);
+        break;
+      case 'timeStartSat':
+        setTimeStartSat(value);
+        break;
+      case 'timeEndSat':
+        setTimeEndSat(value);
+        break;
+      case 'timeStartSun':
+        setTimeStartSun(value);
+        break;
+      case 'timeEndSun':
+        setTimeEndSun(value);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const toggleDay = (day) => {
+    if (selectedDays.includes(day)) {
+      setSelectedDays(selectedDays.filter(d => d !== day));
+      setDisabledDays([...disabledDays, day]);
+      clearInput(day);
+    } else {
+      setSelectedDays([...selectedDays, day]);
+      setDisabledDays(disabledDays.filter(d => d !== day));
+    }
+  };
+
+  const toggleHoliday = (day) => {
+    setDisabledDays([...disabledDays, day]);
+    setSelectedDays(selectedDays.filter(d => d !== day));
+    clearInput(day);
+  };
+
+  const clearInput = (day) => {
+    switch (day) {
+      case 'Mon':
+        setTimeStartMon('');
+        setTimeEndMon('');
+        break;
+      case 'Tue':
+        setTimeStartTue('');
+        setTimeEndTue('');
+        break;
+      case 'Wed':
+        setTimeStartWed('');
+        setTimeEndWed('');
+        break;
+      case 'Thu':
+        setTimeStartThu('');
+        setTimeEndThu('');
+        break;
+      case 'Fri':
+        setTimeStartFri('');
+        setTimeEndFri('');
+        break;
+      case 'Sat':
+        setTimeStartSat('');
+        setTimeEndSat('');
+        break;
+      case 'Sun':
+        setTimeStartSun('');
+        setTimeEndSun('');
+        break;
+      default:
+        break;
+    }
+  };
+
+  const handleStoreInfoChange = (e) => {
+    if (e.target.value.length <= 150) {
+      setStoreInfo(e.target.value);
+    }
+  };
+
   const navigate = useNavigate();
   const goToStoreOwnerMain = () => {
     navigate("/StoreOwnerMain");
@@ -76,38 +192,26 @@ export default function StoreRegist() {
                 <div className="SR-frame-524">
                   <div className="SR-container-1">업체명</div>
                   <input className="SR-frame-406"
-                         placeholder="업체명을 입력해주세요."
+                         placeholder="업체명을 입력해주세요"
                          value={storeName}
                          onChange={(e) => setStoreName(e.target.value)}/>
-                  {/*  <div className="SR-container-2">업체명을 입력해주세요.</div>*/}
-                  {/*</input>*/}
                 </div>
-                {/*<div className="SR-frame-526">*/}
-                {/*  <div className="SR-container-3">업종</div>*/}
-                {/*  <div className="SR-frame-512">*/}
-                {/*    <div className="SR-container-4">카테고리</div>*/}
-                {/*    /!*<img className="SR-group-131" src={sort} alt={""} />*!/*/}
-                {/*  </div>*/}
-                {/*</div>*/}
                 <div className="SR-frame-526">
                   <div className="SR-container-3">업종</div>
-                    <select className="SR-frame-512" value={selectedCategory} onChange={handleChange}>
-                      {options.map(option => (
-                          <option key={option.value} value={option.value}>
-                            {option.label}
-                          </option>
-                      ))}
-                    </select>
+                  <select className="SR-frame-512" value={selectedCategory} onChange={handleChange}>
+                    {options.map(option => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                    ))}
+                  </select>
                 </div>
                 <div className="SR-frame-529">
                   <div className="SR-container-5">업체 전화번호</div>
-                  <div className="SR-frame-528">
-                    <div className="SR-frame-513">
-                      <div className="SR-container-6">
-                        ‘-’빼고 숫자만 입력해주세요
-                      </div>
-                    </div>
-                  </div>
+                  <input className="SR-frame-513" value={storePhone}
+                         type="number"
+                         placeholder="‘-’빼고 숫자만 입력해주세요"
+                         onChange={(e) => setStorePhone(e.target.value)}/>
                 </div>
                 <div className="SR-frame-533">
                   <div className="SR-container-7">업체 주소</div>
@@ -115,12 +219,12 @@ export default function StoreRegist() {
                     <div className="SR-frame-531">
                       <div className="SR-container-8">
                         <input
-                              type="text"
-                              value={address}
-                              readOnly
-                              className="SR-frame-515"
-                              placeholder="도로명, 지번, 건물명 검색"
-                              autoComplete="address"
+                            type="text"
+                            value={address}
+                            readOnly
+                            className="SR-frame-515"
+                            placeholder="도로명, 지번, 건물명 검색"
+                            autoComplete="address"
                         />
                       </div>
                       <button onClick={openPostCode} className="SR-frame-516">
@@ -132,6 +236,7 @@ export default function StoreRegist() {
                         name="addrDetail"
                         value={addrDetail}
                         className="SR-frame-5171"
+                        placeholder="상세 주소를 입력해주세요"
                     />
                     {isPostOpen && (
                         <div style={{
@@ -155,44 +260,26 @@ export default function StoreRegist() {
                         </div>
                     )}
                   </div>
-                  {/*<div className="SR-frame-531">*/}
-                  {/*  <div className="SR-frame-515">*/}
-                  {/*    <div className="SR-container-8">*/}
-                  {/*      도로명, 지번, 건물명 검색*/}
-                  {/*    </div>*/}
-                  {/*  </div>*/}
-                  {/*  <div className="SR-frame-516">*/}
-                  {/*    <div className="SR-container-9">검색</div>*/}
-                  {/*  </div>*/}
-                  {/*</div>*/}
-                  {/*<div className="SR-frame-532">*/}
-                  {/*  <div className="SR-frame-517">*/}
-                  {/*    <div className="SR-container-10">*/}
-                  {/*      경기도 수원시 영통구 광교산로 154-42*/}
-                  {/*    </div>*/}
-                  {/*  </div>*/}
-                  {/*</div>*/}
-                  {/*<div className="SR-frame-5331">*/}
-                  {/*  <div className="SR-frame-5171">*/}
-                  {/*    <div className="SR-container-12">*/}
-                  {/*      동, 호수와 같은 상세 주소 입력*/}
-                  {/*    </div>*/}
-                  {/*  </div>*/}
-                  {/*</div>*/}
                 </div>
                 <div className="SR-frame-548">
                   <div className="SR-sns">업체 SNS</div>
                   <div className="SR-frame-547">
-                    <div className="SR-frame-407">
-                      <div className="SR-url">URL을 입력해주세요.</div>
-                    </div>
-                    <div className="SR-frame-537">
-                      <div className="SR-container-13">추가</div>
-                    </div>
+                    <input
+                        className="SR-frame-407"
+                        value={snsURL}
+                        placeholder="URL을 입력해주세요."
+                        onChange={(e) => setSnsURL(e.target.value)}
+                    />
+                    <button
+                        className="SR-frame-537"
+                        onClick={handleAddURL}
+                    >
+                      추가
+                    </button>
                   </div>
                   <div className="SR-frame-5281">
                     <div className="SR-frame-5131">
-                      <div className="SR-www-booksly-com">www.booksly.com</div>
+                      <div className="SR-www-booksly-com">{displayURL}</div>
                     </div>
                   </div>
                 </div>
@@ -218,129 +305,107 @@ export default function StoreRegist() {
                       : 선택한 요일과 기입한 시간이 영업 시간으로 표시됩니다.
                     </div>
                   </div>
-                  <div className="SR-frame-569">
-                    <div className="SR-container-24"></div>
-                    <div className="SR-frame-558">
-                      <div className="SR-frame-254">
-                        <div className="SR-frame-251">
-                        <div className="SR-container-19">월</div>
-                        </div>
-                        <div className="SR-frame-253">
-                          <div className="SR-frame-249">
-                            <div className="SR-container-20">10:00</div>
+                  <div className="SR-time-space">
+                    {[
+                      {
+                        day: 'Mon',
+                        label: '월',
+                        timeStart: timeStartMon,
+                        timeEnd: timeEndMon,
+                        timeStartName: 'timeStartMon',
+                        timeEndName: 'timeEndMon'
+                      },
+                      {
+                        day: 'Tue',
+                        label: '화',
+                        timeStart: timeStartTue,
+                        timeEnd: timeEndTue,
+                        timeStartName: 'timeStartTue',
+                        timeEndName: 'timeEndTue'
+                      },
+                      {
+                        day: 'Wed',
+                        label: '수',
+                        timeStart: timeStartWed,
+                        timeEnd: timeEndWed,
+                        timeStartName: 'timeStartWed',
+                        timeEndName: 'timeEndWed'
+                      },
+                      {
+                        day: 'Thu',
+                        label: '목',
+                        timeStart: timeStartThu,
+                        timeEnd: timeEndThu,
+                        timeStartName: 'timeStartThu',
+                        timeEndName: 'timeEndThu'
+                      },
+                      {
+                        day: 'Fri',
+                        label: '금',
+                        timeStart: timeStartFri,
+                        timeEnd: timeEndFri,
+                        timeStartName: 'timeStartFri',
+                        timeEndName: 'timeEndFri'
+                      },
+                      {
+                        day: 'Sat',
+                        label: '토',
+                        timeStart: timeStartSat,
+                        timeEnd: timeEndSat,
+                        timeStartName: 'timeStartSat',
+                        timeEndName: 'timeEndSat'
+                      },
+                      {
+                        day: 'Sun',
+                        label: '일',
+                        timeStart: timeStartSun,
+                        timeEnd: timeEndSun,
+                        timeStartName: 'timeStartSun',
+                        timeEndName: 'timeEndSun'
+                      }
+                    ].map((time, index) => (
+                        <div className="SR-frame-254" key={index}>
+                          <div className="SR-frame-251">
+                            <button
+                                className="SR-container-4"
+                                onClick={() => toggleDay(time.day)}
+                                style={{backgroundColor: selectedDays.includes(time.day) ? 'rgba(255, 89, 37, 0.2)' : 'transparent'}}
+                            >
+                              {time.label}
+                            </button>
                           </div>
-                          <div className="SR-container-21">~</div>
-                          <div className="SR-frame-250">
-                            <div className="SR-container-22">20:00</div>
+                          <div className="SR-frame-253">
+                            <input
+                                onChange={handleDate}
+                                name={time.timeStartName}
+                                value={time.timeStart}
+                                placeholder="10:00"
+                                className="SR-frame-249"
+                                disabled={disabledDays.includes(time.day)}
+                            />
+                            <div className="SR-container-6">
+                              ~
+                            </div>
+                            <input
+                                onChange={handleDate}
+                                name={time.timeEndName}
+                                value={time.timeEnd}
+                                placeholder="20:00"
+                                className="SR-frame-250"
+                                disabled={disabledDays.includes(time.day)}
+                            />
                           </div>
-                        </div>
-                        <div className="SR-frame-319">
-                          <div className="SR-container-23">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-551">
-                        <div className="SR-frame-2511">
-                          <div className="SR-container-25">화</div>
-                        </div>
-                        <div className="SR-frame-2531">
-                          <div className="SR-frame-2491">
-                            <div className="SR-container-26">10:00</div>
-                          </div>
-                          <div className="SR-container-27">~</div>
-                          <div className="SR-frame-2501">
-                            <div className="SR-container-28">20:00</div>
-                          </div>
-                        </div>
-                        <div className="SR-frame-3191">
-                          <div className="SR-container-29">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-552">
-                        <div className="SR-frame-2512">
-                          <div className="SR-container-30">수</div>
-                        </div>
-                        <div className="SR-frame-2532">
-                          <div className="SR-frame-2492">
-                            <div className="SR-container-31">10:00</div>
-                          </div>
-                          <div className="SR-container-32">~</div>
-                          <div className="SR-frame-2502">
-                            <div className="SR-container-33">20:00</div>
-                          </div>
-                        </div>
-                        <div className="SR-frame-3192">
-                          <div className="SR-container-34">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-553">
-                        <div className="SR-frame-2513">
-                          <div className="SR-container-35">목</div>
-                        </div>
-                        <div className="SR-frame-2533">
-                          <div className="SR-frame-2493">
-                            <div className="SR-container-36">10:00</div>
-                          </div>
-                          <div className="SR-container-37">~</div>
-                          <div className="SR-frame-2503">
-                            <div className="SR-container-38">20:00</div>
-                          </div>
-                        </div>
-                        <div className="SR-frame-3193">
-                          <div className="SR-container-39">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-554">
-                        <div className="SR-frame-2514">
-                          <div className="SR-container-40">금</div>
-                        </div>
-                        <div className="SR-frame-2534">
-                          <div className="SR-frame-2494">
-                            <div className="SR-container-41">10:00</div>
-                          </div>
-                          <div className="SR-container-42">~</div>
-                          <div className="SR-frame-2504">
-                            <div className="SR-container-43">20:00</div>
-                          </div>
-                        </div>
-                        <div className="SR-frame-3194">
-                          <div className="SR-container-44">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-5521">
-                        <div className="SR-frame-2515">
-                          <div className="SR-container-45">토</div>
-                        </div>
-                        <div className="SR-frame-2535">
-                          <div className="SR-frame-2495">
-                            <div className="SR-container-46">10:00</div>
-                          </div>
-                          <div className="SR-container-47">~</div>
-                          <div className="SR-frame-2505">
-                            <div className="SR-container-48">20:00</div>
-                          </div>
-                        </div>
-                        <div className="SR-frame-3195">
-                          <div className="SR-container-49">휴무</div>
-                        </div>
-                      </div>
-                      <div className="SR-frame-555">
-                        <div className="SR-frame-2516">
-                          <div className="SR-container-50">일</div>
-                        </div>
-                        <div className="SR-frame-2536">
-                          <div className="SR-frame-2496">
-                            <div className="SR-container-51">10:00</div>
-                          </div>
-                          <div className="SR-container-52">~</div>
-                          <div className="SR-frame-2506">
-                            <div className="SR-container-53">20:00</div>
+                          <div className="SR-frame-319">
+                            <button
+                                className="SR-container-8"
+                                onClick={() => toggleHoliday(time.day)}
+                                style={{backgroundColor: disabledDays.includes(time.day) ? 'rgba(255, 89, 37, 0.2)' : 'transparent'}}
+                            >
+                              휴무
+                            </button>
                           </div>
                         </div>
-                        <div className="SR-frame-3196">
-                          <div className="SR-container-54">휴무</div>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div className="SR-frame-560">
@@ -350,22 +415,23 @@ export default function StoreRegist() {
                   <div className="SR-frame-559">
                     <div className="SR-frame-5121">
                       <div className="SR-container-56">시</div>
-                      <img className="SR-group-132" src={sort} alt={""} />
                     </div>
                     <div className="SR-frame-514">
                       <div className="SR-container-64">분</div>
-                      <img className="SR-group-1311" src={sort} alt={""} />
                     </div>
                   </div>
                 </div>
                 <div className="SR-frame-567">
                   <div className="SR-container-57">업체 소개글</div>
                   <div className="SR-frame-566">
-                    <div className="SR-frame-4071">
-                      <div className="SR-container-58">
-                        업체 소개 글을 입력해주세요.
+                      <div className="SR-frame-4071">
+                        <textarea
+                            className="SR-container-58"
+                            placeholder="업체 소개 글을 입력해주세요."
+                            value={storeInfo}
+                            onChange={handleStoreInfoChange}
+                        />
                       </div>
-                    </div>
                     <div className="SR-frame-109">
                       <div className="SR-container-59">0자</div>
                       <div className="SR-container-60">/</div>
@@ -376,7 +442,7 @@ export default function StoreRegist() {
                 <div className="SR-frame-573">
                   <div className="SR-container-62">업체 대표 이미지</div>
                   <div className="SR-frame-568">
-                    <img className="SR-vector-2" src={storeimgadd} alt={""} />
+                    <img className="SR-vector-2" src={storeimgadd} alt={""}/>
                   </div>
                 </div>
               </div>
@@ -384,8 +450,8 @@ export default function StoreRegist() {
           </div>
           <div className="SR-frame-536">
             <button
-              className="SR-frame-StoreRegistFinButton"
-              onClick={goToStoreOwnerMain}
+                className="SR-frame-StoreRegistFinButton"
+                onClick={goToStoreOwnerMain}
             >등록 완료
               {/*<div className="SR-container-63">등록 완료</div>*/}
             </button>
