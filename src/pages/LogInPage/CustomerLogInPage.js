@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./CustomerLoginPage.css";
 import advert from "../../assets/Advert_image.png";
 import line from "../../assets/Line_img.png";
@@ -15,6 +16,13 @@ export default function CustomerLoginPage() {
   const goToStoreOwnerLogIn = () => {
     navigate("/StoreOwnerLogIn");
   };
+
+  const KAKAO_AUTH_URL =
+    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/kakao";
+  const kakaoLogin = () => {
+    window.location.href = KAKAO_AUTH_URL;
+  };
+
   return (
     <div className="CustomerLoginPage">
       <div className="CustomerLoginPageBack">
@@ -44,12 +52,12 @@ export default function CustomerLoginPage() {
               <img className="line-7" src={line} alt={""} />
             </div>
             <div className="Logo_Container">
-              <div className="Naver_Frame">
+              <button className="Naver_Frame">
                 <img className="N_Logo" src={naver} alt={""} />
-              </div>
-              <div className="Kakao_Frame">
+              </button>
+              <button onClick={kakaoLogin} className="Kakao_Frame">
                 <img className="Kakao_Logo" src={kakao} alt={""} />
-              </div>
+              </button>
               <div className="frame-14">
                 <img className="Google_Logo" src={google} alt={""} />
               </div>

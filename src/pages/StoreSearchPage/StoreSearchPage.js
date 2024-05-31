@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DayPicker } from "react-day-picker";
 import Modal from "react-modal";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import "./StoreSearchPage.css";
 import "react-day-picker/dist/style.css";
 import "./MultiDatePicker.css";
@@ -114,6 +116,10 @@ export default function StoreSearchPage() {
       setButtonText("날짜를 설정해주세요");
     }
   }, [selectedDates]);
+
+  const TimeSelect = () => {
+    const [startDate, setStartDate] = useState(new Date());
+  };
 
   return (
     <div className="StoreSearchPage">
