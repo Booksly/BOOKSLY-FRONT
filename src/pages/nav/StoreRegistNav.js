@@ -20,18 +20,6 @@ export default function StoreRegistNav() {
                                 <div className="StoreRegistNavbooksly-logo"></div>
                             </div>
                         </button>
-                        <div className="StoreRegistNavheader-buttons">
-                            <div className="StoreRegistNavcurrentNav">
-                                <div className="StoreRegistNavcurrentPageBar">
-                                    <button
-                                        className="frame-StoreSearchButton"
-                                        onClick={goToStoreSearchPage}
-                                    >
-                                        <span className="StoreRegistNavPageName">가게조회</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div className="StoreRegistNavheader-inner-right">
                         <button className="frame-MainHomeButton" onClick={goToMainHomePage}>
@@ -40,7 +28,7 @@ export default function StoreRegistNav() {
                                     <img className="StoreRegistNavhome" src={home} alt={""} />
                                 </div>
                                 <div className="StoreRegistNavgo-mypage">
-                                    <div className="StoreRegistNavmy-page">북슬리 홈</div>
+                                    <div className="StoreRegistNavmy-page">Home</div>
                                 </div>
                             </div>
                         </button>

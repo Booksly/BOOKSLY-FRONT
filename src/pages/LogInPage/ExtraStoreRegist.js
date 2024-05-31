@@ -17,7 +17,7 @@ export default function ExtraStoreRegist() {
         <div className="container">
           <div className="allcontentcontainer">
             <div className="leftcontentcontainer">
-              <div className="container-11">가게 등록</div>
+              <div className="container-11">가게 추가 등록</div>
               <div className="frame-550">
                 <div className="frame-524">
                   <div className="container-1">업체명</div>

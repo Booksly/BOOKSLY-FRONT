@@ -49,41 +49,6 @@
     width: 100px;
     height: 50px;
 }
-.StoreRegistNav .StoreRegistNavheader-buttons {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.StoreRegistNav .StoreRegistNavcurrentNav {
-    background: #ffffff;
-    display: flex;
-    padding: 21px 35px 10px 35px;
-    box-sizing: border-box;
-}
-.StoreRegistNav .StoreRegistNavcurrentPageBar {
-    /*border-bottom: 4px solid #FF5925;*/
-    display: flex;
-}
-.StoreRegistNav .StoreRegistNavnav-box {
-    background: #ffffff;
-    display: flex;
-    padding: 21px 35px 21px 35px;
-    box-sizing: border-box;
-}
-.StoreRegistNav .frame-StoreSearchButton {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-.StoreRegistNav .StoreRegistNavPageName {
-    overflow-wrap: break-word;
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 0.9;
-    color: #000000;
-    white-space: nowrap;
-}
 .StoreRegistNav .StoreRegistNavheader-inner-right {
     display: flex;
     flex-direction: row;
