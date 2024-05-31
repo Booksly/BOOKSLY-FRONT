@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 export default function MyHomeLeftNavi() {
     const navigate = useNavigate()
     const goToMain = () => {
-        navigate("/")
+        navigate("/login")
     }
     const goToMyHome = () => {
         navigate("/MyHomeMain")

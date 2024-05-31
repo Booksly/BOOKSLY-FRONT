@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerTopNavi() {
   const navigate = useNavigate();
+  const goToMain = () => {
+    navigate("/");
+  }
   const goToExtraStoreRegist = () => {
     navigate("/ExtraStoreRegist");
   };
@@ -22,7 +25,7 @@ export default function StoreOwnerTopNavi() {
               <div className="StoreOwnerTopNavialarm-button"></div>
               <div className="StoreOwnerTopNavialarmId">아이디</div>
             </div>
-            <div className="StoreOwnerTopNavilogoutButton">로그아웃</div>
+            <button className="StoreOwnerTopNavilogoutButton" onClick={goToMain}>로그아웃</button>
           </div>
         </div>
         <div className="StoreOwnerTopNaviStore-top-navi-bottom">

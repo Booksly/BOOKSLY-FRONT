@@ -184,6 +184,8 @@
 .LoginAfterMainHeader .log-out-but {
   display: flex;
   box-sizing: border-box;
+  border: 0;
+  background: #FFFFFF;
 }
 .LoginAfterMainHeader .logout {
   overflow-wrap: break-word;

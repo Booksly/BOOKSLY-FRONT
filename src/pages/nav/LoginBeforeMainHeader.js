@@ -27,18 +27,18 @@ export default function LoginBeforeMainHeader() {
         <div className="header-inner-before">
           <div className="header-inner-left">
             <div className="logo-goto-home">
-              <div className="booksly-logo" onClick={goToMain}></div>
+              <button className="booksly-logo" onClick={goToMain}></button>
             </div>
             <div className="header-buttons">
-              <div className="nav-box" onClick={StoreSearch}>
+              <button className="nav-box" onClick={StoreSearch}>
                 <span className="PageName">가게조회</span>
-              </div>
-              <div className="nav-box" onClick={TodayReserv}>
+              </button>
+              <button className="nav-box" onClick={TodayReserv}>
                 <span className="PageName">당일예약</span>
-              </div>
-              <div className="nav-box" onClick={searchReserve}>
+              </button>
+              <button className="nav-box" onClick={searchReserve}>
                 <span className="PageName">예약조회</span>
-              </div>
+              </button>
             </div>
           </div>
           <div className="search-border">
@@ -50,9 +50,9 @@ export default function LoginBeforeMainHeader() {
             </div>
           </div>
           <div className="header-inner-right">
-            <div className="loginButton" onClick={goTologin}>
+            <button className="loginButton" onClick={goTologin}>
               <span className="login">로그인</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>

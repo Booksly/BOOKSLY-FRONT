@@ -184,6 +184,8 @@
 .LoginAfterTodayReservNav .log-out-but {
   display: flex;
   box-sizing: border-box;
+  border: 0;
+  background: #FFFFFF;
 }
 .LoginAfterTodayReservNav .logout {
   overflow-wrap: break-word;

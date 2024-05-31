@@ -20,6 +20,9 @@ export default function LoginAfterTodayReservNav() {
   const goToMyHomeMainPage = () => {
     navigate("/MyHomeMain");
   };
+  const goToMain = () => {
+    navigate("/");
+  }
   return (
     <div className="back">
       <div className="LoginAfterTodayReservNav">
@@ -89,9 +92,9 @@ export default function LoginAfterTodayReservNav() {
                 <span className="userId">김아무개</span>
               </div>
             </div>
-            <div className="log-out-but">
+            <button className="log-out-but" onClick={goToMain}>
               <span className="logout">로그아웃</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>

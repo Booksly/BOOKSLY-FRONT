@@ -66,10 +66,11 @@
   margin: 1px 0;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Inter";
   font-weight: 700;
   font-size: 17px;
   color: #000000;
+  border: 0;
+  background: #FFFFFF;
 }
 
 .StoreOwnerTopNavi .StoreOwnerTopNaviStore-top-navi-bottom {
