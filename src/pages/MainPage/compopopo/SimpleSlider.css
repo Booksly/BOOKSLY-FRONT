@@ -1,33 +1,48 @@
-.slider-container {
-    padding: 30px;
+/* 위아래 간격 생성 */
+.slick-slider.custom-slider.slick-initialized {
+    padding: 10px; 
 }
 
-.slick-slider.custom-slider.slick-initialized {
-    padding: 10px; /* 슬라이더 아이템 내 여백 추가 */
-    box-sizing: border-box;
-    position: relative;
-}
+/* 슬라이더 패딩 */
 .custom-slider .slick-slide {
     margin: 0 5px; /* 각 슬라이더 아이템 사이에 좌우 마진 추가 */
     background-color: white;
-    height: auto;
+    height: 230px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* 슬라이더 전체 너비를 고려한 마진 추가 */
 .custom-slider .slick-list {
-    margin: 0 30px; /* 슬라이더 전체 너비를 고려한 마진 추가 */
+    margin: 0 30px; 
 }
 
+/* 슬라이더 하나 */
 .slider-item {
-    padding: 10px; /* 슬라이더 아이템 내 여백 추가 */
-    box-sizing: border-box;
-    position: relative;
+    /* 슬라이더 아이템 내 여백 추가 */
+    padding: 10px; 
+    cursor: pointer;
 }
 
+/* 이미지 크기 설정 */
 .slider-image {
-    width: 100%;
-    height: auto;
+    width: 242px;
+    height: 161px;
+    object-fit: cover;
     display: block;
+    border-radius: 10px;
+}
+
+/* 가게 정보 설정 */
+.store-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+.store-info .store_name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 10px;
 }
 
 .custom-slider .slick-track {

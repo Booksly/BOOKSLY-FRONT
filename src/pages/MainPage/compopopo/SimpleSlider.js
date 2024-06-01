@@ -1,35 +1,44 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { useNavigate } from "react-router";
+
+//css 임폴트
 import "./slick-theme.css";
 import "./slick.css";
 import "./SimpleSlider.css"
-import { useNavigate } from "react-router";
 
-
-
-function SimpleSlider() {
+export default function SimpleSlider({ stores }) {
+  //이동을 위한 useNavigate (컴포넌트화 필요할 듯함)
   const navigate = useNavigate()
+  //메인으로 이동
   const goToMain = () => {
-      navigate("/")
+      navigate("/") 
   }
+  //
   const goToMyHome = () => {
       navigate("/MyHomeMain")
   }
+  //가게조회
   const StoreSearch = () => {
       navigate("/StoreSearch")
   }
+  //당일예약
   const TodayReserv = () => {
       navigate("/TodayReserv")
   }
+  //예약조회
   const searchReserve = () => {
       navigate("/Reservation")
   }
+  //로그인
   const goTologin = () => {
       navigate("/CustomerLogin")
   }
+  //가게 상세 정보로 이동
   const goToDetail = () => {
     navigate("/DetailedStoreInfo")
   }
+  
     const settings = {
       dots: false, // 캐러셀 하단 버튼
       infinite: true, // 콘텐츠 반복 여부
@@ -39,21 +48,16 @@ function SimpleSlider() {
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />
     };
-    const images = [
-      "https://via.placeholder.com/300x200.png?text=Image+1",
-      "https://via.placeholder.com/300x200.png?text=Image+2",
-      "https://via.placeholder.com/300x200.png?text=Image+3",
-      "https://via.placeholder.com/300x200.png?text=Image+4",
-      "https://via.placeholder.com/300x200.png?text=Image+5",
-  
-    ];
-  
+
     return (
       <Slider {...settings} className="custom-slider">
-        {images.map((src, index) => (
+        {stores.map((store, index) => (
           <div key={index} className="slider-item" onClick={goToDetail}>
-            <img src={src} alt={`Slide ${index + 1}`} className="slider-image"/>
-            [제이제이 헤어] 4.4 <br></br>
+            <img src={store.image} alt={`Slide ${index + 1}`} className="slider-image"/>
+            <div className="store-info">
+              <span className="store_name">{store.name}</span>
+              <span>{store.rating} - [{store.category}]</span>
+            </div>
           </div>
         ))}
       </Slider>
@@ -61,8 +65,7 @@ function SimpleSlider() {
     
 }
 
-export default SimpleSlider;
-
+//오른쪽으로 이동하는 함수
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -74,6 +77,7 @@ function SampleNextArrow(props) {
     );
 }
 
+//왼쪽으로 이동하는 함수
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (

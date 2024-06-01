@@ -1,3 +1,38 @@
+/* 첫번째 줄 삼단 캐러셀 css */
 .carousel-padding-in-abc {
     margin-top: 80px;
 }
+
+/* 캐러셀 크기, 이미지 크기, 글자 설정 */
+.carousel-padding-in-abc .promotion_carousel {
+    /* 캐러셀 크기 및 이미지 설정 */
+    width: 1350px;
+    height: 400px;
+    background-color: white; 
+    background-repeat: no-repeat; 
+    background-size: 120%;
+    background-position: center ;
+    margin: auto; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    /* 캐러셀 박스 내용물 위치 */
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: center;
+    /* 글자 폰트 설정 */
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 40px;
+    font-weight: bold;
+  }
+ 
+/* 글자 위치 */
+.promotion_carousel .promotion_content{
+    margin-right: 500px;
+    margin-bottom: 280px;
+}
+
+/* 캐러셀 부트스르렙 이동 화살표 수정 */
+.carousel-control-next{
+    display: none !important;
+} 
