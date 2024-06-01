@@ -177,8 +177,8 @@ export default function StoreRegist() {
   };
 
   const navigate = useNavigate();
-  const goToStoreOwnerMain = () => {
-    navigate("/StoreOwnerMain");
+  const goToStoreOwnerLogin = () => {
+    navigate("/StoreOwnerLogIn");
   };
   return (
     <div className="StoreRegist">
@@ -451,7 +451,7 @@ export default function StoreRegist() {
           <div className="SR-frame-536">
             <button
                 className="SR-frame-StoreRegistFinButton"
-                onClick={goToStoreOwnerMain}
+                onClick={goToStoreOwnerLogin}
             >등록 완료
               {/*<div className="SR-container-63">등록 완료</div>*/}
             </button>
