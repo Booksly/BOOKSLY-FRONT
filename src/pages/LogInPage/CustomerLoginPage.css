@@ -131,10 +131,12 @@
   height: 50px;
   box-sizing: border-box;
   border: 2px solid #000000;
+  padding: 0;
 }
 .CustomerLoginPage .Kakao_Logo {
-  width: 50px;
+  width: 45px;
   height: 50px;
+  border-radius: 50%;
 }
 .CustomerLoginPage .frame-14 {
   border-radius: 25px;

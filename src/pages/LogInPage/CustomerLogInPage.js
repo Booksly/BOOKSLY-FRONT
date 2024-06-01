@@ -17,10 +17,20 @@ export default function CustomerLoginPage() {
     navigate("/StoreOwnerLogIn");
   };
 
+  const NAVER_AUTH_URL =
+    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/naver";
+  const naverLogin = () => {
+    window.location.href = NAVER_AUTH_URL;
+  };
   const KAKAO_AUTH_URL =
     "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/kakao";
   const kakaoLogin = () => {
     window.location.href = KAKAO_AUTH_URL;
+  };
+  const GOOGLE_AUTH_URL =
+    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/google";
+  const googleLogin = () => {
+    window.location.href = GOOGLE_AUTH_URL;
   };
 
   return (
@@ -52,15 +62,15 @@ export default function CustomerLoginPage() {
               <img className="line-7" src={line} alt={""} />
             </div>
             <div className="Logo_Container">
-              <button className="Naver_Frame">
+              <button onClick={naverLogin} className="Naver_Frame">
                 <img className="N_Logo" src={naver} alt={""} />
               </button>
               <button onClick={kakaoLogin} className="Kakao_Frame">
                 <img className="Kakao_Logo" src={kakao} alt={""} />
               </button>
-              <div className="frame-14">
+              <button onClick={googleLogin} className="frame-14">
                 <img className="Google_Logo" src={google} alt={""} />
-              </div>
+              </button>
             </div>
           </div>
         </div>
