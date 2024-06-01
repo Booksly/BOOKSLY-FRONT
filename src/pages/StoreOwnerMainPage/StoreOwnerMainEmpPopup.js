@@ -22,22 +22,22 @@ const categories = [
 
 export default function StoreOwnerMainEmpPopup() {
 
-    const [text, setText] = useState({
-        timeStartMon: '',
-        timeEndMon: '',
-        timeStartTue: '',
-        timeEndTue: '',
-        timeStartWed: '',
-        timeEndWed: '',
-        timeStartThu: '',
-        timeEndThu:'',
-        timeStartFri: '',
-        timeEndFri: '',
-        timeStartSat: '',
-        timeEndSat: '',
-        timeStartSun: '',
-        timeEndSun: '',
-    });
+    const [timeStartMon, setTimeStartMon] = useState('');
+    const [timeEndMon, setTimeEndMon] = useState('');
+    const [timeStartTue, setTimeStartTue] = useState('');
+    const [timeEndTue, setTimeEndTue] = useState('');
+    const [timeStartWed, setTimeStartWed] = useState('');
+    const [timeEndWed, setTimeEndWed] = useState('');
+    const [timeStartThu, setTimeStartThu] = useState('');
+    const [timeEndThu, setTimeEndThu] = useState('');
+    const [timeStartFri, setTimeStartFri] = useState('');
+    const [timeEndFri, setTimeEndFri] = useState('');
+    const [timeStartSat, setTimeStartSat] = useState('');
+    const [timeEndSat, setTimeEndSat] = useState('');
+    const [timeStartSun, setTimeStartSun] = useState('');
+    const [timeEndSun, setTimeEndSun] = useState('');
+    const [disabledDays, setDisabledDays] = useState([]);
+    const [selectedDays, setSelectedDays] = useState([]);
     const onChange = (e) => {
         const { name, value, type } = e.target;
         if (name === 'menuName') {
@@ -45,39 +45,39 @@ export default function StoreOwnerMainEmpPopup() {
         } else if (name === 'empInfo' && value.length <= 50) {
             setEmpInfo(value);
         } else {
-            setTimeStartMon(e.target.timeStartMon);
-            setTimeEndMon(e.target.timeEndMon);
-            setTimeStartTue(e.target.timeStartTue);
-            setTimeEndTue(e.target.timeEndTue);
-            setTimeStartWed(e.target.timeStartWed);
-            setTimeEndWed(e.target.timeEndWed);
-            setTimeStartThu(e.target.timeStartThu);
-            setTimeEndThu(e.target.timeEndThu);
-            setTimeStartFri(e.target.timeStartFri);
-            setTimeEndFri(e.target.timeEndFri);
-            setTimeStartSat(e.target.timeStartSat);
-            setTimeEndSat(e.target.timeEndSat);
-            setTimeStartSun(e.target.timeStartSun);
-            setTimeEndSun(e.target.timeEndSun);
+            // setTimeStartMon(e.target.timeStartMon);
+            // setTimeEndMon(e.target.timeEndMon);
+            // setTimeStartTue(e.target.timeStartTue);
+            // setTimeEndTue(e.target.timeEndTue);
+            // setTimeStartWed(e.target.timeStartWed);
+            // setTimeEndWed(e.target.timeEndWed);
+            // setTimeStartThu(e.target.timeStartThu);
+            // setTimeEndThu(e.target.timeEndThu);
+            // setTimeStartFri(e.target.timeStartFri);
+            // setTimeEndFri(e.target.timeEndFri);
+            // setTimeStartSat(e.target.timeStartSat);
+            // setTimeEndSat(e.target.timeEndSat);
+            // setTimeStartSun(e.target.timeStartSun);
+            // setTimeEndSun(e.target.timeEndSun);
         }
     }
 
     const [empName, setEmpName] = React.useState()
     const [empInfo, setEmpInfo] = React.useState()
-    const [timeStartMon, setTimeStartMon] = React.useState()
-    const [timeEndMon, setTimeEndMon] = React.useState()
-    const [timeStartTue, setTimeStartTue] = React.useState()
-    const [timeEndTue, setTimeEndTue] = React.useState()
-    const [timeStartWed, setTimeStartWed] = React.useState()
-    const [timeEndWed, setTimeEndWed] = React.useState()
-    const [timeStartThu, setTimeStartThu] = React.useState()
-    const [timeEndThu, setTimeEndThu] = React.useState()
-    const [timeStartFri, setTimeStartFri] = React.useState()
-    const [timeEndFri, setTimeEndFri] = React.useState()
-    const [timeStartSat, setTimeStartSat] = React.useState()
-    const [timeEndSat, setTimeEndSat] = React.useState()
-    const [timeStartSun, setTimeStartSun] = React.useState()
-    const [timeEndSun, setTimeEndSun] = React.useState()
+    // const [timeStartMon, setTimeStartMon] = React.useState()
+    // const [timeEndMon, setTimeEndMon] = React.useState()
+    // const [timeStartTue, setTimeStartTue] = React.useState()
+    // const [timeEndTue, setTimeEndTue] = React.useState()
+    // const [timeStartWed, setTimeStartWed] = React.useState()
+    // const [timeEndWed, setTimeEndWed] = React.useState()
+    // const [timeStartThu, setTimeStartThu] = React.useState()
+    // const [timeEndThu, setTimeEndThu] = React.useState()
+    // const [timeStartFri, setTimeStartFri] = React.useState()
+    // const [timeEndFri, setTimeEndFri] = React.useState()
+    // const [timeStartSat, setTimeStartSat] = React.useState()
+    // const [timeEndSat, setTimeEndSat] = React.useState()
+    // const [timeStartSun, setTimeStartSun] = React.useState()
+    // const [timeEndSun, setTimeEndSun] = React.useState()
 
     const [mainCategory, setMainCategory] = useState('');
     const [subCategories, setSubCategories] = useState([]);
@@ -184,6 +184,108 @@ export default function StoreOwnerMainEmpPopup() {
         ));
     };
 
+    const handleDate = (e) => {
+        const { name, value } = e.target;
+        switch (name) {
+            case 'timeStartMon':
+                setTimeStartMon(value);
+                break;
+            case 'timeEndMon':
+                setTimeEndMon(value);
+                break;
+            case 'timeStartTue':
+                setTimeStartTue(value);
+                break;
+            case 'timeEndTue':
+                setTimeEndTue(value);
+                break;
+            case 'timeStartWed':
+                setTimeStartWed(value);
+                break;
+            case 'timeEndWed':
+                setTimeEndWed(value);
+                break;
+            case 'timeStartThu':
+                setTimeStartThu(value);
+                break;
+            case 'timeEndThu':
+                setTimeEndThu(value);
+                break;
+            case 'timeStartFri':
+                setTimeStartFri(value);
+                break;
+            case 'timeEndFri':
+                setTimeEndFri(value);
+                break;
+            case 'timeStartSat':
+                setTimeStartSat(value);
+                break;
+            case 'timeEndSat':
+                setTimeEndSat(value);
+                break;
+            case 'timeStartSun':
+                setTimeStartSun(value);
+                break;
+            case 'timeEndSun':
+                setTimeEndSun(value);
+                break;
+            default:
+                break;
+        }
+    };
+
+    const toggleDay = (day) => {
+        if (selectedDays.includes(day)) {
+            setSelectedDays(selectedDays.filter(d => d !== day));
+            setDisabledDays([...disabledDays, day]);
+            clearInput(day);
+        } else {
+            setSelectedDays([...selectedDays, day]);
+            setDisabledDays(disabledDays.filter(d => d !== day));
+        }
+    };
+
+    const toggleHoliday = (day) => {
+        setDisabledDays([...disabledDays, day]);
+        setSelectedDays(selectedDays.filter(d => d !== day));
+        clearInput(day);
+    };
+
+    const clearInput = (day) => {
+        switch (day) {
+            case 'Mon':
+                setTimeStartMon('');
+                setTimeEndMon('');
+                break;
+            case 'Tue':
+                setTimeStartTue('');
+                setTimeEndTue('');
+                break;
+            case 'Wed':
+                setTimeStartWed('');
+                setTimeEndWed('');
+                break;
+            case 'Thu':
+                setTimeStartThu('');
+                setTimeEndThu('');
+                break;
+            case 'Fri':
+                setTimeStartFri('');
+                setTimeEndFri('');
+                break;
+            case 'Sat':
+                setTimeStartSat('');
+                setTimeEndSat('');
+                break;
+            case 'Sun':
+                setTimeStartSun('');
+                setTimeEndSun('');
+                break;
+            default:
+                break;
+        }
+    };
+
     return (
         <div className="StoreOwnerMainEmpPopup">
             <div className="SOMEP-left">
@@ -251,183 +353,285 @@ export default function StoreOwnerMainEmpPopup() {
                     </div>
                 </div>
                 <div className="SOMEPframe-597">
-                    <div className="SOMEP-time-time-space">
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    월
+                    <div className="SOMEP-time-space">
+                        {[
+                            {
+                                day: 'Mon',
+                                label: '월',
+                                timeStart: timeStartMon,
+                                timeEnd: timeEndMon,
+                                timeStartName: 'timeStartMon',
+                                timeEndName: 'timeEndMon'
+                            },
+                            {
+                                day: 'Tue',
+                                label: '화',
+                                timeStart: timeStartTue,
+                                timeEnd: timeEndTue,
+                                timeStartName: 'timeStartTue',
+                                timeEndName: 'timeEndTue'
+                            },
+                            {
+                                day: 'Wed',
+                                label: '수',
+                                timeStart: timeStartWed,
+                                timeEnd: timeEndWed,
+                                timeStartName: 'timeStartWed',
+                                timeEndName: 'timeEndWed'
+                            },
+                            {
+                                day: 'Thu',
+                                label: '목',
+                                timeStart: timeStartThu,
+                                timeEnd: timeEndThu,
+                                timeStartName: 'timeStartThu',
+                                timeEndName: 'timeEndThu'
+                            },
+                            {
+                                day: 'Fri',
+                                label: '금',
+                                timeStart: timeStartFri,
+                                timeEnd: timeEndFri,
+                                timeStartName: 'timeStartFri',
+                                timeEndName: 'timeEndFri'
+                            },
+                            {
+                                day: 'Sat',
+                                label: '토',
+                                timeStart: timeStartSat,
+                                timeEnd: timeEndSat,
+                                timeStartName: 'timeStartSat',
+                                timeEndName: 'timeEndSat'
+                            },
+                            {
+                                day: 'Sun',
+                                label: '일',
+                                timeStart: timeStartSun,
+                                timeEnd: timeEndSun,
+                                timeStartName: 'timeStartSun',
+                                timeEndName: 'timeEndSun'
+                            }
+                        ].map((time, index) => (
+                            <div className="SOMEP-frame-254" key={index}>
+                                <div className="SOMEP-frame-251">
+                                    <button
+                                        className="SOMEP-container-4"
+                                        onClick={() => toggleDay(time.day)}
+                                        style={{backgroundColor: selectedDays.includes(time.day) ? 'rgba(255, 89, 37, 0.2)' : 'transparent'}}
+                                    >
+                                        {time.label}
+                                    </button>
+                                </div>
+                                <div className="SOMEP-frame-253">
+                                    <input
+                                        onChange={handleDate}
+                                        name={time.timeStartName}
+                                        value={time.timeStart}
+                                        placeholder="10:00"
+                                        className="SOMEP-frame-249"
+                                        disabled={disabledDays.includes(time.day)}
+                                    />
+                                    <div className="SOMEP-container-6">
+                                        ~
+                                    </div>
+                                    <input
+                                        onChange={handleDate}
+                                        name={time.timeEndName}
+                                        value={time.timeEnd}
+                                        placeholder="20:00"
+                                        className="SOMEP-frame-250"
+                                        disabled={disabledDays.includes(time.day)}
+                                    />
+                                </div>
+                                <div className="SOMEP-frame-319">
+                                    <button
+                                        className="SOMEP-container-8"
+                                        onClick={() => toggleHoliday(time.day)}
+                                        style={{backgroundColor: disabledDays.includes(time.day) ? 'rgba(255, 89, 37, 0.2)' : 'transparent'}}
+                                    >
+                                        휴무
+                                    </button>
                                 </div>
                             </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartMon" value={timeStartMon}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndMon" value={timeEndMon}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-551">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    화
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartTue" value={timeStartTue}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndTue" value={timeEndTue}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    수
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartWed" value={timeStartWed}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndWed" value={timeEndWed}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    목
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartThu" value={timeStartThu}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndThu" value={timeEndThu}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    금
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartFri" value={timeStartFri}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndFri" value={timeEndFri}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    토
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartSat" value={timeStartSat}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndSat" value={timeEndSat}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
-                        <div className="SOMEP-time-frame-254">
-                            <div className="SOMEP-time-frame-251">
-                                <div className="SOMEP-time-container-4">
-                                    일
-                                </div>
-                            </div>
-                            <div className="SOMEP-time-frame-253">
-                                <input onChange={onChange} name="timeStartSun" value={timeStartSun}
-                                       placeholder="10:00"
-                                       className="SOMEP-time-frame-249"
-                                />
-                                <div className="SOMEP-time-container-6">
-                                    ~
-                                </div>
-                                <input onChange={onChange} name="timeEndSun" value={timeEndSun}
-                                       placeholder="20:00"
-                                       className="SOMEP-time-frame-250"
-                                />
-                            </div>
-                            <div className="SOMEP-time-frame-319">
-                                <div className="SOMEP-time-container-8">
-                                    휴무
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
+                    {/*<div className="SOMEP-time-time-space">*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                월*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartMon" value={timeStartMon}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndMon" value={timeEndMon}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-551">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                화*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartTue" value={timeStartTue}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndTue" value={timeEndTue}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                수*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartWed" value={timeStartWed}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndWed" value={timeEndWed}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                목*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartThu" value={timeStartThu}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndThu" value={timeEndThu}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                금*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartFri" value={timeStartFri}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndFri" value={timeEndFri}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                토*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartSat" value={timeStartSat}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndSat" value={timeEndSat}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="SOMEP-time-frame-254">*/}
+                    {/*        <div className="SOMEP-time-frame-251">*/}
+                    {/*            <div className="SOMEP-time-container-4">*/}
+                    {/*                일*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-253">*/}
+                    {/*            <input onChange={onChange} name="timeStartSun" value={timeStartSun}*/}
+                    {/*                   placeholder="10:00"*/}
+                    {/*                   className="SOMEP-time-frame-249"*/}
+                    {/*            />*/}
+                    {/*            <div className="SOMEP-time-container-6">*/}
+                    {/*                ~*/}
+                    {/*            </div>*/}
+                    {/*            <input onChange={onChange} name="timeEndSun" value={timeEndSun}*/}
+                    {/*                   placeholder="20:00"*/}
+                    {/*                   className="SOMEP-time-frame-250"*/}
+                    {/*            />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="SOMEP-time-frame-319">*/}
+                    {/*            <div className="SOMEP-time-container-8">*/}
+                    {/*                휴무*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <button className="SOMEPframe-248">
                         등록
                     </button>

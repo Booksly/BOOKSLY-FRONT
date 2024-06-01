@@ -47,18 +47,14 @@
     display: flex;
     padding: 4px;
     align-items: flex-start;
-
     height: 80px;
     box-sizing: border-box;
     font-size: 15px;
     width: 400px;
     color: #000000;
-}
-.StoreOwnerMainDetailedPopup .DetailedPopupcontainer-48 {
+    resize: none;
+    outline: none;
     overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-main-box {
     margin-bottom: 14px;
@@ -130,10 +126,11 @@
     display: flex;
     flex-direction: column;
     width: 400px;
+    height: fit-content;
     box-sizing: border-box;
 }
 .StoreOwnerMainDetailedPopup .DetailedPopuplocation-box {
-    margin: 0 0 14px 5px;
+    margin: 0 0 0 5px;
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -271,23 +268,50 @@
     width: fit-content;
     box-sizing: border-box;
 }
+/*.StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-info-pic {*/
+/*    background: #A7A7A7;*/
+/*    margin: 0 5px 30px 0;*/
+/*    display: flex;*/
+/*    align-self: center;*/
+/*    justify-content: center;*/
+/*    padding: 56px 0;*/
+/*    width: 185px;*/
+/*    height: 135px;*/
+/*    box-sizing: border-box;*/
+
+/*}*/
+/*.StoreOwnerMainDetailedPopup .DetailedPopupprofile-select {*/
+/*    background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;*/
+/*    width: 23px;*/
+/*    height: 23px;*/
+/*}*/
 .StoreOwnerMainDetailedPopup .DetailedPopupstore-detailed-info-pic {
     background: #A7A7A7;
     margin: 0 5px 30px 0;
     display: flex;
     align-self: center;
+    align-items: center;
     justify-content: center;
-    padding: 56px 0;
     width: 185px;
     height: 135px;
     box-sizing: border-box;
-
+    position: relative;
 }
+
 .StoreOwnerMainDetailedPopup .DetailedPopupprofile-select {
     background: url('../../assets/ProfileSelect.png') 50% / cover no-repeat;
     width: 23px;
     height: 23px;
+    cursor: pointer;
+    align-items: center;
 }
+
+.StoreOwnerMainDetailedPopup .DetailedPopupprofile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .StoreOwnerMainDetailedPopup .DetailedPopuptime-space {
     display: flex;
     flex-direction: column;
@@ -811,4 +835,90 @@
     box-sizing: border-box;
     justify-content: flex-end;
     align-self: flex-end;
+}
+
+.StoreOwnerMainDetailedPopup .SOMDP-time-space {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-254 {
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-251 {
+    border: 1px solid #FF5925;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-container-4 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FF5925;
+    border: 0;
+    height: 28px;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-253 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-249 {
+    border: 1px solid #FF5925;
+    padding-left: 14px;
+    background: #ffffff;
+    margin-right: 5px;
+    display: flex;
+    box-sizing: border-box;
+    width: 65px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-container-6 {
+    margin: 3.5px 5px 3.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-250 {
+    border: 1px solid #FF5925;
+    padding-left: 14px;
+    background: #FFFFFF;
+    display: flex;
+    box-sizing: border-box;
+    width: 65px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-frame-319 {
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMainDetailedPopup .SOMDP-container-8 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #FF5925;
+    border: 0;
 }

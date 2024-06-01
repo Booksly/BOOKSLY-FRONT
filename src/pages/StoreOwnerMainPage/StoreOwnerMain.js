@@ -19,6 +19,95 @@ let options = [
     {value: "emp3", label: "캡 디자이너"}
 ]
 
+const reservations = [
+    { year: 2024, month: 6, day: 10 },
+    { year: 2024, month: 6, day: 15 },
+    { year: 2024, month: 6, day: 20 },
+];
+
+
+const Calendar = ({ reservations = [] }) => {
+    const [date, setDate] = useState(new Date()); // 초기값: 현재 날짜
+
+    const handleDateClick = (day) => {
+        alert(`Selected date: ${date.getFullYear()}-${date.getMonth() + 1}-${day}`);
+    };
+
+    const handlePrevMonth = () => {
+        setDate(new Date(date.getFullYear(), date.getMonth() - 1));
+    };
+
+    const handleNextMonth = () => {
+        setDate(new Date(date.getFullYear(), date.getMonth() + 1));
+    };
+
+    const isReserved = (day, month, year) => {
+        return reservations.some(
+            (reservation) =>
+                reservation.day === day &&
+                reservation.month === month + 1 &&
+                reservation.year === year
+        );
+    };
+
+    const renderDay = (day, month, year) => {
+        const reserved = isReserved(day, month, year);
+        return (
+            <div className="SOMcalendar-day" onClick={() => handleDateClick(day)} key={day}>
+                <div className="SOMvalue">
+                    {day}
+                    {reserved && <div className="SOMellipse"></div>}
+                </div>
+            </div>
+        );
+    };
+
+    const renderCalendar = () => {
+        const year = date.getFullYear();
+        const month = date.getMonth();
+        const firstDay = new Date(year, month, 1).getDay();
+        const lastDate = new Date(year, month + 1, 0).getDate();
+
+        let days = [];
+        for (let i = 0; i < firstDay; i++) {
+            days.push(<div className="SOMcalendar-day" key={`empty-${i}`}></div>);
+        }
+
+        for (let i = 1; i <= lastDate; i++) {
+            days.push(renderDay(i, month, year));
+        }
+
+        return days;
+    };
+
+    return (
+        <div className="SOMcalendar-example-2">
+            <div className="SOMmonth-header">
+                <div className="SOMicon-button" onClick={handlePrevMonth}>
+                    &lt;
+                </div>
+                <div className="SOMmonth-yyyy">
+                    {date.toLocaleString('default', { month: 'long' })} {date.getFullYear()}
+                </div>
+                <div className="SOMicon-button-1" onClick={handleNextMonth}>
+                    &gt;
+                </div>
+            </div>
+            <div className="SOMweek-header">
+                {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((day) => (
+                    <div className="SOMbox" key={day}>
+                        <div className={`SOM${day.toLowerCase()}`}>{day}</div>
+                    </div>
+                ))}
+            </div>
+            <div className="SOMweek-days">
+                {renderCalendar()}
+            </div>
+        </div>
+    );
+};
+
+
 export default function StoreOwnerMain() {
     const [selectValue, setSelectValue] = useState('');
     const selectInputRef = useRef(null);
@@ -392,278 +481,279 @@ export default function StoreOwnerMain() {
                                     {/*<div className="SOMcontainer-132">*/}
                                     {/*    전체 예약*/}
                                     {/*</div>*/}
-                                    <div className="SOMcalendar-example-2">
-                                        <div className="SOMmonth-header">
-                                            <div className="SOMicon-button">
-                                                {/*<img className="SOMvector-10" src="SOMassets/vectors/Vector938_x2.svg" />*/}
-                                            </div>
-                                            <div className="SOMmonth-yyyy">
-                                                March 2024
-                                            </div>
-                                            <div className="SOMicon-button-1">
-                                                {/*<img className="SOMvector-11" src="SOMassets/vectors/Vector338_x2.svg" />*/}
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-header">
-                                            <div className="SOMbox">
-                                                <div className="SOMsun">
-                                                    SUN
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-1">
-                                                <div className="SOMmon">
-                                                    MON
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-2">
-                                                <div className="SOMtue">
-                                                    TUE
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-3">
-                                                <div className="SOMwed">
-                                                    WED
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-4">
-                                                <div className="SOMthu">
-                                                    THU
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-5">
-                                                <div className="SOMfri">
-                                                    FRI
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-6">
-                                                <div className="SOMsat">
-                                                    SAT
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days">
-                                            <div className="SOMcalendar-day">
-                                                <div className="SOMvalue">
-                                                    25
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-1">
-                                                <div className="SOMvalue-1">
-                                                    26
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-2">
-                                                <div className="SOMvalue-2">
-                                                    27
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-3">
-                                                <div className="SOMvalue-3">
-                                                    28
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-4">
-                                                <div className="SOMvalue-4">
-                                                    29
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-5">
-                                                <div className="SOMvalue-5">
-                                                    1
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-6">
-                                                <div className="SOMvalue-6">
-                                                    2
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-1">
-                                            <div className="SOMcalendar-day-7">
-                                                <div className="SOMvalue-7">
-                                                    3
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-8">
-                                                <div className="SOMvalue-8">
-                                                    4
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-9">
-                                                <div className="SOMvalue-9">
-                                                    5
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-10">
-                                                <div className="SOMvalue-10">
-                                                    6
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-11">
-                                                <div className="SOMvalue-11">
-                                                    7
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-12">
-                                                <div className="SOMvalue-12">
-                                                    8
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-13">
-                                                <div className="SOMvalue-13">
-                                                    9
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-2">
-                                            <div className="SOMcalendar-day-14">
-                                                <div className="SOMvalue-14">
-                                                    10
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-15">
-                                                <div className="SOMvalue-15">
-                                                    11
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-16">
-                                                <div className="SOMvalue-16">
-                                                    12
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-17">
-                                                <div className="SOMvalue-17">
-                                                    13
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-18">
-                                                <div className="SOMvalue-18">
-                                                    14
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-19">
-                                                <div className="SOMvalue-19">
-                                                    15
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-20">
-                                                <div className="SOMvalue-20">
-                                                    16
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-3">
-                                            <div className="SOMcalendar-day-21">
-                                                <div className="SOMvalue-21">
-                                                    17
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-22">
-                                                <div className="SOMvalue-22">
-                                                    18
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-23">
-                                                <div className="SOMvalue-23">
-                                                    19
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-24">
-                                                <div className="SOMvalue-24">
-                                                    20
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-25">
-                                                <div className="SOMvalue-25">
-                                                    21
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-26">
-                                                <div className="SOMvalue-26">
-                                                    22
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-27">
-                                                <div className="SOMvalue-27">
-                                                    23
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-4">
-                                            <div className="SOMcalendar-day-28">
-                                                <div className="SOMvalue-28">
-                                                    24
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-29">
-                                                <div className="SOMvalue-29">
-                                                    25
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-30">
-                                                <div className="SOMvalue-30">
-                                                    26
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-31">
-                                                <div className="SOMvalue-31">
-                                                    27
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-32">
-                                                <div className="SOMvalue-32">
-                                                    28
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-33">
-                                                <div className="SOMvalue-33">
-                                                    29
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-34">
-                                                <div className="SOMvalue-34">
-                                                    30
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-5">
-                                            <div className="SOMcalendar-day-35">
-                                                <div className="SOMvalue-35">
-                                                    31
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-36">
-                                                <div className="SOMvalue-36">
-                                                    1
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-37">
-                                                <div className="SOMvalue-37">
-                                                    2
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-38">
-                                                <div className="SOMvalue-38">
-                                                    3
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-39">
-                                                <div className="SOMvalue-39">
-                                                    4
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-40">
-                                                <div className="SOMvalue-40">
-                                                    5
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-41">
-                                                <div className="SOMvalue-41">
-                                                    6
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Calendar />
+                                    {/*<div className="SOMcalendar-example-2">*/}
+                                    {/*    <div className="SOMmonth-header">*/}
+                                    {/*        <div className="SOMicon-button">*/}
+                                    {/*            /!*<img className="SOMvector-10" src="SOMassets/vectors/Vector938_x2.svg" />*!/*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMmonth-yyyy">*/}
+                                    {/*            March 2024*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMicon-button-1">*/}
+                                    {/*            /!*<img className="SOMvector-11" src="SOMassets/vectors/Vector338_x2.svg" />*!/*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-header">*/}
+                                    {/*        <div className="SOMbox">*/}
+                                    {/*            <div className="SOMsun">*/}
+                                    {/*                SUN*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-1">*/}
+                                    {/*            <div className="SOMmon">*/}
+                                    {/*                MON*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-2">*/}
+                                    {/*            <div className="SOMtue">*/}
+                                    {/*                TUE*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-3">*/}
+                                    {/*            <div className="SOMwed">*/}
+                                    {/*                WED*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-4">*/}
+                                    {/*            <div className="SOMthu">*/}
+                                    {/*                THU*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-5">*/}
+                                    {/*            <div className="SOMfri">*/}
+                                    {/*                FRI*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-6">*/}
+                                    {/*            <div className="SOMsat">*/}
+                                    {/*                SAT*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days">*/}
+                                    {/*        <div className="SOMcalendar-day">*/}
+                                    {/*            <div className="SOMvalue">*/}
+                                    {/*                25*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-1">*/}
+                                    {/*            <div className="SOMvalue-1">*/}
+                                    {/*                26*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-2">*/}
+                                    {/*            <div className="SOMvalue-2">*/}
+                                    {/*                27*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-3">*/}
+                                    {/*            <div className="SOMvalue-3">*/}
+                                    {/*                28*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-4">*/}
+                                    {/*            <div className="SOMvalue-4">*/}
+                                    {/*                29*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-5">*/}
+                                    {/*            <div className="SOMvalue-5">*/}
+                                    {/*                1*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-6">*/}
+                                    {/*            <div className="SOMvalue-6">*/}
+                                    {/*                2*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-1">*/}
+                                    {/*        <div className="SOMcalendar-day-7">*/}
+                                    {/*            <div className="SOMvalue-7">*/}
+                                    {/*                3*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-8">*/}
+                                    {/*            <div className="SOMvalue-8">*/}
+                                    {/*                4*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-9">*/}
+                                    {/*            <div className="SOMvalue-9">*/}
+                                    {/*                5*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-10">*/}
+                                    {/*            <div className="SOMvalue-10">*/}
+                                    {/*                6*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-11">*/}
+                                    {/*            <div className="SOMvalue-11">*/}
+                                    {/*                7*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-12">*/}
+                                    {/*            <div className="SOMvalue-12">*/}
+                                    {/*                8*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-13">*/}
+                                    {/*            <div className="SOMvalue-13">*/}
+                                    {/*                9*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-2">*/}
+                                    {/*        <div className="SOMcalendar-day-14">*/}
+                                    {/*            <div className="SOMvalue-14">*/}
+                                    {/*                10*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-15">*/}
+                                    {/*            <div className="SOMvalue-15">*/}
+                                    {/*                11*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-16">*/}
+                                    {/*            <div className="SOMvalue-16">*/}
+                                    {/*                12*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-17">*/}
+                                    {/*            <div className="SOMvalue-17">*/}
+                                    {/*                13*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-18">*/}
+                                    {/*            <div className="SOMvalue-18">*/}
+                                    {/*                14*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-19">*/}
+                                    {/*            <div className="SOMvalue-19">*/}
+                                    {/*                15*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-20">*/}
+                                    {/*            <div className="SOMvalue-20">*/}
+                                    {/*                16*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-3">*/}
+                                    {/*        <div className="SOMcalendar-day-21">*/}
+                                    {/*            <div className="SOMvalue-21">*/}
+                                    {/*                17*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-22">*/}
+                                    {/*            <div className="SOMvalue-22">*/}
+                                    {/*                18*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-23">*/}
+                                    {/*            <div className="SOMvalue-23">*/}
+                                    {/*                19*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-24">*/}
+                                    {/*            <div className="SOMvalue-24">*/}
+                                    {/*                20*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-25">*/}
+                                    {/*            <div className="SOMvalue-25">*/}
+                                    {/*                21*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-26">*/}
+                                    {/*            <div className="SOMvalue-26">*/}
+                                    {/*                22*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-27">*/}
+                                    {/*            <div className="SOMvalue-27">*/}
+                                    {/*                23*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-4">*/}
+                                    {/*        <div className="SOMcalendar-day-28">*/}
+                                    {/*            <div className="SOMvalue-28">*/}
+                                    {/*                24*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-29">*/}
+                                    {/*            <div className="SOMvalue-29">*/}
+                                    {/*                25*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-30">*/}
+                                    {/*            <div className="SOMvalue-30">*/}
+                                    {/*                26*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-31">*/}
+                                    {/*            <div className="SOMvalue-31">*/}
+                                    {/*                27*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-32">*/}
+                                    {/*            <div className="SOMvalue-32">*/}
+                                    {/*                28*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-33">*/}
+                                    {/*            <div className="SOMvalue-33">*/}
+                                    {/*                29*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-34">*/}
+                                    {/*            <div className="SOMvalue-34">*/}
+                                    {/*                30*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-5">*/}
+                                    {/*        <div className="SOMcalendar-day-35">*/}
+                                    {/*            <div className="SOMvalue-35">*/}
+                                    {/*                31*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-36">*/}
+                                    {/*            <div className="SOMvalue-36">*/}
+                                    {/*                1*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-37">*/}
+                                    {/*            <div className="SOMvalue-37">*/}
+                                    {/*                2*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-38">*/}
+                                    {/*            <div className="SOMvalue-38">*/}
+                                    {/*                3*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-39">*/}
+                                    {/*            <div className="SOMvalue-39">*/}
+                                    {/*                4*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-40">*/}
+                                    {/*            <div className="SOMvalue-40">*/}
+                                    {/*                5*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-41">*/}
+                                    {/*            <div className="SOMvalue-41">*/}
+                                    {/*                6*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                             <div className="SOMwait-reservation">
@@ -680,7 +770,7 @@ export default function StoreOwnerMain() {
                                             </div>
                                             <div className="SOMwait-list">
                                                 <div className="SOMwait-reserv-date">
-                                                    <div className="SOM-wrd-date">
+                                                <div className="SOM-wrd-date">
                                                         3.26
                                                     </div>
                                                     <div className="SOM-wrd-time">
@@ -890,286 +980,287 @@ export default function StoreOwnerMain() {
                                             </Modal>
                                         </div>
                                     </div>
-                                    <div className="SOMframe-536">
-                                        <div className="SOMmonth-header-1">
-                                            <div className="SOMicon-button-2">
-                                                {/*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*/}
-                                            </div>
-                                            <div className="SOMmonth-yyyy-1">
-                                                March 2024
-                                            </div>
-                                            <div className="SOMicon-button-3">
-                                                {/*<img className="SOMvector-13" src="SOMassets/vectors/Vector533_x2.svg" />*/}
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-header-1">
-                                            <div className="SOMbox-7">
-                                                <div className="SOMsun-1">
-                                                    SUN
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-8">
-                                                <div className="SOMmon-1">
-                                                    MON
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-9">
-                                                <div className="SOMtue-1">
-                                                    TUE
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-10">
-                                                <div className="SOMwed-1">
-                                                    WED
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-11">
-                                                <div className="SOMthu-1">
-                                                    THU
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-12">
-                                                <div className="SOMfri-1">
-                                                    FRI
-                                                </div>
-                                            </div>
-                                            <div className="SOMbox-13">
-                                                <div className="SOMsat-1">
-                                                    SAT
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-6">
-                                            <div className="SOMcalendar-day-42">
-                                                <div className="SOMvalue-42">
-                                                    25
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-43">
-                                                <div className="SOMvalue-43">
-                                                    26
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-44">
-                                                <div className="SOMvalue-44">
-                                                    27
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-45">
-                                                <div className="SOMvalue-45">
-                                                    28
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-46">
-                                                <div className="SOMvalue-46">
-                                                    29
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-47">
-                                                <div className="SOMvalue-47">
-                                                    1
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-48">
-                                                <div className="SOMvalue-48">
-                                                    2
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-7">
-                                            <div className="SOMcalendar-day-49">
-                                                <div className="SOMvalue-49">
-                                                    3
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-50">
-                                                <div className="SOMvalue-50">
-                                                    4
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-51">
-                                                <div className="SOMvalue-51">
-                                                    5
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-52">
-                                                <div className="SOMvalue-52">
-                                                    6
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-53">
-                                                <div className="SOMvalue-53">
-                                                    7
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-54">
-                                                <div className="SOMvalue-54">
-                                                    8
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-55">
-                                                <div className="SOMvalue-55">
-                                                    9
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-8">
-                                            <div className="SOMcalendar-day-56">
-                                                <div className="SOMvalue-56">
-                                                    10
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-57">
-                                                <div className="SOMvalue-57">
-                                                    11
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-58">
-                                                <div className="SOMvalue-58">
-                                                    12
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-59">
-                                                <div className="SOMvalue-59">
-                                                    13
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-60">
-                                                <div className="SOMvalue-60">
-                                                    14
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-61">
-                                                <div className="SOMvalue-61">
-                                                    15
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-62">
-                                                <div className="SOMvalue-62">
-                                                    16
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-9">
-                                            <div className="SOMcalendar-day-63">
-                                                <div className="SOMvalue-63">
-                                                    17
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-64">
-                                                <div className="SOMvalue-64">
-                                                    18
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-65">
-                                                <div className="SOMvalue-65">
-                                                    19
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-66">
-                                                <div className="SOMvalue-66">
-                                                    20
-                                                </div>
-                                                <div className="SOMellipse-8">
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-67">
-                                                <div className="SOMvalue-67">
-                                                    21
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-68">
-                                                <div className="SOMvalue-68">
-                                                    22
-                                                </div>
-                                                <div className="SOMellipse-7">
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-69">
-                                                <div className="SOMvalue-69">
-                                                    23
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-10">
-                                            <div className="SOMcalendar-day-70">
-                                                <div className="SOMvalue-70">
-                                                    24
-                                                </div>
-                                                <div className="SOMellipse-5">
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-71">
-                                                <div className="SOMvalue-71">
-                                                    25
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-72">
-                                                <div className="SOMvalue-72">
-                                                    26
-                                                </div>
-                                                <div className="SOMellipse-6">
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-73">
-                                                <div className="SOMvalue-73">
-                                                    27
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-74">
-                                                <div className="SOMvalue-74">
-                                                    28
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-75">
-                                                <div className="SOMvalue-75">
-                                                    29
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-76">
-                                                <div className="SOMvalue-76">
-                                                    30
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="SOMweek-days-11">
-                                            <div className="SOMcalendar-day-77">
-                                                <div className="SOMvalue-77">
-                                                    31
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-78">
-                                                <div className="SOMvalue-78">
-                                                    1
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-79">
-                                                <div className="SOMvalue-79">
-                                                    2
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-80">
-                                                <div className="SOMvalue-80">
-                                                    3
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-81">
-                                                <div className="SOMvalue-81">
-                                                    4
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-82">
-                                                <div className="SOMvalue-82">
-                                                    5
-                                                </div>
-                                            </div>
-                                            <div className="SOMcalendar-day-83">
-                                                <div className="SOMvalue-83">
-                                                    6
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Calendar reservations={reservations} />
+                                    {/*<div className="SOMframe-536">*/}
+                                    {/*    <div className="SOMmonth-header-1">*/}
+                                    {/*        <div className="SOMicon-button-2">*/}
+                                    {/*            /!*<img className="SOMvector-12" src="SOMassets/vectors/Vector916_x2.svg" />*!/*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMmonth-yyyy-1">*/}
+                                    {/*            March 2024*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMicon-button-3">*/}
+                                    {/*            /!*<img className="SOMvector-13" src="SOMassets/vectors/Vector533_x2.svg" />*!/*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-header-1">*/}
+                                    {/*        <div className="SOMbox-7">*/}
+                                    {/*            <div className="SOMsun-1">*/}
+                                    {/*                SUN*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-8">*/}
+                                    {/*            <div className="SOMmon-1">*/}
+                                    {/*                MON*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-9">*/}
+                                    {/*            <div className="SOMtue-1">*/}
+                                    {/*                TUE*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-10">*/}
+                                    {/*            <div className="SOMwed-1">*/}
+                                    {/*                WED*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-11">*/}
+                                    {/*            <div className="SOMthu-1">*/}
+                                    {/*                THU*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-12">*/}
+                                    {/*            <div className="SOMfri-1">*/}
+                                    {/*                FRI*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMbox-13">*/}
+                                    {/*            <div className="SOMsat-1">*/}
+                                    {/*                SAT*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-6">*/}
+                                    {/*        <div className="SOMcalendar-day-42">*/}
+                                    {/*            <div className="SOMvalue-42">*/}
+                                    {/*                25*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-43">*/}
+                                    {/*            <div className="SOMvalue-43">*/}
+                                    {/*                26*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-44">*/}
+                                    {/*            <div className="SOMvalue-44">*/}
+                                    {/*                27*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-45">*/}
+                                    {/*            <div className="SOMvalue-45">*/}
+                                    {/*                28*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-46">*/}
+                                    {/*            <div className="SOMvalue-46">*/}
+                                    {/*                29*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-47">*/}
+                                    {/*            <div className="SOMvalue-47">*/}
+                                    {/*                1*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-48">*/}
+                                    {/*            <div className="SOMvalue-48">*/}
+                                    {/*                2*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-7">*/}
+                                    {/*        <div className="SOMcalendar-day-49">*/}
+                                    {/*            <div className="SOMvalue-49">*/}
+                                    {/*                3*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-50">*/}
+                                    {/*            <div className="SOMvalue-50">*/}
+                                    {/*                4*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-51">*/}
+                                    {/*            <div className="SOMvalue-51">*/}
+                                    {/*                5*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-52">*/}
+                                    {/*            <div className="SOMvalue-52">*/}
+                                    {/*                6*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-53">*/}
+                                    {/*            <div className="SOMvalue-53">*/}
+                                    {/*                7*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-54">*/}
+                                    {/*            <div className="SOMvalue-54">*/}
+                                    {/*                8*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-55">*/}
+                                    {/*            <div className="SOMvalue-55">*/}
+                                    {/*                9*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-8">*/}
+                                    {/*        <div className="SOMcalendar-day-56">*/}
+                                    {/*            <div className="SOMvalue-56">*/}
+                                    {/*                10*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-57">*/}
+                                    {/*            <div className="SOMvalue-57">*/}
+                                    {/*                11*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-58">*/}
+                                    {/*            <div className="SOMvalue-58">*/}
+                                    {/*                12*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-59">*/}
+                                    {/*            <div className="SOMvalue-59">*/}
+                                    {/*                13*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-60">*/}
+                                    {/*            <div className="SOMvalue-60">*/}
+                                    {/*                14*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-61">*/}
+                                    {/*            <div className="SOMvalue-61">*/}
+                                    {/*                15*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-62">*/}
+                                    {/*            <div className="SOMvalue-62">*/}
+                                    {/*                16*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-9">*/}
+                                    {/*        <div className="SOMcalendar-day-63">*/}
+                                    {/*            <div className="SOMvalue-63">*/}
+                                    {/*                17*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-64">*/}
+                                    {/*            <div className="SOMvalue-64">*/}
+                                    {/*                18*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-65">*/}
+                                    {/*            <div className="SOMvalue-65">*/}
+                                    {/*                19*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-66">*/}
+                                    {/*            <div className="SOMvalue-66">*/}
+                                    {/*                20*/}
+                                    {/*            </div>*/}
+                                    {/*            <div className="SOMellipse-8">*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-67">*/}
+                                    {/*            <div className="SOMvalue-67">*/}
+                                    {/*                21*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-68">*/}
+                                    {/*            <div className="SOMvalue-68">*/}
+                                    {/*                22*/}
+                                    {/*            </div>*/}
+                                    {/*            <div className="SOMellipse-7">*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-69">*/}
+                                    {/*            <div className="SOMvalue-69">*/}
+                                    {/*                23*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-10">*/}
+                                    {/*        <div className="SOMcalendar-day-70">*/}
+                                    {/*            <div className="SOMvalue-70">*/}
+                                    {/*                24*/}
+                                    {/*            </div>*/}
+                                    {/*            <div className="SOMellipse-5">*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-71">*/}
+                                    {/*            <div className="SOMvalue-71">*/}
+                                    {/*                25*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-72">*/}
+                                    {/*            <div className="SOMvalue-72">*/}
+                                    {/*                26*/}
+                                    {/*            </div>*/}
+                                    {/*            <div className="SOMellipse-6">*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-73">*/}
+                                    {/*            <div className="SOMvalue-73">*/}
+                                    {/*                27*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-74">*/}
+                                    {/*            <div className="SOMvalue-74">*/}
+                                    {/*                28*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-75">*/}
+                                    {/*            <div className="SOMvalue-75">*/}
+                                    {/*                29*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-76">*/}
+                                    {/*            <div className="SOMvalue-76">*/}
+                                    {/*                30*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="SOMweek-days-11">*/}
+                                    {/*        <div className="SOMcalendar-day-77">*/}
+                                    {/*            <div className="SOMvalue-77">*/}
+                                    {/*                31*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-78">*/}
+                                    {/*            <div className="SOMvalue-78">*/}
+                                    {/*                1*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-79">*/}
+                                    {/*            <div className="SOMvalue-79">*/}
+                                    {/*                2*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-80">*/}
+                                    {/*            <div className="SOMvalue-80">*/}
+                                    {/*                3*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-81">*/}
+                                    {/*            <div className="SOMvalue-81">*/}
+                                    {/*                4*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-82">*/}
+                                    {/*            <div className="SOMvalue-82">*/}
+                                    {/*                5*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*        <div className="SOMcalendar-day-83">*/}
+                                    {/*            <div className="SOMvalue-83">*/}
+                                    {/*                6*/}
+                                    {/*            </div>*/}
+                                    {/*        </div>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                             <div className="SOMmenu-box">

@@ -309,3 +309,89 @@
     text-overflow: ellipsis;
     font-size: 14px;
 }
+
+.StoreOwnerMainEmpPopup .SOMEP-time-space {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-254 {
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-251 {
+    border: 1px solid #FF5925;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .SOMEP-container-4 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FF5925;
+    border: 0;
+    height: 28px;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-253 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-249 {
+    border: 1px solid #FF5925;
+    padding-left: 14px;
+    background: #ffffff;
+    margin-right: 5px;
+    display: flex;
+    box-sizing: border-box;
+    width: 65px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .SOMEP-container-6 {
+    margin: 3.5px 5px 3.5px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-250 {
+    border: 1px solid #FF5925;
+    padding-left: 14px;
+    background: #FFFFFF;
+    display: flex;
+    box-sizing: border-box;
+    width: 65px;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+.StoreOwnerMainEmpPopup .SOMEP-frame-319 {
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+}
+.StoreOwnerMainEmpPopup .SOMEP-container-8 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.333;
+    color: #FF5925;
+    border: 0;
+}
