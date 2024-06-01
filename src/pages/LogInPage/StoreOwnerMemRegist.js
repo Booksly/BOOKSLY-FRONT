@@ -7,11 +7,12 @@ import axios from "axios";
 export default function StoreOwnerMemRegist() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
-  const [businessNum, setBusinessNum] = useState("");
-  const [phone, setPhone] = useState("");
+  const [businessNumber, setBusinessNumber] = useState("");
+  const [phoneNum, setPhoneNum] = useState("");
   const [authentication, setAuthentication] = useState("");
   const [verificationCode, setVerificationCode] = useState("");
   const [email, setEmail] = useState("");
+  const [isVerify, setIsVerify] = useState(false);
 
   const navigate = useNavigate();
   const goToThisPage = () => {
@@ -27,22 +28,17 @@ export default function StoreOwnerMemRegist() {
   const handlePhoneVerify = async () => {
     try {
       const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
-      if (!phoneRegex.test(phone)) {
+      if (!phoneRegex.test(phoneNum)) {
         alert("올바른 전화번호 형식을 입력하세요.");
         return;
       }
-      const formattedPhone = phone.replace(/-/g, "");
+
+      const formattedPhone = phoneNum.replace(/-/g, "");
       console.log("Sending request to API with phone number:", formattedPhone);
       const response = await axios.post(
         "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/verify/owner/send-sms",
-        {
-          receivingNumber: formattedPhone,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json", // JSON 형식으로 요청
-          },
-        }
+        { receivingNumber: formattedPhone },
+        { headers: { "Content-Type": "application/json" } }
       );
       console.log("Response received:", response);
       if (response.data.success) {
@@ -51,25 +47,20 @@ export default function StoreOwnerMemRegist() {
         alert("인증 번호 전송에 실패했습니다.");
       }
     } catch (error) {
-      if (error.response) {
-        console.error("Error response data:", error.response.data);
-        alert(
-          "오류가 발생했습니다: " +
-            (error.response.data.message || error.message)
-        );
-      } else {
-        console.error("Error occurred:", error);
-        alert("오류가 발생했습니다: " + error.message);
-      }
+      console.error("Error response data:", error.response.data);
+      alert(
+        "오류가 발생했습니다: " + (error.response.data.message || error.message)
+      );
     }
   };
+
   const handleVerifyCode = async () => {
     try {
       const response = await axios.post(
         "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/verify/owner",
         {
-          receivingNumber: phone.replace(/-/g, ""),
-          code: authentication, // 사용자가 입력한 인증 번호
+          code: authentication,
+          receivingNumber: phoneNum.replace(/-/g, ""),
         },
         {
           headers: {
@@ -84,16 +75,41 @@ export default function StoreOwnerMemRegist() {
         alert("휴대폰 인증에 실패했습니다. 인증 번호를 확인해주세요.");
       }
     } catch (error) {
-      if (error.response) {
-        console.error("Error response data:", error.response.data);
-        alert(
-          "오류가 발생했습니다: " +
-            (error.response.data.message || error.message)
-        );
+      console.error("Error response data:", error.response.data);
+      alert(
+        "오류가 발생했습니다: " + (error.response.data.message || error.message)
+      );
+    }
+  };
+
+  const handleRegister = async (event) => {
+    event.preventDefault();
+    try {
+      const data = {
+        loginId: id,
+        password,
+        businessNumber,
+        phoneNum,
+        isVerify,
+        email,
+      };
+      const response = await axios.post(
+        "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/owner",
+        data,
+        {
+          headers: {
+            "Content-Type": "application.json",
+          },
+        }
+      );
+      if (response.data.success) {
+        alert("회원가입에 성공했습니다!");
       } else {
-        console.error("Error occurred:", error);
-        alert("오류가 발생했습니다: " + error.message);
+        alert("회원가입에 실패했습니다: " + response.data.message);
       }
+    } catch (error) {
+      console.error("Error occurred:", error);
+      alert("오류가 발생했습니다: " + error.message);
     }
   };
 
@@ -139,91 +155,102 @@ export default function StoreOwnerMemRegist() {
             </div>
             <div className="SOMRrightcontentcontainer">
               <div className="SOMRcontainer-18">회원가입</div>
-              <div className="SOMRframe-535">
-                <div className="SOMRidBox">
-                  <div className="SOMRframe-524">
-                    <div className="SOMRcontainer-17">아이디</div>
-                    <div className="SOMR-id-button">
-                      <input
-                        className="SOMRframe-4061"
-                        placeholder="4~20자리 / 영문, 숫자, 특수문자 ‘_’ 사용가능"
-                        value={id}
-                        onChange={(e) => setId(e.target.value)}
-                      />
-                      <button className="SOMR-idbutton">중복확인</button>
+              <form onSubmit={handleRegister}>
+                <div className="SOMRframe-535">
+                  <div className="SOMRidBox">
+                    <div className="SOMRframe-524">
+                      <div className="SOMRcontainer-17">아이디</div>
+                      <div className="SOMR-id-button">
+                        <input
+                          className="SOMRframe-4061"
+                          placeholder="4~20자리 / 영문, 숫자, 특수문자 ‘_’ 사용가능"
+                          value={id}
+                          onChange={(e) => setId(e.target.value)}
+                          required
+                        />
+                        <button className="SOMR-idbutton">중복확인</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="SOMRframe-526">
-                  <div className="SOMRcontainer-19">비밀번호</div>
-                  <input
-                    className="SOMRframe-512"
-                    type={password}
-                    placeholder="8~16자리 / 영문 대소문자, 숫자, 특수문자 조합"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
-                <div className="SOMRframe-529">
-                  <div className="SOMRcontainer-20">사업자 번호</div>
-                  <div className="SOMRframe-528">
+                  <div className="SOMRframe-526">
+                    <div className="SOMRcontainer-19">비밀번호</div>
                     <input
-                      className="SOMRframe-4061"
-                      placeholder="000-00-00000 형태로 입력"
-                      value={businessNum}
-                      onChange={(e) => setBusinessNum(e.target.value)}
+                      className="SOMRframe-512"
+                      type={password}
+                      placeholder="8~16자리 / 영문 대소문자, 숫자, 특수문자 조합"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      required
                     />
-                    <button className="SOMR-idbutton">조회</button>
                   </div>
-                </div>
-                <div className="SOMRframe-533">
-                  <div className="SOMRcontainer-21">휴대폰</div>
-                  <div className="SOMRframe-531">
+                  <div className="SOMRframe-529">
+                    <div className="SOMRcontainer-20">사업자 번호</div>
+                    <div className="SOMRframe-528">
+                      <input
+                        className="SOMRframe-4061"
+                        placeholder="000-00-00000 형태로 입력"
+                        value={businessNumber}
+                        onChange={(e) => setBusinessNumber(e.target.value)}
+                        required
+                      />
+                      <button className="SOMR-idbutton">조회</button>
+                    </div>
+                  </div>
+                  <div className="SOMRframe-533">
+                    <div className="SOMRcontainer-21">휴대폰</div>
+                    <div className="SOMRframe-531">
+                      <input
+                        className="SOMRframe-4061"
+                        placeholder="‘-’빼고 숫자만 입력"
+                        value={phoneNum}
+                        onChange={(e) => setPhoneNum(e.target.value)}
+                        required
+                      />
+                      <button
+                        type="button"
+                        className="SOMR-idbutton"
+                        onClick={handlePhoneVerify}
+                      >
+                        인증
+                      </button>
+                    </div>
+                    <div className="SOMRframe-532">
+                      <input
+                        className="SOMRframe-4061"
+                        placeholder="인증번호 입력"
+                        value={authentication}
+                        onChange={(e) => setAuthentication(e.target.value)}
+                        required
+                      />
+                      <button
+                        type="button"
+                        className="SOMR-idbutton"
+                        onClick={handleVerifyCode}
+                      >
+                        인증하기
+                      </button>
+                    </div>
+                  </div>
+                  <div className="SOMRframe-534">
+                    <div className="SOMRcontainer-22">이메일</div>
                     <input
-                      className="SOMRframe-4061"
-                      placeholder="‘-’빼고 숫자만 입력"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                    />
-                    <button
-                      className="SOMR-idbutton"
-                      onClick={handlePhoneVerify}
+                      className="SOMRframe-519"
+                      type="email"
+                      placeholder="booksly@email.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
                     >
-                      인증
-                    </button>
-                  </div>
-                  <div className="SOMRframe-532">
-                    <input
-                      className="SOMRframe-4061"
-                      placeholder="인증번호 입력"
-                      value={authentication}
-                      onChange={(e) => setAuthentication(e.target.value)}
-                    />
-                    <button
-                      className="SOMR-idbutton"
-                      onClick={handleVerifyCode}
-                    >
-                      인증하기
-                    </button>
+                      {/*<div className="SOMRbookslyemail-com">booksly@email.com</div>*/}
+                    </input>
                   </div>
                 </div>
-                <div className="SOMRframe-534">
-                  <div className="SOMRcontainer-22">이메일</div>
-                  <input
-                    className="SOMRframe-519"
-                    type="email"
-                    placeholder="booksly@email.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  >
-                    {/*<div className="SOMRbookslyemail-com">booksly@email.com</div>*/}
-                  </input>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
           <div className="SOMRframe-520">
             <button
+              type="submit"
               className="SOMRframe-StoreRegistButton"
               onClick={goToStoreRegistPage}
             >
