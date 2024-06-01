@@ -41,7 +41,7 @@ export default function StoreOwnerMemRegist() {
         { headers: { "Content-Type": "application/json" } }
       );
       console.log("Response received:", response);
-      if (response.data.success) {
+      if (response.data && response.data.success) {
         alert("인증 번호가 전송되었습니다!");
       } else {
         alert("인증 번호 전송에 실패했습니다.");
@@ -69,7 +69,7 @@ export default function StoreOwnerMemRegist() {
         }
       );
 
-      if (response.data.success) {
+      if (response.data && response.data.success) {
         alert("휴대폰 인증에 성공했습니다!");
       } else {
         alert("휴대폰 인증에 실패했습니다. 인증 번호를 확인해주세요.");

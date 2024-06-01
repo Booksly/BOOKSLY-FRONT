@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DayPicker } from "react-day-picker";
-import Modal from "react-modal";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import "./StoreSearchPage.css";
 import "react-day-picker/dist/style.css";
+import Modal from "react-modal";
+import "./StoreSearchPage.css";
 import "./MultiDatePicker.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
