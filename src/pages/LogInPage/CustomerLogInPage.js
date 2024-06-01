@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./CustomerLoginPage.css";
 import advert from "../../assets/Advert_image.png";
 import line from "../../assets/Line_img.png";
-import naver from "../../assets/Naver_icon.png";
-import google from "../../assets/Google_icon.png";
-import kakao from "../../assets/Kakao_icon.png";
+import naver from "../../assets/naverIcon.png";
+import google from "../../assets/googleIcon.png";
+import kakao from "../../assets/kakaoIcon.png";
 import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
 
@@ -68,7 +68,7 @@ export default function CustomerLoginPage() {
               <button onClick={kakaoLogin} className="Kakao_Frame">
                 <img className="Kakao_Logo" src={kakao} alt={""} />
               </button>
-              <button onClick={googleLogin} className="frame-14">
+              <button onClick={googleLogin} className="Google_Frame">
                 <img className="Google_Logo" src={google} alt={""} />
               </button>
             </div>

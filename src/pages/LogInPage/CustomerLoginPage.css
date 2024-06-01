@@ -1,9 +1,9 @@
 .CustomerLoginPage {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   height: fit-content;
   background: #ffffff;
 }
@@ -103,53 +103,53 @@
   color: #000000;
   white-space: nowrap;
 }
-.CustomerLoginPage .Naver_Frame {
-  border-radius: 25px;
-  background: #00ff85;
+.CustomerLoginPage .Naver_Frame, .Kakao_Frame, .Google_Frame {
+  /*border-radius: 25px;*/
+  background: #FDF8F3;
+  border: 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11.8px 11.8px 11.8px 11.8px;
   width: 50px;
   height: 50px;
   box-sizing: border-box;
 }
 .CustomerLoginPage .N_Logo {
-  width: 40px;
-  height: 40px;
-}
-.CustomerLoginPage .Kakao_Frame {
-  border-radius: 50%;
-  background: #fff500;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15.3px 13.6px 13.8px 13.6px;
   width: 50px;
   height: 50px;
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  padding: 0;
 }
+/*.CustomerLoginPage .Kakao_Frame {*/
+/*  border-radius: 50%;*/
+/*  background: #fff500;*/
+/*  position: relative;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  !*padding: 15.3px 13.6px 13.8px 13.6px;*!*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  box-sizing: border-box;*/
+/*  !*border: 2px solid #000000;*!*/
+/*  padding: 0;*/
+/*}*/
 .CustomerLoginPage .Kakao_Logo {
-  width: 45px;
-  height: 50px;
-  border-radius: 50%;
-}
-.CustomerLoginPage .frame-14 {
-  border-radius: 25px;
-  background: #ffffff;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
   width: 50px;
   height: 50px;
-  box-sizing: border-box;
+  border-radius: 100%;
 }
+/*.CustomerLoginPage .frame-14 {*/
+/*  border-radius: 25px;*/
+/*  background: #ffffff;*/
+/*  position: relative;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  padding: 12px;*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  box-sizing: border-box;*/
+/*}*/
 .CustomerLoginPage .Google_Logo {
   width: 50px;
   height: 50px;
