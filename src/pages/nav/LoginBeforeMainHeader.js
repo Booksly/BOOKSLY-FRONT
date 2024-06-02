@@ -36,7 +36,7 @@ export default function LoginBeforeMainHeader() {
               <button className="nav-box" onClick={TodayReserv}>
                 <span className="PageName">당일예약</span>
               </button>
-              <button className="nav-box" onClick={searchReserve}>
+              <button className="nav-box" onClick={goTologin}>
                 <span className="PageName">예약조회</span>
               </button>
             </div>
