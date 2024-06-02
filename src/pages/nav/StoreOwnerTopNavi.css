@@ -146,6 +146,8 @@
   font-weight: 400;
   font-size: 13px;
   color: #494949;
+  border: 0;
+  background: #FFFFFF;
 }
 .StoreOwnerTopNavi .StoreOwnerTopNavinumerical-summary {
   display: flex;
@@ -220,14 +222,22 @@
   flex-direction: row;
   box-sizing: border-box;
 }
-.StoreOwnerTopNavi .StoreOwnerTopNaviStoreName {
-  margin-right: 15px;
-  width: fit-content;
-  overflow-wrap: break-word;
-  font-weight: 400;
+
+.StoreOwnerTopNavi .StoreOwnerTopNaviStoreSelect {
   font-size: 25px;
   color: #000000;
+  padding: 5px;
+  border: 0;
+  width: 250px;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../../assets/bottomAllow.png") no-repeat right 10px center;
+  /*background-size: 16px;*/
+  background-color: white;
 }
+
 .StoreOwnerTopNavi .StoreOwnerTopNavianother-Store {
   margin: 10px 0 5px 0;
   display: flex;
@@ -235,6 +245,7 @@
   height: 16px;
   box-sizing: border-box;
 }
+
 .StoreOwnerTopNavi .StoreOwnerTopNavibottomAllow {
   width: 24px;
   height: 16px;
