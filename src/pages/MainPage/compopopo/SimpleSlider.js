@@ -7,6 +7,7 @@ import "./slick-theme.css";
 import "./slick.css";
 import "./SimpleSlider.css"
 
+//메인 페이지 아래 슬라이드 두개 틀(디자인),, stores 배열을 prop으로 받아옴
 export default function SimpleSlider({ stores }) {
   //이동을 위한 useNavigate (컴포넌트화 필요할 듯함)
   const navigate = useNavigate()
