@@ -18,17 +18,17 @@ export default function CustomerLoginPage() {
   };
 
   const NAVER_AUTH_URL =
-    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/naver";
+    "https://api.bookslyserver.shop/oauth2/authorization/naver";
   const naverLogin = () => {
     window.location.href = NAVER_AUTH_URL;
   };
   const KAKAO_AUTH_URL =
-    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/kakao";
+    "https://api.bookslyserver.shop/oauth2/authorization/kakao";
   const kakaoLogin = () => {
     window.location.href = KAKAO_AUTH_URL;
   };
   const GOOGLE_AUTH_URL =
-    "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/google";
+    "https://api.bookslyserver.shop/oauth2/authorization/google";
   const googleLogin = () => {
     window.location.href = GOOGLE_AUTH_URL;
   };
