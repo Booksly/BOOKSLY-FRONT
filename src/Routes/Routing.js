@@ -49,6 +49,7 @@ import StoreOwnerSetting from "../pages/StoreOwnerSettingPage/StoreOwnerSetting"
 import StoreOwnerMainTodayReservConfirm from "../pages/StoreOwnerMainPage/StoreOwnerMainTodayReservConfirm";
 import StoreOwnerMainReservConfirm from "../pages/StoreOwnerMainPage/StoreOwnerMainReservConfirm";
 import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByReservation";
+import RegisterReservation from "../pages/RegisterReservation/RegisterReservation";
 import RegisterLastEvent from "../pages/RegisterLastEvent/RegisterLastEvent";
 import RegisterTimeEvent from "../pages/RegisterTimeEvent/RegisterTimeEvent";
 import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent ";
@@ -154,6 +155,7 @@ function Routing() {
           <Route path="RegisterTimeEvent" element={<RegisterTimeEvent />} />
           <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
           <Route path="CheckLastEvent" element={<CheckLastEvent/>} />
+          <Route path="RegisterReservation" element={<RegisterReservation/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import "./LoginAfterMainHeader.css";
 import searchbar from "../../assets/search_button.png";
 import home from "../../assets/home_button.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
-export default function LoginAfterMainHeader() {
+export default function Testnav() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 관리
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -24,7 +26,10 @@ export default function LoginAfterMainHeader() {
   };
   const goToMain = () => {
     navigate("/");
-  }
+  };
+  const goTologin = () => {
+    navigate("/login");
+  };
 
   return (
     <div className="back">
@@ -84,30 +89,38 @@ export default function LoginAfterMainHeader() {
             </div>
           </div>
           <div className="header-inner-right">
-            <button
-              className={location.pathname === "/MyHomeMain" ? "currentNav currentPageBar frame-MyHomeMainButton" : "frame-MyHomeMainButton"}
-              onClick={goToMyHomeMainPage}
-            >
-              <div className="headerRightDiv">
-                <div className="icon">
-                  <img className="home" src={home} alt="홈" />
+            {isLoggedIn ? (
+              <>
+                <button
+                  className={location.pathname === "/MyHomeMain" ? "currentNav currentPageBar frame-MyHomeMainButton" : "frame-MyHomeMainButton"}
+                  onClick={goToMyHomeMainPage}
+                >
+                  <div className="headerRightDiv">
+                    <div className="icon">
+                      <img className="home" src={home} alt="홈" />
+                    </div>
+                    <div className="go-mypage">
+                      <span className="my-page">My Page</span>
+                    </div>
+                  </div>
+                </button>
+                <div className="headerRightDiv">
+                  <div className="icon">
+                    <div className="alarmIcon"></div>
+                  </div>
+                  <div className="user-id">
+                    <span className="userId">김아무개</span>
+                  </div>
                 </div>
-                <div className="go-mypage">
-                  <span className="my-page">My Page</span>
-                </div>
-              </div>
-            </button>
-            <div className="headerRightDiv">
-              <div className="icon">
-                <div className="alarmIcon"></div>
-              </div>
-              <div className="user-id">
-                <span className="userId">김아무개</span>
-              </div>
-            </div>
-            <button className="log-out-but" onClick={goToMain}>
-              <span className="logout">로그아웃</span>
-            </button>
+                <button className="log-out-but" onClick={goToMain}>
+                  <span className="logout">로그아웃</span>
+                </button>
+              </>
+            ) : (
+              <button className="loginButton" onClick={goTologin}>
+                <span className="login">로그인</span>
+              </button>
+            )}
           </div>
         </div>
       </div>

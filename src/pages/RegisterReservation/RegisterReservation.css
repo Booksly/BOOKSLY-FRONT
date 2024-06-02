@@ -1,0 +1,233 @@
+/* 큰 껍데기 */
+.ReservationRegist {
+  width: fit-content;
+  height: 100vw;
+  background: #fdf8f3;
+  width: 1200px;
+}
+
+/* 작은 껍데기 */
+.ReservationRegist .ReservationRegist_contents {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+/* 껍데기 내부 제목 */
+.ReservationRegist .RegistReservation_title {
+    margin-bottom: 20px;
+    display: block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 25px;
+    color: #111111;
+}
+
+/* 껍데기 내부 소제목 */
+.ReservationRegist .RegistReservation_mid_title {
+    margin-bottom: 10px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 20px;
+    color: #111111;
+}
+
+/* 예약 모집 시간 단위 (껍데기) */
+.ReservationRegist .time_select_all_padding {
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  /* 시간 선택 박스 껍데기 */
+  .ReservationRegist .time_select_all_padding .time_select_box_padding {
+    display: flex;
+    flex-direction: row;
+    width: 247px;
+    box-sizing: border-box;
+  }
+  
+  /* 1. 시, 분 숫자(시간) 선택 */
+  .ReservationRegist .time_select_all_padding .time_select_box {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    margin-right: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 14px 6px 14.1px;
+    width: 120px;
+    box-sizing: border-box;
+  }
+  
+  /* 2. 시, 분 글자 형태 */
+  .ReservationRegist .time_select_all_padding .time_text {
+    margin-right: 9px;
+    width: 65.9px;
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 15px;
+    color: #adadad;
+  }
+
+/* 자동 예약 껍데기, 버튼 + 동시간대 최대 인원 */
+.ReservationRegist .RegistReservation_auto_check_padding{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 1. 자동예약 버튼 */
+.ReservationRegist .RegistReservation_auto_check_padding .RegistReservation_auto_check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+  
+.ReservationRegist .RegistReservation_auto_check_padding .auto_check_btn_padding {
+    border-radius: 50px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 4px 5px;
+    width: 140px;
+    height: 42px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.ReservationRegist .RegistReservation_auto_check_padding .auto_check_btn {
+    border-radius: 50px;
+    display: flex;
+    padding: 3px 12.6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #d9d9d9;
+
+}
+
+.ReservationRegist .RegistReservation_auto_check_padding .auto_check_btn.active {
+    background: #ff5925;
+    color: white;
+}
+
+/* 2. 동시간대 최대 인원 */
+.ReservationRegist .RegistReservation_auto_check_padding .RegistReservation_sametime_max_int {
+  margin: 0 28px 30px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.ReservationRegist .RegistReservation_auto_check_padding .RegistReservation_sametime_max_int_input {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 42px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* 2. 예약 가능 최대 일자 */
+.ReservationRegist .RegistReservation_max_date {
+    margin: 0 28px 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.ReservationRegist .RegistReservation_max_date .RegistReservation_sametime_max_int_input {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 42px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* 공지사항 */
+.ReservationRegist .announcement_textarea_box_padding {
+  margin-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+/* 공지사항 박스 껍데기 */
+.ReservationRegist .announcement_textarea_box_padding .announcement_textarea_box {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin-bottom: 9px;
+  padding: 14px;
+  width: 600px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* 1. 공지사항 박스 */
+.ReservationRegist .announcement_textarea_box_padding .announcement_textarea {
+    
+  width: 100%;
+  height: 150px;
+  overflow-wrap: break-word;
+  font-weight: 300;
+  font-size: 15px;
+  border: none;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* 2. 글자수 껍데기 */
+.ReservationRegist .announcement_textarea_box_padding .text_count_ing {
+  margin: 0 0.4px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+/* 글자수 글자 */
+.ReservationRegist .announcement_textarea_box_padding .text_count_text {
+  margin: 2.5px 5.6px 2.5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+}
+
+/* 예약 등록 버튼 */
+.ReservationRegist .ReservationRegist_fin_btn {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 700px;
+}

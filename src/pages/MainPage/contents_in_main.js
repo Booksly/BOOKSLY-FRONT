@@ -28,3 +28,29 @@ export default function Mainmain() {
     </div>
   )
 }
+
+// import React, { useState } from 'react';
+// import './Main.css';
+// import Promote_Carousel from './compopopo/Promote_Carousel';
+// import Shortcut from './compopopo/Shortcut';
+// import Hot_Place from './compopopo/Hot_Place';
+// import New_Store from './compopopo/New_Store';
+// import Testnav from '../nav/Testnav';
+// import { Outlet, useLocation } from 'react-router-dom';
+
+// export default function Mainmain() {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false);
+//   const location = useLocation();
+
+//   return (
+//     <div className="main_padding">
+//       <Testnav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+//       <Outlet />
+//       <Promote_Carousel />
+//       <Shortcut />
+//       <Hot_Place />
+//       <New_Store />
+//     </div>
+//   );
+// }
+

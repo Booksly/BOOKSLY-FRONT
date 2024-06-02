@@ -23,7 +23,7 @@
     margin-block: 15px;
 }
 
-.option_boxs_row {
+.reservation_padding .option_boxs_row {
     background-color: rgb(227, 227, 227);
     padding-block: 20px;
     padding-inline: 20px;
@@ -34,7 +34,7 @@
     /* justify-content: center; */
 }
 
-.option_boxs_row > .staff_box {
+.reservation_padding .option_boxs_row > .staff_box {
     text-align: center;
     margin: auto;
     padding: 15px;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.option_boxs_row > .staff_box > .staff_img {
+.reservation_padding .option_boxs_row > .staff_box > .staff_img {
     width: 200px;
     height: 250px;
     background-color: gray;
@@ -50,18 +50,18 @@
     border-top-right-radius:30px; */
 }
 
-.option_boxs_row > .staff_box.isSelect {
+.reservation_padding .option_boxs_row > .staff_box.isSelect {
     background-color: orange;
 }
 
 /* 예약하기에서 직원들 이름 폰트 */
-.option_boxs_row > .staff_box > .staff_name {
+.reservation_padding .option_boxs_row > .staff_box > .staff_name {
     font-size: 20px;
     font-weight: 600;
     margin-top: 5px;
 }
 
-.option_boxs_row > .time_box {
+.reservation_padding .option_boxs_row > .time_box {
     padding: 12px;
     background-color: rgb(188, 188, 188);
     border-radius: 10px;
@@ -70,11 +70,11 @@
     cursor: pointer;
 }
 
-.option_boxs_row > .time_box.isSelect {
+.reservation_padding .option_boxs_row > .time_box.isSelect {
     background-color: orange;
 }
 
-.option_boxs_row > .time_box > .time {
+.reservation_padding .option_boxs_row > .time_box > .time {
     font-size: 20px;
     font-weight: 400;
 }
