@@ -10,7 +10,6 @@ export default function StoreOwnerMemRegist() {
   const [businessNumber, setBusinessNumber] = useState("");
   const [phoneNum, setPhoneNum] = useState("");
   const [authentication, setAuthentication] = useState("");
-  const [verificationCode, setVerificationCode] = useState("");
   const [email, setEmail] = useState("");
   const [isVerify, setIsVerify] = useState(false);
 
@@ -20,9 +19,6 @@ export default function StoreOwnerMemRegist() {
   };
   const goToStoreOwnerLogInPage = () => {
     navigate("/StoreOwnerLogin");
-  };
-  const goToStoreRegistPage = () => {
-    navigate("/StoreRegist");
   };
 
   const handlePhoneVerify = async () => {
@@ -36,20 +32,31 @@ export default function StoreOwnerMemRegist() {
       const formattedPhone = phoneNum.replace(/-/g, "");
       console.log("Sending request to API with phone number:", formattedPhone);
       const response = await axios.post(
-        "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/verify/owner/send-sms",
+        "https://api.bookslyserver.shop/api/auth/verify/owner/send-sms",
         { receivingNumber: formattedPhone },
         { headers: { "Content-Type": "application/json" } }
       );
       console.log("Response received:", response);
-      if (response.data && response.data.success) {
+      console.log("Response data:", response.data);
+      console.log("Response status:", response.status);
+      console.log("Response headers:", response.headers);
+
+      if (
+        response.status === 200 &&
+        response.data.message === "요청이 성공했습니다."
+      ) {
         alert("인증 번호가 전송되었습니다!");
       } else {
-        alert("인증 번호 전송에 실패했습니다.");
+        console.log("Failed response data:", response.data);
+        alert(
+          "인증 번호 전송에 실패했습니다. 메시지: " + response.data.message
+        );
       }
     } catch (error) {
-      console.error("Error response data:", error.response.data);
+      console.error("Error response data:", error.response?.data);
       alert(
-        "오류가 발생했습니다: " + (error.response.data.message || error.message)
+        "오류가 발생했습니다: " +
+          (error.response?.data.message || error.message)
       );
     }
   };
@@ -57,7 +64,7 @@ export default function StoreOwnerMemRegist() {
   const handleVerifyCode = async () => {
     try {
       const response = await axios.post(
-        "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/verify/owner",
+        "https://api.bookslyserver.shop/api/auth/verify/owner",
         {
           code: authentication,
           receivingNumber: phoneNum.replace(/-/g, ""),
@@ -69,16 +76,30 @@ export default function StoreOwnerMemRegist() {
         }
       );
 
-      if (response.data && response.data.success) {
+      console.log("Verify response received:", response);
+      console.log("Verify response data:", response.data);
+      console.log("Verify response status:", response.status);
+      console.log("Verify response headers:", response.headers);
+
+      if (
+        response.status === 200 &&
+        response.data.message === "요청이 성공했습니다."
+      ) {
         alert("휴대폰 인증에 성공했습니다!");
+        setIsVerify(true);
       } else {
-        alert("휴대폰 인증에 실패했습니다. 인증 번호를 확인해주세요.");
+        console.log("Failed verify response data:", response.data);
+        alert("휴대폰 인증에 실패했습니다. 메시지: " + response.data.message);
       }
     } catch (error) {
-      console.error("Error response data:", error.response.data);
-      alert(
-        "오류가 발생했습니다: " + (error.response.data.message || error.message)
-      );
+      // 에러 로그
+      console.error("Error occurred:", error);
+      if (error.response) {
+        console.error("Error response data:", error.response.data);
+        alert("오류가 발생했습니다: " + error.response.data.message);
+      } else {
+        alert("오류가 발생했습니다: " + error.message);
+      }
     }
   };
 
@@ -93,22 +114,38 @@ export default function StoreOwnerMemRegist() {
         isVerify,
         email,
       };
+
+      // 요청 본문 데이터 확인
+      console.log("Request data:", data);
+      console.log("loginId:", id);
+      console.log("password:", password);
+      console.log("businessNumber:", businessNumber);
+      console.log("phoneNum:", phoneNum);
+      console.log("isVerify:", isVerify);
+      console.log("email:", email);
+
       const response = await axios.post(
-        "http://ec2-43-203-49-125.ap-northeast-2.compute.amazonaws.com:8080/api/auth/owner",
+        "http://api.bookslyserver.shop/api/auth/owner",
         data,
         {
           headers: {
-            "Content-Type": "application.json",
+            "Content-Type": "application/json",
           },
         }
       );
-      if (response.data.success) {
+
+      console.log("Response received:", response);
+
+      if (response.data.status === 0) {
         alert("회원가입에 성공했습니다!");
+        navigate("/StoreRegist"); // 회원가입 성공 시 가게 등록 페이지로 이동
       } else {
         alert("회원가입에 실패했습니다: " + response.data.message);
       }
     } catch (error) {
+      // 에러 로그
       console.error("Error occurred:", error);
+      console.error("Error response data:", error.response?.data);
       alert("오류가 발생했습니다: " + error.message);
     }
   };
@@ -176,10 +213,12 @@ export default function StoreOwnerMemRegist() {
                     <div className="SOMRcontainer-19">비밀번호</div>
                     <input
                       className="SOMRframe-512"
-                      type={password}
+                      type="password"
                       placeholder="8~16자리 / 영문 대소문자, 숫자, 특수문자 조합"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}"
+                      title="8~16자리 / 영문 대소문자, 숫자, 특수문자 조합"
                       required
                     />
                   </div>
@@ -188,14 +227,17 @@ export default function StoreOwnerMemRegist() {
                     <div className="SOMRframe-528">
                       <input
                         className="SOMRframe-4061"
-                        placeholder="000-00-00000 형태로 입력"
+                        placeholder="000-00-0000 형태로 입력"
                         value={businessNumber}
                         onChange={(e) => setBusinessNumber(e.target.value)}
+                        pattern="\d{3}-\d{2}-\d{4}"
+                        title="000-00-0000 형태로 입력"
                         required
                       />
                       <button className="SOMR-idbutton">조회</button>
                     </div>
                   </div>
+
                   <div className="SOMRframe-533">
                     <div className="SOMRcontainer-21">휴대폰</div>
                     <div className="SOMRframe-531">
@@ -250,11 +292,10 @@ export default function StoreOwnerMemRegist() {
           </div>
           <div className="SOMRframe-520">
             <button
-              type="submit"
+              type="button"
               className="SOMRframe-StoreRegistButton"
-              onClick={goToStoreRegistPage}
+              onClick={handleRegister}
             >
-              {" "}
               가게등록
             </button>
           </div>

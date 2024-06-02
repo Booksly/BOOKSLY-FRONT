@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import Modal from "react-modal";
@@ -10,6 +10,7 @@ import RegionSelectionPopup from "./RegionSelectionPopup";
 
 export default function StoreSearchPage() {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedDates, setSelectedDates] = useState([]);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
   const [btn2Active, setBtn2Active] = useState(false);
@@ -57,6 +58,29 @@ export default function StoreSearchPage() {
     setIsOpen(false);
   };
 
+  const handleDateSelect = (date) => {
+    const selectedDateStrings = selectedDates.map((d) => d.toDateString());
+    const dateString = date.toDateString();
+
+    if (selectedDateStrings.includes(dateString)) {
+      setSelectedDates(
+        selectedDates.filter((d) => d.toDateString() !== dateString)
+      );
+    } else {
+      if (selectedDates.length < 3) {
+        setSelectedDates([...selectedDates, date]);
+      } else {
+        alert("최대 3개의 날짜만 선택할 수 있습니다.");
+      }
+    }
+  };
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const day = date.getDate().toString().padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+
   const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -69,54 +93,6 @@ export default function StoreSearchPage() {
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
       padding: "20px",
     },
-  };
-
-  const [showDatePicker, setShowDatePicker] = useState(false);
-  const [selectedDates, setSelectedDates] = useState([]);
-  const [buttonText, setButtonText] = useState("날짜를 설정해주세요");
-
-  const handleToggleDatePicker = () => {
-    setShowDatePicker((prevState) => !prevState);
-  };
-
-  const handleDayClick = (day, { selected }) => {
-    const selectedIndex = selectedDates.findIndex(
-      (selectedDate) => selectedDate.getTime() === day.getTime()
-    );
-
-    if (selectedIndex > -1) {
-      setSelectedDates([
-        ...selectedDates.slice(0, selectedIndex),
-        ...selectedDates.slice(selectedIndex + 1),
-      ]);
-    } else if (selectedDates.length < 3) {
-      setSelectedDates([...selectedDates, day]);
-    }
-  };
-
-  const handleOutsideClick = (event) => {
-    if (showDatePicker && !event.target.closest(".before-day-and-time")) {
-      setShowDatePicker(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("click", handleOutsideClick);
-    return () => {
-      window.removeEventListener("click", handleOutsideClick);
-    };
-  }, [showDatePicker]);
-
-  useEffect(() => {
-    if (selectedDates.length === 3) {
-      setButtonText("날짜 선택됨");
-    } else {
-      setButtonText("날짜를 설정해주세요");
-    }
-  }, [selectedDates]);
-
-  const TimeSelect = () => {
-    const [startDate, setStartDate] = useState(new Date());
   };
 
   return (
@@ -142,25 +118,14 @@ export default function StoreSearchPage() {
                 </Modal>
               </div>
               <div className="before-day-and-time">
-                <div
-                  className="frame-dateselect"
-                  onClick={handleToggleDatePicker}
-                >
-                  <span className="content-dateselect">{buttonText}</span>
-                  {showDatePicker && (
-                    <div>
-                      <DayPicker
-                        selected={selectedDates}
-                        onDayClick={handleDayClick}
-                      />
-                      <div>
-                        선택된 날짜:
-                        {selectedDates.map((date, index) => (
-                          <div key={index}>{date.toLocaleDateString()}</div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                <div className="frame-dateselect">
+                  <button className="content-dateselect" onClick={openModal}>
+                    {selectedDates.length === 0
+                      ? "날짜를 설정해 주세요"
+                      : selectedDates
+                          .map((date) => formatDate(date))
+                          .join(", ")}
+                  </button>
                 </div>
                 <div className="frame-timeselect">
                   <span className="content-timeselect">
@@ -291,6 +256,27 @@ export default function StoreSearchPage() {
                 </div>
               </div>
             </div>
+            <Modal
+              isOpen={isOpen}
+              onRequestClose={closeModal}
+              style={DateStyles}
+            >
+              <button className="PopupCloseButton" onClick={closeModal}>
+                ✖
+              </button>
+              <DayPicker
+                selected={selectedDates}
+                onDayClick={handleDateSelect}
+                mode="multiple"
+                numberOfMonths={2}
+                modifiers={{
+                  selected: selectedDates,
+                }}
+                modifiersClassNames={{
+                  selected: "my-selected",
+                }}
+              />
+            </Modal>
             <div className="frame-279">
               <div className="top-100-list">
                 <div className="top-test">

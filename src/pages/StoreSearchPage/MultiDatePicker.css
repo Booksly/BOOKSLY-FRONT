@@ -2,14 +2,16 @@
 
 .my-selected:not([disabled]) {
   font-weight: bold;
-  border: 2px solid #4caf50;
+  border: 2px solid #ffa8a8;
   border-radius: 50%;
-  color: #4caf50;
+  background-color: #ffa8a8;
+  color: white;
 }
 
 .my-selected:hover:not([disabled]) {
-  border-color: #45a049;
-  color: #45a049;
+  border-color: #ffa8a8;
+  background-color: #ffa8a8;
+  color: white;
 }
 
 .my-today {
