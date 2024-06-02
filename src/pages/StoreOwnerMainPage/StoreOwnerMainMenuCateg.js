@@ -14,22 +14,22 @@ const options = [
 
 const MenuCategoryBox = ({ categoryName, menuList }) => {
     return (
-        <div className="SOMCP-MenuCategoryBox">
-            <div className="SOMCP-categoryName">{categoryName}</div>
-            <div className="SOMCP-Box">
+        <div className="SOMMC-MenuCategoryBox">
+            <div className="SOMMC-categoryName">{categoryName}</div>
+            <div className="SOMMC-Box">
                 {menuList.map((menu, index) => (
-                    <div key={index} className="SOMCP-menuListBox">
-                        <div className="SOMCP-MLB-PI">
-                            <div className="SOMCP-categoryMenuPic"></div>
-                            <div className="SOMCP-MLB-Info">
-                                <div className="SOMCP-MLBI-name">{menu.name}</div>
-                                <div className="SOMCP-MLBI-price">{menu.price}</div>
-                                <div className="SOMCP-MLBI-info">{menu.info}</div>
+                    <div key={index} className="SOMMC-menuListBox">
+                        <div className="SOMMC-MLB-PI">
+                            <div className="SOMMC-categoryMenuPic"></div>
+                            <div className="SOMMC-MLB-Info">
+                                <div className="SOMMC-MLBI-name">{menu.name}</div>
+                                <div className="SOMMC-MLBI-price">{menu.price}</div>
+                                <div className="SOMMC-MLBI-info">{menu.info}</div>
                             </div>
                         </div>
-                        <div className="SOMCP-MLBI-button">
-                            <button className="SOMCP-MLBI-modify">수정하기</button>
-                            <button className="SOMCP-MLBI-delete">삭제</button>
+                        <div className="SOMMC-MLBI-button">
+                            <button className="SOMMC-CL-modify">수정하기</button>
+                            <button className="SOMMC-CL-delete">삭제</button>
                         </div>
                     </div>
                 ))}
@@ -101,16 +101,16 @@ export default function StoreOwnerMainMenuCateg() {
                     <Tab eventKey="home" title="메뉴 관리">
                         <div className="StoreOwnerMainMenuPopup">
                             <div className="StoreOwnerMain-MenuPopup">
-                                <div className="SOMMPleft">
-                                    <div className="SOMMP-menuInfoBox">
-                                        <div className="SOMMP-menuInfoLeft">
-                                            <div className="SOMMP-pic"
+                                <div className="SOMMCleft">
+                                    <div className="SOMMC-menuInfoBox">
+                                        <div className="SOMMC-menuInfoLeft">
+                                            <div className="SOMMC-pic"
                                                  onClick={() => document.getElementById('fileInput1').click()}>
                                                 {selectedImage ? (
                                                     <img src={selectedImage} alt="Selected"
-                                                         className="SOMMP-pic-image"/>
+                                                         className="SOMMC-pic-image"/>
                                                 ) : (
-                                                    <div className="SOMMPPicSelect"></div>
+                                                    <div className="SOMMCPicSelect"></div>
                                                 )}
                                             </div>
                                             <input
@@ -134,13 +134,13 @@ export default function StoreOwnerMainMenuCateg() {
                                                 className="custom-select"
                                             />
                                         </div>
-                                        <div className="SOMMP-menuInfo">
+                                        <div className="SOMMC-menuInfo">
                                             <input
                                                 onChange={onChange}
                                                 name="menuName"
                                                 value={menuName}
                                                 placeholder="메뉴 제목"
-                                                className="SOMMP-menuName"
+                                                className="SOMMC-menuName"
                                             />
                                             <input
                                                 onChange={onChange}
@@ -148,7 +148,7 @@ export default function StoreOwnerMainMenuCateg() {
                                                 value={price}
                                                 type="number"
                                                 placeholder="가격"
-                                                className="SOMMP-menuPrice"
+                                                className="SOMMC-menuPrice"
                                             />
                                             <textarea
                                                 onChange={onChange}
@@ -156,54 +156,56 @@ export default function StoreOwnerMainMenuCateg() {
                                                 value={info}
                                                 maxLength="28"
                                                 placeholder="설명"
-                                                className="SOMMP-info"
+                                                className="SOMMC-info"
                                             />
-                                            <button className="SOMMP-RegistButton">
-                                                등록
-                                            </button>
+                                            <div className="SOMMC-RegistBox">
+                                                <button className="SOMMC-RegistButton">
+                                                    등록
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMCPline-30"></div>
-                                <div className="CategBoxList">
-                                    {options.map(option => (
-                                        <MenuCategoryBox key={option.value} categoryName={option.label}
-                                                         menuList={menuLists[option.value]}/>
-                                        ))}
-                                </div>
+                                <div className="SOMMCline-30"></div>
+                                    <div className="CategBoxList">
+                                        {options.map(option => (
+                                            <MenuCategoryBox key={option.value} categoryName={option.label}
+                                                             menuList={menuLists[option.value]}/>
+                                            ))}
+                                    </div>
                                 </div>
                             </div>
                     </Tab>
                     <Tab eventKey="Categ" title="카테고리 관리">
                         <div className="StoreOwnerMainCategPopup">
                             <div className="StoreOwnerMain-CategPopup">
-                                <div className="SOMCPleft">
-                                    <div className="SOMCP-categoryBox">
+                                <div className="SOMMCleft">
+                                    <div className="SOMMC-categoryBox">
                                         <input
                                             onChange={onChange}
                                             name="categName"
                                             value={categName}
                                             placeholder="카테고리 제목"
-                                            className="SOMCP-categName"
+                                            className="SOMMC-categName"
                                         />
-                                        <button className="SOMCP-RegistButton">등록</button>
+                                        <button className="SOMMC-RegistButton">등록</button>
                                     </div>
-                                    <div className="SOMCPline-3"></div>
-                                    <div className="SOMCPCategList">
-                                        <div className="SOMCP-CL-location-button"></div>
-                                        <div className="SOMCP-CL-Name">커트</div>
-                                        <div className="SOMCP-CL-button">
-                                            <button className="SOMCP-CL-modify">수정하기</button>
-                                            <button className="SOMCP-CL-delete">삭제</button>
+                                    <div className="SOMMCline-3"></div>
+                                    <div className="SOMMCCategList">
+                                        <div className="SOMMC-CL-location-button"></div>
+                                        <div className="SOMMC-CL-Name">커트</div>
+                                        <div className="SOMMC-CL-button">
+                                            <button className="SOMMC-CL-modify">수정하기</button>
+                                            <button className="SOMMC-CL-delete">삭제</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="SOMCPline-30"></div>
-                                <div className="CategBoxList">
-                                {options.map(option => (
-                                    <MenuCategoryBox key={option.value} categoryName={option.label} menuList={menuLists[option.value]} />
-                                ))}
-                                </div>
+                                <div className="SOMMCline-30"></div>
+                                    <div className="CategBoxList">
+                                    {options.map(option => (
+                                        <MenuCategoryBox key={option.value} categoryName={option.label} menuList={menuLists[option.value]} />
+                                    ))}
+                                    </div>
                             </div>
                         </div>
                     </Tab>
