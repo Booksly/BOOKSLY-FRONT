@@ -9,11 +9,13 @@ import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
 
 export default function StoreSearchPage() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedDates, setSelectedDates] = useState([]);
   const [selectedTimes, setSelectedTimes] = useState([
     { start: "", end: "", startMin: "", endMin: "" },
   ]);
+  const [isRegionModalOpen, setIsReigonModalOpen] = useState(false);
+  const [isDateModalOpen, setIsDateModalOpen] = useState(false);
   const [isTimeModalOpen, setIsTimeModalOpen] = useState(false);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
@@ -55,11 +57,35 @@ export default function StoreSearchPage() {
   const toggleBtn7Active = () => {
     setBtn7Active(!btn7Active);
   };
-  const openModal = () => {
-    setIsOpen(true);
+
+  const openRegionModal = () => {
+    setIsReigonModalOpen(true);
   };
-  const closeModal = () => {
-    setIsOpen(false);
+  const closeRegionModal = () => {
+    setIsReigonModalOpen(false);
+  };
+  const handleSelectRegions = (regions) => {
+    setSelectedRegions(regions);
+  };
+  const RegionModalStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+    },
+    content: {
+      width: "600px",
+      height: "650px",
+      margin: "auto",
+      borderRadius: "4px",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      padding: "20px",
+    },
+  };
+
+  const openDateModal = () => {
+    setIsDateModalOpen(true);
+  };
+  const closeDateModal = () => {
+    setIsDateModalOpen(false);
   };
 
   const handleDateSelect = (date) => {
@@ -122,23 +148,36 @@ export default function StoreSearchPage() {
           <div className="container-36">
             <div className="select-option-padding">
               <div className="before-region">
-                <button className="container-4" onClick={openModal}>
-                  <div className="container-5">지역을 선택해 주세요</div>
+                <button className="container-4" onClick={openRegionModal}>
+                  <div className="container-5">
+                    {selectedRegions.length === 0
+                      ? "지역을 선택해 주세요"
+                      : selectedRegions.join(", ")}
+                  </div>
                 </button>
                 <Modal
-                  isOpen={isOpen}
-                  onRequestClose={closeModal}
-                  style={DateStyles}
+                  isOpen={isRegionModalOpen}
+                  onRequestClose={closeRegionModal}
+                  style={RegionModalStyles}
                 >
-                  <button className="PopupCloseButton" onClick={closeModal}>
+                  <button
+                    className="PopupCloseButton"
+                    onClick={closeRegionModal}
+                  >
                     ✖
                   </button>
-                  <RegionSelectionPopup />
+                  <RegionSelectionPopup
+                    onSelectRegions={handleSelectRegions}
+                    selectedRegions={selectedRegions}
+                  />
                 </Modal>
               </div>
               <div className="before-day-and-time">
                 <div className="frame-dateselect">
-                  <button className="content-dateselect" onClick={openModal}>
+                  <button
+                    className="content-dateselect"
+                    onClick={openDateModal}
+                  >
                     {selectedDates.length === 0
                       ? "날짜를 선택해 주세요"
                       : selectedDates
@@ -295,11 +334,11 @@ export default function StoreSearchPage() {
               </div>
             </div>
             <Modal
-              isOpen={isOpen}
-              onRequestClose={closeModal}
+              isOpen={isDateModalOpen}
+              onRequestClose={closeDateModal}
               style={DateStyles}
             >
-              <button className="PopupCloseButton" onClick={closeModal}>
+              <button className="PopupCloseButton" onClick={closeDateModal}>
                 ✖
               </button>
               <DayPicker
