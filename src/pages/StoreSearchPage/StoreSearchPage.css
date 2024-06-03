@@ -130,7 +130,11 @@
   font-weight: 400;
   font-size: 15px;
   color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
+
 .StoreSearchPage .before-category {
   display: flex;
   flex-direction: row;

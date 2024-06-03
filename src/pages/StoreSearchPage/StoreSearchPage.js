@@ -11,6 +11,10 @@ import RegionSelectionPopup from "./RegionSelectionPopup";
 export default function StoreSearchPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedDates, setSelectedDates] = useState([]);
+  const [selectedTimes, setSelectedTimes] = useState([
+    { start: "", end: "", startMin: "", endMin: "" },
+  ]);
+  const [isTimeModalOpen, setIsTimeModalOpen] = useState(false);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
   const [btn2Active, setBtn2Active] = useState(false);
@@ -95,6 +99,21 @@ export default function StoreSearchPage() {
     },
   };
 
+  const handleTimeChange = (index, type, value) => {
+    const newTimes = [...selectedTimes];
+    newTimes[index][type] = value;
+    setSelectedTimes(newTimes);
+  };
+  const formatTime = (time, min) => {
+    return time ? `${time}시 ${min}분` : "";
+  };
+  const openTimeModal = () => {
+    setIsTimeModalOpen(true);
+  };
+  const closeTimeModal = () => {
+    setIsTimeModalOpen(false);
+  };
+
   return (
     <div className="StoreSearchPage">
       <div className="StoreSearchPageBack">
@@ -121,16 +140,35 @@ export default function StoreSearchPage() {
                 <div className="frame-dateselect">
                   <button className="content-dateselect" onClick={openModal}>
                     {selectedDates.length === 0
-                      ? "날짜를 설정해 주세요"
+                      ? "날짜를 선택해 주세요"
                       : selectedDates
                           .map((date) => formatDate(date))
                           .join(", ")}
                   </button>
                 </div>
                 <div className="frame-timeselect">
-                  <span className="content-timeselect">
-                    시간을 설정해 주세요
-                  </span>
+                  <button
+                    className="content-timeselect"
+                    onClick={openTimeModal}
+                  >
+                    {selectedTimes.every(
+                      (time) =>
+                        time.start === "" &&
+                        time.end === "" &&
+                        time.startMin === "" &&
+                        time.endMin === ""
+                    )
+                      ? "시간을 선택해 주세요"
+                      : selectedTimes
+                          .map(
+                            (time) =>
+                              `${formatTime(
+                                time.start,
+                                time.startMin
+                              )} ~ ${formatTime(time.end, time.endMin)}`
+                          )
+                          .join(", ")}
+                  </button>
                 </div>
               </div>
               <div className="before-category">
@@ -276,7 +314,98 @@ export default function StoreSearchPage() {
                   selected: "my-selected",
                 }}
               />
+              <div>
+                <p>* 최대 3개까지 선택이 가능합니다.</p>
+                {selectedDates.map((date, index) => (
+                  <p key={index}>
+                    날짜 {index + 1}: {formatDate(date)}
+                  </p>
+                ))}
+              </div>
             </Modal>
+            <Modal
+              isOpen={isTimeModalOpen}
+              onRequestClose={closeTimeModal}
+              style={DateStyles}
+            >
+              <button className="PopupCloseButton" onClick={closeTimeModal}>
+                ✖
+              </button>
+              <div>
+                <p>* 최대 3개까지 선택이 가능합니다.</p>
+                {selectedTimes.map((time, index) => (
+                  <div key={index} style={{ marginBottom: "20px" }}>
+                    <p>시간 {index + 1}:</p>
+                    <select
+                      value={time.start}
+                      onChange={(e) =>
+                        handleTimeChange(index, "start", e.target.value)
+                      }
+                    >
+                      <option value="">시작 시간</option>
+                      {[...Array(24).keys()].map((hour) => (
+                        <option key={hour} value={hour}>
+                          {hour}
+                        </option>
+                      ))}
+                    </select>
+                    <select
+                      value={time.startMin}
+                      onChange={(e) =>
+                        handleTimeChange(index, "startMin", e.target.value)
+                      }
+                    >
+                      <option value="">시작 분</option>
+                      {[...Array(60).keys()].map((min) => (
+                        <option key={min} value={min}>
+                          {min}
+                        </option>
+                      ))}
+                    </select>
+                    <span> ~ </span>
+                    <select
+                      value={time.end}
+                      onChange={(e) =>
+                        handleTimeChange(index, "end", e.target.value)
+                      }
+                    >
+                      <option value="">종료 시간</option>
+                      {[...Array(24).keys()].map((hour) => (
+                        <option key={hour} value={hour}>
+                          {hour}
+                        </option>
+                      ))}
+                    </select>
+                    <select
+                      value={time.endMin}
+                      onChange={(e) =>
+                        handleTimeChange(index, "endMin", e.target.value)
+                      }
+                    >
+                      <option value="">종료 분</option>
+                      {[...Array(60).keys()].map((min) => (
+                        <option key={min} value={min}>
+                          {min}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={() =>
+                  setSelectedTimes([
+                    ...selectedTimes,
+                    { start: "", end: "", startMin: "", endMin: "" },
+                  ])
+                }
+                disabled={selectedTimes.length >= 3}
+                style={{ marginTop: "10px" }}
+              >
+                시간 추가
+              </button>
+            </Modal>
+
             <div className="frame-279">
               <div className="top-100-list">
                 <div className="top-test">
