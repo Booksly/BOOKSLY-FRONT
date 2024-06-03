@@ -270,7 +270,7 @@ export default function TodayReservationPage() {
               <button className="PopupCloseButton" onClick={closeTimeModal}>
                 ✖
               </button>
-              <div className="TimeSelectModall">
+              <div>
                 <p>* 최대 3개까지 선택이 가능합니다.</p>
                 {selectedTimes.map((time, index) => (
                   <div key={index} style={{ marginBottom: "20px" }}>
