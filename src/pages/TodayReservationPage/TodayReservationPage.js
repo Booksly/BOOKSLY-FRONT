@@ -80,7 +80,7 @@ export default function TodayReservationPage() {
     setSelectedTimes(newTimes);
   };
   const formatTime = (time, min) => {
-    return time ? `5시 30분` : "";
+    return time ? `${time}시 ${min}분` : "";
   };
   const openTimeModal = () => {
     setIsTimeModalOpen(true);
