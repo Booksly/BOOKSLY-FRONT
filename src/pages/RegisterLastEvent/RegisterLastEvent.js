@@ -160,6 +160,13 @@ function MenuSelect({selectedStaff}) {
         }
     }, [mainCategory, selectedSubCategories]);
 
+    useEffect(() => {
+        // 직원이 변경될 때 선택된 서브 카테고리 초기화
+        setSelectedSubCategories({});
+        setIsAllSelected(false);
+        setIsGlobalSelectAll(false);
+    }, [selectedStaff]);
+
     // 필터된 서브 카테고리
     const filteredSubCategories = subCategories.filter(subCategory => 
         selectedStaff ? staffMenus[selectedStaff].includes(subCategory.id) : true
@@ -207,6 +214,10 @@ function MenuSelect({selectedStaff}) {
                 }
             });
             setIsAllSelected(!isAllSelected);
+            // 소분류 전체 선택 버튼 상태 업데이트
+            if (!isAllSelected && filteredSubCategories.length === 1) {
+                setIsGlobalSelectAll(false);
+            }
         }
     };
 
@@ -230,6 +241,7 @@ function MenuSelect({selectedStaff}) {
             }
         });
         setIsGlobalSelectAll(!isGlobalSelectAll);
+        setIsAllSelected(false);
     };
 
 

@@ -1,0 +1,282 @@
+/* 큰 껍데기 */
+.Time_Event_options_padding {
+    width: fit-content;
+    height: 100vw;
+    background: #fdf8f3;
+    width: 1200px;
+  }
+    
+  /* 작은 껍데기 */
+  .Time_Event_options_padding .Last_Event_options {
+      margin-left: 200px;
+      margin-top: 50px;
+  }
+  
+  /* 껍데기 내부 제목 */
+  .Time_Event_options_padding .RegistReservation_title {
+      margin-bottom: 20px;
+      display: block;
+      align-self: flex-start;
+      overflow-wrap: break-word;
+      font-weight: 700;
+      font-size: 25px;
+      color: #111111;
+  }
+    
+  /* 껍데기 내부 소제목 */
+  .Time_Event_options_padding .RegistReservation_mid_title {
+      margin-bottom: 10px;
+      display: inline-block;
+      align-self: flex-start;
+      overflow-wrap: break-word;
+      font-weight: 400;
+      font-size: 20px;
+      color: #111111;
+  }
+  
+  
+  /* 마감 이벤트 각 요소 설정*/
+  .Time_Event_options_padding .RegistLastEvent_event_title, 
+  .Time_Event_options_padding .RegistLastEvent_event_rate,
+  .Time_Event_options_padding .RegistLastEvent_select_staff {
+      margin: 0 28px 30px 0;
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      box-sizing: border-box;
+  }
+  
+  /* 직원 선택 시작 */
+  /* 선택 박스 wrap */
+  .Last_Event_options .option_boxs_row {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* 직원 선택 */
+  .Last_Event_options .option_boxs_row .staff_box {
+      border-radius: 5px;
+      border: 1px solid #ff5925;
+      background: #ffffff;
+      padding: 13px 14px;
+      box-sizing: border-box;
+      width: 200px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  
+  /* 직원 선택시 색 변화 */
+  .Last_Event_options .option_boxs_row .staff_box.isSelect {
+      background-color: orange;
+  }
+  
+  /* 마감이벤트 등록에서 직원들 이름 폰트 */
+  .Last_Event_options .option_boxs_row .staff_box .staff_name {
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  /* 이벤트 문구 (인풋) */
+  .Time_Event_options_padding .RegistLastEvent_event_title .RegistReservation_sametime_max_int_input {
+      border-radius: 5px;
+      border: 1px solid #ff5925;
+      background: #ffffff;
+      padding: 13px 14px;
+      box-sizing: border-box;
+      width: 300px;
+      height: 42px;
+      text-align: left;
+      font-size: 15px;
+  }
+  
+  /* 할인률 (인풋) */
+  .Time_Event_options_padding .RegistLastEvent_event_rate .RegistReservation_sametime_max_int_input {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 42px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  /* 초기화, 등록 버튼 패딩 */
+  .Time_Event_options_padding .btns_padding_For_row {
+    width: 230px;
+    margin-left: 700px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  /* 초기화, 등록 버튼 */
+  .Time_Event_options_padding .btns_padding_For_row .ReservationRegist_fin_btn {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ff5925;
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0;
+  }
+    
+  
+  /*********************************************/
+  /* 메뉴 선택 대 껍데기 */
+  .select_menu_categori_padding {
+    border-radius: 10px;
+    border: 1px solid #FF5925;
+    background: #FDF8F3;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  /* 메뉴 선택 소 껍데기 */
+  .select_menu_categori_padding .select_menu_categori {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  /* 카테고리 고르는 요소들 모음 */
+  .select_menu_categori_padding .all_select_menu_categori {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  /* 카테고리에 따른 결과 노출 */
+  .select_menu_categori_padding .select_menu_result {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 5px 7px 9px;
+    width: 390px;
+    height: 86px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .select_menu_categori_padding .all_select_menu_btn {
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    background: #FDD2C2;
+    margin-right: 13px;
+    display: flex;
+    padding: 7px 9px 7px 9px;
+    box-sizing: border-box;
+    height: 40px;
+  }
+  
+/*******예약등록 css**********/
+
+
+  /* 예약 모집 시간 단위 (껍데기) */
+.Time_Event_options_padding .time_select_all_padding {
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  
+  /* 시간 선택 박스 껍데기 */
+  .Time_Event_options_padding .time_select_all_padding .time_select_box_padding {
+    display: flex;
+    flex-direction: row;
+    width: 247px;
+    box-sizing: border-box;
+  }
+  
+  /* 1. 시, 분 숫자(시간) 선택 */
+  .Time_Event_options_padding .time_select_all_padding .time_select_box {
+    border-radius: 5px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    margin-right: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 14px 6px 14.1px;
+    width: 120px;
+    box-sizing: border-box;
+  }
+  
+  /* 2. 시, 분 글자 형태 */
+  .Time_Event_options_padding .time_select_all_padding .time_text {
+    margin-right: 9px;
+    width: 65.9px;
+    overflow-wrap: break-word;
+    font-weight: 300;
+    font-size: 15px;
+    color: #adadad;
+  }
+
+/* 자동 예약 껍데기, 버튼 + 동시간대 최대 인원 */
+.Time_Event_options_padding .RegistReservation_auto_check_padding{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 1. 자동예약 버튼 */
+.Time_Event_options_padding .RegistReservation_auto_check_padding .RegistReservation_auto_check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+}
+  
+.Time_Event_options_padding .RegistReservation_auto_check_padding .auto_check_btn_padding {
+    border-radius: 50px;
+    border: 1px solid #ff5925;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 4px 5px;
+    width: 140px;
+    height: 42px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.Time_Event_options_padding .RegistReservation_auto_check_padding .auto_check_btn {
+    border-radius: 50px;
+    display: flex;
+    padding: 3px 12.6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #d9d9d9;
+
+}
+
+.Time_Event_options_padding .RegistReservation_auto_check_padding .auto_check_btn.active {
+    background: #ff5925;
+    color: white;
+}
