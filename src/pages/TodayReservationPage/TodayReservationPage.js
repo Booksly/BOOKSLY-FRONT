@@ -8,10 +8,11 @@ import right_double_arrow_button from "../../assets/right_double_arrow_button.pn
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 
 export default function TodayReservationPage() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedTimes, setSelectedTimes] = useState([
     { start: "", end: "", startMin: "", endMin: "" },
   ]);
+  const [isRegionModalOpen, setIsReigonModalOpen] = useState(false);
   const [isTimeModalOpen, setIsTimeModalOpen] = useState(false);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
@@ -22,12 +23,29 @@ export default function TodayReservationPage() {
   const [btn6Active, setBtn6Active] = useState(false);
   const [btn7Active, setBtn7Active] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
+  const openRegionModal = () => {
+    setIsReigonModalOpen(true);
   };
-  const closeModal = () => {
-    setIsOpen(false);
+  const closeRegionModal = () => {
+    setIsReigonModalOpen(false);
   };
+  const handleSelectRegions = (regions) => {
+    setSelectedRegions(regions);
+  };
+  const RegionModalStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+    },
+    content: {
+      width: "600px",
+      height: "650px",
+      margin: "auto",
+      borderRadius: "4px",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      padding: "20px",
+    },
+  };
+
   const toggleBtnAllActive = () => {
     setBtnAllActive(!btnAllActive);
     setBtn1Active(!btnAllActive);
@@ -96,18 +114,28 @@ export default function TodayReservationPage() {
           <div className="container-36">
             <div className="select-option-padding">
               <div className="before-region">
-                <button className="container-4" onClick={openModal}>
-                  <div className="container-5">지역을 선택해 주세요</div>
+                <button className="container-4" onClick={openRegionModal}>
+                  <div className="container-5">
+                    {selectedRegions.length === 0
+                      ? "지역을 선택해 주세요"
+                      : selectedRegions.join(", ")}
+                  </div>
                 </button>
                 <Modal
-                  isOpen={isOpen}
-                  onRequestClose={closeModal}
-                  style={DateStyles}
+                  isOpen={isRegionModalOpen}
+                  onRequestClose={closeRegionModal}
+                  style={RegionModalStyles}
                 >
-                  <button className="PopupCloseButton" onClick={closeModal}>
+                  <button
+                    className="PopupCloseButton"
+                    onClick={closeRegionModal}
+                  >
                     ✖
                   </button>
-                  <RegionSelectionPopup />
+                  <RegionSelectionPopup
+                    onSelectRegions={handleSelectRegions}
+                    selectedRegions={selectedRegions}
+                  />
                 </Modal>
               </div>
               <div className="before-day-and-time">
