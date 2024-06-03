@@ -9,6 +9,10 @@ import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 
 export default function TodayReservationPage() {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedTimes, setSelectedTimes] = useState([
+    { start: "", end: "", startMin: "", endMin: "" },
+  ]);
+  const [isTimeModalOpen, setIsTimeModalOpen] = useState(false);
   const [btnAllActive, setBtnAllActive] = useState(false);
   const [btn1Active, setBtn1Active] = useState(false);
   const [btn2Active, setBtn2Active] = useState(false);
@@ -60,7 +64,7 @@ export default function TodayReservationPage() {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
     },
     content: {
-      width: "1100px",
+      width: "800px",
       height: "650px",
       margin: "auto",
       borderRadius: "4px",
@@ -68,6 +72,22 @@ export default function TodayReservationPage() {
       padding: "20px",
     },
   };
+
+  const handleTimeChange = (index, type, value) => {
+    const newTimes = [...selectedTimes];
+    newTimes[index][type] = value;
+    setSelectedTimes(newTimes);
+  };
+  const formatTime = (time, min) => {
+    return time ? `${time}시 ${min}분` : "";
+  };
+  const openTimeModal = () => {
+    setIsTimeModalOpen(true);
+  };
+  const closeTimeModal = () => {
+    setIsTimeModalOpen(false);
+  };
+
   return (
     <div className="TodayReservationPage">
       <div className="TodayReservationPageBack">
@@ -91,10 +111,32 @@ export default function TodayReservationPage() {
                 </Modal>
               </div>
               <div className="before-day-and-time">
-                <div className="frame-157">
-                  <span className="container-6">시간을 설정해 주세요</span>
+                <div className="frame-timeselect">
+                  <button
+                    className="content-timeselect"
+                    onClick={openTimeModal}
+                  >
+                    {selectedTimes.every(
+                      (time) =>
+                        time.start === "" &&
+                        time.end === "" &&
+                        time.startMin === "" &&
+                        time.endMin === ""
+                    )
+                      ? "시간을 선택해 주세요"
+                      : selectedTimes
+                          .map(
+                            (time) =>
+                              `${formatTime(
+                                time.start,
+                                time.startMin
+                              )} ~ ${formatTime(time.end, time.endMin)}`
+                          )
+                          .join(", ")}
+                  </button>
                 </div>
               </div>
+
               <div className="before-category">
                 <div
                   className={`frame-247 ${btnAllActive ? "active" : ""}`}
@@ -218,6 +260,90 @@ export default function TodayReservationPage() {
                 </div>
               </div>
             </div>
+
+            <Modal
+              isOpen={isTimeModalOpen}
+              onRequestClose={closeTimeModal}
+              style={DateStyles}
+            >
+              <button className="PopupCloseButton" onClick={closeTimeModal}>
+                ✖
+              </button>
+              <div>
+                <p>* 최대 3개까지 선택이 가능합니다.</p>
+                {selectedTimes.map((time, index) => (
+                  <div key={index} style={{ marginBottom: "20px" }}>
+                    <p>시간 {index + 1}:</p>
+                    <select
+                      value={time.start}
+                      onChange={(e) =>
+                        handleTimeChange(index, "start", e.target.value)
+                      }
+                    >
+                      <option value="">시작 시간</option>
+                      {[...Array(24).keys()].map((hour) => (
+                        <option key={hour} value={hour}>
+                          {hour}
+                        </option>
+                      ))}
+                    </select>
+                    <select
+                      value={time.startMin}
+                      onChange={(e) =>
+                        handleTimeChange(index, "startMin", e.target.value)
+                      }
+                    >
+                      <option value="">시작 분</option>
+                      {[...Array(60).keys()].map((min) => (
+                        <option key={min} value={min}>
+                          {min}
+                        </option>
+                      ))}
+                    </select>
+                    <span> ~ </span>
+                    <select
+                      value={time.end}
+                      onChange={(e) =>
+                        handleTimeChange(index, "end", e.target.value)
+                      }
+                    >
+                      <option value="">종료 시간</option>
+                      {[...Array(24).keys()].map((hour) => (
+                        <option key={hour} value={hour}>
+                          {hour}
+                        </option>
+                      ))}
+                    </select>
+                    <select
+                      value={time.endMin}
+                      onChange={(e) =>
+                        handleTimeChange(index, "endMin", e.target.value)
+                      }
+                    >
+                      <option value="">종료 분</option>
+                      {[...Array(60).keys()].map((min) => (
+                        <option key={min} value={min}>
+                          {min}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={() =>
+                  setSelectedTimes([
+                    ...selectedTimes,
+                    { start: "", end: "", startMin: "", endMin: "" },
+                  ])
+                }
+                disabled={selectedTimes.length >= 3}
+                style={{ marginTop: "10px" }}
+              >
+                시간 추가
+              </button>
+            </Modal>
+
             <div className="frame-281">
               <div className="frame-2851">
                 <span className="container-21">예약 마감 임박 할인</span>
