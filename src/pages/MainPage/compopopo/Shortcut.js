@@ -7,6 +7,9 @@ import './Shortcut.css'
 import Image1 from './ZImage3.jpeg';
 import Image2 from './ZZ_masage.jpeg';
 
+import Image3 from './nail_category.png';
+import Image4 from './massage_category.png';
+
 // 메인 페이지 두번째 줄 바로가기 내용
 // 내부 클래스 컴포넌트
 export default function Shortcut () {
@@ -40,12 +43,12 @@ export default function Shortcut () {
     //이미지 설정 : 1. 택스트, 2. 이미지 주소, 3. 클릭 시 이동하는 장소
     //각각 해당하는 주소로 이동하도록 바꿔야함. 지금은 둘다 일반 가게조회로 넘어감
     const images = [
-        { text: "네일 바로가기", src: Image1, onclick: StoreSearch},
-        { text: "속눈썹 바로가기", src: Image2, onclick: StoreSearch }
+        { src: Image3, onclick: StoreSearch},
+        { src: Image4, onclick: StoreSearch }
     ];
 
     return(
-        <div className='shortcut-padding'>
+        <div className='shortcut-padding'>      
             {images.map((image, index) => (
                 <div 
                     className='shortcut' 
@@ -53,7 +56,6 @@ export default function Shortcut () {
                     onClick={image.onclick}
                     style={{ backgroundImage: `url(${image.src})` }}
                 >
-                    <div className='shortcut_title'><h1>{image.text}</h1></div>
                 </div>
             ))}
         </div>

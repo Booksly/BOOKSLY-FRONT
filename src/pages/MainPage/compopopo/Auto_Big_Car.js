@@ -10,6 +10,10 @@ import Image1 from './ZZ_hat.jpeg';
 import Image2 from './Z_Image6.jpeg';
 import Image3 from './ZZ_nail.jpeg';
 
+import Image4 from './main_banner_1.png';
+import Image5 from './main_banner_2.png';
+import Image6 from './main_banner_3.png';
+
 // 메인 페이지 첫번째 줄 삼단 캐러셀 내용
 // 내부 클래스 컴포넌트
 const MainCarouselImage = ({ text, src, onClick }) => (
@@ -49,9 +53,9 @@ export default function AutoBigCar() {
 
   //이미지 설정 : 1. 택스트, 2. 이미지 주소, 3. 클릭 시 이동하는 장소
   const images = [
-    { text: "북슬리 그대의 최고의 선택", src: Image1, onclick: StoreSearch},
-    { text: "오늘 예약 빠르게 예약 가능한 가게", src: Image2, onclick: TodayReserv },
-    { text: "북슬리는 회원을 찾습니다.", src: Image3, onclick: goTologin }
+    { src: Image4, onclick: StoreSearch},
+    { src: Image6, onclick: TodayReserv },
+    // { src: Image5, onclick: goTologin }
   ];
 
   return (

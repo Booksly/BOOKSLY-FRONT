@@ -5,6 +5,7 @@ import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
 import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
 import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
+import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 
 export default function TodayReservationPage() {
@@ -79,7 +80,7 @@ export default function TodayReservationPage() {
     setSelectedTimes(newTimes);
   };
   const formatTime = (time, min) => {
-    return time ? `${time}시 ${min}분` : "";
+    return time ? `5시 30분` : "";
   };
   const openTimeModal = () => {
     setIsTimeModalOpen(true);
@@ -97,7 +98,7 @@ export default function TodayReservationPage() {
             <div className="select-option-padding">
               <div className="before-region">
                 <button className="container-4" onClick={openModal}>
-                  <div className="container-5">지역을 선택해 주세요</div>
+                  <div className="container-5">수원시 영통구 광교동</div>
                 </button>
                 <Modal
                   isOpen={isOpen}
@@ -123,7 +124,7 @@ export default function TodayReservationPage() {
                         time.startMin === "" &&
                         time.endMin === ""
                     )
-                      ? "시간을 선택해 주세요"
+                      ? "5시 30분"
                       : selectedTimes
                           .map(
                             (time) =>
@@ -269,7 +270,7 @@ export default function TodayReservationPage() {
               <button className="PopupCloseButton" onClick={closeTimeModal}>
                 ✖
               </button>
-              <div>
+              <div className="TimeSelectModall">
                 <p>* 최대 3개까지 선택이 가능합니다.</p>
                 {selectedTimes.map((time, index) => (
                   <div key={index} style={{ marginBottom: "20px" }}>
@@ -358,7 +359,7 @@ export default function TodayReservationPage() {
                   <div className="container-7">
                     <div className="frame-471">
                       <div className="container-18">
-                        <div className="rectangle-328"></div>
+                        <div className="rectangle-328" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <div className="frame-4621">
                         <div className="frame-1091">
@@ -375,7 +376,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-571">
                       <div className="container-9">
-                        <div className="rectangle-329"></div>
+                        <div className="rectangle-329" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-28">
                         제이제이 헤어 | 4.8 | 14:30
@@ -385,7 +386,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-561">
                       <div className="container-13">
-                        <div className="rectangle-3210"></div>
+                        <div className="rectangle-3210" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-29">
                         제이제이 헤어 | 4.8 | 14:30
@@ -395,7 +396,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-541">
                       <div className="container-15">
-                        <div className="rectangle-3211"></div>
+                        <div className="rectangle-3211" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-30">
                         제이제이 헤어 | 4.8 | 14:30
@@ -407,7 +408,7 @@ export default function TodayReservationPage() {
                   <div className="container-5">
                     <div className="frame-551">
                       <div className="container-11">
-                        <div className="rectangle-3212"></div>
+                        <div className="rectangle-3212" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-31">
                         제이제이 헤어 | 4.8 | 14:30
@@ -417,7 +418,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-581">
                       <div className="container-14">
-                        <div className="rectangle-3213"></div>
+                        <div className="rectangle-3213" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-32">
                         제이제이 헤어 | 4.8 | 14:30
@@ -427,7 +428,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-591">
                       <div className="container-10">
-                        <div className="rectangle-3214"></div>
+                        <div className="rectangle-3214" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-33">
                         제이제이 헤어 | 4.8 | 14:30
@@ -437,7 +438,7 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-601">
                       <div className="container-1">
-                        <div className="rectangle-3215"></div>
+                        <div className="rectangle-3215" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                       </div>
                       <span className="container-34">
                         제이제이 헤어 | 4.8 | 14:30
