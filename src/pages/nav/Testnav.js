@@ -4,7 +4,7 @@ import searchbar from "../../assets/search_button.png";
 import home from "../../assets/home_button.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
-export default function Testnav() {
+export default function LoginAfterMainHeader() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 관리
   const navigate = useNavigate();
   const location = useLocation();
