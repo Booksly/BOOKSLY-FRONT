@@ -124,7 +124,7 @@ export default function TodayReservationPage() {
                         time.startMin === "" &&
                         time.endMin === ""
                     )
-                      ? "5시 30분"
+                      ? "시간을 선택해주세요"
                       : selectedTimes
                           .map(
                             (time) =>
