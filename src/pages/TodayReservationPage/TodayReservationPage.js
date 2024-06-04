@@ -80,16 +80,16 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
     </div>
     <div className="store_can_reserve_contents">
       <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">{total_sale_late}</span>
-      </div>
-      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">총 {total_sale_late}% 할인</span>
         <span className="store_can_reserve_info">{sale_name}</span>
       </div>
+      {/* <div className="store_can_reserve_content">
+       
+      </div> */}
       <div className="store_can_reserve_content">
         <span className="store_can_reserve_info">{possible_reserve_time}</span>
       </div>
-    </div>
-    <div className="reserve-look-buts">
+      <div className="reserve-look-buts">
       <div className="reserve-but">
         <span className="btn_name">예약하기</span>
       </div>
@@ -97,6 +97,8 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
         <span className="btn_name">가게조회</span>
       </div>
     </div>
+    </div>
+    
   </div>
 );
 
@@ -142,18 +144,18 @@ const ResearchResults2 = ({ stores }) => (
     { name: "제이제이 헤어", image: Image1, rating: 4.4, category: "헤어" },
     { name: "네일 샵", image: Image2, rating: 4.8, category: "네일" },
     { name: "마사지 샵", image: Image3, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image4, rating: 4.9, category: "피부" },
+    { name: "피부 관리", image: Image4, rating: 4.9, category: "왁싱/제모" },
     { name: "속눈썹 샵", image: Image5, rating: 4.3, category: "속눈썹" },
     { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
     { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
     { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
     { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
+    { name: "피부 관리", image: Image10, rating: 4.9, category: "왁싱/제모" },
     { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
     { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
     { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
     { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
+    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "왁싱/제모" },
   ];
 
   //타임 세일 가게
@@ -161,51 +163,60 @@ const ResearchResults2 = ({ stores }) => (
     { name: "프레쉬 헤어", image: Image11, rating: 4.4, category: "헤어" },
     { name: "네일 스튜디오", image: Image12, rating: 4.8, category: "네일" },
     { name: "아로마 마사지", image: Image13, rating: 4.7, category: "마사지" },
-    { name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "피부" },
+    { name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "왁싱/제모" },
     { name: "플래시 래쉬", image: Image15, rating: 4.3, category: "속눈썹" },
     { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
     { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
     { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
     { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
+    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "왁싱/제모" },
     { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
     { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
     { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
     { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
+    { name: "피부 관리", image: Image10, rating: 4.9, category: "왁싱/제모" },
     ];
 
 //탑백 스토어
 const top_100stores = [
   {
     category: "헤어",
-    name: "제이제이 헤어",
-    location: "수원시 영통구 이의동",
+    name: "뮤뮤 헤어",
+    location: "수원시 팔달구",
     menu: "여성커트, 남성커트"
   },
   {
     category: "네일",
     name: "내일 네일",
-    location: "수원시 영통구 동동동",
+    location: "수원시 영통구",
     menu: "여성커트, 남성커트, 펌"
   }
 ];
 
 const sample_stores = [
   {
-    category: "헤어",
-    name: "제이제이 헤어",
-    location: "수원시 영통구 이의동",
-    menu: "여성커트, 남성커트",
-    total_sale_late: 30,
+    category: "왁싱/제모",
+    name: "준하마",
+    location: "수원시 영통구",
+    menu: "브라질리언 왁싱",
+    total_sale_late: 20,
     sale_name: "예약 마감 임박 할인",
     possible_reserve_time: "2024.06.20 15:30"
   },
   {
     category: "네일",
-    name: "내일 네일",
-    location: "수원시 영통구 동동동",
-    menu: "여성커트, 남성커트, 펌",
+    name: "손끝마루",
+    location: "수원시 팔달구",
+    menu: "손케어, 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "네일게이션",
+    location: "수원시 팔달구",
+    menu: " 네일, 파츠네일",
     total_sale_late: 30,
     sale_name: "오픈 기념 할인중",
     possible_reserve_time: "2024.06.20 15:30"
