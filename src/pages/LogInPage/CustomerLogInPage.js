@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CustomerLoginPage.css";
 import advert from "../../assets/Advert_image.png";
 import line from "../../assets/Line_img.png";

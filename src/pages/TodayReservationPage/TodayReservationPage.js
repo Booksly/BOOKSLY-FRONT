@@ -7,6 +7,130 @@ import left_double_arrow_button from "../../assets/left_double_arrow_button.png"
 import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
 import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
+import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
+
+//이미지 임폴트
+import Image1 from '../MainPage/compopopo/ZZ_hat.jpeg';
+import Image2 from '../MainPage/compopopo/ZZ_masage.jpeg';
+import Image3 from '../MainPage/compopopo/ZZ_nail.jpeg';
+import Image4 from '../MainPage/compopopo/Z_Image1.jpeg';
+import Image5 from '../MainPage/compopopo/Z_Image2.jpeg';
+import Image6 from '../MainPage/compopopo/ZZ_nail3.jpg';
+import Image7 from '../MainPage/compopopo/Z_Image4.jpeg';
+import Image8 from '../MainPage/compopopo/Z_Image5.jpeg';
+import Image9 from '../MainPage/compopopo/Z_Image6.jpeg';
+import Image10 from '../MainPage/compopopo/ZZ_nail2.jpeg';
+
+//이미지 임폴트2
+import Image11 from '../MainPage/compopopo/ZZ_masa1.jpeg';
+import Image12 from '../MainPage/compopopo/ZZ_masage.jpeg';
+import Image13 from '../MainPage/compopopo/ZZ_masa2.jpeg';
+import Image14 from '../MainPage/compopopo/Z_Image1.jpeg';
+import Image15 from '../MainPage/compopopo/ZImage3.jpeg';
+import Image16 from '../MainPage/compopopo/ZZ_nail.jpeg';
+import Image17 from '../MainPage/compopopo/Z_Image4.jpeg';
+import Image18 from '../MainPage/compopopo/ZZ_hat.jpeg';
+import Image19 from '../MainPage/compopopo/Z_Image6.jpeg';
+import Image20 from '../MainPage/compopopo/ZZ_nail2.jpeg';
+
+//가게 목록 하나 컴포넌트
+const StoreCard = ({ category, name, location, menu }) => (
+  <div className="research-result">
+    <div className="store_info_padding">
+      <div className="store_infos_all">
+        <div className="store_infos">
+          <span className="categori">{category}</span>
+          <span className="store_name">{name}</span>
+        </div>
+        <div className="store_info_where">
+          <span className="store_where">{location}</span>
+        </div>
+      </div>
+      <div className="menu-names">
+        <span className="menu_name">{menu}</span>
+      </div>
+    </div>
+    <div className="reserve-look-buts">
+      <div className="reserve-but">
+        <span className="btn_name">예약하기</span>
+      </div>
+      <div className="look-store-but">
+        <span className="btn_name">가게조회</span>
+      </div>
+    </div>
+  </div>
+);
+
+//가게 목록 여러개 컴포넌트
+const ResearchResults = ({ stores }) => (
+  <div className="research-results">
+    {stores.map((store, index) => (
+      <StoreCard
+        key={index}
+        category={store.category}
+        name={store.name}
+        location={store.location}
+        menu={store.menu}
+      />
+    ))}
+  </div>
+);
+
+
+  //예약 마감 임박 할인 가게
+  const LastEvent_stores = [
+    { name: "제이제이 헤어", image: Image1, rating: 4.4, category: "헤어" },
+    { name: "네일 샵", image: Image2, rating: 4.8, category: "네일" },
+    { name: "마사지 샵", image: Image3, rating: 4.7, category: "마사지" },
+    { name: "피부 관리", image: Image4, rating: 4.9, category: "피부" },
+    { name: "속눈썹 샵", image: Image5, rating: 4.3, category: "속눈썹" },
+    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
+    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
+    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
+    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
+    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
+    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
+    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
+    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
+    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
+    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
+  ];
+
+  //타임 세일 가게
+  const TimeEvent_stores = [
+    { name: "프레쉬 헤어", image: Image11, rating: 4.4, category: "헤어" },
+    { name: "네일 스튜디오", image: Image12, rating: 4.8, category: "네일" },
+    { name: "아로마 마사지", image: Image13, rating: 4.7, category: "마사지" },
+    { name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "피부" },
+    { name: "플래시 래쉬", image: Image15, rating: 4.3, category: "속눈썹" },
+    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
+    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
+    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
+    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
+    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
+    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
+    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
+    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
+    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
+    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
+    ];
+
+//탑백 스토어
+const top_100stores = [
+  {
+    category: "[헤어]",
+    name: "제이제이 헤어",
+    location: "수원시 영통구 이의동",
+    menu: "여성커트, 남성커트"
+  },
+  {
+    category: "[네일]",
+    name: "내일 네일",
+    location: "수원시 영통구 동동동",
+    menu: "여성커트, 남성커트, 펌"
+  }
+];
+
 
 export default function TodayReservationPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -57,27 +181,16 @@ export default function TodayReservationPage() {
     setBtn6Active(!btnAllActive);
     setBtn7Active(!btnAllActive);
   };
-  const toggleBtn1Active = () => {
-    setBtn1Active(!btn1Active);
-  };
-  const toggleBtn2Active = () => {
-    setBtn2Active(!btn2Active);
-  };
-  const toggleBtn3Active = () => {
-    setBtn3Active(!btn3Active);
-  };
-  const toggleBtn4Active = () => {
-    setBtn4Active(!btn4Active);
-  };
-  const toggleBtn5Active = () => {
-    setBtn5Active(!btn5Active);
-  };
-  const toggleBtn6Active = () => {
-    setBtn6Active(!btn6Active);
-  };
-  const toggleBtn7Active = () => {
-    setBtn7Active(!btn7Active);
-  };
+  const toggleBtn1Active = () => setBtn1Active(!btn1Active);
+  const toggleBtn2Active = () => setBtn2Active(!btn2Active);
+  const toggleBtn3Active = () => setBtn3Active(!btn3Active);
+  const toggleBtn4Active = () => setBtn4Active(!btn4Active);
+  const toggleBtn5Active = () => setBtn5Active(!btn5Active);
+  const toggleBtn6Active = () => setBtn6Active(!btn6Active);
+  const toggleBtn7Active = () => setBtn7Active(!btn7Active);
+
+
+
   const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -372,415 +485,33 @@ export default function TodayReservationPage() {
                 시간 추가
               </button>
             </Modal>
+            {/* 예약 마감 임박 할인 */}
+            <div className='today_reserve_padding'>
+              <div className='today_reserve_wrap'>
+                <div className="recommand-title">예약 마감 임박 할인</div>
+                {/* props로 전달 */}
+                <SimpleSlider_Today stores={LastEvent_stores} />
+              </div>
+            </div>
 
-            <div className="frame-281">
-              <div className="frame-2851">
-                <span className="container-21">예약 마감 임박 할인</span>
-              </div>
-              <div className="frame-2841">
-                <img
-                  className="icround-double-arrow-2"
-                  src={left_double_arrow_button}
-                  alt={""}
-                />
-                <div className="frame-501">
-                  <div className="container-7">
-                    <div className="frame-471">
-                      <div className="container-18">
-                        <div className="rectangle-328" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <div className="frame-4621">
-                        <div className="frame-1091">
-                          <div className="container-22">여성커트</div>
-                          <span className="container-23">|</span>
-                          <div className="container-24">30,000</div>
-                          <span className="container-25">|</span>
-                          <div className="container-26">14:30</div>
-                        </div>
-                        <div className="frame-4611">
-                          <span className="container-27">[이벤트 문구]</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="frame-571">
-                      <div className="container-9">
-                        <div className="rectangle-329" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-28">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-561">
-                      <div className="container-13">
-                        <div className="rectangle-3210" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-29">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-541">
-                      <div className="container-15">
-                        <div className="rectangle-3211" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-30">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                  </div>
-                  <div className="container-5">
-                    <div className="frame-551">
-                      <div className="container-11">
-                        <div className="rectangle-3212" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-31">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-581">
-                      <div className="container-14">
-                        <div className="rectangle-3213" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-32">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-591">
-                      <div className="container-10">
-                        <div className="rectangle-3214" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-33">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-601">
-                      <div className="container-1">
-                        <div className="rectangle-3215" style={{ backgroundImage : 'url(' + closingEvent_img + ')', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                      </div>
-                      <span className="container-34">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className="icround-double-arrow-3"
-                  src={right_double_arrow_button}
-                  alt={""}
-                />
+            {/* 타임 세일 */}
+            <div className='today_reserve_padding'>
+              <div className='today_reserve_wrap'>
+                <div className="recommand-title">타임 세일</div>
+                {/* props로 전달 */}
+                <SimpleSlider_Today stores={TimeEvent_stores} />
               </div>
             </div>
-            <div className="frame-281">
-              <div className="frame-2851">
-                <span className="container-21">타임 세일</span>
-              </div>
-              <div className="frame-2841">
-                <img
-                  className="icround-double-arrow-2"
-                  src={left_double_arrow_button}
-                  alt={""}
-                />
-                <div className="frame-501">
-                  <div className="container-7">
-                    <div className="frame-471">
-                      <div className="container-18">
-                        <div className="rectangle-328"></div>
-                      </div>
-                      <div className="frame-4621">
-                        <div className="frame-1091">
-                          <div className="container-22">여성커트</div>
-                          <span className="container-23">|</span>
-                          <div className="container-24">30,000</div>
-                          <span className="container-25">|</span>
-                          <div className="container-26">14:30</div>
-                        </div>
-                        <div className="frame-4611">
-                          <span className="container-27">[이벤트 문구]</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="frame-571">
-                      <div className="container-9">
-                        <div className="rectangle-329"></div>
-                      </div>
-                      <span className="container-28">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-561">
-                      <div className="container-13">
-                        <div className="rectangle-3210"></div>
-                      </div>
-                      <span className="container-29">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-541">
-                      <div className="container-15">
-                        <div className="rectangle-3211"></div>
-                      </div>
-                      <span className="container-30">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                  </div>
-                  <div className="container-5">
-                    <div className="frame-551">
-                      <div className="container-11">
-                        <div className="rectangle-3212"></div>
-                      </div>
-                      <span className="container-31">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-581">
-                      <div className="container-14">
-                        <div className="rectangle-3213"></div>
-                      </div>
-                      <span className="container-32">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-591">
-                      <div className="container-10">
-                        <div className="rectangle-3214"></div>
-                      </div>
-                      <span className="container-33">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                    <div className="frame-601">
-                      <div className="container-1">
-                        <div className="rectangle-3215"></div>
-                      </div>
-                      <span className="container-34">
-                        제이제이 헤어 | 4.8 | 14:30
-                        <br />
-                        [이벤트 문구]
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className="icround-double-arrow-3"
-                  src={right_double_arrow_button}
-                  alt={""}
-                />
-              </div>
-            </div>
-            <div className="frame-279">
+
+            {/* 탑 백 조회 */}
+            <div className="top-100-list-all">
               <div className="top-100-list">
                 <div className="top-test">
                   <span className="top-100">TOP 100</span>
                 </div>
                 <div className="research-results">
-                  <div className="research-result">
-                    <div className="store-info-padding">
-                      <div className="frame-287">
-                        <div className="store-infos">
-                          <span className="container-40">[헤어]</span>
-                          <span className="container-41">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-1">
-                          <span className="container-42">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names">
-                        <span className="container-43">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts">
-                      <div className="reserve-but">
-                        <span className="container-44">예약하기</span>
-                      </div>
-                      <div className="look-store-but">
-                        <span className="container-45">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-1">
-                    <div className="store-info-padding-1">
-                      <div className="frame-2871">
-                        <div className="store-infos-2">
-                          <span className="container-46">[헤어]</span>
-                          <span className="container-47">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-3">
-                          <span className="container-48">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-1">
-                        <span className="container-49">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-1">
-                      <div className="reserve-but-1">
-                        <span className="container-50">예약하기</span>
-                      </div>
-                      <div className="look-store-but-1">
-                        <span className="container-51">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-2">
-                    <div className="store-info-padding-2">
-                      <div className="frame-2872">
-                        <div className="store-infos-4">
-                          <span className="container-52">[헤어]</span>
-                          <span className="container-53">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-5">
-                          <span className="container-54">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-2">
-                        <span className="container-55">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-2">
-                      <div className="reserve-but-2">
-                        <span className="container-56">예약하기</span>
-                      </div>
-                      <div className="look-store-but-2">
-                        <span className="container-57">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-3">
-                    <div className="store-info-padding-3">
-                      <div className="frame-2873">
-                        <div className="store-infos-6">
-                          <span className="container-58">[헤어]</span>
-                          <span className="container-59">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-7">
-                          <span className="container-60">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-3">
-                        <span className="container-61">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-3">
-                      <div className="reserve-but-3">
-                        <span className="container-62">예약하기</span>
-                      </div>
-                      <div className="look-store-but-3">
-                        <span className="container-63">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-4">
-                    <div className="store-info-padding-4">
-                      <div className="frame-2874">
-                        <div className="store-infos-8">
-                          <span className="container-64">[헤어]</span>
-                          <span className="container-65">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-9">
-                          <span className="container-66">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-4">
-                        <span className="container-67">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-4">
-                      <div className="reserve-but-4">
-                        <span className="container-68">예약하기</span>
-                      </div>
-                      <div className="look-store-but-4">
-                        <span className="container-69">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-5">
-                    <div className="store-info-padding-5">
-                      <div className="frame-2875">
-                        <div className="store-infos-10">
-                          <span className="container-70">[헤어]</span>
-                          <span className="container-71">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-11">
-                          <span className="container-72">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-5">
-                        <span className="container-73">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-5">
-                      <div className="reserve-but-5">
-                        <span className="container-74">예약하기</span>
-                      </div>
-                      <div className="look-store-but-5">
-                        <span className="container-75">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-6">
-                    <div className="store-info-padding-6">
-                      <div className="frame-2876">
-                        <div className="store-infos-12">
-                          <span className="container-76">[헤어]</span>
-                          <span className="container-77">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-13">
-                          <span className="container-78">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-6">
-                        <span className="container-79">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-6">
-                      <div className="reserve-but-6">
-                        <span className="container-80">예약하기</span>
-                      </div>
-                      <div className="look-store-but-6">
-                        <span className="container-81">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
+                  {/* props로 전달 */}
+                  <ResearchResults stores={top_100stores} />
                 </div>
               </div>
             </div>

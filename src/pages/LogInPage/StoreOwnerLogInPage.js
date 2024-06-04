@@ -1,12 +1,12 @@
 import "./StoreOwnerLogInPage.css";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import LoginPageNav from "../nav/LoginPageNav";
 import advert from "../../assets/Advert_image.png";
 import { useNavigate } from "react-router-dom";
 
 export default function StoreOwnerLogInPage() {
-  const [id, setId] = useState('')
-  const [password, setPassword] = useState('')
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
   const goToStoreOwnerMemRegist = () => {
@@ -20,7 +20,19 @@ export default function StoreOwnerLogInPage() {
   };
   const goToStoreMain = () => {
     navigate("/StoreOwnerMain");
-  }
+  };
+
+  const handleLogin = () => {
+    const predefinedId = "booksly";
+    const predefinedPassword = "240613ab!";
+
+    if (id === predefinedId && password === predefinedPassword) {
+      goToStoreMain();
+    } else {
+      alert("아이디 또는 비밀번호가 잘못되었습니다.");
+    }
+  };
+
   return (
     <div className="StoreOwnerLogInPage">
       <div className="StoreOwnerLogInPageBack">
@@ -55,14 +67,20 @@ export default function StoreOwnerLogInPage() {
                   <div className="container-4">아이디 저장</div>
                 </div>
               </div>
-              <input className="frame-406"
-              placeholder="아이디"
-              value={id}
-              onChange={(e) => setId(e.target.value)}/>
-              <input className="frame-407"
-              placeholder="비밀번호" type="password"
-              onChange={(e) => setPassword(e.target.value)}/>
-              <button className="frame-408" onClick={goToStoreMain}>
+              <input
+                className="frame-406"
+                placeholder="아이디"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+              />
+              <input
+                className="frame-407"
+                placeholder="비밀번호"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button className="frame-408" onClick={handleLogin}>
                 <div className="container-7">로그인</div>
               </button>
               <div className="frame-109">

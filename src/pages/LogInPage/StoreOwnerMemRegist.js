@@ -2,7 +2,7 @@ import "./StoreOwnerMemRegist.css";
 import React, { useState } from "react";
 import LoginPageNav from "../nav/LoginPageNav";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
 export default function StoreOwnerMemRegist() {
   const [id, setId] = useState("");
@@ -11,7 +11,7 @@ export default function StoreOwnerMemRegist() {
   const [phoneNum, setPhoneNum] = useState("");
   const [authentication, setAuthentication] = useState("");
   const [email, setEmail] = useState("");
-  const [isVerify, setIsVerify] = useState(false);
+  // const [isVerify, setIsVerify] = useState(false);
 
   const navigate = useNavigate();
   const goToThisPage = () => {
@@ -20,7 +20,11 @@ export default function StoreOwnerMemRegist() {
   const goToStoreOwnerLogInPage = () => {
     navigate("/StoreOwnerLogin");
   };
+  const goToStoreRegist = () => {
+    navigate("/StoreRegist");
+  };
 
+  /*
   const handlePhoneVerify = async () => {
     try {
       const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
@@ -92,7 +96,6 @@ export default function StoreOwnerMemRegist() {
         alert("휴대폰 인증에 실패했습니다. 메시지: " + response.data.message);
       }
     } catch (error) {
-      // 에러 로그
       console.error("Error occurred:", error);
       if (error.response) {
         console.error("Error response data:", error.response.data);
@@ -115,7 +118,6 @@ export default function StoreOwnerMemRegist() {
         email,
       };
 
-      // 요청 본문 데이터 확인
       console.log("Request data:", data);
       console.log("loginId:", id);
       console.log("password:", password);
@@ -138,17 +140,17 @@ export default function StoreOwnerMemRegist() {
 
       if (response.data.status === 0) {
         alert("회원가입에 성공했습니다!");
-        navigate("/StoreRegist"); // 회원가입 성공 시 가게 등록 페이지로 이동
+        navigate("/StoreRegist");
       } else {
         alert("회원가입에 실패했습니다: " + response.data.message);
       }
     } catch (error) {
-      // 에러 로그
       console.error("Error occurred:", error);
       console.error("Error response data:", error.response?.data);
       alert("오류가 발생했습니다: " + error.message);
     }
   };
+  */
 
   return (
     <div className="StoreOwnerMemRegist">
@@ -192,7 +194,7 @@ export default function StoreOwnerMemRegist() {
             </div>
             <div className="SOMRrightcontentcontainer">
               <div className="SOMRcontainer-18">회원가입</div>
-              <form onSubmit={handleRegister}>
+              <form /*onSubmit={handleRegister}*/>
                 <div className="SOMRframe-535">
                   <div className="SOMRidBox">
                     <div className="SOMRframe-524">
@@ -251,7 +253,7 @@ export default function StoreOwnerMemRegist() {
                       <button
                         type="button"
                         className="SOMR-idbutton"
-                        onClick={handlePhoneVerify}
+                        // onClick={handlePhoneVerify}
                       >
                         인증
                       </button>
@@ -267,7 +269,7 @@ export default function StoreOwnerMemRegist() {
                       <button
                         type="button"
                         className="SOMR-idbutton"
-                        onClick={handleVerifyCode}
+                        // onClick={handleVerifyCode}
                       >
                         인증하기
                       </button>
@@ -282,9 +284,8 @@ export default function StoreOwnerMemRegist() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                    >
-                      {/*<div className="SOMRbookslyemail-com">booksly@email.com</div>*/}
-                    </input>
+                    />
+                    {/*<div className="SOMRbookslyemail-com">booksly@email.com</div>*/}
                   </div>
                 </div>
               </form>
@@ -294,7 +295,7 @@ export default function StoreOwnerMemRegist() {
             <button
               type="button"
               className="SOMRframe-StoreRegistButton"
-              onClick={handleRegister}
+              onClick={goToStoreRegist}
             >
               가게등록
             </button>
