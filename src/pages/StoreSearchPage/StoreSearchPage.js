@@ -8,6 +8,155 @@ import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
 
+//가게 목록 하나 컴포넌트 - top100용
+const StoreCard = ({ category, name, location, menu }) => (
+  <div className="research-result">
+    <div className="store_info_padding">
+      <div className="store_infos_all">
+        <div className="store_infos">
+          <span className="categori">[{category}]</span>
+          <span className="store_name">{name}</span>
+        </div>
+        <div className="store_info_where">
+          <span className="store_where">{location}</span>
+        </div>
+      </div>
+      <div className="menu-names">
+        <span className="menu_name">{menu}</span>
+      </div>
+    </div>
+    <div className="reserve-look-buts">
+      <div className="reserve-but">
+        <span className="btn_name">예약하기</span>
+      </div>
+      <div className="look-store-but">
+        <span className="btn_name">가게조회</span>
+      </div>
+    </div>
+  </div>
+);
+
+//가게 목록 하나 컴포넌트 - 가게조회용
+const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name, possible_reserve_time  }) => (
+  <div className="research-result">
+    <div className="store_info_padding">
+      <div className="store_infos_all">
+        <div className="store_infos">
+          <span className="categori">[{category}]</span>
+          <span className="store_name">{name}</span>
+        </div>
+        <div className="store_info_where">
+          <span className="store_where">{location}</span>
+        </div>
+      </div>
+      <div className="menu-names">
+        <span className="menu_name">{menu}</span>
+      </div>
+    </div>
+    <div className="store_can_reserve_contents">
+      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">총 {total_sale_late}% 할인</span>
+        <span className="store_can_reserve_info">{sale_name}</span>
+      </div>
+      {/* <div className="store_can_reserve_content">
+       
+      </div> */}
+      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">{possible_reserve_time}</span>
+      </div>
+      <div className="reserve-look-buts">
+      <div className="reserve-but">
+        <span className="btn_name">예약하기</span>
+      </div>
+      <div className="look-store-but">
+        <span className="btn_name">가게조회</span>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+);
+
+//가게 목록 여러개 컴포넌트 - 탑 백용
+const ResearchResults = ({ stores }) => (
+  <div className="research-results">
+    {stores.map((store, index) => (
+      <StoreCard
+        key={index}
+        category={store.category}
+        name={store.name}
+        location={store.location}
+        menu={store.menu}
+      />
+    ))}
+  </div>
+);
+
+//가게 목록 여러개 컴포넌트 - 조회용
+const ResearchResults2 = ({ stores }) => (
+  <div className="research-results">
+    {stores.map((store, index) => (
+      <StoreCard2
+        key={index}
+        category={store.category}
+        name={store.name}
+        location={store.location}
+        menu={store.menu}
+        total_sale_late={store.total_sale_late} 
+        sale_name={store.sale_name}
+        possible_reserve_time={store.possible_reserve_time}
+      />
+    ))}
+  </div>
+);
+
+//탑백 스토어
+const top_100stores = [
+  {
+    category: "헤어",
+    name: "뮤뮤 헤어",
+    location: "수원시 팔달구",
+    menu: "여성커트, 남성커트"
+  },
+  {
+    category: "네일",
+    name: "내일 네일",
+    location: "수원시 영통구",
+    menu: "여성커트, 남성커트, 펌"
+  }
+];
+
+//샘플 스토어
+const sample_stores = [
+  {
+    category: "왁싱/제모",
+    name: "준하마",
+    location: "수원시 영통구",
+    menu: "브라질리언 왁싱",
+    total_sale_late: 20,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "손끝마루",
+    location: "수원시 팔달구",
+    menu: "손케어, 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "네일게이션",
+    location: "수원시 팔달구",
+    menu: " 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  }
+];
+
 export default function StoreSearchPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedDates, setSelectedDates] = useState([]);
@@ -36,27 +185,13 @@ export default function StoreSearchPage() {
     setBtn6Active(!btnAllActive);
     setBtn7Active(!btnAllActive);
   };
-  const toggleBtn1Active = () => {
-    setBtn1Active(!btn1Active);
-  };
-  const toggleBtn2Active = () => {
-    setBtn2Active(!btn2Active);
-  };
-  const toggleBtn3Active = () => {
-    setBtn3Active(!btn3Active);
-  };
-  const toggleBtn4Active = () => {
-    setBtn4Active(!btn4Active);
-  };
-  const toggleBtn5Active = () => {
-    setBtn5Active(!btn5Active);
-  };
-  const toggleBtn6Active = () => {
-    setBtn6Active(!btn6Active);
-  };
-  const toggleBtn7Active = () => {
-    setBtn7Active(!btn7Active);
-  };
+  const toggleBtn1Active = () => setBtn1Active(!btn1Active);
+  const toggleBtn2Active = () => setBtn2Active(!btn2Active);
+  const toggleBtn3Active = () => setBtn3Active(!btn3Active);
+  const toggleBtn4Active = () => setBtn4Active(!btn4Active);
+  const toggleBtn5Active = () => setBtn5Active(!btn5Active);
+  const toggleBtn6Active = () => setBtn6Active(!btn6Active);
+  const toggleBtn7Active = () => setBtn7Active(!btn7Active);
 
   const openRegionModal = () => {
     setIsReigonModalOpen(true);
@@ -140,6 +275,38 @@ export default function StoreSearchPage() {
     setIsTimeModalOpen(false);
   };
 
+    // 필터링된 스토어 데이터
+    const filteredStores = ({ stores }) => {
+      return stores.filter((store) => {
+        if (btnAllActive) return true;
+        if (btn1Active && store.category === "헤어") return true;
+        if (btn2Active && store.category === "네일") return true;
+        if (btn3Active && store.category === "마사지") return true;
+        if (btn4Active && store.category === "눈썹/속눈썹") return true;
+        if (btn5Active && store.category === "메이크업") return true;
+        if (btn6Active && store.category === "왁싱/제모") return true;
+        if (btn7Active && store.category === "기타") return true;
+        return false;
+      });
+    };
+  
+    // 필터링된 가게 데이터의 개수
+    const filteredStoresCount = ({ stores }) => {
+      return filteredStores({ stores }).length;
+    };
+  
+    //카테고리 버튼 코드 간략화
+    const categoryButtons = [
+      { id: "btnAll", label: "전체", active: btnAllActive, onClick: toggleBtnAllActive },
+      { id: "btn1", label: "헤어", active: btn1Active, onClick: toggleBtn1Active },
+      { id: "btn2", label: "네일", active: btn2Active, onClick: toggleBtn2Active },
+      { id: "btn3", label: "마사지", active: btn3Active, onClick: toggleBtn3Active },
+      { id: "btn4", label: "눈썹/속눈썹", active: btn4Active, onClick: toggleBtn4Active },
+      { id: "btn5", label: "메이크업", active: btn5Active, onClick: toggleBtn5Active },
+      { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
+      { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
+    ];
+
   return (
     <div className="StoreSearchPage">
       <div className="StoreSearchPageBack">
@@ -211,126 +378,24 @@ export default function StoreSearchPage() {
                 </div>
               </div>
               <div className="before-category">
-                <div
-                  className={`frame-247 ${btnAllActive ? "active" : ""}`}
-                  onClick={toggleBtnAllActive}
-                >
-                  <div className="frame-156">
-                    <span className="container-82">전체</span>
+                {categoryButtons.map((button) => (
+                  <div
+                    key={button.id}
+                    className={`frame-247 ${button.active ? "active" : ""}`}
+                    onClick={button.onClick}
+                  >
+                    <div className="frame-156">
+                      <span className="container-82">{button.label}</span>
+                    </div>
+                    <div className="frame-155">
+                      <img
+                        className={`container-83 ${button.active ? "active" : ""}`}
+                        src={plus_button}
+                        alt={""}
+                      />
+                    </div>
                   </div>
-                  <div className="frame-155">
-                    <img
-                      className={`container-83 ${btnAllActive ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-240 ${btn1Active ? "active" : ""}`}
-                  onClick={toggleBtn1Active}
-                >
-                  <div className="frame-1561">
-                    <span className="container-84">헤어</span>
-                  </div>
-                  <div className="frame-1551">
-                    <img
-                      className={`container-85 ${btn1Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-241 ${btn2Active ? "active" : ""}`}
-                  onClick={toggleBtn2Active}
-                >
-                  <div className="frame-1562">
-                    <span className="container-86">네일</span>
-                  </div>
-                  <div className="frame-1552">
-                    <img
-                      className={`container-87 ${btn2Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-242 ${btn3Active ? "active" : ""}`}
-                  onClick={toggleBtn3Active}
-                >
-                  <div className="frame-1563">
-                    <span className="container-88">마사지</span>
-                  </div>
-                  <div className="frame-1553">
-                    <img
-                      className={`container-89 ${btn3Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-243 ${btn4Active ? "active" : ""}`}
-                  onClick={toggleBtn4Active}
-                >
-                  <div className="frame-1564">
-                    <span className="container-90">눈썹/속눈썹</span>
-                  </div>
-                  <div className="frame-1554">
-                    <img
-                      className={`container-91 ${btn4Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-244 ${btn5Active ? "active" : ""}`}
-                  onClick={toggleBtn5Active}
-                >
-                  <div className="frame-1565">
-                    <span className="container-92">메이크업</span>
-                  </div>
-                  <div className="frame-1555">
-                    <img
-                      className={`container-93 ${btn5Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-245 ${btn6Active ? "active" : ""}`}
-                  onClick={toggleBtn6Active}
-                >
-                  <div className="frame-1566">
-                    <span className="container-94">왁싱/제모</span>
-                  </div>
-                  <div className="frame-1556">
-                    <img
-                      className={`container-95 ${btn6Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-248 ${btn7Active ? "active" : ""}`}
-                  onClick={toggleBtn7Active}
-                >
-                  <div className="frame-1567">
-                    <span className="container-96">기타</span>
-                  </div>
-                  <div className="frame-1557">
-                    <img
-                      className={`container-97 ${btn7Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <Modal
@@ -445,197 +510,31 @@ export default function StoreSearchPage() {
               </button>
             </Modal>
 
-            <div className="frame-279">
-              <div className="top-100-list">
-                <div className="top-test">
-                  <span className="top-100">TOP 100</span>
-                </div>
-                <div className="research-results">
-                  <div className="research-result">
-                    <div className="store-info-padding">
-                      <div className="frame-287">
-                        <div className="store-infos">
-                          <span className="container-40">[헤어]</span>
-                          <span className="container-41">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-1">
-                          <span className="container-42">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names">
-                        <span className="container-43">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts">
-                      <div className="reserve-but">
-                        <span className="container-44">예약하기</span>
-                      </div>
-                      <div className="look-store-but">
-                        <span className="container-45">가게조회</span>
-                      </div>
-                    </div>
+            {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
+            {/* 필터링에 대한 가게 조회 */}
+            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+              <div className="top-100-list-all2">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">총 {filteredStoresCount({ stores: sample_stores })} 개</span>
                   </div>
-                  <div className="research-result-1">
-                    <div className="store-info-padding-1">
-                      <div className="frame-2871">
-                        <div className="store-infos-2">
-                          <span className="container-46">[헤어]</span>
-                          <span className="container-47">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-3">
-                          <span className="container-48">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-1">
-                        <span className="container-49">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-1">
-                      <div className="reserve-but-1">
-                        <span className="container-50">예약하기</span>
-                      </div>
-                      <div className="look-store-but-1">
-                        <span className="container-51">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-2">
-                    <div className="store-info-padding-2">
-                      <div className="frame-2872">
-                        <div className="store-infos-4">
-                          <span className="container-52">[헤어]</span>
-                          <span className="container-53">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-5">
-                          <span className="container-54">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-2">
-                        <span className="container-55">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-2">
-                      <div className="reserve-but-2">
-                        <span className="container-56">예약하기</span>
-                      </div>
-                      <div className="look-store-but-2">
-                        <span className="container-57">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-3">
-                    <div className="store-info-padding-3">
-                      <div className="frame-2873">
-                        <div className="store-infos-6">
-                          <span className="container-58">[헤어]</span>
-                          <span className="container-59">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-7">
-                          <span className="container-60">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-3">
-                        <span className="container-61">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-3">
-                      <div className="reserve-but-3">
-                        <span className="container-62">예약하기</span>
-                      </div>
-                      <div className="look-store-but-3">
-                        <span className="container-63">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-4">
-                    <div className="store-info-padding-4">
-                      <div className="frame-2874">
-                        <div className="store-infos-8">
-                          <span className="container-64">[헤어]</span>
-                          <span className="container-65">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-9">
-                          <span className="container-66">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-4">
-                        <span className="container-67">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-4">
-                      <div className="reserve-but-4">
-                        <span className="container-68">예약하기</span>
-                      </div>
-                      <div className="look-store-but-4">
-                        <span className="container-69">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-5">
-                    <div className="store-info-padding-5">
-                      <div className="frame-2875">
-                        <div className="store-infos-10">
-                          <span className="container-70">[헤어]</span>
-                          <span className="container-71">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-11">
-                          <span className="container-72">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-5">
-                        <span className="container-73">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-5">
-                      <div className="reserve-but-5">
-                        <span className="container-74">예약하기</span>
-                      </div>
-                      <div className="look-store-but-5">
-                        <span className="container-75">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-6">
-                    <div className="store-info-padding-6">
-                      <div className="frame-2876">
-                        <div className="store-infos-12">
-                          <span className="container-76">[헤어]</span>
-                          <span className="container-77">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-13">
-                          <span className="container-78">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-6">
-                        <span className="container-79">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-6">
-                      <div className="reserve-but-6">
-                        <span className="container-80">예약하기</span>
-                      </div>
-                      <div className="look-store-but-6">
-                        <span className="container-81">가게조회</span>
-                      </div>
-                    </div>
+                  <div className="research-results">
+                    <ResearchResults2 stores={filteredStores({ stores: sample_stores })} />
                   </div>
                 </div>
               </div>
-            </div>
+              ) : ( /* 탑 백 조회 */
+              <div className="top-100-list-all">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">TOP 100</span>
+                  </div>
+                  <div className="research-results">
+                    <ResearchResults stores={top_100stores} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
