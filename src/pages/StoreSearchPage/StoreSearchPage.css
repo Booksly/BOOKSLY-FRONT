@@ -469,6 +469,8 @@
   font-size: 18px;
   color: #000000;
 }
+
+/* 탑 백 내용(조회 내용 총 출동) */
 .StoreSearchPage .top-100-list {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -481,11 +483,15 @@
   height: fit-content;
   box-sizing: border-box;
 }
+
+/* 탑 백 글자 패딩 */
 .StoreSearchPage .top-test {
   margin: 0 0.7px 20px 0;
   display: flex;
   box-sizing: border-box;
 }
+
+/* 탑 백 글자 */
 .StoreSearchPage .top-100 {
   overflow-wrap: break-word;
   font-family: "Inter";
@@ -493,6 +499,8 @@
   font-size: 20px;
   color: #000000;
 }
+
+/* 조회 결과들 */
 .StoreSearchPage .research-results {
   display: flex;
   flex-direction: column;
@@ -500,6 +508,8 @@
   width: 900px;
   box-sizing: border-box;
 }
+
+/* 조회 결과 (단품) */
 .StoreSearchPage .research-result {
   border-top: 2px solid #b4b4b4;
   border-bottom: 2px solid #b4b4b4;
@@ -577,26 +587,43 @@
   width: 900px;
   box-sizing: border-box;
 }
-.StoreSearchPage .store-info-padding {
+
+/* 리스트 */
+.TodayReservationPage .top-100-list-all,
+.TodayReservationPage .top-100-list-all2 {
+  display: flex;
+  width: 1000px;
+  box-sizing: border-box;
+  margin-block: 25px;
+}
+
+/* {{가게이름+ 가게 카테고리} + 가게 지역} + 메뉴이름 */
+.StoreSearchPage .store_info_padding {
   margin: 8px 0;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-.StoreSearchPage .frame-287 {
+
+/* {가게이름+ 가게 카테고리} + 가게 지역 */
+.StoreSearchPage .store_infos_all {
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   width: fit-content;
   box-sizing: border-box;
 }
-.StoreSearchPage .store-infos {
+
+/* 가게이름 + 가게 카테고리 */
+.StoreSearchPage .store_infos {
   margin-right: 10.5px;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
 }
-.StoreSearchPage .container-40 {
+
+/* 가게 카테고리 */
+.StoreSearchPage .categori {
   margin-right: 10.2px;
   overflow-wrap: break-word;
   font-family: "Inter";
@@ -604,43 +631,70 @@
   font-size: 18px;
   color: #000000;
 }
-.StoreSearchPage .container-41 {
+
+/* 가게이름 */
+.StoreSearchPage .store_name {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
   font-size: 18px;
   color: #000000;
 }
-.StoreSearchPage .store-infos-1 {
+
+/* 가게 지역 */
+.StoreSearchPage .store_info_where {
   margin: 3.5px 0;
   display: flex;
   box-sizing: border-box;
 }
-.StoreSearchPage .container-42 {
+
+/* 가게 지역 이름 */
+.StoreSearchPage .store_where {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 400;
   font-size: 12px;
   color: #000000;
 }
+
+/* 메뉴 이름 패딩 */
 .StoreSearchPage .mene-names {
   display: flex;
   align-self: flex-start;
   box-sizing: border-box;
 }
-.StoreSearchPage .container-43 {
+
+/* 메뉴 이름 */
+.StoreSearchPage .menu_name {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 400;
   font-size: 15px;
   color: #000000;
 }
+
+/*카테고리 선택시 나오는 가게 내용*/
+.store_can_reserve_contents {
+  display: flex;
+  align-items: center;
+}
+
+.store_can_reserve_contents .store_can_reserve_content {
+  width: 150px;
+  display: flex;
+  flex-direction: column; 
+  margin: 10px;
+  text-align: center;
+}
+
+/* 예약하기, 조회하기 버튼 */
 .StoreSearchPage .reserve-look-buts {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 }
+/* 예약하기 버튼 */
 .StoreSearchPage .reserve-but {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -650,13 +704,16 @@
   padding: 5px 5.8px 5px 5px;
   box-sizing: border-box;
 }
-.StoreSearchPage .container-44 {
+/* 예약하기, 가게조회 글씨 */
+.StoreSearchPage .btn_name {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
   font-size: 15px;
   color: #ff5925;
 }
+
+/* 가게조회 버튼 */
 .StoreSearchPage .look-store-but {
   border-radius: 5px;
   border: 1px solid #ff5925;
@@ -665,7 +722,7 @@
   padding: 5px 5.8px 5px 5px;
   box-sizing: border-box;
 }
-.StoreSearchPage .container-45 {
+/* .StoreSearchPage .container-45 {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
@@ -1241,4 +1298,4 @@
   font-weight: 700;
   font-size: 15px;
   color: #ff5925;
-}
+} */
