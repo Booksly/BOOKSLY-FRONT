@@ -34,7 +34,7 @@ export const shops = [
                         "imgUri": "/images/haircut_women.png",
                         "price": 20000,
                         "name": "레이어드 컷",
-                        "description": "최신 유행 레이어트 컷입니다."
+                        "description": "최신 유행 레이어드 컷입니다."
                     }
                 ]
             },
