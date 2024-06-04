@@ -1114,6 +1114,7 @@
   display: flex;
   width: 1000px;
   box-sizing: border-box;
+  margin-block: 25px;
 }
 
 .TodayReservationPage .top-100-list-all2 {
@@ -1251,6 +1252,21 @@
   color: #000000;
 }
 
+/*카테고리 선택시 나오는 가게 내용*/
+.store_can_reserve_contents {
+  display: flex;
+  align-items: center;
+}
+
+.store_can_reserve_contents .store_can_reserve_content {
+  width: 150px;
+  display: flex;
+  flex-direction: column; 
+  margin: 10px;
+  text-align: center;
+}
+
+
 /* 예약하기, 조회하기 버튼 */
 .TodayReservationPage .reserve-look-buts {
   display: flex;
@@ -1305,12 +1321,13 @@
 }
 
 /* 슬라이더_투데이 css - 타이틀 */
-.recommand-title{
+.today_reserve_padding .recommand-title{
   font-size: 25px;
   font-weight: 900;
   margin-block-end: 5px;
   margin-top: 30px;
   margin-left: 50px;
+  margin-top: 0;
 }
 
 
