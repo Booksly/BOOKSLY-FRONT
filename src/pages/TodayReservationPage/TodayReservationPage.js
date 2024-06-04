@@ -321,6 +321,18 @@ export default function TodayReservationPage() {
     return filteredStores({ stores }).length;
   };
 
+  //카테고리 버튼 코드 간략화
+  const categoryButtons = [
+    { id: "btnAll", label: "전체", active: btnAllActive, onClick: toggleBtnAllActive },
+    { id: "btn1", label: "헤어", active: btn1Active, onClick: toggleBtn1Active },
+    { id: "btn2", label: "네일", active: btn2Active, onClick: toggleBtn2Active },
+    { id: "btn3", label: "마사지", active: btn3Active, onClick: toggleBtn3Active },
+    { id: "btn4", label: "눈썹/속눈썹", active: btn4Active, onClick: toggleBtn4Active },
+    { id: "btn5", label: "메이크업", active: btn5Active, onClick: toggleBtn5Active },
+    { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
+    { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
+  ];
+
   return (
     <div className="TodayReservationPage">
       <div className="TodayReservationPageBack">
@@ -379,8 +391,27 @@ export default function TodayReservationPage() {
                   </button>
                 </div>
               </div>
-
               <div className="before-category">
+                {categoryButtons.map((button) => (
+                  <div
+                    key={button.id}
+                    className={`frame-247 ${button.active ? "active" : ""}`}
+                    onClick={button.onClick}
+                  >
+                    <div className="frame-156">
+                      <span className="container-82">{button.label}</span>
+                    </div>
+                    <div className="frame-155">
+                      <img
+                        className={`container-83 ${button.active ? "active" : ""}`}
+                        src={plus_button}
+                        alt={""}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>            
+              {/* <div className="before-category">
                 <div
                   className={`frame-247 ${btnAllActive ? "active" : ""}`}
                   onClick={toggleBtnAllActive}
@@ -501,7 +532,7 @@ export default function TodayReservationPage() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <Modal
