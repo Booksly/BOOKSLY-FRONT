@@ -36,8 +36,8 @@ export default function SimpleSlider({ stores }) {
       navigate("/CustomerLogin")
   }
   //가게 상세 정보로 이동
-  const goToDetail = () => {
-    navigate("/DetailedStoreInfo")
+  const goToDetail = (shopId) => {
+    navigate(`/DetailedStoreInfo?shopId=${shopId}`)
   }
   
     const settings = {
@@ -53,7 +53,7 @@ export default function SimpleSlider({ stores }) {
     return (
       <Slider {...settings} className="custom-slider">
         {stores.map((store, index) => (
-          <div key={index} className="slider-item" onClick={goToDetail}>
+          <div key={index} className="slider-item" onClick={() => goToDetail(store.shopId)}>
             <img src={store.image} alt={`Slide ${index + 1}`} className="slider-image"/>
             <div className="store-info">
               <span className="store_name">{store.name}</span>
