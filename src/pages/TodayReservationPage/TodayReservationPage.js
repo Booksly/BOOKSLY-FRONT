@@ -321,6 +321,18 @@ export default function TodayReservationPage() {
     return filteredStores({ stores }).length;
   };
 
+  //카테고리 버튼 코드 간략화
+  const categoryButtons = [
+    { id: "btnAll", label: "전체", active: btnAllActive, onClick: toggleBtnAllActive },
+    { id: "btn1", label: "헤어", active: btn1Active, onClick: toggleBtn1Active },
+    { id: "btn2", label: "네일", active: btn2Active, onClick: toggleBtn2Active },
+    { id: "btn3", label: "마사지", active: btn3Active, onClick: toggleBtn3Active },
+    { id: "btn4", label: "눈썹/속눈썹", active: btn4Active, onClick: toggleBtn4Active },
+    { id: "btn5", label: "메이크업", active: btn5Active, onClick: toggleBtn5Active },
+    { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
+    { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
+  ];
+
   return (
     <div className="TodayReservationPage">
       <div className="TodayReservationPageBack">
@@ -379,129 +391,26 @@ export default function TodayReservationPage() {
                   </button>
                 </div>
               </div>
-
               <div className="before-category">
-                <div
-                  className={`frame-247 ${btnAllActive ? "active" : ""}`}
-                  onClick={toggleBtnAllActive}
-                >
-                  <div className="frame-156">
-                    <span className="container-82">전체</span>
+                {categoryButtons.map((button) => (
+                  <div
+                    key={button.id}
+                    className={`frame-247 ${button.active ? "active" : ""}`}
+                    onClick={button.onClick}
+                  >
+                    <div className="frame-156">
+                      <span className="container-82">{button.label}</span>
+                    </div>
+                    <div className="frame-155">
+                      <img
+                        className={`container-83 ${button.active ? "active" : ""}`}
+                        src={plus_button}
+                        alt={""}
+                      />
+                    </div>
                   </div>
-                  <div className="frame-155">
-                    <img
-                      className={`container-83 ${btnAllActive ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-240 ${btn1Active ? "active" : ""}`}
-                  onClick={toggleBtn1Active}
-                >
-                  <div className="frame-1561">
-                    <span className="container-84">헤어</span>
-                  </div>
-                  <div className="frame-1551">
-                    <img
-                      className={`container-85 ${btn1Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-241 ${btn2Active ? "active" : ""}`}
-                  onClick={toggleBtn2Active}
-                >
-                  <div className="frame-1562">
-                    <span className="container-86">네일</span>
-                  </div>
-                  <div className="frame-1552">
-                    <img
-                      className={`container-87 ${btn2Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-242 ${btn3Active ? "active" : ""}`}
-                  onClick={toggleBtn3Active}
-                >
-                  <div className="frame-1563">
-                    <span className="container-88">마사지</span>
-                  </div>
-                  <div className="frame-1553">
-                    <img
-                      className={`container-89 ${btn3Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-243 ${btn4Active ? "active" : ""}`}
-                  onClick={toggleBtn4Active}
-                >
-                  <div className="frame-1564">
-                    <span className="container-90">눈썹/속눈썹</span>
-                  </div>
-                  <div className="frame-1554">
-                    <img
-                      className={`container-91 ${btn4Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-244 ${btn5Active ? "active" : ""}`}
-                  onClick={toggleBtn5Active}
-                >
-                  <div className="frame-1565">
-                    <span className="container-92">메이크업</span>
-                  </div>
-                  <div className="frame-1555">
-                    <img
-                      className={`container-93 ${btn5Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-245 ${btn6Active ? "active" : ""}`}
-                  onClick={toggleBtn6Active}
-                >
-                  <div className="frame-1566">
-                    <span className="container-94">왁싱/제모</span>
-                  </div>
-                  <div className="frame-1556">
-                    <img
-                      className={`container-95 ${btn6Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-248 ${btn7Active ? "active" : ""}`}
-                  onClick={toggleBtn7Active}
-                >
-                  <div className="frame-1567">
-                    <span className="container-96">기타</span>
-                  </div>
-                  <div className="frame-1557">
-                    <img
-                      className={`container-97 ${btn7Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-              </div>
+                ))}
+              </div>            
             </div>
 
             <Modal
