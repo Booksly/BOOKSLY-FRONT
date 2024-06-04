@@ -6,13 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Auto_Big_Car.css'
 
 //이미지 임폴트
-import Image1 from './ZZ_hat.jpeg';
-import Image2 from './Z_Image6.jpeg';
-import Image3 from './ZZ_nail.jpeg';
-
-import Image4 from './main_banner_1.png';
-import Image5 from './main_banner_2.png';
-import Image6 from './main_banner_3.png';
+import Image4 from './main_banner.png';
+import Image6 from './4.png';
 
 // 메인 페이지 첫번째 줄 삼단 캐러셀 내용
 // 내부 클래스 컴포넌트
