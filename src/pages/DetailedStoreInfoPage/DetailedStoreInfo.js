@@ -2,7 +2,7 @@ import searchbar from "../../assets/search_button.png";
 import home from '../../assets/home_button.png';
 import './DetailedStoreInfo.css'
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
-import {shops} from "../../data/detaile-store/dummy";
+import {shops} from "../../data/detail-store/dummy";
 import {useLocation, useNavigate} from "react-router-dom";
 
 export default function DetailedStoreInfo() {
