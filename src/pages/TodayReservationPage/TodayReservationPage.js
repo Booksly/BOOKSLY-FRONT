@@ -662,7 +662,7 @@ export default function TodayReservationPage() {
               </div>
             </div>
 
-            {/* 예약 마감 임박 할인 */}
+            {/* 타임 세일 */}
             <div className='today_reserve_padding'>
               <div className='today_reserve_wrap'>
                 <div className="recommand-title">타임 세일</div>
@@ -703,162 +703,33 @@ export default function TodayReservationPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="research-result-1">
-                    <div className="store-info-padding-1">
-                      <div className="frame-2871">
-                        <div className="store-infos-2">
-                          <span className="container-46">[헤어]</span>
-                          <span className="container-47">제이제이 헤어</span>
+                  <div className="research-result">
+                    <div className="store-info-padding">
+                      <div className="frame-287">
+                        <div className="store-infos">
+                          <span className="container-40">[헤어]</span>
+                          <span className="container-41">제이제이 헤어</span>
                         </div>
-                        <div className="store-infos-3">
-                          <span className="container-48">
+                        <div className="store-infos-1">
+                          <span className="container-42">
                             수원시 영통수 이의동
                           </span>
                         </div>
                       </div>
-                      <div className="mene-names-1">
-                        <span className="container-49">여성커트, 남성커트</span>
+                      <div className="mene-names">
+                        <span className="container-43">여성커트, 남성커트</span>
                       </div>
                     </div>
-                    <div className="reserve-look-buts-1">
-                      <div className="reserve-but-1">
-                        <span className="container-50">예약하기</span>
+                    <div className="reserve-look-buts">
+                      <div className="reserve-but">
+                        <span className="container-44">예약하기</span>
                       </div>
-                      <div className="look-store-but-1">
-                        <span className="container-51">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-2">
-                    <div className="store-info-padding-2">
-                      <div className="frame-2872">
-                        <div className="store-infos-4">
-                          <span className="container-52">[헤어]</span>
-                          <span className="container-53">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-5">
-                          <span className="container-54">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-2">
-                        <span className="container-55">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-2">
-                      <div className="reserve-but-2">
-                        <span className="container-56">예약하기</span>
-                      </div>
-                      <div className="look-store-but-2">
-                        <span className="container-57">가게조회</span>
+                      <div className="look-store-but">
+                        <span className="container-45">가게조회</span>
                       </div>
                     </div>
                   </div>
-                  <div className="research-result-3">
-                    <div className="store-info-padding-3">
-                      <div className="frame-2873">
-                        <div className="store-infos-6">
-                          <span className="container-58">[헤어]</span>
-                          <span className="container-59">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-7">
-                          <span className="container-60">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-3">
-                        <span className="container-61">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-3">
-                      <div className="reserve-but-3">
-                        <span className="container-62">예약하기</span>
-                      </div>
-                      <div className="look-store-but-3">
-                        <span className="container-63">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-4">
-                    <div className="store-info-padding-4">
-                      <div className="frame-2874">
-                        <div className="store-infos-8">
-                          <span className="container-64">[헤어]</span>
-                          <span className="container-65">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-9">
-                          <span className="container-66">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-4">
-                        <span className="container-67">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-4">
-                      <div className="reserve-but-4">
-                        <span className="container-68">예약하기</span>
-                      </div>
-                      <div className="look-store-but-4">
-                        <span className="container-69">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-5">
-                    <div className="store-info-padding-5">
-                      <div className="frame-2875">
-                        <div className="store-infos-10">
-                          <span className="container-70">[헤어]</span>
-                          <span className="container-71">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-11">
-                          <span className="container-72">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-5">
-                        <span className="container-73">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-5">
-                      <div className="reserve-but-5">
-                        <span className="container-74">예약하기</span>
-                      </div>
-                      <div className="look-store-but-5">
-                        <span className="container-75">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="research-result-6">
-                    <div className="store-info-padding-6">
-                      <div className="frame-2876">
-                        <div className="store-infos-12">
-                          <span className="container-76">[헤어]</span>
-                          <span className="container-77">제이제이 헤어</span>
-                        </div>
-                        <div className="store-infos-13">
-                          <span className="container-78">
-                            수원시 영통수 이의동
-                          </span>
-                        </div>
-                      </div>
-                      <div className="mene-names-6">
-                        <span className="container-79">여성커트, 남성커트</span>
-                      </div>
-                    </div>
-                    <div className="reserve-look-buts-6">
-                      <div className="reserve-but-6">
-                        <span className="container-80">예약하기</span>
-                      </div>
-                      <div className="look-store-but-6">
-                        <span className="container-81">가게조회</span>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
