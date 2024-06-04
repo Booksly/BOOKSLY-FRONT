@@ -24,7 +24,9 @@
 }
 
 /* 이미지 크기 설정 */
-.slider-image {
+.custom-sliderup .slider-image,
+.custom-sliderdown .slider-image
+ {
     width: 200px; 
     height: 135px;
     object-fit: cover;
@@ -33,7 +35,8 @@
 }
 
 /* 가게 정보 설정 */
-.store-info {
+.custom-sliderup .store-info,
+.custom-sliderdown .store-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +44,8 @@
 }
 
 /* 가게 정보 글자 폰트 설정 */
-.store-info .store_name {
+.custom-sliderup .store-info .store-info .store_name,
+.custom-sliderdown .store-info .store-info .store_name {
     font-size: 15px;
     font-weight: 900;
     margin-right: 10px;
