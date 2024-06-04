@@ -1,42 +1,77 @@
 import React, { useState } from 'react';
+import {useLocation} from "react-router-dom";
 import LoginAfterMainHeader from '../nav/LoginAfterMainHeader';
 import '../MainPage/Main.css';
 import './Reservation.css';
+import {shops} from "../../data/reservation/dummy";
 import Calen_EX from '../StandByReservation_Owner/Calender/calendal';
 
 export default function Reservation() {
-    const StoreName = "제이제이 헤어";
-    const data_staffs = ["제이원장", "심화 디자이너", "캡 디자이너"];
-    const data_can_reserve_time = ["12:30", "13:00", "13:30", "14:00"];
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const shopId = parseInt(queryParams.get('shopId'));
+    console.log(shopId)
+    const shop = shops.find(shop => shop.shopId === shopId);
 
+    const shopName = shop.shopName;
+    const employees = shop.employees;
+    const [reserveTimes, setReserveTimes] = useState([]);
     const [selectedStaff, setSelectedStaff] = useState(null);
     const [selectedTime, setSelectedTime] = useState(null);
+    const [selectedDate, setSelectedDate] = useState(null);
 
-    const handleStaffClick = (index) => {
+    const handleStaffClick = (index, employeeId) => {
         setSelectedStaff(index);
+        if (selectedDate) {
+            updateReserveTimes(selectedDate, employeeId);
+        }
     };
 
     const handleTimeClick = (index) => {
         setSelectedTime(index);
     };
 
+    const handleDateChange = (date) => {
+        console.log(date)
+        
+        // 로컬 시간대를 사용하여 날짜를 형식화
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 1을 더함
+        const day = String(date.getDate()).padStart(2, '0');
+        const formattedDate = `${year}-${month}-${day}`;
+
+        setSelectedDate(formattedDate);
+        if (selectedStaff !== null) {
+            const employeeId = employees[selectedStaff].id;
+            updateReserveTimes(formattedDate, employeeId);
+        }
+    };
+
+    const updateReserveTimes = (date, employeeId) => {
+        if (date && employeeId) {
+            const selectedEmployee = employees.find(employee => employee.id === parseInt(employeeId));
+            setReserveTimes(selectedEmployee.reserveTimes[date] || []);
+        }
+    };
+
     return (
+        
         <div className='main_padding'>
             {/* 예약 페이지 내용 */}
             <LoginAfterMainHeader />
             <div className='reservation_padding'>
-                {StoreName}<br />
+                {shopName}<br/>
                 <div className='reserve_select_option'>
                     <div className='reserve_title'>직원 선택</div>
                     <div className='option_boxs_row'>
-                        {data_staffs.map((staff, index) => (
+                        {employees.map((employee, index) => (
                             <div
                                 key={index}
                                 className={`staff_box ${selectedStaff === index ? 'isSelect' : ''}`}
-                                onClick={() => handleStaffClick(index)}
+                                onClick={() => handleStaffClick(index, employee.id)}
                             >
                                 <div className='staff_img'></div>
-                                <div className='staff_name'>{staff}</div>
+                                <div className='staff_name'>{employee.name}</div>
                             </div>
                         ))}
                     </div>
@@ -44,13 +79,13 @@ export default function Reservation() {
                 <div className='reserve_select_option'>
                     <div className='reserve_title'>날짜 선택</div>
                     <div className='calendar_select_single'>
-                        <div><Calen_EX /></div>
+                        <div><Calen_EX onChange={handleDateChange} /></div>
                     </div>
                 </div>
                 <div className='reserve_select_option'>
                     <div className='reserve_title'>시간대 선택</div>
                     <div className='option_boxs_row'>
-                        {data_can_reserve_time.map((time, index) => (
+                        {reserveTimes.map((time, index) => (
                             <div
                                 key={index}
                                 className={`time_box ${selectedTime === index ? 'isSelect' : ''}`}
