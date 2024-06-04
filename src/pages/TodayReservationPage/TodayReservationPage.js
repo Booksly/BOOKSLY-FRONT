@@ -33,13 +33,13 @@ import Image18 from '../MainPage/compopopo/ZZ_hat.jpeg';
 import Image19 from '../MainPage/compopopo/Z_Image6.jpeg';
 import Image20 from '../MainPage/compopopo/ZZ_nail2.jpeg';
 
-//가게 목록 하나 컴포넌트
+//가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu }) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
         <div className="store_infos">
-          <span className="categori">{category}</span>
+          <span className="categori">[{category}]</span>
           <span className="store_name">{name}</span>
         </div>
         <div className="store_info_where">
@@ -61,7 +61,48 @@ const StoreCard = ({ category, name, location, menu }) => (
   </div>
 );
 
-//가게 목록 여러개 컴포넌트
+//가게 목록 하나 컴포넌트 - 가게조회용
+const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name, possible_reserve_time  }) => (
+  <div className="research-result">
+    <div className="store_info_padding">
+      <div className="store_infos_all">
+        <div className="store_infos">
+          <span className="categori">[{category}]</span>
+          <span className="store_name">{name}</span>
+        </div>
+        <div className="store_info_where">
+          <span className="store_where">{location}</span>
+        </div>
+      </div>
+      <div className="menu-names">
+        <span className="menu_name">{menu}</span>
+      </div>
+    </div>
+    <div className="store_can_reserve_contents">
+      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">{total_sale_late}</span>
+      </div>
+      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">{sale_name}</span>
+      </div>
+      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">{possible_reserve_time}</span>
+      </div>
+    </div>
+    <div className="reserve-look-buts">
+      <div className="reserve-but">
+        <span className="btn_name">예약하기</span>
+      </div>
+      <div className="look-store-but">
+        <span className="btn_name">가게조회</span>
+      </div>
+    </div>
+  </div>
+);
+
+
+
+//가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores }) => (
   <div className="research-results">
     {stores.map((store, index) => (
@@ -75,6 +116,25 @@ const ResearchResults = ({ stores }) => (
     ))}
   </div>
 );
+
+//가게 목록 여러개 컴포넌트 - 조회용
+const ResearchResults2 = ({ stores }) => (
+  <div className="research-results">
+    {stores.map((store, index) => (
+      <StoreCard2
+        key={index}
+        category={store.category}
+        name={store.name}
+        location={store.location}
+        menu={store.menu}
+        total_sale_late={store.total_sale_late} 
+        sale_name={store.sale_name}
+        possible_reserve_time={store.possible_reserve_time}
+      />
+    ))}
+  </div>
+);
+
 
 
   //예약 마감 임박 할인 가게
@@ -118,16 +178,37 @@ const ResearchResults = ({ stores }) => (
 //탑백 스토어
 const top_100stores = [
   {
-    category: "[헤어]",
+    category: "헤어",
     name: "제이제이 헤어",
     location: "수원시 영통구 이의동",
     menu: "여성커트, 남성커트"
   },
   {
-    category: "[네일]",
+    category: "네일",
     name: "내일 네일",
     location: "수원시 영통구 동동동",
     menu: "여성커트, 남성커트, 펌"
+  }
+];
+
+const sample_stores = [
+  {
+    category: "헤어",
+    name: "제이제이 헤어",
+    location: "수원시 영통구 이의동",
+    menu: "여성커트, 남성커트",
+    total_sale_late: 30,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "내일 네일",
+    location: "수원시 영통구 동동동",
+    menu: "여성커트, 남성커트, 펌",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
   }
 ];
 
@@ -218,6 +299,26 @@ export default function TodayReservationPage() {
   };
   const closeTimeModal = () => {
     setIsTimeModalOpen(false);
+  };
+
+  // 필터링된 스토어 데이터
+  const filteredStores = ({ stores }) => {
+    return stores.filter((store) => {
+      if (btnAllActive) return true;
+      if (btn1Active && store.category === "헤어") return true;
+      if (btn2Active && store.category === "네일") return true;
+      if (btn3Active && store.category === "마사지") return true;
+      if (btn4Active && store.category === "눈썹/속눈썹") return true;
+      if (btn5Active && store.category === "메이크업") return true;
+      if (btn6Active && store.category === "왁싱/제모") return true;
+      if (btn7Active && store.category === "기타") return true;
+      return false;
+    });
+  };
+
+  // 필터링된 가게 데이터의 개수
+  const filteredStoresCount = ({ stores }) => {
+    return filteredStores({ stores }).length;
   };
 
   return (
@@ -504,17 +605,54 @@ export default function TodayReservationPage() {
             </div>
 
             {/* 탑 백 조회 */}
-            <div className="top-100-list-all">
+            {/* <div className="top-100-list-all">
               <div className="top-100-list">
                 <div className="top-test">
                   <span className="top-100">TOP 100</span>
                 </div>
                 <div className="research-results">
-                  {/* props로 전달 */}
                   <ResearchResults stores={top_100stores} />
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            {/* 필터링에 대한 가게 조회 */}
+            {/* <div className="top-100-list-all2">
+              <div className="top-100-list">
+                <div className="top-test">
+                  <span className="top-100">총 몇개</span>
+                </div>
+                <div className="research-results">
+                  <ResearchResults2 stores={filteredStores({ stores: sample_stores })} /> 
+                </div>
+              </div>
+            </div> */}
+
+            {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
+            {/* 필터링에 대한 가게 조회 */}
+            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+              <div className="top-100-list-all2">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">총 {filteredStoresCount({ stores: sample_stores })} 개</span>
+                  </div>
+                  <div className="research-results">
+                    <ResearchResults2 stores={filteredStores({ stores: sample_stores })} />
+                  </div>
+                </div>
+              </div>
+              ) : ( /* 탑 백 조회 */
+              <div className="top-100-list-all">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">TOP 100</span>
+                  </div>
+                  <div className="research-results">
+                    <ResearchResults stores={top_100stores} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -1109,11 +1109,17 @@
 }
 /**************/
 /* 탑 백 내용(조회 내용 총 출동) 패딩 */
-.TodayReservationPage .top-100-list-all {
+.TodayReservationPage .top-100-list-all,
+.TodayReservationPage .top-100-list-all2 {
   display: flex;
   width: 1000px;
   box-sizing: border-box;
 }
+
+.TodayReservationPage .top-100-list-all2 {
+  /* margin-top: 100px; */
+}
+
 .TodayReservationPage .container-16 {
   margin-left: 0.3px;
   display: flex;
