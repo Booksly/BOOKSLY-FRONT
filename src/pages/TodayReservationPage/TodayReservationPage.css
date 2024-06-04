@@ -1252,6 +1252,21 @@
   color: #000000;
 }
 
+/*카테고리 선택시 나오는 가게 내용*/
+.store_can_reserve_contents {
+  display: flex;
+  align-items: center;
+}
+
+.store_can_reserve_contents .store_can_reserve_content {
+  width: 150px;
+  display: flex;
+  flex-direction: column; 
+  margin: 10px;
+  text-align: center;
+}
+
+
 /* 예약하기, 조회하기 버튼 */
 .TodayReservationPage .reserve-look-buts {
   display: flex;

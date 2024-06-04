@@ -80,16 +80,16 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
     </div>
     <div className="store_can_reserve_contents">
       <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">{total_sale_late}</span>
-      </div>
-      <div className="store_can_reserve_content">
+        <span className="store_can_reserve_info">총 {total_sale_late}% 할인</span>
         <span className="store_can_reserve_info">{sale_name}</span>
       </div>
+      {/* <div className="store_can_reserve_content">
+       
+      </div> */}
       <div className="store_can_reserve_content">
         <span className="store_can_reserve_info">{possible_reserve_time}</span>
       </div>
-    </div>
-    <div className="reserve-look-buts">
+      <div className="reserve-look-buts">
       <div className="reserve-but">
         <span className="btn_name">예약하기</span>
       </div>
@@ -97,6 +97,8 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
         <span className="btn_name">가게조회</span>
       </div>
     </div>
+    </div>
+    
   </div>
 );
 
@@ -179,33 +181,42 @@ const ResearchResults2 = ({ stores }) => (
 const top_100stores = [
   {
     category: "헤어",
-    name: "제이제이 헤어",
-    location: "수원시 영통구 이의동",
+    name: "뮤뮤 헤어",
+    location: "수원시 팔달구",
     menu: "여성커트, 남성커트"
   },
   {
     category: "네일",
     name: "내일 네일",
-    location: "수원시 영통구 동동동",
+    location: "수원시 영통구",
     menu: "여성커트, 남성커트, 펌"
   }
 ];
 
 const sample_stores = [
   {
-    category: "헤어",
-    name: "제이제이 헤어",
-    location: "수원시 영통구 이의동",
-    menu: "여성커트, 남성커트",
-    total_sale_late: 30,
+    category: "왁싱/제모",
+    name: "준하마",
+    location: "수원시 영통구",
+    menu: "브라질리언 왁싱",
+    total_sale_late: 20,
     sale_name: "예약 마감 임박 할인",
     possible_reserve_time: "2024.06.20 15:30"
   },
   {
     category: "네일",
-    name: "내일 네일",
-    location: "수원시 영통구 동동동",
-    menu: "여성커트, 남성커트, 펌",
+    name: "손끝마루",
+    location: "수원시 팔달구",
+    menu: "손케어, 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "네일게이션",
+    location: "수원시 팔달구",
+    menu: " 네일, 파츠네일",
     total_sale_late: 30,
     sale_name: "오픈 기념 할인중",
     possible_reserve_time: "2024.06.20 15:30"
