@@ -20,19 +20,6 @@ export default function Hot_Place () {
     //더미데이터
     const [hotPlaces, setHotPlaces] = useState(hot_place_dummy);
 
-    // //가게 Hot_Place 정보
-    // const stores = [
-    //     { name: "제이제이 헤어", image: Image1, rating: 4.4, category: "헤어" },
-    //     { name: "네일 샵", image: Image2, rating: 4.8, category: "네일" },
-    //     { name: "마사지 샵", image: Image3, rating: 4.7, category: "마사지" },
-    //     { name: "피부 관리", image: Image4, rating: 4.9, category: "피부" },
-    //     { name: "속눈썹 샵", image: Image5, rating: 4.3, category: "속눈썹" },
-    //     { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
-    //     { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
-    //     { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
-    //     { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    //     { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
-    // ];
 
     return (
         <div className='hot-place-padding'>

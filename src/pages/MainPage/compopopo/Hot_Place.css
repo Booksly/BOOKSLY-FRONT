@@ -2,10 +2,11 @@
     /* background: #FF9090; */
     width: 1440px;
     height: auto;
-    margin-bottom: 50px;
+    /* margin-bottom: 30px; */
 }
 .recommand-title{
     margin-block-end: 5px;
     margin-left: 50px;
+    margin-top: 50px;
 }
 
