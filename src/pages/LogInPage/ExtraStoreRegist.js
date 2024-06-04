@@ -18,6 +18,7 @@ const options = [
 export default function ExtraStoreRegist() {
   const [storeName, setStoreName] = useState("");
   const [storePhone, setStorePhone] = useState("");
+  const [storeNum, setStoreNum] = useState("");
   const [address, setAddress] = useState("");
   const [addrDetail, setAddrDetail] = useState("");
   const [snsURL, setSnsURL] = useState("");
@@ -260,9 +261,12 @@ export default function ExtraStoreRegist() {
                   <div className="container-StoreOwnerNum">사업자 번호</div>
                   <div className="frame-SetStoreOwnerNum">
                     <div className="frame-StoreOwnerNumCont">
-                      <span className="container-StoreOwnerNumCont">
-                        000-00-00000 형태로 입력
-                      </span>
+                      <input
+                        className="container-StoreOwnerNumCont"
+                        placeholder="000-00-00000 형태로 입력"
+                        value={storeNum}
+                        onChange={(e) => setStoreNum(e.target.value)}
+                      />
                     </div>
                     <div className="frame-StoreOwnerNumSear">
                       <span className="container-StoreOwnerNumSear">조회</span>

@@ -169,6 +169,24 @@
   font-weight: 300;
   font-size: 15px;
   color: #adadad;
+  border: none;
+  white-space: normal;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ExtraStoreRegist .SR-frame-StoreRegistFinButton {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ff5925;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
 }
 .ExtraStoreRegist .frame-StoreOwnerNumSear {
   border-radius: 5px;
