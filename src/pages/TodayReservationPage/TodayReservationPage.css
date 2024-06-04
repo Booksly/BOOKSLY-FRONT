@@ -1291,7 +1291,7 @@
 
 /* 슬라이더_투데이 css */
 .today_reserve_padding {
-  padding: 20px 10px 20px 10px;
+  padding: 3px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   background: #ffffff;
@@ -1299,6 +1299,7 @@
 }
 
 .today_reserve_wrap {
+
   width: 1000px;
   height: auto;
 }
@@ -1308,6 +1309,7 @@
   font-size: 25px;
   font-weight: 900;
   margin-block-end: 5px;
+  margin-top: 30px;
   margin-left: 50px;
 }
 
