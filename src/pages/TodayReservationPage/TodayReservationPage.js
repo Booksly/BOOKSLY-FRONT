@@ -138,61 +138,201 @@ const ResearchResults2 = ({ stores }) => (
 
 
   //예약 마감 임박 할인 가게
-  const LastEvent_stores = [
-    { name: "제이제이 헤어", image: Image1, rating: 4.4, category: "헤어" },
-    { name: "네일 샵", image: Image2, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image3, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image4, rating: 4.9, category: "피부" },
-    { name: "속눈썹 샵", image: Image5, rating: 4.3, category: "속눈썹" },
-    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
-    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
-    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
-    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
-    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
-    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
-    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
+const LastEvent_stores = [
+  { id: 40, name: "제이젱 헤어", image: Image1, rating: 4.4, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 41, name: "네네유루 샵", image: Image2, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 42, name: "마상마상 샵", image: Image3, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 43, name: "매끈매끈", image: Image4, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 44, name: "뷰러풍풍", image: Image5, rating: 4.3, category: "속눈썹", eventcoment: "오픈기념 할인 행사" },
+  { id: 45, name: "뷰티풀그대", image: Image6, rating: 4.5, category: "메이크업", eventcoment: "오픈기념 할인 행사" },
+  { id: 46, name: "샬롱더워드", image: Image7, rating: 4.6, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 47, name: "음악과 함께", image: Image8, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 48, name: "모미개운", image: Image9, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 49, name: "부부", image: Image10, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 50, name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타", eventcoment: "오픈기념 할인 행사" },
+  { id: 51, name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 52, name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 53, name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 54, name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 55, name: "프레쉬 헤어", image: Image11, rating: 4.4, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 56, name: "네일 스튜디오", image: Image12, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 57, name: "아로마 마사지", image: Image13, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 58, name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 59, name: "플래시 래쉬", image: Image15, rating: 4.3, category: "속눈썹", eventcoment: "오픈기념 할인 행사" }
+];
+
+// 타임 세일 가게
+const TimeEvent_stores = [
+  { id: 60, name: "헤어 글램", image: Image11, rating: 4.5, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 61, name: "네일 글리터", image: Image12, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 62, name: "릴렉스 타임", image: Image13, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 63, name: "글로우 스킨", image: Image14, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 64, name: "아이래쉬 스튜디오", image: Image15, rating: 4.3, category: "속눈썹", eventcoment: "오픈기념 할인 행사" },
+  { id: 65, name: "뷰티 인스티튜트", image: Image6, rating: 4.5, category: "메이크업", eventcoment: "오픈기념 할인 행사" },
+  { id: 66, name: "헤어 플레이스", image: Image7, rating: 4.6, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 67, name: "네일 갤러리", image: Image8, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 68, name: "마사지 하우스", image: Image9, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 69, name: "피부 솔루션", image: Image10, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 70, name: "래쉬 아티스트", image: Image1, rating: 4.3, category: "속눈썹", eventcoment: "오픈기념 할인 행사" },
+  { id: 71, name: "뷰티 바이브", image: Image2, rating: 4.5, category: "메이크업", eventcoment: "오픈기념 할인 행사" },
+  { id: 72, name: "헤어 스타일리스트", image: Image3, rating: 4.6, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 73, name: "네일 부티크", image: Image4, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 74, name: "마사지 힐", image: Image5, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
+  { id: 75, name: "피부 테라피", image: Image6, rating: 4.9, category: "왁싱/제모", eventcoment: "오픈기념 할인 행사" },
+  { id: 76, name: "속눈썹 매직", image: Image7, rating: 4.3, category: "속눈썹", eventcoment: "오픈기념 할인 행사" },
+  { id: 77, name: "뷰티 시크릿", image: Image8, rating: 4.5, category: "메이크업", eventcoment: "오픈기념 할인 행사" },
+  { id: 78, name: "헤어 스튜디오", image: Image9, rating: 4.6, category: "헤어", eventcoment: "오픈기념 할인 행사" },
+  { id: 79, name: "네일 아트", image: Image10, rating: 4.8, category: "네일", eventcoment: "오픈기념 할인 행사" },
+  { id: 80, name: "마사지 엘리트", image: Image1, rating: 4.7, category: "마사지", eventcoment: "오픈기념 할인 행사" },
   ];
-
-  //타임 세일 가게
-  const TimeEvent_stores = [
-    { name: "프레쉬 헤어", image: Image11, rating: 4.4, category: "헤어" },
-    { name: "네일 스튜디오", image: Image12, rating: 4.8, category: "네일" },
-    { name: "아로마 마사지", image: Image13, rating: 4.7, category: "마사지" },
-    { name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "피부" },
-    { name: "플래시 래쉬", image: Image15, rating: 4.3, category: "속눈썹" },
-    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
-    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
-    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
-    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "피부" },
-    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
-    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
-    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "피부" },
-    ];
-
 //탑백 스토어
 const top_100stores = [
   {
+    id: 20,
     category: "헤어",
     name: "제이제이 헤어",
     location: "수원시 영통구 이의동",
     menu: "여성커트, 남성커트"
   },
   {
+    id: 21,
     category: "네일",
     name: "내일 네일",
     location: "수원시 영통구 동동동",
     menu: "여성커트, 남성커트, 펌"
+  },
+  {
+    id: 22,
+    category: "마사지",
+    name: "힐링 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "전신 마사지, 발 마사지"
+  },
+  {
+    id: 23,
+    category: "왁싱/제모",
+    name: "스킨 케어 클리닉",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 관리, 여드름 관리"
+  },
+  {
+    id: 24,
+    category: "헤어",
+    name: "뷰티 헤어샵",
+    location: "수원시 영통구 팔달구",
+    menu: "염색, 펌"
+  },
+  {
+    id: 25,
+    category: "메이크업",
+    name: "아름다움 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "메이크업, 네일아트"
+  },
+  {
+    id: 26,
+    category: "마사지",
+    name: "릴렉스 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "타이 마사지, 스웨디시 마사지"
+  },
+  {
+    id: 27,
+    category: "왁싱/제모",
+    name: "클리어 스킨",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 재생, 미백 관리"
+  },
+  {
+    id: 28,
+    category: "헤어",
+    name: "스타일 헤어샵",
+    location: "수원시 영통구 팔달구",
+    menu: "컷트, 스타일링"
+  },
+  {
+    id: 29,
+    category: "메이크업",
+    name: "엘레강스 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "웨딩 메이크업, 네일 케어"
+  },
+  {
+    id: 30,
+    category: "마사지",
+    name: "웰빙 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "아로마 마사지, 림프 마사지"
+  },
+  {
+    id: 31,
+    category: "왁싱/제모",
+    name: "글로우 스킨",
+    location: "수원시 영통구 팔달구",
+    menu: "안티에이징, 수분 공급"
+  },
+  {
+    id: 32,
+    category: "헤어",
+    name: "헤어 스튜디오",
+    location: "수원시 영통구 팔달구",
+    menu: "남성커트, 여성커트"
+  },
+  {
+    id: 33,
+    category: "메이크업",
+    name: "뷰티풀 데이즈",
+    location: "수원시 영통구 팔달구",
+    menu: "아이 메이크업, 피부 메이크업"
+  },
+  {
+    id: 34,
+    category: "마사지",
+    name: "비타 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "지압 마사지, 핫스톤 마사지"
+  },
+  {
+    id: 35,
+    category: "왁싱/제모",
+    name: "스킨글로우 클리닉",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 톤업, 모공 관리"
+  },
+  {
+    id: 36,
+    category: "헤어",
+    name: "헤어 트렌드",
+    location: "수원시 영통구 팔달구",
+    menu: "펌, 염색"
+  },
+  {
+    id: 37,
+    category: "메이크업",
+    name: "글래머 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "페디큐어, 네일아트"
+  },
+  {
+    id: 38,
+    category: "마사지",
+    name: "편안한 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "경락 마사지, 발 마사지"
+  },
+  {
+    id: 39,
+    category: "왁싱/제모",
+    name: "프리미엄 스킨케어",
+    location: "수원시 영통구 팔달구",
+    menu: "여드름 관리, 피부 재생"
   }
 ];
 
+
 const sample_stores = [
   {
+    id: 90,
     category: "헤어",
     name: "제이제이 헤어",
     location: "수원시 영통구 이의동",
@@ -202,6 +342,7 @@ const sample_stores = [
     possible_reserve_time: "2024.06.20 15:30"
   },
   {
+    id: 91,
     category: "네일",
     name: "내일 네일",
     location: "수원시 영통구 동동동",
@@ -209,8 +350,289 @@ const sample_stores = [
     total_sale_late: 30,
     sale_name: "오픈 기념 할인중",
     possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    id: 92,
+    category: "마사지",
+    name: "힐링 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "전신 마사지, 발 마사지",
+    total_sale_late: 20,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.21 10:00"
+  },
+  {
+    id: 93,
+    category: "왁싱/제모",
+    name: "스킨 케어 클리닉",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 관리, 여드름 관리",
+    total_sale_late: 25,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.21 14:00"
+  },
+  {
+    id: 94,
+    category: "헤어",
+    name: "뷰티 헤어샵",
+    location: "수원시 영통구 팔달구",
+    menu: "염색, 펌",
+    total_sale_late: 15,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.21 09:00"
+  },
+  {
+    id: 95,
+    category: "메이크업",
+    name: "아름다움 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "메이크업, 네일아트",
+    total_sale_late: 10,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.21 13:00"
+  },
+  {
+    id: 96,
+    category: "눈썹/속눈썹",
+    name: "아이브로우로",
+    location: "수원시 영통구 팔달구",
+    menu: "반영구 눈썹 문신",
+    total_sale_late: 22,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.21 11:00"
+  },
+  {
+    id: 97,
+    category: "왁싱/제모",
+    name: "클리어 스킨",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 재생, 미백 관리",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.21 16:00"
+  },
+  {
+    id: 98,
+    category: "헤어",
+    name: "스타일 헤어샵",
+    location: "수원시 영통구 팔달구",
+    menu: "컷트, 스타일링",
+    total_sale_late: 18,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.21 10:30"
+  },
+  {
+    id: 99,
+    category: "메이크업",
+    name: "엘레강스 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "웨딩 메이크업, 네일 케어",
+    total_sale_late: 12,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.21 15:00"
+  },
+  {
+    id: 100,
+    category: "마사지",
+    name: "웰빙 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "아로마 마사지, 림프 마사지",
+    total_sale_late: 28,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.22 09:30"
+  },
+  {
+    id: 101,
+    category: "왁싱/제모",
+    name: "글로우 스킨",
+    location: "수원시 영통구 팔달구",
+    menu: "안티에이징, 수분 공급",
+    total_sale_late: 27,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.22 11:30"
+  },
+  {
+    id: 102,
+    category: "헤어",
+    name: "헤어 스튜디오",
+    location: "수원시 영통구 팔달구",
+    menu: "남성커트, 여성커트",
+    total_sale_late: 14,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.22 10:00"
+  },
+  {
+    id: 103,
+    category: "메이크업",
+    name: "뷰티풀 데이즈",
+    location: "수원시 영통구 팔달구",
+    menu: "아이 메이크업, 피부 메이크업",
+    total_sale_late: 11,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.22 13:30"
+  },
+  {
+    id: 104,
+    category: "마사지",
+    name: "비타 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "지압 마사지, 핫스톤 마사지",
+    total_sale_late: 20,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.22 12:00"
+  },
+  {
+    id: 105,
+    category: "왁싱/제모",
+    name: "스킨글로우 클리닉",
+    location: "수원시 영통구 팔달구",
+    menu: "피부 톤업, 모공 관리",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.22 14:00"
+  },
+  {
+    id: 106,
+    category: "헤어",
+    name: "헤어 트렌드",
+    location: "수원시 영통구 팔달구",
+    menu: "펌, 염색",
+    total_sale_late: 19,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.22 11:30"
+  },
+  {
+    id: 107,
+    category: "메이크업",
+    name: "글래머 뷰티",
+    location: "수원시 영통구 팔달구",
+    menu: "페디큐어, 네일아트",
+    total_sale_late: 25,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.22 15:00"
+  },
+  {
+    id: 108,
+    category: "마사지",
+    name: "편안한 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "경락 마사지, 발 마사지",
+    total_sale_late: 24,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.23 09:00"
+  },
+  {
+    id: 109,
+    category: "왁싱/제모",
+    name: "프리미엄 스킨케어",
+    location: "수원시 영통구 팔달구",
+    menu: "여드름 관리, 피부 재생",
+    total_sale_late: 29,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.23 10:30"
+  },
+  {
+    id: 110,
+    category: "헤어",
+    name: "글램 헤어",
+    location: "수원시 영통구 팔달구",
+    menu: "컷트, 펌",
+    total_sale_late: 20,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.23 11:00"
+  },
+  {
+    id: 111,
+    category: "네일",
+    name: "네일 갤러리",
+    location: "수원시 영통구 팔달구",
+    menu: "매니큐어, 페디큐어",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.23 12:00"
+  },
+  {
+    id: 112,
+    category: "마사지",
+    name: "릴렉스 타임",
+    location: "수원시 영통구 팔달구",
+    menu: "타이 마사지, 스웨디시 마사지",
+    total_sale_late: 26,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.23 13:00"
+  },
+  {
+    id: 113,
+    category: "왁싱/제모",
+    name: "글로우 스킨케어",
+    location: "수원시 영통구 팔달구",
+    menu: "미백 관리, 피부 재생",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.23 14:00"
+  },
+  {
+    id: 114,
+    category: "헤어",
+    name: "스타일 헤어 디자인",
+    location: "수원시 영통구 팔달구",
+    menu: "염색, 컷트",
+    total_sale_late: 17,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.23 15:00"
+  },
+  {
+    id: 115,
+    category: "메이크업",
+    name: "뷰티 스튜디오",
+    location: "수원시 영통구 팔달구",
+    menu: "네일아트, 메이크업",
+    total_sale_late: 22,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.23 16:00"
+  },
+  {
+    id: 116,
+    category: "마사지",
+    name: "힐링 마사지",
+    location: "수원시 영통구 팔달구",
+    menu: "지압 마사지, 아로마 마사지",
+    total_sale_late: 21,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.24 09:00"
+  },
+  {
+    id: 117,
+    category: "왁싱/제모",
+    name: "스킨 케어 솔루션",
+    location: "수원시 영통구 팔달구",
+    menu: "여드름 관리, 피부 톤업",
+    total_sale_late: 28,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.24 10:00"
+  },
+  {
+    id: 118,
+    category: "헤어",
+    name: "프레쉬 헤어",
+    location: "수원시 영통구 팔달구",
+    menu: "남성커트, 여성커트",
+    total_sale_late: 19,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.24 11:00"
+  },
+  {
+    id: 119,
+    category: "네일",
+    name: "네일 스튜디오",
+    location: "수원시 영통구 팔달구",
+    menu: "매니큐어, 젤 네일",
+    total_sale_late: 27,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.24 12:00"
   }
 ];
+
 
 
 export default function TodayReservationPage() {
@@ -411,128 +833,6 @@ export default function TodayReservationPage() {
                   </div>
                 ))}
               </div>            
-              {/* <div className="before-category">
-                <div
-                  className={`frame-247 ${btnAllActive ? "active" : ""}`}
-                  onClick={toggleBtnAllActive}
-                >
-                  <div className="frame-156">
-                    <span className="container-82">전체</span>
-                  </div>
-                  <div className="frame-155">
-                    <img
-                      className={`container-83 ${btnAllActive ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-240 ${btn1Active ? "active" : ""}`}
-                  onClick={toggleBtn1Active}
-                >
-                  <div className="frame-1561">
-                    <span className="container-84">헤어</span>
-                  </div>
-                  <div className="frame-1551">
-                    <img
-                      className={`container-85 ${btn1Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-241 ${btn2Active ? "active" : ""}`}
-                  onClick={toggleBtn2Active}
-                >
-                  <div className="frame-1562">
-                    <span className="container-86">네일</span>
-                  </div>
-                  <div className="frame-1552">
-                    <img
-                      className={`container-87 ${btn2Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-242 ${btn3Active ? "active" : ""}`}
-                  onClick={toggleBtn3Active}
-                >
-                  <div className="frame-1563">
-                    <span className="container-88">마사지</span>
-                  </div>
-                  <div className="frame-1553">
-                    <img
-                      className={`container-89 ${btn3Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-243 ${btn4Active ? "active" : ""}`}
-                  onClick={toggleBtn4Active}
-                >
-                  <div className="frame-1564">
-                    <span className="container-90">눈썹/속눈썹</span>
-                  </div>
-                  <div className="frame-1554">
-                    <img
-                      className={`container-91 ${btn4Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-244 ${btn5Active ? "active" : ""}`}
-                  onClick={toggleBtn5Active}
-                >
-                  <div className="frame-1565">
-                    <span className="container-92">메이크업</span>
-                  </div>
-                  <div className="frame-1555">
-                    <img
-                      className={`container-93 ${btn5Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-245 ${btn6Active ? "active" : ""}`}
-                  onClick={toggleBtn6Active}
-                >
-                  <div className="frame-1566">
-                    <span className="container-94">왁싱/제모</span>
-                  </div>
-                  <div className="frame-1556">
-                    <img
-                      className={`container-95 ${btn6Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`frame-248 ${btn7Active ? "active" : ""}`}
-                  onClick={toggleBtn7Active}
-                >
-                  <div className="frame-1567">
-                    <span className="container-96">기타</span>
-                  </div>
-                  <div className="frame-1557">
-                    <img
-                      className={`container-97 ${btn7Active ? "active" : ""}`}
-                      src={plus_button}
-                      alt={""}
-                    />
-                  </div>
-                </div>
-              </div> */}
             </div>
 
             <Modal
