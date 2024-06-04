@@ -8,7 +8,7 @@
     margin: 0 5px; /* 각 슬라이더 아이템 사이에 좌우 마진 추가 */
     background-color: white;
     height: 230px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px white;
 }
 
 /* 슬라이더 전체 너비를 고려한 마진 추가 */

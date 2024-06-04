@@ -33,6 +33,10 @@ import Image18 from '../MainPage/compopopo/ZZ_hat.jpeg';
 import Image19 from '../MainPage/compopopo/Z_Image6.jpeg';
 import Image20 from '../MainPage/compopopo/ZZ_nail2.jpeg';
 
+//더미데이터 임포트
+import {last_event_dummy} from "../../data/last-event-store/dummy";
+import { time_event_dummy } from "../../data/time-event-store/dummy";
+
 //가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu }) => (
   <div className="research-result">
@@ -139,43 +143,11 @@ const ResearchResults2 = ({ stores }) => (
 
 
 
-  //예약 마감 임박 할인 가게
-  const LastEvent_stores = [
-    { name: "제이제이 헤어", image: Image1, rating: 4.4, category: "헤어" },
-    { name: "네일 샵", image: Image2, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image3, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image4, rating: 4.9, category: "왁싱/제모" },
-    { name: "속눈썹 샵", image: Image5, rating: 4.3, category: "속눈썹" },
-    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
-    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
-    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "왁싱/제모" },
-    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
-    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
-    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
-    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "왁싱/제모" },
-  ];
 
-  //타임 세일 가게
-  const TimeEvent_stores = [
-    { name: "프레쉬 헤어", image: Image11, rating: 4.4, category: "헤어" },
-    { name: "네일 스튜디오", image: Image12, rating: 4.8, category: "네일" },
-    { name: "아로마 마사지", image: Image13, rating: 4.7, category: "마사지" },
-    { name: "스킨케어 솔루션", image: Image14, rating: 4.9, category: "왁싱/제모" },
-    { name: "플래시 래쉬", image: Image15, rating: 4.3, category: "속눈썹" },
-    { name: "뷰티 앤 웰니스", image: Image16, rating: 4.5, category: "기타" },
-    { name: "헤어 디자인", image: Image17, rating: 4.6, category: "헤어" },
-    { name: "네일 앤 팁", image: Image18, rating: 4.8, category: "네일" },
-    { name: "릴렉싱 마사지", image: Image19, rating: 4.7, category: "마사지" },
-    { name: "스파 트리트먼트", image: Image20, rating: 4.9, category: "왁싱/제모" },
-    { name: "뷰티 샵", image: Image6, rating: 4.5, category: "뷰티" },
-    { name: "헤어 샵", image: Image7, rating: 4.6, category: "헤어" },
-    { name: "네일 아트", image: Image8, rating: 4.8, category: "네일" },
-    { name: "마사지 샵", image: Image9, rating: 4.7, category: "마사지" },
-    { name: "피부 관리", image: Image10, rating: 4.9, category: "왁싱/제모" },
-    ];
+  //더미데이터 사용
+  const last_event_stores = last_event_dummy;
+  const time_event_stores = time_event_dummy;
+
 
 //탑백 스토어
 const top_100stores = [
@@ -538,7 +510,7 @@ export default function TodayReservationPage() {
               <div className='today_reserve_wrap'>
                 <div className="recommand-title">예약 마감 임박 할인</div>
                 {/* props로 전달 */}
-                <SimpleSlider_Today stores={LastEvent_stores} />
+                <SimpleSlider_Today stores={last_event_stores} />
               </div>
             </div>
 
@@ -547,7 +519,7 @@ export default function TodayReservationPage() {
               <div className='today_reserve_wrap'>
                 <div className="recommand-title">타임 세일</div>
                 {/* props로 전달 */}
-                <SimpleSlider_Today stores={TimeEvent_stores} />
+                <SimpleSlider_Today stores={time_event_stores} />
               </div>
             </div>
 
