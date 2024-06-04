@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .reservation_padding {
+    font-family: 'Pretendard-Regular';
     margin-block: 120px;
     padding: 50px;
     border-radius: 30px;
@@ -63,7 +71,7 @@
 
 .reservation_padding .option_boxs_row > .time_box {
     padding: 12px;
-    background-color: rgb(188, 188, 188);
+    background-color: rgba(255, 255, 255, 0.94);
     border-radius: 10px;
     margin-inline: 15px;
     margin-block: 5px;

@@ -22,7 +22,6 @@ export default function Mainmain() {
       <Outlet />
       <Outlet/>
       <Promote_Carousel/>
-      <Shortcut/>
       <Hot_Place/>
       <New_Store/>
     </div>

@@ -5,6 +5,7 @@ import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
 import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
 import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
+import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 
@@ -484,7 +485,6 @@ export default function TodayReservationPage() {
                 시간 추가
               </button>
             </Modal>
-
             {/* 예약 마감 임박 할인 */}
             <div className='today_reserve_padding'>
               <div className='today_reserve_wrap'>

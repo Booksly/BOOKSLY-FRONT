@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './calendal.css';
+import { Button } from "flowbite-react";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
-export default function Calen_EX() {
+export default function Calen_EX({ onChange }) {
     const [currentDate, setCurrentDate] = useState(new Date());
     const [selectedDate, setSelectedDate] = useState(null);
     
@@ -41,6 +43,9 @@ export default function Calen_EX() {
 
     function handleDateClick(key) {
         setSelectedDate(prevSelectedDate => prevSelectedDate === key ? null : key);
+        if (onChange) {
+            onChange(new Date(key));
+        }
     }
 
     function handlePrevMonth() {
@@ -60,13 +65,13 @@ export default function Calen_EX() {
     }
     
 
-    return (
-        <>
+    return (    
+        <>     
             <div className="calendar-container">
                 <div className="calendar-header">
-                    <button onClick={handlePrevMonth}>&lt;&lt;</button>
-                    <h2>{`${currentDate.getFullYear()} ${monthNames[currentDate.getMonth()]}`}</h2>
-                    <button onClick={handleNextMonth}>&gt;&gt;</button>
+                    <button onClick={handlePrevMonth}>&lt;</button>
+                    <h1>{`${currentDate.getFullYear()} ${monthNames[currentDate.getMonth()]}`}</h1>
+                    <button onClick={handleNextMonth}>&gt;</button>
                 </div>
                 <div className="calendar-body">
                     <div className="calendar-days">
@@ -83,13 +88,7 @@ export default function Calen_EX() {
                     </div>
                 </div>
             </div>
-            {selectedDate && (
-                <div className="selected-dates">
-                    <span>선택한 날짜:</span>
-                    <p>{selectedDate}</p>
-                </div>
-            )}
-             
+            
         </>
     );
 }

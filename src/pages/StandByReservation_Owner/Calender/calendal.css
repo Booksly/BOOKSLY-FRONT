@@ -8,6 +8,13 @@
     margin: 0;
 } */
 
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .calendar-container {
     width: 700px;
     border: 1px solid #ccc;
@@ -19,9 +26,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #beaac2;
+    padding: 3px;
+    background-color: #e2a368;
 }
+
+.calendar-header button {
+    background-color: #e2a368; 
+    color: white; /* 텍스트 색상 */
+    padding: 10px 20px; /* 상하, 좌우 패딩 */
+    border: none; /* 테두리 없음 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    transition: background-color 0.3s; /* 호버 효과 */
+  }
+  
+  .calendar-header button:hover {
+    background-color: #e57239f1; /* 버튼 호버 시 색상 변경 */
+  }
+  
+  .calendar-header h1 {
+    /* font-family: 'yg-jalnan'; */
+    display: inline; /* 헤더와 버튼을 같은 줄에 표시 */
+    margin: 0 20px; /* 헤더 주변 여백 */
+  }
+  
 
 .calendar-body {
     font-size: 30px;
@@ -41,7 +69,7 @@
 }
 
 .calendar-dates {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .calendar-dates div {
@@ -68,12 +96,12 @@
     display: none;
 }
 
-.selected-dates {
+/* .selected-dates {
     font-size: 30px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+} */
 
 .selected-dates > ul > li{
     list-style-type: none;
