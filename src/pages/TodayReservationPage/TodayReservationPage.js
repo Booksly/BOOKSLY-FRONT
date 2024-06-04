@@ -679,6 +679,8 @@ export default function TodayReservationPage() {
                 </div>
               </div>
             )} */}
+
+            {/* 깃 브런치 실험*/}
           </div>
         </div>
       </div>
