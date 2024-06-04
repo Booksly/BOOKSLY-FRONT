@@ -586,6 +586,33 @@ export default function TodayReservationPage() {
                 시간 추가
               </button>
             </Modal>
+
+            {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
+            {/* 필터링에 대한 가게 조회 */}
+            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+              <div className="top-100-list-all2">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">총 {filteredStoresCount({ stores: sample_stores })} 개</span>
+                  </div>
+                  <div className="research-results">
+                    <ResearchResults2 stores={filteredStores({ stores: sample_stores })} />
+                  </div>
+                </div>
+              </div>
+              ) : ( /* 탑 백 조회 */
+              <div className="top-100-list-all">
+                <div className="top-100-list">
+                  <div className="top-test">
+                    <span className="top-100">TOP 100</span>
+                  </div>
+                  <div className="research-results">
+                    <ResearchResults stores={top_100stores} />
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* 예약 마감 임박 할인 */}
             <div className='today_reserve_padding'>
               <div className='today_reserve_wrap'>
@@ -629,8 +656,7 @@ export default function TodayReservationPage() {
             </div> */}
 
             {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
-            {/* 필터링에 대한 가게 조회 */}
-            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+            {/* {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
               <div className="top-100-list-all2">
                 <div className="top-100-list">
                   <div className="top-test">
@@ -641,7 +667,7 @@ export default function TodayReservationPage() {
                   </div>
                 </div>
               </div>
-              ) : ( /* 탑 백 조회 */
+              ) : ( 
               <div className="top-100-list-all">
                 <div className="top-100-list">
                   <div className="top-test">
@@ -652,7 +678,7 @@ export default function TodayReservationPage() {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
