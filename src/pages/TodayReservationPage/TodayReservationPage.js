@@ -12,11 +12,10 @@ import { useNavigate } from "react-router";
 //더미데이터 임포트
 //top100 데이터
 import {top_100_dummy} from "../../data/top-100/dummy";
-import { last_event_dummy } from "../../data/last-event-store/dummy";
 
 //이벤트 데이터
 import {last_event_dummy} from "../../data/last-event-store/dummy";
-import { time_event_dummy } from "../../data/time-event-store/dummy";
+import {time_event_dummy } from "../../data/time-event-store/dummy";
 
 //가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu, id, onClickReserve }) => (
