@@ -2,33 +2,27 @@ import React, { useState } from 'react';
 import './MenuComponent.css';
 import checkNon from '../../assets/checkNon.png';
 import checkSelect from '../../assets/checkSelect.png';
+import { shops } from '../../data/detail-store/dummy';
 
 export default function MenuComponent() {
     const [selectedMenu, setSelectedMenu] = useState(null);
     const [selectedServices, setSelectedServices] = useState([]);
 
+    // 제롬헤어 샵의 데이터를 가져옴
+    const shop = shops[0];
+
     const menuItems = [
         { id: 1, label: "이벤트" },
-        { id: 2, label: "커트" },
-        { id: 3, label: "펌" },
-        { id: 4, label: "염색" },
-        // 추가적인 항목들이 여기에 추가될 수 있습니다.
+        ...shop.menuCategories.map((category, index) => ({
+            id: index + 2,
+            label: category.categoryName
+        }))
     ];
 
-    const services = {
-        2: [
-            { id: 1, label: "여성 컷", price: "30,000" },
-            { id: 2, label: "남성 컷", price: "25,000" },
-        ],
-        3: [
-            { id: 3, label: "기본 펌", price: "50,000" },
-            { id: 4, label: "매직 펌", price: "70,000" },
-        ],
-        4: [
-            { id: 5, label: "염색", price: "40,000" },
-            { id: 6, label: "탈색", price: "60,000" },
-        ],
-    };
+    const services = shop.menuCategories.reduce((acc, category, index) => {
+        acc[index + 2] = category.menus;
+        return acc;
+    }, {});
 
     const handleMenuClick = (menuId) => {
         setSelectedMenu(menuId);
@@ -36,8 +30,8 @@ export default function MenuComponent() {
 
     const handleServiceClick = (service) => {
         setSelectedServices(prevSelectedServices => {
-            if (prevSelectedServices.some(s => s.id === service.id)) {
-                return prevSelectedServices.filter(s => s.id !== service.id);
+            if (prevSelectedServices.some(s => s.menuId === service.menuId)) {
+                return prevSelectedServices.filter(s => s.menuId !== service.menuId);
             } else {
                 return [...prevSelectedServices, service];
             }
@@ -63,23 +57,23 @@ export default function MenuComponent() {
                 <div className="MC-frame-700">
                     {selectedMenu && services[selectedMenu] && services[selectedMenu].map(service => (
                         <div
-                            key={service.id}
-                            className={`MC-frame-service ${selectedServices.some(s => s.id === service.id) ? "MC-selected" : ""}`}
+                            key={service.menuId}
+                            className={`MC-frame-service ${selectedServices.some(s => s.menuId === service.menuId) ? "MC-selected" : ""}`}
                             onClick={() => handleServiceClick(service)}
                         >
                             <div className="MC-iconoirpage-down">
                                 <img
                                     className="MC-group"
-                                    src={selectedServices.some(s => s.id === service.id) ? checkSelect : checkNon}
+                                    src={selectedServices.some(s => s.menuId === service.menuId) ? checkSelect : checkNon}
                                     alt=""
                                 />
                             </div>
                             <div className="MC-frame-697">
                                 <div className="MC-container">
-                                    {service.label}
+                                    {service.name}
                                 </div>
                                 <div className="MC-container">
-                                    {service.price}
+                                    {service.price.toLocaleString()}원
                                 </div>
                             </div>
                         </div>
@@ -88,7 +82,7 @@ export default function MenuComponent() {
                 <div className="MC-frame-699">
                     {selectedServices.map((service, index) => (
                         <span key={index} className="MC-selected-service">
-                            {service.label}
+                            {service.name}
                         </span>
                     ))}
                 </div>
