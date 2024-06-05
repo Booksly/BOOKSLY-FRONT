@@ -233,7 +233,7 @@ export const shops = [
                     "2024-06-15": ["10:00", "12:00", "14:00", "16:00"]
                 }
             },
-            {
+           {
                 "id": 15,
                 "name": "박민주",
                 "reserveTimes": {
@@ -261,7 +261,7 @@ export const shops = [
             }
         ]
     },
-    {
+      {
         "shopId": 9,
         "shopName": "글래드뷰티",
         "employees": [

@@ -6,38 +6,19 @@ import plus_button from "../../assets/plus_button.png";
 import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
-import { shops } from "../../../src/data/detail-store/dummy";
+import { useNavigate } from "react-router";
 
-//이미지 임폴트
-import Image1 from "../MainPage/compopopo/ZZ_hat.jpeg";
-import Image2 from "../MainPage/compopopo/ZZ_masage.jpeg";
-import Image3 from "../MainPage/compopopo/ZZ_nail.jpeg";
-import Image4 from "../MainPage/compopopo/Z_Image1.jpeg";
-import Image5 from "../MainPage/compopopo/Z_Image2.jpeg";
-import Image6 from "../MainPage/compopopo/ZZ_nail3.jpg";
-import Image7 from "../MainPage/compopopo/Z_Image4.jpeg";
-import Image8 from "../MainPage/compopopo/Z_Image5.jpeg";
-import Image9 from "../MainPage/compopopo/Z_Image6.jpeg";
-import Image10 from "../MainPage/compopopo/ZZ_nail2.jpeg";
-
-//이미지 임폴트2
-import Image11 from "../MainPage/compopopo/ZZ_masa1.jpeg";
-import Image12 from "../MainPage/compopopo/ZZ_masage.jpeg";
-import Image13 from "../MainPage/compopopo/ZZ_masa2.jpeg";
-import Image14 from "../MainPage/compopopo/Z_Image1.jpeg";
-import Image15 from "../MainPage/compopopo/ZImage3.jpeg";
-import Image16 from "../MainPage/compopopo/ZZ_nail.jpeg";
-import Image17 from "../MainPage/compopopo/Z_Image4.jpeg";
-import Image18 from "../MainPage/compopopo/ZZ_hat.jpeg";
-import Image19 from "../MainPage/compopopo/Z_Image6.jpeg";
-import Image20 from "../MainPage/compopopo/ZZ_nail2.jpeg";
 
 //더미데이터 임포트
-import { last_event_dummy } from "../../data/last-event-store/dummy";
-import { time_event_dummy } from "../../data/time-event-store/dummy";
+//top100 데이터
+import {top_100_dummy} from "../../data/top-100/dummy";
+
+//이벤트 데이터
+import {last_event_dummy} from "../../data/last-event-store/dummy";
+import {time_event_dummy } from "../../data/time-event-store/dummy";
 
 //가게 목록 하나 컴포넌트 - top100용
-const StoreCard = ({ category, name, address, menu }) => (
+const StoreCard = ({ category, name, location, menu, id, onClickReserve }) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
@@ -46,7 +27,7 @@ const StoreCard = ({ category, name, address, menu }) => (
           <span className="store_name">{name}</span>
         </div>
         <div className="store_info_where">
-          <span className="store_where">{address}</span>
+          <span className="store_where">{location}</span>
         </div>
       </div>
       <div className="menu-names">
@@ -54,7 +35,7 @@ const StoreCard = ({ category, name, address, menu }) => (
       </div>
     </div>
     <div className="reserve-look-buts">
-      <div className="reserve-but">
+      <div className="reserve-but" onClick={() => onClickReserve(id)}>
         <span className="btn_name">예약하기</span>
       </div>
       <div className="look-store-but">
@@ -115,19 +96,17 @@ const StoreCard2 = ({
 );
 
 //가게 목록 여러개 컴포넌트 - 탑 백용
-const ResearchResults = ({ stores }) => (
+const ResearchResults = ({ stores, onClickReserve }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard
         key={index}
         category={store.category}
         name={store.name}
-        address={store.address}
-        menu={store.menuCategories
-          .map((menuCategory) =>
-            menuCategory.menus.map((menu) => menu.name).join(", ")
-          )
-          .join(", ")}
+        location={store.location}
+        menu={store.menu}
+        id={store.shopId}
+        onClickReserve={onClickReserve}
       />
     ))}
   </div>
@@ -160,54 +139,41 @@ const last_event_stores = last_event_dummy;
 const time_event_stores = time_event_dummy;
 
 //탑백 스토어
-const top_100stores = shops.slice(0, 19);
-// [
-//   {
-//     category: "헤어",
-//     name: "뮤뮤 헤어",
-//     location: "수원시 팔달구",
-//     menu: "여성커트, 남성커트"
-//   },
-//   {
-//     category: "네일",
-//     name: "내일 네일",
-//     location: "수원시 영통구",
-//     menu: "여성커트, 남성커트, 펌"
-//   }
-// ];
+const top_100_stores = top_100_dummy;
 
-const sample_stores = shops || [];
-// [
-//   {
-//     category: "왁싱/제모",
-//     name: "준하마",
-//     location: "수원시 영통구",
-//     menu: "브라질리언 왁싱",
-//     total_sale_late: 20,
-//     sale_name: "예약 마감 임박 할인",
-//     possible_reserve_time: "2024.06.20 15:30"
-//   },
-//   {
-//     category: "네일",
-//     name: "손끝마루",
-//     location: "수원시 팔달구",
-//     menu: "손케어, 네일, 파츠네일",
-//     total_sale_late: 30,
-//     sale_name: "오픈 기념 할인중",
-//     possible_reserve_time: "2024.06.20 15:30"
-//   },
-//   {
-//     category: "네일",
-//     name: "네일게이션",
-//     location: "수원시 팔달구",
-//     menu: " 네일, 파츠네일",
-//     total_sale_late: 30,
-//     sale_name: "오픈 기념 할인중",
-//     possible_reserve_time: "2024.06.20 15:30"
-//   }
-// ];
+const sample_stores = [
+  {
+    category: "왁싱/제모",
+    name: "준하마",
+    location: "수원시 영통구",
+    menu: "브라질리언 왁싱",
+    total_sale_late: 20,
+    sale_name: "예약 마감 임박 할인",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "손끝마루",
+    location: "수원시 팔달구",
+    menu: "손케어, 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  },
+  {
+    category: "네일",
+    name: "네일게이션",
+    location: "수원시 팔달구",
+    menu: " 네일, 파츠네일",
+    total_sale_late: 30,
+    sale_name: "오픈 기념 할인중",
+    possible_reserve_time: "2024.06.20 15:30"
+  }
+];
+
 
 export default function TodayReservationPage() {
+  const navigate = useNavigate();
   const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedTimes, setSelectedTimes] = useState([
     { start: "", end: "", startMin: "", endMin: "" },
@@ -256,6 +222,7 @@ export default function TodayReservationPage() {
     setBtn6Active(!btnAllActive);
     setBtn7Active(!btnAllActive);
   };
+
   const toggleBtn1Active = () => setBtn1Active(!btn1Active);
   const toggleBtn2Active = () => setBtn2Active(!btn2Active);
   const toggleBtn3Active = () => setBtn3Active(!btn3Active);
@@ -364,6 +331,11 @@ export default function TodayReservationPage() {
       onClick: toggleBtn7Active,
     },
   ];
+
+  const goToReserve = (shopId) => {
+    console.log(shopId);
+    navigate(`/Reservation?shopId=${shopId}`);
+  };
 
   return (
     <div className="TodayReservationPage">
@@ -562,7 +534,7 @@ export default function TodayReservationPage() {
                     <span className="top-100">TOP 100</span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults stores={top_100stores} />
+                    <ResearchResults stores={top_100_stores} onClickReserve={goToReserve}/>
                   </div>
                 </div>
               </div>
