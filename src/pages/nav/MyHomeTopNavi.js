@@ -25,7 +25,7 @@ export default function MyHomeTopNavi() {
                             <div className="MyHomeTopNavialarm-button">
                             </div>
                             <div className="MyHomeTopNavialarmId">
-                                    아이디
+                                    김송은
                             </div>
                         </div>
                         <button className="MyHomeTopNavilogoutButton" onClick={goToMain}>
@@ -44,7 +44,7 @@ export default function MyHomeTopNavi() {
                         <div className="MyHomeTopNavimember-info">
                             <div className="MyHomeTopNavimyhome-top-navi-id">
                                 <span className="MyHomeTopNaviprofileId">
-                                        아이디
+                                        김송은
                                 </span>
                             </div>
                             <div className="MyHomeTopNavinumerical-summary">
@@ -53,7 +53,7 @@ export default function MyHomeTopNavi() {
                                             방문
                                     </div>
                                     <div className="MyHomeTopNavivisitNum">
-                                            10
+                                            5
                                     </div>
                                 </div>
                                 <div className="MyHomeTopNavimyhomeReview">
@@ -61,7 +61,7 @@ export default function MyHomeTopNavi() {
                                             리뷰
                                     </span>
                                     <span className="MyHomeTopNavimyhomeReviewNum">
-                                            5
+                                            1
                                     </span>
                                 </div>
                                 <div className="MyHomeTopNaviregular-shop">
@@ -69,13 +69,13 @@ export default function MyHomeTopNavi() {
                                             단골가게
                                     </span>
                                     <span className="MyHomeTopNaviregular-shop-num">
-                                            2
+                                            1
                                     </span>
                                 </div>
                             </div>
                             <div className="MyHomeTopNavimyhomeEmail">
                                 <span className="MyHomeTopNaviprofileEmail">
-                                        이메일정보
+                                        songeun@kgu.com
                                 </span>
                             </div>
                         </div>

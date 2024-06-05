@@ -19,7 +19,7 @@
     margin-bottom: 20px;
 }
 .DetailedStoreInfo .container {
-    /*background: #FDF8F3;*/
+    background: #FDF8F3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -664,8 +664,11 @@
     margin-bottom: 7px;
     flex-direction: row;
     align-self: flex-start;
-    width: 200px;
+    max-width: 200px;
     box-sizing: border-box;
+    white-space: nowrap; /* 텍스트를 한 줄로 설정 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis
 }
 .DetailedStoreInfo .container-menuName {
     margin-right: 5px;

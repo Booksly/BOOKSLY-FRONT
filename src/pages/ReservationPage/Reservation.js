@@ -7,6 +7,7 @@ import {shops} from "../../data/reservation/dummy";
 import Calen_EX from '../StandByReservation_Owner/Calender/calendal';
 import MenuComponent from "./MenuComponent";
 
+
 export default function Reservation() {
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
