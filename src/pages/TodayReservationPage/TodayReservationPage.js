@@ -3,8 +3,6 @@ import Modal from "react-modal";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
-import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
-import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
 import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
@@ -14,6 +12,7 @@ import { useNavigate } from "react-router";
 //더미데이터 임포트
 //top100 데이터
 import {top_100_dummy} from "../../data/top-100/dummy";
+import { last_event_dummy } from "../../data/last-event-store/dummy";
 
 //이벤트 데이터
 import {last_event_dummy} from "../../data/last-event-store/dummy";
@@ -48,7 +47,15 @@ const StoreCard = ({ category, name, location, menu, id, onClickReserve }) => (
 );
 
 //가게 목록 하나 컴포넌트 - 가게조회용
-const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name, possible_reserve_time  }) => (
+const StoreCard2 = ({
+  category,
+  name,
+  address,
+  menu,
+  total_sale_late,
+  sale_name,
+  possible_reserve_time,
+}) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
@@ -57,7 +64,7 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
           <span className="store_name">{name}</span>
         </div>
         <div className="store_info_where">
-          <span className="store_where">{location}</span>
+          <span className="store_where">{address}</span>
         </div>
       </div>
       <div className="menu-names">
@@ -66,7 +73,9 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
     </div>
     <div className="store_can_reserve_contents">
       <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">총 {total_sale_late}% 할인</span>
+        <span className="store_can_reserve_info">
+          총 {total_sale_late}% 할인
+        </span>
         <span className="store_can_reserve_info">{sale_name}</span>
       </div>
       {/* <div className="store_can_reserve_content">
@@ -76,19 +85,16 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
         <span className="store_can_reserve_info">{possible_reserve_time}</span>
       </div>
       <div className="reserve-look-buts">
-      <div className="reserve-but">
-        <span className="btn_name">예약하기</span>
-      </div>
-      <div className="look-store-but">
-        <span className="btn_name">가게조회</span>
+        <div className="reserve-but">
+          <span className="btn_name">예약하기</span>
+        </div>
+        <div className="look-store-but">
+          <span className="btn_name">가게조회</span>
+        </div>
       </div>
     </div>
-    </div>
-    
   </div>
 );
-
-
 
 //가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores, onClickReserve }) => (
@@ -115,9 +121,13 @@ const ResearchResults2 = ({ stores }) => (
         key={index}
         category={store.category}
         name={store.name}
-        location={store.location}
-        menu={store.menu}
-        total_sale_late={store.total_sale_late} 
+        address={store.address}
+        menu={store.menuCategories
+          .map((menuCategory) =>
+            menuCategory.menus.map((menu) => menu.name).join(", ")
+          )
+          .join(", ")}
+        total_sale_late={store.total_sale_late}
         sale_name={store.sale_name}
         possible_reserve_time={store.possible_reserve_time}
       />
@@ -125,13 +135,9 @@ const ResearchResults2 = ({ stores }) => (
   </div>
 );
 
-
-
-
-  //더미데이터 사용
-  const last_event_stores = last_event_dummy;
-  const time_event_stores = time_event_dummy;
-
+//더미데이터 사용
+const last_event_stores = last_event_dummy;
+const time_event_stores = time_event_dummy;
 
 //탑백 스토어
 const top_100_stores = top_100_dummy;
@@ -226,8 +232,6 @@ export default function TodayReservationPage() {
   const toggleBtn6Active = () => setBtn6Active(!btn6Active);
   const toggleBtn7Active = () => setBtn7Active(!btn7Active);
 
-
-
   const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -258,7 +262,7 @@ export default function TodayReservationPage() {
   };
 
   // 필터링된 스토어 데이터
-  const filteredStores = ({ stores }) => {
+  const filteredStores = (stores = []) => {
     return stores.filter((store) => {
       if (btnAllActive) return true;
       if (btn1Active && store.category === "헤어") return true;
@@ -273,20 +277,60 @@ export default function TodayReservationPage() {
   };
 
   // 필터링된 가게 데이터의 개수
-  const filteredStoresCount = ({ stores }) => {
-    return filteredStores({ stores }).length;
+  const filteredStoresCount = (stores = []) => {
+    return filteredStores(stores).length;
   };
 
   //카테고리 버튼 코드 간략화
   const categoryButtons = [
-    { id: "btnAll", label: "전체", active: btnAllActive, onClick: toggleBtnAllActive },
-    { id: "btn1", label: "헤어", active: btn1Active, onClick: toggleBtn1Active },
-    { id: "btn2", label: "네일", active: btn2Active, onClick: toggleBtn2Active },
-    { id: "btn3", label: "마사지", active: btn3Active, onClick: toggleBtn3Active },
-    { id: "btn4", label: "눈썹/속눈썹", active: btn4Active, onClick: toggleBtn4Active },
-    { id: "btn5", label: "메이크업", active: btn5Active, onClick: toggleBtn5Active },
-    { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
-    { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
+    {
+      id: "btnAll",
+      label: "전체",
+      active: btnAllActive,
+      onClick: toggleBtnAllActive,
+    },
+    {
+      id: "btn1",
+      label: "헤어",
+      active: btn1Active,
+      onClick: toggleBtn1Active,
+    },
+    {
+      id: "btn2",
+      label: "네일",
+      active: btn2Active,
+      onClick: toggleBtn2Active,
+    },
+    {
+      id: "btn3",
+      label: "마사지",
+      active: btn3Active,
+      onClick: toggleBtn3Active,
+    },
+    {
+      id: "btn4",
+      label: "눈썹/속눈썹",
+      active: btn4Active,
+      onClick: toggleBtn4Active,
+    },
+    {
+      id: "btn5",
+      label: "메이크업",
+      active: btn5Active,
+      onClick: toggleBtn5Active,
+    },
+    {
+      id: "btn6",
+      label: "왁싱/제모",
+      active: btn6Active,
+      onClick: toggleBtn6Active,
+    },
+    {
+      id: "btn7",
+      label: "기타",
+      active: btn7Active,
+      onClick: toggleBtn7Active,
+    },
   ];
 
   const goToReserve = (shopId) => {
@@ -364,14 +408,16 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-155">
                       <img
-                        className={`container-83 ${button.active ? "active" : ""}`}
+                        className={`container-83 ${
+                          button.active ? "active" : ""
+                        }`}
                         src={plus_button}
                         alt={""}
                       />
                     </div>
                   </div>
                 ))}
-              </div>            
+              </div>
             </div>
 
             <Modal
@@ -459,18 +505,30 @@ export default function TodayReservationPage() {
 
             {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
             {/* 필터링에 대한 가게 조회 */}
-            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+            {btnAllActive ||
+            btn1Active ||
+            btn2Active ||
+            btn3Active ||
+            btn4Active ||
+            btn5Active ||
+            btn6Active ||
+            btn7Active ? (
               <div className="top-100-list-all2">
                 <div className="top-100-list">
                   <div className="top-test">
-                    <span className="top-100">총 {filteredStoresCount({ stores: sample_stores })} 개</span>
+                    <span className="top-100">
+                      총 {filteredStoresCount({ stores: sample_stores })} 개
+                    </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores({ stores: sample_stores })} />
+                    <ResearchResults2
+                      stores={filteredStores({ stores: sample_stores })}
+                    />
                   </div>
                 </div>
               </div>
-              ) : ( /* 탑 백 조회 */
+            ) : (
+              /* 탑 백 조회 */
               <div className="top-100-list-all">
                 <div className="top-100-list">
                   <div className="top-test">
@@ -484,8 +542,8 @@ export default function TodayReservationPage() {
             )}
 
             {/* 예약 마감 임박 할인 */}
-            <div className='today_reserve_padding'>
-              <div className='today_reserve_wrap'>
+            <div className="today_reserve_padding">
+              <div className="today_reserve_wrap">
                 <div className="recommand-title">예약 마감 임박 할인</div>
                 {/* props로 전달 */}
                 <SimpleSlider_Today stores={last_event_stores} />
@@ -493,8 +551,8 @@ export default function TodayReservationPage() {
             </div>
 
             {/* 타임 세일 */}
-            <div className='today_reserve_padding'>
-              <div className='today_reserve_wrap'>
+            <div className="today_reserve_padding">
+              <div className="today_reserve_wrap">
                 <div className="recommand-title">타임 세일</div>
                 {/* props로 전달 */}
                 <SimpleSlider_Today stores={time_event_stores} />

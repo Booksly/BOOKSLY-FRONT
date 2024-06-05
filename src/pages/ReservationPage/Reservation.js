@@ -5,6 +5,8 @@ import '../MainPage/Main.css';
 import './Reservation.css';
 import {shops} from "../../data/reservation/dummy";
 import Calen_EX from '../StandByReservation_Owner/Calender/calendal';
+import MenuComponent from "./MenuComponent";
+
 
 export default function Reservation() {
     const location = useLocation();
@@ -98,7 +100,7 @@ export default function Reservation() {
                 </div>
                 <div className='reserve_select_option'>
                     <div className='reserve_title'>메뉴 선택</div>
-                    <div>컴포넌트 만들어서 넣을거임</div>
+                    <MenuComponent></MenuComponent>
                 </div>
                 <div className='reserve_select_option'>
                     <div className='reserve_title'>문의사항</div>

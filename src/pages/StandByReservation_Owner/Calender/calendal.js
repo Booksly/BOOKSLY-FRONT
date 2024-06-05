@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './calendal.css';
-import { Button } from "flowbite-react";
-import { HiOutlineArrowRight } from "react-icons/hi";
+// import { Button } from "flowbite-react";
+// import { HiOutlineArrowRight } from "react-icons/hi";
 
 export default function Calen_EX({ onChange }) {
     const [currentDate, setCurrentDate] = useState(new Date());

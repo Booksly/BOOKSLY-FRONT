@@ -1,8 +1,8 @@
 export const shops = [
     {
-        "shopId":1,
-        "shopName" : "제롬 헤어",
-        "employees":[
+        "shopId": 1,
+        "shopName": "제롬헤어",
+        "employees": [
             {
                 "id": 1,
                 "name": "제롬 원장",
@@ -221,7 +221,7 @@ export const shops = [
         "shopName": "왁싱랩",
         "employees": [
             {
-                "id": 1,
+                "id": 14,
                 "name": "김지수",
                 "reserveTimes": {
                     "2024-06-09": ["10:00", "12:00", "14:00", "16:00"],
@@ -233,8 +233,8 @@ export const shops = [
                     "2024-06-15": ["10:00", "12:00", "14:00", "16:00"]
                 }
             },
-            {
-                "id": 2,
+           {
+                "id": 15,
                 "name": "박민주",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -247,7 +247,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 16,
                 "name": "최다은",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -261,12 +261,12 @@ export const shops = [
             }
         ]
     },
-    {
+      {
         "shopId": 9,
         "shopName": "글래드뷰티",
         "employees": [
             {
-                "id": 1,
+                "id": 17,
                 "name": "이수민",
                 "reserveTimes": {
                     "2024-06-09": ["09:00", "11:00", "13:00", "15:00"],
@@ -279,7 +279,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 18,
                 "name": "김예은",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -292,7 +292,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 19,
                 "name": "박가영",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -311,7 +311,7 @@ export const shops = [
         "shopName": "헤어나올수있니",
         "employees": [
             {
-                "id": 1,
+                "id": 20,
                 "name": "정민수",
                 "reserveTimes": {
                     "2024-06-09": ["09:00", "11:00", "13:00", "15:00"],
@@ -324,7 +324,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 21,
                 "name": "박지연",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -337,7 +337,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 22,
                 "name": "김준호",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -356,7 +356,7 @@ export const shops = [
         "shopName": "메이크업가든",
         "employees": [
             {
-                "id": 1,
+                "id": 23,
                 "name": "이지혜",
                 "reserveTimes": {
                     "2024-06-09": ["09:00", "11:00", "13:00", "15:00"],
@@ -369,7 +369,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 24,
                 "name": "김민정",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -382,7 +382,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 25,
                 "name": "박지수",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -401,7 +401,7 @@ export const shops = [
         "shopName": "제니하우스",
         "employees": [
             {
-                "id": 1,
+                "id": 26,
                 "name": "정수진",
                 "reserveTimes": {
                     "2024-06-09": ["09:00", "11:00", "13:00", "15:00"],
@@ -414,7 +414,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 27,
                 "name": "이윤아",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -427,7 +427,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 28,
                 "name": "최유진",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -446,7 +446,8 @@ export const shops = [
         "shopName": "파인트리",
         "employees": [
             {
-                "id": 1,
+
+                "id": 29,
                 "name": "박세은",
                 "reserveTimes": {
                     "2024-06-09": ["09:00", "11:00", "13:00", "15:00"],
@@ -459,7 +460,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 30,
                 "name": "이정민",
                 "reserveTimes": {
                     "2024-06-09": ["10:30", "12:30", "14:30", "16:30"],
@@ -472,7 +473,7 @@ export const shops = [
                 }
             },
             {
-                "id": 3,
+                "id": 31,
                 "name": "김하늘",
                 "reserveTimes": {
                     "2024-06-09": ["11:00", "13:00", "15:00", "17:00"],
@@ -491,7 +492,7 @@ export const shops = [
         "shopName": "약손명가",
         "employees": [
             {
-                "id": 1,
+                "id": 32,
                 "name": "홍길동",
                 "reserveTimes": {
                     "2024-06-07": ["10:00", "12:00", "14:00", "16:00"],
@@ -506,7 +507,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 33,
                 "name": "김철수",
                 "reserveTimes": {
                     "2024-06-07": ["10:30", "12:30", "14:30", "16:30"],
@@ -527,7 +528,7 @@ export const shops = [
         "shopName": "순수 청담본점",
         "employees": [
             {
-                "id": 1,
+                "id": 34,
                 "name": "이영희",
                 "reserveTimes": {
                     "2024-06-07": ["10:00", "12:00", "14:00", "16:00"],
@@ -542,7 +543,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 35,
                 "name": "박미영",
                 "reserveTimes": {
                     "2024-06-07": ["10:30", "12:30", "14:30", "16:30"],
@@ -555,6 +556,22 @@ export const shops = [
                     "2024-06-14": ["09:30", "11:30", "13:30", "15:30"],
                     "2024-06-15": ["10:30", "12:30", "14:30", "16:30"]
                 }
+            },
+            {
+                "id": 34,
+                "name": "이영희",
+                "reserveTimes": {
+                    "2024-06-07": ["09:00", "11:00", "13:00", "15:00"],
+                    "2024-06-08": ["10:00", "12:00", "14:00"]
+                }
+            },
+            {
+                "id": 35,
+                "name": "박미영",
+                "reserveTimes": {
+                    "2024-06-07": ["10:00", "12:00", "14:00"],
+                    "2024-06-08": ["09:00", "11:00", "13:00"]
+                }
             }
         ]
     },
@@ -563,7 +580,7 @@ export const shops = [
         "shopName": "수힐링아로마",
         "employees": [
             {
-                "id": 1,
+                "id": 36,
                 "name": "최수정",
                 "reserveTimes": {
                     "2024-06-07": ["09:00", "11:00", "13:00", "15:00"],
@@ -578,7 +595,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 37,
                 "name": "한유리",
                 "reserveTimes": {
                     "2024-06-07": ["10:30", "12:30", "14:30", "16:30"],
@@ -599,7 +616,7 @@ export const shops = [
         "shopName": "더풋샵",
         "employees": [
             {
-                "id": 1,
+                "id": 38,
                 "name": "서준영",
                 "reserveTimes": {
                     "2024-06-07": ["09:00", "11:00", "13:00", "15:00"],
@@ -614,7 +631,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 39,
                 "name": "이상훈",
                 "reserveTimes": {
                     "2024-06-07": ["10:30", "12:30", "14:30", "16:30"],
@@ -635,7 +652,7 @@ export const shops = [
         "shopName": "바디클리닉",
         "employees": [
             {
-                "id": 1,
+                "id": 40,
                 "name": "김현우",
                 "reserveTimes": {
                     "2024-06-07": ["09:00", "11:00", "13:00", "15:00"],
@@ -650,7 +667,7 @@ export const shops = [
                 }
             },
             {
-                "id": 2,
+                "id": 41,
                 "name": "박지민",
                 "reserveTimes": {
                     "2024-06-07": ["10:30", "12:30", "14:30", "16:30"],
@@ -671,7 +688,7 @@ export const shops = [
         "shopName": "북슬리샵",
         "employees": [
             {
-                "id": 1,
+                "id": 42,
                 "name": "조민주",
                 "reserveTimes": {
                     "2024-06-07": ["09:00", "11:00", "13:00", "15:00"],
@@ -686,5 +703,1838 @@ export const shops = [
                 }
             }
         ]
+    },
+    {
+        shopId: 20,
+        shopName: "뮤뮤 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/mumuHair.png",
+        detailAddress: "101호",
+        rating: "4.5",
+        description: "고객 맞춤 프리미엄 헤어 서비스를 제공하는 뮤뮤 헤어입니다.",
+        addressAlias: "수원역 근처",
+        workSchedule: "월-토 09:00 - 20:00",
+        phoneNumber: "031-123-4567",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 1,
+                profileImgUri: "https://example.com/employee1.png",
+                name: "김헤어",
+                reviewNum: 2,
+                description: "10년 경력 / 펌 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김헤어",
+                rating: "4.8",
+                content: "친절하고 전문가의 손길이 느껴집니다.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 21,
+        shopName: "내일 네일",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/naeilNail.png",
+        detailAddress: "102호",
+        rating: "4.2",
+        description: "다양한 네일 서비스를 제공하는 내일 네일입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 19:00",
+        phoneNumber: "031-234-5678",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일 아트",
+                        description: "심플하고 깔끔한 기본 네일 아트입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 2,
+                profileImgUri: "https://example.com/employee2.png",
+                name: "박네일",
+                reviewNum: 3,
+                description: "5년 경력 / 젤 네일 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박네일",
+                rating: "4.5",
+                content: "젤 네일이 정말 오래 가고 예뻐요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 22,
+        shopName: "네일하우스",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/nailHouse.png",
+        detailAddress: "103호",
+        rating: "4.0",
+        description: "기본부터 젤 네일까지 다양한 네일 서비스를 제공하는 네일하우스입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-345-6789",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 20000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 30000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 3,
+                profileImgUri: "https://example.com/employee3.png",
+                name: "이네일",
+                reviewNum: 4,
+                description: "7년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이네일",
+                rating: "4.3",
+                content: "네일이 예쁘고 지속력이 좋아요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 23,
+        shopName: "제이왁싱",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/jWaxing.png",
+        detailAddress: "104호",
+        rating: "4.7",
+        description: "전문적인 왁싱 서비스를 제공하는 제이왁싱입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 18:00",
+        phoneNumber: "031-456-7890",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 30000,
+                        name: "팔 왁싱",
+                        description: "부드럽고 깔끔한 팔 왁싱입니다."
+                    },
+                    {
+                        menuId: 8,
+                        imgUri: "/images/leg_wax.png",
+                        price: 40000,
+                        name: "다리 왁싱",
+                        description: "매끈한 다리 왁싱입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "페이스 왁싱",
+                menus: [
+                    {
+                        menuId: 9,
+                        imgUri: "/images/face_wax.png",
+                        price: 20000,
+                        name: "얼굴 왁싱",
+                        description: "깨끗하고 깔끔한 얼굴 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 4,
+                profileImgUri: "https://example.com/employee4.png",
+                name: "김왁싱",
+                reviewNum: 5,
+                description: "10년 경력 / 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김왁싱",
+                rating: "4.9",
+                content: "왁싱이 정말 깔끔하고 만족스러웠어요.",
+                menuCategory: "바디 왁싱",
+                menu: "다리 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 24,
+        shopName: "헤어봄",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/springHair.png",
+        detailAddress: "105호",
+        rating: "4.1",
+        description: "트렌디한 스타일링을 제공하는 헤어봄입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 19:00",
+        phoneNumber: "031-567-8901",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 5,
+                profileImgUri: "https://example.com/employee5.png",
+                name: "박봄",
+                reviewNum: 3,
+                description: "8년 경력 / 헤어컷 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박봄",
+                rating: "4.2",
+                content: "친절하고 세심하게 컷을 해주셨어요.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 25,
+        shopName: "네일모아",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/nailMoa.png",
+        detailAddress: "106호",
+        rating: "4.6",
+        description: "다양한 네일 아트를 제공하는 네일모아입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-678-9012",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 6,
+                profileImgUri: "https://example.com/employee6.png",
+                name: "김모아",
+                reviewNum: 4,
+                description: "6년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김모아",
+                rating: "4.8",
+                content: "네일 아트가 너무 예쁘게 나왔어요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 26,
+        shopName: "왁싱플레이스",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/waxingPlace.png",
+        detailAddress: "107호",
+        rating: "4.3",
+        description: "전문적인 왁싱 서비스를 제공하는 왁싱플레이스입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-789-0123",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 7,
+                profileImgUri: "https://example.com/employee7.png",
+                name: "이왁싱",
+                reviewNum: 2,
+                description: "5년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이왁싱",
+                rating: "4.6",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 27,
+        shopName: "속눈썹샵",
+        category: "속눈썹/눈썹",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/eyelashShop.png",
+        detailAddress: "108호",
+        rating: "4.8",
+        description: "속눈썹 연장 및 눈썹 틴트를 제공하는 속눈썹샵입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-890-1234",
+        menuCategories: [
+            {
+                categoryName: "속눈썹 연장",
+                menus: [
+                    {
+                        menuId: 14,
+                        imgUri: "/images/eyelash_extension.png",
+                        price: 50000,
+                        name: "속눈썹 연장",
+                        description: "길고 풍성한 속눈썹 연장입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "눈썹 틴트",
+                menus: [
+                    {
+                        menuId: 15,
+                        imgUri: "/images/eyebrow_tint.png",
+                        price: 30000,
+                        name: "눈썹 틴트",
+                        description: "자연스러운 눈썹 틴트입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 8,
+                profileImgUri: "https://example.com/employee8.png",
+                name: "박눈썹",
+                reviewNum: 3,
+                description: "7년 경력 / 속눈썹 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박눈썹",
+                rating: "4.9",
+                content: "속눈썹 연장이 자연스럽고 예뻐요.",
+                menuCategory: "속눈썹 연장",
+                menu: "속눈썹 연장"
+            }
+        ]
+    },
+    {
+        shopId: 28,
+        shopName: "스타일 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/styleHair.png",
+        detailAddress: "109호",
+        rating: "4.4",
+        description: "스타일리시한 헤어컷을 제공하는 스타일 헤어입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 20:00",
+        phoneNumber: "031-901-2345",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "염색",
+                menus: [
+                    {
+                        menuId: 5,
+                        imgUri: "/images/hair_color.png",
+                        price: 60000,
+                        name: "전체 염색",
+                        description: "트렌디한 컬러로 변신하세요."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 9,
+                profileImgUri: "https://example.com/employee9.png",
+                name: "김스타일",
+                reviewNum: 2,
+                description: "6년 경력 / 염색 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김스타일",
+                rating: "4.5",
+                content: "염색이 아주 예쁘게 나왔어요.",
+                menuCategory: "염색",
+                menu: "전체 염색"
+            }
+        ]
+    },
+    {
+        shopId: 29,
+        shopName: "네일갤러리",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/nailGallery.png",
+        detailAddress: "110호",
+        rating: "4.7",
+        description: "다양한 네일 아트를 제공하는 네일갤러리입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-912-3456",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 10,
+                profileImgUri: "https://example.com/employee10.png",
+                name: "박갤러리",
+                reviewNum: 3,
+                description: "8년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박갤러리",
+                rating: "4.8",
+                content: "네일 아트가 예쁘고 깔끔해요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 30,
+        shopName: "왁싱인",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/waxingIn.png",
+        detailAddress: "111호",
+        rating: "4.2",
+        description: "전문적인 왁싱 서비스를 제공하는 왁싱인입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-923-4567",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 11,
+                profileImgUri: "https://example.com/employee11.png",
+                name: "이왁싱인",
+                reviewNum: 2,
+                description: "6년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이왁싱인",
+                rating: "4.4",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 31,
+        shopName: "뷰티브로우",
+        category: "속눈썹/눈썹",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/beautyBrow.png",
+        detailAddress: "112호",
+        rating: "4.6",
+        description: "속눈썹 연장 및 눈썹 틴트를 제공하는 뷰티브로우입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-934-5678",
+        menuCategories: [
+            {
+                categoryName: "속눈썹 연장",
+                menus: [
+                    {
+                        menuId: 14,
+                        imgUri: "/images/eyelash_extension.png",
+                        price: 50000,
+                        name: "속눈썹 연장",
+                        description: "길고 풍성한 속눈썹 연장입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "눈썹 틴트",
+                menus: [
+                    {
+                        menuId: 15,
+                        imgUri: "/images/eyebrow_tint.png",
+                        price: 30000,
+                        name: "눈썹 틴트",
+                        description: "자연스러운 눈썹 틴트입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 12,
+                profileImgUri: "https://example.com/employee12.png",
+                name: "박브로우",
+                reviewNum: 3,
+                description: "7년 경력 / 속눈썹 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박브로우",
+                rating: "4.8",
+                content: "속눈썹 연장이 자연스럽고 예뻐요.",
+                menuCategory: "속눈썹 연장",
+                menu: "속눈썹 연장"
+            }
+        ]
+    },
+    {
+        shopId: 32,
+        shopName: "힐링 마사지",
+        category: "마사지",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/healingMassage.png",
+        detailAddress: "113호",
+        rating: "4.5",
+        description: "전문적인 바디 마사지를 제공하는 힐링 마사지입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-945-6789",
+        menuCategories: [
+            {
+                categoryName: "바디 마사지",
+                menus: [
+                    {
+                        menuId: 38,
+                        imgUri: "/images/body_massage.png",
+                        price: 70000,
+                        name: "전신 마사지",
+                        description: "피로를 풀어주는 전신 마사지입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 13,
+                profileImgUri: "https://example.com/employee13.png",
+                name: "김힐링",
+                reviewNum: 2,
+                description: "10년 경력 / 바디 마사지 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김힐링",
+                rating: "4.8",
+                content: "전신 마사지가 정말 시원하고 좋았습니다.",
+                menuCategory: "바디 마사지",
+                menu: "전신 마사지"
+            }
+        ]
+    },
+    {
+        shopId: 33,
+        shopName: "그리다 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/gridaHair.png",
+        detailAddress: "114호",
+        rating: "4.1",
+        description: "트렌디한 스타일링을 제공하는 그리다 헤어입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 19:00",
+        phoneNumber: "031-956-7890",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 14,
+                profileImgUri: "https://example.com/employee14.png",
+                name: "이그리다",
+                reviewNum: 3,
+                description: "8년 경력 / 헤어컷 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이그리다",
+                rating: "4.2",
+                content: "친절하고 세심하게 컷을 해주셨어요.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 34,
+        shopName: "핑크 네일",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/pinkNail.png",
+        detailAddress: "115호",
+        rating: "4.6",
+        description: "다양한 네일 아트를 제공하는 핑크 네일입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-967-8901",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 15,
+                profileImgUri: "https://example.com/employee15.png",
+                name: "김핑크",
+                reviewNum: 4,
+                description: "6년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김핑크",
+                rating: "4.8",
+                content: "네일 아트가 너무 예쁘게 나왔어요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 35,
+        shopName: "왁싱바",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/waxingBar.png",
+        detailAddress: "116호",
+        rating: "4.3",
+        description: "전문적인 왁싱 서비스를 제공하는 왁싱바입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-978-9012",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 16,
+                profileImgUri: "https://example.com/employee16.png",
+                name: "이왁싱바",
+                reviewNum: 2,
+                description: "6년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이왁싱바",
+                rating: "4.4",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 36,
+        shopName: "제니 메이크업",
+        category: "메이크업",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/jennyMakeup.png",
+        detailAddress: "117호",
+        rating: "4.7",
+        description: "전문적인 메이크업 서비스를 제공하는 제니 메이크업입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-989-0123",
+        menuCategories: [
+            {
+                categoryName: "메이크업",
+                menus: [
+                    {
+                        menuId: 23,
+                        imgUri: "/images/makeup_basic.png",
+                        price: 50000,
+                        name: "기본 메이크업",
+                        description: "자연스러운 기본 메이크업입니다."
+                    },
+                    {
+                        menuId: 24,
+                        imgUri: "/images/makeup_wedding.png",
+                        price: 150000,
+                        name: "웨딩 메이크업",
+                        description: "특별한 날을 위한 웨딩 메이크업입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 17,
+                profileImgUri: "https://example.com/employee17.png",
+                name: "김제니",
+                reviewNum: 3,
+                description: "7년 경력 / 메이크업 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김제니",
+                rating: "4.8",
+                content: "메이크업이 너무 예쁘게 나왔어요.",
+                menuCategory: "메이크업",
+                menu: "웨딩 메이크업"
+            }
+        ]
+    },
+    {
+        shopId: 37,
+        shopName: "속눈썹연장샵",
+        category: "속눈썹/눈썹",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/eyelashExtension.png",
+        detailAddress: "118호",
+        rating: "4.6",
+        description: "속눈썹 연장 및 볼륨 속눈썹 연장을 제공하는 속눈썹연장샵입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-998-1234",
+        menuCategories: [
+            {
+                categoryName: "속눈썹 연장",
+                menus: [
+                    {
+                        menuId: 16,
+                        imgUri: "/images/eyelash_extension.png",
+                        price: 45000,
+                        name: "기본 속눈썹 연장",
+                        description: "자연스러운 기본 속눈썹 연장입니다."
+                    },
+                    {
+                        menuId: 17,
+                        imgUri: "/images/volume_lash.png",
+                        price: 65000,
+                        name: "볼륨 속눈썹 연장",
+                        description: "풍성한 볼륨 속눈썹 연장입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 18,
+                profileImgUri: "https://example.com/employee18.png",
+                name: "김속눈썹",
+                reviewNum: 2,
+                description: "10년 경력 / 속눈썹 연장 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김속눈썹",
+                rating: "4.8",
+                content: "속눈썹 연장이 자연스럽고 예뻐요.",
+                menuCategory: "속눈썹 연장",
+                menu: "속눈썹 연장"
+            }
+        ]
+    },
+    {
+        shopId: 38,
+        shopName: "스파 마사지",
+        category: "마사지",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/spaMassage.png",
+        detailAddress: "119호",
+        rating: "4.9",
+        description: "전문적인 스파 마사지를 제공하는 스파 마사지입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-909-2345",
+        menuCategories: [
+            {
+                categoryName: "바디 마사지",
+                menus: [
+                    {
+                        menuId: 42,
+                        imgUri: "/images/body_massage.png",
+                        price: 80000,
+                        name: "전신 아로마 마사지",
+                        description: "피로를 풀어주는 전신 아로마 마사지입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "스웨디시 마사지",
+                menus: [
+                    {
+                        menuId: 48,
+                        imgUri: "/images/swedish_massage.png",
+                        price: 90000,
+                        name: "스웨디시 마사지",
+                        description: "편안한 스웨디시 마사지입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 19,
+                profileImgUri: "https://example.com/employee19.png",
+                name: "박스파",
+                reviewNum: 2,
+                description: "8년 경력 / 아로마 마사지 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "박스파",
+                rating: "4.8",
+                content: "전신 아로마 마사지가 정말 좋았습니다.",
+                menuCategory: "바디 마사지",
+                menu: "전신 아로마 마사지"
+            }
+        ]
+    },
+    {
+        shopId: 39,
+        shopName: "라라 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/lalaHair.png",
+        detailAddress: "120호",
+        rating: "4.3",
+        description: "트렌디한 스타일링을 제공하는 라라 헤어입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 19:00",
+        phoneNumber: "031-919-3456",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 20,
+                profileImgUri: "https://example.com/employee20.png",
+                name: "김라라",
+                reviewNum: 2,
+                description: "6년 경력 / 헤어컷 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김라라",
+                rating: "4.5",
+                content: "컷이 정말 예쁘게 나왔어요.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 40,
+        shopName: "뷰티 네일",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/beautyNail.png",
+        detailAddress: "121호",
+        rating: "4.7",
+        description: "다양한 네일 아트를 제공하는 뷰티 네일입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-930-4567",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 21,
+                profileImgUri: "https://example.com/employee21.png",
+                name: "김뷰티",
+                reviewNum: 4,
+                description: "6년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김뷰티",
+                rating: "4.8",
+                content: "네일 아트가 너무 예쁘게 나왔어요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 41,
+        shopName: "왁싱앤뷰티",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/waxingAndBeauty.png",
+        detailAddress: "122호",
+        rating: "4.3",
+        description: "전문적인 왁싱 서비스를 제공하는 왁싱앤뷰티입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-945-6789",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 22,
+                profileImgUri: "https://example.com/employee22.png",
+                name: "이뷰티",
+                reviewNum: 2,
+                description: "6년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이뷰티",
+                rating: "4.4",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 42,
+        shopName: "화장대",
+        category: "메이크업",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/makeupTable.png",
+        detailAddress: "123호",
+        rating: "4.7",
+        description: "전문적인 메이크업 서비스를 제공하는 화장대입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-956-7890",
+        menuCategories: [
+            {
+                categoryName: "메이크업",
+                menus: [
+                    {
+                        menuId: 23,
+                        imgUri: "/images/makeup_basic.png",
+                        price: 50000,
+                        name: "기본 메이크업",
+                        description: "자연스러운 기본 메이크업입니다."
+                    },
+                    {
+                        menuId: 24,
+                        imgUri: "/images/makeup_wedding.png",
+                        price: 150000,
+                        name: "웨딩 메이크업",
+                        description: "특별한 날을 위한 웨딩 메이크업입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 23,
+                profileImgUri: "https://example.com/employee23.png",
+                name: "김화장",
+                reviewNum: 3,
+                description: "7년 경력 / 메이크업 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김화장",
+                rating: "4.8",
+                content: "메이크업이 너무 예쁘게 나왔어요.",
+                menuCategory: "메이크업",
+                menu: "웨딩 메이크업"
+            }
+        ]
+    },
+    {
+        shopId: 43,
+        shopName: "래쉬하우스",
+        category: "속눈썹/눈썹",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/lashHouse.png",
+        detailAddress: "124호",
+        rating: "4.8",
+        description: "속눈썹 연장 및 볼륨 속눈썹 연장을 제공하는 래쉬하우스입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-967-8901",
+        menuCategories: [
+            {
+                categoryName: "속눈썹 연장",
+                menus: [
+                    {
+                        menuId: 16,
+                        imgUri: "/images/eyelash_extension.png",
+                        price: 45000,
+                        name: "기본 속눈썹 연장",
+                        description: "자연스러운 기본 속눈썹 연장입니다."
+                    },
+                    {
+                        menuId: 17,
+                        imgUri: "/images/volume_lash.png",
+                        price: 65000,
+                        name: "볼륨 속눈썹 연장",
+                        description: "풍성한 볼륨 속눈썹 연장입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 24,
+                profileImgUri: "https://example.com/employee24.png",
+                name: "김래쉬",
+                reviewNum: 2,
+                description: "10년 경력 / 속눈썹 연장 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김래쉬",
+                rating: "4.9",
+                content: "속눈썹 연장이 자연스럽고 예뻐요.",
+                menuCategory: "속눈썹 연장",
+                menu: "속눈썹 연장"
+            }
+        ]
+    },
+    {
+        shopId: 44,
+        shopName: "더힐링",
+        category: "마사지",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/theHealing.png",
+        detailAddress: "125호",
+        rating: "4.5",
+        description: "전문적인 바디 마사지를 제공하는 더힐링입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-934-5678",
+        menuCategories: [
+            {
+                categoryName: "바디 마사지",
+                menus: [
+                    {
+                        menuId: 38,
+                        imgUri: "/images/body_massage.png",
+                        price: 70000,
+                        name: "전신 마사지",
+                        description: "피로를 풀어주는 전신 마사지입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 25,
+                profileImgUri: "https://example.com/employee25.png",
+                name: "김힐링",
+                reviewNum: 2,
+                description: "10년 경력 / 바디 마사지 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김힐링",
+                rating: "4.8",
+                content: "전신 마사지가 정말 시원하고 좋았습니다.",
+                menuCategory: "바디 마사지",
+                menu: "전신 마사지"
+            }
+        ]
+    },
+    {
+        shopId: 45,
+        shopName: "루비 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/rubyHair.png",
+        detailAddress: "126호",
+        rating: "4.1",
+        description: "트렌디한 스타일링을 제공하는 루비 헤어입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 19:00",
+        phoneNumber: "031-945-6789",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 26,
+                profileImgUri: "https://example.com/employee26.png",
+                name: "이루비",
+                reviewNum: 3,
+                description: "8년 경력 / 헤어컷 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이루비",
+                rating: "4.2",
+                content: "친절하고 세심하게 컷을 해주셨어요.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 46,
+        shopName: "유니 네일",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/uniNail.png",
+        detailAddress: "127호",
+        rating: "4.6",
+        description: "다양한 네일 아트를 제공하는 유니 네일입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-967-8901",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 27,
+                profileImgUri: "https://example.com/employee27.png",
+                name: "김유니",
+                reviewNum: 4,
+                description: "6년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김유니",
+                rating: "4.8",
+                content: "네일 아트가 너무 예쁘게 나왔어요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 47,
+        shopName: "미니 왁싱",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/miniWaxing.png",
+        detailAddress: "128호",
+        rating: "4.3",
+        description: "전문적인 왁싱 서비스를 제공하는 미니 왁싱입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-978-9012",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 28,
+                profileImgUri: "https://example.com/employee28.png",
+                name: "이미니",
+                reviewNum: 2,
+                description: "6년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이미니",
+                rating: "4.4",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
+    },
+    {
+        shopId: 48,
+        shopName: "스타 메이크업",
+        category: "메이크업",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/starMakeup.png",
+        detailAddress: "129호",
+        rating: "4.7",
+        description: "전문적인 메이크업 서비스를 제공하는 스타 메이크업입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-989-0123",
+        menuCategories: [
+            {
+                categoryName: "메이크업",
+                menus: [
+                    {
+                        menuId: 23,
+                        imgUri: "/images/makeup_basic.png",
+                        price: 50000,
+                        name: "기본 메이크업",
+                        description: "자연스러운 기본 메이크업입니다."
+                    },
+                    {
+                        menuId: 24,
+                        imgUri: "/images/makeup_wedding.png",
+                        price: 150000,
+                        name: "웨딩 메이크업",
+                        description: "특별한 날을 위한 웨딩 메이크업입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 29,
+                profileImgUri: "https://example.com/employee29.png",
+                name: "김스타",
+                reviewNum: 3,
+                description: "7년 경력 / 메이크업 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김스타",
+                rating: "4.8",
+                content: "메이크업이 너무 예쁘게 나왔어요.",
+                menuCategory: "메이크업",
+                menu: "웨딩 메이크업"
+            }
+        ]
+    },
+    {
+        shopId: 49,
+        shopName: "뷰티래쉬",
+        category: "속눈썹/눈썹",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/beautyLash.png",
+        detailAddress: "130호",
+        rating: "4.6",
+        description: "속눈썹 연장 및 눈썹 틴트를 제공하는 뷰티래쉬입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-998-1234",
+        menuCategories: [
+            {
+                categoryName: "속눈썹 연장",
+                menus: [
+                    {
+                        menuId: 16,
+                        imgUri: "/images/eyelash_extension.png",
+                        price: 45000,
+                        name: "기본 속눈썹 연장",
+                        description: "자연스러운 기본 속눈썹 연장입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "눈썹 틴트",
+                menus: [
+                    {
+                        menuId: 15,
+                        imgUri: "/images/eyebrow_tint.png",
+                        price: 30000,
+                        name: "눈썹 틴트",
+                        description: "자연스러운 눈썹 틴트입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 30,
+                profileImgUri: "https://example.com/employee30.png",
+                name: "김뷰티",
+                reviewNum: 3,
+                description: "7년 경력 / 속눈썹 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김뷰티",
+                rating: "4.8",
+                content: "속눈썹 연장이 자연스럽고 예뻐요.",
+                menuCategory: "속눈썹 연장",
+                menu: "속눈썹 연장"
+            }
+        ]
+    },
+    {
+        shopId: 50,
+        shopName: "아로마 테라피",
+        category: "마사지",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/aromaTherapy.png",
+        detailAddress: "131호",
+        rating: "4.9",
+        description: "전문적인 아로마 마사지를 제공하는 아로마 테라피입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-일 10:00 - 20:00",
+        phoneNumber: "031-977-1234",
+        menuCategories: [
+            {
+                categoryName: "바디 마사지",
+                menus: [
+                    {
+                        menuId: 38,
+                        imgUri: "/images/body_massage.png",
+                        price: 80000,
+                        name: "전신 아로마 마사지",
+                        description: "피로를 풀어주는 전신 아로마 마사지입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "페이스 마사지",
+                menus: [
+                    {
+                        menuId: 43,
+                        imgUri: "/images/face_massage.png",
+                        price: 60000,
+                        name: "얼굴 아로마 마사지",
+                        description: "피부를 맑고 생기있게 하는 얼굴 아로마 마사지입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 31,
+                profileImgUri: "https://example.com/employee31.png",
+                name: "김아로마",
+                reviewNum: 4,
+                description: "10년 경력 / 아로마 마사지 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김아로마",
+                rating: "5.0",
+                content: "정말 힐링되는 시간이었습니다.",
+                menuCategory: "바디 마사지",
+                menu: "전신 아로마 마사지"
+            }
+        ]
+    },
+    {
+        shopId: 51,
+        shopName: "에스 헤어",
+        category: "헤어",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/sHair.png",
+        detailAddress: "132호",
+        rating: "4.4",
+        description: "트렌디한 스타일링을 제공하는 에스 헤어입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "화-일 09:00 - 19:00",
+        phoneNumber: "031-945-6789",
+        menuCategories: [
+            {
+                categoryName: "컷",
+                menus: [
+                    {
+                        menuId: 1,
+                        imgUri: "/images/haircut.png",
+                        price: 15000,
+                        name: "남성 컷",
+                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                    },
+                    {
+                        menuId: 2,
+                        imgUri: "/images/haircut_women.png",
+                        price: 20000,
+                        name: "여성 컷",
+                        description: "세련된 스타일의 여성 컷입니다."
+                    }
+                ]
+            },
+            {
+                categoryName: "펌",
+                menus: [
+                    {
+                        menuId: 3,
+                        imgUri: "/images/perm.png",
+                        price: 50000,
+                        name: "일반 펌",
+                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 32,
+                profileImgUri: "https://example.com/employee32.png",
+                name: "이루비",
+                reviewNum: 3,
+                description: "8년 경력 / 헤어컷 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이루비",
+                rating: "4.2",
+                content: "친절하고 세심하게 컷을 해주셨어요.",
+                menuCategory: "컷",
+                menu: "여성 컷"
+            }
+        ]
+    },
+    {
+        shopId: 52,
+        shopName: "아트 네일",
+        category: "네일",
+        address: "경기도 수원시 영통구 영통로",
+        img: "/images/artNail.png",
+        detailAddress: "133호",
+        rating: "4.6",
+        description: "다양한 네일 아트를 제공하는 아트 네일입니다.",
+        addressAlias: "영통역 근처",
+        workSchedule: "화-토 10:00 - 20:00",
+        phoneNumber: "031-967-8901",
+        menuCategories: [
+            {
+                categoryName: "네일 아트",
+                menus: [
+                    {
+                        menuId: 10,
+                        imgUri: "/images/nail_art.png",
+                        price: 25000,
+                        name: "기본 네일",
+                        description: "심플하고 깔끔한 기본 네일입니다."
+                    },
+                    {
+                        menuId: 11,
+                        imgUri: "/images/gel_nail.png",
+                        price: 35000,
+                        name: "젤 네일",
+                        description: "오랜 지속력을 자랑하는 젤 네일입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 33,
+                profileImgUri: "https://example.com/employee33.png",
+                name: "김아트",
+                reviewNum: 4,
+                description: "6년 경력 / 네일 아트 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "김아트",
+                rating: "4.8",
+                content: "네일 아트가 너무 예쁘게 나왔어요.",
+                menuCategory: "네일 아트",
+                menu: "젤 네일"
+            }
+        ]
+    },
+    {
+        shopId: 53,
+        shopName: "왁싱클럽",
+        category: "왁싱",
+        address: "경기도 수원시 팔달구 팔달로",
+        img: "/images/waxingClub.png",
+        detailAddress: "134호",
+        rating: "4.3",
+        description: "전문적인 왁싱 서비스를 제공하는 왁싱클럽입니다.",
+        addressAlias: "팔달구청 근처",
+        workSchedule: "월-금 10:00 - 19:00",
+        phoneNumber: "031-978-9012",
+        menuCategories: [
+            {
+                categoryName: "바디 왁싱",
+                menus: [
+                    {
+                        menuId: 7,
+                        imgUri: "/images/body_wax.png",
+                        price: 35000,
+                        name: "브라질리언 왁싱",
+                        description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
+                    }
+                ]
+            }
+        ],
+        employees: [
+            {
+                id: 34,
+                profileImgUri: "https://example.com/employee34.png",
+                name: "이미니",
+                reviewNum: 2,
+                description: "6년 경력 / 바디 왁싱 전문가"
+            }
+        ],
+        reviews: [
+            {
+                name: "이미니",
+                rating: "4.4",
+                content: "왁싱이 깔끔하고 오래 지속됩니다.",
+                menuCategory: "바디 왁싱",
+                menu: "브라질리언 왁싱"
+            }
+        ]
     }
-]
+];

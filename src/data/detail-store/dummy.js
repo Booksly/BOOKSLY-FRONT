@@ -30,7 +30,7 @@ export const shops = [
                         "description": "세련된 스타일의 여성 컷입니다."
                     },
                     {
-                        "menuId": 2, //바꿔주세요 gpt
+                        "menuId": 2_1, //바꿔주세요 gpt
                         "imgUri": "/images/haircut_women.png",
                         "price": 20000,
                         "name": "레이어드 컷",

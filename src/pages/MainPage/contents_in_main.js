@@ -10,11 +10,13 @@ import New_Store from './compopopo/New_Store'
 import LoginAfterMainHeader from '../nav/LoginAfterMainHeader'
 import LoginBeforeMainHeader from '../nav/LoginBeforeMainHeader'
 import { Outlet } from 'react-router'
-
+const token = localStorage.getItem('token');
+console.log(token);
 
 export default function Mainmain() {
   const location = useLocation();
   const isLoginRoute = location.pathname === '/login';
+
 
   return (
     <div className="main_padding">
