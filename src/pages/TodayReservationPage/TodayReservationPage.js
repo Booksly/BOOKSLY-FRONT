@@ -3,42 +3,41 @@ import Modal from "react-modal";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
-import left_double_arrow_button from "../../assets/left_double_arrow_button.png";
-import right_double_arrow_button from "../../assets/right_double_arrow_button.png";
 import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
+import { shops } from "../../../src/data/detail-store/dummy";
 
 //이미지 임폴트
-import Image1 from '../MainPage/compopopo/ZZ_hat.jpeg';
-import Image2 from '../MainPage/compopopo/ZZ_masage.jpeg';
-import Image3 from '../MainPage/compopopo/ZZ_nail.jpeg';
-import Image4 from '../MainPage/compopopo/Z_Image1.jpeg';
-import Image5 from '../MainPage/compopopo/Z_Image2.jpeg';
-import Image6 from '../MainPage/compopopo/ZZ_nail3.jpg';
-import Image7 from '../MainPage/compopopo/Z_Image4.jpeg';
-import Image8 from '../MainPage/compopopo/Z_Image5.jpeg';
-import Image9 from '../MainPage/compopopo/Z_Image6.jpeg';
-import Image10 from '../MainPage/compopopo/ZZ_nail2.jpeg';
+import Image1 from "../MainPage/compopopo/ZZ_hat.jpeg";
+import Image2 from "../MainPage/compopopo/ZZ_masage.jpeg";
+import Image3 from "../MainPage/compopopo/ZZ_nail.jpeg";
+import Image4 from "../MainPage/compopopo/Z_Image1.jpeg";
+import Image5 from "../MainPage/compopopo/Z_Image2.jpeg";
+import Image6 from "../MainPage/compopopo/ZZ_nail3.jpg";
+import Image7 from "../MainPage/compopopo/Z_Image4.jpeg";
+import Image8 from "../MainPage/compopopo/Z_Image5.jpeg";
+import Image9 from "../MainPage/compopopo/Z_Image6.jpeg";
+import Image10 from "../MainPage/compopopo/ZZ_nail2.jpeg";
 
 //이미지 임폴트2
-import Image11 from '../MainPage/compopopo/ZZ_masa1.jpeg';
-import Image12 from '../MainPage/compopopo/ZZ_masage.jpeg';
-import Image13 from '../MainPage/compopopo/ZZ_masa2.jpeg';
-import Image14 from '../MainPage/compopopo/Z_Image1.jpeg';
-import Image15 from '../MainPage/compopopo/ZImage3.jpeg';
-import Image16 from '../MainPage/compopopo/ZZ_nail.jpeg';
-import Image17 from '../MainPage/compopopo/Z_Image4.jpeg';
-import Image18 from '../MainPage/compopopo/ZZ_hat.jpeg';
-import Image19 from '../MainPage/compopopo/Z_Image6.jpeg';
-import Image20 from '../MainPage/compopopo/ZZ_nail2.jpeg';
+import Image11 from "../MainPage/compopopo/ZZ_masa1.jpeg";
+import Image12 from "../MainPage/compopopo/ZZ_masage.jpeg";
+import Image13 from "../MainPage/compopopo/ZZ_masa2.jpeg";
+import Image14 from "../MainPage/compopopo/Z_Image1.jpeg";
+import Image15 from "../MainPage/compopopo/ZImage3.jpeg";
+import Image16 from "../MainPage/compopopo/ZZ_nail.jpeg";
+import Image17 from "../MainPage/compopopo/Z_Image4.jpeg";
+import Image18 from "../MainPage/compopopo/ZZ_hat.jpeg";
+import Image19 from "../MainPage/compopopo/Z_Image6.jpeg";
+import Image20 from "../MainPage/compopopo/ZZ_nail2.jpeg";
 
 //더미데이터 임포트
-import {last_event_dummy} from "../../data/last-event-store/dummy";
+import { last_event_dummy } from "../../data/last-event-store/dummy";
 import { time_event_dummy } from "../../data/time-event-store/dummy";
 
 //가게 목록 하나 컴포넌트 - top100용
-const StoreCard = ({ category, name, location, menu }) => (
+const StoreCard = ({ category, name, address, menu }) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
@@ -47,7 +46,7 @@ const StoreCard = ({ category, name, location, menu }) => (
           <span className="store_name">{name}</span>
         </div>
         <div className="store_info_where">
-          <span className="store_where">{location}</span>
+          <span className="store_where">{address}</span>
         </div>
       </div>
       <div className="menu-names">
@@ -66,7 +65,15 @@ const StoreCard = ({ category, name, location, menu }) => (
 );
 
 //가게 목록 하나 컴포넌트 - 가게조회용
-const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name, possible_reserve_time  }) => (
+const StoreCard2 = ({
+  category,
+  name,
+  address,
+  menu,
+  total_sale_late,
+  sale_name,
+  possible_reserve_time,
+}) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
@@ -75,7 +82,7 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
           <span className="store_name">{name}</span>
         </div>
         <div className="store_info_where">
-          <span className="store_where">{location}</span>
+          <span className="store_where">{address}</span>
         </div>
       </div>
       <div className="menu-names">
@@ -84,7 +91,9 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
     </div>
     <div className="store_can_reserve_contents">
       <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">총 {total_sale_late}% 할인</span>
+        <span className="store_can_reserve_info">
+          총 {total_sale_late}% 할인
+        </span>
         <span className="store_can_reserve_info">{sale_name}</span>
       </div>
       {/* <div className="store_can_reserve_content">
@@ -94,19 +103,16 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
         <span className="store_can_reserve_info">{possible_reserve_time}</span>
       </div>
       <div className="reserve-look-buts">
-      <div className="reserve-but">
-        <span className="btn_name">예약하기</span>
-      </div>
-      <div className="look-store-but">
-        <span className="btn_name">가게조회</span>
+        <div className="reserve-but">
+          <span className="btn_name">예약하기</span>
+        </div>
+        <div className="look-store-but">
+          <span className="btn_name">가게조회</span>
+        </div>
       </div>
     </div>
-    </div>
-    
   </div>
 );
-
-
 
 //가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores }) => (
@@ -116,8 +122,12 @@ const ResearchResults = ({ stores }) => (
         key={index}
         category={store.category}
         name={store.name}
-        location={store.location}
-        menu={store.menu}
+        address={store.address}
+        menu={store.menuCategories
+          .map((menuCategory) =>
+            menuCategory.menus.map((menu) => menu.name).join(", ")
+          )
+          .join(", ")}
       />
     ))}
   </div>
@@ -131,9 +141,13 @@ const ResearchResults2 = ({ stores }) => (
         key={index}
         category={store.category}
         name={store.name}
-        location={store.location}
-        menu={store.menu}
-        total_sale_late={store.total_sale_late} 
+        address={store.address}
+        menu={store.menuCategories
+          .map((menuCategory) =>
+            menuCategory.menus.map((menu) => menu.name).join(", ")
+          )
+          .join(", ")}
+        total_sale_late={store.total_sale_late}
         sale_name={store.sale_name}
         possible_reserve_time={store.possible_reserve_time}
       />
@@ -141,60 +155,57 @@ const ResearchResults2 = ({ stores }) => (
   </div>
 );
 
-
-
-
-  //더미데이터 사용
-  const last_event_stores = last_event_dummy;
-  const time_event_stores = time_event_dummy;
-
+//더미데이터 사용
+const last_event_stores = last_event_dummy;
+const time_event_stores = time_event_dummy;
 
 //탑백 스토어
-const top_100stores = [
-  {
-    category: "헤어",
-    name: "뮤뮤 헤어",
-    location: "수원시 팔달구",
-    menu: "여성커트, 남성커트"
-  },
-  {
-    category: "네일",
-    name: "내일 네일",
-    location: "수원시 영통구",
-    menu: "여성커트, 남성커트, 펌"
-  }
-];
+const top_100stores = shops.slice(0, 19);
+// [
+//   {
+//     category: "헤어",
+//     name: "뮤뮤 헤어",
+//     location: "수원시 팔달구",
+//     menu: "여성커트, 남성커트"
+//   },
+//   {
+//     category: "네일",
+//     name: "내일 네일",
+//     location: "수원시 영통구",
+//     menu: "여성커트, 남성커트, 펌"
+//   }
+// ];
 
-const sample_stores = [
-  {
-    category: "왁싱/제모",
-    name: "준하마",
-    location: "수원시 영통구",
-    menu: "브라질리언 왁싱",
-    total_sale_late: 20,
-    sale_name: "예약 마감 임박 할인",
-    possible_reserve_time: "2024.06.20 15:30"
-  },
-  {
-    category: "네일",
-    name: "손끝마루",
-    location: "수원시 팔달구",
-    menu: "손케어, 네일, 파츠네일",
-    total_sale_late: 30,
-    sale_name: "오픈 기념 할인중",
-    possible_reserve_time: "2024.06.20 15:30"
-  },
-  {
-    category: "네일",
-    name: "네일게이션",
-    location: "수원시 팔달구",
-    menu: " 네일, 파츠네일",
-    total_sale_late: 30,
-    sale_name: "오픈 기념 할인중",
-    possible_reserve_time: "2024.06.20 15:30"
-  }
-];
-
+const sample_stores = shops || [];
+// [
+//   {
+//     category: "왁싱/제모",
+//     name: "준하마",
+//     location: "수원시 영통구",
+//     menu: "브라질리언 왁싱",
+//     total_sale_late: 20,
+//     sale_name: "예약 마감 임박 할인",
+//     possible_reserve_time: "2024.06.20 15:30"
+//   },
+//   {
+//     category: "네일",
+//     name: "손끝마루",
+//     location: "수원시 팔달구",
+//     menu: "손케어, 네일, 파츠네일",
+//     total_sale_late: 30,
+//     sale_name: "오픈 기념 할인중",
+//     possible_reserve_time: "2024.06.20 15:30"
+//   },
+//   {
+//     category: "네일",
+//     name: "네일게이션",
+//     location: "수원시 팔달구",
+//     menu: " 네일, 파츠네일",
+//     total_sale_late: 30,
+//     sale_name: "오픈 기념 할인중",
+//     possible_reserve_time: "2024.06.20 15:30"
+//   }
+// ];
 
 export default function TodayReservationPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -253,8 +264,6 @@ export default function TodayReservationPage() {
   const toggleBtn6Active = () => setBtn6Active(!btn6Active);
   const toggleBtn7Active = () => setBtn7Active(!btn7Active);
 
-
-
   const DateStyles = {
     overlay: {
       backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -285,7 +294,7 @@ export default function TodayReservationPage() {
   };
 
   // 필터링된 스토어 데이터
-  const filteredStores = ({ stores }) => {
+  const filteredStores = (stores = []) => {
     return stores.filter((store) => {
       if (btnAllActive) return true;
       if (btn1Active && store.category === "헤어") return true;
@@ -300,20 +309,60 @@ export default function TodayReservationPage() {
   };
 
   // 필터링된 가게 데이터의 개수
-  const filteredStoresCount = ({ stores }) => {
-    return filteredStores({ stores }).length;
+  const filteredStoresCount = (stores = []) => {
+    return filteredStores(stores).length;
   };
 
   //카테고리 버튼 코드 간략화
   const categoryButtons = [
-    { id: "btnAll", label: "전체", active: btnAllActive, onClick: toggleBtnAllActive },
-    { id: "btn1", label: "헤어", active: btn1Active, onClick: toggleBtn1Active },
-    { id: "btn2", label: "네일", active: btn2Active, onClick: toggleBtn2Active },
-    { id: "btn3", label: "마사지", active: btn3Active, onClick: toggleBtn3Active },
-    { id: "btn4", label: "눈썹/속눈썹", active: btn4Active, onClick: toggleBtn4Active },
-    { id: "btn5", label: "메이크업", active: btn5Active, onClick: toggleBtn5Active },
-    { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
-    { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
+    {
+      id: "btnAll",
+      label: "전체",
+      active: btnAllActive,
+      onClick: toggleBtnAllActive,
+    },
+    {
+      id: "btn1",
+      label: "헤어",
+      active: btn1Active,
+      onClick: toggleBtn1Active,
+    },
+    {
+      id: "btn2",
+      label: "네일",
+      active: btn2Active,
+      onClick: toggleBtn2Active,
+    },
+    {
+      id: "btn3",
+      label: "마사지",
+      active: btn3Active,
+      onClick: toggleBtn3Active,
+    },
+    {
+      id: "btn4",
+      label: "눈썹/속눈썹",
+      active: btn4Active,
+      onClick: toggleBtn4Active,
+    },
+    {
+      id: "btn5",
+      label: "메이크업",
+      active: btn5Active,
+      onClick: toggleBtn5Active,
+    },
+    {
+      id: "btn6",
+      label: "왁싱/제모",
+      active: btn6Active,
+      onClick: toggleBtn6Active,
+    },
+    {
+      id: "btn7",
+      label: "기타",
+      active: btn7Active,
+      onClick: toggleBtn7Active,
+    },
   ];
 
   return (
@@ -386,14 +435,16 @@ export default function TodayReservationPage() {
                     </div>
                     <div className="frame-155">
                       <img
-                        className={`container-83 ${button.active ? "active" : ""}`}
+                        className={`container-83 ${
+                          button.active ? "active" : ""
+                        }`}
                         src={plus_button}
                         alt={""}
                       />
                     </div>
                   </div>
                 ))}
-              </div>            
+              </div>
             </div>
 
             <Modal
@@ -481,18 +532,30 @@ export default function TodayReservationPage() {
 
             {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
             {/* 필터링에 대한 가게 조회 */}
-            {btnAllActive || btn1Active || btn2Active || btn3Active || btn4Active || btn5Active || btn6Active || btn7Active ? (
+            {btnAllActive ||
+            btn1Active ||
+            btn2Active ||
+            btn3Active ||
+            btn4Active ||
+            btn5Active ||
+            btn6Active ||
+            btn7Active ? (
               <div className="top-100-list-all2">
                 <div className="top-100-list">
                   <div className="top-test">
-                    <span className="top-100">총 {filteredStoresCount({ stores: sample_stores })} 개</span>
+                    <span className="top-100">
+                      총 {filteredStoresCount({ stores: sample_stores })} 개
+                    </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores({ stores: sample_stores })} />
+                    <ResearchResults2
+                      stores={filteredStores({ stores: sample_stores })}
+                    />
                   </div>
                 </div>
               </div>
-              ) : ( /* 탑 백 조회 */
+            ) : (
+              /* 탑 백 조회 */
               <div className="top-100-list-all">
                 <div className="top-100-list">
                   <div className="top-test">
@@ -506,8 +569,8 @@ export default function TodayReservationPage() {
             )}
 
             {/* 예약 마감 임박 할인 */}
-            <div className='today_reserve_padding'>
-              <div className='today_reserve_wrap'>
+            <div className="today_reserve_padding">
+              <div className="today_reserve_wrap">
                 <div className="recommand-title">예약 마감 임박 할인</div>
                 {/* props로 전달 */}
                 <SimpleSlider_Today stores={last_event_stores} />
@@ -515,8 +578,8 @@ export default function TodayReservationPage() {
             </div>
 
             {/* 타임 세일 */}
-            <div className='today_reserve_padding'>
-              <div className='today_reserve_wrap'>
+            <div className="today_reserve_padding">
+              <div className="today_reserve_wrap">
                 <div className="recommand-title">타임 세일</div>
                 {/* props로 전달 */}
                 <SimpleSlider_Today stores={time_event_stores} />
