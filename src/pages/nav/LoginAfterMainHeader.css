@@ -1,11 +1,11 @@
-.back {
+.LAMH-back {
   position: absolute;
   top: 0px;
   bottom: 0px;
   right: 0px;
   left: 0px;
   height: fit-content;
-  background: #ffffff;
+  background: #fdf8f3;
   flex-shrink: 0;
 }
 .LoginAfterMainHeader {
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
 }
-.LoginAfterMainHeader .header-inner {
+.LoginAfterMainHeader .LAMH-header-inner {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #ffffff;
   margin-bottom: 35px;
@@ -22,7 +22,7 @@
   width: 1440px;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .header-inner-left {
+.LoginAfterMainHeader .LAMH-header-inner-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,66 +30,67 @@
   height: fit-content;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .frame-MainHomeButton {
+.LoginAfterMainHeader .LAMH-frame-MainHomeButton {
   border: none;
   background: none;
   cursor: pointer;
+  border: 0;
 }
-.LoginAfterMainHeader .logo-goto-home {
+.LoginAfterMainHeader .LAMH-logo-goto-home {
   margin-top: 5px;
   display: flex;
   width: 100px;
   height: 50px;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .booksly-logo {
+.LoginAfterMainHeader .LAMH-booksly-logo {
   border-radius: 23px;
   background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
   width: 100px;
   height: 50px;
 }
-.LoginAfterMainHeader .header-buttons {
+.LoginAfterMainHeader .LAMH-header-buttons {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .frame-StoreSearchButton {
+.LoginAfterMainHeader .LAMH-frame-StoreSearchButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.LoginAfterMainHeader .frame-TodayReservButton {
+.LoginAfterMainHeader .LAMH-frame-TodayReservButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.LoginAfterMainHeader .frame-MyHomeAllReservButton {
+.LoginAfterMainHeader .LAMH-frame-MyHomeAllReservButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.LoginAfterMainHeader .frame-MyHomeMainButton {
+.LoginAfterMainHeader .LAMH-frame-MyHomeMainButton {
   border: none;
   background: none;
   cursor: pointer;
 }
-.LoginAfterMainHeader .currentNav {
+.LoginAfterMainHeader .LAMH-currentNav {
   background: #ffffff;
   display: flex;
   padding: 21px 35px 10px 35px;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .currentPageBar {
+.LoginAfterMainHeader .LAMH-currentPageBar {
   border-bottom: 4px solid #ff5925;
   display: flex;
 }
-.LoginAfterMainHeader .nav-box {
+.LoginAfterMainHeader .LAMH-nav-box {
   background: #ffffff;
   display: flex;
   padding: 21px 35px 21px 35px;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .PageName {
+.LoginAfterMainHeader .LAMH-PageName {
   overflow-wrap: break-word;
   font-family: "Inter";
   font-weight: 700;
@@ -98,7 +99,7 @@
   color: #000000;
   white-space: nowrap;
 }
-.LoginAfterMainHeader .search-border {
+.LoginAfterMainHeader .LAMH-search-border {
   border-radius: 30px;
   border: 2px solid #ff5925;
   margin-top: 8px;
@@ -111,20 +112,20 @@
   height: fit-content;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .icon-search {
+.LoginAfterMainHeader .LAMH-icon-search {
   display: flex;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .vector {
+.LoginAfterMainHeader .LAMH-vector {
   width: 30px;
   height: 30px;
 }
-.LoginAfterMainHeader .input-search {
+.LoginAfterMainHeader .LAMH-input-search {
   margin-left: 70px;
   text-align: center;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .search {
+.LoginAfterMainHeader .LAMH-search {
   overflow-wrap: break-word;
   font-weight: 500;
   font-size: 15px;
@@ -132,7 +133,7 @@
   line-height: 30px;
   color: #777777;
 }
-.LoginAfterMainHeader .header-inner-right {
+.LoginAfterMainHeader .LAMH-header-inner-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -141,53 +142,55 @@
   margin-top: 18px;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .headerRightDiv {
+.LoginAfterMainHeader .LAMH-headerRightDiv {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  border: 0;
 }
-.LoginAfterMainHeader .icon {
+.LoginAfterMainHeader .LAMH-icon {
   margin: 1px 10px 1px 0;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .home {
+.LoginAfterMainHeader .LAMH-home {
   width: 20px;
   height: 20px;
 }
-.LoginAfterMainHeader .go-mypage {
+.LoginAfterMainHeader .LAMH-go-mypage {
   display: flex;
   box-sizing: border-box;
+  border: 0;
 }
-.LoginAfterMainHeader .my-page {
+.LoginAfterMainHeader .LAMH-my-page {
   overflow-wrap: break-word;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
-.LoginAfterMainHeader .alarmIcon {
+.LoginAfterMainHeader .LAMH-alarmIcon {
   background: url("../../assets/alarm_button.png") 50% / cover no-repeat;
   width: 22px;
   height: 22px;
 }
-.LoginAfterMainHeader .user-id {
+.LoginAfterMainHeader .LAMH-user-id {
   display: flex;
   box-sizing: border-box;
 }
-.LoginAfterMainHeader .userId {
+.LoginAfterMainHeader .LAMH-userId {
   overflow-wrap: break-word;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #000000;
 }
-.LoginAfterMainHeader .log-out-but {
+.LoginAfterMainHeader .LAMH-log-out-but {
   display: flex;
   box-sizing: border-box;
   border: 0;
   background: #FFFFFF;
 }
-.LoginAfterMainHeader .logout {
+.LoginAfterMainHeader .LAMH-logout {
   overflow-wrap: break-word;
   font-weight: 700;
   font-size: 18px;
