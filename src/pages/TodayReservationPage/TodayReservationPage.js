@@ -8,37 +8,19 @@ import right_double_arrow_button from "../../assets/right_double_arrow_button.pn
 import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
+import { useNavigate } from "react-router";
 
-//이미지 임폴트
-import Image1 from '../MainPage/compopopo/ZZ_hat.jpeg';
-import Image2 from '../MainPage/compopopo/ZZ_masage.jpeg';
-import Image3 from '../MainPage/compopopo/ZZ_nail.jpeg';
-import Image4 from '../MainPage/compopopo/Z_Image1.jpeg';
-import Image5 from '../MainPage/compopopo/Z_Image2.jpeg';
-import Image6 from '../MainPage/compopopo/ZZ_nail3.jpg';
-import Image7 from '../MainPage/compopopo/Z_Image4.jpeg';
-import Image8 from '../MainPage/compopopo/Z_Image5.jpeg';
-import Image9 from '../MainPage/compopopo/Z_Image6.jpeg';
-import Image10 from '../MainPage/compopopo/ZZ_nail2.jpeg';
-
-//이미지 임폴트2
-import Image11 from '../MainPage/compopopo/ZZ_masa1.jpeg';
-import Image12 from '../MainPage/compopopo/ZZ_masage.jpeg';
-import Image13 from '../MainPage/compopopo/ZZ_masa2.jpeg';
-import Image14 from '../MainPage/compopopo/Z_Image1.jpeg';
-import Image15 from '../MainPage/compopopo/ZImage3.jpeg';
-import Image16 from '../MainPage/compopopo/ZZ_nail.jpeg';
-import Image17 from '../MainPage/compopopo/Z_Image4.jpeg';
-import Image18 from '../MainPage/compopopo/ZZ_hat.jpeg';
-import Image19 from '../MainPage/compopopo/Z_Image6.jpeg';
-import Image20 from '../MainPage/compopopo/ZZ_nail2.jpeg';
 
 //더미데이터 임포트
+//top100 데이터
+import {top_100_dummy} from "../../data/top-100/dummy";
+
+//이벤트 데이터
 import {last_event_dummy} from "../../data/last-event-store/dummy";
 import { time_event_dummy } from "../../data/time-event-store/dummy";
 
 //가게 목록 하나 컴포넌트 - top100용
-const StoreCard = ({ category, name, location, menu }) => (
+const StoreCard = ({ category, name, location, menu, id, onClickReserve }) => (
   <div className="research-result">
     <div className="store_info_padding">
       <div className="store_infos_all">
@@ -55,7 +37,7 @@ const StoreCard = ({ category, name, location, menu }) => (
       </div>
     </div>
     <div className="reserve-look-buts">
-      <div className="reserve-but">
+      <div className="reserve-but" onClick={() => onClickReserve(id)}>
         <span className="btn_name">예약하기</span>
       </div>
       <div className="look-store-but">
@@ -109,7 +91,7 @@ const StoreCard2 = ({ category, name, location, menu, total_sale_late, sale_name
 
 
 //가게 목록 여러개 컴포넌트 - 탑 백용
-const ResearchResults = ({ stores }) => (
+const ResearchResults = ({ stores, onClickReserve }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard
@@ -118,6 +100,8 @@ const ResearchResults = ({ stores }) => (
         name={store.name}
         location={store.location}
         menu={store.menu}
+        id={store.shopId}
+        onClickReserve={onClickReserve}
       />
     ))}
   </div>
@@ -150,20 +134,7 @@ const ResearchResults2 = ({ stores }) => (
 
 
 //탑백 스토어
-const top_100stores = [
-  {
-    category: "헤어",
-    name: "뮤뮤 헤어",
-    location: "수원시 팔달구",
-    menu: "여성커트, 남성커트"
-  },
-  {
-    category: "네일",
-    name: "내일 네일",
-    location: "수원시 영통구",
-    menu: "여성커트, 남성커트, 펌"
-  }
-];
+const top_100_stores = top_100_dummy;
 
 const sample_stores = [
   {
@@ -197,6 +168,7 @@ const sample_stores = [
 
 
 export default function TodayReservationPage() {
+  const navigate = useNavigate();
   const [selectedRegions, setSelectedRegions] = useState([]);
   const [selectedTimes, setSelectedTimes] = useState([
     { start: "", end: "", startMin: "", endMin: "" },
@@ -245,6 +217,7 @@ export default function TodayReservationPage() {
     setBtn6Active(!btnAllActive);
     setBtn7Active(!btnAllActive);
   };
+
   const toggleBtn1Active = () => setBtn1Active(!btn1Active);
   const toggleBtn2Active = () => setBtn2Active(!btn2Active);
   const toggleBtn3Active = () => setBtn3Active(!btn3Active);
@@ -315,6 +288,11 @@ export default function TodayReservationPage() {
     { id: "btn6", label: "왁싱/제모", active: btn6Active, onClick: toggleBtn6Active },
     { id: "btn7", label: "기타", active: btn7Active, onClick: toggleBtn7Active },
   ];
+
+  const goToReserve = (shopId) => {
+    console.log(shopId);
+    navigate(`/Reservation?shopId=${shopId}`);
+  };
 
   return (
     <div className="TodayReservationPage">
@@ -499,7 +477,7 @@ export default function TodayReservationPage() {
                     <span className="top-100">TOP 100</span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults stores={top_100stores} />
+                    <ResearchResults stores={top_100_stores} onClickReserve={goToReserve}/>
                   </div>
                 </div>
               </div>
