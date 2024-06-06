@@ -755,7 +755,7 @@ export const shops = [
         "id": 9,
         "name": "글래드뷰티",
         "category": "메이크업",
-        "address": "서울특별시 강남구 논현로",
+        "address": "수원시 영통구 광교산로 154-42",
         "img": "/images/makeup_2.png",
         "detailAddress": "401호",
         "rating": "4.5",
