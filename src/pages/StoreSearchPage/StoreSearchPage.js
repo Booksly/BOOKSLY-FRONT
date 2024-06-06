@@ -91,12 +91,6 @@ const StoreCard2 = ({
         </div>
       </div>
       <div className="store_can_reserve_contents">
-        {/*<div className="store_can_reserve_content">*/}
-        {/*  <span className="store_can_reserve_info">*/}
-        {/*    총 {total_sale_late}% 할인*/}
-        {/*  </span>*/}
-        {/*  <span className="store_can_reserve_info">{sale_name}</span>*/}
-        {/*</div>*/}
         <div className="store_can_reserve_content">
           <span className="store_can_reserve_info">
             {possible_reserve_time}
@@ -134,25 +128,26 @@ const ResearchResults = ({ stores }) => (
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores }) => (
   <div className="research-results">
-    {stores.map((store, index) => (
-      <StoreCard2
-        key={index}
-        category={store.category}
-        name={store.name}
-        address={store.address}
-        menu={store.menuCategories
-          .map((menuCategory) =>
-            menuCategory.menus.map((menu) => menu.name).join(", ")
-          )
-          .join(", ")}
-        total_sale_late={store.total_sale_late}
-        sale_name={store.sale_name}
-        possible_reserve_time={store.possible_reserve_time}
-        id={store.shopId}
-      />
-    ))}
+    {stores && stores.length > 0 ? (
+      stores.map((store, index) => (
+        <StoreCard2
+          key={index}
+          category={store.category}
+          name={store.name}
+          address={store.address}
+          menu={store.menu}
+          total_sale_late={store.total_sale_late}
+          sale_name={store.sale_name}
+          possible_reserve_time={store.possible_reserve_time}
+          id={store.shopId}
+        />
+      ))
+    ) : (
+      <div>No stores found.</div>
+    )}
   </div>
 );
+
 // 탑 백 스토어
 const top_100_stores = top_100_dummy;
 

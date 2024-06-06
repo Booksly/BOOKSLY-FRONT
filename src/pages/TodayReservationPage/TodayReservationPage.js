@@ -3,7 +3,6 @@ import Modal from "react-modal";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
 import plus_button from "../../assets/plus_button.png";
-// import closingEvent_img from "../../assets/25_sale.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 import { useNavigate } from "react-router-dom";
@@ -135,7 +134,7 @@ const ResearchResults = ({ stores }) => (
 );
 
 //가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores }) => (
+const ResearchResults2 = ({ stores = [] }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard2
@@ -143,11 +142,7 @@ const ResearchResults2 = ({ stores }) => (
         category={store.category}
         name={store.name}
         address={store.address}
-        menu={store.menuCategories
-          .map((menuCategory) =>
-            menuCategory.menus.map((menu) => menu.name).join(", ")
-          )
-          .join(", ")}
+        menu={store.menu}
         total_sale_late={store.total_sale_late}
         sale_name={store.sale_name}
         possible_reserve_time={store.possible_reserve_time}
@@ -427,7 +422,6 @@ export default function TodayReservationPage() {
                 ))}
               </div>
             </div>
-
             <Modal
               isOpen={isTimeModalOpen}
               onRequestClose={closeTimeModal}
@@ -510,9 +504,8 @@ export default function TodayReservationPage() {
                 시간 추가
               </button>
             </Modal>
-
-            {/* 탑 백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
-            {/* 필터링에 대한 가게 조회 */}
+            {/* 탑백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회
+            필터링에 대한 가게 조회 */}
             {btnAllActive ||
             btn1Active ||
             btn2Active ||
@@ -549,7 +542,6 @@ export default function TodayReservationPage() {
                 </div>
               </div>
             )}
-
             {/* 예약 마감 임박 할인 */}
             <div className="today_reserve_padding">
               <div className="today_reserve_wrap">
@@ -558,7 +550,6 @@ export default function TodayReservationPage() {
                 <SimpleSlider_Today stores={last_event_stores} />
               </div>
             </div>
-
             {/* 타임 세일 */}
             <div className="today_reserve_padding">
               <div className="today_reserve_wrap">
