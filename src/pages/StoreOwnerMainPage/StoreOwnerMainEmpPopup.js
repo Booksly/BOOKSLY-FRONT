@@ -642,7 +642,8 @@ export default function StoreOwnerMainEmpPopup() {
             <div className="SOMEPframe-602">
                 <div className="SOMEPframe-595">
                     <div className="SOMEPframe-594">
-                        <div className="SOMEPrectangle-108">
+                        <div className="SOMEPrectangle-108"
+                             style={{ backgroundImage: `url("/assets_shop/designer_M_4.png")` }}>
                         </div>
                         <div className="SOMEP-MdDl">
                             <button className="SOMEP-modify">
@@ -659,6 +660,54 @@ export default function StoreOwnerMainEmpPopup() {
                         </div>
                         <div className="SOMEP-EIB-Info">
                             수원 재방률 1위 / 남성펌 전문 디자이너 / 강남 대형 체인 헤어살롱 출신!
+                            1:1로 꼼꼼하게 봐드립니다
+                        </div>
+                    </div>
+                </div>
+                <div className="SOMEPframe-595">
+                    <div className="SOMEPframe-594">
+                        <div className="SOMEPrectangle-108"
+                             style={{ backgroundImage: `url("/assets_shop/designer_W_4.png")` }}>
+                        </div>
+                        <div className="SOMEP-MdDl">
+                            <button className="SOMEP-modify">
+                                수정하기
+                            </button>
+                            <button className="SOMEP-delete">
+                                삭제
+                            </button>
+                        </div>
+                    </div>
+                    <div className="SOMEP-empInfoBox">
+                        <div className="SOMEP-EIB-name">
+                            심화 디자이너
+                        </div>
+                        <div className="SOMEP-EIB-Info">
+                            수원 재방률 1위 / 여성펌 전문 디자이너 / 강남 대형 체인 헤어살롱 출신!
+                            1:1로 꼼꼼하게 봐드립니다
+                        </div>
+                    </div>
+                </div>
+                <div className="SOMEPframe-595">
+                    <div className="SOMEPframe-594">
+                        <div className="SOMEPrectangle-108"
+                             style={{ backgroundImage: `url("/assets_shop/designer_W_6.png")` }}>
+                        </div>
+                        <div className="SOMEP-MdDl">
+                            <button className="SOMEP-modify">
+                                수정하기
+                            </button>
+                            <button className="SOMEP-delete">
+                                삭제
+                            </button>
+                        </div>
+                    </div>
+                    <div className="SOMEP-empInfoBox">
+                        <div className="SOMEP-EIB-name">
+                            캡 디자이너
+                        </div>
+                        <div className="SOMEP-EIB-Info">
+                            수원 재방률 1위 / 여성펌 전문 디자이너 / 강남 대형 체인 헤어살롱 출신!
                             1:1로 꼼꼼하게 봐드립니다
                         </div>
                     </div>

@@ -20,7 +20,7 @@ const MenuCategoryBox = ({ categoryName, menuList }) => {
                 {menuList.map((menu, index) => (
                     <div key={index} className="SOMMC-menuListBox">
                         <div className="SOMMC-MLB-PI">
-                            <div className="SOMMC-categoryMenuPic"></div>
+                            <img className="SOMMC-categoryMenuPic" style={{ backgroundImage: `url(${menu.image})` }}/>
                             <div className="SOMMC-MLB-Info">
                                 <div className="SOMMC-MLBI-name">{menu.name}</div>
                                 <div className="SOMMC-MLBI-price">{menu.price}</div>
@@ -48,20 +48,20 @@ export default function StoreOwnerMainMenuCateg() {
     const [categName, setCategName] = useState('');
     const [menuLists, setMenuLists] = useState({
         cut: [
-            { name: '여성 컷', price: '30,000원', info: '얼굴형에 맞는 헤어스타일을 추천' },
-            { name: '남성 컷', price: '30,000원', info: '얼굴형에 맞는 헤어스타일을 추천' },
-            { name: '학생 컷', price: '30,000원', info: '얼굴형에 맞는 헤어스타일을 추천' }
+            { name: '여성 커트', price: '30,000원', info: '얼굴형에 맞는 헤어스타일을 추천', image: '/assets_shop/cut_W_3.png' },
+            { name: '남성 커트', price: '20,000원', info: '얼굴형에 맞는 헤어스타일을 추천', image: '/assets_shop/cut_M_2.png' },
+            { name: '학생 커트', price: '15,000원', info: '얼굴형에 맞는 헤어스타일을 추천', image: '/assets_shop/cut_W_2.png' }
         ],
         "nomal-perm": [
-            { name: '일반 펌', price: '50,000원', info: '자연스러운 펌 스타일' },
-            { name: '볼륨 펌', price: '55,000원', info: '풍성한 볼륨을 살리는 펌' }
+            { name: '일반 펌', price: '50,000원', info: '자연스러운 펌 스타일', image: '/assets_shop/perm_W_1.png' },
+            { name: '볼륨 펌', price: '55,000원', info: '풍성한 볼륨을 살리는 펌', image: '/assets_shop/perm_M_1.png' }
         ],
         dyeing: [
-            { name: '염색', price: '70,000원', info: '자연스러운 컬러' },
-            { name: '탈색', price: '80,000원', info: '밝은 컬러로 탈색' }
+            { name: '염색', price: '70,000원', info: '자연스러운 컬러', image: '/assets_shop/dye_W_3.png' },
+            { name: '탈색', price: '80,000원', info: '밝은 컬러로 탈색', image: '/assets_shop/dye_W_2.png' }
         ],
         "design-perm": [
-            { name: '디자인 펌', price: '100,000원', info: '맞춤형 디자인 펌' }
+            { name: '디자인 펌', price: '100,000원', info: '맞춤형 디자인 펌', image: '/assets_shop/perm_W_3.png' }
         ],
         etc: []
     });
@@ -167,14 +167,14 @@ export default function StoreOwnerMainMenuCateg() {
                                     </div>
                                 </div>
                                 <div className="SOMMCline-30"></div>
-                                    <div className="CategBoxList">
-                                        {options.map(option => (
-                                            <MenuCategoryBox key={option.value} categoryName={option.label}
-                                                             menuList={menuLists[option.value]}/>
-                                            ))}
-                                    </div>
+                                <div className="CategBoxList">
+                                    {options.map(option => (
+                                        <MenuCategoryBox key={option.value} categoryName={option.label}
+                                                         menuList={menuLists[option.value]}/>
+                                    ))}
                                 </div>
                             </div>
+                        </div>
                     </Tab>
                     <Tab eventKey="Categ" title="카테고리 관리">
                         <div className="StoreOwnerMainCategPopup">
@@ -199,13 +199,46 @@ export default function StoreOwnerMainMenuCateg() {
                                             <button className="SOMMC-CL-delete">삭제</button>
                                         </div>
                                     </div>
+                                    <div className="SOMMCCategList">
+                                        <div className="SOMMC-CL-location-button"></div>
+                                        <div className="SOMMC-CL-Name">일반 펌</div>
+                                        <div className="SOMMC-CL-button">
+                                            <button className="SOMMC-CL-modify">수정하기</button>
+                                            <button className="SOMMC-CL-delete">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div className="SOMMCCategList">
+                                        <div className="SOMMC-CL-location-button"></div>
+                                        <div className="SOMMC-CL-Name">염색</div>
+                                        <div className="SOMMC-CL-button">
+                                            <button className="SOMMC-CL-modify">수정하기</button>
+                                            <button className="SOMMC-CL-delete">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div className="SOMMCCategList">
+                                        <div className="SOMMC-CL-location-button"></div>
+                                        <div className="SOMMC-CL-Name">디자인 펌</div>
+                                        <div className="SOMMC-CL-button">
+                                            <button className="SOMMC-CL-modify">수정하기</button>
+                                            <button className="SOMMC-CL-delete">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div className="SOMMCCategList">
+                                        <div className="SOMMC-CL-location-button"></div>
+                                        <div className="SOMMC-CL-Name">기타</div>
+                                        <div className="SOMMC-CL-button">
+                                            <button className="SOMMC-CL-modify">수정하기</button>
+                                            <button className="SOMMC-CL-delete">삭제</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="SOMMCline-30"></div>
-                                    <div className="CategBoxList">
+                                <div className="CategBoxList">
                                     {options.map(option => (
-                                        <MenuCategoryBox key={option.value} categoryName={option.label} menuList={menuLists[option.value]} />
+                                        <MenuCategoryBox key={option.value} categoryName={option.label}
+                                                         menuList={menuLists[option.value]}/>
                                     ))}
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </Tab>

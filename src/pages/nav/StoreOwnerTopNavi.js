@@ -26,7 +26,7 @@ export default function StoreOwnerTopNavi() {
               </button>
               <div className="StoreOwnerTopNavialarm">
                 <div className="StoreOwnerTopNavialarm-button"></div>
-                <div className="StoreOwnerTopNavialarmId">아이디</div>
+                <div className="StoreOwnerTopNavialarmId">jjhair</div>
               </div>
               <button className="StoreOwnerTopNavilogoutButton" onClick={goToMain}>로그아웃</button>
             </div>
@@ -38,7 +38,7 @@ export default function StoreOwnerTopNavi() {
               </div>
               <div className="StoreOwnerTopNavimember-info">
                 <div className="StoreOwnerTopNaviStore-top-navi-id">
-                  <span className="StoreOwnerTopNaviprofileId">아이디</span>
+                  <span className="StoreOwnerTopNaviprofileId">jjhair</span>
                   <button className="StoreOwnerTopNaviprofileInfoChangeBt"
                           onClick={goToSetting}>정보 수정</button>
                 </div>

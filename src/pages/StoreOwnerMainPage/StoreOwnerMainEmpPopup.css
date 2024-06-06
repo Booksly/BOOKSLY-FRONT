@@ -274,6 +274,8 @@
     margin-bottom: 2px;
     width: 112px;
     height: 131px;
+    background-size: cover;
+    background-position: center;
 }
 .StoreOwnerMainEmpPopup .SOMEP-MdDl {
     flex-direction: row;
