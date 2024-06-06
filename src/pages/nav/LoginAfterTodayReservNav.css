@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  margin-bottom: 35px;
 }
 .LoginAfterTodayReservNav .frame-MainHomeButton {
   border: none;
@@ -39,9 +43,6 @@
   cursor: pointer;
 }
 .LoginAfterTodayReservNav .header-inner {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #ffffff;
-  margin-bottom: 35px;
   display: flex;
   padding: 0 40px 0 40px;
   width: 1440px;
