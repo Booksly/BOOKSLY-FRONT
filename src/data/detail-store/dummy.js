@@ -1614,18 +1614,18 @@ export const shops = [
         ]
     },
     {
-        "shopId": "20",
-        "shopName": "뮤뮤 헤어",
+        "id": 20,
+        "name": "뮤뮤 헤어",
         "category": "헤어",
         "address": "경기도 수원시 팔달구 팔달로",
         "img": "/images/mumuHair.png",
         "detailAddress": "101호",
-        'rating': "4.5",
-        'description': "고객 맞춤 프리미엄 헤어 서비스를 제공하는 뮤뮤 헤어입니다.",
-        'addressAlias': "수원역 근처",
-        'workSchedule': "월-토 09:00 - 20:00",
-        'phoneNumber': "031-123-4567",
-        'menuCategories': [
+        "rating": "4.5",
+        "description": "고객 맞춤 프리미엄 헤어 서비스를 제공하는 뮤뮤 헤어입니다.",
+        "addressAlias": "수원역 근처",
+        "workSchedule": "월-토 09:00 - 20:00",
+        "phoneNumber": "031-123-4567",
+        "menuCategories": [
             {
                 'categoryName': "컷",
                 'menus': [
@@ -1678,8 +1678,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 21,
-        shopName: "내일 네일",
+        id: 21,
+        name: "내일 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/naeilNail.png",
@@ -1730,8 +1730,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 22,
-        shopName: "네일하우스",
+        id: 22,
+        name: "네일하우스",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/nailHouse.png",
@@ -1782,8 +1782,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 23,
-        shopName: "제이왁싱",
+        id: 23,
+        name: "제이왁싱",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/jWaxing.png",
@@ -1846,8 +1846,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 24,
-        shopName: "헤어봄",
+        id: 24,
+        name: "헤어봄",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/springHair.png",
@@ -1910,8 +1910,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 25,
-        shopName: "네일모아",
+        id: 25,
+        name: "네일모아",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/nailMoa.png",
@@ -1962,8 +1962,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 26,
-        shopName: "왁싱플레이스",
+        id: 26,
+        name: "왁싱플레이스",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingPlace.png",
@@ -2007,8 +2007,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 27,
-        shopName: "속눈썹샵",
+        id: 27,
+        name: "속눈썹샵",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/eyelashShop.png",
@@ -2064,8 +2064,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 28,
-        shopName: "스타일 헤어",
+        id: 28,
+        name: "스타일 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/styleHair.png",
@@ -2128,8 +2128,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 29,
-        shopName: "네일갤러리",
+        id: 29,
+        name: "네일갤러리",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/nailGallery.png",
@@ -2180,8 +2180,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 30,
-        shopName: "왁싱인",
+        id: 30,
+        name: "왁싱인",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingIn.png",
@@ -2225,8 +2225,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 31,
-        shopName: "뷰티브로우",
+        id: 31,
+        name: "뷰티브로우",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/beautyBrow.png",
@@ -2282,8 +2282,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 32,
-        shopName: "힐링 마사지",
+        id: 32,
+        name: "힐링 마사지",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/healingMassage.png",
@@ -2327,8 +2327,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 33,
-        shopName: "그리다 헤어",
+        id: 33,
+        name: "그리다 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/gridaHair.png",
@@ -2391,8 +2391,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 34,
-        shopName: "핑크 네일",
+        id: 34,
+        name: "핑크 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/pinkNail.png",
@@ -2443,8 +2443,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 35,
-        shopName: "왁싱바",
+        id: 35,
+        name: "왁싱바",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingBar.png",
@@ -2488,8 +2488,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 36,
-        shopName: "제니 메이크업",
+        id: 36,
+        name: "제니 메이크업",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/jennyMakeup.png",
@@ -2540,8 +2540,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 37,
-        shopName: "속눈썹연장샵",
+        id: 37,
+        name: "속눈썹연장샵",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/eyelashExtension.png",
@@ -2592,8 +2592,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 38,
-        shopName: "스파 마사지",
+        id: 38,
+        name: "스파 마사지",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/spaMassage.png",
@@ -2649,8 +2649,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 39,
-        shopName: "라라 헤어",
+        id: 39,
+        name: "라라 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/lalaHair.png",
@@ -2713,8 +2713,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 40,
-        shopName: "뷰티 네일",
+        id: 40,
+        name: "뷰티 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/beautyNail.png",
@@ -2765,8 +2765,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 41,
-        shopName: "왁싱앤뷰티",
+        id: 41,
+        name: "왁싱앤뷰티",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingAndBeauty.png",
@@ -2810,8 +2810,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 42,
-        shopName: "화장대",
+        id: 42,
+        name: "화장대",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/makeupTable.png",
@@ -2862,8 +2862,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 43,
-        shopName: "래쉬하우스",
+        id: 43,
+        name: "래쉬하우스",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/lashHouse.png",
@@ -2914,8 +2914,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 44,
-        shopName: "더힐링",
+        id: 44,
+        name: "더힐링",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/theHealing.png",
@@ -2959,8 +2959,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 45,
-        shopName: "루비 헤어",
+        id: 45,
+        name: "루비 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/rubyHair.png",
@@ -3023,8 +3023,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 46,
-        shopName: "유니 네일",
+        id: 46,
+        name: "유니 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/uniNail.png",
@@ -3075,8 +3075,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 47,
-        shopName: "미니 왁싱",
+        id: 47,
+        name: "미니 왁싱",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/miniWaxing.png",
@@ -3120,8 +3120,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 48,
-        shopName: "스타 메이크업",
+        id: 48,
+        name: "스타 메이크업",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/starMakeup.png",
@@ -3172,8 +3172,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 49,
-        shopName: "뷰티래쉬",
+        id: 49,
+        name: "뷰티래쉬",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/beautyLash.png",
@@ -3229,8 +3229,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 50,
-        shopName: "아로마 테라피",
+        id: 50,
+        name: "아로마 테라피",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/aromaTherapy.png",
@@ -3286,8 +3286,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 51,
-        shopName: "에스 헤어",
+        id: 51,
+        name: "에스 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/sHair.png",
@@ -3350,8 +3350,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 52,
-        shopName: "아트 네일",
+        id: 52,
+        name: "아트 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
         img: "/images/artNail.png",
@@ -3402,8 +3402,8 @@ export const shops = [
         ]
     },
     {
-        shopId: 53,
-        shopName: "왁싱클럽",
+        id: 53,
+        name: "왁싱클럽",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingClub.png",

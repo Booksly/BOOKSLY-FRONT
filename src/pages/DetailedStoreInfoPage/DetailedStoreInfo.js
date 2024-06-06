@@ -17,10 +17,10 @@ export default function DetailedStoreInfo() {
 
     // shops에서 shopId에 해당하는 가게 메뉴를 필터링
     const shop = shops.find(shop => shop.id === shopId);
-    console.log(shop.id)
+    console.log(shop);
 
-    if (shop == undefined) { //이거 뭔가 안되는 것 같아요
-        return <div>해당 가게의 메뉴를 찾을 수 없습니다.</div>;
+    if (!shop) {
+        return <div>해당 가게의 정보를 찾을 수 없습니다.</div>;
     }
 
     return (
