@@ -29,14 +29,14 @@ export const hot_place_dummy = [
     },
     {
         "name": "바이민브로우",
-        "category":"속눈썹/눈썹",
+        "category":"눈썹/속눈썹",
         "reviewAvg": 1.0,
         "shopId":5,
         "image": "/images/byminBrow.png"
     },
     {
         "name": "아망래쉬",
-        "category":"속눈썹/눈썹",
+        "category":"눈썹/속눈썹",
         "reviewAvg": 2.0,
         "shopId":6,
         "image": "/images/amanglash.png"
