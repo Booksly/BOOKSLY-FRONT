@@ -1227,7 +1227,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 38,
-                        "imgUri": "/images/body_massage.png",
+                        "imgUri": "/assets_shop/masage_1.png",
                         "price": 70000,
                         "name": "전신 마사지",
                         "description": "피로를 풀어주는 전신 마사지입니다."
@@ -1239,7 +1239,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 39,
-                        "imgUri": "/images/face_massage.png",
+                        "imgUri": "/assets_shop/masage_3.png",
                         "price": 50000,
                         "name": "얼굴 마사지",
                         "description": "피부를 맑고 생기있게 하는 얼굴 마사지입니다."
@@ -1250,14 +1250,14 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "홍길동",
                 "reviewNum": 2,
                 "description": "10년 경력 / 바디 마사지 전문가"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://example.com/employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "김철수",
                 "reviewNum": 1,
                 "description": "5년 경력 / 페이스 마사지 전문가"
@@ -1269,14 +1269,16 @@ export const shops = [
                 "rating": "4.0",
                 "content": "친절하고 세심한 마사지였습니다.",
                 "menuCategory": "바디 마사지",
-                "menu": "전신 마사지"
+                "menu": "전신 마사지",
+                "reviewImgUri": "/assets_shop/masage_2.png"
             },
             {
                 "name": "김철수",
                 "rating": "3.0",
                 "content": "피부가 맑아졌어요. 감사합니다.",
                 "menuCategory": "페이스 마사지",
-                "menu": "얼굴 마사지"
+                "menu": "얼굴 마사지",
+                "reviewImgUri": "/assets_shop/masage_3.png"
             }
         ]
     },

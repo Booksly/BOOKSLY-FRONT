@@ -168,7 +168,8 @@ export default function DetailedStoreInfo() {
                                     <div className="container-menuBox">
                                         {menuCategory.menus.map((menu,index) => (
                                             <div key={index} className="component-menu">
-                                                <div className="rectangle-menu">
+                                                <div className="rectangle-menu"
+                                                     style={{ backgroundImage: `url(${menu.imgUri})` }}>
                                                 </div>
                                                 <div className="frame-menuNamePrice">
                                                     <div className="container-menuName">
@@ -200,7 +201,8 @@ export default function DetailedStoreInfo() {
                         <div className="frame-empBox">
                             {shop.employees.map((employee,index) =>(
                                 <div key={index} className="component-emp">
-                                    <div className="rectangle-emp">
+                                    <div className="rectangle-emp"
+                                         style={{ backgroundImage: `url(${employee.profileImgUri})` }}>
                                     </div>
                                     <div className="frame-empNameRv">
                                         <div className="container-empName">
@@ -235,7 +237,8 @@ export default function DetailedStoreInfo() {
                             <div className="container-menuBox">
                                 {shop.reviews.map((review, index) => (
                                         <div key={index} className="component-review">
-                                        <div className="rectangle-review">
+                                        <div className="rectangle-review"
+                                             style={{ backgroundImage: `url(${review.reviewImgUri})` }}>
                                         </div>
                                         <div className="frame-rvNameScore">
                                             <div className="container-rvName">

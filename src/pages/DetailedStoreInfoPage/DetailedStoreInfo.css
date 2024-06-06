@@ -590,10 +590,12 @@
 }
 .DetailedStoreInfo .rectangle-review {
     border-radius: 5px;
-    background: #D9D9D9;
+    /*background: #D9D9D9;*/
     margin-bottom: 7px;
     width: 200px;
     height: 150px;
+    background-size: cover;
+    background-position: center;
 }
 .DetailedStoreInfo .frame-rvNameScore {
     margin-bottom: 7px;
@@ -657,10 +659,13 @@
 }
 .DetailedStoreInfo .rectangle-menu {
     border-radius: 5px;
-    background: #D9D9D9;
+    /*background: #D9D9D9;*/
     margin-bottom: 7px;
     width: 200px;
     height: 150px;
+    background-size: cover;
+    background-position: center;
+    /*margin: 8.5px 28px 8.5px 0;*/
 }
 .DetailedStoreInfo .frame-menuNamePrice {
     margin-bottom: 7px;
@@ -1187,11 +1192,14 @@
 }
 .DetailedStoreInfo .rectangle-emp {
     border-radius: 5px;
-    background: #D9D9D9;
+    /*background: #D9D9D9;*/
     margin-bottom: 7px;
     width: 200px;
     height: 250px;
+    background-size: cover;
+    background-position: center;
 }
+
 .DetailedStoreInfo .frame-empNameRv {
     margin-bottom: 7px;
     flex-direction: row;
