@@ -1,6 +1,6 @@
 export const shops = [
     {
-        "id": 1,
+        id: 1,
         "name": "제롬헤어",
         "category": "헤어",
         "address": "경기도 수원시 영통구 광교산로",
@@ -30,7 +30,7 @@ export const shops = [
                         "description": "세련된 스타일의 여성 컷입니다."
                     },
                     {
-                        "menuId": 2_1, //바꿔주세요 gpt
+                        "menuId": 2_1,
                         "imgUri": "/images/haircut_women.png",
                         "price": 20000,
                         "name": "레이어드 컷",
@@ -1614,66 +1614,66 @@ export const shops = [
         ]
     },
     {
-        shopId: 20,
-        shopName: "뮤뮤 헤어",
-        category: "헤어",
-        address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/mumuHair.png",
-        detailAddress: "101호",
-        rating: "4.5",
-        description: "고객 맞춤 프리미엄 헤어 서비스를 제공하는 뮤뮤 헤어입니다.",
-        addressAlias: "수원역 근처",
-        workSchedule: "월-토 09:00 - 20:00",
-        phoneNumber: "031-123-4567",
-        menuCategories: [
+        "shopId": "20",
+        "shopName": "뮤뮤 헤어",
+        "category": "헤어",
+        "address": "경기도 수원시 팔달구 팔달로",
+        "img": "/images/mumuHair.png",
+        "detailAddress": "101호",
+        'rating': "4.5",
+        'description': "고객 맞춤 프리미엄 헤어 서비스를 제공하는 뮤뮤 헤어입니다.",
+        'addressAlias': "수원역 근처",
+        'workSchedule': "월-토 09:00 - 20:00",
+        'phoneNumber': "031-123-4567",
+        'menuCategories': [
             {
-                categoryName: "컷",
-                menus: [
+                'categoryName': "컷",
+                'menus': [
                     {
-                        menuId: 1,
-                        imgUri: "/images/haircut.png",
-                        price: 15000,
-                        name: "남성 컷",
-                        description: "깔끔하고 스타일리시한 남성 컷입니다."
+                        'menuId': 1,
+                        'imgUri': "/images/haircut.png",
+                        'price': 15000,
+                        'name': "남성 컷",
+                        'description': "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
-                        menuId: 2,
-                        imgUri: "/images/haircut_women.png",
-                        price: 20000,
-                        name: "여성 컷",
-                        description: "세련된 스타일의 여성 컷입니다."
+                        'menuId': 2,
+                        'imgUri': "/images/haircut_women.png",
+                        'price': 20000,
+                        'name': "여성 컷",
+                        'description': "세련된 스타일의 여성 컷입니다."
                     }
                 ]
             },
             {
-                categoryName: "펌",
-                menus: [
+                'categoryName': "펌",
+                'menus': [
                     {
-                        menuId: 3,
-                        imgUri: "/images/perm.png",
-                        price: 50000,
-                        name: "일반 펌",
-                        description: "내추럴한 웨이브를 위한 일반 펌입니다."
+                        'menuId': 3,
+                        'imgUri': "/images/perm.png",
+                        'price': 50000,
+                        'name': "일반 펌",
+                        'description': "내추럴한 웨이브를 위한 일반 펌입니다."
                     }
                 ]
             }
         ],
-        employees: [
+        'employees': [
             {
-                id: 1,
-                profileImgUri: "https://example.com/employee1.png",
-                name: "김헤어",
-                reviewNum: 2,
-                description: "10년 경력 / 펌 전문가"
+                'id': 1,
+                'profileImgUri': "https://example.com/employee1.png",
+                'name': "김헤어",
+                'reviewNum': 2,
+                'description': "10년 경력 / 펌 전문가"
             }
         ],
-        reviews: [
+        'reviews': [
             {
-                name: "김헤어",
-                rating: "4.8",
-                content: "친절하고 전문가의 손길이 느껴집니다.",
-                menuCategory: "컷",
-                menu: "여성 컷"
+                'name': "김헤어",
+                'rating': "4.8",
+                'content': "친절하고 전문가의 손길이 느껴집니다.",
+                'menuCategory': "컷",
+                'menu': "여성 컷"
             }
         ]
     },

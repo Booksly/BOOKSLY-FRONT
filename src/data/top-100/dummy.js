@@ -14,7 +14,7 @@ export const top_100_dummy = [
         shopId: 21
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "깔끔왁싱",
         location: "수원시 팔달구",
         menu: "팔 왁싱, 다리 왁싱, 얼굴 왁싱",
@@ -63,7 +63,7 @@ export const top_100_dummy = [
         shopId: 22
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "제이왁싱",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱",
@@ -105,7 +105,7 @@ export const top_100_dummy = [
         shopId: 25
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "왁싱플레이스",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -147,7 +147,7 @@ export const top_100_dummy = [
         shopId: 29
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "왁싱인",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -189,7 +189,7 @@ export const top_100_dummy = [
         shopId: 34
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "왁싱바",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱, 다리 왁싱",
@@ -231,7 +231,7 @@ export const top_100_dummy = [
         shopId: 40
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "왁싱앤뷰티",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -273,7 +273,7 @@ export const top_100_dummy = [
         shopId: 46
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "미니 왁싱",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -315,7 +315,7 @@ export const top_100_dummy = [
         shopId: 52
     },
     {
-        category: "왁싱/제모",
+        category: "왁싱",
         name: "왁싱클럽",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱, 다리 왁싱",
