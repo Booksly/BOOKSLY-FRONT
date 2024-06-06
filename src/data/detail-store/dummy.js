@@ -135,7 +135,7 @@ export const shops = [
     {
         "id": 2,
         "name": "깔끔왁싱",
-        "category": "왁싱",
+        "category": "왁싱/제모",
         "address": "서울특별시 강남구 테헤란로",
         "img": "/images/kwax.png",
         "detailAddress": "203호",
@@ -545,7 +545,7 @@ export const shops = [
     {
         "id": 7,
         "name": "제이로랑왁싱",
-        "category": "왁싱",
+        "category": "왁싱/제모",
         "address": "서울특별시 강동구 천호대로",
         "img": "/images/jWax.png",
         "detailAddress": "101호",
@@ -623,7 +623,7 @@ export const shops = [
     {
         "id": 8,
         "name": "왁싱랩",
-        "category": "왁싱",
+        "category": "왁싱/제모",
         "address": "서울특별시 용산구 이태원로",
         "img": "/images/labwax.png",
         "detailAddress": "302호",
@@ -1784,7 +1784,7 @@ export const shops = [
     {
         shopId: 23,
         shopName: "제이왁싱",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/jWaxing.png",
         detailAddress: "104호",
@@ -1964,7 +1964,7 @@ export const shops = [
     {
         shopId: 26,
         shopName: "왁싱플레이스",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingPlace.png",
         detailAddress: "107호",
@@ -2182,7 +2182,7 @@ export const shops = [
     {
         shopId: 30,
         shopName: "왁싱인",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingIn.png",
         detailAddress: "111호",
@@ -2445,7 +2445,7 @@ export const shops = [
     {
         shopId: 35,
         shopName: "왁싱바",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingBar.png",
         detailAddress: "116호",
@@ -2767,7 +2767,7 @@ export const shops = [
     {
         shopId: 41,
         shopName: "왁싱앤뷰티",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingAndBeauty.png",
         detailAddress: "122호",
@@ -3077,7 +3077,7 @@ export const shops = [
     {
         shopId: 47,
         shopName: "미니 왁싱",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/miniWaxing.png",
         detailAddress: "128호",
@@ -3404,7 +3404,7 @@ export const shops = [
     {
         shopId: 53,
         shopName: "왁싱클럽",
-        category: "왁싱",
+        category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
         img: "/images/waxingClub.png",
         detailAddress: "134호",

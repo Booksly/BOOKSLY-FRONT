@@ -8,7 +8,7 @@ export const hot_place_dummy = [
     },
     {
         "name": "깔끔왁싱",
-        "category":"왁싱",
+        "category":"왁싱/제모",
         "reviewAvg": 4.0,
         "shopId":2,
         "image": "/images/kwax.png"
@@ -43,14 +43,14 @@ export const hot_place_dummy = [
     },
     {
         "name": "제이로랑왁싱",
-        "category":"왁싱",
+        "category":"왁싱/제모",
         "reviewAvg": 5.0,
         "shopId":7,
         "image": "/images/jWax.png"
     },
     {
         "name": "왁싱랩",
-        "category":"왁싱",
+        "category":"왁싱/제모",
         "reviewAvg": 3.5,
         "shopId":8,
         "image": "/images/labwax.png"
