@@ -23,7 +23,7 @@ export default function StoreOwnerLogInPage() {
   };
 
   const handleLogin = () => {
-    const predefinedId = "booksly";
+    const predefinedId = "jjhair";
     const predefinedPassword = "240613ab!";
 
     if (id === predefinedId && password === predefinedPassword) {
