@@ -1,6 +1,6 @@
 import React from "react";
 import App from "../App";
-import Test44 from "../pages/Test_jiwon/Test3";
+
 // 헤더 & 내비게이션
 import LoginAfterMainHeader from "../pages/nav/LoginAfterMainHeader";
 import LoginBeforeMainHeader from "../pages/nav/LoginBeforeMainHeader";
@@ -62,7 +62,6 @@ function Routing() {
       <BrowserRouter>
         <Routes>
           {/*시작 메인 페이지*/}
-          <Route path="/ss" element={<Test44 />} />
           <Route path="/" element={<Mainmain />}>
             <Route path="login" element={<LoginAfterMainHeader />} />
           </Route>
@@ -86,7 +85,7 @@ function Routing() {
           <Route path="/StoreOwnerTopNavi" element={<StoreOwnerTopNavi />} />
           <Route path="/StoreOwnerNavi" element={<StoreOwnerNavi />} />
           <Route path="/LoginPageNav" element={<LoginPageNav />} />
-          <Route path="/StoreRegistNav" element={<StoreRegistNav/>}/>
+          <Route path="/StoreRegistNav" element={<StoreRegistNav />} />
           {/*Main Home 페이지*/}
           <Route path="/MainHome" element={<Main />} />
           {/*로그인 페이지*/}
@@ -153,9 +152,9 @@ function Routing() {
           />
           <Route path="RegisterLastEvent" element={<RegisterLastEvent />} />
           <Route path="RegisterTimeEvent" element={<RegisterTimeEvent />} />
-          <Route path="CheckTimeEvent" element={<CheckTimeEvent/>} />
-          <Route path="CheckLastEvent" element={<CheckLastEvent/>} />
-          <Route path="RegisterReservation" element={<RegisterReservation/>} />
+          <Route path="CheckTimeEvent" element={<CheckTimeEvent />} />
+          <Route path="CheckLastEvent" element={<CheckLastEvent />} />
+          <Route path="RegisterReservation" element={<RegisterReservation />} />
         </Routes>
       </BrowserRouter>
     </div>
