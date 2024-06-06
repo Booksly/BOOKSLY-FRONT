@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import "./TodayReservationPage.css";
 import LoginAfterTodayReservNav from "../nav/LoginAfterTodayReservNav";
@@ -6,16 +6,11 @@ import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 // 더미데이터 임포트
-// top100 데이터
 import { top_100_dummy } from "../../data/top-100/dummy";
-
-// 이벤트 데이터
 import { last_event_dummy } from "../../data/last-event-store/dummy";
 import { time_event_dummy } from "../../data/time-event-store/dummy";
-
 import { shops } from "../../data/reservation/dummy";
 
 //예약가능한 시간 합치기 (직원끼리 겹치는 시간 합쳐서 보여주기)
@@ -48,24 +43,6 @@ const top_100_stores = top_100_dummy.map((store) => ({
   possible_reserve_time: getMergedReservationTimes(store.shopId),
 }));
 
-// const StoreReserveComponent = ({ possibleReserveTimes }) => {
-//   return (
-//     <div className="store_can_reserve_content">
-//       {Object.entries(possibleReserveTimes).map(([date, times]) => (
-//         <div key={date} className="store_can_reserve_info">
-//           <strong>{date}</strong>
-//           <ul>
-//             {times.map((time) => (
-//               <li key={time}>{time}</li>
-//             ))}
-//           </ul>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// 가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu, id }) => {
   const navigate = useNavigate();
 
@@ -105,7 +82,6 @@ const StoreCard = ({ category, name, location, menu, id }) => {
   );
 };
 
-// 가게 목록 하나 컴포넌트 - 가게조회용
 const StoreCard2 = ({
   category,
   name,
@@ -113,7 +89,6 @@ const StoreCard2 = ({
   menu,
   total_sale_late,
   sale_name,
-  // possibleReserveTimes,
   date,
   times,
   id,
@@ -172,7 +147,6 @@ const StoreCard2 = ({
   );
 };
 
-// 가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores }) => (
   <div className="research-results">
     {stores.map((store, index) => (
@@ -188,11 +162,17 @@ const ResearchResults = ({ stores }) => (
   </div>
 );
 
-// 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStoreCountChange}) => {
-  //const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
-  const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
-  
+const ResearchResults2 = ({
+  stores = [],
+  selectedTimes,
+  selectedRegions,
+  onStoreCountChange,
+  currentPage,
+  itemsPerPage,
+  onPageChange
+}) => {
+  const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -210,84 +190,60 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStore
     return selectedRegions.some((region) => store.location.includes(region));
   };
 
-  //총 조회 개수 개수 저장하기 위함
+  const filteredStores = stores.flatMap((store) =>
+    Object.entries(store.possible_reserve_time)
+      .filter(([date]) => date === today && filterStoresByRegion(store))
+      .flatMap(([date, times]) => {
+        const filteredTimes = filterTimes(times);
+        return filteredTimes.length > 0
+          ? {
+              ...store,
+              date,
+              times: filteredTimes,
+            }
+          : [];
+      })
+  );
+
   useEffect(() => {
-    let count = 0;
-    stores.forEach((store) => {
-      Object.entries(store.possible_reserve_time).forEach(([date, times]) => {
-        if (date === today && filterStoresByRegion(store)) {
-          const filteredTimes = filterTimes(times);
-          if (filteredTimes.length > 0) {
-            count++;
-          }
-        }
-      });
-    });
-    onStoreCountChange(count);
-  }, [stores, selectedTimes, selectedRegions, onStoreCountChange]);
+    onStoreCountChange(filteredStores.length);
+  }, [filteredStores, onStoreCountChange]);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentStores = filteredStores.slice(startIndex, endIndex);
 
   return (
     <div className="research-results">
-      {stores.flatMap((store, index) =>
-        Object.entries(store.possible_reserve_time).map(([date, times]) => {
-          if (date !== today) return null; //오늘 날짜 아니면 리턴 널
-          const filteredTimes = filterTimes(times);
-          return filteredTimes.length > 0 && filterStoresByRegion(store)? (
-            <StoreCard2
-              key={`${index}-${date}`}
-              category={store.category}
-              name={store.name}
-              location={store.location}
-              menu={store.menu}
-              total_sale_late={store.total_sale_late}
-              sale_name={store.sale_name}
-              date={date}
-              times={filteredTimes}
-              id={store.shopId}
-            />
-          ) : null;
-        })
-      )}
+      {currentStores.map((store, index) => (
+        <StoreCard2
+          key={`${store.shopId}-${store.date}`}
+          category={store.category}
+          name={store.name}
+          location={store.location}
+          menu={store.menu}
+          total_sale_late={store.total_sale_late}
+          sale_name={store.sale_name}
+          date={store.date}
+          times={store.times}
+          id={store.shopId}
+        />
+      ))}
+      <div className="pagination">
+        {Array.from({ length: Math.ceil(filteredStores.length / itemsPerPage) }, (_, i) => (
+          <button
+            key={i + 1}
+            onClick={() => onPageChange(i + 1)}
+            className={i + 1 === currentPage ? "active" : ""}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
 
-//일차로 숨겨둠
-// const ResearchResults2 = ({ stores = [] }) => (
-//   <div className="research-results">
-//     {stores.map((store, index) => (
-//       <StoreCard2
-//         key={index}
-//         category={store.category}
-//         name={store.name}
-//         address={store.address}
-//         menu={store.menu}
-//         total_sale_late={store.total_sale_late}
-//         sale_name={store.sale_name}
-//         possibleReserveTimes={store.possible_reserve_time}
-//         id={store.shopId}
-//       />
-//     ))}
-//     {stores.flatMap((store, index) =>
-//       Object.entries(store.possible_reserve_time).map(([date, times]) => (
-//         <StoreCard2
-//           key={`${index}-${date}`}
-//           category={store.category}
-//           name={store.name}
-//           address={store.address}
-//           menu={store.menu}
-//           total_sale_late={store.total_sale_late}
-//           sale_name={store.sale_name}
-//           date={date}
-//           times={times}
-//           id={store.shopId}
-//         />
-//       ))
-//     )}
-//   </div>
-// );
-
-// 더미데이터 사용
 const last_event_stores = last_event_dummy;
 const time_event_stores = time_event_dummy;
 
@@ -382,7 +338,6 @@ export default function TodayReservationPage() {
     setIsTimeModalOpen(false);
   };
 
-  // 필터링된 스토어 데이터
   const filteredStores = (stores = []) => {
     return stores.filter((store) => {
       if (btnAllActive) return true;
@@ -397,12 +352,6 @@ export default function TodayReservationPage() {
     });
   };
 
-  // 필터링된 가게 데이터의 개수00
-  const filteredStoresCount = (stores = []) => {
-    return filteredStores(stores).length;
-  };
-
-  // 카테고리 버튼 코드 간략화
   const categoryButtons = [
     {
       id: "btnAll",
@@ -637,7 +586,6 @@ export default function TodayReservationPage() {
               </button>
             </Modal>
 
-            {/* 탑백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
             {btnAllActive ||
             btn1Active ||
             btn2Active ||
@@ -649,20 +597,22 @@ export default function TodayReservationPage() {
               <div className="top-100-list-all2">
                 <div className="top-100-list">
                   <div className="top-test">
-                    <span className="top-100">
-                    총 {filteredStoreCount} 개
-                    </span>
+                    <span className="top-100">총 {filteredStoreCount} 개</span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores(top_100_stores)}
-                    selectedTimes={selectedTimes} 
-                    selectedRegions={selectedRegions}
-                    onStoreCountChange={setFilteredStoreCount}/>
+                    <ResearchResults2
+                      stores={filteredStores(top_100_stores)}
+                      selectedTimes={selectedTimes}
+                      selectedRegions={selectedRegions}
+                      onStoreCountChange={setFilteredStoreCount}
+                      currentPage={currentPage}
+                      itemsPerPage={itemsPerPage}
+                      onPageChange={setCurrentPage}
+                    />
                   </div>
                 </div>
               </div>
             ) : (
-              /* 탑 백 조회 */
               <div className="top-100-list-all">
                 <div className="top-100-list">
                   <div className="top-test">
@@ -677,19 +627,15 @@ export default function TodayReservationPage() {
                 </div>
               </div>
             )}
-            {/* 예약 마감 임박 할인 */}
             <div className="today_reserve_padding">
               <div className="today_reserve_wrap">
                 <div className="recommand-title">예약 마감 임박 할인</div>
-                {/* props로 전달 */}
                 <SimpleSlider_Today stores={last_event_stores} />
               </div>
             </div>
-            {/* 타임 세일 */}
             <div className="today_reserve_padding">
               <div className="today_reserve_wrap">
                 <div className="recommand-title">타임 세일</div>
-                {/* props로 전달 */}
                 <SimpleSlider_Today stores={time_event_stores} />
               </div>
             </div>
