@@ -7,10 +7,10 @@ import {useNavigate} from "react-router-dom";
 export default function MyHomeRegularStore() {
     const navigate = useNavigate()
     const goToReservation = () => {
-        navigate("/Reservation")
+        navigate("/Reservation?shopId=1")
     }
     const goToDetailedStoreInfo = () => {
-        navigate("/DetailedStoreInfo")
+        navigate("/DetailedStoreInfo?shopId=1")
     }
     return (
         <div className="MyHomeRegularStore">
@@ -30,7 +30,7 @@ export default function MyHomeRegularStore() {
                                     ☆
                                 </div>
                                 <div className="StoreInfo">
-                                    제이제이 헤어
+                                    제롬헤어
                                 </div>
                                 <div className="partition">
                                     |
