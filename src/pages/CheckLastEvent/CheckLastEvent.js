@@ -1,24 +1,57 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./CheckLastEvent.css";
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
 
 export default function CheckLastEvent() {
+  const navigate = useNavigate();
+  const goToCheckLastEvent = () => {
+    navigate("/CheckLastEvent");
+  };
+
+  const goToCheckTimeEvent = () => {
+    navigate("/CheckTimeEvent");
+  };
+
+  const goToRegisterTimeEvent = () => {
+    navigate("/RegisterTimeEvent");
+  };
+
   return (
     <div className="CheckLastEvent">
       <div className="CheckLastEventBack">
         <StoreOwnerLeftNavi />
-        <div className="SOMcontainerAll">
+        <div className="CLEcontainerAll">
           <StoreOwnerTopNavi />
-          <div className="SOMcontainer">
-            <div className="container">
-              <div className="container-1">마감 임박 이벤트</div>
-              <div className="container-2">타임 예약 이벤트</div>
-              <div className="frame-429">
-                <span className="container-12">이벤트 추가 설정</span>
+          <div className="CLE-container">
+            <div className="CLE-frame-624">
+              <div className="CLE-frame-623">
+                <div className="CLE-frame-622">
+                  <button
+                    className="CLE-naviButton-n"
+                    onClick={goToCheckLastEvent}
+                  >
+                    마감 임박 이벤트
+                  </button>
+                  <button
+                    className="CLE-naviButton"
+                    onClick={goToCheckTimeEvent}
+                  >
+                    타임 예약 이벤트
+                  </button>
+                </div>
+                <button className="CLE-frame-429">
+                  <div
+                    className="CLE-container-3"
+                    onClick={goToRegisterTimeEvent}
+                  >
+                    이벤트 추가 등록
+                  </div>
+                </button>
               </div>
+              <div className="CLE-line-22"></div>
             </div>
-            <div className="line-22"></div>
             <div className="frame-130">
               <p className="container-3">
                 <span className="container-3-sub-22"></span>

@@ -1,123 +1,123 @@
 .StoreOwnerLeftNavi {
-    position: relative;
-    display: flex;
-    /*width: 1440px;*/
+  position: relative;
+  display: flex;
+  /*width: 1440px;*/
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpsk-navi {
-    background: #FFFFFF;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    box-sizing: border-box;
+  background: #ffffff;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicontainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: fit-content;
-    box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpnavi-logo {
-    background: #FFFFFF;
-    position: relative;
-    padding: 25px 20px;
-    width: 250px;
-    height: 100px;
-    box-sizing: border-box;
+  background: #ffffff;
+  position: relative;
+  padding: 25px 20px;
+  width: 250px;
+  height: 100px;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavibooksly-logo {
-    border: 0;
-    border-radius: 23px;
-    background: url('../../assets/booksly_logo.png') 50% / cover no-repeat;
-    width: 100px;
-    height: 50px;
+  border: 0;
+  border-radius: 23px;
+  background: url("../../assets/booksly_logo.png") 50% / cover no-repeat;
+  width: 100px;
+  height: 50px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavilogoLine {
-    background: #D9D9D9;
-    position: absolute;
-    left: 15px;
-    top: 99px;
-    right: 20px;
-    height: 1px;
-    width: 220px;
+  background: #d9d9d9;
+  position: absolute;
+  left: 15px;
+  top: 99px;
+  right: 20px;
+  height: 1px;
+  width: 220px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpsk-navi-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpnavi-bar {
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px 0 15px;
-    width: 250px;
-    box-sizing: border-box;
-    border: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 0;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviLineTop {
-    background: #D9D9D9;
-    width: 220px;
-    height: 1px;
+  background: #d9d9d9;
+  width: 220px;
+  height: 1px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviLineBottom {
-    background: #D9D9D9;
-    margin-top: 12px;
-    width: 220px;
-    height: 1px;
+  background: #d9d9d9;
+  margin-top: 12px;
+  width: 220px;
+  height: 1px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicp-navi-search-name {
-    margin-left: 5px;
-    margin-top: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    width: fit-content;
-    box-sizing: border-box;
+  margin-left: 5px;
+  margin-top: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavisearch {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicpnaviName {
-    position: relative;
-    text-align: center;
-    line-height: 25px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
+  position: relative;
+  text-align: center;
+  line-height: 25px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavicp-navi-allow {
-    margin-left: 20px;
-    margin-top: 12px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
+  margin-left: 20px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavipolygon {
-    margin-right: 10px;
-    width: 18px;
-    height: 20px;
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNavinaviBottomLine {
-    background: #D3D3D3;
-    margin: 0 15px;
-    width: 220px;
-    height: 2px;
+  background: #d3d3d3;
+  margin: 0 15px;
+  width: 220px;
+  height: 2px;
 }
 .StoreOwnerLeftNavi .StoreOwnerLeftNaviline {
-    background: #D6B585;
-    position: absolute;
-    margin-left: 250px;
-    top:0px;
-    width: 2px;
-    height: 100vh;
+  background: #d6b585;
+  position: absolute;
+  margin-left: 250px;
+  top: 0px;
+  width: 2px;
+  height: 100vh;
 }
