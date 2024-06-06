@@ -91,10 +91,6 @@ export default function CheckTimeEven() {
         navigate("/CheckTimeEvent");
     };
 
-    const goToRegisterTimeEvent = () => {
-        navigate("/RegisterTimeEvent");
-    }
-
     const handleSelectDate = (date) => {
         setSelectedDate(date);
         setSelectedFrame(null); // Reset frame selection when date is changed
@@ -102,9 +98,9 @@ export default function CheckTimeEven() {
 
     const handleFrameClick = (frame) => {
         if (selectedDate) { // Check if a date is selected
-            setSelectedFrame(prevFrame => prevFrame === frame ? null : frame);
+            setSelectedFrame(prevFrame => (prevFrame === frame ? null : frame));
 
-            // Save the selected frame
+            // Save or remove the selected frame
             setSavedFrames(prevSavedFrames => {
                 const newSavedFrames = { ...prevSavedFrames };
                 if (newSavedFrames[selectedDate.toDateString()] === frame) {
@@ -134,12 +130,12 @@ export default function CheckTimeEven() {
                                     <button className="CTE-naviButton-n" onClick={goToCheckLastEvent}>
                                         마감 임박 이벤트
                                     </button>
-                                    <button className="CTE-naviButton" onClick={goToCheckTimeEvent}>
+                                    <button className="CTE-naviButton" onClick={goToCheckLastEvent}>
                                         타임 예약 이벤트
                                     </button>
                                 </div>
                                 <button className="CTE-frame-429">
-                                    <div className="CTE-container-3" onClick={goToRegisterTimeEvent}>
+                                    <div className="CTE-container-3">
                                         이벤트 추가 등록
                                     </div>
                                 </button>

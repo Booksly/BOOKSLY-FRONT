@@ -127,19 +127,6 @@
     color: #737373;
 }
 
-.checkTimeEven .CTE-empButton {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    display: flex;
-    padding: 10px 14px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-
 .checkTimeEven .CTE-empButton.selected {
     background: #FDD2C2;
 }
@@ -155,11 +142,13 @@
     flex-direction: row;
     padding: 10px 30px;
     box-sizing: border-box;
+    cursor: pointer; /* Add cursor pointer for better UX */
 }
 
 .checkTimeEven .CTE-timeEvt.selected {
     background: #D9D9D9;
 }
+
 
 
 .checkTimeEven .CTE-frame-429 {
