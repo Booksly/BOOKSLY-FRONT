@@ -290,7 +290,7 @@ export default function TodayReservationPage() {
   const [btn5Active, setBtn5Active] = useState(false);
   const [btn6Active, setBtn6Active] = useState(false);
   const [btn7Active, setBtn7Active] = useState(false);
-
+  const [filteredStoreCount, setFilteredStoreCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
@@ -380,7 +380,7 @@ export default function TodayReservationPage() {
     });
   };
 
-  // 필터링된 가게 데이터의 개수
+  // 필터링된 가게 데이터의 개수00
   const filteredStoresCount = (stores = []) => {
     return filteredStores(stores).length;
   };
