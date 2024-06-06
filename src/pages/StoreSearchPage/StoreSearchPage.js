@@ -14,7 +14,7 @@ import RegionSelectionPopup from "./RegionSelectionPopup";
 import { top_100_dummy } from "../../data/top-100/dummy";
 
 // 가게 목록 컴포넌트 - 탑 백용
-const StoreCard = ({ id, category, name, address, menu }) => {
+const StoreCard = ({ id, category, name, location, menu }) => {
   const navigate = useNavigate();
 
   const handleReserveClick = () => {
@@ -34,7 +34,7 @@ const StoreCard = ({ id, category, name, address, menu }) => {
             <span className="store_name">{name}</span>
           </div>
           <div className="store_info_where">
-            <span className="store_where">{address}</span>
+            <span className="store_where">{location}</span>
           </div>
         </div>
         <div className="menu-names">
@@ -58,7 +58,7 @@ const StoreCard2 = ({
   id,
   category,
   name,
-  address,
+  location,
   menu,
   total_sale_late,
   sale_name,
@@ -83,7 +83,7 @@ const StoreCard2 = ({
             <span className="store_name">{name}</span>
           </div>
           <div className="store_info_where">
-            <span className="store_where">{address}</span>
+            <span className="store_where">{location}</span>
           </div>
         </div>
         <div className="menu_names">
@@ -126,27 +126,56 @@ const ResearchResults = ({ stores }) => (
 );
 
 // 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores }) => (
-  <div className="research-results">
-    {stores && stores.length > 0 ? (
-      stores.map((store, index) => (
-        <StoreCard2
-          key={index}
-          category={store.category}
-          name={store.name}
-          address={store.address}
-          menu={store.menu}
-          total_sale_late={store.total_sale_late}
-          sale_name={store.sale_name}
-          possible_reserve_time={store.possible_reserve_time}
-          id={store.shopId}
-        />
-      ))
-    ) : (
-      <div>No stores found.</div>
-    )}
-  </div>
-);
+const ResearchResults2 = ({
+  stores,
+  currentPage,
+  itemsPerPage,
+  handlePageChange,
+  totalPages,
+}) => {
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentStores = stores.slice(startIndex, startIndex + itemsPerPage);
+
+  const paginationButtons = [];
+  for (let i = 1; i <= totalPages; i++) {
+    paginationButtons.push(
+      <button
+        key={i}
+        onClick={() => handlePageChange(i)}
+        className={i === currentPage ? "active" : ""}
+      >
+        {i}
+      </button>
+    );
+  }
+
+  return (
+    <div>
+      <div className="research-results">
+        {currentStores && currentStores.length > 0 ? (
+          currentStores.map((store, index) => (
+            <StoreCard2
+              key={index}
+              category={store.category}
+              name={store.name}
+              location={store.location}
+              menu={store.menu}
+              total_sale_late={store.total_sale_late}
+              sale_name={store.sale_name}
+              possible_reserve_time={store.possible_reserve_time}
+              id={store.shopId}
+            />
+          ))
+        ) : (
+          <div>No stores found.</div>
+        )}
+      </div>
+      <div className="pagination-container">
+        <div className="pagination">{paginationButtons}</div>
+      </div>
+    </div>
+  );
+};
 
 // 탑 백 스토어
 const top_100_stores = top_100_dummy;
@@ -181,14 +210,37 @@ export default function StoreSearchPage() {
     setBtn5Active(!btnAllActive);
     setBtn6Active(!btnAllActive);
     setBtn7Active(!btnAllActive);
+    setCurrentPage(1);
   };
-  const toggleBtn1Active = () => setBtn1Active(!btn1Active);
-  const toggleBtn2Active = () => setBtn2Active(!btn2Active);
-  const toggleBtn3Active = () => setBtn3Active(!btn3Active);
-  const toggleBtn4Active = () => setBtn4Active(!btn4Active);
-  const toggleBtn5Active = () => setBtn5Active(!btn5Active);
-  const toggleBtn6Active = () => setBtn6Active(!btn6Active);
-  const toggleBtn7Active = () => setBtn7Active(!btn7Active);
+
+  const toggleBtn1Active = () => {
+    setBtn1Active(!btn1Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn2Active = () => {
+    setBtn2Active(!btn2Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn3Active = () => {
+    setBtn3Active(!btn3Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn4Active = () => {
+    setBtn4Active(!btn4Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn5Active = () => {
+    setBtn5Active(!btn5Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn6Active = () => {
+    setBtn6Active(!btn6Active);
+    setCurrentPage(1);
+  };
+  const toggleBtn7Active = () => {
+    setBtn7Active(!btn7Active);
+    setCurrentPage(1);
+  };
 
   const openRegionModal = () => {
     setIsReigonModalOpen(true);
@@ -344,6 +396,11 @@ export default function StoreSearchPage() {
     },
   ];
 
+  const filteredStoresData = filteredStores(top_100_stores);
+  const totalFilteredPages = Math.ceil(
+    filteredStoresData.length / itemsPerPage
+  );
+
   const currentStores = top_100_stores.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -378,7 +435,7 @@ export default function StoreSearchPage() {
                 <button className="container-4" onClick={openRegionModal}>
                   <div className="container-5">
                     {selectedRegions.length === 0
-                      ? "지역을 선택해 주세요"
+                      ? "경기도 수원시 영통구, 경기도 수원시 팔달구"
                       : selectedRegions.join(", ")}
                   </div>
                 </button>
@@ -406,7 +463,7 @@ export default function StoreSearchPage() {
                     onClick={openDateModal}
                   >
                     {selectedDates.length === 0
-                      ? "날짜를 선택해 주세요"
+                      ? "2024-06-09, 2024-06-13"
                       : selectedDates
                           .map((date) => formatDate(date))
                           .join(", ")}
@@ -424,7 +481,7 @@ export default function StoreSearchPage() {
                         time.startMin === "" &&
                         time.endMin === ""
                     )
-                      ? "시간을 선택해 주세요"
+                      ? "12시 30분 ~ 13시 30분, 17시 ~ 19시"
                       : selectedTimes
                           .map(
                             (time) =>
@@ -590,7 +647,13 @@ export default function StoreSearchPage() {
                     </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores(top_100_stores)} />
+                    <ResearchResults2
+                      stores={filteredStores(top_100_stores)}
+                      currentPage={currentPage}
+                      itemsPerPage={itemsPerPage}
+                      handlePageChange={handlePageChange}
+                      totalPages={totalFilteredPages}
+                    />
                   </div>
                 </div>
               </div>
