@@ -66,10 +66,36 @@ function RegisterLastEvent_contents() {
     };
     
     //페이지 이동 (네비케이트)
-    const navigate = useNavigate();
-    const goToStoreOwnerLogin = () => {
-      navigate("/StoreOwnerLogIn");
-    };
+    const navigate = useNavigate()
+    const goToMain = () => {
+        navigate("/StoreOwnerMain")
+    }
+    const goToDetail = () => {
+        navigate("/StoreOwnerMain")
+    }
+    const goToSetting = () => {
+        navigate("/StoreOwnerSetting")
+    }
+    //마감 임박 메뉴 등록
+    const goToRegisterLastEvent = () => {
+        navigate("/RegisterLastEvent")
+    }
+    //타임세일 메뉴 등록
+    const goToRegisterTimeEvent = () => {
+        navigate("/RegisterTimeEvent")
+    }
+    //이벤트 메뉴 - 타임 세일 메뉴 확인
+    const goToCheckTimeEvent = () => {
+        navigate("/CheckTimeEvent")
+    }
+    //이벤트 메뉴 - 마감 임박 메뉴 확인
+    const goToCheckLastEvent = () => {
+        navigate("/CheckLastEvent")
+    }
+    //예약설정
+    const goToRegisterReservation = () => {
+        navigate("/RegisterReservation")
+    }
 
     return (
         <div className="Last_Event_options_padding">
@@ -125,10 +151,10 @@ function RegisterLastEvent_contents() {
                 </div>
                 
                 <div className="btns_padding_For_row">
-                    <button className="ReservationRegist_fin_btn" onClick={goToStoreOwnerLogin}>
+                    <button className="ReservationRegist_fin_btn" onClick={goToRegisterLastEvent}>
                         초기화
                     </button>
-                    <button className="ReservationRegist_fin_btn" onClick={goToStoreOwnerLogin}>
+                    <button className="ReservationRegist_fin_btn" onClick={goToCheckLastEvent}>
                         등록 
                     </button>
                 </div>

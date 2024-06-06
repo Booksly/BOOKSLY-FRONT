@@ -187,39 +187,78 @@ const ResearchResults = ({ stores }) => (
 );
 
 // 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores = [] }) => (
-  <div className="research-results">
-    {/* {stores.map((store, index) => (
-      <StoreCard2
-        key={index}
-        category={store.category}
-        name={store.name}
-        address={store.address}
-        menu={store.menu}
-        total_sale_late={store.total_sale_late}
-        sale_name={store.sale_name}
-        possibleReserveTimes={store.possible_reserve_time}
-        id={store.shopId}
-      />
-    ))} */}
-    {stores.flatMap((store, index) =>
-      Object.entries(store.possible_reserve_time).map(([date, times]) => (
-        <StoreCard2
-          key={`${index}-${date}`}
-          category={store.category}
-          name={store.name}
-          address={store.address}
-          menu={store.menu}
-          total_sale_late={store.total_sale_late}
-          sale_name={store.sale_name}
-          date={date}
-          times={times}
-          id={store.shopId}
-        />
-      ))
-    )}
-  </div>
-);
+const ResearchResults2 = ({ stores = [], selectedTimes }) => {
+  const filterTimes = (times) => {
+    if (selectedTimes.length === 0) return times;
+    return times.filter((time) => {
+      const [hour, minute] = time.split(":").map(Number);
+      return selectedTimes.some(
+        ({ start, end, startMin, endMin }) =>
+          (hour > start || (hour === start && minute >= startMin)) &&
+          (hour < end || (hour === end && minute <= endMin))
+      );
+    });
+  };
+
+  return (
+    <div className="research-results">
+      {stores.flatMap((store, index) =>
+        Object.entries(store.possible_reserve_time).map(([date, times]) => {
+          const filteredTimes = filterTimes(times);
+          return filteredTimes.length > 0 ? (
+            <StoreCard2
+              key={`${index}-${date}`}
+              category={store.category}
+              name={store.name}
+              address={store.address}
+              menu={store.menu}
+              total_sale_late={store.total_sale_late}
+              sale_name={store.sale_name}
+              date={date}
+              times={filteredTimes}
+              id={store.shopId}
+            />
+          ) : null;
+        })
+      )}
+    </div>
+  );
+};
+
+//일차로 숨겨둠
+// const ResearchResults2 = ({ stores = [] }) => (
+//   <div className="research-results">
+//     {stores.map((store, index) => (
+//       <StoreCard2
+//         key={index}
+//         category={store.category}
+//         name={store.name}
+//         address={store.address}
+//         menu={store.menu}
+//         total_sale_late={store.total_sale_late}
+//         sale_name={store.sale_name}
+//         possibleReserveTimes={store.possible_reserve_time}
+//         id={store.shopId}
+//       />
+//     ))}
+//     {stores.flatMap((store, index) =>
+//       Object.entries(store.possible_reserve_time).map(([date, times]) => (
+//         <StoreCard2
+//           key={`${index}-${date}`}
+//           category={store.category}
+//           name={store.name}
+//           address={store.address}
+//           menu={store.menu}
+//           total_sale_late={store.total_sale_late}
+//           sale_name={store.sale_name}
+//           date={date}
+//           times={times}
+//           id={store.shopId}
+//         />
+//       ))
+//     )}
+//   </div>
+// );
 
 // 더미데이터 사용
 const last_event_stores = last_event_dummy;
@@ -588,7 +627,8 @@ export default function TodayReservationPage() {
                     </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores(top_100_stores)} />
+                    <ResearchResults2 stores={filteredStores(top_100_stores)}
+                    selectedTimes={selectedTimes} />
                   </div>
                 </div>
               </div>

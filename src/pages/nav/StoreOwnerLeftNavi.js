@@ -15,6 +15,26 @@ export default function StoreOwnerLeftNavi() {
     const goToSetting = () => {
         navigate("/StoreOwnerSetting")
     }
+    //마감 임박 메뉴 등록
+    const goToRegisterLastEvent = () => {
+        navigate("/RegisterLastEvent")
+    }
+    //타임세일 메뉴 등록
+    const goToRegisterTimeEvent = () => {
+        navigate("/RegisterTimeEvent")
+    }
+    //이벤트 메뉴 - 타임 세일 메뉴 확인
+    const goToCheckTimeEvent = () => {
+        navigate("/CheckTimeEvent")
+    }
+    //이벤트 메뉴 - 마감 임박 메뉴 확인
+    const goToCheckLastEvent = () => {
+        navigate("/CheckLastEvent")
+    }
+    //예약설정
+    const goToRegisterReservation = () => {
+        navigate("/RegisterReservation")
+    }
 
     return (
         <div className="StoreOwnerLeftNavi">
@@ -104,7 +124,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-search-name">
                                 <img className="StoreOwnerLeftNavisearch" src={searchbar} alt={''}/>
-                                <div className="StoreOwnerLeftNavicpnaviName">
+                                <div className="StoreOwnerLeftNavicpnaviName" onClick={goToRegisterReservation}>
                                     예약 설정
                                 </div>
                             </div>
@@ -140,7 +160,7 @@ export default function StoreOwnerLeftNavi() {
                             </div>
                             <div className="StoreOwnerLeftNavicp-navi-allow">
                                 <img className="StoreOwnerLeftNavipolygon" src={polygon} alt={''}/>
-                                <div className="StoreOwnerLeftNavicpnaviNamecpnaviName">
+                                <div className="StoreOwnerLeftNavicpnaviNamecpnaviName"onClick={goToCheckLastEvent}>
                                     이벤트 메뉴
                                 </div>
                             </div>
