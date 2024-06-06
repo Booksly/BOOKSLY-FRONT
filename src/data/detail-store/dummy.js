@@ -106,28 +106,32 @@ export const shops = [
                 "rating":"4.8",
                 "content":"너무 만족스럽습니다. 재방문할게요!",
                 "menuCategory":"염색",
-                "menu":"하이라이트"
+                "menu":"하이라이트",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             },
             {
                 "name":"지연 디자이너",
                 "rating":"5.0",
                 "content":"커트 장인이세욤",
                 "menuCategory":"컷",
-                "menu":"레이어드컷"
+                "menu":"레이어드컷",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             },
             {
                 "name":"제롬 원장",
                 "rating":"5.0",
                 "content":"역시 펌은 원장님이 최고",
                 "menuCategory":"펌",
-                "menu":"디지털 펌"
+                "menu":"디지털 펌",
+                "reviewImgUri": "/assets_shop/rv_perm_M_2.png"
             },
             {
                 "name":"제롬 원장",
                 "rating":"5.0",
                 "content":"친절하십니다.",
                 "menuCategory":"펌",
-                "menu":"일반 펌"
+                "menu":"일반 펌",
+                "reviewImgUri": "/assets_shop/rv_perm_W_1.png"
             }
             
         ]
@@ -199,28 +203,32 @@ export const shops = [
                 "rating": "5.0",
                 "content": "팔 왁싱 정말 깔끔하게 잘 해주셨어요.",
                 "menuCategory": "바디 왁싱",
-                "menu": "팔 왁싱"
+                "menu": "팔 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_1.png"
             },
             {
                 "name": "미나 디자이너",
                 "rating": "4.5",
                 "content": "얼굴 왁싱 후 피부가 매끄러워졌어요.",
                 "menuCategory": "페이스 왁싱",
-                "menu": "얼굴 왁싱"
+                "menu": "얼굴 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             },
             {
                 "name": "윤지 원장",
                 "rating": "4.8",
                 "content": "다리 왁싱도 너무 잘하십니다.",
                 "menuCategory": "바디 왁싱",
-                "menu": "다리 왁싱"
+                "menu": "다리 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_3.png"
             },
             {
                 "name": "윤지 원장",
                 "rating": "5.0",
                 "content": "왁싱 후 관리법까지 알려주셔서 너무 좋았어요.",
                 "menuCategory": "바디 왁싱",
-                "menu": "팔 왁싱"
+                "menu": "팔 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_2.png"
             }
         ]
     },
@@ -279,28 +287,32 @@ export const shops = [
                 "rating": "4.5",
                 "content": "기본 네일 아트가 너무 예뻐요.",
                 "menuCategory": "네일 아트",
-                "menu": "기본 네일 아트"
+                "menu": "기본 네일 아트",
+                "reviewImgUri": "/assets_shop/rv_nail_1.png"
             },
             {
                 "name": "혜림 디자이너",
                 "rating": "4.0",
                 "content": "젤 네일이 정말 오래가요.",
                 "menuCategory": "네일 아트",
-                "menu": "젤 네일"
+                "menu": "젤 네일",
+                "reviewImgUri": "/assets_shop/rv_nail_2.png"
             },
             {
                 "name": "수진 원장",
                 "rating": "4.8",
                 "content": "친절하고 꼼꼼하게 해주셨어요.",
                 "menuCategory": "네일 아트",
-                "menu": "기본 네일 아트"
+                "menu": "기본 네일 아트",
+                "reviewImgUri": "/assets_shop/rv_nail_3.png"
             },
             {
                 "name": "혜림 디자이너",
                 "rating": "4.3",
                 "content": "네일 디자인이 너무 마음에 들어요.",
                 "menuCategory": "네일 아트",
-                "menu": "젤 네일"
+                "menu": "젤 네일",
+                "reviewImgUri": "/assets_shop/rv_nail_4.png"
             }
         ]
     },
@@ -359,28 +371,32 @@ export const shops = [
                 "rating": "5.0",
                 "content": "기본 네일 케어가 정말 꼼꼼해요.",
                 "menuCategory": "네일 케어",
-                "menu": "기본 네일 케어"
+                "menu": "기본 네일 케어",
+                "reviewImgUri": "/assets_shop/rv_nail_2.png"
             },
             {
                 "name": "지현 디자이너",
                 "rating": "5.0",
                 "content": "스파 네일 케어로 피로가 풀렸어요.",
                 "menuCategory": "네일 케어",
-                "menu": "스파 네일 케어"
+                "menu": "스파 네일 케어",
+                "reviewImgUri": "/assets_shop/rv_nail_1.png"
             },
             {
                 "name": "소연 원장",
                 "rating": "4.8",
                 "content": "네일 케어 후 손톱이 건강해졌어요.",
                 "menuCategory": "네일 케어",
-                "menu": "기본 네일 케어"
+                "menu": "기본 네일 케어",
+                "reviewImgUri": "/assets_shop/rv_nail_5.png"
             },
             {
                 "name": "소연 원장",
                 "rating": "5.0",
                 "content": "친절한 서비스에 만족합니다.",
                 "menuCategory": "네일 케어",
-                "menu": "기본 네일 케어"
+                "menu": "기본 네일 케어",
+                "reviewImgUri": "/assets_shop/rv_nail_4.png"
             }
         ]
     },
@@ -437,28 +453,32 @@ export const shops = [
                 "rating": "1.0",
                 "content": "속눈썹 연장이 마음에 들지 않아요.",
                 "menuCategory": "속눈썹",
-                "menu": "속눈썹 연장"
+                "menu": "속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_1.png"
             },
             {
                 "name": "민지 원장",
                 "rating": "1.2",
                 "content": "눈썹 틴트가 자연스럽지 않아요.",
                 "menuCategory": "눈썹",
-                "menu": "눈썹 틴트"
+                "menu": "눈썹 틴트",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_2.png"
             },
             {
                 "name": "민지 원장",
                 "rating": "1.0",
                 "content": "서비스가 별로였어요.",
                 "menuCategory": "속눈썹",
-                "menu": "속눈썹 연장"
+                "menu": "속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_3.png"
             },
             {
                 "name": "민지 원장",
                 "rating": "1.5",
                 "content": "눈썹 틴트가 지속되지 않아요.",
                 "menuCategory": "눈썹",
-                "menu": "눈썹 틴트"
+                "menu": "눈썹 틴트",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             }
         ]
     },
@@ -517,28 +537,32 @@ export const shops = [
                 "rating": "2.5",
                 "content": "기본 속눈썹 연장이 조금 부족했어요.",
                 "menuCategory": "속눈썹 연장",
-                "menu": "기본 속눈썹 연장"
+                "menu": "기본 속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_1.png"
             },
             {
                 "name": "라희 디자이너",
                 "rating": "2.0",
                 "content": "볼륨 속눈썹 연장이 기대에 미치지 못했어요.",
                 "menuCategory": "속눈썹 연장",
-                "menu": "볼륨 속눈썹 연장"
+                "menu": "볼륨 속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_2.png"
             },
             {
                 "name": "아망 원장",
                 "rating": "2.0",
                 "content": "서비스는 친절했지만 결과가 별로였어요.",
                 "menuCategory": "속눈썹 연장",
-                "menu": "기본 속눈썹 연장"
+                "menu": "기본 속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_3.png"
             },
             {
                 "name": "라희 디자이너",
                 "rating": "1.8",
                 "content": "볼륨 속눈썹 연장이 오래가지 않았어요.",
                 "menuCategory": "속눈썹 연장",
-                "menu": "볼륨 속눈썹 연장"
+                "menu": "볼륨 속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_W_1.png"
             }
         ]
     },
@@ -595,28 +619,32 @@ export const shops = [
                 "rating": "5.0",
                 "content": "전체 바디 왁싱 정말 만족스러웠어요.",
                 "menuCategory": "바디 왁싱",
-                "menu": "전체 바디 왁싱"
+                "menu": "전체 바디 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_1.png"
             },
             {
                 "name": "로랑 원장",
                 "rating": "4.8",
                 "content": "페이스 왁싱도 너무 잘 해주셨어요.",
                 "menuCategory": "페이스 왁싱",
-                "menu": "전체 페이스 왁싱"
+                "menu": "전체 페이스 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             },
             {
                 "name": "로랑 원장",
                 "rating": "5.0",
                 "content": "친절하고 세심한 서비스에 감동했어요.",
                 "menuCategory": "바디 왁싱",
-                "menu": "전체 바디 왁싱"
+                "menu": "전체 바디 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_3.png"
             },
             {
                 "name": "로랑 원장",
                 "rating": "4.9",
                 "content": "왁싱 후 피부 관리법도 잘 알려주셨어요.",
                 "menuCategory": "바디 왁싱",
-                "menu": "전체 바디 왁싱"
+                "menu": "전체 바디 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_2.png"
             }
         ]
     },
@@ -694,28 +722,32 @@ export const shops = [
                 "rating":"4.5",
                 "content":"깔끔하게 잘 해주셨어요!",
                 "menuCategory":"바디 왁싱",
-                "menu":"팔 왁싱"
+                "menu":"팔 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_3.png"
             },
             {
                 "name":"김지수",
                 "rating":"4.0",
                 "content":"친절하게 설명해주시고 만족스러웠습니다.",
                 "menuCategory":"바디 왁싱",
-                "menu":"다리 왁싱"
+                "menu":"다리 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             },
             {
                 "name":"박민주",
                 "rating":"5.0",
                 "content":"정말 만족스러운 서비스였습니다.",
                 "menuCategory":"페이스 왁싱",
-                "menu":"얼굴 왁싱"
+                "menu":"얼굴 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_1.png"
             },
             {
                 "name":"최다은",
                 "rating":"4.8",
                 "content":"브라질리언 왁싱이 처음이었는데, 정말 좋았습니다.",
                 "menuCategory":"브라질리언 왁싱",
-                "menu":"브라질리언 왁싱"
+                "menu":"브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_2.png"
             }
         ]
     },
@@ -793,28 +825,32 @@ export const shops = [
                 "rating":"4.7",
                 "content":"웨딩 메이크업이 너무 마음에 들었어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_1.png"
             },
             {
                 "name":"이수민",
                 "rating":"4.5",
                 "content":"친절하고 세심하게 해주셔서 좋았어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             },
             {
                 "name":"김예은",
                 "rating":"4.8",
                 "content":"기본 메이크업인데도 정말 만족스러웠습니다.",
                 "menuCategory":"메이크업",
-                "menu":"기본 메이크업"
+                "menu":"기본 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             },
             {
                 "name":"박가영",
                 "rating":"5.0",
                 "content":"드레스 메이크업이 아주 잘 어울렸습니다.",
                 "menuCategory":"드레스 메이크업",
-                "menu":"드레스 메이크업"
+                "menu":"드레스 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             }
         ]
     },
@@ -899,28 +935,32 @@ export const shops = [
                 "rating":"5.0",
                 "content":"펌이 정말 잘 나왔어요! 대만족입니다.",
                 "menuCategory":"펌",
-                "menu":"일반 펌"
+                "menu":"일반 펌",
+                "reviewImgUri": "/assets_shop/rv_perm_M_1.png"
             },
             {
                 "name":"정민수",
                 "rating":"4.8",
                 "content":"디지털 펌이 정말 자연스럽게 나왔어요.",
                 "menuCategory":"펌",
-                "menu":"디지털 펌"
+                "menu":"디지털 펌",
+                "reviewImgUri": "/assets_shop/rv_perm_M_2.png"
             },
             {
                 "name":"박지연",
                 "rating":"5.0",
                 "content":"여성 컷 너무 마음에 들어요. 다음에 또 올게요.",
                 "menuCategory":"컷",
-                "menu":"여성 컷"
+                "menu":"여성 컷",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             },
             {
                 "name":"김준호",
                 "rating":"4.9",
                 "content":"남성 컷이 깔끔하게 잘 되었어요.",
                 "menuCategory":"컷",
-                "menu":"남성 컷"
+                "menu":"남성 컷",
+                "reviewImgUri": "/assets_shop/rv_M_1.png"
             }
         ]
     },
@@ -998,28 +1038,32 @@ export const shops = [
                 "rating":"4.9",
                 "content":"웨딩 메이크업 너무 아름답게 나왔어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_1.png"
             },
             {
                 "name":"이지혜",
                 "rating":"4.7",
                 "content":"메이크업이 너무 자연스럽고 예뻤어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             },
             {
                 "name":"김민정",
                 "rating":"4.8",
                 "content":"기본 메이크업인데도 정말 만족스럽습니다.",
                 "menuCategory":"메이크업",
-                "menu":"기본 메이크업"
+                "menu":"기본 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             },
             {
                 "name":"박지수",
                 "rating":"5.0",
                 "content":"드레스 메이크업이 완벽했어요!",
                 "menuCategory":"드레스 메이크업",
-                "menu":"드레스 메이크업"
+                "menu":"드레스 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             }
         ]
     },
@@ -1085,28 +1129,32 @@ export const shops = [
                 "rating":"4.5",
                 "content":"웨딩 메이크업이 너무 마음에 들어요!",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_1.png"
             },
             {
                 "name":"정수진",
                 "rating":"4.3",
                 "content":"친절하게 상담해주셔서 좋았어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             },
             {
                 "name":"이윤아",
                 "rating":"4.6",
                 "content":"기본 메이크업이 너무 예쁘게 나왔어요.",
                 "menuCategory":"메이크업",
-                "menu":"기본 메이크업"
+                "menu":"기본 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             },
             {
                 "name":"최유진",
                 "rating":"4.8",
                 "content":"웨딩 메이크업 정말 만족스럽습니다.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             }
         ]
     },
@@ -1184,28 +1232,32 @@ export const shops = [
                 "rating":"4.9",
                 "content":"웨딩 메이크업 너무 예뻐요!",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             },
             {
                 "name":"박세은",
                 "rating":"4.7",
                 "content":"자연스럽고 예쁜 메이크업이었어요.",
                 "menuCategory":"메이크업",
-                "menu":"웨딩 메이크업"
+                "menu":"웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             },
             {
                 "name":"이정민",
                 "rating":"4.8",
                 "content":"기본 메이크업이지만 정말 만족합니다.",
                 "menuCategory":"메이크업",
-                "menu":"기본 메이크업"
+                "menu":"기본 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_1.png"
             },
             {
                 "name":"김하늘",
                 "rating":"5.0",
                 "content":"드레스 메이크업이 정말 마음에 들었어요.",
                 "menuCategory":"드레스 메이크업",
-                "menu":"드레스 메이크업"
+                "menu":"드레스 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             }
         ]
     },
@@ -1337,14 +1389,16 @@ export const shops = [
                 "rating": "4.5",
                 "content": "자연스러운 메이크업을 해주셔서 감사합니다.",
                 "menuCategory": "메이크업",
-                "menu": "기본 메이크업"
+                "menu": "기본 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             },
             {
                 "name": "박미영",
                 "rating": "5.0",
                 "content": "웨딩 메이크업이 정말 마음에 들었어요.",
                 "menuCategory": "메이크업",
-                "menu": "웨딩 메이크업"
+                "menu": "웨딩 메이크업",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             }
         ]
     },
@@ -1408,14 +1462,16 @@ export const shops = [
                 "rating": "5.0",
                 "content": "정말 힐링되는 시간이었어요. 감사합니다.",
                 "menuCategory": "바디 마사지",
-                "menu": "전신 아로마 마사지"
+                "menu": "전신 아로마 마사지",
+                "reviewImgUri": "/assets_shop/rv_masage_1.png"
             },
             {
                 "name": "한유리",
                 "rating": "4.8",
                 "content": "피부가 정말 좋아졌어요. 추천합니다.",
                 "menuCategory": "페이스 마사지",
-                "menu": "얼굴 아로마 마사지"
+                "menu": "얼굴 아로마 마사지",
+                "reviewImgUri": "/assets_shop/masage_1.png"
             }
         ]
     },
@@ -1474,14 +1530,16 @@ export const shops = [
                 "rating": "4.5",
                 "content": "발 마사지가 정말 시원했습니다.",
                 "menuCategory": "발 마사지",
-                "menu": "기본 발 마사지"
+                "menu": "기본 발 마사지",
+                "reviewImgUri": "/assets_shop/rv_masage_1.png"
             },
             {
                 "name": "이상훈",
                 "rating": "4.0",
                 "content": "리플렉솔로지가 최고였어요. 추천합니다.",
                 "menuCategory": "발 마사지",
-                "menu": "리플렉솔로지"
+                "menu": "리플렉솔로지",
+                "reviewImgUri": "/assets_shop/rv_masage_2.png"
             }
         ]
     },
@@ -1552,14 +1610,16 @@ export const shops = [
                 "rating": "5.0",
                 "content": "정말 시원한 스포츠 마사지였습니다.",
                 "menuCategory": "바디 마사지",
-                "menu": "스포츠 마사지"
+                "menu": "스포츠 마사지",
+                "reviewImgUri": "/assets_shop/rv_masage_1.png"
             },
             {
                 "name": "박지민",
                 "rating": "4.8",
                 "content": "스웨디시 마사지가 편안하고 좋았어요.",
                 "menuCategory": "바디 마사지",
-                "menu": "스웨디시 마사지"
+                "menu": "스웨디시 마사지",
+                "reviewImgUri": "/assets_shop/masage_1.png"
             }
         ]
     },
@@ -1604,14 +1664,16 @@ export const shops = [
                 "rating": "5.0",
                 "content": "속눈썹이 자연스럽고 예쁘게 연장되었어요.",
                 "menuCategory": "기타",
-                "menu": "속눈썹 연장"
+                "menu": "속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_2.png"
             },
             {
                 "name": "조민주",
                 "rating": "4.9",
                 "content": "서비스가 정말 만족스러웠습니다.",
                 "menuCategory": "기타",
-                "menu": "속눈썹 연장"
+                "menu": "속눈썹 연장",
+                "reviewImgUri": "/assets_shop/rv_eyelashe_3.png"
             }
         ]
     },
@@ -1675,7 +1737,8 @@ export const shops = [
                 'rating': "4.8",
                 'content': "친절하고 전문가의 손길이 느껴집니다.",
                 'menuCategory': "컷",
-                'menu': "여성 컷"
+                'menu': "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             }
         ]
     },
@@ -1727,7 +1790,8 @@ export const shops = [
                 rating: "4.5",
                 content: "젤 네일이 정말 오래 가고 예뻐요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_2.png"
             }
         ]
     },
@@ -1779,7 +1843,8 @@ export const shops = [
                 rating: "4.3",
                 content: "네일이 예쁘고 지속력이 좋아요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_2.png"
             }
         ]
     },
@@ -1843,7 +1908,8 @@ export const shops = [
                 rating: "4.9",
                 content: "왁싱이 정말 깔끔하고 만족스러웠어요.",
                 menuCategory: "바디 왁싱",
-                menu: "다리 왁싱"
+                menu: "다리 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_1.png"
             }
         ]
     },
@@ -1907,7 +1973,8 @@ export const shops = [
                 rating: "4.2",
                 content: "친절하고 세심하게 컷을 해주셨어요.",
                 menuCategory: "컷",
-                menu: "여성 컷"
+                menu: "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_W_3.png"
             }
         ]
     },
@@ -1959,7 +2026,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 너무 예쁘게 나왔어요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_3.png"
             }
         ]
     },
@@ -2004,7 +2072,8 @@ export const shops = [
                 rating: "4.6",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             }
         ]
     },
@@ -2061,7 +2130,8 @@ export const shops = [
                 rating: "4.9",
                 content: "속눈썹 연장이 자연스럽고 예뻐요.",
                 menuCategory: "속눈썹 연장",
-                menu: "속눈썹 연장"
+                menu: "속눈썹 연장",
+                reviewImgUri: "/assets_shop/rv_W_2.png"
             }
         ]
     },
@@ -2177,7 +2247,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 예쁘고 깔끔해요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_4.png"
             }
         ]
     },
@@ -2222,7 +2293,8 @@ export const shops = [
                 rating: "4.4",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             }
         ]
     },
@@ -2279,7 +2351,8 @@ export const shops = [
                 rating: "4.8",
                 content: "속눈썹 연장이 자연스럽고 예뻐요.",
                 menuCategory: "속눈썹 연장",
-                menu: "속눈썹 연장"
+                menu: "속눈썹 연장",
+                reviewImgUri: "/assets_shop/rv_W_4.png"
             }
         ]
     },
@@ -2324,7 +2397,8 @@ export const shops = [
                 rating: "4.8",
                 content: "전신 마사지가 정말 시원하고 좋았습니다.",
                 menuCategory: "바디 마사지",
-                menu: "전신 마사지"
+                menu: "전신 마사지",
+                reviewImgUri: "/assets_shop/rv_masage_1.png"
             }
         ]
     },
@@ -2388,7 +2462,8 @@ export const shops = [
                 rating: "4.2",
                 content: "친절하고 세심하게 컷을 해주셨어요.",
                 menuCategory: "컷",
-                menu: "여성 컷"
+                menu: "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_W_4.png"
             }
         ]
     },
@@ -2440,7 +2515,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 너무 예쁘게 나왔어요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_1.png"
             }
         ]
     },
@@ -2485,7 +2561,8 @@ export const shops = [
                 rating: "4.4",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_3.png"
             }
         ]
     },
@@ -2537,7 +2614,8 @@ export const shops = [
                 rating: "4.8",
                 content: "메이크업이 너무 예쁘게 나왔어요.",
                 menuCategory: "메이크업",
-                menu: "웨딩 메이크업"
+                menu: "웨딩 메이크업",
+                reviewImgUri: "/assets_shop/rv_W_4.png"
             }
         ]
     },
@@ -2589,7 +2667,8 @@ export const shops = [
                 rating: "4.8",
                 content: "속눈썹 연장이 자연스럽고 예뻐요.",
                 menuCategory: "속눈썹 연장",
-                menu: "속눈썹 연장"
+                menu: "속눈썹 연장",
+                reviewImgUri: "/assets_shop/rv_eyelashe_2.png"
             }
         ]
     },
@@ -2646,7 +2725,8 @@ export const shops = [
                 rating: "4.8",
                 content: "전신 아로마 마사지가 정말 좋았습니다.",
                 menuCategory: "바디 마사지",
-                menu: "전신 아로마 마사지"
+                menu: "전신 아로마 마사지",
+                reviewImgUri: "/assets_shop/rv_masage_2.png"
             }
         ]
     },
@@ -2710,7 +2790,8 @@ export const shops = [
                 rating: "4.5",
                 content: "컷이 정말 예쁘게 나왔어요.",
                 menuCategory: "컷",
-                menu: "여성 컷"
+                menu: "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_cut_W_1.png"
             }
         ]
     },
@@ -2762,7 +2843,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 너무 예쁘게 나왔어요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_5.png"
             }
         ]
     },
@@ -2807,7 +2889,8 @@ export const shops = [
                 rating: "4.4",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_4.png"
             }
         ]
     },
@@ -2859,7 +2942,8 @@ export const shops = [
                 rating: "4.8",
                 content: "메이크업이 너무 예쁘게 나왔어요.",
                 menuCategory: "메이크업",
-                menu: "웨딩 메이크업"
+                menu: "웨딩 메이크업",
+                reviewImgUri: "/assets_shop/rv_W_3.png"
             }
         ]
     },
@@ -2911,7 +2995,8 @@ export const shops = [
                 rating: "4.9",
                 content: "속눈썹 연장이 자연스럽고 예뻐요.",
                 menuCategory: "속눈썹 연장",
-                menu: "속눈썹 연장"
+                menu: "속눈썹 연장",
+                reviewImgUri: "/assets_shop/rv_eyelashe_3.png"
             }
         ]
     },
@@ -2956,7 +3041,8 @@ export const shops = [
                 rating: "4.8",
                 content: "전신 마사지가 정말 시원하고 좋았습니다.",
                 menuCategory: "바디 마사지",
-                menu: "전신 마사지"
+                menu: "전신 마사지",
+                reviewImgUri: "/assets_shop/rv_masage_1.png"
             }
         ]
     },
@@ -3020,7 +3106,8 @@ export const shops = [
                 rating: "4.2",
                 content: "친절하고 세심하게 컷을 해주셨어요.",
                 menuCategory: "컷",
-                menu: "여성 컷"
+                menu: "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_cut_W_1.png"
             }
         ]
     },
@@ -3072,7 +3159,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 너무 예쁘게 나왔어요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_4.png"
             }
         ]
     },
@@ -3117,7 +3205,8 @@ export const shops = [
                 rating: "4.4",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_1.png"
             }
         ]
     },
@@ -3169,7 +3258,8 @@ export const shops = [
                 rating: "4.8",
                 content: "메이크업이 너무 예쁘게 나왔어요.",
                 menuCategory: "메이크업",
-                menu: "웨딩 메이크업"
+                menu: "웨딩 메이크업",
+                reviewImgUri: "/assets_shop/makeup_W_2.png"
             }
         ]
     },
@@ -3226,7 +3316,8 @@ export const shops = [
                 rating: "4.8",
                 content: "속눈썹 연장이 자연스럽고 예뻐요.",
                 menuCategory: "속눈썹 연장",
-                menu: "속눈썹 연장"
+                menu: "속눈썹 연장",
+                reviewImgUri: "/assets_shop/rv_eyelashe_2.png"
             }
         ]
     },
@@ -3283,7 +3374,8 @@ export const shops = [
                 rating: "5.0",
                 content: "정말 힐링되는 시간이었습니다.",
                 menuCategory: "바디 마사지",
-                menu: "전신 아로마 마사지"
+                menu: "전신 아로마 마사지",
+                reviewImgUri: "/assets_shop/masage_3.png"
             }
         ]
     },
@@ -3347,7 +3439,8 @@ export const shops = [
                 rating: "4.2",
                 content: "친절하고 세심하게 컷을 해주셨어요.",
                 menuCategory: "컷",
-                menu: "여성 컷"
+                menu: "여성 컷",
+                "reviewImgUri": "/assets_shop/rv_W_2.png"
             }
         ]
     },
@@ -3399,7 +3492,8 @@ export const shops = [
                 rating: "4.8",
                 content: "네일 아트가 너무 예쁘게 나왔어요.",
                 menuCategory: "네일 아트",
-                menu: "젤 네일"
+                menu: "젤 네일",
+                reviewImgUri: "/assets_shop/rv_nail_3.png"
             }
         ]
     },
@@ -3444,7 +3538,8 @@ export const shops = [
                 rating: "4.4",
                 content: "왁싱이 깔끔하고 오래 지속됩니다.",
                 menuCategory: "바디 왁싱",
-                menu: "브라질리언 왁싱"
+                menu: "브라질리언 왁싱",
+                "reviewImgUri": "/assets_shop/waxing_3.png"
             }
         ]
     }
