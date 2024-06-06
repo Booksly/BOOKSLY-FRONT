@@ -83,17 +83,17 @@ const StoreCard2 = ({
             <span className="store_where">{address}</span>
           </div>
         </div>
-        <div className="menu-names">
+        <div className="menu_names">
           <span className="menu_name">{menu}</span>
         </div>
       </div>
       <div className="store_can_reserve_contents">
-        <div className="store_can_reserve_content">
-          <span className="store_can_reserve_info">
-            총 {total_sale_late}% 할인
-          </span>
-          <span className="store_can_reserve_info">{sale_name}</span>
-        </div>
+        {/*<div className="store_can_reserve_content">*/}
+        {/*  <span className="store_can_reserve_info">*/}
+        {/*    총 {total_sale_late}% 할인*/}
+        {/*  </span>*/}
+        {/*  <span className="store_can_reserve_info">{sale_name}</span>*/}
+        {/*</div>*/}
         <div className="store_can_reserve_content">
           <span className="store_can_reserve_info">
             {possible_reserve_time}
