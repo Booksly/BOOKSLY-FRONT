@@ -11,6 +11,7 @@ import StoreOwnerMainEmpPopup from "./StoreOwnerMainEmpPopup";
 import StandByReservation_Owner from "../StandByReservation_Owner/StandByReservation";
 import StoreOwnerMainTodayReservConfirm from "./StoreOwnerMainTodayReservConfirm";
 import StoreOwnerMainReservConfirm from "./StoreOwnerMainReservConfirm";
+import StandByReservationOwner from '../StandByReservation_Owner/StandByReservation';
 
 let options = [
     {value: "all", label: "전체"},
@@ -25,12 +26,23 @@ const reservations = [
     { year: 2024, month: 6, day: 20 },
 ];
 
-
-const Calendar = ({ reservations = [] }) => {
+const Calendar = ({ reservations = [], modalType }) => {
     const [date, setDate] = useState(new Date()); // 초기값: 현재 날짜
+    const [modalState, setModalState] = useState({ isOpen: false, selectedDate: null });
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+        },
+    };
 
     const handleDateClick = (day) => {
-        alert(`Selected date: ${date.getFullYear()}-${date.getMonth() + 1}-${day}`);
+        setModalState({ isOpen: true, selectedDate: new Date(date.getFullYear(), date.getMonth(), day) });
     };
 
     const handlePrevMonth = () => {
@@ -80,6 +92,10 @@ const Calendar = ({ reservations = [] }) => {
         return days;
     };
 
+    const closeModal = () => {
+        setModalState({ isOpen: false, selectedDate: null });
+    };
+
     return (
         <div className="SOMcalendar-example-2">
             <div className="SOMmonth-header">
@@ -103,10 +119,113 @@ const Calendar = ({ reservations = [] }) => {
             <div className="SOMweek-days">
                 {renderCalendar()}
             </div>
+            <Modal
+                isOpen={modalState.isOpen}
+                onRequestClose={closeModal}
+                style={customStyles}
+            >
+                {modalType === 'StoreOwnerMainReservConfirm' ? (
+                    <StoreOwnerMainReservConfirm selectedDate={modalState.selectedDate} />
+                ) : (
+                    <StandByReservationOwner />
+                )}
+            </Modal>
         </div>
     );
 };
 
+function Scheduler({ startTime, endTime, items }) {
+    const [activeIndexes1, setActiveIndexes1] = useState([]);
+    const [activeIndexes2, setActiveIndexes2] = useState([]);
+
+    // 시작 시간과 끝 시간을 분 단위로 변환
+    const startHour = parseInt(startTime.split(':')[0], 10);
+    const startMinute = parseInt(startTime.split(':')[1], 10);
+    const endHour = parseInt(endTime.split(':')[0], 10);
+    const endMinute = parseInt(endTime.split(':')[1], 10);
+
+    // 시작 시간을 분 단위로 변환
+    let totalMinutes = startHour * 60 + startMinute;
+
+    // 시간 노트 생성
+    const timeNotes = [];
+    while (totalMinutes < endHour * 60 + endMinute) {
+        const hour = Math.floor(totalMinutes / 60);
+        const minute = totalMinutes % 60;
+
+        // 시간을 HH:MM 형식으로 표시
+        const timeStr = `${hour < 10 ? '0' + hour : hour}:${minute === 0 ? '00' : '30'}`;
+
+        timeNotes.push(
+            <div className="SOMtime-note" key={`time-note-${totalMinutes}`}>
+                <div className="SOMcontainer-100">{timeStr}</div>
+                <div className="SOMcontainer-101">|</div>
+                <div className="SOMmenu-list-1">
+                    <div className="SOMcontainer-102">{items[Math.floor(totalMinutes / 30) - (startHour * 2)]}</div>
+                </div>
+            </div>
+        );
+
+        // 30분 증가
+        totalMinutes += 30;
+    };
+
+    // 체크 박스 클릭 시 활성화 상태 변경 함수
+    const handleCheckBoxClick1 = (index) => {
+        const currentIndex = activeIndexes1.indexOf(index);
+        const newIndexes = [...activeIndexes1];
+
+        if (currentIndex === -1) {
+            newIndexes.push(index);
+        } else {
+            newIndexes.splice(currentIndex, 1);
+        }
+
+        setActiveIndexes1(newIndexes);
+    };
+
+    const handleCheckBoxClick2 = (index) => {
+        const currentIndex = activeIndexes2.indexOf(index);
+        const newIndexes = [...activeIndexes2];
+
+        if (currentIndex === -1) {
+            newIndexes.push(index);
+        } else {
+            newIndexes.splice(currentIndex, 1);
+        }
+
+        setActiveIndexes2(newIndexes);
+    };
+
+    // 체크 박스 생성
+    const checkBoxes = timeNotes.map((timeNote, index) => (
+        <div className="SOMcheck-box" key={`check-box-${index}`}>
+            <button className={`SOMrectangle-246 ${activeIndexes1.includes(index) ? 'active' : ''}`} onClick={() => handleCheckBoxClick1(index)}></button>
+            <button className={`SOMrectangle-247 ${activeIndexes2.includes(index) ? 'active' : ''}`} onClick={() => handleCheckBoxClick2(index)}></button>
+        </div>
+    ));
+
+    // 스케줄러 컴포넌트 반환
+    return (
+        <div className="scroll">
+            <div className="SOMdldccheck">
+                <div className="SOMtime-memo">
+                    {timeNotes}
+                </div>
+                <div className="SOMdeadline-dccheck">
+                    {checkBoxes}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// items의 기본값 설정
+Scheduler.defaultProps = {
+    startTime: '10:00', // 기본 시작 시간
+    endTime: '20:00', // 기본 종료 시간
+    items: ['여성 커트, 클리닉'] // 기본 항목
+};
 
 export default function StoreOwnerMain() {
     const [selectValue, setSelectValue] = useState('');
@@ -231,9 +350,10 @@ export default function StoreOwnerMain() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="SOMstore-detailed-info-pic">
-                                        <div className="SOMprofile-select-1">
-                                        </div>
+                                    <div className="SOMstore-detailed-info-pic"
+                                         style={{ backgroundImage: `url("/images/hair_1.png")` }}>
+                                        {/*<div className="SOMprofile-select-1">*/}
+                                        {/*</div>*/}
                                     </div>
                                 </div>
                                 <button className="SOMmodify-1" onClick={() => openModal('firstModal')}>
@@ -250,11 +370,13 @@ export default function StoreOwnerMain() {
                                 <div className="SOMframe-522">
                                     <div className="SOMtoday-reserv">
                                         <div className="SOMtoday">
-                                            <button className="SOMcontainer-98" onClick={() => openModal('SOMTRCModal')}>
+                                            <button className="SOMcontainer-98"
+                                                    onClick={() => openModal('SOMTRCModal')}>
                                                 오늘 예약
                                             </button>
                                             <Modal isOpen={modalState.SOMTRCModal}
-                                                   onRequestClose={() => closeModal('SOMTRCModal')} style={customStyles}>
+                                                   onRequestClose={() => closeModal('SOMTRCModal')}
+                                                   style={customStyles}>
                                                 <StoreOwnerMainTodayReservConfirm/>
                                             </Modal>
                                             <div className="SOMgroup-502">
@@ -273,12 +395,6 @@ export default function StoreOwnerMain() {
                                                         placeholder="전체"
                                                     />
                                                 </>
-                                                {/*<div className="SOMselect-box-before">*/}
-                                                {/*    /!*<div className="SOMcontainer-99">*!/*/}
-                                                {/*    /!*  제이 원장*!/*/}
-                                                {/*    /!*</div>*!/*/}
-                                                {/*    /!*<img className="SOMarrow-button-before" src="SOMassets/vectors/ArrowButtonBefore2_x2.svg" />*!/*/}
-                                                {/*</div>*/}
                                             </div>
                                         </div>
                                         <div className="SOMcheck">
@@ -289,199 +405,24 @@ export default function StoreOwnerMain() {
                                                 마감임박할인
                                             </div>
                                         </div>
-                                        <div className="scroll">
-                                            <div className="SOMdldccheck">
-                                                <div className="SOMtime-memo">
-                                                    <div className="SOMtime-note">
-                                                        <div className="SOMcontainer-100">
-                                                            12:30
-                                                        </div>
-                                                        <div className="SOMcontainer-101">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-1">
-                                                            <div className="SOMcontainer-102">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-1">
-                                                        <div className="SOMcontainer-103">
-                                                            13:00
-                                                        </div>
-                                                        <div className="SOMcontainer-104">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-2">
-                                                            <div className="SOMcontainer-105">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-2">
-                                                        <div className="SOMcontainer-106">
-                                                            13:30
-                                                        </div>
-                                                        <div className="SOMcontainer-107">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-3">
-                                                            <div className="SOMcontainer-108">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-3">
-                                                        <div className="SOMcontainer-109">
-                                                            14:00
-                                                        </div>
-                                                        <div className="SOMcontainer-110">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-2">
-                                                            <div className="SOMcontainer-111">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-4">
-                                                        <div className="SOMcontainer-112">
-                                                            14:30
-                                                        </div>
-                                                        <div className="SOMcontainer-113">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-21">
-                                                            <div className="SOMcontainer-114">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-5">
-                                                        <div className="SOMcontainer-115">
-                                                            15:00
-                                                        </div>
-                                                        <div className="SOMcontainer-116">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-22">
-                                                            <div className="SOMcontainer-117">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-6">
-                                                        <div className="SOMcontainer-118">
-                                                            15:30
-                                                        </div>
-                                                        <div className="SOMcontainer-119">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-23">
-                                                            <div className="SOMcontainer-120">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-7">
-                                                        <div className="SOMcontainer-121">
-                                                            16:00
-                                                        </div>
-                                                        <div className="SOMcontainer-122">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-24">
-                                                            <div className="SOMcontainer-123">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMtime-note-8">
-                                                        <div className="SOMcontainer-124">
-                                                            16:30
-                                                        </div>
-                                                        <div className="SOMcontainer-125">
-                                                            |
-                                                        </div>
-                                                        <div className="SOMmenu-list-25">
-                                                            <div className="SOMcontainer-126">
-                                                                여성 커트, 클리닉
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="SOMdeadline-dccheck">
-                                                    <div className="SOMcheck-box">
-                                                        <div className="SOMrectangle-246">
-                                                        </div>
-                                                        <div className="SOMrectangle-247">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-1">
-                                                        <div className="SOMrectangle-2461">
-                                                        </div>
-                                                        <div className="SOMrectangle-2471">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-2">
-                                                        <div className="SOMrectangle-2462">
-                                                        </div>
-                                                        <div className="SOMrectangle-2472">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-3">
-                                                        <div className="SOMrectangle-2463">
-                                                        </div>
-                                                        <div className="SOMrectangle-2473">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-4">
-                                                        <div className="SOMrectangle-2464">
-                                                        </div>
-                                                        <div className="SOMrectangle-2474">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-5">
-                                                        <div className="SOMrectangle-2465">
-                                                        </div>
-                                                        <div className="SOMrectangle-2475">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-6">
-                                                        <div className="SOMrectangle-2466">
-                                                        </div>
-                                                        <div className="SOMrectangle-2476">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-7">
-                                                        <div className="SOMrectangle-2467">
-                                                        </div>
-                                                        <div className="SOMrectangle-2477">
-                                                        </div>
-                                                    </div>
-                                                    <div className="SOMcheck-box-8">
-                                                        <div className="SOMrectangle-2468">
-                                                        </div>
-                                                        <div className="SOMrectangle-2478">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <Scheduler
+                                            items={['여성 커트, 클리닉', '', '', '남성 커트', '', '염색, 학생 커트', '', '', '일반펌', '트리트먼트', '', '탈색, 여성 커트', '여성 커트', '남성 커트', '', '', '학생 커트', '', '', '', '']}/>
                                     </div>
                                 </div>
+                                {/*<div className="SOMall-reserv">*/}
+                                {/*    <button className="SOMcontainer-132" onClick={() => openModal('SOMRCModal')}>*/}
+                                {/*        전체 예약*/}
+                                {/*    </button>*/}
+                                {/*    <Modal isOpen={modalState.SOMRCModal}*/}
+                                {/*           onRequestClose={() => closeModal('SOMRCModal')} style={customStyles}>*/}
+                                {/*        <StoreOwnerMainReservConfirm/>*/}
+                                {/*    </Modal>*/}
+                                {/*    <Calendar />*/}
+                                {/*</div>*/}
                                 <div className="SOMall-reserv">
-                                    <button className="SOMcontainer-132" onClick={() => openModal('SOMRCModal')}>
-                                        전체 예약
-                                    </button>
-                                    <Modal isOpen={modalState.SOMRCModal}
-                                           onRequestClose={() => closeModal('SOMRCModal')} style={customStyles}>
-                                        <StoreOwnerMainReservConfirm/>
-                                    </Modal>
-                                    {/*<div className="SOMcontainer-132">*/}
-                                    {/*    전체 예약*/}
-                                    {/*</div>*/}
-                                    <Calendar />
+                                    <div className="SOMcontainer-132" onClick={() => openModal('SOMRCModal')}>
+                                        전체 예약 </div>
+                                    <Calendar modalType="StoreOwnerMainReservConfirm" />
                                 </div>
                             </div>
                             <div className="SOMwait-reservation">
@@ -509,21 +450,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div className="SOMwait-list">
@@ -539,21 +480,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div className="SOMwait-list">
@@ -569,21 +510,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <button className="SOMframe-523" onClick={() => openModal('SBROModal')}>
@@ -619,21 +560,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div className="SOMwait-list">
@@ -649,21 +590,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div className="SOMwait-list">
@@ -679,21 +620,21 @@ export default function StoreOwnerMain() {
                                                     </div>
                                                 </div>
                                                 <div className="SOMwait-reserv-button">
-                                                    <div className="SOMconfirm-button">
+                                                    <button className="SOMconfirm-button">
                                                         <div className="SOM-cbutton">
                                                             확정
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMrefuse-button">
+                                                    </button>
+                                                    <button className="SOMrefuse-button">
                                                         <div className="SOM-rbutton">
                                                             거절
                                                         </div>
-                                                    </div>
-                                                    <div className="SOMplus-button">
+                                                    </button>
+                                                    <button className="SOMplus-button">
                                                         <div className="SOM-pbutton">
                                                             ...
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <button className="SOMframe-523" onClick={() => openModal('SBROModal')}>
@@ -708,13 +649,14 @@ export default function StoreOwnerMain() {
                                             </Modal>
                                         </div>
                                     </div>
-                                    <Calendar reservations={reservations} />
+                                    <Calendar reservations={reservations} modalType="StandByReservationOwner"/>
                                 </div>
                             </div>
                             <div className="SOMmenu-box">
                                 <div className="SOMmenu-list">
                                     <div className="SOMmenu-info">
-                                        <div className="SOMmenu-pic">
+                                        <div className="SOMmenu-pic"
+                                             style={{ backgroundImage: `url("/assets_shop/cut_W_3.png")` }}>
                                         </div>
                                         <div className="SOMmenu">
                                             <div className="SOMmenu-name">
@@ -729,7 +671,8 @@ export default function StoreOwnerMain() {
                                         </div>
                                     </div>
                                     <div className="SOMmenu-info">
-                                        <div className="SOMmenu-pic">
+                                        <div className="SOMmenu-pic"
+                                             style={{ backgroundImage: `url("/assets_shop/cut_M_2.png")` }}>
                                         </div>
                                         <div className="SOMmenu">
                                             <div className="SOMmenu-name">
@@ -744,7 +687,24 @@ export default function StoreOwnerMain() {
                                         </div>
                                     </div>
                                     <div className="SOMmenu-info">
-                                        <div className="SOMmenu-pic">
+                                        <div className="SOMmenu-pic"
+                                             style={{ backgroundImage: `url("/assets_shop/perm_W_1.png")` }}>
+                                        </div>
+                                        <div className="SOMmenu">
+                                            <div className="SOMmenu-name">
+                                                일반펌
+                                            </div>
+                                            <div className="SOMmenu-line">
+                                                |
+                                            </div>
+                                            <div className="SOMmenu-price">
+                                                30,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="SOMmenu-info">
+                                        <div className="SOMmenu-pic"
+                                             style={{ backgroundImage: `url("/assets_shop/perm_M_1.png")` }}>
                                         </div>
                                         <div className="SOMmenu">
                                             <div className="SOMmenu-name">
@@ -755,21 +715,6 @@ export default function StoreOwnerMain() {
                                             </div>
                                             <div className="SOMmenu-price">
                                                 50,000
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="SOMmenu-info">
-                                        <div className="SOMmenu-pic">
-                                        </div>
-                                        <div className="SOMmenu">
-                                            <div className="SOMmenu-name">
-                                                펌
-                                            </div>
-                                            <div className="SOMmenu-line">
-                                                |
-                                            </div>
-                                            <div className="SOMmenu-price">
-                                                30,000
                                             </div>
                                         </div>
                                     </div>
@@ -786,7 +731,8 @@ export default function StoreOwnerMain() {
                             <div className="SOMstaff-box">
                                 <div className="SOMstaff-list">
                                     <div className="SOMstaff-info">
-                                        <div className="SOMstaff-img">
+                                        <div className="SOMstaff-img"
+                                             style={{ backgroundImage: `url("/assets_shop/designer_M_4.png")` }}>
                                         </div>
                                         <div className="SOMstaff">
                                             <div className="SOMemp-name">
@@ -798,7 +744,8 @@ export default function StoreOwnerMain() {
                                         </div>
                                     </div>
                                     <div className="SOMstaff-info">
-                                        <div className="SOMstaff-img">
+                                        <div className="SOMstaff-img"
+                                             style={{ backgroundImage: `url("/assets_shop/designer_W_4.png")` }}>
                                         </div>
                                         <div className="SOMstaff">
                                             <div className="SOMemp-name">
@@ -810,7 +757,8 @@ export default function StoreOwnerMain() {
                                         </div>
                                     </div>
                                     <div className="SOMstaff-info">
-                                        <div className="SOMstaff-img">
+                                        <div className="SOMstaff-img"
+                                             style={{ backgroundImage: `url("/assets_shop/designer_W_6.png")` }}>
                                         </div>
                                         <div className="SOMstaff">
                                             <div className="SOMemp-name">
@@ -831,11 +779,6 @@ export default function StoreOwnerMain() {
                                        style={customStyles}>
                                     <StoreOwnerMainEmpPopup/>
                                 </Modal>
-                                {/*<div className="SOM-Regist-Modify">*/}
-                                {/*    <div className="SOM-RM-button">*/}
-                                {/*      등록/수정*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
                             </div>
                         </div>
                     </div>

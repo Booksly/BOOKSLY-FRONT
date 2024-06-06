@@ -17,9 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }
 .StoreOwnerMain .SOMcontainer {
   display: flex;
@@ -28,7 +26,7 @@
   height: auto;
   padding-top: 50px;
   min-height: 100vh;
-  margin-bottom: 20px;
+  padding-bottom: 100px;
 }
 .StoreOwnerMain .SOMframe {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -176,14 +174,16 @@
   height: 18px;
 }
 .StoreOwnerMain .SOMstore-detailed-info-pic {
-  background: #a7a7a7;
+  /*background: #a7a7a7;*/
   display: flex;
-  padding: 56px 0;
+  /*padding: 56px 0;*/
   width: 185px;
   height: 135px;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 .StoreOwnerMain .SOMprofile-select-1 {
   background: url("../../assets/ProfileSelect.png") 50% / cover no-repeat;
@@ -439,6 +439,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  padding:0;
 }
 .StoreOwnerMain .SOM-cbutton,
 .SOM-rbutton {
@@ -447,11 +448,15 @@
   font-size: 15px;
   line-height: 1.333;
   color: #000000;
+
 }
 .StoreOwnerMain .SOMplus-button {
   margin-bottom: 7px;
   display: flex;
   box-sizing: border-box;
+  border: 0;
+  background: 0;
+  padding:0;
 }
 .StoreOwnerMain .SOM-pbutton {
   overflow-wrap: break-word;
@@ -459,6 +464,8 @@
   font-size: 15px;
   line-height: 1;
   color: #000000;
+  border: 0;
+  background: 0;
 }
 .StoreOwnerMain .SOMwait-list-1 {
   margin: 0 0 5px 25px;
@@ -1023,6 +1030,8 @@
   margin-bottom: 5px;
   width: 168px;
   height: 126px;
+  background-size: cover;
+  background-position: center;
 }
 .StoreOwnerMain .SOMmenu {
   margin: 0 10px 0 10px;
@@ -1097,6 +1106,8 @@
   margin-bottom: 5px;
   width: 150px;
   height: 200px;
+  background-size: cover;
+  background-position: center;
 }
 .StoreOwnerMain .SOMstaff {
   /*margin: 0 6.5px;*/
@@ -1238,14 +1249,13 @@
   overflow-wrap: break-word;
   font-weight: 700;
   font-size: 15px;
-  text-decoration-line: line-through;
+  /*text-decoration-line: line-through;*/
   line-height: 1.333;
   color: #000000;
 }
 .StoreOwnerMain .SOMcontainer-101 {
   margin-right: 5.4px;
   overflow-wrap: break-word;
-
   font-weight: 700;
   font-size: 15px;
   line-height: 1.333;
@@ -1260,7 +1270,7 @@
 
   font-weight: 700;
   font-size: 15px;
-  text-decoration-line: line-through;
+  /*text-decoration-line: line-through;*/
   line-height: 1.333;
   color: #000000;
 }
@@ -1609,11 +1619,21 @@
   width: 17px;
   height: 17px;
 }
+
 .StoreOwnerMain .SOMrectangle-247 {
   background: #adadad;
   width: 17px;
   height: 17px;
 }
+
+.StoreOwnerMain .SOMrectangle-246.active {
+  background: orange;
+}
+
+.StoreOwnerMain .SOMrectangle-247.active {
+  background: orange;
+}
+
 .StoreOwnerMain .SOMcheck-box-1 {
   margin: 0 12px 13px 12px;
   display: flex;
@@ -2323,7 +2343,6 @@
 }
 .StoreOwnerMain .SOMvalue-56 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2336,7 +2355,6 @@
 }
 .StoreOwnerMain .SOMvalue-57 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2349,7 +2367,6 @@
 }
 .StoreOwnerMain .SOMvalue-58 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2362,7 +2379,6 @@
 }
 .StoreOwnerMain .SOMvalue-59 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2375,7 +2391,6 @@
 }
 .StoreOwnerMain .SOMvalue-60 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2388,7 +2403,6 @@
 }
 .StoreOwnerMain .SOMvalue-61 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2401,7 +2415,6 @@
 }
 .StoreOwnerMain .SOMvalue-62 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2422,7 +2435,6 @@
 }
 .StoreOwnerMain .SOMvalue-63 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2435,7 +2447,6 @@
 }
 .StoreOwnerMain .SOMvalue-64 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2448,7 +2459,6 @@
 }
 .StoreOwnerMain .SOMvalue-65 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2462,7 +2472,6 @@
 }
 .StoreOwnerMain .SOMvalue-66 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2475,7 +2484,6 @@
 }
 .StoreOwnerMain .SOMvalue-67 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2489,7 +2497,6 @@
 }
 .StoreOwnerMain .SOMvalue-68 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2502,7 +2509,6 @@
 }
 .StoreOwnerMain .SOMvalue-69 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2524,7 +2530,6 @@
 }
 .StoreOwnerMain .SOMvalue-70 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2537,7 +2542,6 @@
 }
 .StoreOwnerMain .SOMvalue-71 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2551,7 +2555,6 @@
 }
 .StoreOwnerMain .SOMvalue-72 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2564,7 +2567,6 @@
 }
 .StoreOwnerMain .SOMvalue-73 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2577,7 +2579,6 @@
 }
 .StoreOwnerMain .SOMvalue-74 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2590,7 +2591,6 @@
 }
 .StoreOwnerMain .SOMvalue-75 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2603,7 +2603,6 @@
 }
 .StoreOwnerMain .SOMvalue-76 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2624,7 +2623,6 @@
 }
 .StoreOwnerMain .SOMvalue-77 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2637,7 +2635,6 @@
 }
 .StoreOwnerMain .SOMvalue-78 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2650,7 +2647,6 @@
 }
 .StoreOwnerMain .SOMvalue-79 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2663,7 +2659,6 @@
 }
 .StoreOwnerMain .SOMvalue-80 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2676,7 +2671,6 @@
 }
 .StoreOwnerMain .SOMvalue-81 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2689,7 +2683,6 @@
 }
 .StoreOwnerMain .SOMvalue-82 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
@@ -2702,7 +2695,6 @@
 }
 .StoreOwnerMain .SOMvalue-83 {
   overflow-wrap: break-word;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.429;
