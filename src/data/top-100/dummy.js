@@ -14,7 +14,7 @@ export const top_100_dummy = [
         shopId: 21
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "깔끔왁싱",
         location: "수원시 팔달구",
         menu: "팔 왁싱, 다리 왁싱, 얼굴 왁싱",
@@ -35,7 +35,7 @@ export const top_100_dummy = [
         shopId: 9
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "바이민브로우",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 눈썹 틴트",
@@ -63,7 +63,7 @@ export const top_100_dummy = [
         shopId: 22
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "제이왁싱",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱",
@@ -77,7 +77,7 @@ export const top_100_dummy = [
         shopId: 12
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "아망래쉬",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 볼륨 속눈썹 연장",
@@ -105,7 +105,7 @@ export const top_100_dummy = [
         shopId: 25
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "왁싱플레이스",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -119,7 +119,7 @@ export const top_100_dummy = [
         shopId: 11
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "속눈썹샵",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 눈썹 틴트",
@@ -147,7 +147,7 @@ export const top_100_dummy = [
         shopId: 29
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "왁싱인",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -161,7 +161,7 @@ export const top_100_dummy = [
         shopId: 13
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "뷰티브로우",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 눈썹 틴트",
@@ -189,7 +189,7 @@ export const top_100_dummy = [
         shopId: 34
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "왁싱바",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱, 다리 왁싱",
@@ -203,7 +203,7 @@ export const top_100_dummy = [
         shopId: 36
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "속눈썹연장샵",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 볼륨 속눈썹 연장",
@@ -231,7 +231,7 @@ export const top_100_dummy = [
         shopId: 40
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "왁싱앤뷰티",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -245,7 +245,7 @@ export const top_100_dummy = [
         shopId: 42
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "래쉬하우스",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 볼륨 속눈썹 연장",
@@ -273,7 +273,7 @@ export const top_100_dummy = [
         shopId: 46
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "미니 왁싱",
         location: "수원시 팔달구",
         menu: "브라질리언 왁싱, 팔 왁싱",
@@ -287,7 +287,7 @@ export const top_100_dummy = [
         shopId: 48
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "뷰티래쉬",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 눈썹 틴트",
@@ -315,7 +315,7 @@ export const top_100_dummy = [
         shopId: 52
     },
     {
-        category: "왁싱",
+        category: "왁싱/제모",
         name: "왁싱클럽",
         location: "수원시 팔달구",
         menu: "얼굴 왁싱, 팔 왁싱, 다리 왁싱",
@@ -329,7 +329,7 @@ export const top_100_dummy = [
         shopId: 54
     },
     {
-        category: "속눈썹/눈썹",
+        category: "눈썹/속눈썹",
         name: "아이래쉬",
         location: "수원시 팔달구",
         menu: "속눈썹 연장, 볼륨 속눈썹 연장",
