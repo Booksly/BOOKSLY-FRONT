@@ -17,21 +17,21 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 1,
-                        "imgUri": "/images/haircut.png",
+                        "imgUri": "/assets_shop/cut_M_1.png",
                         "price": 15000,
                         "name": "남성 컷",
                         "description": "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         "menuId": 2,
-                        "imgUri": "/images/haircut_women.png",
+                        "imgUri": "/assets_shop/cut_W_1.png",
                         "price": 20000,
                         "name": "여성 컷",
                         "description": "세련된 스타일의 여성 컷입니다."
                     },
                     {
                         "menuId": 2_1,
-                        "imgUri": "/images/haircut_women.png",
+                        "imgUri": "/assets_shop/cut_W_2.png",
                         "price": 20000,
                         "name": "레이어드 컷",
                         "description": "최신 유행 레이어드 컷입니다."
@@ -43,14 +43,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 3,
-                        "imgUri": "/images/perm.png",
+                        "imgUri": "/assets_shop/perm_M_1.png",
                         "price": 50000,
                         "name": "일반 펌",
                         "description": "내추럴한 웨이브를 위한 일반 펌입니다."
                     },
                     {
                         "menuId": 4,
-                        "imgUri": "/images/digital_perm.png",
+                        "imgUri": "/assets_shop/perm_M_2.png",
                         "price": 70000,
                         "name": "디지털 펌",
                         "description": "손질이 쉬운 디지털 펌입니다."
@@ -62,14 +62,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 5,
-                        "imgUri": "/images/hair_color.png",
+                        "imgUri": "/assets_shop/dye_W_1.png",
                         "price": 60000,
                         "name": "전체 염색",
                         "description": "트렌디한 컬러로 변신하세요."
                     },
                     {
                         "menuId": 6,
-                        "imgUri": "/images/highlight.png",
+                        "imgUri": "/assets_shop/dye_M_1.png",
                         "price": 40000,
                         "name": "하이라이트",
                         "description": "부분 염색으로 포인트를 줍니다."
@@ -150,14 +150,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 7,
-                        "imgUri": "/images/body_wax.png",
+                        "imgUri": "/assets_shop/waxing_1.png",
                         "price": 30000,
                         "name": "팔 왁싱",
                         "description": "부드럽고 깔끔한 팔 왁싱입니다."
                     },
                     {
                         "menuId": 8,
-                        "imgUri": "/images/leg_wax.png",
+                        "imgUri": "/assets_shop/waxing_4.png",
                         "price": 40000,
                         "name": "다리 왁싱",
                         "description": "매끈한 다리 왁싱입니다."
@@ -169,7 +169,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 9,
-                        "imgUri": "/images/face_wax.png",
+                        "imgUri": "/assets_shop/waxing_4.png",
                         "price": 20000,
                         "name": "얼굴 왁싱",
                         "description": "깨끗하고 깔끔한 얼굴 왁싱입니다."
@@ -242,14 +242,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 10,
-                        "imgUri": "/images/nail_art.png",
+                        "imgUri": "/assets_shop/nail_1.png",
                         "price": 25000,
                         "name": "기본 네일 아트",
                         "description": "심플하고 깔끔한 기본 네일 아트입니다."
                     },
                     {
                         "menuId": 11,
-                        "imgUri": "/images/gel_nail.png",
+                        "imgUri": "/assets_shop/nail_2.png",
                         "price": 35000,
                         "name": "젤 네일",
                         "description": "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -322,14 +322,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 12,
-                        "imgUri": "/images/nail_care.png",
+                        "imgUri": "/assets_shop/nail_2.png",
                         "price": 20000,
                         "name": "기본 네일 케어",
                         "description": "손톱 건강을 위한 기본 네일 케어입니다."
                     },
                     {
                         "menuId": 13,
-                        "imgUri": "/images/spa_nail.png",
+                        "imgUri": "/assets_shop/nail_3.png",
                         "price": 40000,
                         "name": "스파 네일 케어",
                         "description": "편안한 스파 네일 케어 서비스입니다."
@@ -402,7 +402,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 14,
-                        "imgUri": "/images/eyelash_extension.png",
+                        "imgUri": "/assets_shop/eyelashe_W_1.png",
                         "price": 50000,
                         "name": "속눈썹 연장",
                         "description": "길고 풍성한 속눈썹 연장입니다."
@@ -414,7 +414,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 15,
-                        "imgUri": "/images/eyebrow_tint.png",
+                        "imgUri": "/assets_shop/eyebrow_W_1.png",
                         "price": 30000,
                         "name": "눈썹 틴트",
                         "description": "자연스러운 눈썹 틴트입니다."
@@ -480,14 +480,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 16,
-                        "imgUri": "/images/eyelash_extension.png",
+                        "imgUri": "/assets_shop/eyelashe_W_2.png",
                         "price": 45000,
                         "name": "기본 속눈썹 연장",
                         "description": "자연스러운 기본 속눈썹 연장입니다."
                     },
                     {
                         "menuId": 17,
-                        "imgUri": "/images/volume_lash.png",
+                        "imgUri": "/assets_shop/eyelashe_W_1.png",
                         "price": 65000,
                         "name": "볼륨 속눈썹 연장",
                         "description": "풍성한 볼륨 속눈썹 연장입니다."
@@ -560,7 +560,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 18,
-                        "imgUri": "/images/body_wax.png",
+                        "imgUri": "/assets_shop/waxing_1.png",
                         "price": 35000,
                         "name": "전체 바디 왁싱",
                         "description": "전체적으로 매끈한 바디 왁싱입니다."
@@ -572,7 +572,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 19,
-                        "imgUri": "/images/face_wax.png",
+                        "imgUri": "/assets_shop/waxing_4.png",
                         "price": 25000,
                         "name": "전체 페이스 왁싱",
                         "description": "깨끗한 피부를 위한 전체 페이스 왁싱입니다."
@@ -638,14 +638,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 20,
-                        "imgUri": "/images/body_wax.png",
+                        "imgUri": "/assets_shop/waxing_4.png",
                         "price": 30000,
                         "name": "팔 왁싱",
                         "description": "부드럽고 깔끔한 팔 왁싱입니다."
                     },
                     {
                         "menuId": 21,
-                        "imgUri": "/images/leg_wax.png",
+                        "imgUri": "/assets_shop/waxing_2.png",
                         "price": 40000,
                         "name": "다리 왁싱",
                         "description": "매끈한 다리 왁싱입니다."
@@ -657,7 +657,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 22,
-                        "imgUri": "/images/brazilian_wax.png",
+                        "imgUri": "/assets_shop/waxing_3.png",
                         "price": 50000,
                         "name": "브라질리언 왁싱",
                         "description": "깔끔한 브라질리언 왁싱입니다."
@@ -737,14 +737,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 23,
-                        "imgUri": "/images/makeup_basic.png",
+                        "imgUri": "/assets_shop/makeup_W_1.png",
                         "price": 50000,
                         "name": "기본 메이크업",
                         "description": "자연스러운 기본 메이크업입니다."
                     },
                     {
                         "menuId": 24,
-                        "imgUri": "/images/makeup_wedding.png",
+                        "imgUri": "/assets_shop/makeup_M_2.png",
                         "price": 150000,
                         "name": "웨딩 메이크업",
                         "description": "특별한 날을 위한 웨딩 메이크업입니다."
@@ -756,7 +756,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 25,
-                        "imgUri": "/images/makeup_dress.png",
+                        "imgUri": "/assets_shop/makeup_W_2.png",
                         "price": 80000,
                         "name": "드레스 메이크업",
                         "description": "드레스와 어울리는 메이크업입니다."
@@ -836,14 +836,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 26,
-                        "imgUri": "/images/haircut.png",
+                        "imgUri": "/assets_shop/cut_M_1.png",
                         "price": 18000,
                         "name": "남성 컷",
                         "description": "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         "menuId": 27,
-                        "imgUri": "/images/haircut_women.png",
+                        "imgUri": "/assets_shop/cut_W_1.png",
                         "price": 25000,
                         "name": "여성 컷",
                         "description": "세련된 스타일의 여성 컷입니다."
@@ -855,14 +855,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 28,
-                        "imgUri": "/images/perm.png",
+                        "imgUri": "/assets_shop/perm_M_1.png",
                         "price": 55000,
                         "name": "일반 펌",
                         "description": "내추럴한 웨이브를 위한 일반 펌입니다."
                     },
                     {
                         "menuId": 29,
-                        "imgUri": "/images/digital_perm.png",
+                        "imgUri": "/assets_shop/perm_W_3.png",
                         "price": 75000,
                         "name": "디지털 펌",
                         "description": "손질이 쉬운 디지털 펌입니다."
@@ -942,14 +942,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 30,
-                        "imgUri": "/images/makeup_basic.png",
+                        "imgUri": "/assets_shop/makeup_M_1.png",
                         "price": 55000,
                         "name": "기본 메이크업",
                         "description": "자연스러운 기본 메이크업입니다."
                     },
                     {
                         "menuId": 31,
-                        "imgUri": "/images/makeup_wedding.png",
+                        "imgUri": "/assets_shop/makeup_W_1.png",
                         "price": 160000,
                         "name": "웨딩 메이크업",
                         "description": "특별한 날을 위한 웨딩 메이크업입니다."
@@ -961,7 +961,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 32,
-                        "imgUri": "/images/makeup_dress.png",
+                        "imgUri": "/assets_shop/makeup_W_2.png",
                         "price": 85000,
                         "name": "드레스 메이크업",
                         "description": "드레스와 어울리는 메이크업입니다."
@@ -1041,14 +1041,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 33,
-                        "imgUri": "/images/makeup_basic.png",
+                        "imgUri": "/assets_shop/makeup_W_2.png",
                         "price": 60000,
                         "name": "기본 메이크업",
                         "description": "자연스러운 기본 메이크업입니다."
                     },
                     {
                         "menuId": 34,
-                        "imgUri": "/images/makeup_wedding.png",
+                        "imgUri": "/assets_shop/makeup_M_1.png",
                         "price": 140000,
                         "name": "웨딩 메이크업",
                         "description": "특별한 날을 위한 웨딩 메이크업입니다."
@@ -1128,14 +1128,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 35,
-                        "imgUri": "/images/makeup_basic.png",
+                        "imgUri": "/assets_shop/makeup_W_1.png",
                         "price": 50000,
                         "name": "기본 메이크업",
                         "description": "자연스러운 기본 메이크업입니다."
                     },
                     {
                         "menuId": 36,
-                        "imgUri": "/images/makeup_wedding.png",
+                        "imgUri": "/assets_shop/makeup_M_1.png",
                         "price": 150000,
                         "name": "웨딩 메이크업",
                         "description": "특별한 날을 위한 웨딩 메이크업입니다."
@@ -1147,7 +1147,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 37,
-                        "imgUri": "/images/makeup_dress.png",
+                        "imgUri": "/assets_shop/makeup_W_2.png",
                         "price": 80000,
                         "name": "드레스 메이크업",
                         "description": "드레스와 어울리는 메이크업입니다."
@@ -1300,14 +1300,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 40,
-                        "imgUri": "/images/makeup_basic.png",
+                        "imgUri": "/assets_shop/makeup_M_2.png",
                         "price": 55000,
                         "name": "기본 메이크업",
                         "description": "자연스러운 기본 메이크업입니다."
                     },
                     {
                         "menuId": 41,
-                        "imgUri": "/images/makeup_wedding.png",
+                        "imgUri": "/assets_shop/makeup_W_2.png",
                         "price": 130000,
                         "name": "웨딩 메이크업",
                         "description": "특별한 날을 위한 웨딩 메이크업입니다."
@@ -1366,7 +1366,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 42,
-                        "imgUri": "/images/body_massage.png",
+                        "imgUri": "/assets_shop/masage_2.png",
                         "price": 80000,
                         "name": "전신 아로마 마사지",
                         "description": "피로를 풀어주는 전신 아로마 마사지입니다."
@@ -1378,7 +1378,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 43,
-                        "imgUri": "/images/face_massage.png",
+                        "imgUri": "/assets_shop/masage_3.png",
                         "price": 60000,
                         "name": "얼굴 아로마 마사지",
                         "description": "피부를 맑고 생기있게 하는 얼굴 아로마 마사지입니다."
@@ -1437,14 +1437,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 44,
-                        "imgUri": "/images/foot_massage.png",
+                        "imgUri": "/assets_shop/masage_3.png",
                         "price": 50000,
                         "name": "기본 발 마사지",
                         "description": "피로를 풀어주는 기본 발 마사지입니다."
                     },
                     {
                         "menuId": 45,
-                        "imgUri": "/images/reflexology.png",
+                        "imgUri": "/assets_shop/masage_1.png",
                         "price": 70000,
                         "name": "리플렉솔로지",
                         "description": "발과 다리를 시원하게 풀어주는 리플렉솔로지입니다."
@@ -1503,14 +1503,14 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 46,
-                        "imgUri": "/images/body_massage.png",
+                        "imgUri": "/assets_shop/masage_3.png",
                         "price": 75000,
                         "name": "전신 마사지",
                         "description": "피로를 풀어주는 전신 마사지입니다."
                     },
                     {
                         "menuId": 47,
-                        "imgUri": "/images/sports_massage.png",
+                        "imgUri": "/assets_shop/masage_2.png",
                         "price": 85000,
                         "name": "스포츠 마사지",
                         "description": "근육 피로 회복을 위한 스포츠 마사지입니다."
@@ -1522,7 +1522,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 48,
-                        "imgUri": "/images/swedish_massage.png",
+                        "imgUri": "/assets_shop/masage_1.png",
                         "price": 90000,
                         "name": "스웨디시 마사지",
                         "description": "편안한 스웨디시 마사지입니다."
@@ -1581,7 +1581,7 @@ export const shops = [
                 "menus": [
                     {
                         "menuId": 49,
-                        "imgUri": "/images/eyelash.png",
+                        "imgUri": "/assets_shop/eyelashe_W_2.png",
                         "price": 30000,
                         "name": "속눈썹 연장",
                         "description": "자연스럽고 긴 속눈썹 연장입니다."
@@ -1684,7 +1684,7 @@ export const shops = [
         name: "내일 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/naeilNail.png",
+        img: "/images/nail_1.png",
         detailAddress: "102호",
         rating: "4.2",
         description: "다양한 네일 서비스를 제공하는 내일 네일입니다.",
@@ -1697,14 +1697,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일 아트",
                         description: "심플하고 깔끔한 기본 네일 아트입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -1736,7 +1736,7 @@ export const shops = [
         name: "네일하우스",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/nailHouse.png",
+        img: "/images/nail_2.png",
         detailAddress: "103호",
         rating: "4.0",
         description: "기본부터 젤 네일까지 다양한 네일 서비스를 제공하는 네일하우스입니다.",
@@ -1749,14 +1749,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 20000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 30000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -1788,7 +1788,7 @@ export const shops = [
         name: "제이왁싱",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/jWaxing.png",
+        img: "/images/wax_1.png",
         detailAddress: "104호",
         rating: "4.7",
         description: "전문적인 왁싱 서비스를 제공하는 제이왁싱입니다.",
@@ -1801,14 +1801,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_1.png",
                         price: 30000,
                         name: "팔 왁싱",
                         description: "부드럽고 깔끔한 팔 왁싱입니다."
                     },
                     {
                         menuId: 8,
-                        imgUri: "/images/leg_wax.png",
+                        imgUri: "/assets_shop/waxing_2.png",
                         price: 40000,
                         name: "다리 왁싱",
                         description: "매끈한 다리 왁싱입니다."
@@ -1820,7 +1820,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 9,
-                        imgUri: "/images/face_wax.png",
+                        imgUri: "/assets_shop/waxing_3.png",
                         price: 20000,
                         name: "얼굴 왁싱",
                         description: "깨끗하고 깔끔한 얼굴 왁싱입니다."
@@ -1852,7 +1852,7 @@ export const shops = [
         name: "헤어봄",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/springHair.png",
+        img: "/images/hair_1.png",
         detailAddress: "105호",
         rating: "4.1",
         description: "트렌디한 스타일링을 제공하는 헤어봄입니다.",
@@ -1865,14 +1865,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_2.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_3.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -1884,7 +1884,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 3,
-                        imgUri: "/images/perm.png",
+                        imgUri: "/assets_shop/perm_M_2.png",
                         price: 50000,
                         name: "일반 펌",
                         description: "내추럴한 웨이브를 위한 일반 펌입니다."
@@ -1916,7 +1916,7 @@ export const shops = [
         name: "네일모아",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/nailMoa.png",
+        img: "/images/nail_1.png",
         detailAddress: "106호",
         rating: "4.6",
         description: "다양한 네일 아트를 제공하는 네일모아입니다.",
@@ -1929,14 +1929,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -1968,7 +1968,7 @@ export const shops = [
         name: "왁싱플레이스",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/waxingPlace.png",
+        img: "/images/wax_2.png",
         detailAddress: "107호",
         rating: "4.3",
         description: "전문적인 왁싱 서비스를 제공하는 왁싱플레이스입니다.",
@@ -1981,7 +1981,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_2.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
@@ -2013,7 +2013,7 @@ export const shops = [
         name: "속눈썹샵",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/eyelashShop.png",
+        img: "/images/eye_1.png",
         detailAddress: "108호",
         rating: "4.8",
         description: "속눈썹 연장 및 눈썹 틴트를 제공하는 속눈썹샵입니다.",
@@ -2026,7 +2026,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 14,
-                        imgUri: "/images/eyelash_extension.png",
+                        imgUri: "/assets_shop/eyelashe_W_1.png",
                         price: 50000,
                         name: "속눈썹 연장",
                         description: "길고 풍성한 속눈썹 연장입니다."
@@ -2038,7 +2038,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 15,
-                        imgUri: "/images/eyebrow_tint.png",
+                        imgUri: "/assets_shop/eyebrow_W_1.png",
                         price: 30000,
                         name: "눈썹 틴트",
                         description: "자연스러운 눈썹 틴트입니다."
@@ -2070,7 +2070,7 @@ export const shops = [
         name: "스타일 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/styleHair.png",
+        img: "/images/hair_2.jpg",
         detailAddress: "109호",
         rating: "4.4",
         description: "스타일리시한 헤어컷을 제공하는 스타일 헤어입니다.",
@@ -2083,14 +2083,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_2.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_2.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -2102,7 +2102,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 5,
-                        imgUri: "/images/hair_color.png",
+                        imgUri: "/assets_shop/dye_W_3.png",
                         price: 60000,
                         name: "전체 염색",
                         description: "트렌디한 컬러로 변신하세요."
@@ -2134,7 +2134,7 @@ export const shops = [
         name: "네일갤러리",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/nailGallery.png",
+        img: "/images/nail_1.png",
         detailAddress: "110호",
         rating: "4.7",
         description: "다양한 네일 아트를 제공하는 네일갤러리입니다.",
@@ -2147,14 +2147,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -2186,7 +2186,7 @@ export const shops = [
         name: "왁싱인",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/waxingIn.png",
+        img: "/images/wax_1.png",
         detailAddress: "111호",
         rating: "4.2",
         description: "전문적인 왁싱 서비스를 제공하는 왁싱인입니다.",
@@ -2199,7 +2199,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_3.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
@@ -2231,7 +2231,7 @@ export const shops = [
         name: "뷰티브로우",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/beautyBrow.png",
+        img: "/images/eye_2.png",
         detailAddress: "112호",
         rating: "4.6",
         description: "속눈썹 연장 및 눈썹 틴트를 제공하는 뷰티브로우입니다.",
@@ -2244,7 +2244,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 14,
-                        imgUri: "/images/eyelash_extension.png",
+                        imgUri: "/assets_shop/eyelashe_W_2.png",
                         price: 50000,
                         name: "속눈썹 연장",
                         description: "길고 풍성한 속눈썹 연장입니다."
@@ -2256,7 +2256,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 15,
-                        imgUri: "/images/eyebrow_tint.png",
+                        imgUri: "/assets_shop/eyebrow_W_2.png",
                         price: 30000,
                         name: "눈썹 틴트",
                         description: "자연스러운 눈썹 틴트입니다."
@@ -2288,7 +2288,7 @@ export const shops = [
         name: "힐링 마사지",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/healingMassage.png",
+        img: "/images/massage_2.png",
         detailAddress: "113호",
         rating: "4.5",
         description: "전문적인 바디 마사지를 제공하는 힐링 마사지입니다.",
@@ -2301,7 +2301,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 38,
-                        imgUri: "/images/body_massage.png",
+                        imgUri: "/assets_shop/masage_2.png",
                         price: 70000,
                         name: "전신 마사지",
                         description: "피로를 풀어주는 전신 마사지입니다."
@@ -2333,7 +2333,7 @@ export const shops = [
         name: "그리다 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/gridaHair.png",
+        img: "/images/hair_3.png",
         detailAddress: "114호",
         rating: "4.1",
         description: "트렌디한 스타일링을 제공하는 그리다 헤어입니다.",
@@ -2346,14 +2346,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_3.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_2.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -2365,7 +2365,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 3,
-                        imgUri: "/images/perm.png",
+                        imgUri: "/assets_shop/perm_W_3.png",
                         price: 50000,
                         name: "일반 펌",
                         description: "내추럴한 웨이브를 위한 일반 펌입니다."
@@ -2397,7 +2397,7 @@ export const shops = [
         name: "핑크 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/pinkNail.png",
+        img: "/images/nail_2.png",
         detailAddress: "115호",
         rating: "4.6",
         description: "다양한 네일 아트를 제공하는 핑크 네일입니다.",
@@ -2410,14 +2410,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -2449,7 +2449,7 @@ export const shops = [
         name: "왁싱바",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/waxingBar.png",
+        img: "/images/wax_1.png",
         detailAddress: "116호",
         rating: "4.3",
         description: "전문적인 왁싱 서비스를 제공하는 왁싱바입니다.",
@@ -2462,7 +2462,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_4.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
@@ -2494,7 +2494,7 @@ export const shops = [
         name: "제니 메이크업",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/jennyMakeup.png",
+        img: "/images/makeup_1.png",
         detailAddress: "117호",
         rating: "4.7",
         description: "전문적인 메이크업 서비스를 제공하는 제니 메이크업입니다.",
@@ -2507,14 +2507,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 23,
-                        imgUri: "/images/makeup_basic.png",
+                        imgUri: "/assets_shop/makeup_M_1.png",
                         price: 50000,
                         name: "기본 메이크업",
                         description: "자연스러운 기본 메이크업입니다."
                     },
                     {
                         menuId: 24,
-                        imgUri: "/images/makeup_wedding.png",
+                        imgUri: "/assets_shop/makeup_W_2.png",
                         price: 150000,
                         name: "웨딩 메이크업",
                         description: "특별한 날을 위한 웨딩 메이크업입니다."
@@ -2546,7 +2546,7 @@ export const shops = [
         name: "속눈썹연장샵",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/eyelashExtension.png",
+        img: "/images/eye_2.png",
         detailAddress: "118호",
         rating: "4.6",
         description: "속눈썹 연장 및 볼륨 속눈썹 연장을 제공하는 속눈썹연장샵입니다.",
@@ -2559,14 +2559,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 16,
-                        imgUri: "/images/eyelash_extension.png",
+                        imgUri: "/assets_shop/eyelashe_W_3.png",
                         price: 45000,
                         name: "기본 속눈썹 연장",
                         description: "자연스러운 기본 속눈썹 연장입니다."
                     },
                     {
                         menuId: 17,
-                        imgUri: "/images/volume_lash.png",
+                        imgUri: "/assets_shop/eyelashe_W_1.png",
                         price: 65000,
                         name: "볼륨 속눈썹 연장",
                         description: "풍성한 볼륨 속눈썹 연장입니다."
@@ -2598,7 +2598,7 @@ export const shops = [
         name: "스파 마사지",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/spaMassage.png",
+        img: "/images/massage_1.png",
         detailAddress: "119호",
         rating: "4.9",
         description: "전문적인 스파 마사지를 제공하는 스파 마사지입니다.",
@@ -2611,7 +2611,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 42,
-                        imgUri: "/images/body_massage.png",
+                        imgUri: "/assets_shop/masage_3.png",
                         price: 80000,
                         name: "전신 아로마 마사지",
                         description: "피로를 풀어주는 전신 아로마 마사지입니다."
@@ -2623,7 +2623,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 48,
-                        imgUri: "/images/swedish_massage.png",
+                        imgUri: "/assets_shop/masage_1.png",
                         price: 90000,
                         name: "스웨디시 마사지",
                         description: "편안한 스웨디시 마사지입니다."
@@ -2655,7 +2655,7 @@ export const shops = [
         name: "라라 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/lalaHair.png",
+        img: "/images/hair_3.png",
         detailAddress: "120호",
         rating: "4.3",
         description: "트렌디한 스타일링을 제공하는 라라 헤어입니다.",
@@ -2668,14 +2668,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_3.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_3.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -2687,7 +2687,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 3,
-                        imgUri: "/images/perm.png",
+                        imgUri: "/assets_shop/perm_W_1.png",
                         price: 50000,
                         name: "일반 펌",
                         description: "내추럴한 웨이브를 위한 일반 펌입니다."
@@ -2719,7 +2719,7 @@ export const shops = [
         name: "뷰티 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/beautyNail.png",
+        img: "/images/nail_2.png",
         detailAddress: "121호",
         rating: "4.7",
         description: "다양한 네일 아트를 제공하는 뷰티 네일입니다.",
@@ -2732,14 +2732,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -2771,7 +2771,7 @@ export const shops = [
         name: "왁싱앤뷰티",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/waxingAndBeauty.png",
+        img: "/images/wax_1.png",
         detailAddress: "122호",
         rating: "4.3",
         description: "전문적인 왁싱 서비스를 제공하는 왁싱앤뷰티입니다.",
@@ -2784,7 +2784,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_1.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
@@ -2816,7 +2816,7 @@ export const shops = [
         name: "화장대",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/makeupTable.png",
+        img: "/images/makeup_3.png",
         detailAddress: "123호",
         rating: "4.7",
         description: "전문적인 메이크업 서비스를 제공하는 화장대입니다.",
@@ -2829,14 +2829,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 23,
-                        imgUri: "/images/makeup_basic.png",
+                        imgUri: "/assets_shop/makeup_M_2.png",
                         price: 50000,
                         name: "기본 메이크업",
                         description: "자연스러운 기본 메이크업입니다."
                     },
                     {
                         menuId: 24,
-                        imgUri: "/images/makeup_wedding.png",
+                        imgUri: "/assets_shop/makeup_W_2.png",
                         price: 150000,
                         name: "웨딩 메이크업",
                         description: "특별한 날을 위한 웨딩 메이크업입니다."
@@ -2868,7 +2868,7 @@ export const shops = [
         name: "래쉬하우스",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/lashHouse.png",
+        img: "/images/eye_2.png",
         detailAddress: "124호",
         rating: "4.8",
         description: "속눈썹 연장 및 볼륨 속눈썹 연장을 제공하는 래쉬하우스입니다.",
@@ -2881,14 +2881,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 16,
-                        imgUri: "/images/eyelash_extension.png",
+                        imgUri: "/assets_shop/eyelashe_W_3.png",
                         price: 45000,
                         name: "기본 속눈썹 연장",
                         description: "자연스러운 기본 속눈썹 연장입니다."
                     },
                     {
                         menuId: 17,
-                        imgUri: "/images/volume_lash.png",
+                        imgUri: "/assets_shop/eyelashe_W_2.png",
                         price: 65000,
                         name: "볼륨 속눈썹 연장",
                         description: "풍성한 볼륨 속눈썹 연장입니다."
@@ -2920,7 +2920,7 @@ export const shops = [
         name: "더힐링",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/theHealing.png",
+        img: "/images/masage_5.png",
         detailAddress: "125호",
         rating: "4.5",
         description: "전문적인 바디 마사지를 제공하는 더힐링입니다.",
@@ -2933,7 +2933,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 38,
-                        imgUri: "/images/body_massage.png",
+                        imgUri: "/assets_shop/masage_3.png",
                         price: 70000,
                         name: "전신 마사지",
                         description: "피로를 풀어주는 전신 마사지입니다."
@@ -2944,7 +2944,7 @@ export const shops = [
         employees: [
             {
                 id: 25,
-                profileImgUri: "/assets_shop/designer_W_5.png",
+                profileImgUri: "/assets_shop/masage_1.png",
                 name: "김힐링",
                 reviewNum: 2,
                 description: "10년 경력 / 바디 마사지 전문가"
@@ -2965,7 +2965,7 @@ export const shops = [
         name: "루비 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/rubyHair.png",
+        img: "/images/hair_1.png",
         detailAddress: "126호",
         rating: "4.1",
         description: "트렌디한 스타일링을 제공하는 루비 헤어입니다.",
@@ -2978,14 +2978,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_2.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_2.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -2997,7 +2997,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 3,
-                        imgUri: "/images/perm.png",
+                        imgUri:"/assets_shop/perm_M_2.png",
                         price: 50000,
                         name: "일반 펌",
                         description: "내추럴한 웨이브를 위한 일반 펌입니다."
@@ -3029,7 +3029,7 @@ export const shops = [
         name: "유니 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/uniNail.png",
+        img: "/images/nail_1.png",
         detailAddress: "127호",
         rating: "4.6",
         description: "다양한 네일 아트를 제공하는 유니 네일입니다.",
@@ -3042,14 +3042,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -3081,7 +3081,7 @@ export const shops = [
         name: "미니 왁싱",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/miniWaxing.png",
+        img: "/images/wax_2.png",
         detailAddress: "128호",
         rating: "4.3",
         description: "전문적인 왁싱 서비스를 제공하는 미니 왁싱입니다.",
@@ -3094,7 +3094,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_1.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
@@ -3126,7 +3126,7 @@ export const shops = [
         name: "스타 메이크업",
         category: "메이크업",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/starMakeup.png",
+        img: "/images/makeup_4.png",
         detailAddress: "129호",
         rating: "4.7",
         description: "전문적인 메이크업 서비스를 제공하는 스타 메이크업입니다.",
@@ -3139,14 +3139,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 23,
-                        imgUri: "/images/makeup_basic.png",
+                        imgUri: "/assets_shop/makeup_M_1.png",
                         price: 50000,
                         name: "기본 메이크업",
                         description: "자연스러운 기본 메이크업입니다."
                     },
                     {
                         menuId: 24,
-                        imgUri: "/images/makeup_wedding.png",
+                        imgUri: "/assets_shop/makeup_W_2.png",
                         price: 150000,
                         name: "웨딩 메이크업",
                         description: "특별한 날을 위한 웨딩 메이크업입니다."
@@ -3178,7 +3178,7 @@ export const shops = [
         name: "뷰티래쉬",
         category: "속눈썹/눈썹",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/beautyLash.png",
+        img: "/images/eye_1.png",
         detailAddress: "130호",
         rating: "4.6",
         description: "속눈썹 연장 및 눈썹 틴트를 제공하는 뷰티래쉬입니다.",
@@ -3191,7 +3191,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 16,
-                        imgUri: "/images/eyelash_extension.png",
+                        imgUri: "/assets_shop/eyelashe_W_2.png",
                         price: 45000,
                         name: "기본 속눈썹 연장",
                         description: "자연스러운 기본 속눈썹 연장입니다."
@@ -3203,7 +3203,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 15,
-                        imgUri: "/images/eyebrow_tint.png",
+                        imgUri: "/assets_shop/eyebrow_W_1.png",
                         price: 30000,
                         name: "눈썹 틴트",
                         description: "자연스러운 눈썹 틴트입니다."
@@ -3235,7 +3235,7 @@ export const shops = [
         name: "아로마 테라피",
         category: "마사지",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/aromaTherapy.png",
+        img: "/images/masage_3.png",
         detailAddress: "131호",
         rating: "4.9",
         description: "전문적인 아로마 마사지를 제공하는 아로마 테라피입니다.",
@@ -3248,7 +3248,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 38,
-                        imgUri: "/images/body_massage.png",
+                        imgUri: "/assets_shop/masage_1.png",
                         price: 80000,
                         name: "전신 아로마 마사지",
                         description: "피로를 풀어주는 전신 아로마 마사지입니다."
@@ -3260,7 +3260,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 43,
-                        imgUri: "/images/face_massage.png",
+                        imgUri: "/assets_shop/masage_3.png",
                         price: 60000,
                         name: "얼굴 아로마 마사지",
                         description: "피부를 맑고 생기있게 하는 얼굴 아로마 마사지입니다."
@@ -3292,7 +3292,7 @@ export const shops = [
         name: "에스 헤어",
         category: "헤어",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/sHair.png",
+        img: "/images/hair_3.png",
         detailAddress: "132호",
         rating: "4.4",
         description: "트렌디한 스타일링을 제공하는 에스 헤어입니다.",
@@ -3305,14 +3305,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 1,
-                        imgUri: "/images/haircut.png",
+                        imgUri: "/assets_shop/cut_M_2.png",
                         price: 15000,
                         name: "남성 컷",
                         description: "깔끔하고 스타일리시한 남성 컷입니다."
                     },
                     {
                         menuId: 2,
-                        imgUri: "/images/haircut_women.png",
+                        imgUri: "/assets_shop/cut_W_2.png",
                         price: 20000,
                         name: "여성 컷",
                         description: "세련된 스타일의 여성 컷입니다."
@@ -3324,7 +3324,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 3,
-                        imgUri: "/images/perm.png",
+                        imgUri: "/assets_shop/perm_W_3.png",
                         price: 50000,
                         name: "일반 펌",
                         description: "내추럴한 웨이브를 위한 일반 펌입니다."
@@ -3356,7 +3356,7 @@ export const shops = [
         name: "아트 네일",
         category: "네일",
         address: "경기도 수원시 영통구 영통로",
-        img: "/images/artNail.png",
+        img: "/images/nail_1.png",
         detailAddress: "133호",
         rating: "4.6",
         description: "다양한 네일 아트를 제공하는 아트 네일입니다.",
@@ -3369,14 +3369,14 @@ export const shops = [
                 menus: [
                     {
                         menuId: 10,
-                        imgUri: "/images/nail_art.png",
+                        imgUri: "/assets_shop/nail_2.png",
                         price: 25000,
                         name: "기본 네일",
                         description: "심플하고 깔끔한 기본 네일입니다."
                     },
                     {
                         menuId: 11,
-                        imgUri: "/images/gel_nail.png",
+                        imgUri: "/assets_shop/nail_3.png",
                         price: 35000,
                         name: "젤 네일",
                         description: "오랜 지속력을 자랑하는 젤 네일입니다."
@@ -3408,7 +3408,7 @@ export const shops = [
         name: "왁싱클럽",
         category: "왁싱/제모",
         address: "경기도 수원시 팔달구 팔달로",
-        img: "/images/waxingClub.png",
+        img: "/images/wax_2.png",
         detailAddress: "134호",
         rating: "4.3",
         description: "전문적인 왁싱 서비스를 제공하는 왁싱클럽입니다.",
@@ -3421,7 +3421,7 @@ export const shops = [
                 menus: [
                     {
                         menuId: 7,
-                        imgUri: "/images/body_wax.png",
+                        imgUri: "/assets_shop/waxing_2.png",
                         price: 35000,
                         name: "브라질리언 왁싱",
                         description: "부드럽고 깔끔한 브라질리언 왁싱입니다."
