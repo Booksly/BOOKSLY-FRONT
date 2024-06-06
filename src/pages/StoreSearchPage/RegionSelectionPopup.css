@@ -3,27 +3,28 @@
   bottom: 0px;
   right: 0px;
   left: 0px;
-  height: fit-content;
-  background: #ffffff;
+  height: 100%;
+  background: #fff2f2;
 }
 .RegionSelectionPopupBack {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  background: #ffffff;
+  background: #fff2f2;
+  width: 500px;
 }
 .RegionSelectionPopupcontainer {
   border-radius: 30px;
-  background: #ffffff;
+  background: #fff2f2;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  width: 500px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 .RegionSelectionPopup .frame-204 {
-  border: 4px solid #acacac;
-  background: #ffffff;
+  /* background: #ffffff; */
   display: flex;
   flex-direction: row;
   align-self: flex-start;
