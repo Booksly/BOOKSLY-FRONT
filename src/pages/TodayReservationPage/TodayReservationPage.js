@@ -17,6 +17,7 @@ import { time_event_dummy } from "../../data/time-event-store/dummy";
 
 import { shops } from "../../data/reservation/dummy";
 
+//예약가능한 시간 합치기 (직원끼리 겹치는 시간 합쳐서 보여주기)
 const getMergedReservationTimes = (shopId) => {
   const shop = shops.find((s) => s.shopId === shopId);
   if (!shop) return "";
@@ -107,7 +108,7 @@ const StoreCard = ({ category, name, location, menu, id }) => {
 const StoreCard2 = ({
   category,
   name,
-  address,
+  location,
   menu,
   total_sale_late,
   sale_name,
@@ -135,7 +136,7 @@ const StoreCard2 = ({
             <span className="store_name">{name}</span>
           </div>
           <div className="store_info_where">
-            <span className="store_where">{address}</span>
+            <span className="store_where">{location}</span>
           </div>
         </div>
         <div className="menu-names">
@@ -187,7 +188,10 @@ const ResearchResults = ({ stores }) => (
 );
 
 // 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores = [], selectedTimes }) => {
+const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions}) => {
+  //const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
+  const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
+  
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -200,17 +204,23 @@ const ResearchResults2 = ({ stores = [], selectedTimes }) => {
     });
   };
 
+  const filterStoresByRegion = (store) => {
+    if (selectedRegions.length === 0) return true;
+    return selectedRegions.some((region) => store.location.includes(region));
+  };
+
   return (
     <div className="research-results">
       {stores.flatMap((store, index) =>
         Object.entries(store.possible_reserve_time).map(([date, times]) => {
+          if (date !== today) return null; //오늘 날짜 아니면 리턴 널
           const filteredTimes = filterTimes(times);
-          return filteredTimes.length > 0 ? (
+          return filteredTimes.length > 0 && filterStoresByRegion(store)? (
             <StoreCard2
               key={`${index}-${date}`}
               category={store.category}
               name={store.name}
-              address={store.address}
+              location={store.location}
               menu={store.menu}
               total_sale_late={store.total_sale_late}
               sale_name={store.sale_name}
@@ -628,7 +638,8 @@ export default function TodayReservationPage() {
                   </div>
                   <div className="research-results">
                     <ResearchResults2 stores={filteredStores(top_100_stores)}
-                    selectedTimes={selectedTimes} />
+                    selectedTimes={selectedTimes} 
+                    selectedRegions={selectedRegions}/>
                   </div>
                 </div>
               </div>
