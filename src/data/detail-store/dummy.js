@@ -80,21 +80,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/deb9d47c-97d3-41d8-a131-de27a97b227b",
+                "profileImgUri": "/assets_shop/designer_M_1.png",
                 "name": "제롬 원장",
                 "reviewNum": 2,
                 "description": "15년 경력 / 펌 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/12f5b805-e423-4469-8481-81d7d7b73cbf",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "지연 디자이너",
                 "reviewNum": 1,
                 "description": "레이어드 컷 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/53bc6db6-b514-49a1-8c35-224bebbb1985",
+                "profileImgUri": "/assets_shop/designer_W_6.png",
                 "name": "아름 디자이너",
                 "reviewNum": 1,
                 "description": "남성컷 전문"
@@ -180,14 +180,14 @@ export const shops = [
         "employees": [
             {
                 "id": 4,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "윤지 원장",
                 "reviewNum": 3,
                 "description": "왁싱 전문가 / 10년 경력"
             },
             {
                 "id": 5,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "미나 디자이너",
                 "reviewNum": 1,
                 "description": "페이스 왁싱 전문"
@@ -260,14 +260,14 @@ export const shops = [
         "employees": [
             {
                 "id": 6,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "수진 원장",
                 "reviewNum": 4,
                 "description": "네일 아트 전문가 / 12년 경력"
             },
             {
                 "id": 7,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee4.png",
+                "profileImgUri": "/assets_shop/designer_W_5.png",
                 "name": "혜림 디자이너",
                 "reviewNum": 2,
                 "description": "젤 네일 전문"
@@ -340,14 +340,14 @@ export const shops = [
         "employees": [
             {
                 "id": 8,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee5.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "소연 원장",
                 "reviewNum": 3,
                 "description": "네일 케어 전문가 / 15년 경력"
             },
             {
                 "id": 9,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee6.png",
+                "profileImgUri": "/assets_shop/designer_W_6.png",
                 "name": "지현 디자이너",
                 "reviewNum": 1,
                 "description": "스파 네일 케어 전문"
@@ -425,7 +425,7 @@ export const shops = [
         "employees": [
             {
                 "id": 10,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee7.png",
+                "profileImgUri": "/assets_shop/designer_W_3.png",
                 "name": "민지 원장",
                 "reviewNum": 1,
                 "description": "속눈썹 및 눈썹 전문가 / 8년 경력"
@@ -498,14 +498,14 @@ export const shops = [
         "employees": [
             {
                 "id": 11,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee8.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "아망 원장",
                 "reviewNum": 2,
                 "description": "속눈썹 연장 전문가 / 10년 경력"
             },
             {
                 "id": 12,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee9.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "라희 디자이너",
                 "reviewNum": 2,
                 "description": "볼륨 속눈썹 연장 전문"
@@ -583,7 +583,7 @@ export const shops = [
         "employees": [
             {
                 "id": 13,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/employee10.png",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "로랑 원장",
                 "reviewNum": 3,
                 "description": "왁싱 전문가 / 15년 경력"
@@ -668,21 +668,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/8_employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_5.png",
                 "name": "김지수",
                 "reviewNum": 2,
                 "description": "3년 경력 / 바디 왁싱 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/8_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "박민주",
                 "reviewNum": 1,
                 "description": "페이스 왁싱 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/8_employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_6.png",
                 "name": "최다은",
                 "reviewNum": 1,
                 "description": "브라질리언 왁싱 전문"
@@ -767,21 +767,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/9_employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "이수민",
                 "reviewNum": 2,
                 "description": "5년 경력 / 웨딩 메이크업 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/9_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "김예은",
                 "reviewNum": 1,
                 "description": "기본 메이크업 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/9_employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_5.png",
                 "name": "박가영",
                 "reviewNum": 1,
                 "description": "드레스 메이크업 전문"
@@ -873,21 +873,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/10_employee1.png",
+                "profileImgUri": "/assets_shop/designer_M_1.png",
                 "name": "정민수",
                 "reviewNum": 2,
                 "description": "10년 경력 / 펌 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/10_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "박지연",
                 "reviewNum": 1,
                 "description": "여성 컷 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/10_employee3.png",
+                "profileImgUri": "/assets_shop/designer_M_3.png",
                 "name": "김준호",
                 "reviewNum": 1,
                 "description": "남성 컷 전문"
@@ -972,21 +972,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/11_employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "이지혜",
                 "reviewNum": 2,
                 "description": "7년 경력 / 웨딩 메이크업 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/11_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_5.png",
                 "name": "김민정",
                 "reviewNum": 1,
                 "description": "기본 메이크업 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/11_employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "박지수",
                 "reviewNum": 1,
                 "description": "드레스 메이크업 전문"
@@ -1059,21 +1059,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/12_employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "정수진",
                 "reviewNum": 2,
                 "description": "8년 경력 / 웨딩 메이크업 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/12_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "이윤아",
                 "reviewNum": 1,
                 "description": "기본 메이크업 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/12_employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_3.png",
                 "name": "최유진",
                 "reviewNum": 1,
                 "description": "웨딩 메이크업 전문"
@@ -1158,21 +1158,21 @@ export const shops = [
         "employees" : [
             {
                 "id": 1,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/13_employee1.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "박세은",
                 "reviewNum": 2,
                 "description": "6년 경력 / 웨딩 메이크업 전문"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/13_employee2.png",
+                "profileImgUri": "/assets_shop/designer_W_2.png",
                 "name": "이정민",
                 "reviewNum": 1,
                 "description": "기본 메이크업 전문"
             },
             {
                 "id": 3,
-                "profileImgUri": "https://booksly-img-server.s3.ap-northeast-2.amazonaws.com/employees/13_employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_3.png",
                 "name": "김하늘",
                 "reviewNum": 1,
                 "description": "드레스 메이크업 전문"
@@ -1318,14 +1318,14 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee3.png",
+                "profileImgUri": "/assets_shop/designer_W_3.png",
                 "name": "이영희",
                 "reviewNum": 3,
                 "description": "8년 경력 / 메이크업 전문가"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://example.com/employee4.png",
+                "profileImgUri": "/assets_shop/designer_W_4.png",
                 "name": "박미영",
                 "reviewNum": 1,
                 "description": "6년 경력 / 웨딩 메이크업 전문가"
@@ -1389,14 +1389,14 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee5.png",
+                "profileImgUri": "/assets_shop/designer_W_5.png",
                 "name": "최수정",
                 "reviewNum": 3,
                 "description": "10년 경력 / 아로마 마사지 전문가"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://example.com/employee6.png",
+                "profileImgUri": "/assets_shop/designer_W_6.png",
                 "name": "한유리",
                 "reviewNum": 1,
                 "description": "5년 경력 / 페이스 마사지 전문가"
@@ -1455,14 +1455,14 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee7.png",
+                "profileImgUri": "/assets_shop/designer_M_2.png",
                 "name": "서준영",
                 "reviewNum": 2,
                 "description": "8년 경력 / 발 마사지 전문가"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://example.com/employee8.png",
+                "profileImgUri": "/assets_shop/designer_M_3.png",
                 "name": "이상훈",
                 "reviewNum": 1,
                 "description": "5년 경력 / 리플렉솔로지 전문가"
@@ -1533,14 +1533,14 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee9.png",
+                "profileImgUri": "/assets_shop/designer_M_1.png",
                 "name": "김현우",
                 "reviewNum": 3,
                 "description": "12년 경력 / 스포츠 마사지 전문가"
             },
             {
                 "id": 2,
-                "profileImgUri": "https://example.com/employee10.png",
+                "profileImgUri": "/assets_shop/designer_M_4.png",
                 "name": "박지민",
                 "reviewNum": 1,
                 "description": "8년 경력 / 스웨디시 마사지 전문가"
@@ -1592,7 +1592,7 @@ export const shops = [
         "employees": [
             {
                 "id": 1,
-                "profileImgUri": "https://example.com/employee11.png",
+                "profileImgUri": "/assets_shop/designer_W_1.png",
                 "name": "조민주",
                 "reviewNum": 4,
                 "description": "5년 경력 / 속눈썹 연장 전문가"
@@ -1663,7 +1663,7 @@ export const shops = [
         'employees': [
             {
                 'id': 1,
-                'profileImgUri': "https://example.com/employee1.png",
+                'profileImgUri': "/assets_shop/designer_W_1.png",
                 'name': "김헤어",
                 'reviewNum': 2,
                 'description': "10년 경력 / 펌 전문가"
@@ -1715,7 +1715,7 @@ export const shops = [
         employees: [
             {
                 id: 2,
-                profileImgUri: "https://example.com/employee2.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "박네일",
                 reviewNum: 3,
                 description: "5년 경력 / 젤 네일 전문가"
@@ -1767,7 +1767,7 @@ export const shops = [
         employees: [
             {
                 id: 3,
-                profileImgUri: "https://example.com/employee3.png",
+                profileImgUri: "/assets_shop/designer_W_3.png",
                 name: "이네일",
                 reviewNum: 4,
                 description: "7년 경력 / 네일 아트 전문가"
@@ -1831,7 +1831,7 @@ export const shops = [
         employees: [
             {
                 id: 4,
-                profileImgUri: "https://example.com/employee4.png",
+                profileImgUri: "/assets_shop/designer_W_4.png",
                 name: "김왁싱",
                 reviewNum: 5,
                 description: "10년 경력 / 왁싱 전문가"
@@ -1895,7 +1895,7 @@ export const shops = [
         employees: [
             {
                 id: 5,
-                profileImgUri: "https://example.com/employee5.png",
+                profileImgUri: "/assets_shop/designer_W_5.png",
                 name: "박봄",
                 reviewNum: 3,
                 description: "8년 경력 / 헤어컷 전문가"
@@ -1947,7 +1947,7 @@ export const shops = [
         employees: [
             {
                 id: 6,
-                profileImgUri: "https://example.com/employee6.png",
+                profileImgUri: "/assets_shop/designer_W_6.png",
                 name: "김모아",
                 reviewNum: 4,
                 description: "6년 경력 / 네일 아트 전문가"
@@ -1992,7 +1992,7 @@ export const shops = [
         employees: [
             {
                 id: 7,
-                profileImgUri: "https://example.com/employee7.png",
+                profileImgUri: "/assets_shop/designer_W_1.png",
                 name: "이왁싱",
                 reviewNum: 2,
                 description: "5년 경력 / 바디 왁싱 전문가"
@@ -2049,7 +2049,7 @@ export const shops = [
         employees: [
             {
                 id: 8,
-                profileImgUri: "https://example.com/employee8.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "박눈썹",
                 reviewNum: 3,
                 description: "7년 경력 / 속눈썹 전문가"
@@ -2113,7 +2113,7 @@ export const shops = [
         employees: [
             {
                 id: 9,
-                profileImgUri: "https://example.com/employee9.png",
+                profileImgUri: "/assets_shop/designer_M_1.png",
                 name: "김스타일",
                 reviewNum: 2,
                 description: "6년 경력 / 염색 전문가"
@@ -2165,7 +2165,7 @@ export const shops = [
         employees: [
             {
                 id: 10,
-                profileImgUri: "https://example.com/employee10.png",
+                profileImgUri: "/assets_shop/designer_W_4.png",
                 name: "박갤러리",
                 reviewNum: 3,
                 description: "8년 경력 / 네일 아트 전문가"
@@ -2210,7 +2210,7 @@ export const shops = [
         employees: [
             {
                 id: 11,
-                profileImgUri: "https://example.com/employee11.png",
+                profileImgUri: "/assets_shop/designer_W_5.png",
                 name: "이왁싱인",
                 reviewNum: 2,
                 description: "6년 경력 / 바디 왁싱 전문가"
@@ -2267,7 +2267,7 @@ export const shops = [
         employees: [
             {
                 id: 12,
-                profileImgUri: "https://example.com/employee12.png",
+                profileImgUri: "/assets_shop/designer_W_6.png",
                 name: "박브로우",
                 reviewNum: 3,
                 description: "7년 경력 / 속눈썹 전문가"
@@ -2312,7 +2312,7 @@ export const shops = [
         employees: [
             {
                 id: 13,
-                profileImgUri: "https://example.com/employee13.png",
+                profileImgUri: "/assets_shop/designer_M_2.png",
                 name: "김힐링",
                 reviewNum: 2,
                 description: "10년 경력 / 바디 마사지 전문가"
@@ -2376,7 +2376,7 @@ export const shops = [
         employees: [
             {
                 id: 14,
-                profileImgUri: "https://example.com/employee14.png",
+                profileImgUri: "/assets_shop/designer_W_3.png",
                 name: "이그리다",
                 reviewNum: 3,
                 description: "8년 경력 / 헤어컷 전문가"
@@ -2428,7 +2428,7 @@ export const shops = [
         employees: [
             {
                 id: 15,
-                profileImgUri: "https://example.com/employee15.png",
+                profileImgUri: "/assets_shop/designer_W_4.png",
                 name: "김핑크",
                 reviewNum: 4,
                 description: "6년 경력 / 네일 아트 전문가"
@@ -2473,7 +2473,7 @@ export const shops = [
         employees: [
             {
                 id: 16,
-                profileImgUri: "https://example.com/employee16.png",
+                profileImgUri: "/assets_shop/designer_W_5.png",
                 name: "이왁싱바",
                 reviewNum: 2,
                 description: "6년 경력 / 바디 왁싱 전문가"
@@ -2525,7 +2525,7 @@ export const shops = [
         employees: [
             {
                 id: 17,
-                profileImgUri: "https://example.com/employee17.png",
+                profileImgUri: "/assets_shop/designer_W_6.png",
                 name: "김제니",
                 reviewNum: 3,
                 description: "7년 경력 / 메이크업 전문가"
@@ -2577,7 +2577,7 @@ export const shops = [
         employees: [
             {
                 id: 18,
-                profileImgUri: "https://example.com/employee18.png",
+                profileImgUri: "/assets_shop/designer_W_1.png",
                 name: "김속눈썹",
                 reviewNum: 2,
                 description: "10년 경력 / 속눈썹 연장 전문가"
@@ -2634,7 +2634,7 @@ export const shops = [
         employees: [
             {
                 id: 19,
-                profileImgUri: "https://example.com/employee19.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "박스파",
                 reviewNum: 2,
                 description: "8년 경력 / 아로마 마사지 전문가"
@@ -2698,7 +2698,7 @@ export const shops = [
         employees: [
             {
                 id: 20,
-                profileImgUri: "https://example.com/employee20.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "김라라",
                 reviewNum: 2,
                 description: "6년 경력 / 헤어컷 전문가"
@@ -2750,7 +2750,7 @@ export const shops = [
         employees: [
             {
                 id: 21,
-                profileImgUri: "https://example.com/employee21.png",
+                profileImgUri: "/assets_shop/designer_W_1.png",
                 name: "김뷰티",
                 reviewNum: 4,
                 description: "6년 경력 / 네일 아트 전문가"
@@ -2795,7 +2795,7 @@ export const shops = [
         employees: [
             {
                 id: 22,
-                profileImgUri: "https://example.com/employee22.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "이뷰티",
                 reviewNum: 2,
                 description: "6년 경력 / 바디 왁싱 전문가"
@@ -2847,7 +2847,7 @@ export const shops = [
         employees: [
             {
                 id: 23,
-                profileImgUri: "https://example.com/employee23.png",
+                profileImgUri: "/assets_shop/designer_W_3.png",
                 name: "김화장",
                 reviewNum: 3,
                 description: "7년 경력 / 메이크업 전문가"
@@ -2899,7 +2899,7 @@ export const shops = [
         employees: [
             {
                 id: 24,
-                profileImgUri: "https://example.com/employee24.png",
+                profileImgUri: "/assets_shop/designer_W_4.png",
                 name: "김래쉬",
                 reviewNum: 2,
                 description: "10년 경력 / 속눈썹 연장 전문가"
@@ -2944,7 +2944,7 @@ export const shops = [
         employees: [
             {
                 id: 25,
-                profileImgUri: "https://example.com/employee25.png",
+                profileImgUri: "/assets_shop/designer_W_5.png",
                 name: "김힐링",
                 reviewNum: 2,
                 description: "10년 경력 / 바디 마사지 전문가"
@@ -3008,7 +3008,7 @@ export const shops = [
         employees: [
             {
                 id: 26,
-                profileImgUri: "https://example.com/employee26.png",
+                profileImgUri: "/assets_shop/designer_W_6.png",
                 name: "이루비",
                 reviewNum: 3,
                 description: "8년 경력 / 헤어컷 전문가"
@@ -3060,7 +3060,7 @@ export const shops = [
         employees: [
             {
                 id: 27,
-                profileImgUri: "https://example.com/employee27.png",
+                profileImgUri: "/assets_shop/designer_W_1.png",
                 name: "김유니",
                 reviewNum: 4,
                 description: "6년 경력 / 네일 아트 전문가"
@@ -3105,7 +3105,7 @@ export const shops = [
         employees: [
             {
                 id: 28,
-                profileImgUri: "https://example.com/employee28.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "이미니",
                 reviewNum: 2,
                 description: "6년 경력 / 바디 왁싱 전문가"
@@ -3157,7 +3157,7 @@ export const shops = [
         employees: [
             {
                 id: 29,
-                profileImgUri: "https://example.com/employee29.png",
+                profileImgUri: "/assets_shop/designer_M_3.png",
                 name: "김스타",
                 reviewNum: 3,
                 description: "7년 경력 / 메이크업 전문가"
@@ -3214,7 +3214,7 @@ export const shops = [
         employees: [
             {
                 id: 30,
-                profileImgUri: "https://example.com/employee30.png",
+                profileImgUri: "/assets_shop/designer_W_3.png",
                 name: "김뷰티",
                 reviewNum: 3,
                 description: "7년 경력 / 속눈썹 전문가"
@@ -3271,7 +3271,7 @@ export const shops = [
         employees: [
             {
                 id: 31,
-                profileImgUri: "https://example.com/employee31.png",
+                profileImgUri: "/assets_shop/designer_W_1.png",
                 name: "김아로마",
                 reviewNum: 4,
                 description: "10년 경력 / 아로마 마사지 전문가"
@@ -3335,7 +3335,7 @@ export const shops = [
         employees: [
             {
                 id: 32,
-                profileImgUri: "https://example.com/employee32.png",
+                profileImgUri: "/assets_shop/designer_W_2.png",
                 name: "이루비",
                 reviewNum: 3,
                 description: "8년 경력 / 헤어컷 전문가"
@@ -3387,7 +3387,7 @@ export const shops = [
         employees: [
             {
                 id: 33,
-                profileImgUri: "https://example.com/employee33.png",
+                profileImgUri: "/assets_shop/designer_W_3.png",
                 name: "김아트",
                 reviewNum: 4,
                 description: "6년 경력 / 네일 아트 전문가"
@@ -3432,7 +3432,7 @@ export const shops = [
         employees: [
             {
                 id: 34,
-                profileImgUri: "https://example.com/employee34.png",
+                profileImgUri: "/assets_shop/designer_W_4.png",
                 name: "이미니",
                 reviewNum: 2,
                 description: "6년 경력 / 바디 왁싱 전문가"
