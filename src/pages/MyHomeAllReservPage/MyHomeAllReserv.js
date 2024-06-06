@@ -50,7 +50,7 @@ function Testt({
             <div className="storePartition">|</div>
             <div className="storeInfo">{category}</div>
             <div className="storePartition">|</div>
-            <div className="regularSign">{isRegular ? "☆" : "★"}</div>
+            <div className="regularSign">{isRegular ? "★" : "☆"}</div>
           </div>
           <div className="reservInfo">
             <div className="reservDate">{date}</div>
@@ -96,16 +96,6 @@ function Testt({
           <div className="reservMenuList">{menuList}</div>
         </div>
         <div className="reservBoxLine"></div>
-        {status === "upcoming" && (
-          <div className="cancelButton" onClick={onCancel}>
-            예약취소
-          </div>
-        )}
-        {status === "cancelled" && (
-          <div className="cancelDelButton" onClick={onDelete}>
-            취소내역삭제
-          </div>
-        )}
         {status === "completed_with_review" && (
           <div className="reviewBox">
             <div className="reviewLine"></div>
@@ -121,13 +111,24 @@ function Testt({
             </div>
           </div>
         )}
+      </div>
+        {status === "upcoming" && (
+          <div className="cancelButton" onClick={onCancel}>
+            예약취소
+          </div>
+        )}
+        {status === "cancelled" && (
+          <div className="cancelDelButton" onClick={onDelete}>
+            취소내역삭제
+          </div>
+        )}
+        
         {(status === "completed_with_review" ||
           status === "completed_without_review") && (
           <div className="DelButton" onClick={onDelete}>
             예약내역삭제
           </div>
         )}
-      </div>
     </div>
   );
 }
@@ -145,7 +146,7 @@ export default function MyHomeAllReserv() {
       storeName: "글래드뷰티",
       location: "수원시 영통구 광교산로",
       category: "메이크업",
-      isRegular: true,
+      isRegular: false,
       date: "24. 6. 13 목",
       time: "12:30",
       designer: "김예은",
@@ -161,7 +162,7 @@ export default function MyHomeAllReserv() {
       location: "서울시 마포구 창전동",
       category: "네일",
       isRegular: false,
-      date: "24. 2. 20 화",
+      date: "24. 5. 20 화",
       time: "9:30",
       designer: "노진영 디자이너",
       menuList: "여성커트, 남성커트",
@@ -172,7 +173,7 @@ export default function MyHomeAllReserv() {
     {
       id: 902,
       // storeImage: Image1,
-      storeName: "제이제이 헤어",
+      storeName: "제롬 헤어",
       location: "수원시 영통구 이의동",
       category: "헤어",
       isRegular: true,
@@ -204,7 +205,7 @@ export default function MyHomeAllReserv() {
       storeName: "제이제이 헤어",
       location: "수원시 영통구 이의동",
       category: "헤어",
-      isRegular: true,
+      isRegular: false,
       date: "24. 3. 4 월",
       time: "11:30",
       designer: "김진영 디자이너",

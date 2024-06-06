@@ -190,9 +190,10 @@ const ResearchResults = ({ stores }) => (
 
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStoreCountChange}) => {
-  //const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
-  const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
+  const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
+  //const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
   
+  //시간 필터링
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -205,6 +206,7 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStore
     });
   };
 
+  //지역 필터링
   const filterStoresByRegion = (store) => {
     if (selectedRegions.length === 0) return true;
     return selectedRegions.some((region) => store.location.includes(region));
