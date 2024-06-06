@@ -13,6 +13,7 @@ import { useEffect } from "react";
 //더미데이터 임포트1122
 //top100 데이터
 import { top_100_dummy } from "../../data/top-100/dummy";
+
 import { shops } from "../../data/reservation/dummy";
 
 //예약가능한 시간 합치기 (직원끼리 겹치는 시간 합쳐서 보여주기)
@@ -89,7 +90,6 @@ const StoreCard = ({ id, category, name, location, menu }) => {
 };
 
 // 가게 목록 컴포넌트 - 조회용
-const itemsPerPage = 10;
 const StoreCard2 = ({
   id,
   category,
@@ -131,11 +131,11 @@ const StoreCard2 = ({
       <div className="store_can_reserve_contents">
         <div className="store_can_reserve_content">
           <strong>{date}</strong>
-          <ul>
-            {times.map((time) => (
-              <li key={time}>{time}</li>
-            ))}
-          </ul>
+            <ul>
+              {times.map((time) => (
+                <li key={time}>{time}</li>
+              ))}
+            </ul>
         </div>
         <div className="reserve-look-buts">
           <button className="reserve-but" onClick={handleReserveClick}>
@@ -168,9 +168,9 @@ const ResearchResults = ({ stores }) => (
 
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({
-  stores = [],
-  selectedTimes,
-  selectedRegions,
+  stores = [], 
+  selectedTimes, 
+  selectedRegions, 
   selectedDates,
   onStoreCountChange,
   currentPage,
@@ -180,31 +180,7 @@ const ResearchResults2 = ({
 }) => {
   const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
   const startIndex = (currentPage - 1) * itemsPerPage;
-
-  // 시간 순서로 정렬
-  const sortedStores = stores
-    .flatMap((store) =>
-      store.possible_reserve_time
-        ? Object.entries(store.possible_reserve_time).flatMap(
-            ([date, times]) => {
-              return times.map((time) => ({
-                ...store,
-                date,
-                time,
-              }));
-            }
-          )
-        : []
-    )
-    .sort(
-      (a, b) =>
-        new Date(`${a.date}T${a.time}`) - new Date(`${b.date}T${b.time}`)
-    );
-
-  const currentStores = sortedStores.slice(
-    startIndex,
-    startIndex + itemsPerPage
-  );
+  const currentStores = stores.slice(startIndex, startIndex + itemsPerPage);
 
   const paginationButtons = [];
   for (let i = 1; i <= totalPages; i++) {
@@ -219,7 +195,7 @@ const ResearchResults2 = ({
     );
   }
 
-  // 시간 필터링
+  //시간 필터링
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -232,7 +208,7 @@ const ResearchResults2 = ({
     });
   };
 
-  // 지역 필터링
+  //지역 필터링
   const filterStoresByRegion = (store) => {
     if (selectedRegions.length === 0) return true;
     return selectedRegions.some((region) => store.location.includes(region));
@@ -241,50 +217,113 @@ const ResearchResults2 = ({
   // 날짜 필터링
   const filterStoresByDate = (date) => {
     if (selectedDates.length === 0) return true;
-    return selectedDates.some((selectedDate) => selectedDate === date);
+    return selectedDates.some(
+      (selectedDate) => selectedDate === date
+    );
   };
 
-  // 총 조회 개수 개수 저장하기 위함
+  //총 조회 개수 개수 저장하기 위함
   useEffect(() => {
     let count = 0;
     stores.forEach((store) => {
-      if (store.possible_reserve_time) {
-        Object.entries(store.possible_reserve_time).forEach(([date, times]) => {
-          if (filterStoresByDate(date) && filterStoresByRegion(store)) {
-            const filteredTimes = filterTimes(times);
-            if (filteredTimes.length > 0) {
-              count++;
-            }
+      Object.entries(store.possible_reserve_time).forEach(([date, times]) => {
+        if (filterStoresByDate(date) && filterStoresByRegion(store)) {
+          const filteredTimes = filterTimes(times);
+          if (filteredTimes.length > 0) {
+            count++;
           }
-        });
-      }
+        }
+      });
     });
     onStoreCountChange(count);
-  }, [
-    stores,
-    selectedTimes,
-    selectedRegions,
-    selectedDates,
-    onStoreCountChange,
-  ]);
+  }, [stores, selectedTimes, selectedRegions, selectedDates, onStoreCountChange]);
 
   return (
     <div>
       <div className="research-results">
-        {currentStores.map((store, index) => (
-          <StoreCard2
-            key={`${index}-${store.date}-${store.time}`}
-            category={store.category}
-            name={store.name}
-            location={store.location}
-            menu={store.menu}
-            total_sale_late={store.total_sale_late}
-            sale_name={store.sale_name}
-            date={store.date}
-            times={[store.time]}
-            id={store.shopId}
-          />
-        ))}
+        {/* {currentStores.length > 0 ? (
+          currentStores.map((store, index) => (
+            <StoreCard2
+              key={`${index}-${store.date}`}
+              category={store.category}
+              name={store.name}
+              location={store.location}
+              menu={store.menu}
+              total_sale_late={store.total_sale_late}
+              sale_name={store.sale_name}
+              date={store.date}
+              times={store.times}
+              id={store.shopId}
+            />
+          ))
+        ) : (
+          <div>No stores found.</div>
+        )} */}
+
+          {/* {stores.flatMap((store, index) =>
+            Object.entries(store.possible_reserve_time).map(([date, times]) => {
+              if (date !== today) return null; //오늘 날짜 아니면 리턴 널
+              const filteredTimes = filterTimes(times);
+              return filteredTimes.length > 0 && filterStoresByRegion(store)? (
+                <StoreCard2
+                  key={`${index}-${date}`}
+                  category={store.category}
+                  name={store.name}
+                  location={store.location}
+                  menu={store.menu}
+                  total_sale_late={store.total_sale_late}
+                  sale_name={store.sale_name}
+                  date={date}
+                  times={filteredTimes}
+                  id={store.shopId}
+                />
+              ) : null;
+            })
+          )} */}
+
+          {stores.flatMap((store, index) =>
+            Object.entries(store.possible_reserve_time).map(([date, times]) => {
+              //if (date !== today) return null; // 오늘 날짜 아니면 리턴 널
+              const filteredTimes = filterTimes(times);
+              return filteredTimes.length > 0 && filterStoresByRegion(store) && filterStoresByDate(date) ? (
+                <StoreCard2
+                  key={`${index}-${date}`}
+                  category={store.category}
+                  name={store.name}
+                  location={store.location}
+                  menu={store.menu}
+                  total_sale_late={store.total_sale_late}
+                  sale_name={store.sale_name}
+                  date={date} //여기 그대로가?
+                  times={filteredTimes}
+                  id={store.shopId}
+                />
+              ) : null;
+            })
+          ).filter((component) => component !== null).length > 0 ? (
+            currentStores.flatMap((store, index) =>
+              Object.entries(store.possible_reserve_time).map(([date, times]) => {
+                const filteredTimes = filterTimes(times);
+                return filteredTimes.length > 0 && filterStoresByRegion(store) && filterStoresByDate(date) ? (
+                  <StoreCard2
+                    key={`${index}-${date}`}
+                    category={store.category}
+                    name={store.name}
+                    location={store.location}
+                    menu={store.menu}
+                    total_sale_late={store.total_sale_late}
+                    sale_name={store.sale_name}
+                    date={date}
+                    times={filteredTimes}
+                    id={store.shopId}
+                  />
+                ) : null;
+              })
+            )
+          ) : (
+            <div>No stores found.</div>
+          )}
+          
       </div>
       <div className="pagination-container">
         <div className="pagination">{paginationButtons}</div>
@@ -292,6 +331,8 @@ const ResearchResults2 = ({
     </div>
   );
 };
+
+
 
 export default function StoreSearchPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -312,6 +353,7 @@ export default function StoreSearchPage() {
   const [btn7Active, setBtn7Active] = useState(false);
   const [filteredStoreCount, setFilteredStoreCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   const toggleBtnAllActive = () => {
     setBtnAllActive(!btnAllActive);
@@ -369,7 +411,7 @@ export default function StoreSearchPage() {
     },
     content: {
       width: "600px",
-      height: "550px",
+      height: "650px",
       margin: "auto",
       borderRadius: "4px",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
@@ -549,7 +591,7 @@ export default function StoreSearchPage() {
                 <button className="container-4" onClick={openRegionModal}>
                   <div className="container-5">
                     {selectedRegions.length === 0
-                      ? "지역을 선택해 주세요" //"경기도 수원시 영통구, 경기도 수원시 팔달구"
+                      ? "지역을 선택해 주세요"//"경기도 수원시 영통구, 경기도 수원시 팔달구"
                       : selectedRegions.join(", ")}
                   </div>
                 </button>
@@ -577,7 +619,7 @@ export default function StoreSearchPage() {
                     onClick={openDateModal}
                   >
                     {selectedDates.length === 0
-                      ? "날짜를 선택해 주세요" //"2024-06-09, 2024-06-13"
+                      ? "날짜를 선택해 주세요"//"2024-06-09, 2024-06-13"
                       : selectedDates
                           .map((date) => formatDate(date))
                           .join(", ")}
@@ -595,7 +637,7 @@ export default function StoreSearchPage() {
                         time.startMin === "" &&
                         time.endMin === ""
                     )
-                      ? "시간을 선택해 주세요" //"12시 30분 ~ 13시 30분, 17시 ~ 19시"
+                      ? "시간을 선택해 주세요"//"12시 30분 ~ 13시 30분, 17시 ~ 19시"
                       : selectedTimes
                           .map(
                             (time) =>
@@ -756,12 +798,14 @@ export default function StoreSearchPage() {
               <div className="top-100-list-all2">
                 <div className="top-100-list">
                   <div className="top-test">
-                    <span className="top-100">총 {filteredStoreCount} 개</span>
+                    <span className="top-100">
+                      총 {filteredStoreCount} 개
+                    </span>
                   </div>
                   <div className="research-results">
                     <ResearchResults2
                       stores={filteredStores(top_100_stores)}
-                      selectedTimes={selectedTimes}
+                      selectedTimes={selectedTimes} 
                       selectedRegions={selectedRegions}
                       selectedDates={selectedDates.map((date) =>
                         formatDate(new Date(date))
