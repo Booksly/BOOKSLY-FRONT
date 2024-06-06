@@ -369,7 +369,7 @@ export default function StoreSearchPage() {
     },
     content: {
       width: "600px",
-      height: "650px",
+      height: "550px",
       margin: "auto",
       borderRadius: "4px",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
