@@ -252,6 +252,7 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStore
   );
 };
 
+
 //일차로 숨겨둠
 // const ResearchResults2 = ({ stores = [] }) => (
 //   <div className="research-results">
