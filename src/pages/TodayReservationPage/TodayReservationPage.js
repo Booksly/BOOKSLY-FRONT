@@ -46,22 +46,22 @@ const top_100_stores = top_100_dummy.map((store) => ({
   possible_reserve_time: getMergedReservationTimes(store.shopId),
 }));
 
-const StoreReserveComponent = ({ possibleReserveTimes }) => {
-  return (
-    <div className="store_can_reserve_content">
-      {Object.entries(possibleReserveTimes).map(([date, times]) => (
-        <div key={date} className="store_can_reserve_info">
-          <strong>{date}</strong>
-          <ul>
-            {times.map((time) => (
-              <li key={time}>{time}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
-};
+// const StoreReserveComponent = ({ possibleReserveTimes }) => {
+//   return (
+//     <div className="store_can_reserve_content">
+//       {Object.entries(possibleReserveTimes).map(([date, times]) => (
+//         <div key={date} className="store_can_reserve_info">
+//           <strong>{date}</strong>
+//           <ul>
+//             {times.map((time) => (
+//               <li key={time}>{time}</li>
+//             ))}
+//           </ul>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
 // 가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu, id }) => {
@@ -111,7 +111,9 @@ const StoreCard2 = ({
   menu,
   total_sale_late,
   sale_name,
-  possibleReserveTimes,
+  // possibleReserveTimes,
+  date,
+  times,
   id,
 }) => {
   const navigate = useNavigate();
@@ -147,7 +149,14 @@ const StoreCard2 = ({
           </span>
           <span className="store_can_reserve_info">{sale_name}</span>
         </div>
-        <StoreReserveComponent possibleReserveTimes={possibleReserveTimes} />
+        <div className="store_can_reserve_content">
+          <strong>{date}</strong>
+          <ul>
+            {times.map((time) => (
+              <li key={time}>{time}</li>
+            ))}
+          </ul>
+        </div>
         <div className="reserve-look-buts">
           <button className="reserve-but" onClick={handleReserveClick}>
             <span className="btn_name">예약하기</span>
@@ -180,7 +189,7 @@ const ResearchResults = ({ stores }) => (
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores = [] }) => (
   <div className="research-results">
-    {stores.map((store, index) => (
+    {/* {stores.map((store, index) => (
       <StoreCard2
         key={index}
         category={store.category}
@@ -192,7 +201,23 @@ const ResearchResults2 = ({ stores = [] }) => (
         possibleReserveTimes={store.possible_reserve_time}
         id={store.shopId}
       />
-    ))}
+    ))} */}
+    {stores.flatMap((store, index) =>
+      Object.entries(store.possible_reserve_time).map(([date, times]) => (
+        <StoreCard2
+          key={`${index}-${date}`}
+          category={store.category}
+          name={store.name}
+          address={store.address}
+          menu={store.menu}
+          total_sale_late={store.total_sale_late}
+          sale_name={store.sale_name}
+          date={date}
+          times={times}
+          id={store.shopId}
+        />
+      ))
+    )}
   </div>
 );
 
