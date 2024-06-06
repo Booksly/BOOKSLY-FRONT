@@ -682,7 +682,7 @@
 .store_can_reserve_contents .store_can_reserve_content {
   width: 150px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   margin: 10px;
   text-align: center;
 }
@@ -722,6 +722,42 @@
   padding: 5px 5.8px 5px 5px;
   box-sizing: border-box;
 }
+/* 탑 100 차트 페지잉용 css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.pagination button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pagination button:disabled {
+  color: gray;
+  cursor: default;
+}
+.pagination button.active {
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: white;
+}
+.top-100-list-all {
+  background-color: #fdf8f3;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.pagination-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 /* .StoreSearchPage .container-45 {
   overflow-wrap: break-word;
   font-family: "Inter";

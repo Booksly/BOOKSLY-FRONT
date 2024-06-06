@@ -8,14 +8,13 @@ import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 import { useNavigate } from "react-router";
 
-
 //더미데이터 임포트
 //top100 데이터
-import {top_100_dummy} from "../../data/top-100/dummy";
+import { top_100_dummy } from "../../data/top-100/dummy";
 
 //이벤트 데이터
-import {last_event_dummy} from "../../data/last-event-store/dummy";
-import {time_event_dummy } from "../../data/time-event-store/dummy";
+import { last_event_dummy } from "../../data/last-event-store/dummy";
+import { time_event_dummy } from "../../data/time-event-store/dummy";
 
 //가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu, id, onClickReserve }) => (
@@ -149,7 +148,7 @@ const sample_stores = [
     menu: "브라질리언 왁싱",
     total_sale_late: 20,
     sale_name: "예약 마감 임박 할인",
-    possible_reserve_time: "2024.06.20 15:30"
+    possible_reserve_time: "2024.06.20 15:30",
   },
   {
     category: "네일",
@@ -158,7 +157,7 @@ const sample_stores = [
     menu: "손케어, 네일, 파츠네일",
     total_sale_late: 30,
     sale_name: "오픈 기념 할인중",
-    possible_reserve_time: "2024.06.20 15:30"
+    possible_reserve_time: "2024.06.20 15:30",
   },
   {
     category: "네일",
@@ -167,10 +166,9 @@ const sample_stores = [
     menu: " 네일, 파츠네일",
     total_sale_late: 30,
     sale_name: "오픈 기념 할인중",
-    possible_reserve_time: "2024.06.20 15:30"
-  }
+    possible_reserve_time: "2024.06.20 15:30",
+  },
 ];
-
 
 export default function TodayReservationPage() {
   const navigate = useNavigate();
@@ -516,13 +514,11 @@ export default function TodayReservationPage() {
                 <div className="top-100-list">
                   <div className="top-test">
                     <span className="top-100">
-                      총 {filteredStoresCount({ stores: sample_stores })} 개
+                      총 {filteredStoresCount(sample_stores)} 개
                     </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2
-                      stores={filteredStores({ stores: sample_stores })}
-                    />
+                    <ResearchResults2 stores={filteredStores(sample_stores)} />
                   </div>
                 </div>
               </div>
@@ -534,7 +530,10 @@ export default function TodayReservationPage() {
                     <span className="top-100">TOP 100</span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults stores={top_100_stores} onClickReserve={goToReserve}/>
+                    <ResearchResults
+                      stores={top_100_stores}
+                      onClickReserve={goToReserve}
+                    />
                   </div>
                 </div>
               </div>

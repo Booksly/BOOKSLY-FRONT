@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { DayPicker } from "react-day-picker";
+import { useNavigate } from "react-router-dom";
 import "react-day-picker/dist/style.css";
 import Modal from "react-modal";
 import "./StoreSearchPage.css";
@@ -9,36 +10,49 @@ import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
 import { shops } from "../../../src/data/detail-store/dummy";
 
-//가게 목록 하나 컴포넌트 - top100용
-const StoreCard = ({ category, name, address, menu }) => (
-  <div className="research-result">
-    <div className="store_info_padding">
-      <div className="store_infos_all">
-        <div className="store_infos">
-          <span className="categori">[{category}]</span>
-          <span className="store_name">{name}</span>
-        </div>
-        <div className="store_info_where">
-          <span className="store_where">{address}</span>
-        </div>
-      </div>
-      <div className="menu-names">
-        <span className="menu_name">{menu}</span>
-      </div>
-    </div>
-    <div className="reserve-look-buts">
-      <div className="reserve-but">
-        <span className="btn_name">예약하기</span>
-      </div>
-      <div className="look-store-but">
-        <span className="btn_name">가게조회</span>
-      </div>
-    </div>
-  </div>
-);
+// 가게 목록 컴포넌트 - 탑 백용
+const StoreCard = ({ id, category, name, address, menu }) => {
+  const navigate = useNavigate();
 
-//가게 목록 하나 컴포넌트 - 가게조회용
+  const handleReserveClick = () => {
+    navigate(`/Reservation?shopId=${id}`);
+  };
+
+  const handleViewStoreClick = () => {
+    navigate(`/DetailedStoreInfo?shopId=${id}`);
+  };
+
+  return (
+    <div className="research-result">
+      <div className="store_info_padding">
+        <div className="store_infos_all">
+          <div className="store_infos">
+            <span className="categori">[{category}]</span>
+            <span className="store_name">{name}</span>
+          </div>
+          <div className="store_info_where">
+            <span className="store_where">{address}</span>
+          </div>
+        </div>
+        <div className="menu-names">
+          <span className="menu_name">{menu}</span>
+        </div>
+      </div>
+      <div className="reserve-look-buts">
+        <button className="reserve-but" onClick={handleReserveClick}>
+          <span className="btn_name">예약하기</span>
+        </button>
+        <button className="look-store-but" onClick={handleViewStoreClick}>
+          <span className="btn_name">가게조회</span>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+// 가게 목록 컴포넌트 - 조회용
 const StoreCard2 = ({
+  id,
   category,
   name,
   address,
@@ -46,53 +60,65 @@ const StoreCard2 = ({
   total_sale_late,
   sale_name,
   possible_reserve_time,
-}) => (
-  <div className="research-result">
-    <div className="store_info_padding">
-      <div className="store_infos_all">
-        <div className="store_infos">
-          <span className="categori">[{category}]</span>
-          <span className="store_name">{name}</span>
-        </div>
-        <div className="store_info_where">
-          <span className="store_where">{address}</span>
-        </div>
-      </div>
-      <div className="menu-names">
-        <span className="menu_name">{menu}</span>
-      </div>
-    </div>
-    <div className="store_can_reserve_contents">
-      <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">
-          총 {total_sale_late}% 할인
-        </span>
-        <span className="store_can_reserve_info">{sale_name}</span>
-      </div>
-      {/* <div className="store_can_reserve_content">
-       
-      </div> */}
-      <div className="store_can_reserve_content">
-        <span className="store_can_reserve_info">{possible_reserve_time}</span>
-      </div>
-      <div className="reserve-look-buts">
-        <div className="reserve-but">
-          <span className="btn_name">예약하기</span>
-        </div>
-        <div className="look-store-but">
-          <span className="btn_name">가게조회</span>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+}) => {
+  const navigate = useNavigate();
 
-//가게 목록 여러개 컴포넌트 - 탑 백용
+  const handleReserveClick = () => {
+    navigate(`/Reservation?shopId=${id}`);
+  };
+
+  const handleViewStoreClick = () => {
+    navigate(`/DetailedStoreInfo?shopId=${id}`);
+  };
+
+  return (
+    <div className="research-result">
+      <div className="store_info_padding">
+        <div className="store_infos_all">
+          <div className="store_infos">
+            <span className="categori">[{category}]</span>
+            <span className="store_name">{name}</span>
+          </div>
+          <div className="store_info_where">
+            <span className="store_where">{address}</span>
+          </div>
+        </div>
+        <div className="menu-names">
+          <span className="menu_name">{menu}</span>
+        </div>
+      </div>
+      <div className="store_can_reserve_contents">
+        <div className="store_can_reserve_content">
+          <span className="store_can_reserve_info">
+            총 {total_sale_late}% 할인
+          </span>
+          <span className="store_can_reserve_info">{sale_name}</span>
+        </div>
+        <div className="store_can_reserve_content">
+          <span className="store_can_reserve_info">
+            {possible_reserve_time}
+          </span>
+        </div>
+        <div className="reserve-look-buts">
+          <button className="reserve-but" onClick={handleReserveClick}>
+            <span className="btn_name">예약하기</span>
+          </button>
+          <button className="look-store-but" onClick={handleViewStoreClick}>
+            <span className="btn_name">가게조회</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// 가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores = [] }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard
         key={index}
+        id={store.id}
         category={store.category}
         name={store.name}
         address={store.address}
@@ -106,12 +132,13 @@ const ResearchResults = ({ stores = [] }) => (
   </div>
 );
 
-//가게 목록 여러개 컴포넌트 - 조회용
+// 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores = [] }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard2
         key={index}
+        id={store.id}
         category={store.category}
         name={store.name}
         address={store.address}
@@ -128,54 +155,11 @@ const ResearchResults2 = ({ stores = [] }) => (
   </div>
 );
 
-//탑백 스토어
-const top_100stores = shops.slice(0, 19);
-// [
-//   // {
-//   //   category: "헤어",
-//   //   name: "뮤뮤 헤어",
-//   //   location: "수원시 팔달구",
-//   //   menu: "여성커트, 남성커트",
-//   // },
-//   // {
-//   //   category: "네일",
-//   //   name: "내일 네일",
-//   //   location: "수원시 영통구",
-//   //   menu: "여성커트, 남성커트, 펌",
-//   // },
-// ];
+// 탑 백 스토어
+const top_100stores = shops.slice(0, 100);
 
-//샘플 스토어
+// 샘플 스토어
 const sample_stores = shops || [];
-// [
-//   {
-//     category: "왁싱/제모",
-//     name: "준하마",
-//     location: "수원시 영통구",
-//     menu: "브라질리언 왁싱",
-//     total_sale_late: 20,
-//     sale_name: "예약 마감 임박 할인",
-//     possible_reserve_time: "2024.06.20 15:30",
-//   },
-//   {
-//     category: "네일",
-//     name: "손끝마루",
-//     location: "수원시 팔달구",
-//     menu: "손케어, 네일, 파츠네일",
-//     total_sale_late: 30,
-//     sale_name: "오픈 기념 할인중",
-//     possible_reserve_time: "2024.06.20 15:30",
-//   },
-//   {
-//     category: "네일",
-//     name: "네일게이션",
-//     location: "수원시 팔달구",
-//     menu: " 네일, 파츠네일",
-//     total_sale_late: 30,
-//     sale_name: "오픈 기념 할인중",
-//     possible_reserve_time: "2024.06.20 15:30",
-//   },
-// ];
 
 export default function StoreSearchPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -194,6 +178,9 @@ export default function StoreSearchPage() {
   const [btn5Active, setBtn5Active] = useState(false);
   const [btn6Active, setBtn6Active] = useState(false);
   const [btn7Active, setBtn7Active] = useState(false);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   const toggleBtnAllActive = () => {
     setBtnAllActive(!btnAllActive);
@@ -315,7 +302,7 @@ export default function StoreSearchPage() {
     return filteredStores(stores).length;
   };
 
-  //카테고리 버튼 코드 간략화
+  // 카테고리 버튼 코드 간략화
   const categoryButtons = [
     {
       id: "btnAll",
@@ -366,6 +353,29 @@ export default function StoreSearchPage() {
       onClick: toggleBtn7Active,
     },
   ];
+
+  const currentStores = top_100stores.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const totalPages = Math.ceil(top_100stores.length / itemsPerPage);
+  const paginationButtons = [];
+  for (let i = 1; i <= totalPages; i++) {
+    paginationButtons.push(
+      <button
+        key={i}
+        onClick={() => handlePageChange(i)}
+        className={i === currentPage ? "active" : ""}
+      >
+        {i}
+      </button>
+    );
+  }
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div className="StoreSearchPage">
@@ -572,7 +582,7 @@ export default function StoreSearchPage() {
               </button>
             </Modal>
 
-            {/* 탑 백 조회 였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
+            {/* 탑 백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
             {/* 필터링에 대한 가게 조회 */}
             {btnAllActive ||
             btn1Active ||
@@ -586,13 +596,11 @@ export default function StoreSearchPage() {
                 <div className="top-100-list">
                   <div className="top-test">
                     <span className="top-100">
-                      총 {filteredStoresCount({ stores: sample_stores })} 개
+                      총 {filteredStoresCount(sample_stores)} 개
                     </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2
-                      stores={filteredStores({ stores: sample_stores })}
-                    />
+                    <ResearchResults2 stores={filteredStores(sample_stores)} />
                   </div>
                 </div>
               </div>
@@ -604,7 +612,10 @@ export default function StoreSearchPage() {
                     <span className="top-100">TOP 100</span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults stores={top_100stores} />
+                    <ResearchResults stores={currentStores} />
+                  </div>
+                  <div className="pagination-container">
+                    <div className="pagination">{paginationButtons}</div>
                   </div>
                 </div>
               </div>
