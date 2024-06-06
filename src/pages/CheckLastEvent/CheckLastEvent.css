@@ -1,0 +1,277 @@
+.CheckLastEvent {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+  background: #ffffff;
+  height: 100vh;
+  padding-bottom: 20px;
+}
+.CheckLastEventBack {
+  display: flex;
+  justify-content: center;
+}
+.CheckLastEvent .SOMcontainerAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.CheckLastEvent .SOMcontainer {
+  display: flex;
+  background: #fdf8f3;
+  justify-content: center;
+  height: auto;
+  padding-top: 50px;
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+.CheckLastEvent .line-22 {
+  background: #ff5925;
+  margin: 0 50px 14px 100px;
+  width: 1040px;
+  height: 1px;
+}
+.CheckLastEvent .container-1 {
+  margin: 2px 18px 2px 0;
+  display: inline-block;
+  width: 235px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+}
+.CheckLastEvent .container-2 {
+  margin: 2px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 30px;
+  color: #848484;
+}
+.CheckLastEvent .frame-130 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin: 0 72px 25px 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 41.4px 43px 39px;
+  width: 998px;
+  box-sizing: border-box;
+}
+.container-3 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.333;
+}
+.container-3-sub22 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.333;
+}
+.container-3-sub61 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 3px;
+  line-height: 1.333;
+}
+.CheckLastEvent .container-3 {
+  margin: 6px 70.5px 0 0;
+  width: 719.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
+}
+.CheckLastEvent .frame-431 {
+  margin-bottom: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.CheckLastEvent .container-4 {
+  margin-right: 11px;
+  width: 81.1px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.CheckLastEvent .container-5 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.CheckLastEvent .frame-1301 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin: 0 72px 25px 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 41.4px 37px 39px;
+  width: 998px;
+  box-sizing: border-box;
+}
+.CheckLastEvent .frame-4311 {
+  margin-bottom: 98px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.CheckLastEvent .container-6 {
+  margin-right: 11px;
+  width: 81.1px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.CheckLastEvent .container-7 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.container-8 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.333;
+}
+.container-8-sub22 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.333;
+}
+.container-8-sub61 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 3px;
+  line-height: 1.333;
+}
+.CheckLastEvent .container-8 {
+  margin: 6px 57px 0 0;
+  width: 733.4px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
+}
+.CheckLastEvent .frame-1302 {
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  background: #ffffff;
+  margin: 0 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 41.4px 43px 39px;
+  width: 998px;
+  box-sizing: border-box;
+}
+.CheckLastEvent .frame-4312 {
+  margin-bottom: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.CheckLastEvent .container-9 {
+  margin-right: 11px;
+  width: 81.1px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.CheckLastEvent .container-10 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+.container-11 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.333;
+}
+.container-11-sub22 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.333;
+}
+.container-11-sub61 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 3px;
+  line-height: 1.333;
+}
+.CheckLastEvent .container-11 {
+  margin: 6px 70.5px 0 0;
+  width: 719.9px;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
+}
+.CheckLastEvent .frame-429 {
+  border-radius: 25px;
+  border: 1px solid #ff6231;
+  background: #fdd2c2;
+  display: flex;
+  padding: 6.5px 20px 6.5px 19px;
+  box-sizing: border-box;
+}
+.CheckLastEvent .container-12 {
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
+}
+.CheckLastEvent .container-2 {
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 1190px;
+  height: fit-content;
+  box-sizing: border-box;
+}
