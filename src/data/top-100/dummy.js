@@ -4,6 +4,9 @@ export const top_100_dummy = [
         name: "뮤뮤 헤어",
         location: "수원시 팔달구",
         menu: "여성커트, 남성커트",
+        total_sale_late: 30,
+        sale_name: "오픈 기념 할인중",
+        possible_reserve_time: "",
         shopId: 20
     },
     {

@@ -7,15 +7,63 @@ import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 import { useNavigate } from "react-router-dom";
 
-//더미데이터 임포트
-//top100 데이터
+// 더미데이터 임포트
+// top100 데이터
 import { top_100_dummy } from "../../data/top-100/dummy";
 
-//이벤트 데이터
+// 이벤트 데이터
 import { last_event_dummy } from "../../data/last-event-store/dummy";
 import { time_event_dummy } from "../../data/time-event-store/dummy";
 
-//가게 목록 하나 컴포넌트 - top100용
+import { shops } from "../../data/reservation/dummy";
+
+const getMergedReservationTimes = (shopId) => {
+  const shop = shops.find((s) => s.shopId === shopId);
+  if (!shop) return "";
+
+  const mergedTimes = {};
+  shop.employees.forEach((employee) => {
+    Object.keys(employee.reserveTimes).forEach((date) => {
+      if (!mergedTimes[date]) {
+        mergedTimes[date] = new Set();
+      }
+      employee.reserveTimes[date].forEach((time) => {
+        mergedTimes[date].add(time);
+      });
+    });
+  });
+
+  const formattedTimes = {};
+  Object.keys(mergedTimes).forEach((date) => {
+    formattedTimes[date] = Array.from(mergedTimes[date]).sort();
+  });
+
+  return formattedTimes;
+};
+
+const top_100_stores = top_100_dummy.map((store) => ({
+  ...store,
+  possible_reserve_time: getMergedReservationTimes(store.shopId),
+}));
+
+const StoreReserveComponent = ({ possibleReserveTimes }) => {
+  return (
+    <div className="store_can_reserve_content">
+      {Object.entries(possibleReserveTimes).map(([date, times]) => (
+        <div key={date} className="store_can_reserve_info">
+          <strong>{date}</strong>
+          <ul>
+            {times.map((time) => (
+              <li key={time}>{time}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// 가게 목록 하나 컴포넌트 - top100용
 const StoreCard = ({ category, name, location, menu, id }) => {
   const navigate = useNavigate();
 
@@ -55,7 +103,7 @@ const StoreCard = ({ category, name, location, menu, id }) => {
   );
 };
 
-//가게 목록 하나 컴포넌트 - 가게조회용
+// 가게 목록 하나 컴포넌트 - 가게조회용
 const StoreCard2 = ({
   category,
   name,
@@ -63,7 +111,7 @@ const StoreCard2 = ({
   menu,
   total_sale_late,
   sale_name,
-  possible_reserve_time,
+  possibleReserveTimes,
   id,
 }) => {
   const navigate = useNavigate();
@@ -99,11 +147,7 @@ const StoreCard2 = ({
           </span>
           <span className="store_can_reserve_info">{sale_name}</span>
         </div>
-        <div className="store_can_reserve_content">
-          <span className="store_can_reserve_info">
-            {possible_reserve_time}
-          </span>
-        </div>
+        <StoreReserveComponent possibleReserveTimes={possibleReserveTimes} />
         <div className="reserve-look-buts">
           <button className="reserve-but" onClick={handleReserveClick}>
             <span className="btn_name">예약하기</span>
@@ -117,7 +161,7 @@ const StoreCard2 = ({
   );
 };
 
-//가게 목록 여러개 컴포넌트 - 탑 백용
+// 가게 목록 여러개 컴포넌트 - 탑 백용
 const ResearchResults = ({ stores }) => (
   <div className="research-results">
     {stores.map((store, index) => (
@@ -133,7 +177,7 @@ const ResearchResults = ({ stores }) => (
   </div>
 );
 
-//가게 목록 여러개 컴포넌트 - 조회용
+// 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores = [] }) => (
   <div className="research-results">
     {stores.map((store, index) => (
@@ -145,19 +189,16 @@ const ResearchResults2 = ({ stores = [] }) => (
         menu={store.menu}
         total_sale_late={store.total_sale_late}
         sale_name={store.sale_name}
-        possible_reserve_time={store.possible_reserve_time}
+        possibleReserveTimes={store.possible_reserve_time}
         id={store.shopId}
       />
     ))}
   </div>
 );
 
-//더미데이터 사용
+// 더미데이터 사용
 const last_event_stores = last_event_dummy;
 const time_event_stores = time_event_dummy;
-
-//탑백 스토어
-const top_100_stores = top_100_dummy;
 
 export default function TodayReservationPage() {
   const navigate = useNavigate();
@@ -504,8 +545,8 @@ export default function TodayReservationPage() {
                 시간 추가
               </button>
             </Modal>
-            {/* 탑백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회
-            필터링에 대한 가게 조회 */}
+
+            {/* 탑백 조회였다가 버튼이 하나라도 눌리면 필터링에 대한 가게 조회 */}
             {btnAllActive ||
             btn1Active ||
             btn2Active ||
