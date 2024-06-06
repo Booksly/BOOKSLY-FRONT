@@ -200,3 +200,9 @@
     width: 170px;
     box-sizing: border-box;
 }
+
+.MyHomeCurrReserv .cancelButton,
+.MyHomeCurrReserv .cancelDelButton,
+.MyHomeCurrReserv .DelButton{
+    text-align: right;
+}

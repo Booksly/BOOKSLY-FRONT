@@ -322,3 +322,9 @@
     font-size: 15px;
     color: #000000;
 }
+
+.MyHomeAllReserv .cancelButton,
+.MyHomeAllReserv .cancelDelButton,
+.MyHomeAllReserv .DelButton{
+    text-align: right;
+}
