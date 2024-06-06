@@ -53,10 +53,18 @@
 .reservation_padding .option_boxs_row > .staff_box > .staff_img {
     width: 200px;
     height: 250px;
-    background-color: gray;
-    /* border-top-left-radius:30px;
-    border-top-right-radius:30px; */
+    background-size: cover;
+    background-position: center;
 }
+
+.staff_img {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .reservation_padding .option_boxs_row > .staff_box.isSelect {
     background-color: orange;

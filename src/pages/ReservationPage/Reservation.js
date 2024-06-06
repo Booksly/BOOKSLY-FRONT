@@ -1,26 +1,43 @@
 import React, { useState } from 'react';
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import LoginAfterMainHeader from '../nav/LoginAfterMainHeader';
 import '../MainPage/Main.css';
 import './Reservation.css';
-import {shops} from "../../data/reservation/dummy";
+import { shops as reservationShops } from "../../data/reservation/dummy";
+import { shops as detailShops } from "../../data/detail-store/dummy";
 import Calen_EX from '../StandByReservation_Owner/Calender/calendal';
 import MenuComponent from "./MenuComponent";
-
 
 export default function Reservation() {
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const shopId = parseInt(queryParams.get('shopId'));
-    console.log(shopId)
-    const shop = shops.find(shop => shop.shopId === shopId);
 
-    const shopName = shop.shopName;
-    const employees = shop.employees;
+    // Combine the two shop arrays
+    const combinedShops = [...reservationShops, ...detailShops];
+    const shop = combinedShops.find(shop => shop.shopId === shopId || shop.id === shopId);
+
     const [reserveTimes, setReserveTimes] = useState([]);
     const [selectedStaff, setSelectedStaff] = useState(null);
     const [selectedTime, setSelectedTime] = useState(null);
     const [selectedDate, setSelectedDate] = useState(null);
+
+    if (!shop) {
+        return <div>Shop not found</div>;
+    }
+
+    const shopName = shop.shopName || shop.name;
+    const employees = shop.employees.map(employee => {
+        const detailEmployee = detailShops.find(detailShop => detailShop.employees.some(e => e.name === employee.name));
+        if (detailEmployee) {
+            const detailEmployeeData = detailEmployee.employees.find(e => e.name === employee.name);
+            return {
+                ...employee,
+                profileImgUri: detailEmployeeData.profileImgUri
+            };
+        }
+        return employee;
+    });
 
     const handleStaffClick = (index, employeeId) => {
         setSelectedStaff(index);
@@ -34,11 +51,8 @@ export default function Reservation() {
     };
 
     const handleDateChange = (date) => {
-        console.log(date)
-        
-        // 로컬 시간대를 사용하여 날짜를 형식화
         const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 1을 더함
+        const month = String(date.getMonth() + 1).padStart(2, '0');
         const day = String(date.getDate()).padStart(2, '0');
         const formattedDate = `${year}-${month}-${day}`;
 
@@ -57,9 +71,7 @@ export default function Reservation() {
     };
 
     return (
-        
         <div className='main_padding'>
-            {/* 예약 페이지 내용 */}
             <LoginAfterMainHeader />
             <div className='reservation_padding'>
                 {shopName}<br/>
@@ -72,7 +84,7 @@ export default function Reservation() {
                                 className={`staff_box ${selectedStaff === index ? 'isSelect' : ''}`}
                                 onClick={() => handleStaffClick(index, employee.id)}
                             >
-                                <div className='staff_img'></div>
+                                <div className='staff_img' style={{ backgroundImage: `url(${employee.profileImgUri})` }}></div>
                                 <div className='staff_name'>{employee.name}</div>
                             </div>
                         ))}
@@ -106,15 +118,9 @@ export default function Reservation() {
                     <div className='reserve_title'>문의사항</div>
                     <textarea className=''></textarea>
                 </div>
-                <p>
-                    당일 예약 취소는 불가능 합니다.
-                </p>
-                <p>
-                    방문 시 먼저 온 손님이 계신 경우 늦어질 수 있습니다.
-                </p>
-                <p>
-                    양해 부탁드립니다.
-                </p>
+                <p>당일 예약 취소는 불가능 합니다.</p>
+                <p>방문 시 먼저 온 손님이 계신 경우 늦어질 수 있습니다.</p>
+                <p>양해 부탁드립니다.</p>
                 <button type='submit' className='button_small'>예약하기</button>
             </div>
         </div>
