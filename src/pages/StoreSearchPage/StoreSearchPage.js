@@ -10,6 +10,10 @@ import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
 import { shops } from "../../../src/data/detail-store/dummy";
 
+//더미데이터 임포트
+//top100 데이터
+import { top_100_dummy } from "../../data/top-100/dummy";
+
 // 가게 목록 컴포넌트 - 탑 백용
 const StoreCard = ({ id, category, name, address, menu }) => {
   const navigate = useNavigate();

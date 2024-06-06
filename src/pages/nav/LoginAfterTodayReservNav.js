@@ -22,7 +22,7 @@ export default function LoginAfterTodayReservNav() {
   };
   const goToMain = () => {
     navigate("/");
-  }
+  };
   return (
     <div className="back">
       <div className="LoginAfterTodayReservNav">
@@ -89,7 +89,7 @@ export default function LoginAfterTodayReservNav() {
                 <div className="alarmIcon"></div>
               </div>
               <div className="user-id">
-                <span className="userId">김아무개</span>
+                <span className="userId">김송은</span>
               </div>
             </div>
             <button className="log-out-but" onClick={goToMain}>
