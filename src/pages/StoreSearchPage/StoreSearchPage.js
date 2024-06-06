@@ -8,7 +8,6 @@ import "./MultiDatePicker.css";
 import LoginAfterMainHeader from "../nav/LoginAfterMainHeader";
 import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "./RegionSelectionPopup";
-import { shops } from "../../../src/data/detail-store/dummy";
 
 //더미데이터 임포트
 //top100 데이터
@@ -116,33 +115,28 @@ const StoreCard2 = ({
   );
 };
 
-// 가게 목록 여러개 컴포넌트 - 탑 백용
-const ResearchResults = ({ stores = [] }) => (
+//가게 목록 여러개 컴포넌트 - 탑 백용
+const ResearchResults = ({ stores }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard
         key={index}
-        id={store.id}
         category={store.category}
         name={store.name}
-        address={store.address}
-        menu={store.menuCategories
-          .map((menuCategory) =>
-            menuCategory.menus.map((menu) => menu.name).join(", ")
-          )
-          .join(", ")}
+        location={store.location}
+        menu={store.menu}
+        id={store.shopId}
       />
     ))}
   </div>
 );
 
 // 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores = [] }) => (
+const ResearchResults2 = ({ stores }) => (
   <div className="research-results">
     {stores.map((store, index) => (
       <StoreCard2
         key={index}
-        id={store.id}
         category={store.category}
         name={store.name}
         address={store.address}
@@ -154,16 +148,13 @@ const ResearchResults2 = ({ stores = [] }) => (
         total_sale_late={store.total_sale_late}
         sale_name={store.sale_name}
         possible_reserve_time={store.possible_reserve_time}
+        id={store.shopId}
       />
     ))}
   </div>
 );
-
 // 탑 백 스토어
-const top_100stores = shops.slice(0, 100);
-
-// 샘플 스토어
-const sample_stores = shops || [];
+const top_100_stores = top_100_dummy;
 
 export default function StoreSearchPage() {
   const [selectedRegions, setSelectedRegions] = useState([]);
@@ -358,12 +349,12 @@ export default function StoreSearchPage() {
     },
   ];
 
-  const currentStores = top_100stores.slice(
+  const currentStores = top_100_stores.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
 
-  const totalPages = Math.ceil(top_100stores.length / itemsPerPage);
+  const totalPages = Math.ceil(top_100_stores.length / itemsPerPage);
   const paginationButtons = [];
   for (let i = 1; i <= totalPages; i++) {
     paginationButtons.push(
@@ -600,11 +591,11 @@ export default function StoreSearchPage() {
                 <div className="top-100-list">
                   <div className="top-test">
                     <span className="top-100">
-                      총 {filteredStoresCount(sample_stores)} 개
+                      총 {filteredStoresCount(top_100_stores)} 개
                     </span>
                   </div>
                   <div className="research-results">
-                    <ResearchResults2 stores={filteredStores(sample_stores)} />
+                    <ResearchResults2 stores={filteredStores(top_100_stores)} />
                   </div>
                 </div>
               </div>
