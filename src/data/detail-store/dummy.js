@@ -1627,8 +1627,8 @@ export const shops = [
         "phoneNumber": "031-123-4567",
         "menuCategories": [
             {
-                'categoryName': "컷",
-                'menus': [
+                "categoryName": "컷",
+                "menus": [
                     {
                         'menuId': 1,
                         'imgUri': "/images/haircut.png",

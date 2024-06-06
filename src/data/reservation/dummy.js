@@ -755,7 +755,18 @@ export const shops = [
                 profileImgUri: "https://example.com/employee1.png",
                 name: "김헤어",
                 reviewNum: 2,
-                description: "10년 경력 / 펌 전문가"
+                description: "10년 경력 / 펌 전문가",
+                "reserveTimes": {
+                    "2024-06-07": ["12:00", "13:00", "15:00", "17:00"],
+                    "2024-06-08": ["10:00", "11:00", "13:00", "14:00"],
+                    "2024-06-09": ["10:00", "12:00", "14:00", "16:00"],
+                    "2024-06-10": ["09:00", "11:00", "13:00", "15:00"],
+                    "2024-06-11": ["10:00", "12:00", "14:00", "16:00"],
+                    "2024-06-12": ["09:00", "11:00", "13:00", "15:00"],
+                    "2024-06-13": ["10:00", "12:00", "14:00", "16:00"],
+                    "2024-06-14": ["09:00", "11:00", "13:00", "15:00"],
+                    "2024-06-15": ["10:00", "12:00", "14:00", "16:00"]
+                }
             }
         ],
         reviews: [
@@ -807,7 +818,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee2.png",
                 name: "박네일",
                 reviewNum: 3,
-                description: "5년 경력 / 젤 네일 전문가"
+                description: "5년 경력 / 젤 네일 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -859,7 +871,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee3.png",
                 name: "이네일",
                 reviewNum: 4,
-                description: "7년 경력 / 네일 아트 전문가"
+                description: "7년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -923,7 +936,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee4.png",
                 name: "김왁싱",
                 reviewNum: 5,
-                description: "10년 경력 / 왁싱 전문가"
+                description: "10년 경력 / 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -987,7 +1001,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee5.png",
                 name: "박봄",
                 reviewNum: 3,
-                description: "8년 경력 / 헤어컷 전문가"
+                description: "8년 경력 / 헤어컷 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1039,7 +1054,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee6.png",
                 name: "김모아",
                 reviewNum: 4,
-                description: "6년 경력 / 네일 아트 전문가"
+                description: "6년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1084,7 +1100,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee7.png",
                 name: "이왁싱",
                 reviewNum: 2,
-                description: "5년 경력 / 바디 왁싱 전문가"
+                description: "5년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1141,7 +1158,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee8.png",
                 name: "박눈썹",
                 reviewNum: 3,
-                description: "7년 경력 / 속눈썹 전문가"
+                description: "7년 경력 / 속눈썹 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1205,7 +1223,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee9.png",
                 name: "김스타일",
                 reviewNum: 2,
-                description: "6년 경력 / 염색 전문가"
+                description: "6년 경력 / 염색 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1257,7 +1276,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee10.png",
                 name: "박갤러리",
                 reviewNum: 3,
-                description: "8년 경력 / 네일 아트 전문가"
+                description: "8년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1302,7 +1322,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee11.png",
                 name: "이왁싱인",
                 reviewNum: 2,
-                description: "6년 경력 / 바디 왁싱 전문가"
+                description: "6년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1359,7 +1380,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee12.png",
                 name: "박브로우",
                 reviewNum: 3,
-                description: "7년 경력 / 속눈썹 전문가"
+                description: "7년 경력 / 속눈썹 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1404,7 +1426,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee13.png",
                 name: "김힐링",
                 reviewNum: 2,
-                description: "10년 경력 / 바디 마사지 전문가"
+                description: "10년 경력 / 바디 마사지 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1468,7 +1491,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee14.png",
                 name: "이그리다",
                 reviewNum: 3,
-                description: "8년 경력 / 헤어컷 전문가"
+                description: "8년 경력 / 헤어컷 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1520,7 +1544,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee15.png",
                 name: "김핑크",
                 reviewNum: 4,
-                description: "6년 경력 / 네일 아트 전문가"
+                description: "6년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1565,7 +1590,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee16.png",
                 name: "이왁싱바",
                 reviewNum: 2,
-                description: "6년 경력 / 바디 왁싱 전문가"
+                description: "6년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1617,7 +1643,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee17.png",
                 name: "김제니",
                 reviewNum: 3,
-                description: "7년 경력 / 메이크업 전문가"
+                description: "7년 경력 / 메이크업 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1669,7 +1696,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee18.png",
                 name: "김속눈썹",
                 reviewNum: 2,
-                description: "10년 경력 / 속눈썹 연장 전문가"
+                description: "10년 경력 / 속눈썹 연장 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1726,7 +1754,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee19.png",
                 name: "박스파",
                 reviewNum: 2,
-                description: "8년 경력 / 아로마 마사지 전문가"
+                description: "8년 경력 / 아로마 마사지 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1790,7 +1819,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee20.png",
                 name: "김라라",
                 reviewNum: 2,
-                description: "6년 경력 / 헤어컷 전문가"
+                description: "6년 경력 / 헤어컷 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1842,7 +1872,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee21.png",
                 name: "김뷰티",
                 reviewNum: 4,
-                description: "6년 경력 / 네일 아트 전문가"
+                description: "6년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1887,7 +1918,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee22.png",
                 name: "이뷰티",
                 reviewNum: 2,
-                description: "6년 경력 / 바디 왁싱 전문가"
+                description: "6년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1939,7 +1971,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee23.png",
                 name: "김화장",
                 reviewNum: 3,
-                description: "7년 경력 / 메이크업 전문가"
+                description: "7년 경력 / 메이크업 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -1991,7 +2024,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee24.png",
                 name: "김래쉬",
                 reviewNum: 2,
-                description: "10년 경력 / 속눈썹 연장 전문가"
+                description: "10년 경력 / 속눈썹 연장 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2036,7 +2070,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee25.png",
                 name: "김힐링",
                 reviewNum: 2,
-                description: "10년 경력 / 바디 마사지 전문가"
+                description: "10년 경력 / 바디 마사지 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2100,7 +2135,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee26.png",
                 name: "이루비",
                 reviewNum: 3,
-                description: "8년 경력 / 헤어컷 전문가"
+                description: "8년 경력 / 헤어컷 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2152,7 +2188,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee27.png",
                 name: "김유니",
                 reviewNum: 4,
-                description: "6년 경력 / 네일 아트 전문가"
+                description: "6년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2197,7 +2234,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee28.png",
                 name: "이미니",
                 reviewNum: 2,
-                description: "6년 경력 / 바디 왁싱 전문가"
+                description: "6년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2249,7 +2287,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee29.png",
                 name: "김스타",
                 reviewNum: 3,
-                description: "7년 경력 / 메이크업 전문가"
+                description: "7년 경력 / 메이크업 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2306,7 +2345,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee30.png",
                 name: "김뷰티",
                 reviewNum: 3,
-                description: "7년 경력 / 속눈썹 전문가"
+                description: "7년 경력 / 속눈썹 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2363,7 +2403,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee31.png",
                 name: "김아로마",
                 reviewNum: 4,
-                description: "10년 경력 / 아로마 마사지 전문가"
+                description: "10년 경력 / 아로마 마사지 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2427,7 +2468,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee32.png",
                 name: "이루비",
                 reviewNum: 3,
-                description: "8년 경력 / 헤어컷 전문가"
+                description: "8년 경력 / 헤어컷 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2479,7 +2521,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee33.png",
                 name: "김아트",
                 reviewNum: 4,
-                description: "6년 경력 / 네일 아트 전문가"
+                description: "6년 경력 / 네일 아트 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2524,7 +2567,8 @@ export const shops = [
                 profileImgUri: "https://example.com/employee34.png",
                 name: "이미니",
                 reviewNum: 2,
-                description: "6년 경력 / 바디 왁싱 전문가"
+                description: "6년 경력 / 바디 왁싱 전문가",
+                reserveTimes: generateRandomTimes()
             }
         ],
         reviews: [
@@ -2538,3 +2582,28 @@ export const shops = [
         ]
     }
 ];
+
+function generateRandomTimes() {
+    const reserveTimes = {};
+    const startDate = new Date("2024-06-07");
+    const endDate = new Date("2024-06-15");
+
+    while (startDate <= endDate) {
+        const year = startDate.getFullYear();
+        const month = String(startDate.getMonth() + 1).padStart(2, "0");
+        const day = String(startDate.getDate()).padStart(2, "0");
+        const dateKey = `${year}-${month}-${day}`;
+        const times = [];
+
+        for (let i = 0; i < 4; i++) {
+            const hour = Math.floor(Math.random() * 12) + 9; // 9시부터 20시 사이
+            const minute = Math.random() < 0.5 ? "00" : "30"; // 30분 단위
+            times.push(`${hour}:${minute}`);
+        }
+
+        reserveTimes[dateKey] = times;
+        startDate.setDate(startDate.getDate() + 1);
+    }
+
+    return reserveTimes;
+}
