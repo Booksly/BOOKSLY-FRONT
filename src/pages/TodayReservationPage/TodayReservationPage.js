@@ -190,10 +190,9 @@ const ResearchResults = ({ stores }) => (
 
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStoreCountChange}) => {
-  const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
-  //const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
+  //const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
+  const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
   
-  //시간 필터링
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -206,7 +205,6 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStore
     });
   };
 
-  //지역 필터링
   const filterStoresByRegion = (store) => {
     if (selectedRegions.length === 0) return true;
     return selectedRegions.some((region) => store.location.includes(region));
@@ -253,7 +251,6 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStore
     </div>
   );
 };
-
 
 //일차로 숨겨둠
 // const ResearchResults2 = ({ stores = [] }) => (
@@ -329,7 +326,7 @@ export default function TodayReservationPage() {
     },
     content: {
       width: "600px",
-      height: "550px",
+      height: "650px",
       margin: "auto",
       borderRadius: "4px",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",

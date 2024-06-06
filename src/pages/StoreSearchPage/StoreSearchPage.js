@@ -168,9 +168,9 @@ const ResearchResults = ({ stores }) => (
 
 // 가게 목록 여러개 컴포넌트 - 조회용
 const ResearchResults2 = ({
-  stores = [], 
-  selectedTimes, 
-  selectedRegions, 
+  stores = [],
+  selectedTimes,
+  selectedRegions,
   selectedDates,
   onStoreCountChange,
   currentPage,
@@ -178,24 +178,6 @@ const ResearchResults2 = ({
   handlePageChange,
   totalPages,
 }) => {
-  const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentStores = stores.slice(startIndex, startIndex + itemsPerPage);
-
-  const paginationButtons = [];
-  for (let i = 1; i <= totalPages; i++) {
-    paginationButtons.push(
-      <button
-        key={i}
-        onClick={() => handlePageChange(i)}
-        className={i === currentPage ? "active" : ""}
-      >
-        {i}
-      </button>
-    );
-  }
-
-  //시간 필터링
   const filterTimes = (times) => {
     if (selectedTimes.length === 0) return times;
     return times.filter((time) => {
@@ -208,21 +190,16 @@ const ResearchResults2 = ({
     });
   };
 
-  //지역 필터링
   const filterStoresByRegion = (store) => {
     if (selectedRegions.length === 0) return true;
     return selectedRegions.some((region) => store.location.includes(region));
   };
 
-  // 날짜 필터링
   const filterStoresByDate = (date) => {
     if (selectedDates.length === 0) return true;
-    return selectedDates.some(
-      (selectedDate) => selectedDate === date
-    );
+    return selectedDates.some((selectedDate) => selectedDate === date);
   };
 
-  //총 조회 개수 개수 저장하기 위함
   useEffect(() => {
     let count = 0;
     stores.forEach((store) => {
@@ -238,95 +215,54 @@ const ResearchResults2 = ({
     onStoreCountChange(count);
   }, [stores, selectedTimes, selectedRegions, selectedDates, onStoreCountChange]);
 
+  const filteredStores = stores.flatMap((store) =>
+    Object.entries(store.possible_reserve_time)
+      .map(([date, times]) => {
+        const filteredTimes = filterTimes(times);
+        return filteredTimes.length > 0 &&
+          filterStoresByRegion(store) &&
+          filterStoresByDate(date) ? (
+          <StoreCard2
+            key={`${store.shopId}-${date}`}
+            category={store.category}
+            name={store.name}
+            location={store.location}
+            menu={store.menu}
+            total_sale_late={store.total_sale_late}
+            sale_name={store.sale_name}
+            date={date}
+            times={filteredTimes}
+            id={store.shopId}
+          />
+        ) : null;
+      })
+      .filter((component) => component !== null)
+  ).sort((a, b) => new Date(a.props.date) - new Date(b.props.date)); // 날짜 순서대로 정렬;
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedStores = filteredStores.slice(startIndex, startIndex + itemsPerPage);
+
   return (
     <div>
       <div className="research-results">
-        {/* {currentStores.length > 0 ? (
-          currentStores.map((store, index) => (
-            <StoreCard2
-              key={`${index}-${store.date}`}
-              category={store.category}
-              name={store.name}
-              location={store.location}
-              menu={store.menu}
-              total_sale_late={store.total_sale_late}
-              sale_name={store.sale_name}
-              date={store.date}
-              times={store.times}
-              id={store.shopId}
-            />
-          ))
+        {paginatedStores.length > 0 ? (
+          paginatedStores
         ) : (
           <div>No stores found.</div>
-        )} */}
-
-          {/* {stores.flatMap((store, index) =>
-            Object.entries(store.possible_reserve_time).map(([date, times]) => {
-              if (date !== today) return null; //오늘 날짜 아니면 리턴 널
-              const filteredTimes = filterTimes(times);
-              return filteredTimes.length > 0 && filterStoresByRegion(store)? (
-                <StoreCard2
-                  key={`${index}-${date}`}
-                  category={store.category}
-                  name={store.name}
-                  location={store.location}
-                  menu={store.menu}
-                  total_sale_late={store.total_sale_late}
-                  sale_name={store.sale_name}
-                  date={date}
-                  times={filteredTimes}
-                  id={store.shopId}
-                />
-              ) : null;
-            })
-          )} */}
-
-          {stores.flatMap((store, index) =>
-            Object.entries(store.possible_reserve_time).map(([date, times]) => {
-              //if (date !== today) return null; // 오늘 날짜 아니면 리턴 널
-              const filteredTimes = filterTimes(times);
-              return filteredTimes.length > 0 && filterStoresByRegion(store) && filterStoresByDate(date) ? (
-                <StoreCard2
-                  key={`${index}-${date}`}
-                  category={store.category}
-                  name={store.name}
-                  location={store.location}
-                  menu={store.menu}
-                  total_sale_late={store.total_sale_late}
-                  sale_name={store.sale_name}
-                  date={date} //여기 그대로가?
-                  times={filteredTimes}
-                  id={store.shopId}
-                />
-              ) : null;
-            })
-          ).filter((component) => component !== null).length > 0 ? (
-            currentStores.flatMap((store, index) =>
-              Object.entries(store.possible_reserve_time).map(([date, times]) => {
-                const filteredTimes = filterTimes(times);
-                return filteredTimes.length > 0 && filterStoresByRegion(store) && filterStoresByDate(date) ? (
-                  <StoreCard2
-                    key={`${index}-${date}`}
-                    category={store.category}
-                    name={store.name}
-                    location={store.location}
-                    menu={store.menu}
-                    total_sale_late={store.total_sale_late}
-                    sale_name={store.sale_name}
-                    date={date}
-                    times={filteredTimes}
-                    id={store.shopId}
-                  />
-                ) : null;
-              })
-            )
-          ) : (
-            <div>No stores found.</div>
-          )}
-          
+        )}
       </div>
       <div className="pagination-container">
-        <div className="pagination">{paginationButtons}</div>
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={page === currentPage ? "active" : ""}
+            >
+              {page}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -552,7 +488,7 @@ export default function StoreSearchPage() {
 
   const filteredStoresData = filteredStores(top_100_stores);
   const totalFilteredPages = Math.ceil(
-    filteredStoresData.length / itemsPerPage
+    filteredStoreCount / itemsPerPage
   );
 
   const currentStores = top_100_stores.slice(
