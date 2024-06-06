@@ -6,6 +6,7 @@ import plus_button from "../../assets/plus_button.png";
 import RegionSelectionPopup from "../StoreSearchPage/RegionSelectionPopup";
 import SimpleSlider_Today from "./SliderToday/SimpleSlider_today";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 // 더미데이터 임포트
 // top100 데이터
@@ -188,7 +189,7 @@ const ResearchResults = ({ stores }) => (
 );
 
 // 가게 목록 여러개 컴포넌트 - 조회용
-const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions}) => {
+const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions, onStoreCountChange}) => {
   //const today = new Date().toISOString().split("T")[0]; //오늘 날짜 가져오기
   const today = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).toISOString().split("T")[0];//오늘 날짜의 다음 날짜 가져오기
   
@@ -208,6 +209,22 @@ const ResearchResults2 = ({ stores = [], selectedTimes, selectedRegions}) => {
     if (selectedRegions.length === 0) return true;
     return selectedRegions.some((region) => store.location.includes(region));
   };
+
+  //총 조회 개수 개수 저장하기 위함
+  useEffect(() => {
+    let count = 0;
+    stores.forEach((store) => {
+      Object.entries(store.possible_reserve_time).forEach(([date, times]) => {
+        if (date === today && filterStoresByRegion(store)) {
+          const filteredTimes = filterTimes(times);
+          if (filteredTimes.length > 0) {
+            count++;
+          }
+        }
+      });
+    });
+    onStoreCountChange(count);
+  }, [stores, selectedTimes, selectedRegions, onStoreCountChange]);
 
   return (
     <div className="research-results">
@@ -633,13 +650,14 @@ export default function TodayReservationPage() {
                 <div className="top-100-list">
                   <div className="top-test">
                     <span className="top-100">
-                      총 {filteredStoresCount(top_100_stores)} 개
+                    총 {filteredStoreCount} 개
                     </span>
                   </div>
                   <div className="research-results">
                     <ResearchResults2 stores={filteredStores(top_100_stores)}
                     selectedTimes={selectedTimes} 
-                    selectedRegions={selectedRegions}/>
+                    selectedRegions={selectedRegions}
+                    onStoreCountChange={setFilteredStoreCount}/>
                   </div>
                 </div>
               </div>
