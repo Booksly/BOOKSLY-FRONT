@@ -1,1109 +1,395 @@
-.containerAll {
-    background: #FDF8F3;
+.checkTimeEven {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: fit-content;
+    background: #FFFFFF;
+}
+
+.checkTimeEven .CTE-back {
+    display: flex;
+    justify-content: center;
+}
+
+.checkTimeEven .CTE-containerAll {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 258px 50px 44px 0;
-    width: 1440px;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
 }
+
+.checkTimeEven .CTE-container {
+    display: flex;
+    margin-top: 2px;
+    width: 1190px;
+    background: #FDF8F3;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    flex-direction: column;
+}
+
 .checkTimeEven .CTE-line-22 {
     background: #FF5925;
     width: 1040px;
     height: 1px;
 }
-.checkTimeEven .CTE-frame-433 {
-    border-radius: 15px;
-    background: #F4F4F4;
-    margin: 0 37px 251px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 61px 33px 68px 33px;
-    width: 553px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-ellipse-4 {
-    border-radius: 15px;
-    background: rgba(255, 154, 98, 0.4);
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    translate: -50% 0;
-    width: 30px;
-    height: 30px;
-}
-.checkTimeEven .CTE-container-1 {
-    margin-right: 18px;
-    width: 235px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 30px;
-    color: #848484;
-}
-.checkTimeEven .CTE-container-2 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 30px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-429 {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    background: #FDD2C2;
-    display: flex;
-    padding: 6.5px 20px 6.5px 19px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-3 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.389;
-    color: #000000;
-}
+
+.checkTimeEven .CTE-frame-433,
 .checkTimeEven .CTE-frame-434 {
     border-radius: 15px;
     background: #F4F4F4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 30px 234px 30px;
     box-sizing: border-box;
+}
+
+.checkTimeEven .CTE-frame-433 {
+    /*margin: 0 37px 251px 0;*/
+    margin-right: 37px;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+    width: 530px;
+    height: fit-content;
+}
+
+.checkTimeEven .CTE-frame-434 {
+    width: 430px;
+    height: 640px;
+    padding: 30px 0;
+    align-items: center;
 }
 .checkTimeEven .CTE-frame-435 {
-    margin: 0 0.2px 20px 0;
     display: flex;
     flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
+    width: 335px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-.checkTimeEven .CTE-container-4 {
-    margin-right: 20.9px;
+.checkTimeEven .CTE-container-4,
+.checkTimeEven .CTE-container-5 {
+    font-size: 27px;
+    color: #000000;
+    width: fit-content;
+}
+
+.checkTimeEven .CTE-listTime {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.checkTimeEven .CTE-naviButton-n {
+    font-size: 25px;
+    color: #848484;
+    width: fit-content;
+    border: 0;
+    background: #FDF8F3;
+}
+.checkTimeEven .CTE-naviButton {
+    font-size: 25px;
+    color: #000000;
+    width: fit-content;
+    border: 0;
+    background: #FDF8F3;
+}
+
+.checkTimeEven .CTE-container-2 {
     font-size: 30px;
     color: #000000;
 }
-.checkTimeEven .CTE-container-5 {
-    margin: 1.5px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 27px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-459 {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-frame-4291 {
+
+.checkTimeEven .CTE-frame-429 {
     border-radius: 25px;
     border: 1px solid #FF6231;
+    display: flex;
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+.checkTimeEven .CTE-empButton {
+    border-radius: 25px;
+    border: 1px solid #FF6231;
+    display: flex;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 13px;
+    color: #737373;
+}
+
+.checkTimeEven .CTE-empButton {
+    border-radius: 25px;
+    border: 1px solid #FF6231;
+    display: flex;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 13px;
+    color: #737373;
+}
+
+.checkTimeEven .CTE-empButton.selected {
     background: #FDD2C2;
-    display: flex;
-    padding: 10px 14.6px 10px 14px;
-    box-sizing: border-box;
 }
-.checkTimeEven .CTE-container-6 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-441 {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
+
+.checkTimeEven .CTE-timeEvt {
     background: #FFFFFF;
-    display: flex;
-    padding: 10px 15px 10px 14px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-7 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-442 {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    background: #FFFFFF;
-    display: flex;
-    padding: 10px 14.8px 10px 14px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-8 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-460 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-frame-438 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #D9D9D9;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 16px 29.9px 16px 0;
     width: 370px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-9 {
-    margin: 11px 12px 11px 0;
-    display: inline-block;
-    width: 153px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-436 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-10 {
-    margin-bottom: 6px;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-.checkTimeEven .CTE-container-11 {
-    margin-right: 16.1px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-.checkTimeEven .CTE-container-12 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-.checkTimeEven .CTE-frame-439 {
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    background: #FFFFFF;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    padding: 16px 26.7px 16px 29px;
-    width: fit-content;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-13 {
-    margin: 11px 40.4px 11px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-.checkTimeEven .CTE-frame-4361 {
-    position: relative;
-    display: flex;
-    padding: 30px 0 0 0.2px;
-    width: 131.8px;
-    height: fit-content;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-14 {
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    translate: -50% 0;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-.checkTimeEven .CTE-container-15 {
-    margin-right: 16.1px;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-.checkTimeEven .CTE-container-16 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-.checkTimeEven .CTE-frame-440 {
     border-radius: 5px;
     border: 1px solid #FF5925;
-    background: #FFFFFF;
     display: flex;
     flex-direction: row;
-    padding: 16px 26.7px 16px 29px;
-    width: fit-content;
+    padding: 10px 30px;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-container-17 {
-    margin: 11px 40.4px 11px 0;
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
+
+.checkTimeEven .CTE-timeEvt.selected {
+    background: #D9D9D9;
 }
-.checkTimeEven .CTE-frame-4362 {
-    position: relative;
+
+
+.checkTimeEven .CTE-frame-429 {
+    border-radius: 25px;
+    border: 1px solid #FF6231;
     display: flex;
-    padding: 30px 0 0 0.2px;
-    width: 131.8px;
-    height: fit-content;
+    padding: 10px 20px;
     box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-18 {
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    translate: -50% 0;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
+    background: #FDD2C2;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.389;
     color: #000000;
 }
-.checkTimeEven .CTE-container-19 {
-    margin-right: 16.1px;
+
+.checkTimeEven .CTE-container-modify,
+.checkTimeEven .CTE-container-del {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 13px;
     color: #737373;
+    border: 0;
+    padding: 0;
+    background: 0;
 }
-.checkTimeEven .CTE-container-20 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-}
-.checkTimeEven .CTE-frame-622 {
-    margin: 2px 0;
+
+.checkTimeEven .CTE-frame-459 {
     display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.checkTimeEven .CTE-containerBox {
+    display: flex;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    width: 90px;
     justify-content: space-between;
-    width: 462.1px;
-    height: fit-content;
+}
+
+.checkTimeEven .CTE-frame-623,
+.checkTimeEven .CTE-frame-625 {
+    flex-direction: row;
+    display: flex;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-frame-623 {
-    margin: 0 10px 7px 10px;
-    display: flex;
+
+.checkTimeEven .CTE-frame-622 {
+    justify-content: space-between;
+    width: 450px;
+    height: fit-content;
+    margin: 2px 0;
     flex-direction: row;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.checkTimeEven .CTE-frame-623 {
     justify-content: space-between;
     width: 1020px;
-    box-sizing: border-box;
+    margin: 0 10px 7px 10px;
 }
+
 .checkTimeEven .CTE-frame-624 {
-    margin-bottom: 34px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     width: 1040px;
-    box-sizing: border-box;
+    margin-bottom: 34px;
 }
+
 .checkTimeEven .CTE-frame-625 {
+    width: fit-content;
     margin: 0 10px;
-    display: flex;
+}
+
+.checkTimeEven .CTE-frame-459 {
     flex-direction: row;
+    column-gap: 10px;
     width: fit-content;
-    box-sizing: border-box;
+    margin-bottom: 20px;
 }
-.checkTimeEven .CTE-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-container-2 {
-    margin: 0 18.6px 0 19.6px;
-    display: flex;
-    flex-direction: row;
+
+.checkTimeEven .CTE-frame-460 {
+    flex-direction: column;
+    align-items: center;
     width: fit-content;
+    display: flex;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-month-header {
+
+.checkTimeEven .CTE-title {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 18px;
+    width: 145px;
+}
+
+.checkTimeEven .CTE-listRight {
+    flex-direction: column;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.checkTimeEven .CTE-timeEvt {
+    background: #FFFFFF;
+    justify-content: space-between;
+    width: 370px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #FF5925;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.checkTimeEven .CTE-timeEvt.selected {
+    background: #D9D9D9;
+}
+
+
+.checkTimeEven .SOMcalendar-example-2 {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 386.5px;
+    box-sizing: border-box;
+}
+
+.checkTimeEven .SOMmonth-header {
     margin: 0 16.7px 22px 16.7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 453.6px;
+    width: 353.1px;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-icon-button {
+
+.checkTimeEven .SOMicon-button,
+.checkTimeEven .SOMicon-button-1 {
     border-radius: 3px;
     margin: 4.1px 0 4.7px 0;
     display: flex;
-    width: 6.6px;
-    height: 11.2px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     box-sizing: border-box;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-weight: bold;
 }
-.checkTimeEven .CTE-vector {
-    width: 6.6px;
-    height: 11.2px;
-}
-.checkTimeEven .CTE-month-yyyy {
+
+.checkTimeEven .SOMmonth-yyyy {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-    color: #172B4D;
+    color: #172b4d;
 }
-.checkTimeEven .CTE-icon-button-1 {
-    border-radius: 3px;
-    margin: 4.1px 0 4.7px 0;
-    display: flex;
-    width: 6.6px;
-    height: 11.2px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-vector-1 {
-    width: 6.6px;
-    height: 11.2px;
-}
-.checkTimeEven .CTE-week-header {
-    background: #FFFFFF;
+
+.checkTimeEven .SOMweek-header {
+    background: #ffffff;
     margin-bottom: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px 22px 8px 21px;
-    width: 487px;
+    padding: 8px 14.8px 8px 13.8px;
+    width: 386.5px;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-box {
+
+.checkTimeEven .SOMbox {
     display: flex;
     box-sizing: border-box;
+    flex-grow: 1;
+    justify-content: center;
 }
-.checkTimeEven .CTE-sun {
+
+.checkTimeEven .SOMsun,
+.checkTimeEven .SOMmon,
+.checkTimeEven .SOMtue,
+.checkTimeEven .SOMwed,
+.checkTimeEven .SOMthu,
+.checkTimeEven .SOMfri,
+.checkTimeEven .SOMsat {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 13px;
     line-height: 1.231;
-    color: #44546F;
+    color: #44546f;
 }
-.checkTimeEven .CTE-box-1 {
+
+.checkTimeEven .SOMweek-days {
+    margin: 0 23.5px 12px 19px;
     display: flex;
+    flex-wrap: wrap;
+    width: 344px;
     box-sizing: border-box;
 }
-.checkTimeEven .CTE-mon {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-box-2 {
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-tue {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-box-3 {
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-wed {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-box-4 {
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-thu {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-box-5 {
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-fri {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-box-6 {
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-sat {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days {
-    margin: 0 4.8px 12px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 430.2px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day {
+
+.checkTimeEven .SOMcalendar-day {
     border-radius: 3px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.28%; /* 100% / 7 days */
+    height: 50px;
     box-sizing: border-box;
+    cursor: pointer;
 }
-.checkTimeEven .CTE-value {
+
+.checkTimeEven .SOMcalendar-day:hover {
+    background-color: #f0f0f0;
+}
+
+.checkTimeEven .SOMvalue {
     overflow-wrap: break-word;
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-1 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-1 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-2 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-2 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-3 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-3 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-4 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-4 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-5 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-5 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-6 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-6 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days-1 {
-    margin: 0 0.7px 7.5px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 426.2px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day-7 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-7 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-8 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-8 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-9 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-9 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-10 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-10 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-11 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-11 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #FFBCA6;
-}
-.checkTimeEven .CTE-calendar-day-12 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-12 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-13 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-13 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days-2 {
-    margin: 0 20.5px 6.5px 20.5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: flex-end;
-    width: 439.6px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day-14 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-14 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-15 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-15 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-16 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-16 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-17 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-17 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-18 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-18 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #FFBCA6;
-}
-.checkTimeEven .CTE-calendar-day-19 {
-    border-radius: 3px;
-    margin: 4.5px 0 5.5px 0;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-19 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-20 {
-    border-radius: 3px;
+    color: #44546f;
     position: relative;
-    display: flex;
-    padding: 4.5px 7px 5.5px 7.8px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-20 {
-    position: relative;
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days-3 {
-    margin: 0 0 12px 0.9px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 433.4px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day-21 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-21 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-22 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-22 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-23 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-23 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-24 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-24 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-25 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-25 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #FFBCA6;
-}
-.checkTimeEven .CTE-calendar-day-26 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-26 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-27 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-27 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days-4 {
-    margin: 0 0.4px 12px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 434.9px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day-28 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-28 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-29 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-29 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-30 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-30 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-31 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-31 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-32 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-32 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #FFBCA6;
-}
-.checkTimeEven .CTE-calendar-day-33 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-33 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-34 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-34 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-week-days-5 {
-    margin-right: 3.9px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 429.5px;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-calendar-day-35 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-35 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546F;
-}
-.checkTimeEven .CTE-calendar-day-36 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-36 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-37 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-37 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-38 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-38 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-39 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-39 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-40 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-40 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
-}
-.checkTimeEven .CTE-calendar-day-41 {
-    border-radius: 3px;
-    display: flex;
-    box-sizing: border-box;
-}
-.checkTimeEven .CTE-value-41 {
-    overflow-wrap: break-word;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: rgba(68, 84, 111, 0.5);
 }

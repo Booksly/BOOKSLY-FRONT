@@ -1,385 +1,228 @@
 import './CheckTimeEvent.css'
 import StoreOwnerLeftNavi from "../nav/StoreOwnerLeftNavi";
 import StoreOwnerTopNavi from "../nav/StoreOwnerTopNavi";
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
+
+const Calendar = ({ reservations = [], onSelectDate }) => {
+    const [date, setDate] = useState(new Date());
+
+    const handleDateClick = (day) => {
+        const selectedDate = new Date(date.getFullYear(), date.getMonth(), day);
+        onSelectDate(selectedDate);
+    };
+
+    const handlePrevMonth = () => {
+        setDate(new Date(date.getFullYear(), date.getMonth() - 1));
+    };
+
+    const handleNextMonth = () => {
+        setDate(new Date(date.getFullYear(), date.getMonth() + 1));
+    };
+
+    const renderDay = (day) => {
+        return (
+            <div className="SOMcalendar-day" onClick={() => handleDateClick(day)} key={day}>
+                <div className="SOMvalue">
+                    {day}
+                    {<div className="SOMellipse"></div>}
+                </div>
+            </div>
+        );
+    };
+
+    const renderCalendar = () => {
+        const year = date.getFullYear();
+        const month = date.getMonth();
+        const firstDay = new Date(year, month, 1).getDay();
+        const lastDate = new Date(year, month + 1, 0).getDate();
+
+        let days = [];
+        for (let i = 0; i < firstDay; i++) {
+            days.push(<div className="SOMcalendar-day" key={`empty-${i}`}></div>);
+        }
+
+        for (let i = 1; i <= lastDate; i++) {
+            days.push(renderDay(i));
+        }
+
+        return days;
+    };
+
+    return (
+        <div className="SOMcalendar-example-2">
+            <div className="SOMmonth-header">
+                <div className="SOMicon-button" onClick={handlePrevMonth}>
+                    &lt;
+                </div>
+                <div className="SOMmonth-yyyy">
+                    {date.toLocaleString('default', { month: 'long' })} {date.getFullYear()}
+                </div>
+                <div className="SOMicon-button-1" onClick={handleNextMonth}>
+                    &gt;
+                </div>
+            </div>
+            <div className="SOMweek-header">
+                {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((day) => (
+                    <div className="SOMbox" key={day}>
+                        <div className={`SOM${day.toLowerCase()}`}>{day}</div>
+                    </div>
+                ))}
+            </div>
+            <div className="SOMweek-days">
+                {renderCalendar()}
+            </div>
+        </div>
+    );
+};
 
 export default function CheckTimeEven() {
+    const navigate = useNavigate();
+    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedFrame, setSelectedFrame] = useState(null);
+    const [selectedDesigner, setSelectedDesigner] = useState(null);
+    const [savedFrames, setSavedFrames] = useState({});
+
+    const goToCheckLastEvent = () => {
+        navigate("/CheckLastEvent");
+    };
+
+    const goToCheckTimeEvent = () => {
+        navigate("/CheckTimeEvent");
+    };
+
+    const goToRegisterTimeEvent = () => {
+        navigate("/RegisterTimeEvent");
+    }
+
+    const handleSelectDate = (date) => {
+        setSelectedDate(date);
+        setSelectedFrame(null); // Reset frame selection when date is changed
+    };
+
+    const handleFrameClick = (frame) => {
+        if (selectedDate) { // Check if a date is selected
+            setSelectedFrame(prevFrame => prevFrame === frame ? null : frame);
+
+            // Save the selected frame
+            setSavedFrames(prevSavedFrames => {
+                const newSavedFrames = { ...prevSavedFrames };
+                if (newSavedFrames[selectedDate.toDateString()] === frame) {
+                    delete newSavedFrames[selectedDate.toDateString()];
+                } else {
+                    newSavedFrames[selectedDate.toDateString()] = frame;
+                }
+                return newSavedFrames;
+            });
+        }
+    };
+
+    const handleDesignerClick = (designer) => {
+        setSelectedDesigner(designer);
+    };
+
     return (
         <div className="checkTimeEven">
             <div className="CTE-back">
                 <StoreOwnerLeftNavi/>
                 <div className="CTE-containerAll">
                     <StoreOwnerTopNavi/>
-                    <div className="CTE-frame-624">
-                        <div className="CTE-frame-623">
-                            <div className="CTE-frame-622">
-                                <div className="CTE-container-1">
-                                    마감 임박 이벤트
+                    <div className="CTE-container">
+                        <div className="CTE-frame-624">
+                            <div className="CTE-frame-623">
+                                <div className="CTE-frame-622">
+                                    <button className="CTE-naviButton-n" onClick={goToCheckLastEvent}>
+                                        마감 임박 이벤트
+                                    </button>
+                                    <button className="CTE-naviButton" onClick={goToCheckTimeEvent}>
+                                        타임 예약 이벤트
+                                    </button>
                                 </div>
-                                <div className="CTE-container-2">
-                                    타임 예약 이벤트
-                                </div>
+                                <button className="CTE-frame-429">
+                                    <div className="CTE-container-3" onClick={goToRegisterTimeEvent}>
+                                        이벤트 추가 등록
+                                    </div>
+                                </button>
                             </div>
-                            <div className="CTE-frame-429">
-                                <div className="CTE-container-3">
-                                    이벤트 추가 등록
-                                </div>
-                            </div>
-                        </div>
-                        <div className="CTE-line-22">
-                        </div>
-                    </div>
-                    <div className="CTE-frame-625">
-                        <div className="CTE-frame-433">
-                            <div className="CTE-month-header">
-                                <div className="CTE-icon-button">
-                                    <img className="CTE-vector" src="CTE-assets/vectors/Vector15_x2.svg" />
-                                </div>
-                                <div className="CTE-month-yyyy">
-                                    March 2024
-                                </div>
-                                <div className="CTE-icon-button-1">
-                                    <img className="CTE-vector-1" src="CTE-assets/vectors/Vector34_x2.svg" />
-                                </div>
-                            </div>
-                            <div className="CTE-week-header">
-                                <div className="CTE-box">
-                                    <div className="CTE-sun">
-                                        SUN
-                                    </div>
-                                </div>
-                                <div className="CTE-box-1">
-                                    <div className="CTE-mon">
-                                        MON
-                                    </div>
-                                </div>
-                                <div className="CTE-box-2">
-                                    <div className="CTE-tue">
-                                        TUE
-                                    </div>
-                                </div>
-                                <div className="CTE-box-3">
-                                    <div className="CTE-wed">
-                                        WED
-                                    </div>
-                                </div>
-                                <div className="CTE-box-4">
-                                    <div className="CTE-thu">
-                                        THU
-                                    </div>
-                                </div>
-                                <div className="CTE-box-5">
-                                    <div className="CTE-fri">
-                                        FRI
-                                    </div>
-                                </div>
-                                <div className="CTE-box-6">
-                                    <div className="CTE-sat">
-                                        SAT
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days">
-                                <div className="CTE-calendar-day">
-                                    <div className="CTE-value">
-                                        25
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-1">
-                                    <div className="CTE-value-1">
-                                        26
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-2">
-                                    <div className="CTE-value-2">
-                                        27
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-3">
-                                    <div className="CTE-value-3">
-                                        28
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-4">
-                                    <div className="CTE-value-4">
-                                        29
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-5">
-                                    <div className="CTE-value-5">
-                                        1
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-6">
-                                    <div className="CTE-value-6">
-                                        2
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days-1">
-                                <div className="CTE-calendar-day-7">
-                                    <div className="CTE-value-7">
-                                        3
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-8">
-                                    <div className="CTE-value-8">
-                                        4
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-9">
-                                    <div className="CTE-value-9">
-                                        5
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-10">
-                                    <div className="CTE-value-10">
-                                        6
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-11">
-                                    <div className="CTE-value-11">
-                                        7
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-12">
-                                    <div className="CTE-value-12">
-                                        8
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-13">
-                                    <div className="CTE-value-13">
-                                        9
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days-2">
-                                <div className="CTE-calendar-day-14">
-                                    <div className="CTE-value-14">
-                                        10
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-15">
-                                    <div className="CTE-value-15">
-                                        11
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-16">
-                                    <div className="CTE-value-16">
-                                        12
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-17">
-                                    <div className="CTE-value-17">
-                                        13
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-18">
-                                    <div className="CTE-value-18">
-                                        14
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-19">
-                                    <div className="CTE-value-19">
-                                        15
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-20">
-                                    <div className="CTE-value-20">
-                                        16
-                                    </div>
-                                    <div className="CTE-ellipse-4">
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days-3">
-                                <div className="CTE-calendar-day-21">
-                                    <div className="CTE-value-21">
-                                        17
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-22">
-                                    <div className="CTE-value-22">
-                                        18
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-23">
-                                    <div className="CTE-value-23">
-                                        19
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-24">
-                                    <div className="CTE-value-24">
-                                        20
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-25">
-                                    <div className="CTE-value-25">
-                                        21
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-26">
-                                    <div className="CTE-value-26">
-                                        22
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-27">
-                                    <div className="CTE-value-27">
-                                        23
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days-4">
-                                <div className="CTE-calendar-day-28">
-                                    <div className="CTE-value-28">
-                                        24
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-29">
-                                    <div className="CTE-value-29">
-                                        25
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-30">
-                                    <div className="CTE-value-30">
-                                        26
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-31">
-                                    <div className="CTE-value-31">
-                                        27
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-32">
-                                    <div className="CTE-value-32">
-                                        28
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-33">
-                                    <div className="CTE-value-33">
-                                        29
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-34">
-                                    <div className="CTE-value-34">
-                                        30
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="CTE-week-days-5">
-                                <div className="CTE-calendar-day-35">
-                                    <div className="CTE-value-35">
-                                        31
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-36">
-                                    <div className="CTE-value-36">
-                                        1
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-37">
-                                    <div className="CTE-value-37">
-                                        2
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-38">
-                                    <div className="CTE-value-38">
-                                        3
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-39">
-                                    <div className="CTE-value-39">
-                                        4
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-40">
-                                    <div className="CTE-value-40">
-                                        5
-                                    </div>
-                                </div>
-                                <div className="CTE-calendar-day-41">
-                                    <div className="CTE-value-41">
-                                        6
-                                    </div>
-                                </div>
+                            <div className="CTE-line-22">
                             </div>
                         </div>
-                        <div className="CTE-frame-434">
-                            <div className="CTE-frame-435">
-                                <div className="CTE-container-4">
-                                    타임 이벤트 목록
-                                </div>
-                                <div className="CTE-container-5">
-                                    3월 16일
-                                </div>
+                        <div className="CTE-frame-625">
+                            <div className="CTE-frame-433">
+                                <Calendar onSelectDate={handleSelectDate} />
                             </div>
-                            <div className="CTE-frame-459">
-                                <div className="CTE-frame-4291">
-                                    <div className="CTE-container-6">
+                            <div className="CTE-frame-434">
+                                <div className="CTE-frame-435">
+                                    <div className="CTE-container-4">
+                                        타임 이벤트 목록
+                                    </div>
+                                    <div className="CTE-container-5">
+                                        {selectedDate ? `${selectedDate.getMonth() + 1}월 ${selectedDate.getDate()}일` : "날짜선택"}
+                                    </div>
+                                </div>
+                                <div className="CTE-frame-459">
+                                    <button className={`CTE-empButton ${selectedDesigner === '제이 원장' ? 'selected' : ''}`} onClick={() => handleDesignerClick('제이 원장')}>
                                         제이 원장
-                                    </div>
-                                </div>
-                                <div className="CTE-frame-441">
-                                    <div className="CTE-container-7">
+                                    </button>
+                                    <button className={`CTE-empButton ${selectedDesigner === '심화 디자이너' ? 'selected' : ''}`} onClick={() => handleDesignerClick('심화 디자이너')}>
                                         심화 디자이너
-                                    </div>
-                                </div>
-                                <div className="CTE-frame-442">
-                                    <div className="CTE-container-8">
+                                    </button>
+                                    <button className={`CTE-empButton ${selectedDesigner === '캡 디자이너' ? 'selected' : ''}`} onClick={() => handleDesignerClick('캡 디자이너')}>
                                         캡 디자이너
-                                    </div>
+                                    </button>
                                 </div>
-                            </div>
-                            <div className="CTE-frame-460">
-                                <div className="CTE-frame-438">
-                                    <div className="CTE-container-9">
-                                        아침 예약
-                                    </div>
-                                    <div className="CTE-frame-436">
-                                        <div className="CTE-container-10">
-                                            10:00 ~ 11:30
+                                <div className="CTE-frame-460">
+                                    <div className={`CTE-timeEvt ${(selectedFrame === '438' || savedFrames[selectedDate?.toDateString()] === '438') ? 'selected' : ''}`} onClick={() => handleFrameClick('438')}>
+                                        <div className="CTE-title">
+                                            아침 예약
                                         </div>
-                                        <div className="CTE-container-2">
-                                            <div className="CTE-container-11">
-                                                수정하기
+                                        <div className="CTE-listRight">
+                                            <div className="CTE-listTime">
+                                                10:00 ~ 11:30
                                             </div>
-                                            <div className="CTE-container-12">
-                                                삭제
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="CTE-frame-439">
-                                    <div className="CTE-container-13">
-                                        짜투리 시간 예약
-                                    </div>
-                                    <div className="CTE-frame-4361">
-                                        <div className="CTE-container-14">
-                                            10:00 ~ 20:00
-                                        </div>
-                                        <div className="CTE-container">
-                                            <div className="CTE-container-15">
-                                                수정하기
-                                            </div>
-                                            <div className="CTE-container-16">
-                                                삭제
+                                            <div className="CTE-containerBox">
+                                                <button className="CTE-container-modify">
+                                                    수정하기
+                                                </button>
+                                                <button className="CTE-container-del">
+                                                    삭제
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="CTE-frame-440">
-                                    <div className="CTE-container-17">
-                                        마지막 타임 예약
-                                    </div>
-                                    <div className="CTE-frame-4362">
-                                        <div className="CTE-container-18">
-                                            19:00 ~ 20:00
+                                    <div className={`CTE-timeEvt ${(selectedFrame === '439' || savedFrames[selectedDate?.toDateString()] === '439') ? 'selected' : ''}`} onClick={() => handleFrameClick('439')}>
+                                        <div className="CTE-title">
+                                            짜투리 시간 예약
                                         </div>
-                                        <div className="CTE-container-1">
-                                            <div className="CTE-container-19">
-                                                수정하기
+                                        <div className="CTE-listRight">
+                                            <div className="CTE-listTime">
+                                                10:00 ~ 20:00
                                             </div>
-                                            <div className="CTE-container-20">
-                                                삭제
+                                            <div className="CTE-containerBox">
+                                                <button className="CTE-container-modify">
+                                                    수정하기
+                                                </button>
+                                                <button className="CTE-container-del">
+                                                    삭제
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={`CTE-timeEvt ${(selectedFrame === '440' || savedFrames[selectedDate?.toDateString()] === '440') ? 'selected' : ''}`} onClick={() => handleFrameClick('440')}>
+                                        <div className="CTE-title">
+                                            마지막 타임 예약
+                                        </div>
+                                        <div className="CTE-listRight">
+                                            <div className="CTE-listTime">
+                                                19:00 ~ 20:00
+                                            </div>
+                                            <div className="CTE-containerBox">
+                                                <button className="CTE-container-modify">
+                                                    수정하기
+                                                </button>
+                                                <button className="CTE-container-del">
+                                                    삭제
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -390,6 +233,5 @@ export default function CheckTimeEven() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-
