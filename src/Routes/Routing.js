@@ -52,7 +52,7 @@ import StandByReservation_Owner from "../pages/StandByReservation_Owner/StandByR
 import RegisterReservation from "../pages/RegisterReservation/RegisterReservation";
 import RegisterLastEvent from "../pages/RegisterLastEvent/RegisterLastEvent";
 import RegisterTimeEvent from "../pages/RegisterTimeEvent/RegisterTimeEvent";
-import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent ";
+import CheckLastEvent from "../pages/CheckLastEvent/CheckLastEvent";
 import CheckTimeEvent from "../pages/CheckTimeEvent/CheckTimeEvent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
