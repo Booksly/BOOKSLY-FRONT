@@ -1,321 +1,320 @@
 .checkTimeEven {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: fit-content;
-    background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+  background: #ffffff;
 }
 
 .checkTimeEven .CTE-back {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .checkTimeEven .CTE-containerAll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-container {
-    display: flex;
-    margin-top: 2px;
-    width: 1190px;
-    background: #FDF8F3;
-    justify-content: center;
-    align-items: center;
-    height: 850px;
-    flex-direction: column;
+  display: flex;
+  margin-top: 2px;
+  width: 1190px;
+  background: #fdf8f3;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  flex-direction: column;
 }
 
 .checkTimeEven .CTE-line-22 {
-    background: #FF5925;
-    width: 1040px;
-    height: 1px;
+  background: #ff5925;
+  width: 1040px;
+  height: 1px;
 }
 
 .checkTimeEven .CTE-frame-433,
 .checkTimeEven .CTE-frame-434 {
-    border-radius: 15px;
-    background: #F4F4F4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+  border-radius: 15px;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-frame-433 {
-    /*margin: 0 37px 251px 0;*/
-    margin-right: 37px;
-    padding: 40px 0;
-    align-items: center;
-    justify-content: center;
-    width: 530px;
-    height: fit-content;
+  /*margin: 0 37px 251px 0;*/
+  margin-right: 37px;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: center;
+  width: 530px;
+  height: fit-content;
 }
 
 .checkTimeEven .CTE-frame-434 {
-    width: 430px;
-    height: 640px;
-    padding: 30px 0;
-    align-items: center;
+  width: 430px;
+  height: 640px;
+  padding: 30px 0;
+  align-items: center;
 }
 .checkTimeEven .CTE-frame-435 {
-    display: flex;
-    flex-direction: row;
-    width: 335px;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 335px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .checkTimeEven .CTE-container-4,
 .checkTimeEven .CTE-container-5 {
-    font-size: 27px;
-    color: #000000;
-    width: fit-content;
+  font-size: 27px;
+  color: #000000;
+  width: fit-content;
 }
 
 .checkTimeEven .CTE-listTime {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 5px;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
 }
 
 .checkTimeEven .CTE-naviButton-n {
-    font-size: 25px;
-    color: #848484;
-    width: fit-content;
-    border: 0;
-    background: #FDF8F3;
+  font-size: 25px;
+  color: #848484;
+  width: fit-content;
+  border: 0;
+  background: #fdf8f3;
 }
 .checkTimeEven .CTE-naviButton {
-    font-size: 25px;
-    color: #000000;
-    width: fit-content;
-    border: 0;
-    background: #FDF8F3;
+  font-size: 25px;
+  color: #000000;
+  width: fit-content;
+  border: 0;
+  background: #fdf8f3;
 }
 
 .checkTimeEven .CTE-container-2 {
-    font-size: 30px;
-    color: #000000;
+  font-size: 30px;
+  color: #000000;
 }
 
 .checkTimeEven .CTE-frame-429 {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    display: flex;
-    padding: 10px 14px;
-    box-sizing: border-box;
+  border-radius: 25px;
+  border: 1px solid #ff6231;
+  display: flex;
+  padding: 10px 14px;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-empButton {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    display: flex;
-    padding: 10px 14px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
+  border-radius: 25px;
+  border: 1px solid #ff6231;
+  display: ㄹ flex;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  background: #ffffff;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 13px;
+  color: #737373;
 }
 
 .checkTimeEven .CTE-empButton.selected {
-    background: #FDD2C2;
+  background: #fdd2c2;
 }
 
 .checkTimeEven .CTE-frame-429 {
-    border-radius: 25px;
-    border: 1px solid #FF6231;
-    display: flex;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    background: #FDD2C2;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.389;
-    color: #000000;
+  border-radius: 25px;
+  border: 1px solid #ff6231;
+  display: flex;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #fdd2c2;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
 }
 
 .checkTimeEven .CTE-container-modify,
 .checkTimeEven .CTE-container-del {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 13px;
-    color: #737373;
-    border: 0;
-    padding: 0;
-    background: 0;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 13px;
+  color: #737373;
+  border: 0;
+  padding: 0;
+  background: 0;
 }
 
 .checkTimeEven .CTE-frame-459 {
-    display: flex;
-    box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-containerBox {
-    display: flex;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-    width: 90px;
-    justify-content: space-between;
+  display: flex;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  width: 90px;
+  justify-content: space-between;
 }
 
 .checkTimeEven .CTE-frame-623,
 .checkTimeEven .CTE-frame-625 {
-    flex-direction: row;
-    display: flex;
-    box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-frame-622 {
-    justify-content: space-between;
-    width: 450px;
-    height: fit-content;
-    margin: 2px 0;
-    flex-direction: row;
-    display: flex;
-    box-sizing: border-box;
+  justify-content: space-between;
+  width: 450px;
+  height: fit-content;
+  margin: 2px 0;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-frame-623 {
-    justify-content: space-between;
-    width: 1020px;
-    margin: 0 10px 7px 10px;
+  justify-content: space-between;
+  width: 1020px;
+  margin: 0 10px 7px 10px;
 }
 
 .checkTimeEven .CTE-frame-624 {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    width: 1040px;
-    margin-bottom: 34px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  width: 1040px;
+  margin-bottom: 34px;
 }
 
 .checkTimeEven .CTE-frame-625 {
-    width: fit-content;
-    margin: 0 10px;
+  width: fit-content;
+  margin: 0 10px;
 }
 
 .checkTimeEven .CTE-frame-459 {
-    flex-direction: row;
-    column-gap: 10px;
-    width: fit-content;
-    margin-bottom: 20px;
+  flex-direction: row;
+  column-gap: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
 }
 
 .checkTimeEven .CTE-frame-460 {
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    display: flex;
-    box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .CTE-title {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    font-size: 18px;
-    width: 145px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  font-size: 18px;
+  width: 145px;
 }
 
 .checkTimeEven .CTE-listRight {
-    flex-direction: column;
-    display: flex;
-    width: fit-content;
-    align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: fit-content;
+  align-items: center;
 }
 
 .checkTimeEven .CTE-timeEvt {
-    background: #FFFFFF;
-    justify-content: space-between;
-    width: 370px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #FF5925;
-    display: flex;
-    flex-direction: row;
-    padding: 10px 30px;
-    box-sizing: border-box;
-    cursor: pointer;
+  background: #ffffff;
+  justify-content: space-between;
+  width: 370px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff5925;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .checkTimeEven .CTE-timeEvt.selected {
-    background: #D9D9D9;
+  background: #d9d9d9;
 }
 
-
 .checkTimeEven .SOMcalendar-example-2 {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 386.5px;
-    box-sizing: border-box;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 386.5px;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .SOMmonth-header {
-    margin: 0 16.7px 22px 16.7px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 353.1px;
-    box-sizing: border-box;
+  margin: 0 16.7px 22px 16.7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 353.1px;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .SOMicon-button,
 .checkTimeEven .SOMicon-button-1 {
-    border-radius: 3px;
-    margin: 4.1px 0 4.7px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    font-weight: bold;
+  border-radius: 3px;
+  margin: 4.1px 0 4.7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-weight: bold;
 }
 
 .checkTimeEven .SOMmonth-yyyy {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    color: #172b4d;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #172b4d;
 }
 
 .checkTimeEven .SOMweek-header {
-    background: #ffffff;
-    margin-bottom: 6px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 14.8px 8px 13.8px;
-    width: 386.5px;
-    box-sizing: border-box;
+  background: #ffffff;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 14.8px 8px 13.8px;
+  width: 386.5px;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .SOMbox {
-    display: flex;
-    box-sizing: border-box;
-    flex-grow: 1;
-    justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .checkTimeEven .SOMsun,
@@ -325,41 +324,41 @@
 .checkTimeEven .SOMthu,
 .checkTimeEven .SOMfri,
 .checkTimeEven .SOMsat {
-    overflow-wrap: break-word;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.231;
-    color: #44546f;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.231;
+  color: #44546f;
 }
 
 .checkTimeEven .SOMweek-days {
-    margin: 0 23.5px 12px 19px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 344px;
-    box-sizing: border-box;
+  margin: 0 23.5px 12px 19px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 344px;
+  box-sizing: border-box;
 }
 
 .checkTimeEven .SOMcalendar-day {
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 14.28%; /* 100% / 7 days */
-    height: 50px;
-    box-sizing: border-box;
-    cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%; /* 100% / 7 days */
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .checkTimeEven .SOMcalendar-day:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .checkTimeEven .SOMvalue {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.429;
-    color: #44546f;
-    position: relative;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.429;
+  color: #44546f;
+  position: relative;
 }
